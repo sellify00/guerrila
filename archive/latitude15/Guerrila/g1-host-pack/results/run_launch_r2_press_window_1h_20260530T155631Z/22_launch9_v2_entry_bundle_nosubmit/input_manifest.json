@@ -1,0 +1,12 @@
+{
+  "alt_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260530T155631Z/21_runls13alt_preprocessed_alt_resolution_audit/runls13alt_preprocessed_alt_resolution_audit_rows.jsonl",
+  "census_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260530T155631Z/22_launch0_new_mint_pool_census/launch0_new_mint_pool_census_rows.jsonl",
+  "live_send": false,
+  "ls13a_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260530T155631Z/21_runls13a_preprocessed_backrun_target_census/runls13a_preprocessed_backrun_target_census_rows.jsonl",
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "sim_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260530T155631Z/22_launch9_v2_entry_bundle_nosubmit/launch9_v2_filtered_sim_rows.jsonl",
+  "tip_accounts_count": 8
+}

@@ -1,0 +1,26 @@
+{
+  "avg_net_after_orderbook_bps": 32.7819,
+  "best_candidate_net_after_orderbook_bps": 59.439,
+  "best_candidate_side": "long",
+  "best_candidate_symbol": "SPX",
+  "blocker_counts": {
+    "net_after_orderbook_below_floor": 2,
+    "none": 5,
+    "spread_too_wide": 2
+  },
+  "decision_counts": {
+    "DERIV_ORDERBOOK_REALISM_READY": 5,
+    "PARK_DERIV_ORDERBOOK_REALISM": 4
+  },
+  "input_ready_rows": 9,
+  "live_landed": 0,
+  "min_net_after_orderbook_bps": 14.5666,
+  "no_wire": true,
+  "notional_usd": 25.0,
+  "orderbook_realism_ready_rows": 5,
+  "orderbook_realism_rows": 9,
+  "ready_rows": 5,
+  "rows": 9,
+  "status": "DERIV_ORDERBOOK_REALISM_READY",
+  "wire_send": 0
+}

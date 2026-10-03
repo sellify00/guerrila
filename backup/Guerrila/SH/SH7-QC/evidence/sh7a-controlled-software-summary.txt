@@ -1,0 +1,39 @@
+SH7-A controlled software isolate summary
+
+Status:
+Controlled software proof is green. Host SH7-A final no-send evidence remains open.
+
+Purpose:
+Isolate the no-send accounting path without relying on the current host's live candidate substrate.
+
+Proof chain:
+supported record
+-> pool_state_hit
+-> route/opportunity event
+-> process_intent
+-> no-send backend
+-> final would_send/live_send_suppressed event
+-> PM rollout ledger
+
+Code surfaces:
+- crates/shadow-tier0/src/no_send_sink.rs
+- crates/shadow-tier0/src/money_worker.rs
+
+Important assertions:
+- candidate route path records pool_state_hit > 0
+- route/opportunity event reaches the rollout ledger without final no-send flags
+- final no-send event increments worker_rollout_would_send_events_published
+- final no-send event increments worker_rollout_live_send_suppressed_events_published
+- PM rollout ledger observes would_send = 1
+- PM rollout ledger observes live_send_suppressed = 1
+- last no-send reason is rollout observe-only
+- last drop reason is DroppedRolloutNoSend
+- no live Jito or Harmonic enqueue occurs
+
+Validation:
+cargo test -p shadow-tier0 sh7_a_controlled_supported_candidate_reaches_final_no_send_pm_ledger -- --nocapture
+cargo test -p shadow-tier0 g12_observe_only_exhaust_scavenge_records_shadow_event -- --nocapture
+
+Non-unlocks:
+This is software proof only. It does not unlock SH6, SH8, r1_tiny, live send, public RPC exposure,
+or public execution fallback.

@@ -1,0 +1,17 @@
+{
+  "architecture_blocker_counts": {
+    "PARK_CONTINUATION_ADVERSE_EXCURSION": 4,
+    "PARK_CONTINUATION_OWNER_MISMATCH": 12,
+    "PARK_CONTINUATION_PM": 22
+  },
+  "final_verdict": "CONTINUATION_STRUCTURAL_HUNT_READY",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "proposal_eligible_continuation_rows": 2,
+  "proposal_path_open": false
+}

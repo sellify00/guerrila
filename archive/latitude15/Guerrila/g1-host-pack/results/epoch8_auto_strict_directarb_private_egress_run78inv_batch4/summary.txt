@@ -1,0 +1,7 @@
+status=run78inv_complete
+wsol_row_count=7
+wsol_visibility_mismatch_count=7
+unknown_input_account_resolution_blocker_count=0
+input_account_resolution_blocker_counts={"stale_inventory_snapshot":7}
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78inv_batch4/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78inv_batch4/rows.csv

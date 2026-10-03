@@ -1,0 +1,25 @@
+/target
+**/target
+*.swp
+*.swo
+*~
+.DS_Store
+tmpclaude-*
+.env
+.env.*
+g1-host-pack/env.hyperliquid.local.sh
+g1-host-pack/.venv-deriv/
+# SSH keys — never commit private key material
+ssh_file.txt
+ssh_file.txt.pub
+g1-host-pack/oob_credentials
+*.pem
+*.key
+id_rsa
+id_ed25519
+.local-artifacts/
+tools/dpdk-rx-latency/builddir/
+Lib/site-packages/
+
+g12-qc/*__shock_research.txt
+g12-qc/*__candidate_autopsy.txt

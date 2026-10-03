@@ -1,0 +1,20 @@
+{
+  "profile_name": "32_28",
+  "replay_threads": 32,
+  "rayon_threads": 28,
+  "merged_sample_count": 25,
+  "processed_lag_start": 2,
+  "processed_lag_max": 261.0,
+  "processed_lag_end": 261,
+  "finalized_lag_start": 3,
+  "finalized_lag_max": 264.0,
+  "finalized_lag_end": 264,
+  "lag_slope_p50": 2.9988,
+  "lag_slope_p95": 3.398641,
+  "lag_slope_max": 3.398641,
+  "time_to_lag_50": 35.028,
+  "time_to_lag_100": 60.036,
+  "time_to_slope_gt_1": 5.017,
+  "warning_streak_3_elapsed": 35.028,
+  "mean_ref_match_diff_seconds": 1.451
+}

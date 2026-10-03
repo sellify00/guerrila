@@ -1,0 +1,29 @@
+{
+  "selected_owner_counts": {
+    "rebalancing": 21
+  },
+  "fallback_owner_counts": {
+    "backrun": 12,
+    "none": 9
+  },
+  "runner_up_owner_counts": {
+    "backrun": 12,
+    "none": 9
+  },
+  "classification_counts": {
+    "sender_no_send": 12,
+    "bundle_no_submit": 9
+  },
+  "first_owner_blocker_counts": {
+    "owner_mode_match_rebalancing_false": 21
+  },
+  "aggregates": {
+    "structural_ready_rows_total": 21,
+    "execution_plumbing_ready_rows": 21,
+    "owner_mode_match_rebalancing_rows": 0,
+    "pm_owner_lock_ready_rows": 0,
+    "restoration_pressure_measured_rows": 0,
+    "false_restoration_gate_input_ready_rows": 0,
+    "proposal_eligible_rebalancing_rows": 0
+  }
+}

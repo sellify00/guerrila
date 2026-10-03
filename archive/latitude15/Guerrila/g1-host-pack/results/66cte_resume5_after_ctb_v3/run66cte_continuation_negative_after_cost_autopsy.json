@@ -1,0 +1,19 @@
+{
+  "adverse_excursion_drag_rows": 3,
+  "dominant_negative_driver_counts": {
+    "ADVERSE_EXCURSION_DRAG": 3,
+    "FEE_TIP_DRAG": 8,
+    "THESIS_OR_MODEL_NEGATIVE": 6
+  },
+  "fee_tip_drag_rows": 8,
+  "live_landed": 0,
+  "rent_drag_rows": 0,
+  "rows_seen": 17,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "slippage_drag_rows": 0,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct2_resume5_after_ctb_v3/run66ct2_continuation_execution_rule_rows.jsonl",
+  "status": "CONTINUATION_NEGATIVE_AFTER_COST_AUTOPSY_COMPLETE",
+  "thesis_or_model_negative_rows": 6,
+  "wire_send": 0
+}

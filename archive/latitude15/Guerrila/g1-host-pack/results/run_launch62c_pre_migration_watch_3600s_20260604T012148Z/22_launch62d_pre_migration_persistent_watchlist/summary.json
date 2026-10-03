@@ -1,0 +1,26 @@
+{
+  "acceptance_pass": true,
+  "bucket_counts": {
+    "70-80%": 2
+  },
+  "live_landed": 0,
+  "migration_seen_watchlist_rows": 0,
+  "progress_70_80": 2,
+  "progress_80_90": 0,
+  "progress_90_95": 0,
+  "progress_95_98": 0,
+  "progress_98_99": 0,
+  "progress_99_plus": 0,
+  "pumpswap_pool_joined_watchlist_rows": 0,
+  "r5_watchlist_readyish_rows": 0,
+  "readyish_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62d_pre_migration_persistent_watchlist/readyish_rows.jsonl",
+  "recent_buy_watchlist_rows": 0,
+  "recent_sell_watchlist_rows": 0,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62d_pre_migration_persistent_watchlist/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z",
+  "state_json": "/home/ubuntu/Guerrila/g1-host-pack/results/r5_pre_migration_persistent_watchlist.json",
+  "status": "LAUNCH62D_PRE_MIGRATION_PERSISTENT_WATCHLIST_PASS",
+  "tracked_this_run": 2,
+  "watchlist_size": 2,
+  "wire_send": 0
+}

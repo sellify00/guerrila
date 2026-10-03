@@ -1,0 +1,835 @@
+{
+  "status": "run64e_exit_qualified_held_input_analysis_complete",
+  "step": "66u_repeatability_chain_20260524_3x5m_retry1_e1_run65_run64e",
+  "inputs": {
+    "run61_report_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65/run61_continuous_shadow_live_simulation.json",
+    "run61_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65/summary.txt",
+    "run62_report_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65_run62/run62_conversion_autopsy.json",
+    "run39_candidate_autopsy": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65_run55_run39/candidate_autopsy.jsonl",
+    "run39_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65_run55_run39/summary.txt",
+    "signer_token_inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+    "results_root": "/home/ubuntu/Guerrila/g1-host-pack/results",
+    "rpc_url": "https://rpc.example.invalid",
+    "quote_api_url": "https://lite-api.jup.ag/swap/v1/quote"
+  },
+  "filters": {
+    "target_count": 10,
+    "max_per_mint_usdc": 5.0,
+    "min_meaningful_acquisition_usdc": 0.1,
+    "min_exit_value_usdc": 0.1,
+    "min_exit_value_ratio": 0.5,
+    "entry_slippage_bps": 100,
+    "exit_slippage_bps": 0,
+    "min_recurrence_count": 2,
+    "no_scale_mints": [
+      "8Nh2DSKq2JgK2AWg6tqi6NBUbbFsG47GVjhhri53WScx"
+    ]
+  },
+  "baseline": {
+    "directarb_inventory_ready_count": 0,
+    "directarb_would_fire_count": 0,
+    "directarb_main_blocker": null,
+    "approved_held_input_mints": [
+      "So11111111111111111111111111111111111111112",
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+    ],
+    "held_input_mints": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "So11111111111111111111111111111111111111112"
+    ],
+    "source_balances_raw": {
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 230088908,
+      "So11111111111111111111111111111111111111112": 1000260001
+    }
+  },
+  "history": {
+    "historical_candidate_autopsy_file_count": 3
+  },
+  "recommended_candidates": [],
+  "ranked_not_held_input_mints": [
+    {
+      "mint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+      "count": 2,
+      "rpc_audit_ok": true,
+      "rpc_policy_snapshot_stable": true,
+      "initialized": true,
+      "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "decimals": 6,
+      "freeze_authority": null,
+      "mint_authority": null,
+      "extensions": [],
+      "default_account_state": null,
+      "denylisted": false,
+      "token_program_allowed": true,
+      "freeze_authority_ok": true,
+      "mint_authority_ok": true,
+      "decimals_sane": true,
+      "extensions_understood": true,
+      "metadata_only_extension_subset_ok": false,
+      "default_account_state_ok": true,
+      "metadata_only_token2022_eligible": false,
+      "metadata_only_token2022_policy_enabled": false,
+      "policy_ok": true,
+      "policy_blocker": "none",
+      "policy_status": "ok",
+      "rpc_error": null,
+      "route_usable_count": 2,
+      "positive_ev_count": 2,
+      "best_horizon_positive_count": 2,
+      "total_best_horizon_ev_sol_equivalent": 0,
+      "median_trade_size_input_native": 1000.0,
+      "p90_trade_size_input_native": 1000.0,
+      "required_band_input_raw_p50": 1000000000,
+      "required_band_input_raw_p90": 1000000000,
+      "required_band_input_raw_max": 1000000000,
+      "required_band_input_native_p50": 1000.0,
+      "required_band_input_native_p90": 1000.0,
+      "required_band_input_native_max": 1000.0,
+      "recurrence_count": 1,
+      "recurrence_directarb_window_count": 1,
+      "recurrence_post_shock_window_count": 0,
+      "directarb_count": 2,
+      "owner_mode_count": 2,
+      "owner_mode_distinct_count": 1,
+      "owner_modes": {
+        "directarb": 2
+      },
+      "high_ev_post_shock_count": 0,
+      "entry_quote_ok": true,
+      "exit_quote_ok": true,
+      "entry_source_asset": "USDC",
+      "entry_route_label": "HumidiFi -> PancakeSwap -> Raydium CLMM",
+      "exit_value_usdc": 0.2542,
+      "exit_value_ratio": 1.000196734,
+      "acquisition_cost_usdc": 0.25415,
+      "acquisition_cost_native": 0.25415,
+      "acquisition_cost_meaningful": true,
+      "acquisition_cost_within_cap": true,
+      "economic_exit_verdict": "economically_viable_for_bounded_review",
+      "entry_blocker": "none",
+      "expected_inventory_ready_delta": 2,
+      "directarb_inventory_ready_if_held_count": 2,
+      "expected_conversion_delta": 2,
+      "directarb_would_fire_if_held_count": 2,
+      "tied_to_current_path": true,
+      "recurrence_ok": false,
+      "user_no_scale": false,
+      "inventory_policy_classification": "recurrence_not_proven",
+      "expansion_verdict": "blocked_not_recurring",
+      "source_plans": [
+        {
+          "source_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "source_symbol": "USDC",
+          "entry_quote_ok": true,
+          "entry_blocker": "none",
+          "plan_status": "entry_quote_ready",
+          "entry_quote": {
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "inAmount": "254150",
+            "outputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+            "outAmount": "1000005835",
+            "otherAmountThreshold": "990005777",
+            "swapMode": "ExactIn",
+            "slippageBps": 100,
+            "platformFee": null,
+            "priceImpactPct": "0",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "HyKbc1vUxNL9xJC2Q44qdGiuKC1Ey95KNdokfHivrFnZ",
+                  "label": "HumidiFi",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "outputMint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+                  "inAmount": "254150",
+                  "outAmount": "145384828",
+                  "updateContextSlot": "421893463"
+                },
+                "percent": 100,
+                "bps": null
+              },
+              {
+                "swapInfo": {
+                  "ammKey": "5YPxToTobawvkbn5rkWKYDhZqHf5v6LAtRLNPGiq6U2A",
+                  "label": "PancakeSwap",
+                  "inputMint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "145384828",
+                  "outAmount": "2969547",
+                  "updateContextSlot": "421893440"
+                },
+                "percent": 100,
+                "bps": null
+              },
+              {
+                "swapInfo": {
+                  "ammKey": "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv",
+                  "label": "Raydium CLMM",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+                  "inAmount": "2969547",
+                  "outAmount": "1000005835",
+                  "updateContextSlot": "421893397"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893467,
+            "timeTaken": 0.002020368,
+            "swapUsdValue": "0.25415",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "2uF4Xh61rDwxnG9woyxsVQP7zuA6kLFpb3NvnRQeoiSd": "145071840",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "2966542",
+                "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "254367",
+                "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv": "1000005835"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "route_labels": [
+            "HumidiFi",
+            "PancakeSwap",
+            "Raydium CLMM"
+          ],
+          "route_label": "HumidiFi -> PancakeSwap -> Raydium CLMM",
+          "input_raw": 254150,
+          "input_native": 0.25415,
+          "input_usdc": 0.25415,
+          "out_raw": 1000005835,
+          "out_native": 1000.005835,
+          "min_out_raw": 990005777,
+          "min_out_native": 990.005777,
+          "price_impact_pct": 0.0,
+          "exit_quote_ok": true,
+          "exit_quote_error": null,
+          "exit_quote": {
+            "inputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+            "inAmount": "1000005835",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "outAmount": "254200",
+            "otherAmountThreshold": "254200",
+            "swapMode": "ExactIn",
+            "slippageBps": 0,
+            "platformFee": null,
+            "priceImpactPct": "0.0005850887289672664760002762",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv",
+                  "label": "Raydium CLMM",
+                  "inputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "1000005835",
+                  "outAmount": "2968902",
+                  "updateContextSlot": "421893397"
+                },
+                "percent": 100,
+                "bps": null
+              },
+              {
+                "swapInfo": {
+                  "ammKey": "2SgUGxYDczrB6wUzXHPJH65pNhWkEzNMEx3km4xTYUTC",
+                  "label": "Invariant",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "inAmount": "2968902",
+                  "outAmount": "254200",
+                  "updateContextSlot": "421893446"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893468,
+            "timeTaken": 0.002390419,
+            "swapUsdValue": "0.2542",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "254138",
+                "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv": "2968902",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "254148"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "exit_out_raw": 254200,
+          "exit_native": 0.2542,
+          "exit_value_usdc": 0.2542,
+          "exit_value_ratio": 1.000196734,
+          "exit_output_not_dust": true,
+          "acquisition_cost_meaningful": true,
+          "acquisition_cost_within_cap": true,
+          "exit_value_non_dust": true,
+          "exit_ratio_ok": true,
+          "economically_viable": true,
+          "economic_exit_verdict": "economically_viable_for_bounded_review",
+          "roundtrip_source_asset": "USDC"
+        },
+        {
+          "source_mint": "So11111111111111111111111111111111111111112",
+          "source_symbol": "WSOL",
+          "entry_quote_ok": true,
+          "entry_blocker": "none",
+          "plan_status": "entry_quote_ready",
+          "entry_quote": {
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "inAmount": "2969530",
+            "outputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+            "outAmount": "1000000110",
+            "otherAmountThreshold": "990000109",
+            "swapMode": "ExactIn",
+            "slippageBps": 100,
+            "platformFee": null,
+            "priceImpactPct": "0",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv",
+                  "label": "Raydium CLMM",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+                  "inAmount": "2969530",
+                  "outAmount": "1000000110",
+                  "updateContextSlot": "421893397"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893470,
+            "timeTaken": 0.014538639,
+            "swapUsdValue": "0.2542648614383529276558402876",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv": "1000000110",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "Not used RG: Full, contains ALT: true"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "route_labels": [
+            "Raydium CLMM"
+          ],
+          "route_label": "Raydium CLMM",
+          "input_raw": 2969530,
+          "input_native": 0.00296953,
+          "input_usdc": 2.96953,
+          "out_raw": 1000000110,
+          "out_native": 1000.00011,
+          "min_out_raw": 990000109,
+          "min_out_native": 990.000109,
+          "price_impact_pct": 0.0,
+          "exit_quote_ok": true,
+          "exit_quote_error": null,
+          "exit_quote": {
+            "inputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+            "inAmount": "1000000110",
+            "outputMint": "So11111111111111111111111111111111111111112",
+            "outAmount": "2968885",
+            "otherAmountThreshold": "2968885",
+            "swapMode": "ExactIn",
+            "slippageBps": 0,
+            "platformFee": null,
+            "priceImpactPct": "0.0005420253778345792099559764",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv",
+                  "label": "Raydium CLMM",
+                  "inputMint": "9JEtMubzpGr6d9J8vdhDELxnMd3sU3Rg78HQfP65GCgU",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "1000000110",
+                  "outAmount": "2968885",
+                  "updateContextSlot": "421893397"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893470,
+            "timeTaken": 0.00012454,
+            "swapUsdValue": "0.2541965329195206234493218221",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "Diq4qRtbq6Ff9W44rDfQhthyNP9RZjJpN6tCj7wRc5Wv": "2968885",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "Not used RG: Full, contains ALT: true"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "exit_out_raw": 2968885,
+          "exit_native": 0.002968885,
+          "exit_value_usdc": 2.968885,
+          "exit_value_ratio": 0.999782794,
+          "exit_output_not_dust": true,
+          "acquisition_cost_meaningful": true,
+          "acquisition_cost_within_cap": true,
+          "exit_value_non_dust": true,
+          "exit_ratio_ok": true,
+          "economically_viable": true,
+          "economic_exit_verdict": "economically_viable_for_bounded_review",
+          "roundtrip_source_asset": "WSOL"
+        }
+      ]
+    },
+    {
+      "mint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+      "count": 1,
+      "rpc_audit_ok": true,
+      "rpc_policy_snapshot_stable": true,
+      "initialized": true,
+      "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "decimals": 9,
+      "freeze_authority": null,
+      "mint_authority": null,
+      "extensions": [],
+      "default_account_state": null,
+      "denylisted": false,
+      "token_program_allowed": true,
+      "freeze_authority_ok": true,
+      "mint_authority_ok": true,
+      "decimals_sane": true,
+      "extensions_understood": true,
+      "metadata_only_extension_subset_ok": false,
+      "default_account_state_ok": true,
+      "metadata_only_token2022_eligible": false,
+      "metadata_only_token2022_policy_enabled": false,
+      "policy_ok": true,
+      "policy_blocker": "none",
+      "policy_status": "ok",
+      "rpc_error": null,
+      "route_usable_count": 1,
+      "positive_ev_count": 1,
+      "best_horizon_positive_count": 1,
+      "total_best_horizon_ev_sol_equivalent": 0,
+      "median_trade_size_input_native": 1.0,
+      "p90_trade_size_input_native": 1.0,
+      "required_band_input_raw_p50": 1000000000,
+      "required_band_input_raw_p90": 1000000000,
+      "required_band_input_raw_max": 1000000000,
+      "required_band_input_native_p50": 1.0,
+      "required_band_input_native_p90": 1.0,
+      "required_band_input_native_max": 1.0,
+      "recurrence_count": 1,
+      "recurrence_directarb_window_count": 1,
+      "recurrence_post_shock_window_count": 0,
+      "directarb_count": 1,
+      "owner_mode_count": 1,
+      "owner_mode_distinct_count": 1,
+      "owner_modes": {
+        "directarb": 1
+      },
+      "high_ev_post_shock_count": 0,
+      "entry_quote_ok": true,
+      "exit_quote_ok": true,
+      "entry_source_asset": "USDC",
+      "entry_route_label": "Quantum -> Raydium CP",
+      "exit_value_usdc": 0.000397,
+      "exit_value_ratio": 0.994987469,
+      "acquisition_cost_usdc": 0.000399,
+      "acquisition_cost_native": 0.000399,
+      "acquisition_cost_meaningful": false,
+      "acquisition_cost_within_cap": true,
+      "economic_exit_verdict": "acquisition_cost_dust",
+      "entry_blocker": "none",
+      "expected_inventory_ready_delta": 1,
+      "directarb_inventory_ready_if_held_count": 1,
+      "expected_conversion_delta": 1,
+      "directarb_would_fire_if_held_count": 1,
+      "tied_to_current_path": true,
+      "recurrence_ok": false,
+      "user_no_scale": false,
+      "inventory_policy_classification": "recurrence_not_proven",
+      "expansion_verdict": "blocked_not_recurring",
+      "source_plans": [
+        {
+          "source_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "source_symbol": "USDC",
+          "entry_quote_ok": true,
+          "entry_blocker": "none",
+          "plan_status": "entry_quote_ready",
+          "entry_quote": {
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "inAmount": "399",
+            "outputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+            "outAmount": "1000854006",
+            "otherAmountThreshold": "990845466",
+            "swapMode": "ExactIn",
+            "slippageBps": 100,
+            "platformFee": null,
+            "priceImpactPct": "0",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "8R5qdXKMn2KcfHBy9rEpi43KScHewqvRAcpFyqoL3wap",
+                  "label": "Quantum",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "399",
+                  "outAmount": "4672",
+                  "updateContextSlot": "421893472"
+                },
+                "percent": 100,
+                "bps": null
+              },
+              {
+                "swapInfo": {
+                  "ammKey": "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A",
+                  "label": "Raydium CP",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+                  "inAmount": "4672",
+                  "outAmount": "1000854006",
+                  "updateContextSlot": "421892076"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893472,
+            "timeTaken": 0.001920742,
+            "swapUsdValue": "0.000399",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A": "1000854006",
+                "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "398",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "4647"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "route_labels": [
+            "Quantum",
+            "Raydium CP"
+          ],
+          "route_label": "Quantum -> Raydium CP",
+          "input_raw": 399,
+          "input_native": 0.000399,
+          "input_usdc": 0.000399,
+          "out_raw": 1000854006,
+          "out_native": 1.000854006,
+          "min_out_raw": 990845466,
+          "min_out_native": 0.990845466,
+          "price_impact_pct": 0.0,
+          "exit_quote_ok": true,
+          "exit_quote_error": null,
+          "exit_quote": {
+            "inputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+            "inAmount": "1000854006",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "outAmount": "397",
+            "otherAmountThreshold": "397",
+            "swapMode": "ExactIn",
+            "slippageBps": 0,
+            "platformFee": null,
+            "priceImpactPct": "0.0078327196423763927063703576",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A",
+                  "label": "Raydium CP",
+                  "inputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "1000854006",
+                  "outAmount": "4648",
+                  "updateContextSlot": "421892076"
+                },
+                "percent": 100,
+                "bps": null
+              },
+              {
+                "swapInfo": {
+                  "ammKey": "2EeB1sfELZykmHvms37B9G2mKmrAZ6S7NcsamiyjaJW6",
+                  "label": "WhaleStreet",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "inAmount": "4648",
+                  "outAmount": "397",
+                  "updateContextSlot": "421893472"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893472,
+            "timeTaken": 0.001522706,
+            "swapUsdValue": "0.000397",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A": "4648",
+                "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "396",
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "397"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "exit_out_raw": 397,
+          "exit_native": 0.000397,
+          "exit_value_usdc": 0.000397,
+          "exit_value_ratio": 0.994987469,
+          "exit_output_not_dust": true,
+          "acquisition_cost_meaningful": false,
+          "acquisition_cost_within_cap": true,
+          "exit_value_non_dust": false,
+          "exit_ratio_ok": true,
+          "economically_viable": false,
+          "economic_exit_verdict": "acquisition_cost_dust",
+          "roundtrip_source_asset": "USDC"
+        },
+        {
+          "source_mint": "So11111111111111111111111111111111111111112",
+          "source_symbol": "WSOL",
+          "entry_quote_ok": true,
+          "entry_blocker": "none",
+          "plan_status": "entry_quote_ready",
+          "entry_quote": {
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "inAmount": "4669",
+            "outputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+            "outAmount": "1000209679",
+            "otherAmountThreshold": "990207583",
+            "swapMode": "ExactIn",
+            "slippageBps": 100,
+            "platformFee": null,
+            "priceImpactPct": "0",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A",
+                  "label": "Raydium CP",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "outputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+                  "inAmount": "4669",
+                  "outAmount": "1000209679",
+                  "updateContextSlot": "421892076"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893474,
+            "timeTaken": 0.00010747,
+            "swapUsdValue": "0.000399780770466166041360964",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "Not used RG: Full, contains ALT: true",
+                "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A": "1000209679"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "route_labels": [
+            "Raydium CP"
+          ],
+          "route_label": "Raydium CP",
+          "input_raw": 4669,
+          "input_native": 4.669e-06,
+          "input_usdc": 0.004669,
+          "out_raw": 1000209679,
+          "out_native": 1.000209679,
+          "min_out_raw": 990207583,
+          "min_out_native": 0.990207583,
+          "price_impact_pct": 0.0,
+          "exit_quote_ok": true,
+          "exit_quote_error": null,
+          "exit_quote": {
+            "inputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+            "inAmount": "1000209679",
+            "outputMint": "So11111111111111111111111111111111111111112",
+            "outAmount": "4645",
+            "otherAmountThreshold": "4645",
+            "swapMode": "ExactIn",
+            "slippageBps": 0,
+            "platformFee": null,
+            "priceImpactPct": "0.0054379569818208335591716996",
+            "routePlan": [
+              {
+                "swapInfo": {
+                  "ammKey": "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A",
+                  "label": "Raydium CP",
+                  "inputMint": "8XBLvrhz2mnFSq7koFdkgRSeATb3cJ38GofTQmhf2QRi",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "inAmount": "1000209679",
+                  "outAmount": "4645",
+                  "updateContextSlot": "421892076"
+                },
+                "percent": 100,
+                "bps": null
+              }
+            ],
+            "contextSlot": 421893474,
+            "timeTaken": 9.8283e-05,
+            "swapUsdValue": "0.0003977263342620378810658179",
+            "mostReliableAmmsQuoteReport": {
+              "info": {
+                "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "Not used RG: Full, contains ALT: true",
+                "GdxFycQMfy5g1m1Ax2ViF8ZPAv22i27GSza7m9d6Cq4A": "4645"
+              }
+            },
+            "longtailMarketQuoteReport": null,
+            "useIncurredSlippageForQuoting": null,
+            "useRewards": null,
+            "otherRoutePlans": null,
+            "loadedLongtailToken": false,
+            "instructionVersion": null
+          },
+          "exit_out_raw": 4645,
+          "exit_native": 4.645e-06,
+          "exit_value_usdc": 0.004645,
+          "exit_value_ratio": 0.994859713,
+          "exit_output_not_dust": true,
+          "acquisition_cost_meaningful": false,
+          "acquisition_cost_within_cap": true,
+          "exit_value_non_dust": false,
+          "exit_ratio_ok": true,
+          "economically_viable": false,
+          "economic_exit_verdict": "acquisition_cost_dust",
+          "roundtrip_source_asset": "WSOL"
+        }
+      ]
+    },
+    {
+      "mint": "6S8PhTWWmnAEfFWxoMJhRk9BVbvaztAr4uYrX6Zq2y8s",
+      "count": 1,
+      "rpc_audit_ok": true,
+      "rpc_policy_snapshot_stable": true,
+      "initialized": true,
+      "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "decimals": 9,
+      "freeze_authority": null,
+      "mint_authority": null,
+      "extensions": [],
+      "default_account_state": null,
+      "denylisted": false,
+      "token_program_allowed": true,
+      "freeze_authority_ok": true,
+      "mint_authority_ok": true,
+      "decimals_sane": true,
+      "extensions_understood": true,
+      "metadata_only_extension_subset_ok": false,
+      "default_account_state_ok": true,
+      "metadata_only_token2022_eligible": false,
+      "metadata_only_token2022_policy_enabled": false,
+      "policy_ok": true,
+      "policy_blocker": "none",
+      "policy_status": "ok",
+      "rpc_error": null,
+      "route_usable_count": 1,
+      "positive_ev_count": 1,
+      "best_horizon_positive_count": 1,
+      "total_best_horizon_ev_sol_equivalent": 0,
+      "median_trade_size_input_native": 1.0,
+      "p90_trade_size_input_native": 1.0,
+      "required_band_input_raw_p50": 1000000000,
+      "required_band_input_raw_p90": 1000000000,
+      "required_band_input_raw_max": 1000000000,
+      "required_band_input_native_p50": 1.0,
+      "required_band_input_native_p90": 1.0,
+      "required_band_input_native_max": 1.0,
+      "recurrence_count": 1,
+      "recurrence_directarb_window_count": 1,
+      "recurrence_post_shock_window_count": 0,
+      "directarb_count": 1,
+      "owner_mode_count": 1,
+      "owner_mode_distinct_count": 1,
+      "owner_modes": {
+        "directarb": 1
+      },
+      "high_ev_post_shock_count": 0,
+      "entry_quote_ok": false,
+      "exit_quote_ok": false,
+      "entry_source_asset": "USDC",
+      "entry_route_label": null,
+      "exit_value_usdc": null,
+      "exit_value_ratio": null,
+      "acquisition_cost_usdc": null,
+      "acquisition_cost_native": null,
+      "acquisition_cost_meaningful": false,
+      "acquisition_cost_within_cap": false,
+      "economic_exit_verdict": "entry_quote_missing",
+      "entry_blocker": "entry_quote_missing",
+      "expected_inventory_ready_delta": 1,
+      "directarb_inventory_ready_if_held_count": 1,
+      "expected_conversion_delta": 0,
+      "directarb_would_fire_if_held_count": 0,
+      "tied_to_current_path": true,
+      "recurrence_ok": false,
+      "user_no_scale": false,
+      "inventory_policy_classification": "recurrence_not_proven",
+      "expansion_verdict": "blocked_not_recurring",
+      "source_plans": [
+        {
+          "source_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "source_symbol": "USDC",
+          "entry_quote_ok": false,
+          "entry_blocker": "entry_quote_missing",
+          "entry_quote_error": {
+            "error": "No routes found",
+            "errorCode": "NO_ROUTES_FOUND",
+            "attempts": 1
+          },
+          "plan_status": "blocked_entry_quote_missing",
+          "exit_quote_ok": false,
+          "economic_exit_verdict": "entry_quote_missing",
+          "exit_value_ratio": null,
+          "economically_viable": false
+        },
+        {
+          "source_mint": "So11111111111111111111111111111111111111112",
+          "source_symbol": "WSOL",
+          "entry_quote_ok": false,
+          "entry_blocker": "entry_quote_missing",
+          "entry_quote_error": {
+            "error": "No routes found",
+            "errorCode": "NO_ROUTES_FOUND",
+            "attempts": 1
+          },
+          "plan_status": "blocked_entry_quote_missing",
+          "exit_quote_ok": false,
+          "economic_exit_verdict": "entry_quote_missing",
+          "exit_value_ratio": null,
+          "economically_viable": false
+        }
+      ]
+    }
+  ],
+  "coinini_override": null
+}

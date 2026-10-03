@@ -1,0 +1,41 @@
+SH8-C final AF_XDP private-grade soak - GREEN
+
+Host:
+  .57
+
+Artifact:
+  /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260430_032838-sh8c-final-afxdp-soak
+
+Mode:
+  observe-only / no-send
+  xdpgeneric on eno1
+  destination-port-only + raw-mainnet-shred XDP filter
+  shred_capture_workers=32
+
+Final summary counters:
+  afxdp_frames_seen=8577897
+  afxdp_udp_8000_8025_seen=8577897
+  afxdp_shred_parse_data_ok=6406417
+  afxdp_tx_extract_ok=286568
+  afxdp_tx_record_emit_ok=15
+  afxdp_feed_enqueue_ok=15
+  worker_signal_afxdp=66
+  observe_candidates_private_grade=15
+  rollout_private_grade_admissible_opportunities=5
+  rollout_would_send=3743
+  rollout_live_send_suppressed=3743
+  live_landed=0
+  worker_health_drops=0
+  latency_ok=true
+  worker_latency_proof_present=true
+
+Pass meaning:
+  The longer soak confirms that real AF_XDP DATA shreds continue through
+  transaction extraction, transaction-derived IngressRecord emission,
+  feed-ring enqueue, worker accounting, and PM private-grade observe counters
+  with live send still suppressed and worker health clean.
+
+Closure:
+  SH8-A source-proof, SH8-B transaction-derived AF_XDP records, and SH8-C
+  final longer soak are closed green for observe-only AF_XDP private-grade
+  proof. Full G12 promotion remains governed by separate full-threshold gates.

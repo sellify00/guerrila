@@ -1,0 +1,39 @@
+{
+  "status": "run80b_complete",
+  "candidate_row_count": 15,
+  "artifact_file_count": 40,
+  "artifact_files_sample": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof_g4lt_pool_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof_target_release/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof_g4lt_exact_dir/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls14_hybrid_backrun_join_proof/window1/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls11_laserstream_backrun_bundle_readiness/window1/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run77c/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls9_laserstream_backrun_nosend/window1/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e2_run65_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e1_run65_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run34_mint_capacity_fix/29_clmm_publicrpc_blackhole_proof/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry1_e1_run65_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls15_inline_hybrid_freshness_gate/window1/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_sim_20260524_fresh_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry2_e1_run65_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/21_runafbr1_afxdp_backrun_projection_bundle_readiness/window1/20_g12_r0_observe_only/shock_research.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/20_g12_r0_observe_only/shock_research.jsonl"
+  ],
+  "malformed_shock_rows": 42,
+  "classification_counts": {
+    "WATCH": 3,
+    "TRAINING": 1,
+    "DENY": 11
+  },
+  "main_blocker_counts": {
+    "source_policy_live_disallowed": 6,
+    "no_shadow_visibility": 9
+  },
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.csv"
+}

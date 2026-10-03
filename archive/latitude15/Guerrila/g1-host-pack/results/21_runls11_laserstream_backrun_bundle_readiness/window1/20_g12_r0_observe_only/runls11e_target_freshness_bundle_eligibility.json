@@ -1,0 +1,46 @@
+{
+  "record_type": "runls11e_target_freshness_bundle_eligibility",
+  "selection_result": "blocked_target_already_landed",
+  "blockers": [
+    "blocked_target_already_landed",
+    "blocked_target_recent_blockhash_invalid",
+    "blocked_simulate_bundle_failed"
+  ],
+  "target_signature": "5af55dc69a41d32f42cb0b0385f91d82173acda533decf29eb75dd8459b8da7ef674dc9de9d5fa9073b05ee7b7afd36629c308e5e4f38a95cc0171217a2b7a08",
+  "target_signature_base58": "2pUc84E5D8HGHdCbvQPUabxJrbKmJphud8poi63UzASFBVr2beFL7P4zzqeo9eiEieSm7oyk2tgQ5NYPknJGX7my",
+  "target_tx_bytes_available": true,
+  "target_tx_decoded_len_bytes": 743,
+  "target_tx_decode_error": null,
+  "target_signature_status_before_bundle": {
+    "slot": 421775820,
+    "confirmations": null,
+    "status": {
+      "Ok": null
+    },
+    "err": null,
+    "confirmationStatus": "finalized"
+  },
+  "target_signature_status_probe": "http_200",
+  "target_signature_status_reachable": true,
+  "target_already_landed": true,
+  "target_recent_blockhash": "HMs7Kfx4GAQgSkaLF5fDsDeJi59UxHbznY21vsCjydoi",
+  "target_recent_blockhash_valid": false,
+  "target_recent_blockhash_probe": "http_200",
+  "bundle_tx_count": 2,
+  "bundle_tx_count_max_allowed": 5,
+  "target_tx_first": true,
+  "our_backrun_tx_second": true,
+  "tip_present": true,
+  "simulate_bundle_available": true,
+  "simulate_bundle_probe": "http_200",
+  "simulate_bundle_error_code": -32602,
+  "simulate_bundle_error_message": "failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer",
+  "simulate_bundle_summary": null,
+  "simulateBundle_pass": false,
+  "provider": "jito_via_helius",
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "sendBundle_called": false,
+  "send_bundle_called": false,
+  "wire_send": 0,
+  "live_landed": 0
+}

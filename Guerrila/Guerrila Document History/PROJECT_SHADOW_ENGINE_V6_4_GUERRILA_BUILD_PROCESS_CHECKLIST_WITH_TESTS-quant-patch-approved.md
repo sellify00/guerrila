@@ -1,0 +1,1117 @@
+# Project Shadow Engine V6.4-Guerrila - Detailed Build Process Checklist (Milestone-Gated, Test-Driven)
+
+**Document type:** Implementation process + milestone test plan  
+**Applies to:** V6.4 data plane + V1.0 control plane running under the V6.4-Guerrila sidecar  
+**Parent docs:** `PROJECT_SHADOW_ENGINE_V6_4_GRAND_UNIFIED_SYSTEM_SPEC.md`, `PROJECT_SHADOW_ENGINE_V6_4_BUILD_PROCESS_CHECKLIST_WITH_TESTS.md`, `V6.4-Guerrila.md`  
+**Role:** Build the low-OpEx, private-lane-only deployment profile first, then scale only after live proof  
+**Primary objective:** defend a 150 SOL treasury, keep public-lane execution amputated, and ship a lean Jito/Harmonic sniper that still preserves the core V6.4 correctness and latency firewalls.
+
+---
+
+## 0. Guerrila doctrine (what changes versus full V6.4)
+
+This checklist is **not** the full-fat V6.4 rollout. It is the early deployment path for the Guerrila profile.
+
+### 0.1 What stays mandatory from V6.4
+- AF_XDP primary ingress and kernel-bypass discipline
+- O(1) money-worker loop
+- fixed-layout shared memory and wait-free double-buffer protocol
+- `shadow_leader_schedule` for slot-correct venue routing
+- dual tip LUTs (`shadow_tip_lut_base`, `shadow_tip_lut_jito`)
+- `shadow_nack_ring` fast capital release
+- `ShadowGuard::AssertReservesInRange { min_reserve_in, max_reserve_in, min_reserve_out, max_reserve_out }`
+- Harmonic Death Clamp, stale-state freshness gate, and classified 1-Strike quarantine
+- Rosetta Stone auto-heal
+
+### 0.2 What is amputated in Guerrila mode
+- No public TPU racing
+- No SWQoS relay spend
+- No public QUIC workers
+- No public fallback from private orderflow
+- No whale hunting above the Guerrila treasury envelope
+- No engineering time spent optimizing lanes that Guerrila forbids using
+
+### 0.3 Authoritative runtime overrides
+These runtime semantics are non-negotiable in Guerrila mode:
+- `submit.routing.default_public_geyser = drop`
+- `submit.routing.default_jito_searcher = jito_bundle`
+- `submit.routing.private_mempool_strategy = jito_bundle_if_compatible`
+- `submit.routing.enable_harmonic_lane = true`
+- `system.proxies.egress.quic_workers = 0`
+- `submit.quic.kamikaze_enabled = false`
+- `risk.reserve_floor_sol = 10.0`
+- `risk.max_position_sol_per_mint = 15.0`
+- `risk.max_notional_sol_per_entity = 30.0`
+- actual live trade input may never exceed `15.0 SOL`
+- `state.clmm.publish_dist_to_tick_lamports = true` when a supported CLMM adapter is enabled
+- `oracle.guerrila.micro_market_enabled = true`
+- `oracle.guerrila.leader_class_count = 8`
+- `oracle.guerrila.publish_mode = banked_by_leader_class`
+- `oracle.guerrila.max_live_trade_input_sol = 15.0`
+- `oracle.guerrila.allow_clamped_apex_partials = true`
+- `oracle.guerrila.allow_atba_jito_only = true`
+- `oracle.guerrila.obscurity_discount_enabled = true`
+- `oracle.guerrila.obscurity_mode = header_only_bitpacked`
+- `oracle.guerrila.obscurity_initial_floor_bps = 4500`
+- `quant_tactics.taylor_compression.enabled = true`
+- `quant_tactics.taylor_compression.mode = pre_filter_gate_only`
+- `quant_tactics.ghost_snipe.enabled = true`
+- `quant_tactics.ghost_snipe.mode = cache_prefetch_only`
+- `quant_tactics.write_lock_saturation_discount.enabled = false`
+- `quant_tactics.splinter_cell_arb.enabled = false`
+- `state.geyser.harmonic_max_state_slot_lag = 1`
+- `state.geyser.require_live_transfer_fee_updates = true`
+- `submit.routing.stale_harmonic_state_action = reroute_to_jito`
+- `submit.routing.atba_route_mode = jito_only`
+- `submit.routing.apex_partial_route_mode = jito_only`
+- `submit.harmonic.cu_pad_units = 150`
+- `submit.harmonic.quarantine_mode = specific_error_only`
+- `telemetry.observe_only.log_drop_reasons = true`
+- `telemetry.observe_only.shadow_pnl_enabled = true`
+
+### 0.4 What to build now vs later
+
+**Build now:**
+- one commodity bare-metal host
+- AF_XDP ingress
+- `shadow-state`
+- `shadow-tier0` money workers
+- Jito bundle lane
+- Harmonic bundle lane
+- `shadow-pm`
+- `shadow-oracle`
+- leader-class micro-market tags + banked LUTs
+- approved Jito-only ATBA / clamped-apex tactics
+- header-only obscurity scoring + bit-packed bid indexing
+- Taylor pre-filter gate (`pre_filter_gate_only`)
+- first-fragment Ghost Snipe cache prefetch (`cache_prefetch_only`)
+- `shadow-control`
+
+**Do not build now:**
+- public QUIC blast lane
+- SWQoS relay pool management
+- relay fanout scheduler
+- public-lane fee tuning
+- TPU rescue logic
+- write-lock saturation discounting
+- splinter-cell / fractional-route isolation against unsupported aggregator decode
+- any route branch that can turn a private-lane failure into a public send
+
+### 0.5 Recommended rollout philosophy
+The spec caps are 10 / 15 / 30 SOL, but the **operational** rollout should still start below them.
+
+Recommended ramp:
+1. Observe-only: no sends
+2. Tiny live caps: `max_position_per_mint = 1 SOL`, `max_notional_per_entity = 2 SOL`
+3. Small live caps: `3 SOL` / `6 SOL`
+4. Medium live caps: `5 SOL` / `10 SOL`
+5. Pre-spec caps: `10 SOL` / `20 SOL`
+6. Full Guerrila caps: `15 SOL` / `30 SOL`
+
+Advance only if the prior rung is profitable, stable, and free of phantom inventory or fee leaks.
+
+---
+
+## 1. Non-negotiable firewalls (must exist before performance work)
+
+### 1.1 Firewall A - Rust RCU correctness
+- payload behind `UnsafeCell<T>`
+- volatile payload reads/writes
+- `ActiveIdx128B` aligned to 128 bytes
+- slot structs aligned to 64 bytes
+- `atomic::fence(Ordering::Acquire)` after payload copy
+- no plain unsynchronized struct copies on shared hot state
+
+### 1.2 Firewall B - Absolute fee clamp
+- clamp `tip_lamports` to the absolute hard ceiling immediately before CU-price conversion
+- clamp must be applied to both:
+  - public-lane code in the master tree
+  - Harmonic lane priority-fee conversion in Guerrila mode
+
+### 1.3 Firewall C - Death Clamp
+- if Harmonic egress fails, drop the tx
+- never re-route a Harmonic-built signed transaction to public blast
+
+### 1.4 Firewall D - Harmonic classified 1-Strike quarantine
+- `shadow-pm` MUST classify Harmonic failures off the hot path
+- only explicit `ShadowGuard` boundary breaches or Harmonic infrastructure failures may flip `harmonic_quarantined = true`
+- generic retail-user slippage reverts must release capital and log the error class, but MUST NOT amputate the entire lane
+
+### 1.5 Firewall E - Public-lane amputation
+At least one of the following must be true:
+- public lane is compiled out behind a feature gate for Guerrila builds, or
+- public lane code remains in the tree but runtime config validation makes it impossible to start with a public execution path enabled
+
+The stronger option is feature-gating it out for the Guerrila release artifact.
+
+### 1.6 Firewall F - Harmonic freshness gate
+- if `saturating_sub(ingress_record.slot, shadow_health.snapshot_slot) > harmonic_max_state_slot_lag`, the worker MUST strip Harmonic and evaluate Jito instead
+- stale Harmonic intents may never be sent just because `ShadowGuard` would later protect principal
+- this is a reroute-to-Jito firewall, not a public fallback
+
+### 1.7 Firewall G - Harmonic microscopic CU pad
+- Harmonic templates MUST keep a tiny fixed compute pad (`+150 CUs`)
+- zero arbitrary padding is forbidden, but so is zero safety margin
+
+
+### 1.8 Firewall H - ATBA state compression + Jito-only execution
+- if a supported CLMM adapter is enabled, workers may receive only a single scalar `dist_to_tick_lamports` (or an equivalently fixed-size sidecar)
+- workers must never receive or traverse full tick-array structures
+- any ATBA intent is Jito-only; Harmonic is forbidden for this tactic
+
+### 1.9 Firewall I - Clamped apex partials are Jito-only
+- a >15 SOL full-curve opportunity may survive only as a ≤15 SOL clamped partial
+- any such partial must be explicitly tagged and routed only to Jito
+- Harmonic may never carry a clamped apex partial
+
+### 1.10 Firewall J - Obscurity scoring is header-only and bit-packed
+- obscurity is derived only from O(1) header-adjacent signals already present in ingress
+- deep CPI traversal or variable-time parser walks on AF_XDP are forbidden
+- worker consumption must stay fixed-width and L1-resident via a bit-packed bank index, not a third dynamic LUT dimension
+
+### 1.11 Firewall K - Taylor compression is pre-filter only
+- Taylor compression may act only as an early-reject gate
+- exact integer reserve math, exact `min_out`, exact fee math, and exact `ShadowGuard` bounds remain authoritative
+- near-threshold, stale-scalar, or missing-scalar cases must fall through to the exact quote path
+
+### 1.12 Firewall L - Ghost Snipe is cache-prefetch only
+- first-fragment logic may prefetch shared pool state into cache
+- partial shred/fragment data may never trigger quote, build, sign, or send
+- blind-fire Jito bundles from Shred 1 are forbidden
+
+---
+
+## 2. Repository strategy and build targets
+
+### 2.1 Binaries
+- `shadow-tier0`
+- `shadow-state`
+- `shadow-pm`
+- `shadow-oracle`
+- leader-class micro-market tags + banked LUTs
+- approved Jito-only ATBA / clamped-apex tactics
+- header-only obscurity scoring + bit-packed bid indexing
+- Taylor pre-filter gate (`pre_filter_gate_only`)
+- first-fragment Ghost Snipe cache prefetch (`cache_prefetch_only`)
+- `shadow-control`
+
+### 2.2 Recommended crate split
+- `shadow-core`
+- `shadow-ipc`
+- `shadow-crypto`
+- `shadow-ingest`
+- `shadow-egress-jito`
+- `shadow-egress-harmonic`
+- `shadow-risk`
+- `shadow-guard-program`
+
+### 2.3 Recommended cargo features
+- `guerrila_profile`
+- `public_lane`
+- `harmonic_lane`
+- `control_plane`
+- `loom`
+- `deny_alloc`
+
+**Guerrila release recommendation:**
+- enable: `guerrila_profile`, `harmonic_lane`, `control_plane`
+- disable: `public_lane`
+
+### 2.4 CI lanes
+- `dev`
+- `release`
+- `release-guerrila`
+- `release-guerrila-perf`
+
+`release-guerrila` must be the artifact used for all live Guerrila rollouts.
+
+---
+
+## 3. Milestone map
+
+1. **G0 - Workspace, feature gates, config guardrails** --- DONE
+2. **G1 - Commodity host determinism and kernel-bypass bringup**
+3. **G2 - Shared memory, rings, RCU, leader schedule, NACK foundation** --- PARTIAL (blockhash RCU, leader schedule, risk flags done)
+4. **G3 - `shadow-state` on shared Geyser + state publishing**
+5. **G4 - AF_XDP ingress, broad-spectrum shred matrix, and decode**
+6. **G5 - Money worker core under Guerrila routing semantics** --- PARTIAL (routing fork + route matrix tests done)
+7. **G6 - Jito egress proxy**
+8. **G7 - Harmonic egress proxy**
+9. **G8 - `shadow-pm` inventory truth and quarantine logic**
+10. **G9 - `shadow-oracle` dual LUTs + Guerrila target filter**
+11. **G10 - On-chain `ShadowGuard` + exact template audits**
+12. **G11 - `shadow-control` Rosetta Stone auto-heal**
+13. **G12 - Observe-only, tiny-cap live rollout, and scale ladder**
+14. **G13 - Graduation criteria to full V6.4**
+
+Each milestone below includes deliverables, build steps, tests, and exit criteria.
+
+---
+
+## 4. Milestone G0 - Workspace, feature gates, config guardrails --- DONE
+
+### Deliverables
+- [x] monorepo builds all five binaries
+- [x] `release-guerrila` artifact exists
+- [x] Guerrila runtime validator exists and fails closed on forbidden config
+- [x] optional compile-time amputation of public lane exists
+
+### Build steps
+1. [x] Lock toolchain and production profile (`panic = "abort"`).
+2. [x] Add a `guerrila_profile` feature and config namespace.
+3. [x] Add a boot-time `validate_guerrila_config()` routine.
+4. [x] Add a separate build target or feature gate for `public_lane`.
+5. [x] Ensure `shadow-tier0` refuses to start in Guerrila mode if any of the following are true:
+   - `quic_workers != 0`
+   - public routing target is anything other than `drop`
+   - any routing branch can resolve to public blast
+   - Harmonic is enabled without quarantine support
+   - risk caps exceed Guerrila maximums
+6. [x] Add a metric and startup log snapshot that prints the resolved routing profile and confirms `PUBLIC_EXECUTION_DISABLED=true`.
+
+### Required tests
+1. [x] **Config validation tests**
+   - valid Guerrila config boots
+   - invalid values hard-fail startup
+2. [x] **Feature gate compile tests**
+   - `release-guerrila` builds without `public_lane`
+   - binary still builds with `public_lane` enabled in non-Guerrila profiles
+3. [x] **Route-resolution regression tests**
+   - `PUBLIC_GEYSER` never resolves to a send path in Guerrila mode
+4. [ ] **Static lint**
+   - grep or AST-based CI check that `release-guerrila` does not instantiate public QUIC worker constructors
+
+### Exit criteria
+- [x] Guerrila build artifact exists
+- [x] public-lane execution cannot be enabled accidentally
+
+---
+
+## 5. Milestone G1 - Commodity host determinism and kernel-bypass bringup
+
+### Deliverables
+- one-host deployment recipe for a commodity bare-metal host physically adjacent to the chosen private-lane ingress region
+- host audit script
+- AF_XDP RX/TX sample app stable on the chosen host
+
+### Build steps
+1. Select a single AMD EPYC-class host with 128 GB+ RAM, NIC on the local NUMA node, and a real XDP_ZEROCOPY-capable adapter (Mellanox ConnectX-4+ or Intel E810/X710 class).
+2. Choose region by measured private-lane RTT first; Frankfurt or Tokyo are acceptable only if they are actually closest to the configured Jito/Harmonic ingress endpoints.
+3. Apply BIOS profile:
+   - lock CPU governor to `performance`
+   - disable deep C-states
+   - disable SMT on money cores
+   - set AVX negative offsets to zero only if thermally safe under fixed all-core clock
+4. Apply kernel args:
+   - `isolcpus`
+   - `nohz_full`
+   - `rcu_nocbs`
+5. Reserve hugepages at boot.
+6. Set up NIC queueing and AF_XDP queue affinity.
+7. Verify BIOS / NPS placement so the NIC queues and isolated Tier-0 cores live on the same silicon die / locality domain.
+8. Enable RX hardware timestamping.
+9. Pin cores by domain:
+   - worker + nonce cores
+   - ingress cores
+   - egress cores
+   - utility/control cores
+10. Keep all Tier-0 domains on the NIC-local NUMA node when possible.
+
+### Required tests
+1. **Host audit script**
+   - CPU governor
+   - hugepages mounted
+   - NIC NUMA alignment
+   - no IRQs on money cores
+   - L3 isolation between Tier-0 and utility/control cores
+2. **NIC capability test**
+   - verify the chosen adapter exposes native XDP_ZEROCOPY on the production kernel / driver stack
+3. **Private-lane RTT audit**
+   - measure RTT to the configured Jito and Harmonic endpoints from the chosen host region
+   - fail the deployment recipe if a materially closer private-lane region is available but ignored
+4. **AF_XDP functional test**
+   - inject synthetic UDP packets
+   - verify zero corruption and expected packet counts
+5. **Hardware timestamp test**
+   - verify RX metadata timestamps are visible to userspace and monotonically increasing
+6. **Latency microbench**
+   - RX descriptor visible in userspace p50 and p99
+7. **Thermal stability test**
+   - run AVX-heavy workload and verify clock remains locked, not oscillating unpredictably
+
+### Exit criteria
+- AF_XDP stable on the commodity host
+- host audit passes cleanly
+- no reason remains to buy Equinix before software proof
+
+---
+
+## 6. Milestone G2 - Shared memory, rings, RCU, leader schedule, NACK foundation --- PARTIAL
+
+### Deliverables
+- [x] `shadow-ipc` provides all required segment layouts and bootstrap logic
+- [x] versioned `/dev/shm` headers exist
+- [x] wait-free reader/writer protocol exists for all double-buffered state
+- [x] `shadow_leader_schedule` layout includes fixed-size `leader_class_tags` parallel to `engine_tags`
+
+### Segments that must exist in Guerrila mode
+- [ ] `/dev/shm/shadow_feed_ring_w{worker}_p{producer}`
+- [ ] `/dev/shm/shadow_egress_ring_jito_*`
+- [ ] `/dev/shm/shadow_egress_ring_harmonic_*`
+- [ ] `/dev/shm/shadow_pool_index_map`
+- [ ] `/dev/shm/shadow_pool_state`
+- [ ] `/dev/shm/shadow_mint_index_map`
+- [ ] `/dev/shm/shadow_mint_state`
+- [ ] `/dev/shm/shadow_alt_cache`
+- [ ] `/dev/shm/shadow_tip_lut_base`
+- [ ] `/dev/shm/shadow_tip_lut_jito`
+- [ ] `/dev/shm/shadow_inventory_fence`
+- [ ] `/dev/shm/shadow_health`
+- [x] `/dev/shm/shadow_blockhash`
+- [x] `/dev/shm/shadow_leader_schedule`
+- [x] `/dev/shm/shadow_nack_ring`
+- [ ] `/dev/shm/shadow_parsing_manifest`
+- [ ] `/dev/shm/shadow_control_flags`
+- [ ] `/dev/shm/shadow_raw_archive`
+- [ ] `/dev/hugepages/shadow_umem_*`
+
+### Build steps
+1. [x] Implement `SegmentHeader64B` and version checks.
+2. [x] Implement SPSC rings with drop-on-full semantics.
+3. [ ] Implement 8-byte tag maps for pools and mints.
+4. [x] Implement the 128B-isolated `active_idx` + 64B slots RCU pattern.
+5. [x] Implement `shadow_leader_schedule` as a fixed-capacity segment containing parallel `AtomicU8` arrays for `engine_tags` and `leader_class_tags`.
+6. [x] Implement `shadow_nack_ring` entries as fixed-size structs.
+7. [x] Add segment bootstrap code that refuses mismatched versions.
+
+### Required tests
+1. [x] **Compile-time layout tests**
+   - exact sizes and alignments for pool, blockhash, manifest, NACK, and other shared slots
+2. [ ] **Loom concurrency tests**
+   - RCU reader/writer correctness
+   - `shadow_leader_schedule` atomic byte semantics for both `engine_tags` and `leader_class_tags`
+3. [ ] **Runtime stress tests**
+   - one writer, many readers on RCU segments
+   - ring saturation and drop-on-full behavior
+4. [x] **Version mismatch tests**
+   - reader refuses mismatched segment version
+5. [x] **NACK ring tests**
+   - consumer reads exactly what producer wrote under burst
+
+### Exit criteria
+- all shared-memory primitives stable under 60-second stress
+- no invalid snapshots and no torn reads accepted
+
+---
+
+## 7. Milestone G3 - `shadow-state` on shared Geyser + state publishing
+
+### Deliverables
+- `shadow-state` uses the premium shared Geyser/RPC source for state replication and warm-start data
+- publishes pools, mints, ALTs, health, and leader schedule tags
+- publishes fixed 8-class `leader_class_id` values beside `engine_tags`
+- publishes a monotonic `snapshot_slot` suitable for the Harmonic freshness gate
+- handles live Token-2022 transfer-fee changes, not just startup metadata
+- if Taylor compression is enabled, publishes fixed-point pre-filter scalars through a fixed-size sidecar or equivalently layout-safe slot; exact reserves remain authoritative
+- if a supported CLMM adapter is enabled, publishes only a single worker-visible `dist_to_tick_lamports` scalar (or equivalently fixed-size sidecar keyed by `pool_index`)
+- handles fork rollbacks via the same publish protocol
+
+### Build steps
+1. Implement pool account decoder and vault reserve extraction.
+2. Implement mint metadata snapshot including Token-2022 transfer fee configuration.
+3. Subscribe to and apply live Token-2022 `SetTransferFee` updates from Geyser so fee-sensitive math stays current during runtime.
+4. Implement ALT cache snapshot.
+5. Implement pool and mint dynamic append with index-map publish order.
+6. Implement health snapshot publication, including a monotonic `snapshot_slot` used by the Harmonic freshness gate.
+7. If Taylor compression is enabled, compute fixed-point pre-filter scalars such as `price_fp` and `convexity_fp` off the hot path and publish them through a fixed-size sidecar or layout-safe slot; do not replace or approximate the authoritative reserve snapshot.
+8. If a CLMM adapter is enabled, compute `dist_to_tick_lamports` off the hot path and publish only that scalar to worker-visible state; never publish full tick arrays to the worker.
+9. Implement leader-schedule publisher:
+   - fetch epoch leader schedule
+   - map leaders to Vanilla/Jito/Harmonic
+   - assign each scheduled leader to one fixed `leader_class_id` in the approved 8-class scheme
+   - write `engine_tags[slot & mask] = enum`
+   - write `leader_class_tags[slot & mask] = class_id`
+9. Expose freshness metrics for state, leader schedule, leader-class publication, live transfer-fee updates, and any CLMM `dist_to_tick_lamports` sidecar.
+
+### Required tests
+1. **Golden decode tests**
+   - captured Raydium and mint fixtures decode correctly
+2. **Token-2022 fee tests**
+   - transfer fee config lands in the designated hot-state field correctly
+   - live `SetTransferFee` updates are applied without restart
+3. **Dynamic append tests**
+   - new pools and mints become visible without restart
+4. **Fork rollback tests**
+   - revert to previous pool state via inactive-slot publish
+5. **Leader-schedule mapping tests**
+   - Jito/Harmonic/Vanilla classification is deterministic
+   - the same scheduled leader always maps to the same `leader_class_id` until the class table is intentionally updated
+6. **Freshness alarm tests**
+   - stale leader schedule, stale leader-class tags, stale pool state, or stale transfer-fee view triggers health flags
+7. **Freshness-gate fixture**
+   - `snapshot_slot` advances monotonically and can be consumed safely by the worker freshness gate
+8. **Taylor sidecar tests** *(dormant unless Taylor compression is enabled)*
+   - fixed-point pre-filter scalars publish through a fixed-size sidecar or layout-safe slot only
+   - exact reserves remain present and authoritative
+9. **CLMM sidecar tests** *(dormant unless a CLMM adapter is enabled)*
+   - `dist_to_tick_lamports` is published as a scalar only
+   - no worker-visible tick-array payloads exist in shared state
+
+### Exit criteria
+- `shadow-state` runs for 1 hour on read-only mainnet sources without crash
+- new pools and mints can appear without restart
+
+---
+
+## 8. Milestone G4 - AF_XDP ingress, broad-spectrum shred matrix, and decode
+
+### Deliverables
+- AF_XDP ingress path receives both data shreds and coding shreds
+- slot-scoped fragment contexts exist
+- FEC recovery slow path exists
+- gRPC fallback ingest remains available for warm-start and audit
+- Flight Data Recorder exists
+- ingress emits a fixed-size, header-only `obscurity_score ∈ [0,3]` for approved discounting logic
+- first-fragment Ghost Snipe may prefetch candidate pool state into cache, but never quote/build/send from partial data
+
+### Build steps
+1. Implement AF_XDP RX loop using shared UMEM.
+2. Parse Turbine `(slot, shred_index)` headers.
+3. Maintain `SlotFragCtx[4]` with bounded reorder buffers.
+4. Implement the Shred Matrix decision logic:
+   - fast path on contiguous data
+   - FEC recovery path when a data shred gap is detected and sufficient coding/data shreds are present
+5. Implement the positive-gap flush rule and late-duplicate drop rule.
+6. Extract ingress timestamp from RX metadata, not from syscalls.
+7. Run signer allowlist across **all signers**, not just fee payer.
+8. Perform ALT expansion and strict decode only after allowlist hit.
+9. On the first fragment that exposes enough static keys to resolve a likely pool index cheaply, issue `_mm_prefetch` (or an equivalent cache prefetch) for the corresponding shared `shadow_pool_state` line.
+10. Never quote, build, sign, or send from partial-fragment data alone; Ghost Snipe is cache-prefetch only.
+11. Derive `obscurity_score` only from O(1) header-adjacent features already present in ingress (e.g., static account-key count, flat instruction count, cheap static program flags such as visible Token-2022 involvement). Deep CPI traversal is forbidden.
+12. Route decoded `IngressRecord` by pool pubkey with the 80% overflow valve.
+13. Implement Flight Data Recorder:
+   - shared UMEM backing file
+   - `delay_fifo`
+   - archive ring with UMEM offsets
+   - survival-mode flush back to Fill ring
+12. Keep gRPC fallback running for redundancy and control-plane audit.
+
+### Required tests
+1. **Offline shred replay harness**
+   - slot interleave correctness
+   - contiguous crossover correctness
+   - late duplicate handling
+   - bounded positive-gap reset
+2. **FEC recovery tests**
+   - single missing data shred reconstructed from coding/data mix
+   - insufficient shards leave slot unresolved but do not corrupt other slots
+3. **Broad-spectrum ingest tests**
+   - coding shreds are ingested and classified, not discarded
+4. **Allowlist tests**
+   - hidden trading wallet in signer 1 or signer 2 still matches
+5. **Ingress timestamp tests**
+   - timestamp in `IngressRecord` originates from RX metadata
+6. **Archive tests**
+   - archive drop-on-full does not block ingress
+   - survival mode flushes FIFO when Fill ring approaches starvation
+7. **Routing tests**
+   - primary worker assignment is stable
+   - overflow valve goes to adjacent worker only when the primary ring exceeds threshold
+8. **Obscurity-score tests**
+   - score is derived only from header-adjacent fixed-cost fields
+   - no deep parser walk is introduced into AF_XDP ingress
+   - high-obscurity fixtures map to higher scores without variable-time traversal
+9. **Ghost Snipe prefetch tests**
+   - first-fragment pool resolution can issue a cache prefetch without variable-time deep parsing
+   - partial-fragment paths never emit quote/build/send actions
+
+### Exit criteria
+- ingress replay passes
+- FEC recovery works on captured degraded flows
+- no blocking under archive backpressure
+
+---
+
+## 9. Milestone G5 - Money worker core under Guerrila routing semantics --- PARTIAL
+
+### Deliverables
+- [ ] worker loop is O(1), no alloc, no lock, no syscall
+- [x] public lane is amputated in the routing fork
+- [ ] worker builds only Jito or Harmonic envelopes in Guerrila mode
+
+### Build steps
+1. [ ] Implement thread-local signature dedupe.
+2. [ ] Implement fast staleness gates.
+3. [ ] Implement pool and mint lookup through tag maps + arena verification.
+4. [ ] Implement thread-local dirty overlay seeded from shared pool state.
+5. [ ] If Taylor compression is enabled and fresh scalars are available, run the advisory pre-filter gate and early-drop only when approximated profit is below threshold by a conservative safety margin.
+6. [ ] Implement forward projection quote logic.
+7. [ ] Apply Token-2022 transfer fee discount before AMM math.
+8. [x] Implement `next_scheduled_slot` read from blockhash snapshot.
+9. [x] Load `engine = shadow_leader_schedule.engine_tags[next_scheduled_slot & mask]`.
+10. [x] Load `leader_class_id = shadow_leader_schedule.leader_class_tags[next_scheduled_slot & mask]`.
+11. [ ] Load `state_snapshot_slot = shadow_health.snapshot_slot` and compute `state_lag_slots = saturating_sub(ingress_record.slot, state_snapshot_slot)`.
+12. [x] Implement Guerrila routing fork:
+   - `PUBLIC_GEYSER` -> drop
+   - `PRIVATE_MEMPOOL` or `JITO_SEARCHER_API` -> Harmonic only if leader is Harmonic, lane enabled, not quarantined, the tactic is plain within-cap, and `state_lag_slots <= harmonic_max_state_slot_lag`
+   - Harmonic-eligible but stale-state -> strip Harmonic and evaluate Jito
+   - `atba=true` -> Jito only
+   - `apex_partial=true` -> Jito only
+   - otherwise Jito if compatible and timing margin is satisfied
+   - otherwise drop
+13. [ ] Implement a final worker-side hard reject if `trade_size_lamports > 15 SOL`.
+14. [ ] If a supported CLMM adapter is enabled and `dist_to_tick_lamports` is present, clamp ATBA size as `min(optimal_size, dist_to_tick_lamports - 1_lamport, 15_SOL)`.
+15. [ ] If the oracle publishes `apex_partial=true`, clamp actual deployed input to `min(published_partial_input, 15_SOL)` and bypass Harmonic entirely.
+16. [ ] Select the correct banked LUT using `leader_class_id`.
+17. [ ] Consume `obscurity_score` only through a fixed-width bit-packed index such as `final_index = (obscurity_score << 6) | (alpha_bucket & 0x3F)` or an equivalent fixed-width scheme.
+18. [ ] Apply shifted bucket rounding and fraction-u32 multiply.
+19. [ ] Apply the absolute fee clamp.
+20. [ ] Convert lamports to CU-price with u128 math.
+21. [ ] Perform inventory reservation via `fetch_add` with rollback on breach.
+22. [ ] Build templates:
+   - Jito template with tip transfer and per-intent tip rotation
+   - Harmonic template with CU-limit + CU-price, a fixed `+150 CU` microscopic pad, and **no** Jito tip transfer
+   - if a supported CLMM adapter is enabled, ATBA Jito template remains exact-within-tick and carries no arbitrary extra pad
+   - both templates include `ShadowGuard::AssertReservesInRange {4 bounds}` as the first non-budget instruction
+23. [ ] Sign using the nonce ring.
+24. [ ] If egress enqueue fails, immediately roll back inventory and abort the intent.
+25. [ ] Update overlay only on successful enqueue.
+
+**Note:** Guerrila is allowed this extra worker-visible selector because the permitted cost is only one additional fixed-array class-tag load, one freshness-gate subtraction, one advisory Taylor pre-filter gate, and one fixed-width bank index. Any implementation that introduces hash maps, tree lookups, inference, per-intent search, deep CLMM traversal, or blind-fire execution from partial shreds in the worker is out of spec.
+
+### Required tests
+1. [ ] **Deterministic math tests**
+   - forward projection
+   - min-out computation
+   - Token-2022 fee discount
+2. [ ] **Taylor pre-filter tests** *(dormant unless Taylor compression is enabled)*
+   - obviously sub-threshold fixtures can be dropped by the pre-filter
+   - near-threshold fixtures fall through to exact math instead of being dropped on approximation alone
+   - accepted intents still derive final `min_out` and reserve bounds from exact integer math
+3. [x] **Guerrila route matrix tests**
+   - `PUBLIC_GEYSER` -> drop
+   - private + Harmonic leader + fresh state + plain intent -> Harmonic
+   - private + Harmonic leader + stale state -> Jito if valid else drop
+   - private + Harmonic leader + quarantined -> Jito if valid else drop
+   - `atba=true` never resolves to Harmonic
+   - `apex_partial=true` never resolves to Harmonic
+   - private + non-compatible lane -> drop
+4. [ ] **LUT selection tests**
+   - Jito leader uses Jito banked LUT
+   - Harmonic leader uses base banked LUT
+   - identical alpha buckets can resolve to different bid fractions across `leader_class_id` banks
+   - bit-packed `obscurity_score` indexing stays inside the fixed bank footprint
+5. [ ] **Whale / partial-capital tests**
+   - actual deployed input above 15 SOL is rejected even if oracle made a mistake
+   - >15 SOL full-curve opportunity may survive only as a ≤15 SOL `apex_partial=true` Jito-only intent
+6. [ ] **ATBA tests** *(dormant unless a CLMM adapter is enabled)*
+   - `dist_to_tick_lamports` clamps size correctly
+   - missing or stale `dist_to_tick_lamports` disables the tactic
+   - ATBA never routes to Harmonic
+7. [ ] **Template tests**
+   - Harmonic template contains no tip transfer instruction
+   - Harmonic template includes the fixed `+150 CU` pad
+   - Jito template contains rotated tip account
+   - both templates include four-bound `ShadowGuard`
+8. [ ] **Fee clamp tests**
+   - overflow-scale alpha still clamps correctly
+9. [ ] **Inventory rollback tests**
+   - breach rolls back immediately
+   - egress enqueue failure rolls back immediately
+10. [ ] **No-alloc tests**
+   - custom allocator panics if worker allocates
+11. [ ] **No-syscall tests**
+   - worker thread issues no network or time syscalls
+12. [ ] **Hot-path guard tests**
+   - worker performs no leader pubkey map lookup, no inference, and no search to resolve class-specific bids
+13. [ ] **Freshness-gate tests**
+   - stale shared state strips Harmonic but does not reopen public fallback
+14. [ ] **Microbench**
+   - worker dequeue -> egress enqueue p99 remains inside Guerrila target budget after the extra class-tag load, freshness-gate arithmetic, and fixed-width obscurity packing
+
+### Exit criteria
+- worker loop stable and fully private-lane-only in Guerrila mode
+- no path can emit a public envelope
+
+---
+
+## 10. Milestone G6 - Jito egress proxy
+
+### Deliverables
+- dedicated Jito egress proxy
+- Searcher API sessions pre-warmed
+- proxy emits `EgressResult` and `NackRecord64B` when local send fails before network transmission
+
+### Build steps
+1. Implement persistent Jito Searcher API client.
+2. Create per-worker Jito egress rings.
+3. Implement dequeue -> bundle frame -> send loop.
+4. On dequeue failure after reservation but before network transmission, emit NACK immediately.
+5. Keep this proxy byte-blast-only; do not parse BundleState telemetry here.
+
+### Required tests
+1. **Session loss tests**
+   - no blocking on reconnect
+2. **Bundle framing tests**
+   - tx bytes preserved exactly post-sign
+3. **NACK emission tests**
+   - local send failure produces exactly one NACK
+4. **No telemetry creep tests**
+   - proxy does not instantiate or depend on BundleState websocket code
+
+### Exit criteria
+- Jito proxy drops fast when unavailable and never blocks worker progress
+
+---
+
+## 11. Milestone G7 - Harmonic egress proxy
+
+### Deliverables
+- dedicated Harmonic gRPC proxy with regional sessions
+- regional fanout logic on proxy cores only
+- Death Clamp enforced
+
+### Build steps
+1. Implement gRPC clients to all configured Harmonic regions.
+2. Maintain authenticated sessions on proxy cores.
+3. Convert worker envelopes into Harmonic `SendBundle` frames.
+4. Record `region_mask`, `ok_mask`, and `err_code` per envelope.
+5. Emit NACK on local pre-transmission failure.
+6. Enforce Death Clamp:
+   - Harmonic send failure -> drop
+   - absolutely no TPU/public fallback
+
+### Required tests
+1. **Regional session tests**
+   - all configured regions connect independently
+2. **Template semantic tests**
+   - Harmonic tx is priority-fee only
+3. **Death Clamp tests**
+   - auth error, timeout, deadline, not-leader, and RPC rejection all end in drop
+4. **No-public-fallback tests**
+   - no public send attempt occurs after Harmonic failure
+5. **NACK tests**
+   - local queue or framing failures generate immediate NACK
+6. **Tactic-lane separation tests**
+   - Harmonic proxy never receives `atba=true` or `apex_partial=true` envelopes
+
+### Exit criteria
+- Harmonic lane works as a pure private lane with no leakage into public execution
+
+---
+
+## 12. Milestone G8 - `shadow-pm` inventory truth and quarantine logic
+
+### Deliverables
+- pending table keyed by signature
+- immediate capital release via `shadow_nack_ring`
+- Jito BundleState and Harmonic BundleState terminal paths
+- delta reconciliation
+- Harmonic classified 1-Strike quarantine
+
+### Build steps
+1. Implement pending table storing:
+   - signature
+   - route
+   - mint index
+   - trade size
+   - send timestamp
+2. Continuously poll `/dev/shm/shadow_nack_ring`.
+3. Subscribe to Jito BundleState on a utility core.
+4. Subscribe to Harmonic BundleState on a utility core.
+5. Poll `getSignatureStatuses` for all pending signatures.
+6. Release fence reservations on:
+   - NACK
+   - bundle rejected/dropped/not landed
+   - on-chain revert
+   - expiry timeout
+   - landed success
+7. Implement delta-based reconciliation against settled chain position.
+8. Implement Harmonic error classification:
+   - classify terminal Harmonic failures at least into `ShadowGuardBoundaryBreach`, `HarmonicInfrastructureFailure`, and `GenericRetailRevert`
+9. Implement Harmonic quarantine:
+   - only `ShadowGuardBoundaryBreach` or `HarmonicInfrastructureFailure` may flip `harmonic_quarantined=true`
+   - `GenericRetailRevert` must release capital and log the failure class without quarantining the lane
+10. Publish the quarantine flag to shared risk state visible to workers.
+
+### Required tests
+1. **Reservation leak tests**
+   - large failure percentage still returns fence to baseline
+2. **NACK fast-release tests**
+   - local egress failure frees capital immediately
+3. **Jito BundleState tests**
+   - `Rejected`, `Dropped`, `NotLanded` release immediately
+4. **Harmonic BundleState tests**
+   - `SimulationFailed`, `Rejected`, `Dropped` release immediately
+5. **Expiry tests**
+   - stale pending signatures release after max age
+6. **Quarantine classification tests**
+   - `ShadowGuardBoundaryBreach` flips the quarantine flag
+   - classified Harmonic infrastructure failure flips the quarantine flag
+   - generic retail-user slippage revert does **not** flip the quarantine flag
+7. **Worker visibility tests**
+   - workers stop producing Harmonic-routed envelopes after quarantine becomes visible
+
+### Exit criteria
+- no phantom inventory under stress
+- Harmonic lane can self-amputate autonomously on classified lethal faults without amputating itself on generic retail-user mistakes
+
+---
+
+## 13. Milestone G9 - `shadow-oracle` banked micro-market LUTs + Guerrila partial-capital policy
+
+### Deliverables
+- banked dual-LUT publisher by fixed leader class
+- approved partial-capital evaluator for >15 SOL full-curve opportunities
+- retail-only bid caps
+- header-only obscurity discounting via fixed-width bank packing
+- hierarchical fallback when class samples are sparse
+- optional ATBA candidate publication when a supported CLMM adapter exists
+
+### Build steps
+1. Calibrate `shadow-oracle` by at least `lane × leader_class × alpha_bucket`.
+2. If obscurity discounting is enabled, incorporate `obscurity_score` only through fixed-width bucket packing; do not create a dynamic third worker-side dimension.
+3. Publish banked `shadow_tip_lut_base` and `shadow_tip_lut_jito` snapshots keyed by fixed `leader_class_id`.
+4. Implement hierarchical fallback for sparse classes before publishing any bank.
+5. Replace the old blind >15 SOL hard-drop with a three-way policy:
+   - plain within-cap actionable intent,
+   - Jito-only `apex_partial=true` intent with actual deployed input ≤15 SOL,
+   - drop if neither is positive-EV.
+6. If a supported CLMM adapter is enabled, compute and publish ATBA candidacy off path using `dist_to_tick_lamports`; any such candidate is Jito-only.
+7. Implement separate cap policy for Guerrila that assumes retail mistakes, not whale wars.
+8. Keep Jito tax compensation in `shadow_tip_lut_jito`.
+9. Keep Harmonic and Vanilla on `shadow_tip_lut_base`.
+10. Start obscurity discounts conservatively: highest-obscurity buckets may discount, but initial calibration must not cut directly to 15%; begin near a 45% floor until shadow PnL proves otherwise.
+11. Publish allowlist/cap snapshot for workers.
+
+**Note:** this milestone is where the intelligence becomes more local. It must not become a generic model-serving project; the worker is still allowed only fixed-bank consumption, constant-time packing, and hard Jito-only tactical flags.
+
+### Required tests
+1. **Partial-capital policy tests**
+   - actual deployed input above 15 SOL never becomes actionable
+   - a >15 SOL full-curve opportunity may either become a Jito-only `apex_partial=true` intent or be dropped
+2. **Micro-market split tests**
+   - the same alpha bucket can yield different bid fractions across `leader_class_id` banks
+3. **Obscurity-packing tests**
+   - `obscurity_score` maps into the fixed-width packed bank index correctly
+   - no third dynamic LUT dimension is required in the worker
+4. **Fallback tests**
+   - sparse classes fall back hierarchically instead of publishing noisy banks
+5. **Retail cap tests**
+   - cap policy clamps every class bank to Guerrila-safe levels
+6. **Publish/consume tests**
+   - worker sees valid banked snapshots and fails closed on missing/stale LUTs
+7. **Regime shift tests**
+   - Jito tax multiplier change only affects the Jito-side banks
+8. **ATBA candidate tests** *(dormant unless a CLMM adapter is enabled)*
+   - `dist_to_tick_lamports` can produce a Jito-only ATBA candidate
+   - missing `dist_to_tick_lamports` suppresses the tactic cleanly
+9. **Counterfactual uplift tests**
+   - replay/observe-only comparison versus flat dual-LUT baseline is non-negative before live enable
+10. **Conservative obscurity-floor tests**
+   - highest-obscurity initial banks do not discount below the configured floor without live evidence
+
+### Exit criteria
+- oracle can no longer accidentally steer the bot into whale contests
+- >15 SOL full-curve flow is either sliced safely into approved Jito-only partials or dropped
+- banked leader-class bidding is published without introducing any worker-side lookup structure beyond fixed-array class tags and fixed-width bank packing
+
+---
+
+## 14. Milestone G10 - On-chain `ShadowGuard` + exact template audits
+
+### Deliverables
+- minimal guard program
+- audited Jito and Harmonic templates
+- Harmonic CU limit calibration with a microscopic fixed pad
+- optional ATBA Jito template audit when a supported CLMM adapter is enabled
+
+### Build steps
+1. Implement `AssertReservesInRange { min_reserve_in, max_reserve_in, min_reserve_out, max_reserve_out }`.
+2. Keep the guard pre-swap, no CPI, no routing.
+3. Build local validator integration tests with the real template shapes.
+4. Measure and lock the exact CU limit for:
+   - plain Jito backrun template
+   - Harmonic backrun template
+   - optional ATBA Jito template if a supported CLMM adapter is enabled
+5. Replace arbitrary Harmonic padding with a fixed microscopic pad of `+150 CUs`; zero safety margin is forbidden.
+6. If an ATBA Jito template exists, keep it exact-within-tick and free of arbitrary extra pad so its compute density remains maximally clean in the Jito lane.
+
+### Required tests
+1. **Program unit tests**
+   - inclusive bounds
+   - zero and max values
+2. **Integration tests**
+   - upstream target no-op -> guard aborts
+   - pathological adverse reserve movement -> guard aborts
+   - valid projected range -> swap continues
+3. **Compute tests**
+   - guard compute remains minimal
+4. **Harmonic CU pad test**
+   - Harmonic template includes the fixed `+150 CU` pad and no larger arbitrary padding
+5. **Harmonic fee-safety test**
+   - the fixed pad does not materially change fee spend but prevents avoidable `ComputationalBudgetExceeded` failures in the audited template set
+6. **ATBA template test** *(dormant unless a CLMM adapter is enabled)*
+   - ATBA Jito template stays inside the current tick boundary and requires no arbitrary extra CU pad beyond the audited exact path
+
+### Exit criteria
+- both private lanes use the same state-proof discipline
+- Harmonic keeps only the approved microscopic CU safety margin
+- any ATBA template that exists is audited as a Jito-only density tactic, not a Harmonic path
+
+---
+
+## 15. Milestone G11 - `shadow-control` Rosetta Stone auto-heal
+
+### Deliverables
+- parsing manifest double buffer
+- Flight Data Recorder consumer
+- Tripwire blindness detection
+- SIMD calibrator
+- executable hash venue quarantine
+
+### Build steps
+1. Implement `shadow_parsing_manifest` using the same RCU rules.
+2. Implement AF_XDP ingress hook that reads the manifest only at slot boundaries or every N shreds.
+3. Implement Tripwire comparing AF_XDP hits to gRPC hits.
+4. Implement GRPC_ONLY downgrade flag in `shadow_control_flags`.
+5. Implement overwrite guard on raw archive frames.
+6. Implement Predictive Shift Matrix before deep SIMD sweep.
+7. Implement deep scan fallback.
+8. Validate on multiple Golden Records before publishing new offsets.
+9. Implement program executable hash monitoring and venue disable flag.
+
+### Required tests
+1. **Blindness tests**
+   - AF_XDP miss + gRPC hit triggers downgrade
+2. **Manifest hot-swap tests**
+   - wrong offsets healed without restart
+3. **Overwrite guard tests**
+   - stale/overwritten UMEM frames are rejected by the calibrator
+4. **Predictive shift tests**
+   - small offset drift is repaired without full scan
+5. **Program upgrade tests**
+   - venue is disabled immediately on executable hash change
+
+### Exit criteria
+- Tier-0 can degrade and heal without restarting the main engine
+
+---
+
+## 16. Milestone G12 - Observe-only, tiny-cap live rollout, and scale ladder
+
+### Deliverables
+- observe-only mode
+- tiny-cap live mode
+- hard checklist for each capital ramp
+- reason-coded drop logging and shadow PnL reporting
+
+### Build steps
+1. Add observe-only flag:
+   - decode
+   - quote
+   - build
+   - sign
+   - send to sink or no-send backend
+2. Run observe-only for enough captured and live traffic to validate:
+   - routing mix
+   - public drops
+   - private-lane opportunities
+   - leader-schedule correctness
+   - fence accounting
+   - reason-coded dropped flow (`Dropped_Public_Target`, `Dropped_ApexNotPositive`, `Dropped_Harmonic_StaleState`, `Dropped_ATBA_NoDistToTick`, `Dropped_TaylorPrefilter`, etc.)
+3. Compute a shadow PnL for the dropped flow so full V6.4 graduation can be justified mathematically, including what was refused because a full-curve opportunity had to be clamped, because ATBA metadata was missing/stale, because a high-obscurity route was intentionally discounted, or because the Taylor pre-filter rejected an obviously sub-threshold intent.
+4. Turn on live trading at the first rung:
+   - `1 SOL` per mint
+   - `2 SOL` per entity
+5. Promote caps only after passing all ramp gates.
+
+### Required tests and gates at every rung
+1. **Public-lane amputation gate**
+   - zero live public sends
+2. **Inventory truth gate**
+   - fence ~= settled position + in-flight reservations
+3. **Fee leak gate**
+   - no unexplained priority-fee burn
+4. **Quarantine drill**
+   - simulated Harmonic failure triggers quarantine correctly
+5. **Latency gate**
+   - worker p99 remains within target budget after enabling the extra class-tag load and banked LUT select
+6. **PnL gate**
+   - realized net EV is positive after fees over the chosen sample window
+7. **Shadow PnL gate**
+   - observe-only logs quantify what was intentionally refused because of Guerrila mode
+   - stale-state Harmonic rejects are visible separately from public and clamped-apex rejects
+8. **Micro-market uplift gate**
+   - banked leader-class bidding is not worse than the flat dual-LUT baseline in replay/observe-only before any cap promotion
+9. **Taylor gate audit**
+   - `Dropped_TaylorPrefilter` volume and counterfactual replay remain consistent with the conservative early-reject design
+10. **Tactical-lane gate**
+   - no `atba=true` or `apex_partial=true` intent is ever observed entering Harmonic
+   - no Ghost Snipe prefetch path ever emits blind-fire Jito execution
+
+### Exit criteria
+- the engine survives tiny-size live conditions before it is trusted with spec-level caps
+
+---
+
+## 17. Milestone G13 - Graduation criteria to full V6.4
+
+Do **not** spend money on the full public-war machine until all of the following are true in Guerrila mode:
+- sustained positive realized net EV at full Guerrila caps
+- no phantom inventory incidents
+- no unresolved fee-leak incidents
+- leader-schedule routing stable
+- Harmonic quarantine tested and trustworthy
+- Rosetta auto-heal tested in staging
+- enough reason-coded shadow PnL from dropped public / clamped-apex / ATBA / stale-state opportunities is visible to justify public-lane spend
+- treasury growth and confidence justify SWQoS / Equinix expansion
+
+Only after that should you consider enabling the larger V6.4 public-lane investment path.
+
+---
+
+## 18. Guerrila-specific acceptance criteria
+
+The Guerrila build is done only when all of the following are true:
+- `release-guerrila` starts only with public execution disabled
+- no public target is ever sent
+- all actionable flow stays inside Jito or Harmonic
+- actual live trade input never exceeds 15 SOL
+- >15 SOL full-curve opportunities either become approved Jito-only partials or are dropped
+- Jito lane works
+- Harmonic lane works
+- Harmonic failure cannot leak into public send
+- Harmonic classified lethal revert quarantines the lane automatically, while generic retail-user reverts do not
+- `shadow_nack_ring` frees capital immediately on local send failure
+- `ShadowGuard` protects both private lanes
+- worker p99 stays within the V6.4 budget target on the chosen commodity host
+- leader-class micro-market selection remains fixed-bank O(1) and adds no dynamic lookup structure in the worker
+- obscurity scoring remains header-only and is consumed through fixed-width bank packing only
+- Taylor compression remains pre-filter-only and never replaces exact integer quote / `min_out` construction for accepted intents
+- Ghost Snipe remains cache-prefetch-only and never emits blind-fire execution from partial shreds
+- ATBA and clamped-apex tactics never enter Harmonic
+- monthly infra stays near the Guerrila ceiling because public infra was never provisioned
+
+---
+
+## Appendix A - Guerrila boot validation checklist
+
+A Guerrila deployment must fail startup if any of the following are true:
+- `system.proxies.egress.quic_workers != 0`
+- `submit.quic.kamikaze_enabled == true`
+- `submit.routing.default_public_geyser != drop`
+- `submit.routing.private_mempool_strategy` can resolve to public blast
+- any active relay or SWQoS public endpoint is configured
+- Harmonic lane is enabled while quarantine support is disabled
+- `risk.reserve_floor_sol < 10.0`
+- `risk.max_position_sol_per_mint > 15.0`
+- `risk.max_notional_sol_per_entity > 30.0`
+- `state.geyser.harmonic_max_state_slot_lag > 1`
+- `state.geyser.require_live_transfer_fee_updates != true`
+- `state.clmm.publish_dist_to_tick_lamports != true` while `oracle.guerrila.allow_atba_jito_only == true`
+- `submit.routing.stale_harmonic_state_action != reroute_to_jito`
+- `submit.routing.atba_route_mode != jito_only`
+- `submit.routing.apex_partial_route_mode != jito_only`
+- `submit.harmonic.cu_pad_units < 150`
+- `submit.harmonic.quarantine_mode != specific_error_only`
+- `oracle.guerrila.max_live_trade_input_sol > 15.0`
+- `oracle.guerrila.micro_market_enabled == true` while leader-class publication is absent
+- `oracle.guerrila.micro_market_enabled == true` while banked LUT snapshots are absent or stale
+- `oracle.guerrila.leader_class_count > 8`
+- `oracle.guerrila.obscurity_discount_enabled == true` while `oracle.guerrila.obscurity_mode != header_only_bitpacked`
+- `quant_tactics.taylor_compression.enabled == true` while `quant_tactics.taylor_compression.mode != pre_filter_gate_only`
+- `quant_tactics.ghost_snipe.enabled == true` while `quant_tactics.ghost_snipe.mode != cache_prefetch_only`
+- `quant_tactics.write_lock_saturation_discount.enabled == true`
+- `quant_tactics.splinter_cell_arb.enabled == true`
+
+---
+
+## Appendix B - Recommended minimum config patch for Guerrila
+
+```yaml
+system:
+  mode: tier0_only
+  proxies:
+    ingress:
+      primary: shred_capture
+      shred_capture_workers: 1
+      grpc_fallback: yellowstone_grpc
+      grpc_workers: 1
+    egress:
+      quic_workers: 0
+      jito_workers: 1
+      harmonic_workers: 1
+
+risk:
+  reserve_floor_sol: 10.0
+  max_position_sol_per_mint: 15.0
+  max_notional_sol_per_entity: 30.0
+
+state:
+  geyser:
+    harmonic_max_state_slot_lag: 1
+    require_live_transfer_fee_updates: true
+  clmm:
+    publish_dist_to_tick_lamports: true
+
+submit:
+  routing:
+    default_public_geyser: drop
+    default_jito_searcher: jito_bundle
+    private_mempool_strategy: jito_bundle_if_compatible
+    enable_harmonic_lane: true
+    stale_harmonic_state_action: reroute_to_jito
+    atba_route_mode: jito_only
+    apex_partial_route_mode: jito_only
+  harmonic:
+    cu_pad_units: 150
+    quarantine_mode: specific_error_only
+  quic:
+    kamikaze_enabled: false
+
+oracle:
+  guerrila:
+    max_live_trade_input_sol: 15.0
+    retail_only_mode: true
+    micro_market_enabled: true
+    leader_class_count: 8
+    publish_mode: banked_by_leader_class
+    allow_clamped_apex_partials: true
+    allow_atba_jito_only: true
+    obscurity_discount_enabled: true
+    obscurity_mode: header_only_bitpacked
+    obscurity_initial_floor_bps: 4500
+
+quant_tactics:
+  taylor_compression:
+    enabled: true
+    mode: pre_filter_gate_only
+  ghost_snipe:
+    enabled: true
+    mode: cache_prefetch_only
+  write_lock_saturation_discount:
+    enabled: false
+  splinter_cell_arb:
+    enabled: false
+
+telemetry:
+  observe_only:
+    log_drop_reasons: true
+    shadow_pnl_enabled: true
+```
+
+---
+
+## Appendix C - What not to waste time on yet
+
+Do not prioritize any of the following before Guerrila profitability is proven:
+- public relay fanout
+- staked QUIC lane tuning
+- SWQoS identity management
+- Equinix deployment
+- public fee-optimization work
+- TPU rescue logic
+- multi-host redundancy for public sends
+
+The correct Guerrila sequence is: private lanes first, proof second, scale third.

@@ -1,0 +1,9 @@
+status=run66ct2_continuation_execution_rule_proof_complete
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ct1_continuation_ownerfresh3_20260527_174437/run66ct1_continuation_owner_eligibility_rows.jsonl
+rows_seen=40
+continuation_execution_plumbing_ready_rows=6
+decision_counts={"BLOCKED_ENTRY_RULE": 34, "CONTINUATION_EXECUTION_PLUMBING_READY": 6}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

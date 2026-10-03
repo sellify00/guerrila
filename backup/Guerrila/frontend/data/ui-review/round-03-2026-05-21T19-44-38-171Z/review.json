@@ -1,0 +1,64 @@
+{
+  "score": 7.8,
+  "done": false,
+  "major_issues": [
+    "Mobile: primary canvas/flow area is not well-contained; content feels clipped/tight at the left/right edges and the diagram appears partially cropped rather than intentionally scrollable/zoomable.",
+    "Mobile: right-side card stack becomes a very long single column with no in-page navigation/anchors; discoverability of lower sections (Host/eno1/Blocker) is poor and feels like “footer cards” dumped at the bottom.",
+    "Text overflow risk: long technical strings (URLs, identifiers, chip labels like “Out shadow-state: blockhash/account truth”) are close to overflowing; current wrapping is inconsistent and can cause awkward line breaks and density spikes."
+  ],
+  "medium_issues": [
+    "Hierarchy: top status row (Host / No-Send / blocker / time) is visually similar to secondary text and competes with the page title; needs clearer grouping and reduced noise.",
+    "Controls density: zoom controls (Fit, %, +, reset) are cramped on mobile and read like miscellaneous pills; tap targets look borderline and spacing between controls is inconsistent.",
+    "Contrast/readability: small gray metadata (e.g., card subtitles, muted labels) is slightly low-contrast on the dark background; in several cards it’s near the threshold for comfortable reading.",
+    "Inconsistent card paddings: some cards have generous inner padding while others (notably chips/cta rows) feel tight, leading to uneven rhythm down the right column.",
+    "Event strip readability: the ticker-like row at the bottom of the canvas uses small text and tight line-height; it looks truncated and hard to parse quickly."
+  ],
+  "minor_issues": [
+    "Chevron on the CAPITAL card looks like an affordance but there’s no clear collapsed/expanded behavior shown; potential misleading interaction cue.",
+    "Some labels use all-caps/small caps styles that get noisy on mobile (e.g., section headings) and reduce scan speed.",
+    "Spacing between major sections on mobile is slightly inconsistent (some card groups have larger gaps than others)."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Make the flow/canvas region explicitly horizontally scrollable on small screens (or constrain with overflow + clear padding). Example: wrap canvas in a container with `overflow:auto; -webkit-overflow-scrolling: touch;` and add `padding-inline: 12-16px` so diagram never hard-touches the viewport edges."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Harden handling of long strings: apply `overflow-wrap:anywhere; word-break:break-word;` on URL/code blocks and chips; for single-line pills/buttons use `max-width:100%`, `white-space:nowrap`, `text-overflow:ellipsis`, `overflow:hidden` where appropriate to prevent multi-line chip explosions."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve mobile control bar ergonomics: increase tap targets to at least 40px height, add consistent gaps (8-12px), and allow wrapping into two rows with `flex-wrap:wrap` so Fit/zoom/%/reset don’t compress."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/index.html",
+      "change": "Add lightweight in-page navigation for mobile (anchors/jump links) at the top of the right-column stack: e.g., \"Capital\", \"Runtime\", \"Ledger\", \"Handoffs\", \"Idle\". This can be simple `<a href=\"#ledger\">` style links."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Tune typographic hierarchy: reduce prominence of the top status line (smaller, more muted) and increase contrast slightly for small metadata (`--muted` color). Also increase line-height on dense paragraphs and the event strip for readability."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Normalize card spacing: enforce consistent padding (e.g., 16px) and consistent vertical gaps between cards/groups (e.g., 12-16px). Ensure chip rows have enough breathing room and don’t visually collide with borders."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/app.js",
+      "change": "If the CAPITAL chevron is not interactive, remove it; if it is, implement expand/collapse states with visible feedback (rotating chevron, persisted open state) to match the affordance."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Reduce all-caps usage on mobile section labels or increase letter-spacing/size slightly to improve scanability; keep headings compact but clearer."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile responsiveness issues in the primary flow area (cropping/containment) and weak long-string overflow handling; these can cause clipped content and inconsistent density on real data."
+}

@@ -1,0 +1,7 @@
+status=run78q2_complete
+source_row_count=1
+classification_counts={"QUOTE_NUMERIC_EXPORT_BUG":1}
+live_track_scope_quote_numeric_missing=1
+malformed_source_rows=0
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean2_20260526_173120/epoch8_auto_strict_directarb_quote_numeric_lineage/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean2_20260526_173120/epoch8_auto_strict_directarb_quote_numeric_lineage/rows.csv

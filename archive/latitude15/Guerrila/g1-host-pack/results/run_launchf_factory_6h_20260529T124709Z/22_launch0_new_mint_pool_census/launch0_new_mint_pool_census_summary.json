@@ -1,0 +1,28 @@
+{
+  "buy_launch_rows": 58,
+  "core_launch_pair_rows": 79,
+  "direction_counts": {
+    "buy_launch_with_core": 58,
+    "sell_launch_to_core": 21
+  },
+  "filter_mode": "nofilter",
+  "live_landed": 0,
+  "pair_class_counts": {
+    "core_launch_pair": 79
+  },
+  "processed_matched_rows": 0,
+  "processed_rows_loaded": 0,
+  "ready_venue_counts": {
+    "meteora_damm_v2": 2,
+    "pumpfun_amm": 76,
+    "raydium_clmm": 1
+  },
+  "rows_seen": 79,
+  "selector_ready_rows": 79,
+  "sell_launch_rows": 21,
+  "sendBundle_called": false,
+  "status": "launch0_new_mint_pool_census_complete",
+  "unique_launch_groups": 36,
+  "window_seconds": 21600,
+  "wire_send": 0
+}

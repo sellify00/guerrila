@@ -1,0 +1,51 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "egress_path": "helius_sender_no_send",
+  "egress_no_send_accept": true,
+  "reconcile_path_ready": true,
+  "wire_send": 0,
+  "live_landed": 0,
+  "send_transaction_called": false,
+  "sendBundle_called": false,
+  "rows": [
+    {
+      "candidate_id": "1779884775541075267:422501882:cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "egress_path": "helius_sender_no_send",
+      "egress_no_send_accept": true,
+      "reconcile_path_ready": true,
+      "entry_tx_built": true,
+      "entry_tx_signed": true,
+      "template_ready": true,
+      "wire_send": 0,
+      "live_landed": 0,
+      "send_transaction_called": false,
+      "sendBundle_called": false
+    },
+    {
+      "candidate_id": "1779884623393764239:422501501:5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "egress_path": "helius_sender_no_send",
+      "egress_no_send_accept": true,
+      "reconcile_path_ready": true,
+      "entry_tx_built": true,
+      "entry_tx_signed": true,
+      "template_ready": true,
+      "wire_send": 0,
+      "live_landed": 0,
+      "send_transaction_called": false,
+      "sendBundle_called": false
+    },
+    {
+      "candidate_id": "1779884649157538629:422501567:22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "egress_path": "helius_sender_no_send",
+      "egress_no_send_accept": true,
+      "reconcile_path_ready": true,
+      "entry_tx_built": true,
+      "entry_tx_signed": true,
+      "template_ready": true,
+      "wire_send": 0,
+      "live_landed": 0,
+      "send_transaction_called": false,
+      "sendBundle_called": false
+    }
+  ]
+}

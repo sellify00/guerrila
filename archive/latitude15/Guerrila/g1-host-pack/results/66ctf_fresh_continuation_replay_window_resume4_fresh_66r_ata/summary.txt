@@ -1,0 +1,15 @@
+status=run66r_ata_only_convertible_planner_complete
+source_run66r_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_resume4_fresh_66r_overlay/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl
+source_exact_positive_overlay_rows=103
+ata_only_convertible_rows=0
+ata_only_convertible_group_count=0
+precreate_review_group_count=0
+precreate_review_row_delta=0
+decision_counts={}
+total_synthetic_ata_would_fire_delta=0
+total_net_ev_after_fee_tip=0
+total_net_ev_after_ata_cost_lamports=0
+ata_create_rent_lamports=2039280
+ata_create_fee_estimate_lamports=5000
+wire_send=0
+live_landed=0

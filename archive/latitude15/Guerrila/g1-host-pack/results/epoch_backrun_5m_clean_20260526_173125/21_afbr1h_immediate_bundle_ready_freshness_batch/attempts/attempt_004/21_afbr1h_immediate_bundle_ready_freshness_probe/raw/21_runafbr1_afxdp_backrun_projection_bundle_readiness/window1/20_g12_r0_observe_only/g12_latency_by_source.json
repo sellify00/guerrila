@@ -1,0 +1,646 @@
+{
+  "public_geyser": {
+    "source_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_process_intent": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "feed_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  },
+  "external_geyser": {
+    "source_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_process_intent": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "feed_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  },
+  "laserstream": {
+    "source_to_feed": {
+      "count": 7198,
+      "p9_ns": 63229835,
+      "p50_ns": 63847934,
+      "p90_ns": 126297526,
+      "p95_ns": 179411516,
+      "p99_ns": 503065873,
+      "p999_ns": 724512730,
+      "max_ns": 747789939
+    },
+    "source_to_worker": {
+      "count": 7130,
+      "p9_ns": 63256197,
+      "p50_ns": 64183687,
+      "p90_ns": 151266720,
+      "p95_ns": 265065284,
+      "p99_ns": 504451189,
+      "p999_ns": 724513560,
+      "max_ns": 747798089
+    },
+    "source_to_process_intent": {
+      "count": 346,
+      "p9_ns": 63268341,
+      "p50_ns": 66458227,
+      "p90_ns": 162960853,
+      "p95_ns": 261387367,
+      "p99_ns": 364256387,
+      "p999_ns": 467859981,
+      "max_ns": 468411769
+    },
+    "source_to_nosend": {
+      "count": 246,
+      "p9_ns": 63285591,
+      "p50_ns": 64052568,
+      "p90_ns": 150376144,
+      "p95_ns": 208424384,
+      "p99_ns": 364650907,
+      "p999_ns": 467873941,
+      "max_ns": 468424959
+    },
+    "source_to_final_shadow_event": {
+      "count": 246,
+      "p9_ns": 63285591,
+      "p50_ns": 64052568,
+      "p90_ns": 150376144,
+      "p95_ns": 208424384,
+      "p99_ns": 364650907,
+      "p999_ns": 467873941,
+      "max_ns": 468424959
+    },
+    "producer_to_feed": {
+      "count": 7198,
+      "p9_ns": 63229835,
+      "p50_ns": 63847934,
+      "p90_ns": 126297526,
+      "p95_ns": 179411516,
+      "p99_ns": 503065873,
+      "p999_ns": 724512730,
+      "max_ns": 747789939
+    },
+    "feed_to_worker": {
+      "count": 7110,
+      "p9_ns": 820,
+      "p50_ns": 1240,
+      "p90_ns": 37789285,
+      "p95_ns": 55034184,
+      "p99_ns": 138610752,
+      "p999_ns": 301502965,
+      "max_ns": 508774786
+    },
+    "worker_to_nosend": {
+      "count": 243,
+      "p9_ns": 14020,
+      "p50_ns": 26840,
+      "p90_ns": 49570,
+      "p95_ns": 64260,
+      "p99_ns": 28502492,
+      "p999_ns": 32741195,
+      "max_ns": 47435852
+    },
+    "end_to_end_observe": {
+      "count": 246,
+      "p9_ns": 63285591,
+      "p50_ns": 64052568,
+      "p90_ns": 150376144,
+      "p95_ns": 208424384,
+      "p99_ns": 364650907,
+      "p999_ns": 467873941,
+      "max_ns": 468424959
+    }
+  },
+  "local_validator_geyser": {
+    "source_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_process_intent": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "feed_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  },
+  "afxdp": {
+    "source_to_feed": {
+      "count": 762,
+      "p9_ns": 65950,
+      "p50_ns": 80650,
+      "p90_ns": 107340,
+      "p95_ns": 117160,
+      "p99_ns": 142919,
+      "p999_ns": 193100,
+      "max_ns": 193720
+    },
+    "source_to_worker": {
+      "count": 205,
+      "p9_ns": 70239,
+      "p50_ns": 87920,
+      "p90_ns": 136740,
+      "p95_ns": 18348550,
+      "p99_ns": 36259655,
+      "p999_ns": 44302137,
+      "max_ns": 76639284
+    },
+    "source_to_process_intent": {
+      "count": 14,
+      "p9_ns": 88050,
+      "p50_ns": 101150,
+      "p90_ns": 149789,
+      "p95_ns": 30854961,
+      "p99_ns": 30854961,
+      "p999_ns": 30854961,
+      "max_ns": 36268725
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 762,
+      "p9_ns": 65950,
+      "p50_ns": 80650,
+      "p90_ns": 107340,
+      "p95_ns": 117160,
+      "p99_ns": 142919,
+      "p999_ns": 193100,
+      "max_ns": 193720
+    },
+    "feed_to_worker": {
+      "count": 205,
+      "p9_ns": 1090,
+      "p50_ns": 6960,
+      "p90_ns": 11540,
+      "p95_ns": 16955054,
+      "p99_ns": 30775092,
+      "p999_ns": 44231997,
+      "max_ns": 76548444
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  },
+  "dpdk": {
+    "source_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_process_intent": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "feed_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  },
+  "triton_grpc": {
+    "source_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_process_intent": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "source_to_final_shadow_event": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "producer_to_feed": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "feed_to_worker": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "worker_to_nosend": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    },
+    "end_to_end_observe": {
+      "count": 0,
+      "p9_ns": 0,
+      "p50_ns": 0,
+      "p90_ns": 0,
+      "p95_ns": 0,
+      "p99_ns": 0,
+      "p999_ns": 0,
+      "max_ns": 0
+    }
+  }
+}

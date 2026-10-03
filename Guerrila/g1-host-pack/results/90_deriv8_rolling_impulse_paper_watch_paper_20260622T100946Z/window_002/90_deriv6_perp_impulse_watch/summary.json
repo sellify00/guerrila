@@ -1,0 +1,26 @@
+{
+  "blocker_counts": {
+    "day_volume_below_floor": 122,
+    "impulse_below_cost_floor": 10,
+    "impulse_below_threshold": 38,
+    "none": 8
+  },
+  "decision_counts": {
+    "DERIV_PERP_IMPULSE_READY": 8,
+    "PARK_DERIV_PERP_IMPULSE": 170
+  },
+  "duration_seconds": 900,
+  "impulse_rows": 178,
+  "live_landed": 0,
+  "min_impulse_bps": 20.0,
+  "no_wire": true,
+  "perp_impulse_ready_rows": 8,
+  "ready_rows": 8,
+  "rows": 178,
+  "sample_rows_written": 28480,
+  "samples": 160,
+  "samples_path": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv8_rolling_impulse_paper_watch_paper_20260622T100946Z/window_002/90_deriv6_perp_impulse_watch/samples.jsonl",
+  "status": "DERIV_PERP_IMPULSE_READY",
+  "symbols_seen": 178,
+  "wire_send": 0
+}

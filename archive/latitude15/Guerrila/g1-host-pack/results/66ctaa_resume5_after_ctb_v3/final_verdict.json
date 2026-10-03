@@ -1,0 +1,16 @@
+{
+  "decision_counts": {
+    "OUTPUT_ACCOUNT_UNSUPPORTED": 7
+  },
+  "final_verdict": "CONTINUATION_OUTPUT_ACCOUNT_PATH_REVIEW_COMPLETE",
+  "hard_stops_preserved": {
+    "ata_created": false,
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "inline_ata_policy_clean_rows": 0,
+  "live_approval": false,
+  "rows_seen": 7
+}

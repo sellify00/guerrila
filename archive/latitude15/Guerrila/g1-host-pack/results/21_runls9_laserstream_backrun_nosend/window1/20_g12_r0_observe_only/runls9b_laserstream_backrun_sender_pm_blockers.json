@@ -1,0 +1,7 @@
+{
+  "pm_reserve_bypassed": true,
+  "sender_rows_need_pm_accounting_followup": true,
+  "priority_fee_explicitly_proven": false,
+  "pm_release_explicitly_proven": false,
+  "recommended_status": "do_not_promote_live_until_sender_subset_pm_path_is_proven"
+}

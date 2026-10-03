@@ -1,0 +1,12 @@
+{
+  "absorption_threshold": 0.5,
+  "certificate_scope": "false_restoration_gate_only",
+  "continuation_threshold": 0.5,
+  "followthrough_threshold": 0.5,
+  "live_send": false,
+  "owner_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg2_rebalancing_ownerfresh_20260527_ownerfresh2_233955/owner_selector_instrumentation_rows.jsonl",
+  "restoration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg4_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66rg4_rebalancing_restoration_pressure_measurement_rows.jsonl",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg5_false_restoration_ownerfresh_20260527_ownerfresh2_233955",
+  "sendBundle": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66rt_rebalancing_template_nosend_rows.jsonl"
+}

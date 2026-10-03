@@ -1,0 +1,48 @@
+{
+  "filters": [
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 623,
+      "positive_markout_after_reject_count": 340,
+      "positive_after_fee_after_reject_count": 617,
+      "false_negative_rate": 0.5457,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 1729004.0,
+      "p90_positive_markout_lamports": 11241857,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 17,
+      "positive_markout_after_reject_count": 13,
+      "positive_after_fee_after_reject_count": 13,
+      "false_negative_rate": 0.7647,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 2397986,
+      "p90_positive_markout_lamports": 2405110,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "output_account_not_ready",
+      "rejected_count": 22,
+      "positive_markout_after_reject_count": 11,
+      "positive_after_fee_after_reject_count": 21,
+      "false_negative_rate": 0.5,
+      "best_owner_mode_after_reject": "housekeeping",
+      "median_positive_markout_lamports": 143557,
+      "p90_positive_markout_lamports": 2366185,
+      "recommended_action": "Pre-create approved recurring output ATAs instead of treating missing ATA as no-opportunity."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 2094,
+      "positive_markout_after_reject_count": 1645,
+      "positive_after_fee_after_reject_count": 2048,
+      "false_negative_rate": 0.7856,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 566382,
+      "p90_positive_markout_lamports": 2463849,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

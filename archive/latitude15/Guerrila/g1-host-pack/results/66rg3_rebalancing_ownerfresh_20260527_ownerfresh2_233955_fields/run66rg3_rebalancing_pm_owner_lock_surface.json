@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "owner_mode_rebalancing_rows": 22,
+    "pm_owner_lock_conflict_domain_explicit_rows": 22,
+    "pm_owner_lock_owner_mode_rebalancing_rows": 22,
+    "pm_owner_lock_ready_rows": 22,
+    "pm_pending_after_zero_rows": 22,
+    "pm_release_on_no_send_ok_rows": 22,
+    "rows_seen": 22
+  },
+  "first_pm_owner_lock_blocker_counts": {
+    "none": 22
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "status": "PM_OWNER_LOCK_SURFACE_READY"
+}

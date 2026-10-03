@@ -1,0 +1,13 @@
+status=LAUNCH31_MONITOR_METRICS_REPAIR_VALIDATION
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch31_monitor_metrics_repair_validation_20260602T062337Z
+update_position_metrics_called=True
+calculate_executable_exit_value_lamports_called=True
+executable_exit_value_lamports_field_written=True
+monitor_exception_count=0
+cost_protector_path_evaluated=True
+trailing_path_evaluated=True
+monitor_loop_exercised=True
+wire_send=0
+live_landed=0
+scenarios=[{"calculate_executable_exit_value_lamports_called": 2, "cost_break_even_bps": 2000, "cost_profit_arm_gain_bps": 2500, "cost_profit_protector_armed": true, "drawdown_from_peak_bps": 1428, "exception_message": "", "exception_type": "", "executable_exit_value_lamports": 12000000, "executable_exit_value_lamports_field_written": true, "flatten_reason": "EXIT_REALISABLE_PROFIT_TRAILING", "monitor_exception_count": 0, "monitor_sample_count": 2, "peak_executable_exit_gain_bps": 4000, "position_state": "EXIT_NOW", "quote_count": 2, "scenario": "cost_protector", "traceback": "", "update_position_metrics_called": 2}, {"calculate_executable_exit_value_lamports_called": 4, "cost_break_even_bps": 0, "cost_profit_arm_gain_bps": 0, "cost_profit_protector_armed": false, "drawdown_from_peak_bps": 1571, "exception_message": "", "exception_type": "", "executable_exit_value_lamports": 11800000, "executable_exit_value_lamports_field_written": true, "flatten_reason": "EXIT_TRAILING_STOP_FROM_HIGH", "monitor_exception_count": 0, "monitor_sample_count": 4, "peak_executable_exit_gain_bps": 4000, "position_state": "EXIT_NOW", "quote_count": 4, "scenario": "trailing_stop", "traceback": "", "update_position_metrics_called": 4}]
+validation_pass=True

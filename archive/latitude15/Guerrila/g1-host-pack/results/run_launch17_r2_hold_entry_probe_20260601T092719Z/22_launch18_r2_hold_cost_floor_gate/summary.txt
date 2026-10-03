@@ -1,0 +1,9 @@
+rows_seen=3
+ready_rows=3
+abort_max_loss_below_true_cost_floor_rows=0
+inline_account_unrecoverable_too_high_rows=0
+exit_cost_too_high_rows=0
+decision_counts={"R2_HOLD_COST_FLOOR_READY": 3}
+latest_decision=R2_HOLD_COST_FLOOR_READY
+latest_true_loss_floor_lamports=2718979
+latest_configured_max_loss_lamports=3000000

@@ -1,0 +1,72 @@
+{
+  "afxdp": {
+    "total": 29,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_mint_meta_missing": 1,
+      "reject_pi_quote_missing": 28
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 29,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_mint_meta_missing": 1,
+          "reject_pi_quote_missing": 28
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 1607,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_health_unhealthy": 2,
+      "reject_pi_min_out_missing": 26,
+      "reject_pi_mint_meta_missing": 46,
+      "reject_pi_pool_state_stale": 96,
+      "reject_pi_quote_missing": 1437
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 750,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 15,
+          "reject_pi_mint_meta_missing": 20,
+          "reject_pi_pool_state_stale": 55,
+          "reject_pi_quote_missing": 660
+        }
+      },
+      "directarb": {
+        "total": 857,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_health_unhealthy": 2,
+          "reject_pi_min_out_missing": 11,
+          "reject_pi_mint_meta_missing": 26,
+          "reject_pi_pool_state_stale": 41,
+          "reject_pi_quote_missing": 777
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

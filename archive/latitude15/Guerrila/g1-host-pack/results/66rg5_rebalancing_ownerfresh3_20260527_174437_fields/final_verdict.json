@@ -1,0 +1,19 @@
+{
+  "absorption_score_rows": 32,
+  "continuation_pressure_score_rows": 32,
+  "false_restoration_gate_input_ready_rows": 0,
+  "final_verdict": "PARK_FALSE_RESTORATION_DATA_ABSENT",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "owner_mode_rebalancing_rows": 32,
+  "primary_blocker": "same_direction_continuation_pressure_too_high",
+  "proposal_path_open": false,
+  "restoration_pressure_measured_rows": 32,
+  "rows_seen": 32,
+  "same_direction_followthrough_score_rows": 32
+}

@@ -1,0 +1,16 @@
+mint=HXnPCo2RAQ4FZYwKw1hhUvUPkGzxKKQp3a6Zw5SkYE5w
+pool=HvMUfyV1oPAFq5WAkKu297f9NCyAzsP8VA6QhA3yqAzp
+mint_decimals=9
+entry_output_native=0.00020997
+exit_quote_input_native=0.00020787
+pool_reserve_token=209971
+pool_reserve_wsol=1
+pumpfun_fee_bps=0
+fee_model_source=constant_product_zero_fee_placeholder
+direct_math_expected_out=0
+quote_path_expected_out=0
+reason_expected_out_zero=integer_rounding_dust_under_zero_fee_model
+entry_expected_out_raw=209970
+entry_min_out_raw=207870
+exit_quote_input_raw=207870
+exit_min_out_raw=0

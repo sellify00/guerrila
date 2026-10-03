@@ -1,0 +1,16 @@
+status=B002_SIZE_CAPACITY_LADDER_PASS
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z
+attempts_seen=3
+sizes_sol=[0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0]
+rows_seen=21
+mechanical_capacity_pass_rows=21
+largest_full_pass_size_sol=1.0
+largest_full_risk_budget_pass_size_sol=0.01
+by_size={"0.01": {"attempts": 3, "max_entry_price_impact_bps": 0.565, "max_exit_price_impact_bps": 0.658, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 17631.489928, "min_reserve_after_exit_to_position_ratio": 17630.330003, "risk_budget_pass_rows": 3, "total_modeled_net_after_rent_lamports": 5992766, "total_modeled_peak_net_after_rent_lamports": 8885492}, "0.025": {"attempts": 3, "max_entry_price_impact_bps": 1.413, "max_exit_price_impact_bps": 1.644, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 7052.595971, "min_reserve_after_exit_to_position_ratio": 7051.436258, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 16811427, "total_modeled_peak_net_after_rent_lamports": 24042034}, "0.05": {"attempts": 3, "max_entry_price_impact_bps": 2.827, "max_exit_price_impact_bps": 3.288, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 3526.297986, "min_reserve_after_exit_to_position_ratio": 3525.138627, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 34801248, "total_modeled_peak_net_after_rent_lamports": 49258427}, "0.1": {"attempts": 3, "max_entry_price_impact_bps": 5.654, "max_exit_price_impact_bps": 6.571, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 1763.148993, "min_reserve_after_exit_to_position_ratio": 1761.990343, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 70626246, "total_modeled_peak_net_after_rent_lamports": 99524472}, "0.25": {"attempts": 3, "max_entry_price_impact_bps": 14.134, "max_exit_price_impact_bps": 16.399, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 705.259597, "min_reserve_after_exit_to_position_ratio": 704.103067, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 176867186, "total_modeled_peak_net_after_rent_lamports": 248992037}, "0.5": {"attempts": 3, "max_entry_price_impact_bps": 28.268, "max_exit_price_impact_bps": 32.698, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 352.629799, "min_reserve_after_exit_to_position_ratio": 351.476783, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 349842613, "total_modeled_peak_net_after_rent_lamports": 493691732}, "1.0": {"attempts": 3, "max_entry_price_impact_bps": 56.536, "max_exit_price_impact_bps": 65.0, "mechanical_capacity_pass_rows": 3, "min_base_reserve_to_position_ratio": 176.314899, "min_reserve_after_exit_to_position_ratio": 175.168851, "risk_budget_pass_rows": 0, "total_modeled_net_after_rent_lamports": 680598934, "total_modeled_peak_net_after_rent_lamports": 966708266}}
+decision_counts={"B002_SIZE_CAPACITY_PASS": 21}
+blocker_counts={}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/22_launch72_b002_size_capacity_ladder/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/22_launch72_b002_size_capacity_ladder/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=true

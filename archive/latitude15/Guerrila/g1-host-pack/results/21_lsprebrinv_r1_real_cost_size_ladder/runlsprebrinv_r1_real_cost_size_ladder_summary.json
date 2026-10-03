@@ -1,0 +1,19 @@
+{
+  "best_expected_net_after_all_costs_lamports": -2309662,
+  "best_size_sol": "0.005",
+  "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+  "observed_fixed_cost_floor_lamports": 2254400,
+  "observed_modeled_variable_cost_lamports": 4630,
+  "observed_slippage_cost_lamports": 2785,
+  "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+  "positive_net_rows": 0,
+  "rounding_cost_floor_lamports": 0,
+  "sizes_tested": [
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "status": "R1_REAL_COST_SIZE_LADDER_READY"
+}

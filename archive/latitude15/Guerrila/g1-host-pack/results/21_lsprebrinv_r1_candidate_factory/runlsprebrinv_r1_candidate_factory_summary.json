@@ -1,0 +1,20 @@
+{
+  "ata_precreate_only_ready_rows": 0,
+  "decision_counts": {},
+  "live_landed": 0,
+  "meteora_projected_ev_positive_count": 0,
+  "one_mint_live_ready_rows": 0,
+  "projected_ev_positive_core_input_rows": 0,
+  "projected_ev_positive_held_input_rows": 0,
+  "projected_ev_positive_unheld_token_rows": 0,
+  "proposal_ready_rows": 0,
+  "pumpfun_projected_ev_positive_count": 0,
+  "rows_emitted": 0,
+  "rows_seen": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "size_ready_rows": 0,
+  "status": "PARK_NO_ROWS",
+  "window_seconds": 120,
+  "wire_send": 0
+}

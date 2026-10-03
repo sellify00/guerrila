@@ -1,0 +1,39 @@
+{
+  "status": "run78s_complete",
+  "pm_failed_source_row_count": 10,
+  "ladder_row_count": 60,
+  "size_pass_counts": {},
+  "size_pass_counts_pm_snapshot_view": {},
+  "size_pass_counts_audit_visible_view": {
+    "1": 7,
+    "0.5": 7,
+    "0.1": 7,
+    "0.05": 7,
+    "0.01": 7,
+    "0.005": 7
+  },
+  "size_supported_counts": {
+    "1": 7,
+    "0.5": 7,
+    "0.1": 7,
+    "0.05": 7,
+    "0.01": 7,
+    "0.005": 7
+  },
+  "size_rows_considered": {
+    "1": 10,
+    "0.5": 10,
+    "0.1": 10,
+    "0.05": 10,
+    "0.01": 10,
+    "0.005": 10
+  },
+  "proof_status_counts": {
+    "unsupported_non_wsol_input": 18,
+    "pm_only_no_requote": 40,
+    "exact_size_match_from_original_row": 2
+  },
+  "audit_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78pm_batch4/rows.jsonl",
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78s_batch4/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78s_batch4/rows.csv"
+}

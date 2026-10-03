@@ -1,0 +1,17 @@
+status=pass
+active_systemd_unit=sh1-agave-no-geyser-2.service
+dynamic_port_range=8000-8025
+finalized_slot_lag=0
+local_finalized_slot=422332925
+local_health=ok
+local_processed_slot=422332957
+local_rpc_url=http://127.0.0.1:8899
+max_finalized_slot_lag=4096
+max_processed_slot_lag=2048
+processed_slot_lag=0
+reference_finalized_slot=422332925
+reference_processed_slot=422332957
+reference_rpc_url=https://api.mainnet-beta.solana.com
+require_dynamic_ports=True
+udp_listener_count=30
+validator_process_count=1

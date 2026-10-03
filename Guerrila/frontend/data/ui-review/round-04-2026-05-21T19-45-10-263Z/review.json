@@ -1,0 +1,63 @@
+{
+  "score": 83,
+  "done": false,
+  "major_issues": [
+    "Mobile layout is overly tall and dense: the flow canvas consumes a large vertical chunk before key status cards, pushing critical info far below the fold.",
+    "Several text lines risk overflow/poor wrapping on mobile (long URL query string in “Loop in progress”, long host/blocker strings, and pill labels like “Out shadow-state: blockhash/account truth”).",
+    "Discoverability of key controls is weak on mobile: zoom/fit controls are small and visually similar, and the chevron on “CAPITAL” card is not clearly indicating collapse/expand state."
+  ],
+  "medium_issues": [
+    "Right rail cards on desktop have inconsistent internal spacing and typographic hierarchy (some cards use small, low-contrast meta text that’s hard to scan).",
+    "Contrast/readability issues for secondary labels (e.g., small grey text on dark panels and faint node subtitles inside the canvas) especially on mobile.",
+    "Bottom “Host / eno1 / Blocker” tiles look slightly detached from main hierarchy (reads like a separate footer but competes for attention with main content).",
+    "Canvas content appears partially clipped/low legibility at default zoom on mobile; nodes and lane labels are too small to be useful without immediate zoom."
+  ],
+  "minor_issues": [
+    "Inconsistent capitalization and microcopy density across cards (e.g., 'local RPC unknown' vs 'LOCAL RPC', mixed casing).",
+    "Pill/button styles are close to tags; unclear which elements are clickable vs purely informational.",
+    "Event strip at bottom of canvas is low contrast and feels cramped; timestamps and messages blend together."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Add robust wrapping for long strings across cards: apply `overflow-wrap:anywhere; word-break:break-word;` to card body text, URLs, and pill containers; ensure pills can wrap with `flex-wrap:wrap; gap:8px;` and prevent horizontal overflow with `max-width:100%`."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve mobile information hierarchy: reduce initial canvas height on small screens (e.g., `max-height: 42vh` for the flow panel) and/or make the flow card collapsible by default on mobile so key status cards appear above the fold."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/app.js",
+      "change": "On narrow viewports, default the flow panel to a more readable zoom (or auto-fit) and provide a prominent single 'Fit' action; persist zoom/fit state per device. Also ensure the 'CAPITAL' chevron actually toggles expand/collapse with clear state."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Increase readability of secondary text: bump font-size for meta labels on mobile (e.g., 12->13/14px), raise contrast (lighter gray), and increase line-height in card paragraphs to ~1.4–1.5."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Make controls more tappable on mobile: enforce 40–44px hit targets for zoom/fit buttons, add clearer visual affordance for active state, and increase spacing between adjacent small buttons to avoid mis-taps."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Normalize card spacing: standardize padding (e.g., 16px desktop, 14–16px mobile), consistent section header spacing, and consistent gaps between stacked cards to reduce 'compressed' feel."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Clarify clickability of pills/buttons: differentiate interactive buttons vs info tags via hover/active states, cursor changes, and subtle background/border differences; add underlines/icons for external links/URLs if clickable."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "De-emphasize footer tiles ('Host/eno1/Blocker') by reducing height/padding or moving into a collapsible 'Details' section on mobile; on desktop, visually separate as a footer (lighter border, smaller headings)."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile overflow/wrapping risks and weak mobile hierarchy (critical info pushed below the fold) plus small/tight controls that hurt usability. Address responsive layout, wrapping, and tappability before stopping."
+}

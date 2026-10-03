@@ -1,0 +1,23 @@
+{
+  "ata_precreate_only_ready_rows": 0,
+  "ata_precreate_required": true,
+  "close_account_possible": false,
+  "decision_counts": {
+    "PARK_DIRECT_ROUTE_STALE": 1
+  },
+  "live_landed": 0,
+  "max_loss_budget_includes_unrecovered_ata_rent": true,
+  "mint": "7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7",
+  "one_mint_live_ready_rows": 0,
+  "pool": "E8exfT5cLv3fhCoCgNNeUKX5mSn7EfyrpXQPSTbWyqng",
+  "proposal_ready_rows": 0,
+  "r1_exit_nonzero_size_band_ready": false,
+  "rent_recovered_in_model": false,
+  "risk_tier": "R1_BACKRUN_TINY_INVENTORY_BAND",
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "size_ladder_best_ready_size_sol": "none",
+  "size_ladder_exact_decision": "SIZE_EXIT_ZERO",
+  "status": "PARK_DIRECT_ROUTE_STALE",
+  "wire_send": 0
+}

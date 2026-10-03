@@ -1,0 +1,18 @@
+{
+  "ata_required_rows": 0,
+  "bundle_built_count": 0,
+  "decision_counts": {
+    "PARK_TARGET_NOT_BUY_PREFIX": 5
+  },
+  "entry_bundle_ready_no_submit_rows": 0,
+  "live_landed": 0,
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "rows_seen": 5,
+  "sendBundle_called": false,
+  "simulate_bundle_called_count": 0,
+  "simulate_bundle_pass_count": 0,
+  "status": "PARK_LAUNCH_ENTRY_BUNDLE_NOSUBMIT",
+  "target_not_landed_count": 5,
+  "target_tx_bytes_available_count": 5,
+  "wire_send": 0
+}

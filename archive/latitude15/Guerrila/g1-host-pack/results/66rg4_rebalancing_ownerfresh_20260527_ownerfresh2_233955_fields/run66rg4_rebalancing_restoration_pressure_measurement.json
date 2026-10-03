@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "max_adverse_excursion_bounded_rows": 19,
+    "owner_mode_rebalancing_rows": 22,
+    "recovery_fraction_target_rows": 22,
+    "reserve_displacement_input_rows": 22,
+    "restoration_pressure_measured_rows": 19,
+    "restoration_pressure_score_rows": 22,
+    "rows_seen": 22
+  },
+  "first_restoration_blocker_counts": {
+    "max_adverse_excursion_unbounded": 3,
+    "none": 19
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "status": "RESTORATION_PRESSURE_MEASURED"
+}

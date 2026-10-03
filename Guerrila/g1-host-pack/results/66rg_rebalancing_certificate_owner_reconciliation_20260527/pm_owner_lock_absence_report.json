@@ -1,0 +1,6 @@
+{
+  "pm_owner_lock_ready_rows": 0,
+  "pm_owner_lock_surface_present": false,
+  "pm_split_rule_surface_present": false,
+  "explanation": "No structural-ready row carries a PM owner lock id or approved split-rule id. PM reserve/release plumbing is green, but strategy-owner PM locking is absent."
+}

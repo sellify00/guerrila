@@ -1,0 +1,16 @@
+status=UNWINDLESS_BURN_RECONCILED
+owner=ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX
+mint=4vmffdrRRXyVK6zcuQjnaBQfckGqe6ivXikQAvYYVRmg
+token_account=5udeEm4j3c24XegWRnti7E23EUVBy3psBMeSAWN9N21e
+pre_token_amount_raw=44242997476
+token_account_lamports=2039280
+token_account_owner_program=TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+burn_close_signature=5kjv9AwzTfHkXC82pddQemVpSKvxgW1TCpLw3UmDhPRmmoreq6XP3WHH59YCUppDvxG43W72SgaQvbsWZjGCodrR
+burn_close_landed=True
+final_inventory_raw=0
+native_delta_lamports=2034280
+simulate_err=None
+simulate_logs=['Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]', 'Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 400000 compute units', 'Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success', 'Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]', 'Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 399869 compute units', 'Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success']
+confirm_status={'slot': 423775925, 'confirmations': 0, 'status': {'Ok': None}, 'err': None, 'confirmationStatus': 'confirmed'}
+base_failed_attempt_pnl_lamports=-12249279
+final_trade_pnl_lamports=-10214999

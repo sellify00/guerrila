@@ -1,0 +1,49 @@
+{
+  "alt_resolution_blocked_count": 1,
+  "alt_resolution_ready_rows": 7,
+  "first_alt_blocker_counts": {
+    "ALT_NOT_FOUND": 1,
+    "TX_DECODE_FAILED": 7,
+    "none": 12
+  },
+  "live_landed": 0,
+  "lookup_table_fetch_ok_rows": 7,
+  "program_ids_after_alt_counts": {
+    "11111111111111111111111111111111": 9,
+    "3QUnrcMqCQoiGB73s1A6uDzxziywaNFpTLiZiiZbEUoN": 1,
+    "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P": 1,
+    "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 4,
+    "AddressLookupTab1e1111111111111111111111111": 1,
+    "BSfD6SHZigAfDWSjzD5Q41jw8LmKwtmjskPH9XW1mrRW": 1,
+    "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi": 1,
+    "CDuTKK211sKRLp7USpoPgncJ3GknnrFUpLTpa2QYrJn5": 1,
+    "ComputeBudget111111111111111111111111111111": 9,
+    "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9": 1,
+    "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": 1,
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 3,
+    "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 3,
+    "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3": 1
+  },
+  "program_ids_before_alt_counts": {
+    "11111111111111111111111111111111": 9,
+    "3QUnrcMqCQoiGB73s1A6uDzxziywaNFpTLiZiiZbEUoN": 1,
+    "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P": 1,
+    "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 4,
+    "AddressLookupTab1e1111111111111111111111111": 1,
+    "BSfD6SHZigAfDWSjzD5Q41jw8LmKwtmjskPH9XW1mrRW": 1,
+    "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi": 1,
+    "CDuTKK211sKRLp7USpoPgncJ3GknnrFUpLTpa2QYrJn5": 1,
+    "ComputeBudget111111111111111111111111111111": 9,
+    "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9": 1,
+    "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": 1,
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 3,
+    "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 3,
+    "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3": 1
+  },
+  "rows_seen": 20,
+  "rows_with_alt_lookups": 8,
+  "sendBundle_called": false,
+  "status": "runls13alt_preprocessed_alt_resolution_audit_complete",
+  "supported_program_after_alt_count": 3,
+  "wire_send": 0
+}

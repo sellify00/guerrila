@@ -1,0 +1,59 @@
+{
+  "afxdp": {
+    "total": 2,
+    "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+    "counts": {
+      "reject_pi_no_send_output_suppressed": 2
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 2,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_no_send_output_suppressed": 2
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 2963,
+    "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+    "counts": {
+      "reject_pi_no_send_output_suppressed": 2963
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 1623,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_no_send_output_suppressed": 1623
+        }
+      },
+      "directarb": {
+        "total": 1340,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_no_send_output_suppressed": 1340
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

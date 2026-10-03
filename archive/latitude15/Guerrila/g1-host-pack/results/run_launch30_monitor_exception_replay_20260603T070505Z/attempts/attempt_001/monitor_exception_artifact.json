@@ -1,0 +1,33 @@
+{
+  "exception_message": "'int' object is not callable",
+  "exception_type": "TypeError",
+  "file": "/home/ubuntu/Guerrila/g1-host-pack/scripts/launch_monitor_exception_replay.py",
+  "final_inventory_raw": 0,
+  "first_failure": "monitor_exception:TypeError:'int' object is not callable",
+  "flatten_landed": true,
+  "function": "main",
+  "last_exit_quote_state": {
+    "expected_out_raw": 1000000,
+    "min_out_raw": 950000,
+    "ok": true,
+    "replay_amount_in_raw": 123456,
+    "reserve_after_exit_raw": 49000000,
+    "sell_reserve_out_raw": 50000000
+  },
+  "line": 109,
+  "mint": "REPLAY_MONITOR_EXCEPTION_MINT",
+  "pm_pending_after": 0,
+  "pm_pending_before_rescue": 1,
+  "pool": "REPLAY_MONITOR_EXCEPTION_POOL",
+  "position_open": true,
+  "position_state": "RESCUE_FLATTENED",
+  "primary_flatten_landed": false,
+  "rescue_action_taken": "EMERGENCY_RESCUE_FLATTENED",
+  "rescue_flatten_landed": true,
+  "rescue_flatten_used": true,
+  "rescue_path_invoked": true,
+  "token_balance_raw_at_exception": 123456,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/Guerrila/g1-host-pack/scripts/launch_monitor_exception_replay.py\", line 109, in main\n    raise TypeError(\"'int' object is not callable\")\nTypeError: 'int' object is not callable\n",
+  "traceback_present": true,
+  "updated_utc": "2026-06-03T07:05:05Z"
+}

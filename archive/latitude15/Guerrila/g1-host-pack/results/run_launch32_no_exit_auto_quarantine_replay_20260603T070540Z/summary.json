@@ -1,0 +1,16 @@
+{
+  "acceptance_pass": true,
+  "auto_quarantine_invoked": true,
+  "burn_close_landed": true,
+  "burn_close_signature": "REPLAY_BURN_CLOSE_SIGNATURE",
+  "burn_close_simulated": true,
+  "daily_ledger_repaired": true,
+  "exit_reason": "EXIT_EXIT_QUOTE_ZERO",
+  "final_inventory_raw": 0,
+  "first_failure": "none",
+  "manual_intervention_required": false,
+  "pm_pending_after": 0,
+  "position_state": "UNWINDLESS_BURN_RECONCILED",
+  "status": "LAUNCH32_NO_EXIT_AUTO_QUARANTINE_REPLAY",
+  "updated_utc": "2026-06-03T07:05:41Z"
+}

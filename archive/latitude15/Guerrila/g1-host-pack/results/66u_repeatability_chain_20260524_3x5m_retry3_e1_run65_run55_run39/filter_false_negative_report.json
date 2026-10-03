@@ -1,0 +1,48 @@
+{
+  "filters": [
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 836,
+      "positive_markout_after_reject_count": 499,
+      "positive_after_fee_after_reject_count": 818,
+      "false_negative_rate": 0.5969,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 1791764,
+      "p90_positive_markout_lamports": 7356465,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 17,
+      "positive_markout_after_reject_count": 13,
+      "positive_after_fee_after_reject_count": 13,
+      "false_negative_rate": 0.7647,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 2421721,
+      "p90_positive_markout_lamports": 2444908,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "output_account_not_ready",
+      "rejected_count": 50,
+      "positive_markout_after_reject_count": 17,
+      "positive_after_fee_after_reject_count": 48,
+      "false_negative_rate": 0.34,
+      "best_owner_mode_after_reject": "housekeeping",
+      "median_positive_markout_lamports": 67670,
+      "p90_positive_markout_lamports": 261217,
+      "recommended_action": "Pre-create approved recurring output ATAs instead of treating missing ATA as no-opportunity."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 2381,
+      "positive_markout_after_reject_count": 1880,
+      "positive_after_fee_after_reject_count": 2338,
+      "false_negative_rate": 0.7896,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 504401.5,
+      "p90_positive_markout_lamports": 2929540,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "account_ready_rows": 3,
+  "architecture_blocker_counts": {},
+  "bundle_no_submit_ready_rows": 2,
+  "certificate_scope": "execution_plumbing_only",
+  "entry_rule_ready_rows": 416,
+  "exact_positive_rows": 22,
+  "exit_rule_ready_rows": 347,
+  "inline_ata_possible_rows": 2,
+  "inline_decision_counts": {
+    "ACCOUNT_READY": 3,
+    "INLINE_ATA_CREATABLE": 2,
+    "INLINE_ATA_EXIT_DUST": 6,
+    "INLINE_ATA_POLICY_BLOCKED": 11
+  },
+  "live_approval": false,
+  "live_landed": 0,
+  "market_blocker_counts": {},
+  "owner_mode_eligible": false,
+  "pm_ready_rows": 18,
+  "policy_decision_counts": {
+    "DENY_EXIT_DUST": 6,
+    "DENY_FREEZE_AUTHORITY": 3,
+    "POLICY_CLEAN_READY": 6,
+    "REVIEW_METADATA_ONLY_TOKEN2022": 7
+  },
+  "proposal_eligible": false,
+  "proposal_eligible_rebalancing_rows": 0,
+  "quote_min_out_ready_rows": 93,
+  "rebalancing_rows_seen": 476,
+  "rejected_row_blocker_counts": {
+    "BLOCKED_ENTRY_RULE_MISSING": 60,
+    "BLOCKED_EXIT_RULE_MISSING": 110,
+    "BLOCKED_POLICY": 16,
+    "BLOCKED_QUOTE_MISSING": 227,
+    "BLOCKED_TEMPLATE": 4,
+    "DENY_EXIT_DUST": 6,
+    "DENY_FREEZE_AUTHORITY": 3,
+    "INLINE_ATA_EXIT_DUST": 6,
+    "INLINE_ATA_POLICY_BLOCKED": 11
+  },
+  "roundtrip_positive_rows": 22,
+  "rule_decision_counts": {
+    "BLOCKED_ENTRY_RULE_MISSING": 60,
+    "BLOCKED_EXIT_RULE_MISSING": 110,
+    "BLOCKED_QUOTE_MISSING": 227,
+    "ENTRY_EXIT_RULE_READY": 79
+  },
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_no_send_ready_rows": 0,
+  "source_inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ri_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "source_overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66r_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "source_policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rp_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "source_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "source_template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "status": "REBALANCING_EXECUTION_PLUMBING_READY",
+  "status_meaning": "execution_plumbing_structural_ready",
+  "step": "66rb_rebalancing_ownerfresh_20260527_ownerfresh2_233955",
+  "structural_ready_rows": 2,
+  "superseded_structural_hunt_ready_wording": true,
+  "template_decision_counts": {
+    "BLOCKED_POLICY": 16,
+    "BLOCKED_TEMPLATE": 4,
+    "REBALANCING_BUNDLE_READY_NO_SUBMIT": 2
+  },
+  "template_ready_rows": 18,
+  "wire_send": 0
+}

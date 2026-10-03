@@ -1,0 +1,93 @@
+SH7-A host candidate-substrate summary
+=====================================
+
+Status
+------
+
+SH7-A host proof is still not green.
+
+The host substrate blocker was fixed far enough to produce observe candidates:
+
+  worker_pool_state_hit > 0
+  observe_candidates > 0
+  worker_shadow_events_published > 0
+
+The host no-send blocker is now back at the intended SH7-A split:
+
+  worker_rollout_would_send_events_published = 0
+  worker_rollout_live_send_suppressed_events_published = 0
+
+Substrate diagnostic
+--------------------
+
+The zero-publish state bootstrap was not a bad endpoint and not a pool decode failure.
+
+Latest repaired substrate counters:
+
+  bootstrap_rpc_program_accounts_returned{program=raydium_pool}=705140
+  bootstrap_pool_decode_ok=705140
+  bootstrap_pool_decode_reject_short=0
+  bootstrap_pool_decode_reject_owner=0
+  bootstrap_pool_decode_reject_status=0
+  bootstrap_pool_decode_reject_other=0
+  bootstrap_pool_store_inserted=705140
+  bootstrap_pool_published=262140
+  bootstrap_pool_deferred_missing_vaults=15
+  bootstrap_mint_decode_ok=700158
+  bootstrap_mint_store_inserted=700158
+  bootstrap_mint_published=699873
+  bootstrap_vault_decode_ok=1410250
+  bootstrap_vault_store_inserted=1410250
+  bootstrap_alt_accounts_returned=0
+  bootstrap_alt_published=0
+  bootstrap complete: pools=705140, mints=700158, vaults=1410250, alts=0
+
+Interpretation:
+
+  Case A, zero RPC returns: false
+  Case B, decoder rejected all: false
+  Case C, store/publish bug: true for the original zero-publish symptom
+  Case D, Tier0 shared-memory miss: false for latest run, because pool_state_hit > 0
+
+Host no-send run
+----------------
+
+Artifact:
+
+  ~/shadow-host-audit/sh7a-no-send/20260428_192828-candidate-substrate
+
+Counters:
+
+  sample_slots=494
+  worker_records_seen=39
+  worker_pool_state_hit=14
+  observe_candidates=14
+  worker_shadow_events_published=28
+  worker_rollout_would_send_events_published=0
+  worker_rollout_live_send_suppressed_events_published=0
+  rollout_events_observed=14
+  rollout_would_send=0
+  rollout_live_send_suppressed=0
+  rollout_last_no_send_reason=0
+  rollout_last_drop_reason=1
+  micro_market_observations=0
+  micro_market_uplift_ok=false
+  worker_health_drops=0
+  live_landed=0
+  all_gates_green=false
+  promote_allowed=false
+
+Decision
+--------
+
+This is not SH7-A green.
+
+The current host now exercises candidate creation and route-opportunity publication. It does not
+exercise final no-send publication. The next patch belongs before final no-send emit, likely inside
+route classification, process_intent, quote/template/sign, or no-send backend assembly.
+
+Non-unlocks
+-----------
+
+This does not unlock SH6, SH8, r1_tiny, live send, public RPC exposure, public execution fallback, or
+private-grade labeling for external/local-validator Geyser.

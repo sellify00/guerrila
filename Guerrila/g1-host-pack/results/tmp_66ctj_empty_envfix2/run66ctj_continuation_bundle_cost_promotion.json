@@ -1,0 +1,15 @@
+{
+  "bundle_envelope_built_rows": 0,
+  "bundle_ready_no_submit_rows": 0,
+  "decision_counts": {},
+  "fresh_roundtrip_positive_rows": 0,
+  "live_landed": 0,
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "rows_seen": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "simulateBundle_pass_rows": 0,
+  "source_rows": "g1-host-pack/results/tmp_66ctj_empty/missing.jsonl",
+  "status": "PARK_CONTINUATION_BUNDLE_COST_PROMOTION",
+  "wire_send": 0
+}

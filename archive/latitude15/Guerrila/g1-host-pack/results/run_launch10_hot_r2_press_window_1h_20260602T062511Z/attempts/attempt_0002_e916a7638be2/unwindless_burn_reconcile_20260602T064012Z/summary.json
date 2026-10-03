@@ -1,0 +1,38 @@
+{
+  "accounts_after": [],
+  "accounts_before": [
+    {
+      "amount_raw": 55283005068896,
+      "owner_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "pubkey": "3akJhJYtvaxUSuwHA4JmCk2pULLWUmVfhZukgSgeg97T"
+    }
+  ],
+  "blockhash": "4necLVSLowkjRHLvvni9Fb3yV2wupdSffEw8YjsTvttP",
+  "burn_amount_raw": 55283005068896,
+  "burn_close_landed": true,
+  "burn_close_native_delta_lamports": 2034280,
+  "burn_close_signature": "2UwxWrYeDXPcd6paX1J2AcMZkXe8H3CyAePPDjNLTUCf451zQDCpUUWHZN5LbnGFb9szDFWsgLPrLZr7Use5v5ya",
+  "confirmation_status": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 0,
+    "err": null,
+    "slot": 423756912,
+    "status": {
+      "Ok": null
+    }
+  },
+  "final_inventory_raw": 0,
+  "final_trade_pnl_lamports": -10210000,
+  "initial_trade_pnl_lamports": -12244280,
+  "last_valid_block_height": 401840898,
+  "ledger_path": "/home/ubuntu/Guerrila/g1-host-pack/results/runtime_daily_risk/22_launch10_hot_r2_press_window_2026-06-02.json",
+  "ledger_updated": true,
+  "mint": "98y7yFnhHRwGmWTs4KPzVcZFPGt9SJAuqkPTLrzeqfsd",
+  "owner": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "post_native_balance_lamports": 11626962387,
+  "pre_native_balance_lamports": 11624928107,
+  "sender_error": null,
+  "status": "UNWINDLESS_BURN_RECONCILED",
+  "token_account": "3akJhJYtvaxUSuwHA4JmCk2pULLWUmVfhZukgSgeg97T",
+  "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+}

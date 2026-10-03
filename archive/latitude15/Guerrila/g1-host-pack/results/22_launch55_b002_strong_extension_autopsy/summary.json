@@ -1,0 +1,181 @@
+{
+  "acceptance_pass": true,
+  "landed_count": 8,
+  "recommended_gate": {
+    "base_reserve_decline_velocity_bps": ">=0",
+    "entry_quality_ready": true,
+    "executable_exit_value_slope_2s_bps": ">0",
+    "exit_liquidity_guard_ready": true,
+    "net_buy_pressure_5s": ">=1",
+    "price_change_since_trigger_bps": ">=500",
+    "sell_count_2s": "<=0"
+  },
+  "roots": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T071242Z",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T082112Z"
+  ],
+  "separating_features": [
+    "peak_executable_exit_gain_bps separated realized winners from weak losers",
+    "price_change_since_trigger_bps and executable_exit_value_slope_2s_bps should be captured pre-entry for B002_PLUS",
+    "no-exit tails are not the current frozen-lane failure; weak extension below the cost zone is"
+  ],
+  "status": "B002_STRONG_EXTENSION_AUTOPSY_PASS",
+  "strong_count": 4,
+  "strong_extension_profile": {
+    "base_reserve_decline_velocity_bps": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "base_reserve_to_position_ratio": {
+      "max": 15738.1114375,
+      "median": 15738.1114375,
+      "min": 15738.1114375
+    },
+    "buy_count_5s": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "count": 4,
+    "exit_reason_counts": {
+      "EXIT_COST_PROTECTOR_TRAILING": 3,
+      "EXIT_REALISABLE_PROFIT_TRAILING": 1
+    },
+    "net_buy_pressure_2s": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "net_buy_pressure_5s": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "peak_executable_exit_gain_bps": {
+      "max": 3703.0,
+      "median": 3180.5,
+      "min": 2278.0
+    },
+    "pnl_after_rent_recovery": {
+      "max": 2357622.0,
+      "median": 1688975.0,
+      "min": 1150006.0
+    },
+    "post_sell_absorption_score": {
+      "max": 20.0,
+      "median": 20.0,
+      "min": 20.0
+    },
+    "price_change_since_trigger_bps": {
+      "max": 1369.0,
+      "median": 440.5,
+      "min": 152.0
+    },
+    "quote_stability_score": {
+      "max": 3.0,
+      "median": 3.0,
+      "min": 3.0
+    },
+    "reserve_after_exit_to_position_ratio": {
+      "max": 15737.1557881,
+      "median": 15737.1557881,
+      "min": 15737.1557881
+    },
+    "reserve_pressure_score": {
+      "max": 1369.0,
+      "median": 440.5,
+      "min": 152.0
+    },
+    "sell_count_2s": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "signal_age_ms": {
+      "max": 1930.0,
+      "median": 720.0,
+      "min": 434.0
+    }
+  },
+  "weak_count": 4,
+  "weak_extension_profile": {
+    "base_reserve_decline_velocity_bps": {
+      "max": 152.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "base_reserve_to_position_ratio": {
+      "max": 101382.7660883,
+      "median": 28016.6112832,
+      "min": 13140.4247902
+    },
+    "buy_count_5s": {
+      "max": 2.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "count": 4,
+    "exit_reason_counts": {
+      "EXIT_FAST_DROP_2S": 1,
+      "EXIT_PANIC_DROP_10S": 2,
+      "EXIT_TRAILING_STOP_FROM_HIGH": 1
+    },
+    "net_buy_pressure_2s": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "net_buy_pressure_5s": {
+      "max": 2.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "peak_executable_exit_gain_bps": {
+      "max": 1449.0,
+      "median": 890.0,
+      "min": 564.0
+    },
+    "pnl_after_rent_recovery": {
+      "max": -525238.0,
+      "median": -1236930.0,
+      "min": -1286620.0
+    },
+    "post_sell_absorption_score": {
+      "max": 20.0,
+      "median": 20.0,
+      "min": 20.0
+    },
+    "price_change_since_trigger_bps": {
+      "max": 1204.0,
+      "median": 586.0,
+      "min": 134.0
+    },
+    "quote_stability_score": {
+      "max": 3.0,
+      "median": 3.0,
+      "min": 3.0
+    },
+    "reserve_after_exit_to_position_ratio": {
+      "max": 101381.8092911,
+      "median": 28015.653172849998,
+      "min": 13139.4634867
+    },
+    "reserve_pressure_score": {
+      "max": 1204.0,
+      "median": 586.0,
+      "min": 134.0
+    },
+    "sell_count_2s": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "signal_age_ms": {
+      "max": 1858.0,
+      "median": 1143.5,
+      "min": 835.0
+    }
+  }
+}

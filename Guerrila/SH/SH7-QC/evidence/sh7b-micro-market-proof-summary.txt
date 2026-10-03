@@ -1,0 +1,58 @@
+SH7-B micro-market proof summary
+
+Status: closed for observe-only/no-send evidence.
+
+Host artifact:
+
+```text
+/home/ubuntu/shadow-host-audit/sh7a-no-send/20260428_210813-geyser-shadow-nosend-stale-ok
+```
+
+The accepted SH7-A green host run also satisfies the SH7-B micro-market target because final
+no-send events now carry micro-market counterfactual fields through PM and the G12 gate export.
+
+Key gate-input counters:
+
+```text
+sample_slots=285
+observe_candidates=12
+worker_geyser_shadow_no_send_admitted=4
+worker_final_no_send_event_published=4
+rollout_would_send=4
+rollout_live_send_suppressed=4
+micro_market_observations=4
+micro_market_uplift_ok=True
+micro_market_banked_retained_ev_lamports=2850446
+micro_market_flat_baseline_retained_ev_lamports=2850446
+micro_market_delta_lamports=0
+live_landed=0
+```
+
+Key gate-report counters:
+
+```text
+micro_market_observations=4
+micro_market_uplift_ok=True
+micro_market_delta_lamports=0
+live_landed=0
+all_gates_green=False
+promote_allowed=False
+shadow_guard_mainnet_deployed=False
+shadow_guard_template_program_id_matches=False
+```
+
+Interpretation:
+
+```text
+rollout_would_send > 0: true
+rollout_live_send_suppressed > 0: true
+micro_market_observations > 0: true
+micro_market_uplift_ok = true: true
+live_landed = 0: true
+promote_allowed = false: true
+```
+
+The micro-market delta is exactly zero in this host window: banked retained EV equals the flat
+baseline retained EV for the observed class/index. That is acceptable for SH7-B because the gate
+requires non-negative uplift and real observations, not positive uplift. G12 promotion remains false
+because ShadowGuard ops proof is still missing.

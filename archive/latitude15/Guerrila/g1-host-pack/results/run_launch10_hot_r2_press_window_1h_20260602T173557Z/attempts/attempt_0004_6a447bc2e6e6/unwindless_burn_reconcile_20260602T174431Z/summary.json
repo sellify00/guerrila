@@ -1,0 +1,34 @@
+{
+  "attempt_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T173557Z/attempts/attempt_0004_6a447bc2e6e6",
+  "auto_quarantine_invoked": true,
+  "burn_close_amount_raw": 44734842204353,
+  "burn_close_confirmation_status": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 0,
+    "err": null,
+    "slot": 423857243,
+    "status": {
+      "Ok": null
+    }
+  },
+  "burn_close_landed": true,
+  "burn_close_native_delta_lamports": 2034280,
+  "burn_close_send_error": null,
+  "burn_close_signature": "4Q7pRP2SZzBqn7Vvu4hxw8SzD9Sfjep7rQUjmDbR23WsnG9eidRwCiyqFeQWx5M1FaoLTus16CE5hW8zRWv6433b",
+  "burn_close_sim_error": "",
+  "burn_close_sim_ok": true,
+  "burn_close_token_account": "7BzUbZYvTwuucQEM9DX4cqpiNKHdKToAeg9cv31PBogp",
+  "burn_close_token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "exit_quote_zero_seen": true,
+  "exit_reason": "EXIT_EXIT_QUOTE_ZERO",
+  "final_inventory_raw": 0,
+  "final_trade_pnl_lamports": -10210000,
+  "first_failure": "none",
+  "manual_intervention_required": false,
+  "mint": "D5WxVFYe7cnQ5UK7Vk95hGHE8AEvAoJr2UPbkLMzH8Xq",
+  "owner": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "pm_pending_after": 0,
+  "pool": "EExNWhEFTfuSWDYLKgUHRV7nBVg94F26ZPZSaZscwNVz",
+  "status": "UNWINDLESS_BURN_RECONCILED",
+  "updated_utc": "2026-06-02T17:44:31Z"
+}

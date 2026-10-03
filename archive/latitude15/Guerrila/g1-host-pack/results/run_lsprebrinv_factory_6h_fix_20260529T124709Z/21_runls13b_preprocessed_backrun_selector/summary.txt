@@ -1,0 +1,12 @@
+status=runls13b_preprocessed_backrun_selector_complete
+rows_seen=1440
+alt_hydrated_rows=974
+alt_resolution_blocked_rows=30
+target_entity_ready_count=93
+target_already_landed_at_first_check_count=34
+target_not_landed_at_first_check_count=1406
+selector_decision_counts={"ALREADY_LANDED": 5, "BLOCKHASH_INVALID": 7, "TARGET_ENTITY_READY": 93, "TX_DECODE_FAILED": 444, "UNSUPPORTED_ALT_UNRESOLVED": 30, "UNSUPPORTED_PROGRAM": 861}
+ready_venue_counts={"meteora_damm_v2": 1, "pumpfun_amm": 87, "raydium_clmm": 5}
+wire_send=0
+live_landed=0
+sendBundle_called=false

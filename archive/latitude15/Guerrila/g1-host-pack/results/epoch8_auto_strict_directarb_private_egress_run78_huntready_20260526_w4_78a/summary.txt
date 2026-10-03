@@ -1,0 +1,16 @@
+status=run78a_complete
+afxdp_directarb_row_count=18
+pm_failed_near_miss_count=1
+ev_not_positive_count=8
+ev_math_unavailable_count=3
+quote_numeric_missing_count=1
+first_failed_counts={"ev_not_positive":8,"input_notional_within_cap":5,"ev_math_unavailable":3,"pm_reserve_can_lock_exact_input":1,"quote_numeric_missing":1}
+pm_reserve_blocker_counts={"pm_not_blocking_visible_balance_ok":13,"unsupported_non_wsol_input":5}
+input_account_resolution_blocker_counts={"none":18}
+ev_math_blocker_counts={"ev_not_positive":8,"none":6,"unsupported_non_wsol_pair":3,"mint_out_wsol_quote_projection":1}
+quote_blocker_counts={"none":17,"quote_numeric_missing":1}
+private_route_ev_proof_status_counts={"owner_mode_mismatch_shadow_only":18}
+malformed_rejection_rows=0
+malformed_shock_rows=1
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w4_78a/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w4_78a/rows.csv

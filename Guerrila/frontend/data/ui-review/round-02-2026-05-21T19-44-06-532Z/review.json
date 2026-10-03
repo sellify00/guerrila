@@ -1,0 +1,65 @@
+{
+  "score": 82,
+  "done": false,
+  "major_issues": [
+    "Mobile: the graph canvas/flow view is effectively unusable at default zoom; content starts partially off-screen and requires fiddly pan/zoom with no clear affordance or reset-to-fit action.",
+    "Mobile: dense right-rail cards become a long, repetitive scroll with weak hierarchy; key status (capital/runtime/blocker) competes with verbose descriptive paragraphs and code chips.",
+    "Inconsistent overflow handling for long tokens (host string, URLs, labels like \"agave_preflight_not_green\"); some areas rely on wrapping, others risk clipping/ugly breaks, reducing scanability."
+  ],
+  "medium_issues": [
+    "Top controls (tabs + zoom buttons) are cramped and look like a dev toolbar; spacing/alignment feels slightly off and the active state is subtle against the dark UI.",
+    "Contrast/readability: several secondary labels (timestamps, small metadata, muted text inside cards) are too low-contrast for long reading on dark background.",
+    "Card density/padding is inconsistent: some cards have generous padding while inner sections (pills/chips, stat rows) feel tight; creates visual jitter when scanning.",
+    "Event strip at bottom of graph is visually present but not clearly interactive; typography is small and the information is hard to parse quickly.",
+    "Right column on desktop: stack of cards is tall and scroll-heavy; the most important cards aren’t visually grouped (status summary vs. activity vs. details)."
+  ],
+  "minor_issues": [
+    "Numeric formatting/presentation: \"12.500010001 SOL\" looks overly precise and noisy for a headline metric.",
+    "Chevron on CAPITAL card suggests expand/collapse, but affordance is ambiguous (no visible hover/expanded state in screenshot).",
+    "Some pill/chip components have inconsistent border radii and border thickness compared to surrounding cards.",
+    "The bottom info tiles (Host/eno1/Blocker) feel detached from the main hierarchy and could be visually integrated as a sticky footer/status bar."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/app.js",
+      "change": "Add explicit mobile-first graph controls: a prominent \"Fit to screen\" button (and optional \"Reset\") near the graph header; on first load on small screens auto-run fit-to-view (or set initial transform) so the main nodes are centered and readable without manual zoom."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Enforce consistent long-text overflow rules across cards/pills: apply `overflow-wrap:anywhere; word-break:break-word;` for URLs/hostnames, and use `text-overflow: ellipsis` + `white-space: nowrap` for single-line labels where scanning matters (e.g., status tiles)."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve mobile layout hierarchy: reduce vertical padding between repeated cards, introduce section dividers/headers that stick (e.g., Status / Activity / Details), and promote the top 2–3 KPIs into a compact summary row to cut scroll."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Increase contrast for secondary text on dark backgrounds: bump muted text color and/or font-weight slightly (timestamps, small metadata, helper text) to meet readability expectations; ensure at least ~4.5:1 for common sizes."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Normalize spacing rhythm: standardize card padding (e.g., 16px), inner gaps (8/12px), and chip spacing; align the top toolbar elements to a consistent baseline and equalize button heights."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/app.js",
+      "change": "Add lightweight progressive disclosure for verbose blocks (e.g., the Ledger/RPC paragraph and long command-like chips): show 2–3 lines with \"Show more\" on mobile to reduce immediate density."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/app.js",
+      "change": "Format headline numbers for humans: round CAPITAL to a sensible precision (e.g., 2–4 decimals) with full precision on hover/copy, to reduce visual noise."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Make chevrons/expand affordances clearer: add hover/focus states and an expanded state style (rotation + content animation) so users understand which cards are collapsible."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet: mobile primary visualization lacks a clear, usable default view (fit/center/reset), and overall mobile hierarchy is too scroll-dense with inconsistent overflow handling for long technical strings."
+}

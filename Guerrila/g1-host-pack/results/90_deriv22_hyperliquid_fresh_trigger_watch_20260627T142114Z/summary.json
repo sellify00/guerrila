@@ -1,0 +1,27 @@
+{
+  "account_abstraction": "unifiedAccount",
+  "blocker_counts": {
+    "day_volume_below_floor": 119,
+    "fresh_trigger_below_floor": 57
+  },
+  "decision_counts": {
+    "PARK_DERIV22_HYPERLIQUID_FRESH_TRIGGER": 176
+  },
+  "duration_seconds": 60,
+  "exchange_submit_attempted": false,
+  "fresh_trigger_ready_rows": 0,
+  "fresh_trigger_rows": 176,
+  "live_landed": 0,
+  "no_wire": true,
+  "open_order_count": 0,
+  "open_position_count": 0,
+  "samples": 10,
+  "selected_side": "",
+  "selected_source_net_after_orderbook_bps": 0,
+  "selected_symbol": "",
+  "selected_trigger_change_bps": 0,
+  "spot_usdc_available": 25.09419396,
+  "status": "PARK_DERIV22_HYPERLIQUID_FRESH_TRIGGER_NO_READY",
+  "tiny_notional_usd": 25.0,
+  "wire_send": 0
+}

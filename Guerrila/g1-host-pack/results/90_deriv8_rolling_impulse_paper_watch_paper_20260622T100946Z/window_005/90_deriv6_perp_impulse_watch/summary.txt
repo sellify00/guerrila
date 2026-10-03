@@ -1,0 +1,16 @@
+status=DERIV_PERP_IMPULSE_READY
+samples=162
+symbols_seen=178
+impulse_rows=178
+perp_impulse_ready_rows=16
+decision_counts={"DERIV_PERP_IMPULSE_READY": 16, "PARK_DERIV_PERP_IMPULSE": 162}
+blocker_counts={"day_volume_below_floor": 119, "impulse_below_cost_floor": 14, "impulse_below_threshold": 29, "none": 16}
+duration_seconds=900
+min_impulse_bps=20.0
+sample_rows_written=28836
+samples_path=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv8_rolling_impulse_paper_watch_paper_20260622T100946Z/window_005/90_deriv6_perp_impulse_watch/samples.jsonl
+no_wire=true
+rows=178
+ready_rows=16
+wire_send=0
+live_landed=0

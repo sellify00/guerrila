@@ -1,0 +1,83 @@
+{
+  "sink_capacity": 8192,
+  "sink_batch_size": 1,
+  "sink_flush_count": 0,
+  "sink_attempt_total": 0,
+  "sink_accept_total": 0,
+  "sink_suppress_total": 0,
+  "sink_full_count": 0,
+  "sink_drop_count": 0,
+  "sink_backpressure_count": 0,
+  "sink_max_depth": 0,
+  "sink_p95_depth": 0,
+  "by_source": {
+    "afxdp": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "external_geyser": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "laserstream": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "local_agave": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "other": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    }
+  },
+  "by_owner_mode": {
+    "backrun": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "continuation": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "directarb": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "drop": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "flatten": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "housekeeping": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "other": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    },
+    "rebalancing": {
+      "attempt": 0,
+      "accept": 0,
+      "suppress": 0
+    }
+  },
+  "top_suppression_reason": "none"
+}

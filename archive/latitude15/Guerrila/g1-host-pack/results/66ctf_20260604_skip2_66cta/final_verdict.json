@@ -1,0 +1,19 @@
+{
+  "account_or_inline_ata_ready_rows": 0,
+  "continuation_execution_plumbing_ready_rows": 0,
+  "final_verdict": "PARK_CONTINUATION_ACCOUNT_OR_POLICY",
+  "first_account_policy_template_blocker_counts": {
+    "PM_OWNER_MODE_MISSING": 114
+  },
+  "hard_stops_preserved": {
+    "ata_created": false,
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "policy_pass_rows": 114,
+  "rows_seen": 114,
+  "template_ready_rows": 0
+}

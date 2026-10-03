@@ -1,0 +1,16 @@
+status=PARK_NO_LAUNCH_V2_READY_ROWS
+rows_seen=62
+trigger_mode=B
+buy_prefix_pass_count=40
+exit_ladder_pass_count=43
+policy_pass_count=48
+pm_ready_count=0
+auto_flatten_ready_count=44
+v2_ready_rows=0
+v2_ata_required_rows=0
+best_candidate={}
+decision_counts={"PARK_V2_EXIT_ZERO": 11, "PARK_V2_PM": 24, "PARK_V2_POLICY": 5, "PARK_V2_PRESSURE": 22}
+first_blocker_counts={"buy_count_1s_below_threshold": 3, "buy_count_2s_below_threshold": 9, "creator_sell_detected": 12, "exit_quote_expected_out_zero": 1, "pm_reserve_failed": 24, "route_family_unsupported": 1, "sell_pressure_dominant": 2, "sell_seen_before_entry": 4, "token2022_requires_explicit_allow": 5, "unsupported_pair_class": 1}
+wire_send=0
+live_landed=0
+sendBundle_called=false

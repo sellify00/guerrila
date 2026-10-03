@@ -1,0 +1,63 @@
+{
+  "score": 8.2,
+  "done": false,
+  "major_issues": [
+    "Desktop layout wastes a lot of vertical space: large empty area below the flow canvas while the right column is long/scroll-heavy. This creates awkward composition and makes primary information feel disconnected.",
+    "Mobile flow canvas is not very usable: nodes/labels become too small and low-contrast; the zoom controls and tabs crowd the top-right and feel cramped.",
+    "Some content is at risk of overflow/clipping on small widths: long strings like URLs, hostnames, and blocker identifiers can push layout or require awkward horizontal scanning if wrapping isn’t enforced everywhere."
+  ],
+  "medium_issues": [
+    "Header metadata line under “Shadow Runtime” is dense and low-emphasis but long; it reads like a single unbroken status sentence (discoverability/scannability issue).",
+    "Right sidebar cards have similar visual weight; hierarchy between key KPIs (Capital/Runtime) vs descriptive blocks (Ledger/RPC Truth) could be stronger.",
+    "Inconsistent control sizing and spacing in the flow card header (tabs + Fit + zoom +/- + percent + refresh) makes the control cluster look improvised rather than designed.",
+    "Event strip at the bottom of the flow card is hard to read (small type + low contrast + tight line height)."
+  ],
+  "minor_issues": [
+    "Chevron/expand affordance on the Capital card is subtle; not obvious if it’s interactive or what expands.",
+    "Some pill/badge text appears slightly small for mobile (e.g., model + rounds completed chips) and could use a touch more padding/line-height.",
+    "Subtle borders and shadows occasionally blend into the background; cards could separate slightly better from the canvas area on desktop."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Rebalance desktop composition: make the main grid fill the viewport height more intentionally (e.g., set the main content area to min-height: calc(100vh - header - footer) and allow the flow panel to grow; avoid large empty space under the canvas by increasing canvas/container height or moving lower cards (Host/eno1/Blocker) into the right column or into a collapsible footer row)."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Harden text wrapping for long tokens everywhere: apply overflow-wrap:anywhere (or word-break:break-word for code blocks), and ensure key rows (Host, Blocker, URL lines) wrap without horizontal scroll; add max-width constraints to pill groups so they wrap to new lines cleanly on mobile."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve mobile flow usability: increase minimum tappable sizes for zoom/refresh controls (>=44px), add more spacing between controls, and consider moving zoom controls to a single compact row below tabs or into a floating bottom-right control; increase node label font-size slightly at mobile breakpoints and boost contrast for labels."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Strengthen hierarchy in the right column: make top KPI cards (Capital/Runtime) slightly more prominent (larger value size, clearer label, tighter card height), and reduce visual weight of descriptive sections (Ledger/RPC) by slightly lowering their header size and increasing internal spacing for readability."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Refine the flow card header control cluster: normalize button heights, padding, and border radius; align tabs and controls to a consistent baseline; ensure the percent indicator doesn’t feel like a random inline label (treat it as a badge or move it near Fit)."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Increase readability of the event strip: bump font-size by 1–2px, increase line-height, and raise contrast (lighter text or slightly brighter background). Consider truncating each event with ellipsis and allowing horizontal scroll with clear affordance."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/index.html",
+      "change": "Break the header metadata into labeled chips/rows (e.g., Host, Mode, Blocker, Time) to improve scannability; this can be pure markup with existing text split into spans."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Make the Capital chevron affordance clearer: increase icon contrast and add hover/focus states; optionally add a short label like “Details” or rotate chevron on expanded state."
+    }
+  ],
+  "stop_reason": "Not done: the UI is close, but the desktop composition wastes significant space, mobile flow interactions are cramped, and long-string overflow handling needs to be airtight for production."
+}

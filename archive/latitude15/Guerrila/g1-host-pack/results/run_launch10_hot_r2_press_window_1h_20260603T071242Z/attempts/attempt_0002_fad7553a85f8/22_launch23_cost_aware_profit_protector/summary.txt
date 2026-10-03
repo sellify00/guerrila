@@ -1,0 +1,13 @@
+status=COST_AWARE_PROFIT_PROTECTOR_COMPLETE
+rows_seen=1
+decision_counts={'COST_PROTECTOR_WOULD_EXIT': 1}
+latest_decision=COST_PROTECTOR_WOULD_EXIT
+latest_selected_mint=5ghQB2SFmEHf6CEkqqrqv5o3ScF4EPPdAvDnqh7nSRmz
+latest_break_even_bps=2187
+latest_arm_gain_bps=2687
+latest_peak_gain_bps=3703
+latest_drawdown_from_peak_bps=518
+latest_cost_profit_protector_armed=True
+floor_source=true_loss_floor
+profit_buffer_bps=500
+tight_trailing_stop_bps=500

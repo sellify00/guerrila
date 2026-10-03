@@ -1,0 +1,16 @@
+status=launchpm_v2_pm_readiness_autopsy_complete
+trigger_mode=B
+rows_seen=40
+pm_ready_count=0
+input_budget_ready_count=40
+fee_budget_ready_count=40
+tip_budget_ready_count=40
+rent_budget_ready_count=40
+output_account_ready_count=0
+inline_account_required_count=40
+first_blocker_counts={"PM_ACCOUNT_SURFACE_MISSING": 40}
+owner_mode=launch_continuation
+risk_tier=LAUNCH_R1
+wire_send=0
+live_landed=0
+sendBundle_called=false

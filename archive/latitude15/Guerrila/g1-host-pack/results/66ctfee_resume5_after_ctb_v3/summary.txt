@@ -1,0 +1,11 @@
+status=CONTINUATION_FEE_TIP_BASIS_REVIEW_COMPLETE
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66cte_resume5_after_ctb_v3/run66cte_continuation_negative_after_cost_autopsy_rows.jsonl
+rows_seen=8
+fee_model_error_rows=0
+net_positive_after_corrected_cost_rows=0
+counterfactual_bundle_positive_rows=3
+review_outcome_counts={"BUNDLE_COUNTERFACTUAL_POSITIVE_ONLY": 3, "SENDER_PRIORITY_PLUS_TIP_STILL_NEGATIVE": 5}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

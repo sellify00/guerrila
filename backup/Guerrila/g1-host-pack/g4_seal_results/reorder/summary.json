@@ -1,0 +1,69 @@
+{
+  "iface": "seal_rx",
+  "queue": 0,
+  "pin_core": 2,
+  "scenario_name": "reorder_reverse",
+  "stop_mode": "packet-count",
+  "duration_secs": 30,
+  "actual_elapsed_ms": 3955,
+  "pps_target": 1000,
+  "counters": {
+    "frame_seen": 128,
+    "parse_success": 128,
+    "parse_fail": 0,
+    "data_shred": 64,
+    "coding_shred": 64,
+    "ingest_accepted": 111,
+    "ingest_accepted_contiguous": 0,
+    "ingest_dropped_duplicate": 16,
+    "ingest_gap_reset": 0,
+    "ingest_slot_reset": 1,
+    "ready_data_count": 15,
+    "recovered_ready_count": 64,
+    "decoded_tx_count": 0,
+    "archive_publish_ok": 128,
+    "archive_publish_drop": 0,
+    "recycle_count": 0,
+    "survival_flush_count": 128,
+    "rx_timestamp_min": 2393627712924539,
+    "rx_timestamp_max": 2393627954013364
+  },
+  "verdicts": [
+    {
+      "check": "packets_ingested",
+      "pass": true,
+      "detail": "128 frames seen"
+    },
+    {
+      "check": "parse_rate",
+      "pass": true,
+      "detail": "100% (128/128 frames parsed, 95% threshold)"
+    },
+    {
+      "check": "rx_timestamps_valid",
+      "pass": true,
+      "detail": "min=2393627712924539 max=2393627954013364 span=241088825ns"
+    },
+    {
+      "check": "expected_packet_count",
+      "pass": true,
+      "detail": "128 received (expected 128, 95% threshold = 121)"
+    },
+    {
+      "check": "data_shred_count",
+      "pass": true,
+      "detail": "64 data shreds (expected 64, 95% threshold = 60)"
+    },
+    {
+      "check": "coding_shred_count",
+      "pass": true,
+      "detail": "64 coding shreds (expected 64, 95% threshold = 60)"
+    },
+    {
+      "check": "archive_health",
+      "pass": true,
+      "detail": "128 published, 0 dropped (0%), 128 survival flushes"
+    }
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,20 @@
+{
+  "daily_max_loss_usd": 25.0,
+  "daily_max_trades": 12,
+  "daily_profit_target_usd": 60.0,
+  "date_utc": "2026-05-30",
+  "executed_trade_count": 0,
+  "flat_trade_count": 0,
+  "landed_trade_count": 1,
+  "last_failure": "flatten_sim_failed:{\"InstructionError\": [0, {\"Custom\": 3007}]}",
+  "last_status": "R1_ONE_MINT_ACQUIRED_FLATTEN_FAILED",
+  "last_trade_pnl_lamports": 0,
+  "last_updated_utc": "2026-05-30T11:15:12Z",
+  "max_loss_breach_count": 0,
+  "open_exposure_count": 1,
+  "realized_pnl_lamports": 0,
+  "realized_pnl_sol": 0.0,
+  "realized_pnl_usd_estimate": 0.0,
+  "risk_tier": "R1_BACKRUN_TINY_INVENTORY_BAND",
+  "sol_usd_hint": 82.29
+}

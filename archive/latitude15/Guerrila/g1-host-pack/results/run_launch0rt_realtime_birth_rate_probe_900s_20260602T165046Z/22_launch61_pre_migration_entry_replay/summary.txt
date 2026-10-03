@@ -1,0 +1,13 @@
+status=PARK_LAUNCH61_MARKOUT_INPUT_MISSING
+completion_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch60_curve_completion_watch/rows.jsonl
+markout_rows=
+completion_rows_seen=453
+markout_rows_seen=0
+replay_rows=1
+profitable_replay_rows=0
+decision_counts={"PARK_PRE_MIGRATION_MARKOUT_MISSING": 1}
+condition_summary={"curve_progress_90%": {"capture_rate": 0.0, "markout_available_rows": 0, "median_peak_executable_exit_gain_bps": null, "no_exit_tail_rows": 0, "profitable_rows": 0, "rows": 1}}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61_pre_migration_entry_replay/rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false

@@ -1,0 +1,11 @@
+{
+  "false_restoration_gate_input_ready_rows": 0,
+  "same_direction_followthrough_available": false,
+  "opposite_direction_absorption_available": false,
+  "route_gap_decay_available": false,
+  "crowding_or_copy_wave_available": false,
+  "drop_saved_loss_comparison_available": false,
+  "flatten_saved_loss_comparison_available": false,
+  "housekeeping_comparison_available": false,
+  "explanation": "No false-restoration kill comparison artifacts are present for the 21 structural-ready rows."
+}

@@ -1,0 +1,11 @@
+G4 Shred Replay — Send Summary
+================================
+target:          10.99.2.1:9000
+scenario:        archive_pressure_long_run (2560 effective packets)
+pps_target:      500
+actual_pps:      530
+duration:        12000ms
+packets_sent:    6371
+bytes_sent:      7087735
+send_errors:     6
+corpus_loops:    2

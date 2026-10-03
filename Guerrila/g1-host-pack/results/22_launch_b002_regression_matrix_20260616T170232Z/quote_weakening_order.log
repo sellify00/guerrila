@@ -1,0 +1,22 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 22 Launch52 — Quote Weakening Confirmation Order Replay
+  2026-06-16 17:02:33 UTC
+════════════════════════════════════════════════════════════
+
+status=LAUNCH52_QUOTE_WEAKENING_CONFIRMATION_ORDER_REPLAY_PASS
+run_root=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T051614Z
+attempt_filter=attempt_0001_bb0baa780066
+rows_seen=1
+input_warning_count=7
+confirm_exit_count=3
+old_exit_reason=EXIT_EXIT_QUOTE_ZERO
+new_exit_reason=EXIT_QUOTE_WEAKENING_CONFIRMED
+normal_flatten_attempted_before_quote_zero=true
+no_exit_tail_count=0
+quote_weakening_confirmed_exit_count=1
+synthetic_fixture={"synthetic_acceptance_pass": true, "synthetic_action": "NORMAL_FLATTEN", "synthetic_confirm_exit_count": 3, "synthetic_expected_action": "NORMAL_FLATTEN", "synthetic_reason": "EXIT_QUOTE_WEAKENING_CONFIRMED", "synthetic_ticks": 6, "synthetic_warning_count": 3}
+acceptance_pass=true
+[0;32m[PASS][0m Launch52 quote weakening confirmation order replay complete
+
+[0;32m[PASS][0m All checks passed.

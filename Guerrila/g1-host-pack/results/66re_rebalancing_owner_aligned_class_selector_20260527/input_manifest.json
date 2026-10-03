@@ -1,0 +1,19 @@
+{
+  "package_name": "66re_rebalancing_owner_aligned_class_selector_20260527",
+  "purpose": "Selector pass over existing 21 structural-ready Rebalancing rows; failed 3-row class excluded.",
+  "inputs": {
+    "structural_readiness": "/home/ubuntu/Guerrila/g1-host-pack/results/66rb_rebalancing_structural_readiness_fresh_20260527_final/",
+    "failed_proposal_package": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rc_rebalancing_one_class_proposal_package_20260527",
+    "failed_owner_restoration_package": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rd_rebalancing_owner_mode_isolation_restoration_proof_20260527",
+    "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_template_nosend_fresh_20260527/run66rt_rebalancing_template_nosend_rows.jsonl",
+    "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+    "quote_route_ev_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_exact_quote_route_ev_fresh_20260527/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+    "exact_quote_identity_bridge_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66x_exact_quote_identity_bridge_fresh_20260527/run66x_exact_quote_identity_bridge_rows.jsonl"
+  },
+  "failed_class_excluded": "raydium_clmm|8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|REBALANCING_SENDER_READY_NO_SEND",
+  "structural_ready_rows_total": 21,
+  "structural_ready_rows_remaining": 18,
+  "no_live_send": true,
+  "no_sendBundle": true,
+  "no_broad_hunt": true
+}

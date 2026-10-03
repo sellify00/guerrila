@@ -1,0 +1,9 @@
+status=runls13u_preprocessed_unsupported_program_census_complete
+rows_seen=8
+decision_counts={"TX_DECODE_FAILED": 2, "UNSUPPORTED_ALT_UNRESOLVED": 4, "UNSUPPORTED_SYSTEM_OR_VOTE_NOISE": 1, "UNSUPPORTED_TRUE_PROGRAM": 1}
+unsupported_program_id_counts={"AnoFHzDSvgUmvKCnf9eu7GF9ex5RGGxJDCQXpDVXpYWH": 1, "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy": 1, "FoXszHbrFG59xXpkmT5mDrBuQiZNE2jFHr95yaMKa9mt": 1, "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 2}
+program_id_counts={"11111111111111111111111111111111": 4, "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 3, "AnoFHzDSvgUmvKCnf9eu7GF9ex5RGGxJDCQXpDVXpYWH": 1, "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy": 1, "ComputeBudget111111111111111111111111111111": 5, "FoXszHbrFG59xXpkmT5mDrBuQiZNE2jFHr95yaMKa9mt": 1, "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 2, "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 2}
+alt_resolution_blocked_count=4
+wire_send=0
+live_landed=0
+sendBundle_called=false

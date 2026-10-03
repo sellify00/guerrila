@@ -1,0 +1,13 @@
+status=run66rp_rebalancing_policy_liquidity_gate_complete
+source_rows=g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl
+source_ata_rows=g1-host-pack/results/66a_rebalancing_account_ata_unlock_fresh_20260527/run66a_rebalancing_account_ata_unlock_rows.jsonl
+row_count=91
+policy_clean_ready_count=61
+review_metadata_only_token2022_count=12
+deny_freeze_authority_count=11
+deny_roundtrip_negative_count=0
+decision_counts={"DENY_AUTHORITY_RISK": 3, "DENY_EXIT_DUST": 4, "DENY_FREEZE_AUTHORITY": 11, "POLICY_CLEAN_READY": 61, "REVIEW_METADATA_ONLY_TOKEN2022": 12}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

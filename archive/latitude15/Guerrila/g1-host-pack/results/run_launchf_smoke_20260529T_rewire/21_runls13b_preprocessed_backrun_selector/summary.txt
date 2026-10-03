@@ -1,0 +1,12 @@
+status=runls13b_preprocessed_backrun_selector_complete
+rows_seen=8
+alt_hydrated_rows=5
+alt_resolution_blocked_rows=0
+target_entity_ready_count=1
+target_already_landed_at_first_check_count=1
+target_not_landed_at_first_check_count=7
+selector_decision_counts={"TARGET_ENTITY_READY": 1, "TX_DECODE_FAILED": 3, "UNSUPPORTED_PROGRAM": 4}
+ready_venue_counts={"pumpfun_amm": 1}
+wire_send=0
+live_landed=0
+sendBundle_called=false

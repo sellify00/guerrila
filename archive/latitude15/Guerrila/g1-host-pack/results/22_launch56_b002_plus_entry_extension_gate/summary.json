@@ -1,0 +1,18 @@
+{
+  "acceptance_pass": false,
+  "b002_plus_ready_rows": 0,
+  "blocker_counts": {
+    "b002_plus_entry_quality_not_ready": 8361,
+    "b002_plus_exit_liquidity_not_ready": 935
+  },
+  "candidate_rows_seen": 9296,
+  "decision_counts": {
+    "PARK_B002_PLUS_WEAK_EXTENSION": 9296
+  },
+  "live_landed": 0,
+  "no_wire_window_returncode": 0,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_0h_20260603T085304Z",
+  "status": "PARK_B002_PLUS_NO_READY_ROWS",
+  "top_blocker": "b002_plus_entry_quality_not_ready",
+  "wire_send": 0
+}

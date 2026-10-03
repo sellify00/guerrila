@@ -1,0 +1,51 @@
+SH8-B AF_XDP transaction extraction stop summary (superseded)
+
+Host: 109.94.99.57
+Mode: observe_only / no_send
+NIC: eno1
+XDP mode: xdpgeneric
+Latest artifact: /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260430_004644-af_xdp-32q-sh8b-txdiag
+Host commit: 4843f9e (Split SH8 parsed shred counters)
+
+What remains green:
+- shred_capture_workers=32
+- xskmap_registered=32
+- xsk_bound=32
+- bind_invalid_arg=0
+- afxdp_frames_seen=296
+- afxdp_udp_8000_8025_seen=296
+- afxdp_xsk_rx_batches=296
+- afxdp_shred_parse_ok=10
+- afxdp_shred_parse_data_ok=0
+- afxdp_shred_parse_coding_ok=10
+- afxdp_shred_parse_err=286
+- afxdp_reassembly_insert_ok=10
+- afxdp_reassembly_complete_entries=0
+- afxdp_fec_recovered_entries=0
+- afxdp_data_shred_payload_ok=0
+- afxdp_source_probe_emit_ok=10
+- worker_signal_afxdp=2
+- live_landed=0
+- worker_health_drops=0
+- latency_ok=true
+- worker_latency_proof_present=true
+
+Current SH8-B stop at the time of this artifact:
+- afxdp_tx_extract_attempt=0
+- afxdp_tx_extract_ok=0
+- afxdp_tx_extract_err=0
+- afxdp_tx_extract_err_bad_entry_header=0
+- afxdp_tx_record_emit_attempt=0
+- afxdp_tx_record_emit_ok=0
+- afxdp_tx_record_emit_full=0
+- afxdp_feed_enqueue_ok=0
+- afxdp_feed_enqueue_full=0
+- observe_candidates_private_grade=0
+- rollout_private_grade_admissible_opportunities=0
+
+Root cause:
+- SH8-A source-proof remains green.
+- The intermediate diagnostic artifact `/home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260430_002938-af_xdp-32q-sh8b-txdiag` showed `afxdp_tx_extract_err_bad_entry_header=5` with 44-byte payload samples.
+- Root cause of those samples was reversed shred classification; Agave v3.1.14 defines legacy DATA as `0xa5` and legacy CODE as `0x5a`.
+- After the parser fix, `.57` sees coding shreds only in the latest proof: `afxdp_shred_parse_data_ok=0`, `afxdp_shred_parse_coding_ok=10`.
+- This was superseded by `/home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260430_031546-af_xdp-32q-sh8b-txdiag`, which proved transaction-derived AF_XDP records and private-grade observe-only counters.

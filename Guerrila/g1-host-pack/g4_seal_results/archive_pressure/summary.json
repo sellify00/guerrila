@@ -1,0 +1,84 @@
+{
+  "iface": "seal_rx",
+  "queue": 0,
+  "pin_core": 2,
+  "scenario_name": "archive_pressure_long_run",
+  "stop_mode": "duration",
+  "duration_secs": 15,
+  "actual_elapsed_ms": 15017,
+  "pps_target": 250,
+  "counters": {
+    "frame_seen": 6022,
+    "parse_success": 6022,
+    "parse_fail": 0,
+    "data_shred": 3014,
+    "coding_shred": 3008,
+    "ingest_accepted": 5238,
+    "ingest_accepted_contiguous": 32,
+    "ingest_dropped_duplicate": 752,
+    "ingest_gap_reset": 0,
+    "ingest_slot_reset": 0,
+    "ready_data_count": 48,
+    "recovered_ready_count": 3008,
+    "decoded_tx_count": 0,
+    "archive_publish_ok": 32,
+    "archive_publish_drop": 5990,
+    "recycle_count": 0,
+    "survival_flush_count": 6022,
+    "rx_timestamp_min": 2393814156673122,
+    "rx_timestamp_max": 2393825488462777
+  },
+  "verdicts": [
+    {
+      "check": "packets_ingested",
+      "pass": true,
+      "detail": "6022 frames seen"
+    },
+    {
+      "check": "parse_rate",
+      "pass": true,
+      "detail": "100% (6022/6022 frames parsed, 95% threshold)"
+    },
+    {
+      "check": "pps_sustained",
+      "pass": true,
+      "detail": "401 pps over 15.02s actual (target 250, 80% threshold = 200)"
+    },
+    {
+      "check": "rx_timestamps_valid",
+      "pass": true,
+      "detail": "min=2393814156673122 max=2393825488462777 span=11331789655ns"
+    },
+    {
+      "check": "expected_packet_count",
+      "pass": true,
+      "detail": "6022 received (expected 2560, 95% threshold = 2432)"
+    },
+    {
+      "check": "data_shred_count",
+      "pass": true,
+      "detail": "3014 data shreds (expected 1280, 95% threshold = 1216)"
+    },
+    {
+      "check": "coding_shred_count",
+      "pass": true,
+      "detail": "3008 coding shreds (expected 1280, 95% threshold = 1216)"
+    },
+    {
+      "check": "archive_health",
+      "pass": true,
+      "detail": "32 published, 5990 dropped (99%), 6022 survival flushes"
+    },
+    {
+      "check": "ingress_drains_under_pressure",
+      "pass": true,
+      "detail": "6022 frames seen, 6022 recycled (0 fifo + 6022 survival) — ingress not stalled"
+    },
+    {
+      "check": "archive_pressure_nonblocking",
+      "pass": true,
+      "detail": "pressure window: +4788 frames, +4788 drops, +4788 recycles — ingress continued under pressure"
+    }
+  ],
+  "all_pass": true
+}

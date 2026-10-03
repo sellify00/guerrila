@@ -1,0 +1,13 @@
+status=PARK_CONTINUATION_BUNDLE_COST_PROMOTION
+source_rows=g1-host-pack/results/tmp_66ctj_empty/missing.jsonl
+rows_seen=0
+bundle_ready_no_submit_rows=0
+simulateBundle_pass_rows=0
+bundle_envelope_built_rows=0
+fresh_roundtrip_positive_rows=0
+decision_counts={}
+provider_endpoint=https://CHANGE_ME.rpc
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

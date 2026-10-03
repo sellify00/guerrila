@@ -1,0 +1,28 @@
+{
+  "avg_net_after_orderbook_bps": 0.0,
+  "best_candidate_net_after_orderbook_bps": 0,
+  "best_candidate_side": "",
+  "best_candidate_symbol": "",
+  "blocker_counts": {
+    "forward_net_after_orderbook_below_floor": 14
+  },
+  "closed_attempt_rows": 14,
+  "decision_counts": {
+    "PARK_DERIV_FORWARD_ORDERBOOK": 14
+  },
+  "duration_seconds": 900,
+  "forward_orderbook_ready_rows": 0,
+  "live_landed": 0,
+  "min_net_after_orderbook_bps": 0.0,
+  "no_wire": true,
+  "notional_usd": 25.0,
+  "samples": 167,
+  "status": "PARK_DERIV_FORWARD_ORDERBOOK_NO_READY_ROWS",
+  "trigger_attempt_accepted_rows": 14,
+  "trigger_attempt_rows": 16,
+  "trigger_blocker_counts": {
+    "entry_spread_too_wide": 2,
+    "none": 14
+  },
+  "wire_send": 0
+}

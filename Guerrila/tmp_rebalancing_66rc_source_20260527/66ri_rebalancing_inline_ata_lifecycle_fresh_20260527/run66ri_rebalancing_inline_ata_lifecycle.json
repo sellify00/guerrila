@@ -1,0 +1,21 @@
+{
+  "account_ready_count": 47,
+  "decision_counts": {
+    "ACCOUNT_READY": 47,
+    "INLINE_ATA_CREATABLE": 9,
+    "INLINE_ATA_EXIT_DUST": 4,
+    "INLINE_ATA_POLICY_BLOCKED": 31
+  },
+  "inline_ata_creatable_count": 9,
+  "inline_ata_ev_positive_count": 65,
+  "live_landed": 0,
+  "pm_reserve_rent_ok_count": 74,
+  "row_count": 91,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_inline_rows": "g1-host-pack/results/66v_inline_ata_lifecycle_model_fresh_20260527/run66v_inline_ata_lifecycle_rows.jsonl",
+  "source_overlay_rows": "g1-host-pack/results/66r_rebalancing_exact_positive_readiness_overlay_fresh_20260527/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "status": "run66ri_rebalancing_inline_ata_lifecycle_complete",
+  "step": "66ri_rebalancing_inline_ata_lifecycle_fresh_20260527",
+  "wire_send": 0
+}

@@ -1,0 +1,26 @@
+{
+  "backrun_executable_shape_ready_count": 0,
+  "core_input_projected_ev_positive_count": 1,
+  "decision_counts": {
+    "PARK_EXECUTABLE_INPUT_NOT_HELD": 14,
+    "PARK_POLICY": 1
+  },
+  "held_input_projected_ev_positive_count": 0,
+  "input_mode": "all",
+  "live_landed": 0,
+  "owner_pubkey": "",
+  "projected_ev_positive_core_input_rows": 1,
+  "projected_ev_positive_held_input_rows": 0,
+  "projected_ev_positive_held_or_core_input_rows": 1,
+  "projected_ev_positive_rows": 15,
+  "projected_ev_positive_unheld_token_rows": 14,
+  "projected_rows_total": 15,
+  "rows_seen": 15,
+  "sendBundle_called": false,
+  "signer_staged": true,
+  "solders_error": "[Errno 13] Permission denied: '/etc/shadow-engine/worker-signer.json'",
+  "solders_ready": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_corrected_20260530T132005Z/21_lsprebrinv_r1_candidate_factory/projection_merged/runlsprebr0_projection_quote_all_rows.jsonl",
+  "status": "PARK_EXECUTABLE_INPUT_NOT_HELD",
+  "wire_send": 0
+}

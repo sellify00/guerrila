@@ -1,0 +1,51 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "final_supervisor_verdict": "PARK_OWNER_CONFLICT",
+  "final_decision": "PARK",
+  "first_blocker_if_rejected": "owner_mode_match_false_and_rebalancing_rule_schema_incomplete",
+  "live_gate": {
+    "exact_quote_or_ingress_identity_match": true,
+    "min_out_raw_positive": true,
+    "entry_rule_ready": true,
+    "exit_rule_ready": true,
+    "route_specific_net_ev_positive": true,
+    "pm_exact_reserve_ok": true,
+    "pm_release_ok": true,
+    "pm_pending_after_zero": true,
+    "account_ready": true,
+    "inventory_ready": true,
+    "template_ready": true,
+    "egress_no_send_accept": true,
+    "reconcile_path_ready": true,
+    "wire_send_zero": true,
+    "live_landed_zero": true,
+    "send_transaction_called_false": true,
+    "sendBundle_called_false": true,
+    "required_rebalancing_rule_schema_complete": false,
+    "owner_mode_isolation_ready": false,
+    "restoration_pressure_measured": false,
+    "continuation_double_reserve_killed": false,
+    "saved_loss_vs_trade_entry_ev_separated": false
+  },
+  "failed_live_gate_fields": [
+    "required_rebalancing_rule_schema_complete",
+    "owner_mode_isolation_ready",
+    "restoration_pressure_measured",
+    "continuation_double_reserve_killed",
+    "saved_loss_vs_trade_entry_ev_separated"
+  ],
+  "rejection_rules_triggered": [
+    "owner conflict / owner-mode isolation unresolved: owner_mode_match=false for selected rows",
+    "restoration thesis is not yet specific enough: displacement/restoration probability/recovery thresholds absent",
+    "false-restoration motifs are not killed",
+    "saved-loss / realized-recovery EV is not separated from trade-entry EV"
+  ],
+  "hard_stops_preserved": {
+    "no_live_send": true,
+    "no_sendBundle": true,
+    "no_acquisition": true,
+    "no_ata_creation": true,
+    "no_token2022_explicit_allow": true,
+    "no_cap_increase": true
+  }
+}

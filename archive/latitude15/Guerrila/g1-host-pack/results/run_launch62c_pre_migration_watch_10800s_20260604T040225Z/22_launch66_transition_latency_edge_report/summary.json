@@ -1,0 +1,18 @@
+{
+  "acceptance_pass": true,
+  "bridge_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch62b_pre_migration_bridge_followthrough/rows.jsonl",
+  "decision_counts": {
+    "PARK_LATENCY_EDGE_NOT_PROVEN": 1709,
+    "R5G_LATENCY_EDGE_CONFIRMED": 25
+  },
+  "latency_edge_rows": 25,
+  "live_landed": 0,
+  "migration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl",
+  "pumpswap_route_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch66_transition_latency_edge_report/ready_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch66_transition_latency_edge_report/rows.jsonl",
+  "rows_seen": 1734,
+  "status": "LAUNCH66_TRANSITION_LATENCY_EDGE_REPORT_PASS",
+  "transition_latency_ready_rows": 25,
+  "wire_send": 0
+}

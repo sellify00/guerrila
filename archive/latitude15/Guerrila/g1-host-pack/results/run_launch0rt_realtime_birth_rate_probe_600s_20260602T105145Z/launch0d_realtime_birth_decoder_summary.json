@@ -1,0 +1,74 @@
+{
+  "activity_rows_seen": 626863,
+  "birth_state_definition": "unique_mint_pool_or_curve_state_from_realtime_activity",
+  "chain_estimate_basis": "env_or_operator_default_not_chain_truth",
+  "chain_estimate_per_hour": 1000.0,
+  "chain_estimated_launch_count": 167,
+  "coverage_ratio": 338.9222,
+  "decode_class_counts": {
+    "PUMPSWAP_BUY": 6182,
+    "PUMPSWAP_POOL_CREATE": 5,
+    "PUMPSWAP_SELL": 21710,
+    "PUMP_BONDING_CURVE_BUY": 619,
+    "PUMP_BONDING_CURVE_SELL": 1649,
+    "PUMP_MIGRATION": 8890,
+    "UNKNOWN_PUMP_ACTIVITY": 239602
+  },
+  "decode_confidence_counts": {
+    "high": 188,
+    "low": 40,
+    "medium": 338
+  },
+  "decoded_activity_rows": 278657,
+  "decoded_launch_count": 566,
+  "entry_quality_blocker_counts": {
+    "ENTRY_QUALITY_MISSING_QUOTE_STATE": 343
+  },
+  "entry_quality_evaluated_rows": 343,
+  "entry_quality_missing_required_field_rows": 343,
+  "entry_quality_ready_rows": 0,
+  "exact_birth_decode_ready": true,
+  "first_blocker_counts": {
+    "DECODE_FAILED": 188766,
+    "NO_MINT_RESOLVED": 28421,
+    "NO_POOL_RESOLVED": 38432,
+    "UNSUPPORTED_PROGRAM": 370669
+  },
+  "first_buy_state_count": 343,
+  "first_sell_state_count": 378,
+  "global_launches_seen": 566,
+  "launch_state_definition": "unique_mint_pool_or_curve_state_from_realtime_activity",
+  "live_landed": 0,
+  "migration_activity_rows": 8890,
+  "migration_births": 0,
+  "migration_derived_states": 0,
+  "observed_state_not_create_proven_count": 561,
+  "pool_derived_states": 0,
+  "pump_curve_births": 333,
+  "pumpswap_births": 233,
+  "requested_duration_seconds": 600,
+  "route_family_counts": {
+    "PUMPSWAP_AMM": 233,
+    "PUMP_BONDING_CURVE": 333
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z",
+  "source_paths": {
+    "activity_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0d_realtime_birth_decoder_activity_rows.jsonl",
+    "birth_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0d_realtime_birth_decoder_rows.jsonl",
+    "stream_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/laserstream_preprocessed_realtime/runls13_preprocessed_stream_rows.jsonl"
+  },
+  "source_provenance_counts": {
+    "CREATE_PROVEN": 5,
+    "TRADE_DERIVED": 561
+  },
+  "status": "launch0d_realtime_birth_decoder_complete",
+  "top_decode_blocker": "UNSUPPORTED_PROGRAM",
+  "trade_derived_states": 561,
+  "trigger_b_rows": 343,
+  "true_create_signature_births": 5,
+  "unique_births_decoded": 566,
+  "unique_launch_states": 566,
+  "unique_mints_seen": 378,
+  "unproven_observed_states": 0,
+  "wire_send": 0
+}

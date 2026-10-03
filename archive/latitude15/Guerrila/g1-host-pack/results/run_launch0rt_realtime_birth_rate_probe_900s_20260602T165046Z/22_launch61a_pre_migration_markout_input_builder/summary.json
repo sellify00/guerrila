@@ -1,0 +1,32 @@
+{
+  "acceptance_pass": false,
+  "completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "completion_rows_seen": 453,
+  "decision_counts": {
+    "PARK_MARKOUT_PRE_MIGRATION_BUY_MISSING": 1,
+    "PARK_MARKOUT_PROGRESS_BELOW_THRESHOLD": 452
+  },
+  "eligible_completion_rows": 1,
+  "eligible_migration_joined_count": 0,
+  "eligible_post_migration_exit_ready_count": 0,
+  "eligible_pumpswap_pool_joined_count": 0,
+  "live_landed": 0,
+  "markout_input_ready_rows": 0,
+  "markout_input_rows": 453,
+  "median_peak_executable_exit_gain_bps": null,
+  "migration_joined_count": 2,
+  "migration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl",
+  "migration_rows_seen": 500,
+  "peak_markout_ready_count": 0,
+  "post_migration_exit_ready_count": 2,
+  "post_migration_markout_rows": "",
+  "post_migration_markout_rows_seen": 0,
+  "profitable_markout_rows": 0,
+  "pumpswap_pool_joined_count": 2,
+  "pumpswap_route_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+  "pumpswap_route_rows_seen": 410,
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61a_pre_migration_markout_input_builder/ready_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61a_pre_migration_markout_input_builder/rows.jsonl",
+  "status": "PARK_LAUNCH61A_PRE_MIGRATION_BUY_MISSING",
+  "wire_send": 0
+}

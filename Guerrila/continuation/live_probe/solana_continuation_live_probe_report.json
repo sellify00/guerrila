@@ -1,0 +1,672 @@
+{
+  "generatedAt": "2026-05-27T15:04:00.646Z",
+  "historicalContext": {
+    "continuationCandidateCount": 979,
+    "positiveCount": 979,
+    "bestHorizonPositiveCount": 979,
+    "routeUsableCount": 108,
+    "deployableByUsCount": 1,
+    "routeDeployabilityCounts": {
+      "tpu_quic_public": 108,
+      "theoretical_private_route_only": 871
+    },
+    "blockerSplitCounts": {
+      "inventory_insufficient": 107,
+      "none": 1,
+      "route_unavailable": 871
+    },
+    "mainBlocker": "route_unavailable",
+    "topPoolDirections": [
+      {
+        "pool": "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "direction": "6A63uzxVoPkW8HCb6divQRtB5SdPvngAyuwPXuStW8cW->So11111111111111111111111111111111111111112",
+        "count": 87
+      },
+      {
+        "pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "direction": "Ct27RqiKyV7EUPfeystWDMxHXqq8Qy1xRKXBgyUHXeJT->So11111111111111111111111111111111111111112",
+        "count": 87
+      },
+      {
+        "pool": "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+        "direction": "BD35dqMdcmy5cfU9iTXjFuc569dyTPiNHKqWDXZx98wn->So11111111111111111111111111111111111111112",
+        "count": 87
+      },
+      {
+        "pool": "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "direction": "VpsXGqBL9MDKvbvM3EMKAeCmDJ8NZtm2yKP31FeCba5->So11111111111111111111111111111111111111112",
+        "count": 84
+      },
+      {
+        "pool": "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "direction": "A4Fmyh6x9Bo2GNcKSqEc8X72v4MtsUw2JwAqnt2ts1LY->So11111111111111111111111111111111111111112",
+        "count": 81
+      }
+    ]
+  },
+  "liveProbe": {
+    "selectedPools": [
+      "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+      "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+      "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+      "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+      "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg"
+    ],
+    "analyzedPools": 5,
+    "shockQuantile": 0.8,
+    "perPool": [
+      {
+        "pool": "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "tradeCount": 34,
+        "latestTimestamp": 1779509129,
+        "latestSlot": 421559228,
+        "tokenMints": [
+          "6A63uzxVoPkW8HCb6divQRtB5SdPvngAyuwPXuStW8cW"
+        ],
+        "shockThresholdSol": 0.001114,
+        "shockThresholdLabel": "p80",
+        "shockCount": 6,
+        "aggregate": {
+          "count": 6,
+          "sameDirectionNext1Rate": 0.3333,
+          "priceContinuationNext1Rate": 0.8333,
+          "majoritySameDirectionNext3Rate": 0.6667,
+          "next1SameSlotRate": 0.1667,
+          "next1Within60sRate": 1,
+          "medianMaxFavorableMoveBps": 2.62,
+          "medianMaxAdverseMoveBps": 0,
+          "p90MaxFavorableMoveBps": 5.3,
+          "p90MaxAdverseMoveBps": 4.04
+        },
+        "byDirection": {
+          "buy": {
+            "count": 3,
+            "sameDirectionNext1Rate": 0.6667,
+            "priceContinuationNext1Rate": 0.6667,
+            "majoritySameDirectionNext3Rate": 1,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 1.89,
+            "medianMaxAdverseMoveBps": 3.64,
+            "p90MaxFavorableMoveBps": 2.37,
+            "p90MaxAdverseMoveBps": 4.28
+          },
+          "sell": {
+            "count": 3,
+            "sameDirectionNext1Rate": 0,
+            "priceContinuationNext1Rate": 1,
+            "majoritySameDirectionNext3Rate": 0.3333,
+            "next1SameSlotRate": 0.3333,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 4.24,
+            "medianMaxAdverseMoveBps": 0,
+            "p90MaxFavorableMoveBps": 5.94,
+            "p90MaxAdverseMoveBps": 0
+          }
+        },
+        "sampleShocks": [
+          {
+            "signature": "5qHRG9ESrtYACzcbvu3uwq1we32Bx53ZsiEHzYytaE2zVeJLSHJr5RuVUSYzU2xBGxdHmG2bvXGDrGXa5HgcfwzE",
+            "slot": 421558852,
+            "timestamp": 1779508979,
+            "direction": "sell",
+            "solNotional": 0.364735,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 6.37,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "3K89HLcbQffcwXqiUiXRJ3EQq4ygqDemrYBSES9g7JypG7dS24aZrhBMQf88yvaMtAQEZa3Kh46ngJafQvbVAV5F",
+            "slot": 421558860,
+            "timestamp": 1779508982,
+            "direction": "sell",
+            "solNotional": 0.006563,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 4.24,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "4nLZPWxz8Eou1MEoo1dduDGWz5sn4NZGHyVQGESpLUA7sbRfG6gDEtSFZGjqsZaLJyCEZtfHD1YmsfYPbcByeRiH",
+            "slot": 421559034,
+            "timestamp": 1779509051,
+            "direction": "buy",
+            "solNotional": 0.001121,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": 1.89,
+            "maxAdverseMoveBps": 3.64
+          },
+          {
+            "signature": "5CngH1VoLtY2ZiiYtZgrxt2fewm8jC4MKu8dnQkZ23syyu5YDWANSSvHfMfGx1ZZRd9QtcsbMLnTtUrw2FmGSMyj",
+            "slot": 421559075,
+            "timestamp": 1779509067,
+            "direction": "buy",
+            "solNotional": 0.001277,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 2.49,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "3B2G59jFeciLYQ82wyUEQDDEmF6HgNfeeXdVAefn2vV4u5z43pmT9buQZmzqgHAe4h1vq46BB4QdNotHsTfSvccG",
+            "slot": 421559116,
+            "timestamp": 1779509083,
+            "direction": "buy",
+            "solNotional": 0.001488,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 0.13,
+            "maxAdverseMoveBps": 4.44
+          }
+        ]
+      },
+      {
+        "pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "tradeCount": 45,
+        "latestTimestamp": 1779509124,
+        "latestSlot": 421559214,
+        "tokenMints": [
+          "Ct27RqiKyV7EUPfeystWDMxHXqq8Qy1xRKXBgyUHXeJT"
+        ],
+        "shockThresholdSol": 0.000692,
+        "shockThresholdLabel": "p80",
+        "shockCount": 9,
+        "aggregate": {
+          "count": 9,
+          "sameDirectionNext1Rate": 0.8889,
+          "priceContinuationNext1Rate": 0.5556,
+          "majoritySameDirectionNext3Rate": 0.7778,
+          "next1SameSlotRate": 0,
+          "next1Within60sRate": 1,
+          "medianMaxFavorableMoveBps": 6.22,
+          "medianMaxAdverseMoveBps": 3.11,
+          "p90MaxFavorableMoveBps": 18.05,
+          "p90MaxAdverseMoveBps": 15.71
+        },
+        "byDirection": {
+          "buy": {
+            "count": 6,
+            "sameDirectionNext1Rate": 1,
+            "priceContinuationNext1Rate": 0.5,
+            "majoritySameDirectionNext3Rate": 0.8333,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 2.12,
+            "medianMaxAdverseMoveBps": 6.02,
+            "p90MaxFavorableMoveBps": 8.62,
+            "p90MaxAdverseMoveBps": 23.01
+          },
+          "sell": {
+            "count": 3,
+            "sameDirectionNext1Rate": 0.6667,
+            "priceContinuationNext1Rate": 0.6667,
+            "majoritySameDirectionNext3Rate": 0.6667,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 15.64,
+            "medianMaxAdverseMoveBps": 0,
+            "p90MaxFavorableMoveBps": 25.26,
+            "p90MaxAdverseMoveBps": 0.14
+          }
+        },
+        "sampleShocks": [
+          {
+            "signature": "6a5PZqeysACSDrgYgXpE8nWh33poqDAzwe3eEPKr4G9oPYYi8TEqcrBDdEat9S9ziM1FxugKo4xqM2Rs8HZB2oc",
+            "slot": 421558852,
+            "timestamp": 1779508979,
+            "direction": "sell",
+            "solNotional": 0.138979,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 27.67,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "42N7h1qDe9FgTJGGRQGyKt6hTLkMxycuMEj7Ri2DrZgCT31fejmue5Mr21f1btyBvmK9MB2Uv4jPsmqJpUnVzJCe",
+            "slot": 421558868,
+            "timestamp": 1779508985,
+            "direction": "buy",
+            "solNotional": 0.00085,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": -6.7,
+            "maxAdverseMoveBps": 35.18
+          },
+          {
+            "signature": "2p5ozUM5gTaZFQqrhTpnLq8JoC5D1GSWaSGABZzB4jWZ1gcWBQmPDiNQa33m8G4KgzWBSB2c6ngJkEiyvTKgfDMp",
+            "slot": 421558878,
+            "timestamp": 1779508989,
+            "direction": "sell",
+            "solNotional": 0.057646,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 15.64,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "3JfY1wduzwhQWWLRTDzpaCCYd58osDaoVpUphWojxxowMPFWTLni9ah2E4hysPjM4VBTqAhRK5Y3fWmQqbSvu7WB",
+            "slot": 421558899,
+            "timestamp": 1779508997,
+            "direction": "buy",
+            "solNotional": 0.001114,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 5.04,
+            "maxAdverseMoveBps": 3.11
+          },
+          {
+            "signature": "28gZGon2kDigEN35SLGQA8o1JhQdJvw1zyQX3WNHJBbXr3YHFsh1bofeFpR7Vz6VZT6yGudv6U5X8EwFfzgBJPTa",
+            "slot": 421558975,
+            "timestamp": 1779509027,
+            "direction": "buy",
+            "solNotional": 0.001034,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": -1.57,
+            "maxAdverseMoveBps": 6.8
+          }
+        ]
+      },
+      {
+        "pool": "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+        "tradeCount": 23,
+        "latestTimestamp": 1779508866,
+        "latestSlot": 421558570,
+        "tokenMints": [
+          "BD35dqMdcmy5cfU9iTXjFuc569dyTPiNHKqWDXZx98wn"
+        ],
+        "shockThresholdSol": 0.000763,
+        "shockThresholdLabel": "p80",
+        "shockCount": 4,
+        "aggregate": {
+          "count": 4,
+          "sameDirectionNext1Rate": 0.5,
+          "priceContinuationNext1Rate": 0.25,
+          "majoritySameDirectionNext3Rate": 0,
+          "next1SameSlotRate": 0,
+          "next1Within60sRate": 1,
+          "medianMaxFavorableMoveBps": 15.13,
+          "medianMaxAdverseMoveBps": 13.39,
+          "p90MaxFavorableMoveBps": 20.25,
+          "p90MaxAdverseMoveBps": 20.1
+        },
+        "byDirection": {
+          "buy": {
+            "count": 2,
+            "sameDirectionNext1Rate": 1,
+            "priceContinuationNext1Rate": 0.5,
+            "majoritySameDirectionNext3Rate": 0,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 7.65,
+            "medianMaxAdverseMoveBps": 11.23,
+            "p90MaxFavorableMoveBps": 15.59,
+            "p90MaxAdverseMoveBps": 20.21
+          },
+          "sell": {
+            "count": 2,
+            "sameDirectionNext1Rate": 0,
+            "priceContinuationNext1Rate": 0,
+            "majoritySameDirectionNext3Rate": 0,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 17.04,
+            "medianMaxAdverseMoveBps": 13.39,
+            "p90MaxFavorableMoveBps": 20.53,
+            "p90MaxAdverseMoveBps": 14.36
+          }
+        },
+        "sampleShocks": [
+          {
+            "signature": "5cDooBrnZysxkQP9jZBXPENCyFfky4uCaEwCZxHBdC4tke5mgSNv7c6PmqZB556MZSgjYoBBWv8VaQnHx4KiLHSL",
+            "slot": 421558333,
+            "timestamp": 1779508772,
+            "direction": "buy",
+            "solNotional": 0.001085,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 17.57,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "2tVtSKuPsKYNbm6f7wMQU6q8mrrH2yajsqBHBvy4Ep1a7CsHiFMJEjc3RkThd4oqUwrsXAK1qarzKKQhQXJbdyk9",
+            "slot": 421558413,
+            "timestamp": 1779508804,
+            "direction": "sell",
+            "solNotional": 0.000777,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": 12.68,
+            "maxAdverseMoveBps": 14.6
+          },
+          {
+            "signature": "4tKDwCXuJ8yUX2grhjpGm42HMUUkd1NQPdPjMe5EDedUkKYW9dUGSD6hfKHeiqzHU1c2ibL7ckvmcZT9g9F7SJAQ",
+            "slot": 421558489,
+            "timestamp": 1779508833,
+            "direction": "sell",
+            "solNotional": 0.002581,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": 21.4,
+            "maxAdverseMoveBps": 12.19
+          },
+          {
+            "signature": "477izFvSJcePK8nYQcZDkaQNk4iupVa9rQnPgvKc2qz5pddjW5FX7d6a4mxQzZz26FH2TPgJ1T7an3vRdg1Aa9sU",
+            "slot": 421558530,
+            "timestamp": 1779508850,
+            "direction": "buy",
+            "solNotional": 0.044525,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": -2.28,
+            "maxAdverseMoveBps": 22.46
+          }
+        ]
+      },
+      {
+        "pool": "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "tradeCount": 57,
+        "latestTimestamp": 1779509590,
+        "latestSlot": 421560370,
+        "tokenMints": [
+          "VpsXGqBL9MDKvbvM3EMKAeCmDJ8NZtm2yKP31FeCba5"
+        ],
+        "shockThresholdSol": 0.00044,
+        "shockThresholdLabel": "p80",
+        "shockCount": 11,
+        "aggregate": {
+          "count": 11,
+          "sameDirectionNext1Rate": 0.8182,
+          "priceContinuationNext1Rate": 0.4545,
+          "majoritySameDirectionNext3Rate": 0.9091,
+          "next1SameSlotRate": 0,
+          "next1Within60sRate": 1,
+          "medianMaxFavorableMoveBps": 8.6,
+          "medianMaxAdverseMoveBps": 2.31,
+          "p90MaxFavorableMoveBps": 22.23,
+          "p90MaxAdverseMoveBps": 8.51
+        },
+        "byDirection": {
+          "buy": {
+            "count": 10,
+            "sameDirectionNext1Rate": 0.9,
+            "priceContinuationNext1Rate": 0.4,
+            "majoritySameDirectionNext3Rate": 1,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 9.31,
+            "medianMaxAdverseMoveBps": 2.26,
+            "p90MaxFavorableMoveBps": 22.5,
+            "p90MaxAdverseMoveBps": 8.71
+          },
+          "sell": {
+            "count": 1,
+            "sameDirectionNext1Rate": 0,
+            "priceContinuationNext1Rate": 1,
+            "majoritySameDirectionNext3Rate": 0,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 4.56,
+            "medianMaxAdverseMoveBps": 5.49,
+            "p90MaxFavorableMoveBps": 4.56,
+            "p90MaxAdverseMoveBps": 5.49
+          }
+        },
+        "sampleShocks": [
+          {
+            "signature": "3BaaF7EPcj6MSG32PA8jbqaE76wL5xUFmzKavWTzc8WQ77GTETnchirNPe3UwWJMRsd9zs8WmgEJsViSJUAEEJc",
+            "slot": 421560046,
+            "timestamp": 1779509460,
+            "direction": "buy",
+            "solNotional": 0.000485,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": false,
+            "maxFavorableMoveBps": 8.6,
+            "maxAdverseMoveBps": 3.01
+          },
+          {
+            "signature": "XTc4jGQ7vwTwZQJt2XJb62fnwPPUrwWua7sy1Kz5BhuN2n1JV1z7tzmb3g1uDVvSLLTRghUarDeLfBdqh8D3iDM",
+            "slot": 421560076,
+            "timestamp": 1779509472,
+            "direction": "sell",
+            "solNotional": 0.00045,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 4.56,
+            "maxAdverseMoveBps": 5.49
+          },
+          {
+            "signature": "5VFG2meaHmKANEucLNnVdcBua9aB9gsTYHV75YvmAPea6rJSHVRoBERxcXVm97ikpPEoL5WNs5BjjVKGvJgCry8U",
+            "slot": 421560086,
+            "timestamp": 1779509476,
+            "direction": "buy",
+            "solNotional": 0.000558,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 18.68,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "4chUU68FEJGAeuEUxDkb8Zy2fAWNVBiMV4ja4czMpegZrvXmbiJMfF28QEZZQazkp6fPAHVKoRKKsWpULRk5RGoZ",
+            "slot": 421560096,
+            "timestamp": 1779509480,
+            "direction": "buy",
+            "solNotional": 0.000592,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 24.97,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "3xc56Gyo4ohCDub4u1Ai32AyXoqSeeASU1MYbJoY3MpfA2x5RgeMfTUmcfcwiJtmYCWzmriWbWj4qNZ9RwpBZjCT",
+            "slot": 421560101,
+            "timestamp": 1779509482,
+            "direction": "buy",
+            "solNotional": 0.000542,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 18.37,
+            "maxAdverseMoveBps": 0
+          }
+        ]
+      },
+      {
+        "pool": "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "tradeCount": 59,
+        "latestTimestamp": 1779345820,
+        "latestSlot": 421150239,
+        "tokenMints": [
+          "A4Fmyh6x9Bo2GNcKSqEc8X72v4MtsUw2JwAqnt2ts1LY"
+        ],
+        "shockThresholdSol": 0.000912,
+        "shockThresholdLabel": "p80",
+        "shockCount": 12,
+        "aggregate": {
+          "count": 12,
+          "sameDirectionNext1Rate": 0.75,
+          "priceContinuationNext1Rate": 0.5833,
+          "majoritySameDirectionNext3Rate": 0.5833,
+          "next1SameSlotRate": 0.0833,
+          "next1Within60sRate": 1,
+          "medianMaxFavorableMoveBps": 2.94,
+          "medianMaxAdverseMoveBps": 2,
+          "p90MaxFavorableMoveBps": 9.25,
+          "p90MaxAdverseMoveBps": 10.71
+        },
+        "byDirection": {
+          "buy": {
+            "count": 9,
+            "sameDirectionNext1Rate": 0.7778,
+            "priceContinuationNext1Rate": 0.5556,
+            "majoritySameDirectionNext3Rate": 0.7778,
+            "next1SameSlotRate": 0.1111,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 4.31,
+            "medianMaxAdverseMoveBps": 2.03,
+            "p90MaxFavorableMoveBps": 10.69,
+            "p90MaxAdverseMoveBps": 6.45
+          },
+          "sell": {
+            "count": 3,
+            "sameDirectionNext1Rate": 0.6667,
+            "priceContinuationNext1Rate": 0.6667,
+            "majoritySameDirectionNext3Rate": 0,
+            "next1SameSlotRate": 0,
+            "next1Within60sRate": 1,
+            "medianMaxFavorableMoveBps": 1.58,
+            "medianMaxAdverseMoveBps": 0,
+            "p90MaxFavorableMoveBps": 7.38,
+            "p90MaxAdverseMoveBps": 9.06
+          }
+        },
+        "sampleShocks": [
+          {
+            "signature": "47RejQ6NN1gagsdbGncKcaBjBNX2UDnCj7GG89PCCZxHXsNtW4RGvs5yw8eBRthCpetYW8pkdf7jN31SyoUNZ7RF",
+            "slot": 421149933,
+            "timestamp": 1779345696,
+            "direction": "sell",
+            "solNotional": 0.015985,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 1.58,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "5uutBb2rpTbCYnR8BNYX2wFPPUXvuqDiQV1hw4KLDEuXnNBhpJRt9b8wqCLWsppvmh11jV7ecNSg2DBJugMUnqUy",
+            "slot": 421149938,
+            "timestamp": 1779345698,
+            "direction": "sell",
+            "solNotional": 0.000922,
+            "sameDirectionNext1": false,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 8.83,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "4CGw2A1tf4iFTxAgKzsBSfNjTjTpvQ1k86knbxmq4uihfta9Umj5BfnkoosfewJDYzkb9WjG1ujtjtkbRSvKL3hz",
+            "slot": 421149957,
+            "timestamp": 1779345706,
+            "direction": "buy",
+            "solNotional": 0.069169,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 4.31,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "4myMHXjsZWpLumo1BZ5S2fsHjFNN8EhnzK8dCEpUZem4yfJLvPcoLg1qjxcpFG2cUZSCvmmQSQi25rTtkCfvBTGV",
+            "slot": 421150060,
+            "timestamp": 1779345748,
+            "direction": "buy",
+            "solNotional": 0.000957,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 1.35,
+            "maxAdverseMoveBps": 0
+          },
+          {
+            "signature": "2ztxveMomuzsMFFqzEfD8w6Do6yJhgLHKxHrPf4Cz8kNQhZzTdynL8zDRfUmi6E6smvNFn9RNY1tEGxW1Gv45ExL",
+            "slot": 421150075,
+            "timestamp": 1779345754,
+            "direction": "buy",
+            "solNotional": 0.000974,
+            "sameDirectionNext1": true,
+            "priceContinuationNext1": true,
+            "maxFavorableMoveBps": 0.08,
+            "maxAdverseMoveBps": 11.69
+          }
+        ]
+      }
+    ],
+    "aggregate": {
+      "count": 42,
+      "sameDirectionNext1Rate": 0.7143,
+      "priceContinuationNext1Rate": 0.5476,
+      "majoritySameDirectionNext3Rate": 0.6667,
+      "next1SameSlotRate": 0.0476,
+      "next1Within60sRate": 1,
+      "medianMaxFavorableMoveBps": 5.35,
+      "medianMaxAdverseMoveBps": 2.15,
+      "p90MaxFavorableMoveBps": 18.65,
+      "p90MaxAdverseMoveBps": 11.66
+    },
+    "byDirection": {
+      "buy": {
+        "count": 30,
+        "sameDirectionNext1Rate": 0.8667,
+        "priceContinuationNext1Rate": 0.5,
+        "majoritySameDirectionNext3Rate": 0.8333,
+        "next1SameSlotRate": 0.0333,
+        "next1Within60sRate": 1,
+        "medianMaxFavorableMoveBps": 4.67,
+        "medianMaxAdverseMoveBps": 2.6,
+        "p90MaxFavorableMoveBps": 18.4,
+        "p90MaxAdverseMoveBps": 10.92
+      },
+      "sell": {
+        "count": 12,
+        "sameDirectionNext1Rate": 0.3333,
+        "priceContinuationNext1Rate": 0.6667,
+        "majoritySameDirectionNext3Rate": 0.25,
+        "next1SameSlotRate": 0.0833,
+        "next1Within60sRate": 1,
+        "medianMaxFavorableMoveBps": 7.6,
+        "medianMaxAdverseMoveBps": 0,
+        "p90MaxFavorableMoveBps": 20.82,
+        "p90MaxAdverseMoveBps": 12.1
+      }
+    },
+    "notes": [
+      "Shock trades are the top 20% of WSOL-notional swaps within each pool's recent Helius history.",
+      "Continuation is measured two ways: same-direction next flow and favorable price movement versus the shock trade price.",
+      "This live probe only covers pools whose swap stream can be reduced cleanly to WSOL-versus-token trades."
+    ]
+  },
+  "scratch": {
+    "sampleShockRowsCount": 24,
+    "aggregateDirectionCounts": [
+      {
+        "direction": "buy",
+        "count": 3
+      },
+      {
+        "direction": "sell",
+        "count": 3
+      },
+      {
+        "direction": "buy",
+        "count": 6
+      },
+      {
+        "direction": "sell",
+        "count": 3
+      },
+      {
+        "direction": "buy",
+        "count": 2
+      },
+      {
+        "direction": "sell",
+        "count": 2
+      },
+      {
+        "direction": "buy",
+        "count": 10
+      },
+      {
+        "direction": "sell",
+        "count": 1
+      },
+      {
+        "direction": "buy",
+        "count": 9
+      },
+      {
+        "direction": "sell",
+        "count": 3
+      }
+    ]
+  }
+}

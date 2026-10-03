@@ -1,0 +1,197 @@
+{
+  "total_observed": 1997,
+  "rejected_count": 1996,
+  "research_positive_after_reject_count": 1899,
+  "first_rejection_stage_counts": {
+    "not_held_input": 604,
+    "not_positive_ev": 15,
+    "output_account_not_ready": 7,
+    "input_balance_not_ready": 6,
+    "source_not_afxdp": 1364
+  },
+  "all_failed_filter_counts": {
+    "not_held_input": 604,
+    "input_balance_not_ready": 757,
+    "output_account_not_ready": 1262,
+    "execution_blocker:missing_output_ata": 19,
+    "source_not_afxdp": 1940,
+    "route_not_tpu_ready": 1940,
+    "quote_not_ready_or_classified": 1955,
+    "tiny_cap_not_safe": 1955,
+    "execution_blocker:r1_not_admitted": 1955,
+    "r1_outcome:source": 1940,
+    "not_positive_ev": 369,
+    "micro_market:negative_ev": 15,
+    "r1_outcome:net_after_fee_floor": 15,
+    "execution_blocker:spl_input_balance_insufficient": 22
+  },
+  "execution_blocker_counts": {
+    "missing_output_ata": 19,
+    "r1_not_admitted": 1955,
+    "spl_input_balance_insufficient": 22
+  },
+  "top_rejected_pools": [
+    {
+      "pool": "CVQDWayeg2VwcEA7HR5aSG9tB65UNzd3XByzRjgnXQ27",
+      "count": 306
+    },
+    {
+      "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "count": 295
+    },
+    {
+      "pool": "EdQ5Bp8iqddCikteXQYZxXLv1PenuasBjsZL7ezCXo6V",
+      "count": 207
+    },
+    {
+      "pool": "AaCgA74kYnZY8bGFqpHufpVSaPGDs3RnzSUpeZVMspkN",
+      "count": 163
+    },
+    {
+      "pool": "8YK2KnRbAY8XGzdLyZebt86HWC8rAJPibQ2yhtLsQq7U",
+      "count": 124
+    },
+    {
+      "pool": "AmG2fAB18dDQZE7DraHCrz2tYgM9jmtd7THqHRpm8CM4",
+      "count": 123
+    },
+    {
+      "pool": "4aUS49BUVEQu7aBCVoDWyGW8rmkBQhMqEY81DwSFdJ6f",
+      "count": 118
+    },
+    {
+      "pool": "9B8xXGabWeEfCLzwHAwwbjZjQamiFsh7WC8Y5bkvPbqP",
+      "count": 48
+    },
+    {
+      "pool": "8FC8vdUDMQwrdpyS4xntyfifqwKvzTE2cbk9EjocAmta",
+      "count": 40
+    },
+    {
+      "pool": "2tRoerS7spvMAaoDvVmEzHTiFRu9zpfBCrZAT9v6JDso",
+      "count": 37
+    },
+    {
+      "pool": "DgFgx56ris13BCSn7Mit7rWrrD1HaB5ptPA7wzuUvbD5",
+      "count": 37
+    },
+    {
+      "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+      "count": 35
+    },
+    {
+      "pool": "qf3ExNV3MwMREG7C8FVvrn1edY6c39sbSEsSLUof7iv",
+      "count": 34
+    },
+    {
+      "pool": "7k84pJisPDxBZzGYRRSNSASkGBZMv6bbmjQuyxZqFZgW",
+      "count": 33
+    },
+    {
+      "pool": "4pX9cEpKTaofS9q3SJjPtjtiZqQzXvz7efKgyYZ9Lfwi",
+      "count": 28
+    },
+    {
+      "pool": "6K4dKwMvbzZWH5N8kU11DVM2Yj28j3Uask1kVcskBWyj",
+      "count": 27
+    },
+    {
+      "pool": "7ULy5Sk4Ho9BfCgsp2njBXU77S9EwAxPz5p1wz7daPQh",
+      "count": 26
+    },
+    {
+      "pool": "ESpdynyS6yvPKTYXHdoRTk9DbWCPkpQ9B8xTk6CLDWhq",
+      "count": 25
+    },
+    {
+      "pool": "FZ8MJvdTPbp8juhtFCCzb7LsKunhexgzShGQ59SUJkNL",
+      "count": 21
+    },
+    {
+      "pool": "DP9Q72RFXVmX9UtGim71tckoGXN1dCb6QWoKFDfS8fMd",
+      "count": 19
+    }
+  ],
+  "top_rejected_mint_pairs": [
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->5GnEJW5vSqtxm8oDDYPKCNga7atpGr5K4xcF65ApjhvQ",
+      "count": 293
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->4pBQifXeYgiTCFHgsvnwbmqMZvNzQCqC3KWvhzi2Wz4t",
+      "count": 182
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "count": 139
+    },
+    {
+      "mint_pair": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB->So11111111111111111111111111111111111111112",
+      "count": 126
+    },
+    {
+      "mint_pair": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v->AxhcwfutahyDCSDaY2TCSJsm7Fu9dnCsQwSN2N4nFouR",
+      "count": 121
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->EgwhciZP1jwRdZj1QdnyS1J7R7nLj15rhEmgJfa7eGWz",
+      "count": 86
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->8P8VmYeVDeyVbHEjZQLSmN6jNctmXrmySASDZKfHwM7i",
+      "count": 85
+    },
+    {
+      "mint_pair": "vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump->So11111111111111111111111111111111111111112",
+      "count": 62
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump",
+      "count": 61
+    },
+    {
+      "mint_pair": "11111111111111111111111111111111->11111111111111111111111111111111",
+      "count": 48
+    },
+    {
+      "mint_pair": "So11111111111111111111111111111111111111112->2bpT3ksMdwdZ6DuHyq3FDUr7HDwvZ5DRZoT1fUPALJaH",
+      "count": 45
+    },
+    {
+      "mint_pair": "AxhcwfutahyDCSDaY2TCSJsm7Fu9dnCsQwSN2N4nFouR->EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "count": 42
+    },
+    {
+      "mint_pair": "8P8VmYeVDeyVbHEjZQLSmN6jNctmXrmySASDZKfHwM7i->So11111111111111111111111111111111111111112",
+      "count": 39
+    },
+    {
+      "mint_pair": "EgwhciZP1jwRdZj1QdnyS1J7R7nLj15rhEmgJfa7eGWz->So11111111111111111111111111111111111111112",
+      "count": 32
+    },
+    {
+      "mint_pair": "6XyTYxoZJ3kaX8zdj2aVmtKebX1kcm94pU9YRyW6mArd->So11111111111111111111111111111111111111112",
+      "count": 27
+    },
+    {
+      "mint_pair": "Ei8TxDKgP7hAJCLmDCtJMae7W9p1iqk6eK38LYyfuLq9->So11111111111111111111111111111111111111112",
+      "count": 27
+    },
+    {
+      "mint_pair": "2pWTkwwoeswS9i1Fxmw99qK6qfSeW2EE61XqoBiSiXDL->So11111111111111111111111111111111111111112",
+      "count": 26
+    },
+    {
+      "mint_pair": "4pBQifXeYgiTCFHgsvnwbmqMZvNzQCqC3KWvhzi2Wz4t->So11111111111111111111111111111111111111112",
+      "count": 25
+    },
+    {
+      "mint_pair": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof->So11111111111111111111111111111111111111112",
+      "count": 23
+    },
+    {
+      "mint_pair": "3DksYUTEn8LXvnEiJcM6bsGdbgdRpEBZrtq2oN2GWqLX->So11111111111111111111111111111111111111112",
+      "count": 22
+    }
+  ]
+}

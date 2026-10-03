@@ -1,0 +1,43 @@
+{
+  "arrival_timing_decision_counts": {
+    "BUNDLE_READY_BUT_STATUS_LATE": 6,
+    "STATUS_CHECK_LATE": 4
+  },
+  "bundle_ready_but_status_late_count": 6,
+  "bundle_ready_to_first_status_check_us_max": 4747862,
+  "bundle_ready_to_first_status_check_us_min": 343026,
+  "bundle_ready_to_first_status_check_us_p50": 671059,
+  "bundle_ready_to_first_status_check_us_p90": 4747862,
+  "bundle_ready_to_first_status_check_us_p99": 4747862,
+  "candidate_row_count": 10,
+  "fresh_at_bundle_ready_count": 0,
+  "freshness_class_counts": {
+    "ALREADY_PROCESSED_AT_FIRST_CHECK": 10
+  },
+  "input_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/21_afbr1f_backrun_freshness_batch",
+  "internal_fast_threshold_us": 50000,
+  "overall_diagnosis": "BUNDLE_READY_BUT_STATUS_LATE",
+  "provider_sim_latency_us_max": 121554,
+  "provider_sim_latency_us_min": 61064,
+  "provider_sim_latency_us_p50": 78200,
+  "provider_sim_latency_us_p90": 113739,
+  "provider_sim_latency_us_p99": 121554,
+  "record_type": "afbr1g_target_arrival_timing_audit",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_afbr1g_target_arrival_timing_audit/afbr1g_target_arrival_timing_rows.jsonl",
+  "sample_dir_count": 10,
+  "source_delta_late_threshold_us": 10000,
+  "source_delta_us_max": null,
+  "source_delta_us_min": null,
+  "source_delta_us_p50": null,
+  "source_delta_us_p90": null,
+  "source_delta_us_p99": null,
+  "source_late_count": 0,
+  "status_check_late_count": 4,
+  "status_check_late_threshold_us": 10000,
+  "target_seen_to_bundle_ready_us_max": 46403,
+  "target_seen_to_bundle_ready_us_min": 81,
+  "target_seen_to_bundle_ready_us_p50": 4429,
+  "target_seen_to_bundle_ready_us_p90": 46403,
+  "target_seen_to_bundle_ready_us_p99": 46403,
+  "unknown_count": 0
+}

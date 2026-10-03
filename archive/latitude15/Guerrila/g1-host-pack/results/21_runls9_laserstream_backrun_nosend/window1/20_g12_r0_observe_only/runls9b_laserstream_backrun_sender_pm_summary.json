@@ -1,0 +1,19 @@
+{
+  "sender_subset_total": 41,
+  "sender_subset_no_send_accept_count": 41,
+  "sender_subset_pm_reserve_ok_count": 0,
+  "sender_subset_accept_without_pm_reserve_count": 41,
+  "sender_subset_exact_input_lockable_proven_count": 0,
+  "sender_subset_inventory_ready_count": 41,
+  "sender_subset_template_ready_count": 41,
+  "sender_subset_output_account_ready_count": 41,
+  "sender_subset_min_out_positive_count": 41,
+  "sender_subset_net_ev_positive_count": 41,
+  "sender_subset_tip_estimate_positive_count": 41,
+  "sender_subset_priority_fee_accounted_proven_count": 0,
+  "sender_subset_no_send_pm_release_observed_count": 0,
+  "hard_fail_pm_reserve_bypassed": true,
+  "result": "failed_pm_reserve_gate",
+  "invalid_input_lines_skipped": 0,
+  "input_artifact": "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls9_laserstream_backrun_nosend/window1/20_g12_r0_observe_only/runls9_laserstream_backrun_nosend_rows.jsonl"
+}

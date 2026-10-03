@@ -1,0 +1,12 @@
+{
+  "package_name": "66rg_rebalancing_certificate_owner_reconciliation_20260527",
+  "purpose": "Reconcile 66rb structural execution certificate with 66re owner-aligned selector result.",
+  "inputs": {
+    "structural_certificate": "/home/ubuntu/Guerrila/g1-host-pack/results/66rb_rebalancing_structural_readiness_fresh_20260527_final/",
+    "selector_package": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66re_rebalancing_owner_aligned_class_selector_20260527",
+    "failed_proposal_package": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rc_rebalancing_one_class_proposal_package_20260527",
+    "failed_owner_supplement": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rd_rebalancing_owner_mode_isolation_restoration_proof_20260527"
+  },
+  "structural_ready_rows_expected": 21,
+  "structural_ready_rows_loaded": 21
+}

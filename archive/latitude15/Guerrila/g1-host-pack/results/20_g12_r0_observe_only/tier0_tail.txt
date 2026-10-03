@@ -1,0 +1,54 @@
+Config loaded: /etc/shadow-engine/config.guerrila.yaml
+Profile:       V6_4Guerrila
+
+PASS  static validation
+PASS  ingress topology: money=4 shred_capture=1 grpc=0
+PASS  UMEM bootstrapped at /dev/hugepages/shadow_umem_0 (2097152 frames × 2048 bytes = 4 GiB)
+PASS  AF_XDP ownership validated
+PASS  bootstrapped 1 AF_XDP producer(s) (4 feed ring(s) each)
+PASS  raw archive bootstrapped (1 lane(s) × 65536 capacity)
+PASS  bootstrapped 0 gRPC fallback producer(s) (4 feed ring(s) each)
+PASS  bootstrapped 4 Jito egress ring(s)
+PASS  bootstrapped 4 Harmonic egress ring(s)
+PASS  bootstrapped NACK ring
+PASS  bootstrapped egress health segment
+PASS  bootstrapped risk flags segment
+PASS  bootstrapped egress result ring (Harmonic)
+PASS  bootstrapped Jito result ring
+PASS  bootstrapped 4 rollout shadow ring(s)
+SKIP  Jito live proxy config/auth in observe_only no-send mode
+SKIP  Harmonic live proxy config/auth
+PASS  shadow_blockhash seeded slot=419286792 next_scheduled_slot=419286793
+PASS  shadow_blockhash publisher seeded
+PASS  startup readiness checks satisfied
+INFO  observe_only+no_send: using pass-all allowlist for R0 evidence accumulation
+PASS  ALT resolver opened from /dev/shm
+PASS  ShmMintResolver opened from /dev/shm
+INFO  observe_only+no_send: lenient mint fallback enabled (zero mints on miss)
+PASS  interface 'eno1' → ifindex 30
+PASS  spawned 1 AF_XDP RX worker thread(s)
+PASS  spawned 0 gRPC ingest thread(s)
+SKIP  Jito proxy thread in observe_only no-send mode
+SKIP  Harmonic proxy thread in observe_only no-send mode
+WARN  SHADOW_SIGNER_TOKEN_INVENTORY_PATH is unset — CLMM public-scout inventory gating will fail closed
+PASS  loaded signer keypair (pubkey: ANutmYD3..)
+PASS  inventory ceiling: 30000000000 lamports (30.00 SOL)
+WARN  nonce_prefill 128 exceeds ring capacity 127 — clamping to 127
+PASS  swap template: 2 accounts, 18 bytes ix data (discriminator 0x09)
+PASS  money-worker shared deps opened from /dev/shm
+money-worker-0: opened 1 feed ring(s)
+money-worker-0: opened Jito egress ring
+money-worker-0: opened Harmonic egress ring
+money-worker-1: opened 1 feed ring(s)
+money-worker-1: opened Jito egress ring
+money-worker-2: opened 1 feed ring(s)
+money-worker-1: opened Harmonic egress ring
+money-worker-2: opened Jito egress ring
+money-worker-2: opened Harmonic egress ring
+PASS  spawned 4 money-worker thread(s)
+PASS  PM thread spawned
+
+Startup complete. 1 ingress, 4 worker(s), no-send sink only, PM running.
+money-worker-3: opened 1 feed ring(s)
+money-worker-3: opened Jito egress ring
+money-worker-3: opened Harmonic egress ring

@@ -1,0 +1,13 @@
+{
+  "profile": "32_32",
+  "replay_threads": 32,
+  "rayon_threads": 32,
+  "sample_count": 10,
+  "processed_lag_start": 2709,
+  "processed_lag_end": 278,
+  "processed_lag_max": 2709,
+  "finalized_lag_start": 2709,
+  "finalized_lag_end": 278,
+  "finalized_lag_max": 2709,
+  "lag_slope_p95": -3.190877874923363
+}

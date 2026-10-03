@@ -1,0 +1,191 @@
+{
+  "blockers": [
+    "blocked_target_already_landed",
+    "blocked_simulate_bundle_failed"
+  ],
+  "blockhash_check_end_ns": 1030300275242612,
+  "blockhash_check_start_ns": 1030300221539877,
+  "bundle_tx_count": 2,
+  "bundle_tx_count_max_allowed": 5,
+  "first_status_check_end_ns": 1030300221538397,
+  "first_status_check_probe": "http_200",
+  "first_status_check_start_ns": 1030300167467643,
+  "live_landed": 0,
+  "our_backrun_tx_second": true,
+  "post_provider_status_check_end_ns": 1030300413212409,
+  "post_provider_status_check_start_ns": 1030300347168477,
+  "provider": "jito_via_helius",
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "provider_sim_end_ns": 1030300347165347,
+  "provider_sim_start_ns": 1030300275246792,
+  "record_type": "runafbr1_target_freshness_bundle_eligibility",
+  "selection_result": "blocked_target_already_processed",
+  "sendBundle_called": false,
+  "send_bundle_called": false,
+  "simulateBundle_pass": false,
+  "simulate_bundle_available": true,
+  "simulate_bundle_error_code": null,
+  "simulate_bundle_error_message": null,
+  "simulate_bundle_probe": "http_200",
+  "simulate_bundle_summary": {
+    "failed": {
+      "error": {
+        "TransactionFailure": [
+          [
+            99,
+            15,
+            181,
+            190,
+            46,
+            223,
+            166,
+            11,
+            31,
+            223,
+            103,
+            223,
+            144,
+            126,
+            84,
+            199,
+            148,
+            198,
+            224,
+            20,
+            140,
+            16,
+            214,
+            27,
+            18,
+            105,
+            128,
+            127,
+            102,
+            149,
+            52,
+            171,
+            59,
+            91,
+            101,
+            228,
+            180,
+            237,
+            177,
+            19,
+            68,
+            69,
+            183,
+            48,
+            10,
+            71,
+            225,
+            214,
+            223,
+            255,
+            22,
+            84,
+            210,
+            181,
+            89,
+            84,
+            5,
+            36,
+            9,
+            36,
+            210,
+            224,
+            118,
+            0
+          ],
+          "This transaction has already been processed"
+        ]
+      },
+      "tx_signature": "2ysarac2rgWKkGt2ypXoHmUbepunebUi1MithLTsd53AkZyVuQspEqXjckVyfKN8KMk7q6b3KMB8nyfHYaUVnXQj"
+    }
+  },
+  "status": "blocked_target_already_processed",
+  "target_already_landed": true,
+  "target_recent_blockhash": "HYxtvzX38KcyZ92gCRDWmaBNvkEUT56LzmU3tnGDdrGs",
+  "target_recent_blockhash_probe": "http_200",
+  "target_recent_blockhash_valid": true,
+  "target_signature": "630fb5be2edfa60b1fdf67df907e54c794c6e0148c10d61b1269807f669534ab3b5b65e4b4edb1134445b7300a47e1d6dfff1654d2b5595405240924d2e07600",
+  "target_signature_base58": "2ysarac2rgWKkGt2ypXoHmUbepunebUi1MithLTsd53AkZyVuQspEqXjckVyfKN8KMk7q6b3KMB8nyfHYaUVnXQj",
+  "target_signature_status_after_bundle_ready": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 0,
+    "err": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "slot": 422300084,
+    "status": {
+      "Err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6002
+          }
+        ]
+      }
+    }
+  },
+  "target_signature_status_after_provider_sim": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 0,
+    "err": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "slot": 422300084,
+    "status": {
+      "Err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6002
+          }
+        ]
+      }
+    }
+  },
+  "target_signature_status_after_provider_sim_probe": "http_200",
+  "target_signature_status_before_bundle": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 0,
+    "err": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "slot": 422300084,
+    "status": {
+      "Err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6002
+          }
+        ]
+      }
+    }
+  },
+  "target_signature_status_probe": "http_200",
+  "target_signature_status_reachable": true,
+  "target_tx_bytes_available": true,
+  "target_tx_decode_error": null,
+  "target_tx_decoded_len_bytes": 652,
+  "target_tx_first": true,
+  "tip_present": true,
+  "wire_send": 0
+}

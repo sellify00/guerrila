@@ -1,0 +1,17 @@
+{
+  "base_tx_fee_lamports": 5000,
+  "max_loss_sol": 0.0025,
+  "priority_fee_lamports": 0,
+  "rpc_url": "https://rpc.example.invalid",
+  "size_list": [
+    "0.005",
+    "0.01",
+    "0.025",
+    "0.05",
+    "0.1"
+  ],
+  "slippage_bps": 100,
+  "target_mint": "8kZ1T1WjKXkVxTHRGdErCtYAYu7wBBYSPGkZf1MtXnKj",
+  "target_pool": "CAJ6m6ZtRCqEzJZA6SHTZ22BJeD65GafqMtDXkbdzq6h",
+  "tip_lamports": 0
+}

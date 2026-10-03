@@ -1,0 +1,41 @@
+{
+  "first_failure": "none",
+  "flatten_attempt_count": 1,
+  "flatten_landed": true,
+  "flatten_tx_signature": "26ns3K3tP3TusbfmE74xFGV5aH63UAc8mrVtbJmUccuUfVBvAft2tv986NehYesKVkS8YN9UGF51LZu88jJqQHRV",
+  "live_landed": 1,
+  "mint": "31jmc9thMcSKrMbhrBNxBUSBfqsPSHaC3Uf9nKn6im5Q",
+  "pnl_lamports_rescue_delta": 26300912,
+  "pool": "Bk345k3ERTet8DU64zjWtAipscsnNg3JFQtbRn7b4Azx",
+  "post_token_raw": 0,
+  "pre_exit_quote": {
+    "current_base_reserve_raw": 440125922883,
+    "current_quote_reserve_raw": 519261824843185,
+    "direct_pool_math_quote_available": true,
+    "error": "",
+    "expected_out_raw": 26798903,
+    "hypothetical_exit_does_not_zero_pool": true,
+    "min_out_raw": 25458957,
+    "ok": true,
+    "pool_doc": {
+      "base_mint": "So11111111111111111111111111111111111111112",
+      "base_vault": "9Fs2RvbzXrKJSp6oqQ1f1mu4ihjWfzDxqe4BgTMXVksV",
+      "quote_mint": "31jmc9thMcSKrMbhrBNxBUSBfqsPSHaC3Uf9nKn6im5Q",
+      "quote_vault": "CdNQnvnHxNAreb1veML8DCDwGFarnYQ1NJMTQr1Wpz6C"
+    },
+    "pool_reserves_available": true,
+    "quote_source_used": "pumpfun_direct_pool_math",
+    "reserve_after_exit_raw": 440099123980,
+    "route_source_mismatch": false,
+    "sell_reserve_in_raw": 519261824843185,
+    "sell_reserve_out_raw": 440125922883,
+    "slot": 423737816,
+    "sol_liquidity_lamports": 440125922883
+  },
+  "pre_token_raw": 31619347899,
+  "refresh_ok": true,
+  "rescue_flatten_landed": true,
+  "rescue_ok": true,
+  "status": "MANUAL_RESCUE_FLATTEN_ATTEMPTED",
+  "wire_send": 1
+}

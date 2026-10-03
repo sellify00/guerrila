@@ -1,0 +1,12 @@
+{
+  "certificate_scope": "restoration_pressure_measurement_only",
+  "live_send": false,
+  "max_adverse_excursion_limit_bps": 500.0,
+  "overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66r_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "owner_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg2_rebalancing_ownerfresh_20260527_ownerfresh2_233955/owner_selector_instrumentation_rows.jsonl",
+  "q2_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg4_rebalancing_ownerfresh_20260527_ownerfresh2_233955",
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "sendBundle": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66rt_rebalancing_template_nosend_rows.jsonl"
+}

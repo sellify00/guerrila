@@ -1,0 +1,30 @@
+{
+  "habitats": [],
+  "summary": {
+    "account_lifecycle_ok_count": 0,
+    "entry_ev_positive_count": 0,
+    "epoch_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV",
+    "exit_route_exists_count": 0,
+    "habitat_count": 0,
+    "label_counts": {},
+    "live_landed": 0,
+    "malformed_by_file": {},
+    "observed_rows": 0,
+    "output_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78hab_directarb_roundtrip_habitat_leaderboard",
+    "policy_clean_count": 0,
+    "roundtrip_positive_count": 0,
+    "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78hab_directarb_roundtrip_habitat_leaderboard/habitat_rows.csv",
+    "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78hab_directarb_roundtrip_habitat_leaderboard/habitat_rows.jsonl",
+    "sendBundle_called": false,
+    "simulate_pass_count": 0,
+    "source_file_rows": {
+      "c3:/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78c3_directarb_cap1_nearmiss_autopsy/rows.jsonl": 0,
+      "f:/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78f_directarb_exit_flatten_route_certificate/rows.jsonl": 0
+    },
+    "status": "blocked_no_directarb_habitat_rows",
+    "top_blocker_counts": {},
+    "top_habitats_txt": "/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w1_EyY7VZNV/78hab_directarb_roundtrip_habitat_leaderboard/top_habitats.txt",
+    "wire_send": 0,
+    "would_send_count": 0
+  }
+}

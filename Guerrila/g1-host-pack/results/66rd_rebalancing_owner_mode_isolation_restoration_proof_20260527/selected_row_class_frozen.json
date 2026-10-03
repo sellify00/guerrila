@@ -1,0 +1,23 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+  "venue": "raydium_clmm",
+  "mint_in": "So11111111111111111111111111111111111111112",
+  "mint_out": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "classification": "sender_no_send",
+  "row_count": 3,
+  "package_name": "66rd_rebalancing_owner_mode_isolation_restoration_proof_20260527",
+  "input_package": "66rc_rebalancing_one_class_proposal_package_20260527",
+  "frozen_from_row_class": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "source_artifacts": {
+    "structural_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66rb_rebalancing_structural_readiness_fresh_20260527_final/summary.txt",
+    "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+    "inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+    "policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rp_rebalancing_policy_liquidity_gate_fresh_20260527/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+    "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_template_nosend_fresh_20260527/run66rt_rebalancing_template_nosend_rows.jsonl",
+    "exact_positive_overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66r_rebalancing_exact_positive_readiness_overlay_fresh_20260527/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+    "quote_route_ev_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_exact_quote_route_ev_fresh_20260527/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+    "exact_quote_identity_bridge_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66x_exact_quote_identity_bridge_fresh_20260527/run66x_exact_quote_identity_bridge_rows.jsonl"
+  },
+  "freeze_check_pass": true
+}

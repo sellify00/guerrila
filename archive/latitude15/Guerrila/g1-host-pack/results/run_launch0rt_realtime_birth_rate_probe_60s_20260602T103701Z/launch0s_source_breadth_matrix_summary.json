@@ -1,0 +1,76 @@
+{
+  "best_source_decoded_count": 116,
+  "best_source_name": "LaserStream realtime birth decoder",
+  "live_landed": 0,
+  "matrix_rows": [
+    {
+      "create_count": 5732,
+      "decoded_count": 0,
+      "miss_reason": "decode_or_filter_gap",
+      "missed_count": 5732,
+      "overlap_with_ground_truth": 57,
+      "source_name": "LaserStream preprocessed realtime",
+      "source_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z/launch0rt_realtime_birth_rate_probe_summary.json",
+      "status": "observed",
+      "unique_mints": 0
+    },
+    {
+      "create_count": 47959,
+      "decoded_count": 116,
+      "miss_reason": "decode_or_filter_gap",
+      "missed_count": 47843,
+      "overlap_with_ground_truth": 57,
+      "source_name": "LaserStream realtime birth decoder",
+      "source_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z/launch0d_realtime_birth_decoder_summary.json",
+      "status": "observed",
+      "unique_mints": 94
+    },
+    {
+      "create_count": 240,
+      "decoded_count": 16,
+      "miss_reason": "decode_or_filter_gap",
+      "missed_count": 224,
+      "overlap_with_ground_truth": 57,
+      "source_name": "LaserStream preprocessed backfill",
+      "source_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0g_global_launch_birth_census_3600s_20260602T085354Z/launch0g_global_launch_birth_census_summary.json",
+      "status": "observed",
+      "unique_mints": 16
+    },
+    {
+      "create_count": 242,
+      "decoded_count": 57,
+      "miss_reason": "decode_or_filter_gap",
+      "missed_count": 185,
+      "overlap_with_ground_truth": 57,
+      "source_name": "hot executor stream",
+      "source_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T084031Z/launch10_hot_stream_executor_summary.json",
+      "status": "observed",
+      "unique_mints": 57
+    },
+    {
+      "create_count": 0,
+      "decoded_count": 0,
+      "miss_reason": "none",
+      "missed_count": 0,
+      "overlap_with_ground_truth": 0,
+      "source_name": "Helius processed stream",
+      "source_path": "",
+      "status": "not_configured",
+      "unique_mints": 0
+    },
+    {
+      "create_count": 0,
+      "decoded_count": 0,
+      "miss_reason": "none",
+      "missed_count": 0,
+      "overlap_with_ground_truth": 0,
+      "source_name": "Helius raw/enhanced create history",
+      "source_path": "",
+      "status": "not_configured",
+      "unique_mints": 0
+    }
+  ],
+  "source_count": 6,
+  "status": "launch0s_source_breadth_matrix_complete",
+  "wire_send": 0
+}

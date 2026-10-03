@@ -1,0 +1,312 @@
+=== date ===
+Tue Apr 28 09:02:34 AM UTC 2026
+=== memory ===
+               total        used        free      shared  buff/cache   available
+Mem:           125Gi        28Gi        14Gi        16Mi        83Gi        96Gi
+Swap:             0B          0B          0B
+=== disks ===
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme2n1   xfs   3.5T  122G  3.4T   4% /mnt/solana-ledger
+/dev/nvme3n1   xfs   3.5T  416G  3.1T  12% /mnt/solana-accounts
+=== service ===
+● sh4-agave-yellowstone-smoke.service - SH4 Agave non-voting devnet validator with Yellowstone smoke
+     Loaded: loaded (/etc/systemd/system/sh4-agave-yellowstone-smoke.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-04-28 07:12:24 UTC; 1h 50min ago
+   Main PID: 71422 (agave-validator)
+      Tasks: 655 (limit: 154122)
+     Memory: 106.7G (peak: 121.5G)
+        CPU: 4h 34min 25.011s
+     CGroup: /system.slice/sh4-agave-yellowstone-smoke.service
+             ├─71422 /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/agave/target/release/agave-validator --identity /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/validator-keypair.json --no-voting --full-rpc-api --private-rpc --ledger /mnt/solana-ledger --snapshots /mnt/solana-ledger/snapshots --accounts /mnt/solana-accounts --log /var/log/solana/agave-devnet-yellowstone.log --rpc-port 8899 --rpc-bind-address 127.0.0.1 --dynamic-port-range 8000-8025 --wal-recovery-mode skip_any_corrupted_record --limit-ledger-size --known-validator dv1ZAGvdsz5hHLwWXsVnM94hWf1pjbKVau1QVkaMJ92 --known-validator dv2eQHeP4RFrJZ6UeiZWoc3XTtmtZCUKxxCApCDcRNV --known-validator dv4ACNkpYPcE3aKmYDqZm9G5EB3J4MRoeE7WNDRBVJB --known-validator dv3qDFk1DTF36Z62bNvrCXe9sKATA6xvVy6A798xxAS --only-known-rpc --entrypoint entrypoint.devnet.solana.com:8001 --entrypoint entrypoint2.devnet.solana.com:8001 --entrypoint entrypoint3.devnet.solana.com:8001 --entrypoint entrypoint4.devnet.solana.com:8001 --entrypoint entrypoint5.devnet.solana.com:8001 --expected-genesis-hash EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG --geyser-plugin-config /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/yellowstone-config.json
+             └─71434 tee -a /var/log/solana/agave-devnet-yellowstone.log
+
+Apr 28 07:12:24 m4-metal-large-tyo-1 systemd[1]: Started sh4-agave-yellowstone-smoke.service - SH4 Agave non-voting devnet validator with Yellowstone smoke.
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: [sh1] Starting non-voting devnet validator with Yellowstone
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: [sh1] Log file: /var/log/solana/agave-devnet-yellowstone.log
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: log file: /var/log/solana/agave-devnet-yellowstone.log
+# /etc/systemd/system/sh4-agave-yellowstone-smoke.service
+[Unit]
+Description=SH4 Agave non-voting devnet validator with Yellowstone smoke
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/SH/SH1-local-agave-yellowstone
+Environment=HOME=/home/ubuntu
+ExecStart=/bin/bash -lc 'source /home/ubuntu/.cargo/env && cd /home/ubuntu/SH/SH1-local-agave-yellowstone && bash ./60_start_agave_with_yellowstone.sh'
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=1000000
+LimitMEMLOCK=2000000000
+
+[Install]
+WantedBy=multi-user.target
+=== process ===
+    PID     ELAPSED %CPU %MEM   RSS    VSZ COMMAND
+  71422    01:50:09  249 20.7 27261816 39475904 /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/agave/target/release/agave-validator --identity /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/validator-keypair.json --no-voting --full-rpc-api --private-rpc --ledger /mnt/solana-ledger --snapshots /mnt/solana-ledger/snapshots --accounts /mnt/solana-accounts --log /var/log/solana/agave-devnet-yellowstone.log --rpc-port 8899 --rpc-bind-address 127.0.0.1 --dynamic-port-range 8000-8025 --wal-recovery-mode skip_any_corrupted_record --limit-ledger-size --known-validator dv1ZAGvdsz5hHLwWXsVnM94hWf1pjbKVau1QVkaMJ92 --known-validator dv2eQHeP4RFrJZ6UeiZWoc3XTtmtZCUKxxCApCDcRNV --known-validator dv4ACNkpYPcE3aKmYDqZm9G5EB3J4MRoeE7WNDRBVJB --known-validator dv3qDFk1DTF36Z62bNvrCXe9sKATA6xvVy6A798xxAS --only-known-rpc --entrypoint entrypoint.devnet.solana.com:8001 --entrypoint entrypoint2.devnet.solana.com:8001 --entrypoint entrypoint3.devnet.solana.com:8001 --entrypoint entrypoint4.devnet.solana.com:8001 --entrypoint entrypoint5.devnet.solana.com:8001 --expected-genesis-hash EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG --geyser-plugin-config /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/yellowstone-config.json
+=== sockets tcp ===
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                 
+LISTEN 0      1024       127.0.0.1:8899       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275120))        
+LISTEN 0      1024       127.0.0.1:8900       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275125))        
+LISTEN 0      4096       127.0.0.1:8999       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=92))            
+LISTEN 0      128        127.0.0.1:10000      0.0.0.0:*    users:(("agave-validator",pid=71422,fd=93))            
+LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=25852,fd=17))            
+LISTEN 0      128          0.0.0.0:8000       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=13))            
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=25852,fd=15))            
+LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=30646,fd=3),("systemd",pid=1,fd=76))
+LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=30646,fd=4),("systemd",pid=1,fd=77))
+=== sockets solana dynamic ===
+udp   UNCONN 0      0            0.0.0.0:8000       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=12))                                        
+udp   UNCONN 0      0            0.0.0.0:8001       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=14))                                        
+udp   UNCONN 0      0            0.0.0.0:8002       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=15))                                        
+udp   UNCONN 0      0            0.0.0.0:8005       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=59))                                        
+udp   UNCONN 0      0            0.0.0.0:8006       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=60))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=72))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=71))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=70))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=69))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=68))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=67))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=66))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=65))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=64))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=63))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=62))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=61))                                        
+udp   UNCONN 0      0            0.0.0.0:8008       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275138),("agave-validator",pid=71422,fd=73))
+udp   UNCONN 0      0            0.0.0.0:8009       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=18))                                        
+udp   UNCONN 0      0            0.0.0.0:8010       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=51))                                        
+udp   UNCONN 0      0            0.0.0.0:8011       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=74))                                        
+udp   UNCONN 0      0            0.0.0.0:8012       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=75))                                        
+udp   UNCONN 0      0            0.0.0.0:8013       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=76))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=80))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=79))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=78))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=77))                                        
+udp   UNCONN 0      0            0.0.0.0:8015       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=81))                                        
+udp   UNCONN 0      0            0.0.0.0:8016       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=82))                                        
+udp   UNCONN 0      0            0.0.0.0:8018       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=84))                                        
+udp   UNCONN 0      0            0.0.0.0:8019       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=85))                                        
+udp   UNCONN 0      0            0.0.0.0:8022       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=88))                                        
+udp   UNCONN 0      0            0.0.0.0:8023       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275111))                                    
+tcp   LISTEN 0      128          0.0.0.0:8000       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=13))                                        
+=== yellowstone metrics sample ===
+# HELP connections_total Total number of connections to gRPC service
+# TYPE connections_total gauge
+connections_total 0
+# HELP geyser_account_update_data_size_kib Histogram of all account update data (kib) received from Geyser plugin
+# TYPE geyser_account_update_data_size_kib histogram
+geyser_account_update_data_size_kib_bucket{le="5"} 702135
+geyser_account_update_data_size_kib_bucket{le="10"} 747699
+geyser_account_update_data_size_kib_bucket{le="20"} 747959
+geyser_account_update_data_size_kib_bucket{le="30"} 757977
+geyser_account_update_data_size_kib_bucket{le="50"} 758011
+geyser_account_update_data_size_kib_bucket{le="100"} 778802
+geyser_account_update_data_size_kib_bucket{le="200"} 824297
+geyser_account_update_data_size_kib_bucket{le="300"} 827840
+geyser_account_update_data_size_kib_bucket{le="500"} 872128
+geyser_account_update_data_size_kib_bucket{le="1000"} 894807
+geyser_account_update_data_size_kib_bucket{le="2000"} 903329
+geyser_account_update_data_size_kib_bucket{le="3000"} 903330
+geyser_account_update_data_size_kib_bucket{le="5000"} 903330
+geyser_account_update_data_size_kib_bucket{le="10000"} 903330
+geyser_account_update_data_size_kib_bucket{le="+Inf"} 903330
+geyser_account_update_data_size_kib_sum 58554141.587890625
+geyser_account_update_data_size_kib_count 903330
+# HELP grpc_client_disconnects_total Total client disconnections by reason
+# TYPE grpc_client_disconnects_total counter
+grpc_client_disconnects_total{reason="server_shutdown",subscriber_id="127.0.0.1"} 1
+# HELP grpc_subscriber_queue_size Current size of subscriber channel queue
+# TYPE grpc_subscriber_queue_size gauge
+grpc_subscriber_queue_size{subscriber_id="127.0.0.1"} 0
+# HELP message_queue_size Size of geyser message queue
+# TYPE message_queue_size gauge
+message_queue_size 0
+# HELP slot_status Lastest received slot from Geyser
+# TYPE slot_status gauge
+slot_status{status="completed"} 458629735
+slot_status{status="confirmed"} 458629734
+slot_status{status="created_bank"} 458629735
+slot_status{status="dead"} 458626180
+slot_status{status="first_shred_received"} 458629735
+slot_status{status="processed"} 458629735
+slot_status{status="rooted"} 458629704
+# HELP slot_status_plugin Latest processed slot in the plugin to client queues
+# TYPE slot_status_plugin gauge
+slot_status_plugin{status="completed"} 458629735
+slot_status_plugin{status="confirmed"} 458629734
+slot_status_plugin{status="created_bank"} 458629735
+slot_status_plugin{status="dead"} 458626180
+slot_status_plugin{status="finalized"} 458629704
+slot_status_plugin{status="first_shread_received"} 458629735
+slot_status_plugin{status="processed"} 458629735
+# HELP subscriptions_total Total number of subscriptions to gRPC service
+# TYPE subscriptions_total gauge
+subscriptions_total{endpoint="",subscription="accounts"} 0
+subscriptions_total{endpoint="",subscription="all"} 0
+subscriptions_total{endpoint="",subscription="blocks"} 0
+subscriptions_total{endpoint="",subscription="blocks_meta"} 0
+subscriptions_total{endpoint="",subscription="entries"} 0
+subscriptions_total{endpoint="",subscription="grpc_total"} 0
+subscriptions_total{endpoint="",subscription="slots"} 0
+subscriptions_total{endpoint="",subscription="transactions"} 0
+subscriptions_total{endpoint="",subscription="transactions_status"} 0
+# HELP total_traffic_sent_bytes Total traffic sent to subscriber by type (account_update, block_meta, etc)
+# TYPE total_traffic_sent_bytes counter
+total_traffic_sent_bytes 719
+# HELP version Plugin version info
+# TYPE version counter
+version{buildts="2026-04-28T07:08:11.236277066Z",git="acbbb5a",package="yellowstone-grpc-geyser",proto="12.2.0+solana.3.1.14",rustc="1.86.0",solana="3.1.14",version="12.3.0+solana.3.1.14"} 1
+# HELP yellowstone_geyser_batch_size Size of processed message batches
+# TYPE yellowstone_geyser_batch_size histogram
+yellowstone_geyser_batch_size_bucket{le="1"} 42577
+yellowstone_geyser_batch_size_bucket{le="4"} 63756
+yellowstone_geyser_batch_size_bucket{le="8"} 79925
+yellowstone_geyser_batch_size_bucket{le="16"} 148311
+yellowstone_geyser_batch_size_bucket{le="24"} 169214
+yellowstone_geyser_batch_size_bucket{le="31"} 192034
+yellowstone_geyser_batch_size_bucket{le="+Inf"} 192034
+yellowstone_geyser_batch_size_sum 2137138
+yellowstone_geyser_batch_size_count 192034
+# HELP yellowstone_grpc_method_call_count Total number of calls to GetVersion gRPC method
+# TYPE yellowstone_grpc_method_call_count counter
+yellowstone_grpc_method_call_count{method="get_version"} 1
+yellowstone_grpc_method_call_count{method="subscribe"} 1
+# HELP yellowstone_grpc_service_outbound_bytes Current emitted bytes by tonic service response bodies per active subscriber stream
+# TYPE yellowstone_grpc_service_outbound_bytes gauge
+yellowstone_grpc_service_outbound_bytes{subscriber_id="unknown"} 0
+=== recent validator logs ===
+Apr 28 07:12:24 m4-metal-large-tyo-1 systemd[1]: Started sh4-agave-yellowstone-smoke.service - SH4 Agave non-voting devnet validator with Yellowstone smoke.
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: [sh1] Starting non-voting devnet validator with Yellowstone
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: [sh1] Log file: /var/log/solana/agave-devnet-yellowstone.log
+Apr 28 07:12:24 m4-metal-large-tyo-1 bash[71434]: log file: /var/log/solana/agave-devnet-yellowstone.log
+=== client smoke tail ===
+=== Yellowstone client smoke start Tue Apr 28 08:01:00 AM UTC 2026 ===
+[sh1] Checking Yellowstone health endpoint
+[sh1] Streaming slots + transactions for 30 seconds
+[sh1] OK: Yellowstone client smoke run completed
+=== Yellowstone client smoke done Tue Apr 28 08:02:34 AM UTC 2026 ===
+=== post-listener watch tail ===
+geyser_account_update_data_size_kib_bucket{le="50"} 754123
+geyser_account_update_data_size_kib_bucket{le="100"} 774822
+geyser_account_update_data_size_kib_bucket{le="200"} 820112
+geyser_account_update_data_size_kib_bucket{le="300"} 823654
+geyser_account_update_data_size_kib_bucket{le="500"} 867783
+geyser_account_update_data_size_kib_bucket{le="1000"} 890462
+geyser_account_update_data_size_kib_bucket{le="2000"} 898984
+geyser_account_update_data_size_kib_bucket{le="3000"} 898985
+geyser_account_update_data_size_kib_bucket{le="5000"} 898985
+geyser_account_update_data_size_kib_bucket{le="10000"} 898985
+geyser_account_update_data_size_kib_bucket{le="+Inf"} 898985
+geyser_account_update_data_size_kib_sum 58447294.248046875
+geyser_account_update_data_size_kib_count 898985
+# HELP grpc_client_disconnects_total Total client disconnections by reason
+# TYPE grpc_client_disconnects_total counter
+grpc_client_disconnects_total{reason="server_shutdown",subscriber_id="127.0.0.1"} 1
+# HELP grpc_subscriber_queue_size Current size of subscriber channel queue
+# TYPE grpc_subscriber_queue_size gauge
+grpc_subscriber_queue_size{subscriber_id="127.0.0.1"} 0
+# HELP message_queue_size Size of geyser message queue
+# HELP slot_status Lastest received slot from Geyser
+# TYPE slot_status gauge
+slot_status{status="completed"} 458629686
+slot_status{status="confirmed"} 458629685
+slot_status{status="created_bank"} 458629687
+slot_status{status="dead"} 458626180
+slot_status{status="first_shred_received"} 458629687
+slot_status{status="processed"} 458629686
+slot_status{status="rooted"} 458629655
+# HELP slot_status_plugin Latest processed slot in the plugin to client queues
+# TYPE slot_status_plugin gauge
+slot_status_plugin{status="completed"} 458629686
+slot_status_plugin{status="confirmed"} 458629685
+=== Tue Apr 28 09:02:26 AM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           125Gi        29Gi        14Gi        16Mi        83Gi        96Gi
+Swap:             0B          0B          0B
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme2n1   xfs   3.5T  122G  3.4T   4% /mnt/solana-ledger
+/dev/nvme3n1   xfs   3.5T  416G  3.1T  12% /mnt/solana-accounts
+active
+  71422    01:50:02  248 20.7 27307884 39475904 /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/agave/target/release/agave-validator --identity /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/validator-keypair.json --no-voting --full-rpc-api --private-rpc --ledger /mnt/solana-ledger --snapshots /mnt/solana-ledger/snapshots --accounts /mnt/solana-accounts --log /var/log/solana/agave-devnet-yellowstone.log --rpc-port 8899 --rpc-bind-address 127.0.0.1 --dynamic-port-range 8000-8025 --wal-recovery-mode skip_any_corrupted_record --limit-ledger-size --known-validator dv1ZAGvdsz5hHLwWXsVnM94hWf1pjbKVau1QVkaMJ92 --known-validator dv2eQHeP4RFrJZ6UeiZWoc3XTtmtZCUKxxCApCDcRNV --known-validator dv4ACNkpYPcE3aKmYDqZm9G5EB3J4MRoeE7WNDRBVJB --known-validator dv3qDFk1DTF36Z62bNvrCXe9sKATA6xvVy6A798xxAS --only-known-rpc --entrypoint entrypoint.devnet.solana.com:8001 --entrypoint entrypoint2.devnet.solana.com:8001 --entrypoint entrypoint3.devnet.solana.com:8001 --entrypoint entrypoint4.devnet.solana.com:8001 --entrypoint entrypoint5.devnet.solana.com:8001 --expected-genesis-hash EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG --geyser-plugin-config /home/ubuntu/SH/SH1-local-agave-yellowstone/lab/yellowstone-config.json
+LISTEN 0      1024       127.0.0.1:8899       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275120))
+LISTEN 0      1024       127.0.0.1:8900       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275125))
+LISTEN 0      4096       127.0.0.1:8999       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=92))    
+LISTEN 0      128        127.0.0.1:10000      0.0.0.0:*    users:(("agave-validator",pid=71422,fd=93))    
+udp   UNCONN 0      0            0.0.0.0:8000       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=12))                                        
+udp   UNCONN 0      0            0.0.0.0:8001       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=14))                                        
+udp   UNCONN 0      0            0.0.0.0:8002       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=15))                                        
+udp   UNCONN 0      0            0.0.0.0:8005       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=59))                                        
+udp   UNCONN 0      0            0.0.0.0:8006       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=60))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=72))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=71))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=70))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=69))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=68))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=67))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=66))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=65))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=64))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=63))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=62))                                        
+udp   UNCONN 0      0            0.0.0.0:8007       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=61))                                        
+udp   UNCONN 0      0            0.0.0.0:8008       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275138),("agave-validator",pid=71422,fd=73))
+udp   UNCONN 0      0            0.0.0.0:8009       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=18))                                        
+udp   UNCONN 0      0            0.0.0.0:8010       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=51))                                        
+udp   UNCONN 0      0            0.0.0.0:8011       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=74))                                        
+udp   UNCONN 0      0            0.0.0.0:8012       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=75))                                        
+udp   UNCONN 0      0            0.0.0.0:8013       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=76))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=80))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=79))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=78))                                        
+udp   UNCONN 0      0            0.0.0.0:8014       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=77))                                        
+udp   UNCONN 0      0            0.0.0.0:8015       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=81))                                        
+udp   UNCONN 0      0            0.0.0.0:8016       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=82))                                        
+udp   UNCONN 0      0            0.0.0.0:8018       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=84))                                        
+udp   UNCONN 0      0            0.0.0.0:8019       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=85))                                        
+udp   UNCONN 0      0            0.0.0.0:8022       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=88))                                        
+udp   UNCONN 0      0            0.0.0.0:8023       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=275111))                                    
+tcp   LISTEN 0      128          0.0.0.0:8000       0.0.0.0:*    users:(("agave-validator",pid=71422,fd=13))                                        
+# HELP connections_total Total number of connections to gRPC service
+# HELP geyser_account_update_data_size_kib Histogram of all account update data (kib) received from Geyser plugin
+# TYPE geyser_account_update_data_size_kib histogram
+geyser_account_update_data_size_kib_bucket{le="5"} 700714
+geyser_account_update_data_size_kib_bucket{le="10"} 746166
+geyser_account_update_data_size_kib_bucket{le="20"} 746426
+geyser_account_update_data_size_kib_bucket{le="30"} 756426
+geyser_account_update_data_size_kib_bucket{le="50"} 756460
+geyser_account_update_data_size_kib_bucket{le="100"} 777194
+geyser_account_update_data_size_kib_bucket{le="200"} 822572
+geyser_account_update_data_size_kib_bucket{le="300"} 826115
+geyser_account_update_data_size_kib_bucket{le="500"} 870301
+geyser_account_update_data_size_kib_bucket{le="1000"} 892980
+geyser_account_update_data_size_kib_bucket{le="2000"} 901502
+geyser_account_update_data_size_kib_bucket{le="3000"} 901503
+geyser_account_update_data_size_kib_bucket{le="5000"} 901503
+geyser_account_update_data_size_kib_bucket{le="10000"} 901503
+geyser_account_update_data_size_kib_bucket{le="+Inf"} 901503
+geyser_account_update_data_size_kib_sum 58489141.640625
+geyser_account_update_data_size_kib_count 901503
+# HELP grpc_client_disconnects_total Total client disconnections by reason
+# TYPE grpc_client_disconnects_total counter
+grpc_client_disconnects_total{reason="server_shutdown",subscriber_id="127.0.0.1"} 1
+# HELP grpc_subscriber_queue_size Current size of subscriber channel queue
+# TYPE grpc_subscriber_queue_size gauge
+grpc_subscriber_queue_size{subscriber_id="127.0.0.1"} 0
+# HELP message_queue_size Size of geyser message queue
+# HELP slot_status Lastest received slot from Geyser
+# TYPE slot_status gauge
+slot_status{status="completed"} 458629716
+slot_status{status="confirmed"} 458629715
+slot_status{status="created_bank"} 458629717
+slot_status{status="dead"} 458626180
+slot_status{status="first_shred_received"} 458629717
+slot_status{status="processed"} 458629716
+slot_status{status="rooted"} 458629685
+# HELP slot_status_plugin Latest processed slot in the plugin to client queues
+# TYPE slot_status_plugin gauge
+slot_status_plugin{status="completed"} 458629716
+slot_status_plugin{status="confirmed"} 458629715
+=== kernel oom ===

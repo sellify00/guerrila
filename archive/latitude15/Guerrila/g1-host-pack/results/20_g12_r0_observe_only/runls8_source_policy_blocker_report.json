@@ -1,0 +1,27 @@
+{
+  "laserstream_only_near_trade_ready_count": 413,
+  "blocked_only_by_source_policy": 413,
+  "source_policy_blocker_counts": {
+    "laserstream_source_policy_blocked": 187,
+    "laserstream_live_not_allowed_research_only": 226
+  },
+  "observe_policy_split": {
+    "observe_blocked": 187,
+    "observe_allowed": 226
+  },
+  "execution_blocker_counts": {
+    "inventory": 0,
+    "quote": 0,
+    "template": 0,
+    "output_account": 0,
+    "egress_policy": 0
+  },
+  "by_owner_mode": {
+    "backrun": 187,
+    "drop": 226
+  },
+  "by_route": {
+    "jito_bundle": 342,
+    "helius_sender_dual": 71
+  }
+}

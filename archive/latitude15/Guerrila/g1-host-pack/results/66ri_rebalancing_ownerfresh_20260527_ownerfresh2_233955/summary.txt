@@ -1,0 +1,13 @@
+status=run66ri_rebalancing_inline_ata_lifecycle_complete
+source_overlay_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66r_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl
+source_inline_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66v_rebalancing_ownerfresh_20260527_ownerfresh2_233955/run66v_inline_ata_lifecycle_rows.jsonl
+row_count=22
+account_ready_count=3
+inline_ata_creatable_count=2
+inline_ata_ev_positive_count=13
+pm_reserve_rent_ok_count=18
+decision_counts={"ACCOUNT_READY": 3, "INLINE_ATA_CREATABLE": 2, "INLINE_ATA_EXIT_DUST": 6, "INLINE_ATA_POLICY_BLOCKED": 11}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

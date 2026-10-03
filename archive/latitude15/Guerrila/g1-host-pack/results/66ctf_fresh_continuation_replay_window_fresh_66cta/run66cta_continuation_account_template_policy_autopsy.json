@@ -1,0 +1,34 @@
+{
+  "account_or_inline_ata_ready_rows": 3,
+  "continuation_execution_plumbing_ready_rows": 3,
+  "decision_counts": {
+    "BLOCKED_FREEZE_AUTHORITY": 12,
+    "BLOCKED_OUTPUT_ACCOUNT": 5,
+    "BLOCKED_TOKEN2022_EXPLICIT_ALLOW": 27,
+    "CONTINUATION_ACCOUNT_TEMPLATE_POLICY_READY": 3
+  },
+  "entry_rule_ready_rows": 47,
+  "exit_rule_ready_rows": 47,
+  "first_account_policy_template_blocker_counts": {
+    "BLOCKED_FREEZE_AUTHORITY": 12,
+    "BLOCKED_OUTPUT_ACCOUNT": 5,
+    "BLOCKED_TOKEN2022_EXPLICIT_ALLOW": 27
+  },
+  "inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_66ri/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "jito_bundle_possible_rows": 0,
+  "live_landed": 0,
+  "non_toxic_rows": 39,
+  "pm_owner_lock_ready_rows": 47,
+  "policy_pass_rows": 8,
+  "policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_66rp/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "rows_seen": 47,
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_possible_rows": 3,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_66ctb/run66ctb_continuation_entry_exit_rule_carry_forward_repair_rows.jsonl",
+  "status": "CONTINUATION_ACCOUNT_TEMPLATE_POLICY_READY",
+  "template_ready_rows": 3,
+  "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_66rt/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "wire_send": 0
+}

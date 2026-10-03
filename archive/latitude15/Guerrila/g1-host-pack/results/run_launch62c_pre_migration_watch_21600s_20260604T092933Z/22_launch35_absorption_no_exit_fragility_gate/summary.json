@@ -1,0 +1,19 @@
+{
+  "attempt_rows": 22207,
+  "blocked_rows": 21689,
+  "decision_counts": {
+    "FRAGILITY_ABSORPTION_READY": 518,
+    "PARK_FRAGILITY_BASE_RESERVE_RATIO": 2245,
+    "PARK_FRAGILITY_EXIT_QUOTE_ZERO": 19444
+  },
+  "exit_liquidity_guard_ready_rows": 623,
+  "fragility_absorption_ready_rows": 518,
+  "max_quote_zero_recent_count": 0,
+  "min_absorption_score_after_sell": 50,
+  "min_base_reserve_position_ratio": 20.0,
+  "min_reserve_after_exit_position_ratio": 10.0,
+  "quote_state_rows": 22207,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch35_absorption_no_exit_fragility_gate/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z",
+  "status": "ABSORPTION_NO_EXIT_FRAGILITY_AUDITED"
+}

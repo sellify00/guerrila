@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "absorption_score_rows": 58,
+    "continuation_pressure_score_rows": 58,
+    "false_restoration_gate_input_ready_rows": 51,
+    "false_restoration_gate_pass_rows": 3,
+    "owner_mode_rebalancing_rows": 58,
+    "restoration_pressure_measured_rows": 51,
+    "rows_seen": 58,
+    "same_direction_followthrough_score_rows": 58
+  },
+  "false_restoration_reason_counts": {
+    "none": 3,
+    "opposite_direction_absorption_toxic": 1,
+    "restoration_pressure_not_measured": 7,
+    "same_direction_continuation_pressure_too_high": 47
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "status": "FALSE_RESTORATION_GATE_READY"
+}

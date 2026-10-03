@@ -1,0 +1,24 @@
+{
+  "blocker_counts": {
+    "none": 10,
+    "route_family_unsupported": 4,
+    "token2022_requires_explicit_allow": 2
+  },
+  "exit_available_15s_count": 10,
+  "exit_available_5s_count": 10,
+  "first_sell_before_entry_count": 0,
+  "live_landed": 0,
+  "max_adverse_excursion_median": -1550.251666,
+  "median_return_15s": -73.118334,
+  "median_return_30s": -100.67,
+  "median_return_5s": -58.163334,
+  "p75_return_15s": -50.223333,
+  "p75_return_5s": -34.476667,
+  "sendBundle_called": false,
+  "status": "launch7m_trigger_markout_snapshot_complete",
+  "trigger_B_markout_available_rows": 10,
+  "trigger_B_positive_after_cost_candidate_count": 0,
+  "trigger_B_rows": 16,
+  "trigger_mode": "B",
+  "wire_send": 0
+}

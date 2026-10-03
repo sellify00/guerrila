@@ -1,0 +1,7 @@
+status=launch2_policy_exit_gate_complete
+rows_seen=23
+launch_policy_exit_ready_rows=2
+decision_counts={"BLOCKED_BUY_PRESSURE": 20, "BLOCKED_ROUTE_FAMILY_UNSUPPORTED": 1, "LAUNCH_POLICY_EXIT_READY": 2}
+wire_send=0
+live_landed=0
+sendBundle_called=false

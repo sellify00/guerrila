@@ -1,0 +1,15 @@
+{
+  "decision_counts": {
+    "ADVERSE_EXCURSION_CONFIRMED": 3
+  },
+  "final_verdict": "CONTINUATION_ADVERSE_EXCURSION_REVIEW_COMPLETE",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "rows_seen": 3,
+  "stop_too_conservative_rows": 0
+}

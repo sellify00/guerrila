@@ -1,0 +1,12 @@
+G4 Ingress Seal Verdict
+=======================
+
+[PASS] packets_ingested — 128 frames seen
+[PASS] parse_rate — 100% (128/128 frames parsed, 95% threshold)
+[PASS] rx_timestamps_valid — min=2393614281754202 max=2393614522876767 span=241122565ns
+[PASS] expected_packet_count — 128 received (expected 128, 95% threshold = 121)
+[PASS] data_shred_count — 64 data shreds (expected 64, 95% threshold = 60)
+[PASS] coding_shred_count — 64 coding shreds (expected 64, 95% threshold = 60)
+[PASS] archive_health — 128 published, 0 dropped (0%), 128 survival flushes
+
+Overall: ALL PASS

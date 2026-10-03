@@ -1,0 +1,44 @@
+SH8-B AF_XDP transaction-derived observe-only green summary
+
+Host: 109.94.99.57
+Mode: observe_only / no_send
+NIC: eno1
+XDP mode: xdpgeneric
+Latest artifact: /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260430_031546-af_xdp-32q-sh8b-txdiag
+Host commit: ebf0ee8 (Stream SH8 transaction extraction across shreds)
+
+Green counters:
+- shred_capture_workers=32
+- xskmap_registered=32
+- xsk_bound=32
+- bind_invalid_arg=0
+- afxdp_frames_seen=1493713
+- afxdp_udp_8000_8025_seen=1493713
+- afxdp_shred_parse_ok=1493710
+- afxdp_reassembly_insert_ok=1481290
+- afxdp_reassembly_complete_entries=316431
+- afxdp_data_shred_payload_ok=293519
+- afxdp_tx_extract_attempt=316431
+- afxdp_tx_extract_ok=75814
+- afxdp_tx_record_emit_attempt=2
+- afxdp_tx_record_emit_ok=2
+- afxdp_feed_enqueue_ok=2
+- worker_signal_afxdp=47
+- worker_stale_slot_drops=0
+- observe_candidates_private_grade=3
+- rollout_private_grade_admissible_opportunities=1
+- live_landed=0
+- worker_health_drops=0
+- latency_ok=true
+- worker_latency_proof_present=true
+
+What this proves:
+- AF_XDP ingress is real packet ingress, not Geyser relabeling.
+- Filtered XDP and pinned XSKMAP deliver local Agave Solana UDP to AF_XDP workers.
+- SH8-B now reaches DATA shred reassembly and extracts wire transactions across shred payload boundaries.
+- Transaction-derived AF_XDP IngressRecords enter the feed ring and reach workers.
+- PM observes private-grade AF_XDP candidates and admissible opportunities.
+- Live send remained disabled.
+
+Still separate:
+- Full G12 promotion remains governed by its own full-threshold gates.

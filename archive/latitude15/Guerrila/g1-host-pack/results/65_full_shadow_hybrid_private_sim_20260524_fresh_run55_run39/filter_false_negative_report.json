@@ -1,0 +1,59 @@
+{
+  "filters": [
+    {
+      "filter_name": "input_balance_not_ready",
+      "rejected_count": 1,
+      "positive_markout_after_reject_count": 0,
+      "positive_after_fee_after_reject_count": 1,
+      "false_negative_rate": 0.0,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": null,
+      "p90_positive_markout_lamports": null,
+      "recommended_action": "Treat as inventory policy target: fund or pre-wrap only after recurrence is proven."
+    },
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 187,
+      "positive_markout_after_reject_count": 96,
+      "positive_after_fee_after_reject_count": 182,
+      "false_negative_rate": 0.5134,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 2106076.5,
+      "p90_positive_markout_lamports": 2433655,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 11,
+      "positive_markout_after_reject_count": 10,
+      "positive_after_fee_after_reject_count": 10,
+      "false_negative_rate": 0.9091,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 2343152.0,
+      "p90_positive_markout_lamports": 2387828,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "output_account_not_ready",
+      "rejected_count": 29,
+      "positive_markout_after_reject_count": 13,
+      "positive_after_fee_after_reject_count": 29,
+      "false_negative_rate": 0.4483,
+      "best_owner_mode_after_reject": "housekeeping",
+      "median_positive_markout_lamports": 28199,
+      "p90_positive_markout_lamports": 2186627,
+      "recommended_action": "Pre-create approved recurring output ATAs instead of treating missing ATA as no-opportunity."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 441,
+      "positive_markout_after_reject_count": 315,
+      "positive_after_fee_after_reject_count": 411,
+      "false_negative_rate": 0.7143,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 451256,
+      "p90_positive_markout_lamports": 2386396,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

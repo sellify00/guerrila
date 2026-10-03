@@ -1,0 +1,49 @@
+SH7-A current-host diagnostic summary
+
+Artifact:
+~/shadow-host-audit/sh7a-no-send/20260428_174559-tier0-ubuntu
+
+Posture:
+- observe-only / no-send
+- local-validator Geyser source
+- live send disabled
+- no SH6, SH8, or r1_tiny unlock
+
+Host preparation notes:
+- Runtime code was overlaid from the current local branch because the host git checkout was stale.
+- The host dirty pre-sync state was saved under ~/shadow-host-audit/pre-sh7a-sync/.
+- The validated local-validator config was installed as /etc/shadow-engine/config.guerrila.yaml.
+- Tier0 was run as the runtime user so existing SHM ring ownership stayed consistent.
+
+Counters:
+sample_slots=0
+observe_candidates=0
+worker_records_seen=10461
+worker_pool_state_hit=0
+worker_shadow_events_published=0
+worker_rollout_would_send_events_published=0
+worker_rollout_live_send_suppressed_events_published=0
+rollout_events_observed=0
+rollout_would_send=0
+rollout_live_send_suppressed=0
+rollout_last_no_send_reason=0
+rollout_last_drop_reason=0
+micro_market_observations=0
+micro_market_uplift_ok=false
+worker_health_drops=0
+live_landed=0
+all_gates_green=false
+promote_allowed=false
+worker_signal_external_geyser=0
+worker_signal_local_validator_geyser=10461
+observe_candidates_external_geyser=0
+observe_candidates_local_validator_geyser=0
+observe_candidates_private_grade=0
+rollout_geyser_shadow_opportunities=0
+rollout_private_grade_admissible_opportunities=0
+
+Decision:
+SH7-A is not green. The run proves source records reached Tier0, but it does not exercise the final
+no-send path because the worker produced no pool-state hits or observe candidates. The next rerun
+must first restore a candidate-producing worker/pool-state universe, then evaluate the final no-send
+counters again.

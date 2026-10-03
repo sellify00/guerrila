@@ -1,0 +1,14 @@
+{
+  "status": "run78e_complete",
+  "source_row_count": 14,
+  "size_row_count": 112,
+  "row_decision_counts": {
+    "NEGATIVE_ALL_SIZES": 12,
+    "OUT_OF_SCOPE": 2
+  },
+  "malformed_autopsy_rows": 0,
+  "malformed_pm_rows": 0,
+  "malformed_arch_tail_rows": 0,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean_20260526_172848/epoch8_auto_strict_directarb_size_aware_ev_ladder/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean_20260526_172848/epoch8_auto_strict_directarb_size_aware_ev_ladder/rows.csv"
+}

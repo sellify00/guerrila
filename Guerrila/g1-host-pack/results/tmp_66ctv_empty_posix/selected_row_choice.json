@@ -1,0 +1,17 @@
+{
+  "evaluation_mode": "fresh_thesis_revalidation",
+  "final_verdict": "PARK_THESIS_DECAYED",
+  "live_approval": false,
+  "preferred_candidate": null,
+  "selected_candidate": null,
+  "selection_priority": [
+    "existing account ready before inline ATA",
+    "Helius Sender no-send before bundle no-submit",
+    "lower max adverse excursion",
+    "clearer/lower hold horizon",
+    "higher net EV after all costs",
+    "no Token-2022 exception",
+    "no acquisition or new ATA"
+  ],
+  "thesis_signal_source": "carried_proposal_fields"
+}

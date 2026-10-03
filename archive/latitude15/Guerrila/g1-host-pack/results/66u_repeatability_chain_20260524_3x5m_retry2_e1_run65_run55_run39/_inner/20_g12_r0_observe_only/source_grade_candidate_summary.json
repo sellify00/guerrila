@@ -1,0 +1,48 @@
+{
+  "backrun_laserstream_live_allowed": false,
+  "by_strategy": {
+    "backrun": {
+      "candidates": 1903,
+      "live_eligible_candidates_by_source": {
+        "afxdp": 127
+      },
+      "seen_by_source": {
+        "afxdp": 127,
+        "laserstream": 1821
+      }
+    },
+    "directarb": {
+      "candidates": 1818,
+      "live_eligible_candidates_by_source": {},
+      "seen_by_source": {
+        "laserstream": 1818
+      }
+    }
+  },
+  "continuation_laserstream_observe_allowed": true,
+  "directarb_laserstream_live_allowed": false,
+  "drop_laserstream_observe_allowed": true,
+  "first_seen_by_source": {
+    "afxdp": 93,
+    "laserstream": 3628
+  },
+  "first_seen_by_source_grade": {
+    "private_grade": 93,
+    "public_geyser": 3628
+  },
+  "flatten_laserstream_observe_allowed": true,
+  "housekeeping_laserstream_observe_allowed": true,
+  "live_eligible_candidates_by_source": {
+    "afxdp": 127
+  },
+  "rebalancing_laserstream_observe_allowed": true,
+  "seen_by_source": {
+    "afxdp": 127,
+    "laserstream": 3639
+  },
+  "seen_by_source_grade": {
+    "private_grade": 127,
+    "public_geyser": 3639
+  },
+  "total_candidates": 3721
+}

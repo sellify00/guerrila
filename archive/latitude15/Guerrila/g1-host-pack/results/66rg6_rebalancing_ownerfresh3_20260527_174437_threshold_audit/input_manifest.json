@@ -1,0 +1,14 @@
+{
+  "broad_hunt": false,
+  "candidate_autopsy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/65_rebalancing_ownerfresh3_20260527_174437_run55_run39/candidate_autopsy.jsonl",
+  "current_threshold": 0.5,
+  "false_restoration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg5_rebalancing_ownerfresh3_20260527_174437_fields_patch2/run66rg5_false_restoration_gate_rows.jsonl",
+  "live_send": false,
+  "looser_threshold_1": 0.67,
+  "looser_threshold_2": 0.8,
+  "max_adverse_bps": 50.0,
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66_rule_rebalancing_ownerfresh3_20260527_174437_fields/run66_rebalancing_rule_rows.jsonl",
+  "sendBundle": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh3_20260527_174437_fields/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "stricter_threshold_1": 0.33
+}

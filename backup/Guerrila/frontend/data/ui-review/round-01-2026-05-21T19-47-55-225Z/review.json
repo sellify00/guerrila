@@ -1,0 +1,72 @@
+{
+  "score": 72,
+  "done": false,
+  "major_issues": [
+    "Mobile: the top control row (tabs + Fit/zoom/reset) overflows horizontally and becomes cramped; tap targets are small and the row feels like a desktop toolbar forced into a narrow width.",
+    "Mobile: the flow/graph viewport is not prioritized; it consumes space while still being hard to read, with no clear affordance to expand/fullscreen or navigate.",
+    "Readability: several secondary labels (timestamps, tiny status text inside nodes, pill metadata) are too small/low-contrast against the dark/blurred background, especially on mobile.",
+    "Information hierarchy: right-hand (desktop) / stacked (mobile) panels are dense and similarly styled; primary KPIs (Capital, Runtime state) don’t stand out enough vs long descriptive blocks.",
+    "Event strip at the bottom of the flow panel is visually busy and looks like it can clip/overflow; it’s difficult to scan and competes with core content."
+  ],
+  "medium_issues": [
+    "Excessive vertical padding between mobile cards increases scroll length; key status requires too much scrolling to reach.",
+    "Long strings (URLs, hostnames, tags like agave_preflight_not_green) risk overflow; truncation/ellipsis is inconsistent across chips and headings.",
+    "Contrast and focus: many containers use similar dark shades and soft borders; sections blend together and lose separation at a glance.",
+    "Buttons 'UI review running' and 'Run UI review loop' sit awkwardly under the header on mobile; alignment and spacing feel unstructured.",
+    "Zoom percentage control is not clearly labeled/understood on mobile; plus/minus/reset cluster lacks explanatory tooltip/label and is easy to mis-tap."
+  ],
+  "minor_issues": [
+    "Typography scale: header area uses mixed sizes/weights; small monospace system line under the title is tight and slightly noisy.",
+    "Inconsistent capitalization/label styling in cards (e.g., section headers vs pill text).",
+    "Some cards have large empty areas or overly tall minimum heights, reducing density efficiency.",
+    "Node labels in the graph appear close to grid lines; subtle background grid adds noise without strong utility at small sizes."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Add a mobile-specific toolbar layout: wrap controls to 2 lines and increase tap targets (min-height: 40-44px). Use a horizontal scroll only as fallback (overflow-x:auto) with visible spacing; avoid cramming tabs+zoom into one row at <420px."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Increase base font-size on mobile for secondary text and improve contrast: bump small labels to 12–13px minimum, raise muted text color (e.g., from ~#7a to ~#9aa) and reduce blur/opacity behind text blocks."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Implement robust truncation for long strings: apply `max-width:100%`, `overflow:hidden`, `text-overflow:ellipsis`, `white-space:nowrap` to pills/chips/card headers; add `word-break:break-word` for paragraph URLs where wrapping is preferred."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve hierarchy in the side panel cards: make KPI cards (Capital/Runtime) visually primary (larger number, stronger border/accent, tighter copy) and reduce prominence of descriptive paragraphs (smaller, more muted, with max width/line-height)."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/app.js",
+      "change": "Add a 'Fullscreen / Expand flow' affordance on mobile (and desktop): a button that toggles a class on the flow container to take full viewport height/width and hide side panels while active."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Reduce mobile card spacing and unnecessary min-heights: tighten vertical gaps (e.g., 12–16px), reduce large padding in card bodies, and ensure cards shrink-wrap content to improve density."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Rework the event strip: limit to 1 line with horizontal scroll + fade mask, or show 3–5 most recent items with clear separators. Prevent clipping with `overflow:hidden` and consistent line-height."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Dial back background grid/noise on small screens (lower opacity or disable under a breakpoint) to improve perceived sharpness of nodes and labels."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/index.html",
+      "change": "Add accessible labels/title attributes for icon-only controls (zoom +/-/reset, collapse chevron) and ensure focus styles are visible for keyboard navigation."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile control overflow/cramped toolbar, weak text readability/contrast for secondary information, and insufficient hierarchy/density tuning across stacked cards."
+}

@@ -1,0 +1,107 @@
+{
+  "afxdp": {
+    "top_reject_reason": "reject_no_mint_meta",
+    "counts": {
+      "reject_observe_only_mode": 0,
+      "reject_source_grade": 0,
+      "reject_not_private_grade": 0,
+      "reject_no_pool": 0,
+      "reject_pool_tag_miss": 20,
+      "reject_unsupported_venue": 0,
+      "reject_no_route": 0,
+      "reject_no_quote": 1,
+      "reject_no_mint_meta": 146,
+      "reject_process_intent_disabled": 0,
+      "reject_owner_mode_disabled": 0,
+      "reject_policy_source": 0,
+      "reject_health_snapshot_missing": 0,
+      "reject_health_unhealthy": 16,
+      "reject_stale_slot": 0,
+      "reject_unknown_signal": 0
+    }
+  },
+  "laserstream": {
+    "top_reject_reason": "reject_pool_tag_miss",
+    "counts": {
+      "reject_observe_only_mode": 0,
+      "reject_source_grade": 0,
+      "reject_not_private_grade": 0,
+      "reject_no_pool": 8,
+      "reject_pool_tag_miss": 4359,
+      "reject_unsupported_venue": 0,
+      "reject_no_route": 0,
+      "reject_no_quote": 179,
+      "reject_no_mint_meta": 4203,
+      "reject_process_intent_disabled": 0,
+      "reject_owner_mode_disabled": 0,
+      "reject_policy_source": 0,
+      "reject_health_snapshot_missing": 0,
+      "reject_health_unhealthy": 1036,
+      "reject_stale_slot": 0,
+      "reject_unknown_signal": 0
+    }
+  },
+  "external_geyser": {
+    "top_reject_reason": "none",
+    "counts": {
+      "reject_observe_only_mode": 0,
+      "reject_source_grade": 0,
+      "reject_not_private_grade": 0,
+      "reject_no_pool": 0,
+      "reject_pool_tag_miss": 0,
+      "reject_unsupported_venue": 0,
+      "reject_no_route": 0,
+      "reject_no_quote": 0,
+      "reject_no_mint_meta": 0,
+      "reject_process_intent_disabled": 0,
+      "reject_owner_mode_disabled": 0,
+      "reject_policy_source": 0,
+      "reject_health_snapshot_missing": 0,
+      "reject_health_unhealthy": 0,
+      "reject_stale_slot": 0,
+      "reject_unknown_signal": 0
+    }
+  },
+  "local_agave": {
+    "top_reject_reason": "none",
+    "counts": {
+      "reject_observe_only_mode": 0,
+      "reject_source_grade": 0,
+      "reject_not_private_grade": 0,
+      "reject_no_pool": 0,
+      "reject_pool_tag_miss": 0,
+      "reject_unsupported_venue": 0,
+      "reject_no_route": 0,
+      "reject_no_quote": 0,
+      "reject_no_mint_meta": 0,
+      "reject_process_intent_disabled": 0,
+      "reject_owner_mode_disabled": 0,
+      "reject_policy_source": 0,
+      "reject_health_snapshot_missing": 0,
+      "reject_health_unhealthy": 0,
+      "reject_stale_slot": 0,
+      "reject_unknown_signal": 0
+    }
+  },
+  "other": {
+    "top_reject_reason": "none",
+    "counts": {
+      "reject_observe_only_mode": 0,
+      "reject_source_grade": 0,
+      "reject_not_private_grade": 0,
+      "reject_no_pool": 0,
+      "reject_pool_tag_miss": 0,
+      "reject_unsupported_venue": 0,
+      "reject_no_route": 0,
+      "reject_no_quote": 0,
+      "reject_no_mint_meta": 0,
+      "reject_process_intent_disabled": 0,
+      "reject_owner_mode_disabled": 0,
+      "reject_policy_source": 0,
+      "reject_health_snapshot_missing": 0,
+      "reject_health_unhealthy": 0,
+      "reject_stale_slot": 0,
+      "reject_unknown_signal": 0
+    }
+  }
+}

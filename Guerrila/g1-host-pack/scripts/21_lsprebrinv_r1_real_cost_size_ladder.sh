@@ -1,0 +1,373 @@
+#!/usr/bin/env bash
+# 21_lsprebrinv_r1_real_cost_size_ladder.sh — candidate-class size ladder with realized fixed-cost floor
+
+source_crlf_safe() {
+    local path="$1"
+    # shellcheck disable=SC1090
+    source /dev/stdin <<<"$(tr -d '\r' < "$path")"
+}
+
+source_crlf_safe "$(dirname "$0")/lib.sh"
+script_header "21 LS-PRE-BR-INV-R1C — Real-Cost Size Ladder"
+
+assert_root
+assert_cmd_exists python3
+
+PACK_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+CALLER_SHADOW_RESULTS_DIR="${SHADOW_RESULTS_DIR-}"
+
+source_text_file() {
+    local path="$1"
+    [[ -f "$path" ]] || return 0
+    # shellcheck disable=SC1090
+    source /dev/stdin <<<"$(tr -d '\r' < "$path")"
+}
+
+source_text_file "$PACK_DIR/env.g1.sh"
+[[ -n "$CALLER_SHADOW_RESULTS_DIR" ]] && export SHADOW_RESULTS_DIR="$CALLER_SHADOW_RESULTS_DIR"
+[[ "${SHADOW_RESULTS_DIR:-}" == "/dev/results" ]] && export SHADOW_RESULTS_DIR="$PACK_DIR/results"
+
+RESULTS_ROOT="${SHADOW_RESULTS_DIR:-$PACK_DIR/results}"
+STEP="${SHADOW_LSPREBRINV_R1C_STEP:-21_lsprebrinv_r1_real_cost_size_ladder}"
+RESULT_DIR="$RESULTS_ROOT/$STEP"
+INPUT_MANIFEST="$RESULT_DIR/input_manifest.json"
+ROWS_OUT="$RESULT_DIR/runlsprebrinv_r1_real_cost_size_ladder_rows.jsonl"
+SUMMARY_JSON="$RESULT_DIR/runlsprebrinv_r1_real_cost_size_ladder_summary.json"
+SUMMARY_TXT="$RESULT_DIR/summary.txt"
+
+TARGET_MINT="${SHADOW_R1_MINT:-}"
+TARGET_POOL="${SHADOW_R1_POOL:-}"
+SIZE_LIST="${SHADOW_LSPREBRINV_R1C_SIZE_LIST:-0.005,0.01,0.025,0.05,0.1}"
+SLIPPAGE_BPS="${SHADOW_LSPREBRINV_R1C_SLIPPAGE_BPS:-100}"
+RPC_URL="${SHADOW_LSPREBRINV_R1C_RPC_URL:-${SHADOW_LOCAL_AGAVE_REFERENCE_RPC_URL:-${SHADOW_SOLANA_RPC_URL:-${SHADOW_BOOTSTRAP_RPC_URL:-$(default_http_rpc_url)}}}}"
+LIVE_AUTOPSY_SUMMARY_PATH="${SHADOW_LSPREBRINV_R1C_LIVE_AUTOPSY_SUMMARY_PATH:-}"
+
+mkdir -p "$RESULT_DIR"
+rm -f "$INPUT_MANIFEST" "$ROWS_OUT" "$SUMMARY_JSON" "$SUMMARY_TXT"
+
+python3 - "$RESULTS_ROOT" "$INPUT_MANIFEST" "$ROWS_OUT" "$SUMMARY_JSON" "$SUMMARY_TXT" "$RPC_URL" "$TARGET_MINT" "$TARGET_POOL" "$SIZE_LIST" "$SLIPPAGE_BPS" "$LIVE_AUTOPSY_SUMMARY_PATH" <<'PY'
+from __future__ import annotations
+
+import base64
+import json
+import ssl
+import sys
+import urllib.request
+from pathlib import Path
+from typing import Any
+
+(
+    results_root_arg,
+    manifest_arg,
+    rows_out_arg,
+    summary_arg,
+    summary_txt_arg,
+    rpc_url,
+    target_mint,
+    target_pool,
+    size_list_arg,
+    slippage_bps_arg,
+    autopsy_summary_arg,
+) = sys.argv[1:12]
+
+results_root = Path(results_root_arg)
+manifest_path = Path(manifest_arg)
+rows_out_path = Path(rows_out_arg)
+summary_path = Path(summary_arg)
+summary_txt_path = Path(summary_txt_arg)
+autopsy_summary_path = Path(str(autopsy_summary_arg).strip()).expanduser() if str(autopsy_summary_arg).strip() else None
+
+WSOL_MINT = "So11111111111111111111111111111111111111112"
+PUMPFUN_AMM_ACCOUNT_LEN = 245
+PUMPFUN_AMM_ACCOUNT_DISCRIMINATOR = bytes([241, 154, 109, 4, 17, 177, 109, 188])
+PUMPFUN_BASE_MINT_OFFSET = 8 + 35
+PUMPFUN_QUOTE_MINT_OFFSET = 8 + 67
+PUMPFUN_POOL_BASE_TOKEN_ACCOUNT_OFFSET = 8 + 131
+PUMPFUN_POOL_QUOTE_TOKEN_ACCOUNT_OFFSET = 8 + 163
+SPL_TOKEN_ACCOUNT_LEN = 165
+TOKEN_AMOUNT_OFFSET = 64
+ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+
+
+def text(value: Any) -> str:
+    return "" if value is None else str(value).strip()
+
+
+def safe_int(value: Any, default: int = 0) -> int:
+    try:
+        if value in (None, ""):
+            return default
+        return int(float(value))
+    except (TypeError, ValueError):
+        return default
+
+
+def safe_float(value: Any, default: float = 0.0) -> float:
+    try:
+        if value in (None, ""):
+            return default
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def lamports_to_sol(value: int) -> float:
+    return safe_int(value) / 1_000_000_000.0
+
+
+def sol_to_lamports(value: float) -> int:
+    return max(0, int(round(float(value) * 1_000_000_000.0)))
+
+
+def b58encode(raw: bytes) -> str:
+    zeros = 0
+    for byte in raw:
+        if byte == 0:
+            zeros += 1
+        else:
+            break
+    num = int.from_bytes(raw, "big")
+    chars: list[str] = []
+    while num > 0:
+        num, rem = divmod(num, 58)
+        chars.append(ALPHABET[rem])
+    return ("1" * zeros) + "".join(reversed(chars or ["1"]))
+
+
+def http_post_json(url: str, payload: dict[str, Any]):
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json", "Accept": "application/json"},
+        method="POST",
+    )
+    context = ssl.create_default_context() if url.startswith("https://") else None
+    with urllib.request.urlopen(req, timeout=20, context=context) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def rpc(method: str, params: list[Any] | None = None) -> dict[str, Any]:
+    payload: dict[str, Any] = {"jsonrpc": "2.0", "id": 1, "method": method}
+    if params is not None:
+        payload["params"] = params
+    response = http_post_json(rpc_url, payload)
+    if isinstance(response, dict) and response.get("error") is not None:
+        raise RuntimeError(f"{method}_failed:{response['error']}")
+    return response
+
+
+def load_json(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8", errors="replace"))
+
+
+def find_latest_autopsy(root: Path, mint: str, pool: str) -> Path:
+    matches: list[Path] = []
+    for path in root.rglob("runlsprebrinv_r1_live_pnl_autopsy_summary.json"):
+        try:
+            obj = load_json(path)
+        except Exception:
+            continue
+        if mint and text(obj.get("mint")) != mint:
+            continue
+        if pool and text(obj.get("pool")) != pool:
+            continue
+        matches.append(path)
+    if not matches:
+        raise RuntimeError("live_autopsy_summary_missing")
+    return max(matches, key=lambda item: item.stat().st_mtime)
+
+
+def get_multiple_accounts(pubkeys: list[str]) -> dict[str, bytes]:
+    result = (rpc("getMultipleAccounts", [pubkeys, {"encoding": "base64", "commitment": "confirmed"}]).get("result") or {})
+    values = result.get("value") or []
+    out: dict[str, bytes] = {}
+    for key, value in zip(pubkeys, values):
+        raw = b""
+        if isinstance(value, dict):
+            data = value.get("data")
+            if isinstance(data, list) and data:
+                raw = base64.b64decode(text(data[0]).encode("ascii"), validate=False)
+        out[key] = raw
+    return out
+
+
+def decode_pumpfun_pool(raw: bytes) -> tuple[dict[str, Any] | None, str]:
+    if len(raw) < PUMPFUN_AMM_ACCOUNT_LEN:
+        return None, "pumpfun_pool_account_too_short"
+    if raw[:8] != PUMPFUN_AMM_ACCOUNT_DISCRIMINATOR:
+        return None, "pumpfun_pool_discriminator_mismatch"
+    return {
+        "base_mint": b58encode(raw[PUMPFUN_BASE_MINT_OFFSET:PUMPFUN_BASE_MINT_OFFSET + 32]),
+        "quote_mint": b58encode(raw[PUMPFUN_QUOTE_MINT_OFFSET:PUMPFUN_QUOTE_MINT_OFFSET + 32]),
+        "base_vault": b58encode(raw[PUMPFUN_POOL_BASE_TOKEN_ACCOUNT_OFFSET:PUMPFUN_POOL_BASE_TOKEN_ACCOUNT_OFFSET + 32]),
+        "quote_vault": b58encode(raw[PUMPFUN_POOL_QUOTE_TOKEN_ACCOUNT_OFFSET:PUMPFUN_POOL_QUOTE_TOKEN_ACCOUNT_OFFSET + 32]),
+    }, ""
+
+
+def decode_vault_balance(raw: bytes) -> int:
+    if len(raw) < SPL_TOKEN_ACCOUNT_LEN:
+        return 0
+    return int.from_bytes(raw[TOKEN_AMOUNT_OFFSET:TOKEN_AMOUNT_OFFSET + 8], "little")
+
+
+def constant_product_out(reserve_in: int, reserve_out: int, amount_in: int) -> int:
+    if reserve_in <= 0 or reserve_out <= 0 or amount_in <= 0:
+        return 0
+    numerator = reserve_out * amount_in
+    denominator = reserve_in + amount_in
+    if denominator <= 0:
+        return 0
+    return numerator // denominator
+
+
+def min_out_from_expected(expected_out: int, slippage_bps: int) -> int:
+    if expected_out <= 0:
+        return 0
+    bounded = min(max(slippage_bps, 0), 10_000)
+    return max(0, expected_out * (10_000 - bounded) // 10_000)
+
+
+autopsy_path = autopsy_summary_path if autopsy_summary_path is not None and autopsy_summary_path.is_file() else find_latest_autopsy(results_root, target_mint, target_pool)
+autopsy = load_json(autopsy_path)
+if not target_mint:
+    target_mint = text(autopsy.get("mint"))
+if not target_pool:
+    target_pool = text(autopsy.get("pool"))
+
+slippage_bps = max(0, int(float(slippage_bps_arg or "100")))
+sender_tip_cost = safe_int(autopsy.get("buy_sender_tip_lamports")) + safe_int(autopsy.get("sell_sender_tip_lamports"))
+base_fee_cost = safe_int(autopsy.get("buy_base_fee_lamports")) + safe_int(autopsy.get("sell_base_fee_lamports"))
+priority_fee_cost = safe_int(autopsy.get("priority_fee_lamports"))
+pumpfun_fee_cost = safe_int(autopsy.get("pumpfun_fee_lamports"))
+account_creation_rent_cost = safe_int(autopsy.get("account_creation_rent_lamports"))
+observed_slippage_cost = safe_int(autopsy.get("slippage_loss_lamports"))
+rounding_cost_floor = safe_int(autopsy.get("rounding_loss_lamports"))
+observed_fixed_cost_floor = sender_tip_cost + base_fee_cost + priority_fee_cost + account_creation_rent_cost
+observed_modeled_variable_cost = pumpfun_fee_cost + observed_slippage_cost + rounding_cost_floor
+
+pool_raw = get_multiple_accounts([target_pool]).get(target_pool, b"")
+pool_doc, pool_error = decode_pumpfun_pool(pool_raw)
+if pool_error or not pool_doc:
+    raise RuntimeError(pool_error or "pool_decode_failed")
+if {pool_doc.get("base_mint"), pool_doc.get("quote_mint")} != {target_mint, WSOL_MINT}:
+    raise RuntimeError("pool_mint_set_mismatch")
+vault_raw = get_multiple_accounts([pool_doc["base_vault"], pool_doc["quote_vault"]])
+current_base_reserve_raw = decode_vault_balance(vault_raw.get(pool_doc["base_vault"], b""))
+current_quote_reserve_raw = decode_vault_balance(vault_raw.get(pool_doc["quote_vault"], b""))
+if pool_doc.get("base_mint") == WSOL_MINT and pool_doc.get("quote_mint") == target_mint:
+    entry_reserve_in_raw = current_base_reserve_raw
+    entry_reserve_out_raw = current_quote_reserve_raw
+else:
+    entry_reserve_in_raw = current_quote_reserve_raw
+    entry_reserve_out_raw = current_base_reserve_raw
+
+rows: list[dict[str, Any]] = []
+best_size_sol = ""
+best_net = None
+for piece in [item.strip() for item in text(size_list_arg).split(",") if item.strip()]:
+    size_sol = safe_float(piece)
+    spend_lamports = sol_to_lamports(size_sol)
+    entry_expected_out_raw = constant_product_out(entry_reserve_in_raw, entry_reserve_out_raw, spend_lamports)
+    entry_min_out_raw = min_out_from_expected(entry_expected_out_raw, slippage_bps)
+    if pool_doc.get("base_mint") == WSOL_MINT and pool_doc.get("quote_mint") == target_mint:
+        post_base_reserve_raw = current_base_reserve_raw + spend_lamports
+        post_quote_reserve_raw = max(0, current_quote_reserve_raw - entry_expected_out_raw)
+        exit_expected_out_raw = constant_product_out(post_quote_reserve_raw, post_base_reserve_raw, entry_expected_out_raw)
+    else:
+        post_quote_reserve_raw = current_quote_reserve_raw + spend_lamports
+        post_base_reserve_raw = max(0, current_base_reserve_raw - entry_expected_out_raw)
+        exit_expected_out_raw = constant_product_out(post_base_reserve_raw, post_quote_reserve_raw, entry_expected_out_raw)
+    exit_min_out_raw = min_out_from_expected(exit_expected_out_raw, slippage_bps)
+    projected_gross_pnl_lamports = exit_expected_out_raw - spend_lamports
+    slippage_cost_lamports = max(0, exit_expected_out_raw - exit_min_out_raw)
+    expected_net_after_all_costs = (
+        projected_gross_pnl_lamports
+        - sender_tip_cost
+        - base_fee_cost
+        - priority_fee_cost
+        - pumpfun_fee_cost
+        - account_creation_rent_cost
+        - slippage_cost_lamports
+        - rounding_cost_floor
+    )
+    max_loss_required = max(0, -expected_net_after_all_costs)
+    cost_floor = sender_tip_cost + base_fee_cost + priority_fee_cost + pumpfun_fee_cost + account_creation_rent_cost + slippage_cost_lamports + rounding_cost_floor
+    break_even_move_bps = int(round((max(0, cost_floor - projected_gross_pnl_lamports) / max(spend_lamports, 1)) * 10_000))
+    decision = "SIZE_NET_POSITIVE_AFTER_REAL_COSTS" if expected_net_after_all_costs > 0 else "SIZE_NET_NEGATIVE_AFTER_REAL_COSTS"
+    row = {
+        "size_sol": size_sol,
+        "spend_lamports": spend_lamports,
+        "entry_expected_out_raw": entry_expected_out_raw,
+        "entry_min_out_raw": entry_min_out_raw,
+        "exit_expected_out_raw": exit_expected_out_raw,
+        "exit_min_out_raw": exit_min_out_raw,
+        "projected_gross_pnl_lamports": projected_gross_pnl_lamports,
+        "sender_tip_cost_lamports": sender_tip_cost,
+        "base_fee_cost_lamports": base_fee_cost,
+        "priority_fee_cost_lamports": priority_fee_cost,
+        "pumpfun_fee_cost_lamports": pumpfun_fee_cost,
+        "account_creation_rent_cost_lamports": account_creation_rent_cost,
+        "slippage_cost_lamports": slippage_cost_lamports,
+        "rounding_loss_lamports": rounding_cost_floor,
+        "expected_net_after_all_costs_lamports": expected_net_after_all_costs,
+        "max_loss_required_lamports": max_loss_required,
+        "break_even_move_bps": break_even_move_bps,
+        "decision": decision,
+    }
+    rows.append(row)
+    if best_net is None or expected_net_after_all_costs > best_net:
+        best_net = expected_net_after_all_costs
+        best_size_sol = piece
+
+summary = {
+    "status": "R1_REAL_COST_SIZE_LADDER_READY",
+    "mint": target_mint,
+    "pool": target_pool,
+    "sizes_tested": [safe_float(item) for item in [s.strip() for s in text(size_list_arg).split(",") if s.strip()]],
+    "observed_fixed_cost_floor_lamports": observed_fixed_cost_floor,
+    "observed_modeled_variable_cost_lamports": observed_modeled_variable_cost,
+    "observed_slippage_cost_lamports": observed_slippage_cost,
+    "rounding_cost_floor_lamports": rounding_cost_floor,
+    "best_size_sol": best_size_sol or "none",
+    "best_expected_net_after_all_costs_lamports": safe_int(best_net),
+    "positive_net_rows": sum(1 for row in rows if safe_int(row.get("expected_net_after_all_costs_lamports")) > 0),
+}
+
+manifest = {
+    "rpc_url": rpc_url,
+    "mint": target_mint,
+    "pool": target_pool,
+    "size_list": [s.strip() for s in text(size_list_arg).split(",") if s.strip()],
+    "slippage_bps": slippage_bps,
+    "live_autopsy_summary_path": str(autopsy_path),
+}
+
+manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+with rows_out_path.open("w", encoding="utf-8") as handle:
+    for row in rows:
+        handle.write(json.dumps(row, sort_keys=True) + "\n")
+summary_path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+summary_txt_path.write_text(
+    "\n".join(
+        [
+            "status=R1_REAL_COST_SIZE_LADDER_READY",
+            f"mint={target_mint}",
+            f"pool={target_pool}",
+            f"sizes_tested={','.join([s.strip() for s in text(size_list_arg).split(',') if s.strip()])}",
+            f"observed_fixed_cost_floor_lamports={observed_fixed_cost_floor}",
+            f"observed_modeled_variable_cost_lamports={observed_modeled_variable_cost}",
+            f"observed_slippage_cost_lamports={observed_slippage_cost}",
+            f"rounding_cost_floor_lamports={rounding_cost_floor}",
+            f"best_size_sol={best_size_sol or 'none'}",
+            f"best_expected_net_after_all_costs_lamports={safe_int(best_net)}",
+            f"positive_net_rows={summary['positive_net_rows']}",
+        ]
+    )
+    + "\n",
+    encoding="utf-8",
+)
+PY
+
+pass "RunLSPREBRINV R1 real-cost size ladder written to $SUMMARY_TXT"
+cat "$SUMMARY_TXT"
+finish

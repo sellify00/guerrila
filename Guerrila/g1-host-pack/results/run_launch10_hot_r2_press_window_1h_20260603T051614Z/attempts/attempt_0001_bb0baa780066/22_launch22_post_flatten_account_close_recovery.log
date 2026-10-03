@@ -1,0 +1,25 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 22 Launch22 — Post-Flatten Account Close Recovery
+  2026-06-03 05:19:45 UTC
+════════════════════════════════════════════════════════════
+
+status=POST_FLATTEN_ACCOUNT_ALREADY_ABSENT
+attempt_report_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T051614Z/attempts/attempt_0001_bb0baa780066/launch5_one_mint_live_execute.json
+selected_mint=9DFoDmuNbWRkGDm89YvN71LXbTd2JySXxigz7YeocZWK
+owner_pubkey=ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX
+output_account=
+output_account_exists=False
+output_account_balance_raw=0
+output_account_lamports=0
+output_account_owner_program=
+close_account_possible=False
+close_tx_signature=
+close_tx_landed=False
+rent_recovered_lamports=0
+native_delta_lamports=0
+pnl_before_rent_recovery=-10210000
+pnl_after_rent_recovery=-10210000
+[0;32m[PASS][0m Launch22 post-flatten close recovery written to /home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T051614Z/attempts/attempt_0001_bb0baa780066/22_launch22_post_flatten_account_close_recovery/summary.txt
+
+[0;32m[PASS][0m All checks passed.

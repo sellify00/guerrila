@@ -1,0 +1,14 @@
+{
+  "ata_created": false,
+  "decision_counts": {
+    "OUTPUT_ACCOUNT_UNSUPPORTED": 7
+  },
+  "inline_ata_policy_clean_rows": 0,
+  "live_landed": 0,
+  "rows_seen": 7,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66cta_resume5_after_ctb_v3/run66cta_continuation_account_template_policy_autopsy_rows.jsonl",
+  "status": "CONTINUATION_OUTPUT_ACCOUNT_PATH_REVIEW_COMPLETE",
+  "wire_send": 0
+}

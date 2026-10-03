@@ -1,0 +1,44 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "pm_owner_lock_or_split_rule_ready": false,
+  "owner_mode_isolation_ready": false,
+  "pm_split_rule_ready": false,
+  "pm_owner_lock_id_present_count": 0,
+  "double_reserve_possible_count": 3,
+  "double_reserve_prevented_count": 0,
+  "rows": [
+    {
+      "candidate_id": "1779884775541075267:422501882:cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "pm_owner_lock_id": null,
+      "pm_owner_lock_id_present": false,
+      "pm_split_rule_required": false,
+      "pm_split_rule_id": null,
+      "pm_split_rule_id_present": false,
+      "split_rule_policy_approved": false,
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    },
+    {
+      "candidate_id": "1779884623393764239:422501501:5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "pm_owner_lock_id": null,
+      "pm_owner_lock_id_present": false,
+      "pm_split_rule_required": false,
+      "pm_split_rule_id": null,
+      "pm_split_rule_id_present": false,
+      "split_rule_policy_approved": false,
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    },
+    {
+      "candidate_id": "1779884649157538629:422501567:22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "pm_owner_lock_id": null,
+      "pm_owner_lock_id_present": false,
+      "pm_split_rule_required": false,
+      "pm_split_rule_id": null,
+      "pm_split_rule_id_present": false,
+      "split_rule_policy_approved": false,
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    }
+  ]
+}

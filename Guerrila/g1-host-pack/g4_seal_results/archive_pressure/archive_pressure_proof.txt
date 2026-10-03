@@ -1,0 +1,21 @@
+G4 Archive Pressure Proof
+=========================
+
+Mid-run snapshot:
+  frame_seen           1234
+  archive_publish_ok   32
+  archive_publish_drop 1202
+  recycle_count        0
+
+Final snapshot:
+  frame_seen           6022
+  archive_publish_ok   32
+  archive_publish_drop 5990
+  recycle_count        0
+
+Pressure window deltas:
+  frame_delta          4788
+  drop_delta           4788
+  recycle_delta        4788
+
+Verdict: PASS — ingress continued advancing while archive drops accumulated

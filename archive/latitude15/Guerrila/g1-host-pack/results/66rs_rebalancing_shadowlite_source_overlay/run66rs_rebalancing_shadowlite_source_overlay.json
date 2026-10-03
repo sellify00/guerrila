@@ -1,0 +1,31 @@
+{
+  "AF_XDP rows": 0,
+  "AF_XDP-only rows": 0,
+  "LaserStream processed rows": 0,
+  "LaserStream-only rows": 0,
+  "live_landed": 0,
+  "matched rows": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": [
+    {
+      "entry_exit_rule_ready_rows": 267,
+      "exact_positive_rows": 847,
+      "inline_ata_possible_rows": 0,
+      "live_landed": 0,
+      "no_send_ready_rows": 0,
+      "rebalancing_rows": 1045,
+      "roundtrip_positive_rows": 847,
+      "sendBundle_called": false,
+      "send_transaction_called": false,
+      "source": "unknown",
+      "wire_send": 0
+    }
+  ],
+  "source_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "source_template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_template_nosend/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "status": "run66rs_rebalancing_shadowlite_source_overlay_complete",
+  "step": "66rs_rebalancing_shadowlite_source_overlay",
+  "unknown_source_rows": 1045,
+  "wire_send": 0
+}

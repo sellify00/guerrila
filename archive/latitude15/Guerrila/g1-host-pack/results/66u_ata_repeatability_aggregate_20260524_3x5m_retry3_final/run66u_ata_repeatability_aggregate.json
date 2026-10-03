@@ -1,0 +1,186 @@
+{
+  "decision_counts": {
+    "REJECT_DUST_EXIT": 1,
+    "REJECT_RENT_NEGATIVE": 4
+  },
+  "live_landed": 0,
+  "min_epochs": 3,
+  "mint_group_count": 5,
+  "missing_source_rows": [],
+  "one_ata_plan_review_count": 0,
+  "reject_dust_exit_count": 1,
+  "reject_policy_count": 0,
+  "reject_rent_negative_count": 4,
+  "retry_more_epochs_count": 0,
+  "source_row_count": 15,
+  "source_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e1_66t/run66t_token2022_explicit_allow_research_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e2_66t/run66t_token2022_explicit_allow_research_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t/run66t_token2022_explicit_allow_research_rows.jsonl"
+  ],
+  "status": "run66u_ata_repeatability_aggregate_complete",
+  "step": "66u_ata_repeatability_aggregate_20260524_3x5m_retry3_final",
+  "top_items": [
+    {
+      "any_exit_dust": false,
+      "decision_after_repeatability": "REJECT_RENT_NEGATIVE",
+      "epoch_ids": [
+        "66u_repeatability_chain_20260524_3x5m_retry3_e1_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e2_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t"
+      ],
+      "epoch_seen_count": 3,
+      "explicit_allow_possible_all": true,
+      "extensions": [
+        "MetadataPointer",
+        "TokenMetadata"
+      ],
+      "full_band_exit_median_usdc": 23.770404,
+      "full_band_exit_min_usdc": 15.924327,
+      "full_band_exit_non_dust": true,
+      "live_landed": 0,
+      "median_rent_adjusted_ev_per_epoch": -1745595,
+      "mint": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "policy_verdict_latest": "metadata_only_token2022_requires_explicit_allow",
+      "source_decision_counts": {
+        "REJECT_RENT_NEGATIVE": 3
+      },
+      "token_programs": [
+        "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      ],
+      "total_rent_adjusted_ev": -5336272,
+      "total_row_count_across_epochs": 19,
+      "total_synthetic_ata_delta_across_epochs": 19,
+      "wire_send": 0
+    },
+    {
+      "any_exit_dust": false,
+      "decision_after_repeatability": "REJECT_RENT_NEGATIVE",
+      "epoch_ids": [
+        "66u_repeatability_chain_20260524_3x5m_retry3_e1_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e2_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t"
+      ],
+      "epoch_seen_count": 3,
+      "explicit_allow_possible_all": true,
+      "extensions": [
+        "MetadataPointer",
+        "TokenMetadata"
+      ],
+      "full_band_exit_median_usdc": 15.392386,
+      "full_band_exit_min_usdc": 14.198454,
+      "full_band_exit_non_dust": true,
+      "live_landed": 0,
+      "median_rent_adjusted_ev_per_epoch": -1941998,
+      "mint": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "policy_verdict_latest": "metadata_only_token2022_requires_explicit_allow",
+      "source_decision_counts": {
+        "REJECT_RENT_NEGATIVE": 3
+      },
+      "token_programs": [
+        "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      ],
+      "total_rent_adjusted_ev": -5845765,
+      "total_row_count_across_epochs": 16,
+      "total_synthetic_ata_delta_across_epochs": 16,
+      "wire_send": 0
+    },
+    {
+      "any_exit_dust": false,
+      "decision_after_repeatability": "REJECT_RENT_NEGATIVE",
+      "epoch_ids": [
+        "66u_repeatability_chain_20260524_3x5m_retry3_e1_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e2_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t"
+      ],
+      "epoch_seen_count": 3,
+      "explicit_allow_possible_all": true,
+      "extensions": [
+        "MetadataPointer",
+        "TokenMetadata"
+      ],
+      "full_band_exit_median_usdc": 13.76323,
+      "full_band_exit_min_usdc": 13.391294,
+      "full_band_exit_non_dust": true,
+      "live_landed": 0,
+      "median_rent_adjusted_ev_per_epoch": -1960438,
+      "mint": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "policy_verdict_latest": "metadata_only_token2022_requires_explicit_allow",
+      "source_decision_counts": {
+        "REJECT_RENT_NEGATIVE": 3
+      },
+      "token_programs": [
+        "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      ],
+      "total_rent_adjusted_ev": -5889113,
+      "total_row_count_across_epochs": 13,
+      "total_synthetic_ata_delta_across_epochs": 13,
+      "wire_send": 0
+    },
+    {
+      "any_exit_dust": false,
+      "decision_after_repeatability": "REJECT_RENT_NEGATIVE",
+      "epoch_ids": [
+        "66u_repeatability_chain_20260524_3x5m_retry3_e1_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e2_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t"
+      ],
+      "epoch_seen_count": 3,
+      "explicit_allow_possible_all": true,
+      "extensions": [
+        "MetadataPointer",
+        "TokenMetadata"
+      ],
+      "full_band_exit_median_usdc": 13.433084,
+      "full_band_exit_min_usdc": 5.970914,
+      "full_band_exit_non_dust": true,
+      "live_landed": 0,
+      "median_rent_adjusted_ev_per_epoch": -1976936,
+      "mint": "BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+      "policy_verdict_latest": "metadata_only_token2022_requires_explicit_allow",
+      "source_decision_counts": {
+        "REJECT_RENT_NEGATIVE": 3
+      },
+      "token_programs": [
+        "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      ],
+      "total_rent_adjusted_ev": -5970670,
+      "total_row_count_across_epochs": 10,
+      "total_synthetic_ata_delta_across_epochs": 10,
+      "wire_send": 0
+    },
+    {
+      "any_exit_dust": true,
+      "decision_after_repeatability": "REJECT_DUST_EXIT",
+      "epoch_ids": [
+        "66u_repeatability_chain_20260524_3x5m_retry3_e1_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e2_66t",
+        "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66t"
+      ],
+      "epoch_seen_count": 3,
+      "explicit_allow_possible_all": true,
+      "extensions": [
+        "MetadataPointer",
+        "TokenMetadata"
+      ],
+      "full_band_exit_median_usdc": 0.0,
+      "full_band_exit_min_usdc": 0.0,
+      "full_band_exit_non_dust": false,
+      "live_landed": 0,
+      "median_rent_adjusted_ev_per_epoch": -2029213,
+      "mint": "snoG5m6QJSuW7xcetLtddDryYw6NfpCpeMXFdkYKsKE",
+      "policy_verdict_latest": "metadata_only_token2022_requires_explicit_allow",
+      "source_decision_counts": {
+        "REJECT_DUST_EXIT": 3
+      },
+      "token_programs": [
+        "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      ],
+      "total_rent_adjusted_ev": -6074891,
+      "total_row_count_across_epochs": 13,
+      "total_synthetic_ata_delta_across_epochs": 13,
+      "wire_send": 0
+    }
+  ],
+  "wire_send": 0
+}

@@ -1,0 +1,17 @@
+{
+  "bundle_envelope_built_rows": 3,
+  "bundle_ready_no_submit_rows": 0,
+  "decision_counts": {
+    "PARK_FRESH_NET_NEGATIVE_AFTER_COST": 3
+  },
+  "fresh_roundtrip_positive_rows": 0,
+  "live_landed": 0,
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "rows_seen": 3,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "simulateBundle_pass_rows": 3,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctfee_resume5_after_ctb_v3/run66ctfee_continuation_fee_tip_basis_review_rows.jsonl",
+  "status": "PARK_CONTINUATION_BUNDLE_COST_PROMOTION",
+  "wire_send": 0
+}

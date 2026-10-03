@@ -1,0 +1,45 @@
+{
+  "acquisition_executed": false,
+  "ata_exists_after": true,
+  "ata_exists_before": false,
+  "ata_precreate_tx_finalized": true,
+  "ata_precreate_tx_signature": "2KPUCbbTaoNXsUS5NPcp2FoAjqKyzCq4aLpkcCrk9Cgtiw8eHoErwQNrAm3d5LjUCrJRCMBdibMB43LornyPxZ4b",
+  "derived_ata": "BGJtSbGDuUgwZebctf7GvsUcxN4sfkkk3uDi6cs6ZkSw",
+  "first_blocker": "none",
+  "inventory_refresh_ok": true,
+  "live_landed": 0,
+  "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+  "owner_pubkey": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "package_name": "21_lsprebrinv_r1_one_mint_ata_precreate",
+  "pm_sees_output_account": true,
+  "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+  "proposal_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL/21_lsprebrinv_r1_one_mint_proposal/r1_one_mint_proposal.json",
+  "proposal_verdict_expected": "R1_PROPOSAL_READY_ATA_PRECREATE_ONLY",
+  "proposal_verdict_seen": "R1_PROPOSAL_READY_ATA_PRECREATE_ONLY",
+  "refresh_error": null,
+  "refreshed_account_count_for_mint": 1,
+  "refreshed_accounts": [
+    {
+      "amount_raw": 0,
+      "decimals": 6,
+      "pubkey": "BGJtSbGDuUgwZebctf7GvsUcxN4sfkkk3uDi6cs6ZkSw",
+      "state": "initialized"
+    }
+  ],
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "setup_tx_landed": true,
+  "status": "R1_ATA_PRECREATE_COMPLETED",
+  "status_entry": {
+    "confirmationStatus": "finalized",
+    "confirmations": null,
+    "err": null,
+    "slot": 423098305,
+    "status": {
+      "Ok": null
+    }
+  },
+  "strategy_live_send": false,
+  "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "wire_send": 0
+}

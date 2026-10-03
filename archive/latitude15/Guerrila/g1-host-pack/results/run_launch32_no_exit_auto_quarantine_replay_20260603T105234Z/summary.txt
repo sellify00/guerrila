@@ -1,0 +1,14 @@
+status=LAUNCH32_NO_EXIT_AUTO_QUARANTINE_REPLAY
+exit_reason=EXIT_EXIT_QUOTE_ZERO
+auto_quarantine_invoked=True
+burn_close_landed=True
+burn_close_simulated=True
+burn_close_signature=REPLAY_BURN_CLOSE_SIGNATURE
+final_inventory_raw=0
+pm_pending_after=0
+daily_ledger_repaired=True
+acceptance_pass=True
+first_failure=none
+position_state=UNWINDLESS_BURN_RECONCILED
+manual_intervention_required=False
+updated_utc=2026-06-03T10:52:35Z

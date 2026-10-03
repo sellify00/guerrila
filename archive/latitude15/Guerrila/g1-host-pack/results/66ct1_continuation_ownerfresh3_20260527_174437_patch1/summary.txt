@@ -1,0 +1,11 @@
+status=run66ct1_continuation_owner_eligibility_complete
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ct0_continuation_ownerfresh3_20260527_174437_patch1/continuation_candidate_manifest.jsonl
+rows_seen=40
+owner_mode_match_continuation_rows=28
+continuation_pressure_measured_rows=28
+pm_owner_lock_ready_rows=6
+decision_counts={"BLOCKED_PM_OWNER_LOCK": 22, "CONTINUATION_HABITAT_WATCH_OWNER_UNPROVEN": 12, "CONTINUATION_OWNER_ELIGIBLE": 6}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

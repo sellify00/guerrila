@@ -1,0 +1,61 @@
+SH8-A eno1 AF_XDP progress summary
+
+Host: 109.94.99.57
+Mode: observe_only / no_send
+NIC: eno1
+XDP mode: xdpgeneric
+Rollback: /home/ubuntu/rollback_xdp_eno1.sh
+Watcher: /home/ubuntu/sh8a_wait_ready_then_run.sh
+Latest artifact: /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260429_235006-af_xdp-32q-sh8-probe
+Host commit: 566d76d (Tighten SH8 parsed-shred probe cadence)
+
+What is green:
+- Agave bootstrap is no longer the blocker; full snapshot download and full/incremental untar completed.
+- Replay readiness was detected and the AF_XDP proof auto-triggered from the host watcher.
+- Solana UDP is visible on eno1.
+- Native XDP was avoided after it disrupted eno1; generic XDP preserves the management path.
+- XSKMAP pinning works.
+- Filtered XDP redirects only Solana UDP ports 8000-8025 and passes other traffic.
+- Queue-count mismatch is fixed on this host with shred_capture_workers=32.
+- Latest run had xskmap_registered=32, xsk_bound=32, bind_invalid_arg=0.
+- Raw AF_XDP counters and parsed-shred source-probe counters are now present from the host binary:
+  - afxdp_frames_seen=327
+  - afxdp_udp_8000_8025_seen=327
+  - afxdp_xsk_rx_batches=327
+  - afxdp_shred_parse_ok=8
+  - afxdp_shred_parse_err=319
+  - afxdp_source_probe_emit_attempt=8
+  - afxdp_source_probe_emit_ok=8
+- Safety stayed green: live_landed=0 and worker_health_drops=0.
+- Latency proof remains green: latency_ok=true and worker_latency_proof_present=true.
+- SH8-A first green is now proven: worker_signal_afxdp=2 and worker_source_probe_afxdp_parsed_shred_drops=2.
+
+What is still red:
+- observe_candidates_private_grade=0
+- rollout_private_grade_admissible_opportunities=0
+- promote_allowed=false
+
+Current root cause:
+- Real Solana UDP reaches AF_XDP and parsed shreds now emit bounded no-op source-proof records.
+- Workers now count true AF_XDP source receipts under observe-only/no-send.
+- The active blocker is now SH8-B reassembly / transaction extraction for real transaction-derived AF_XDP records.
+
+Recent artifact trail:
+- /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260429_141959-eno1-xdpgeneric-afxdp-48q-filtered-agave-stable
+  - useful because it proved filtered XDP safety, but bootstrap was still blocking and bind_invalid_arg stayed high.
+- /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260429_224855-af_xdp-after-agave-ready
+  - useful because it proved the ready watcher fired, but the host binary was stale and raw AF_XDP fields were None.
+- /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260429_230136-af_xdp-32q-newbinary
+  - useful because it proved raw ingress/parse but still had no source-proof emit.
+- /home/ubuntu/shadow-host-audit/sh8-raw-afxdp/20260429_235006-af_xdp-32q-sh8-probe
+  - current best artifact; SH8-A first green with parsed-shred AF_XDP source-proof at the worker.
+
+Current SH8-B stop note:
+- See `sh8b-tx-extract-stop-summary.txt` for the latest `.57` artifact that keeps SH8-A green but localizes SH8-B to `afxdp_tx_extract_attempt > 0` with `afxdp_tx_extract_ok = 0`.
+
+Do not:
+- Do not relabel external Geyser as private-grade.
+- Do not start r1_tiny.
+- Do not enable live send.
+- Do not use native XDP on eno1 without explicit risk acceptance and rollback.
+- Do not go back to 48 AF_XDP workers on this host.

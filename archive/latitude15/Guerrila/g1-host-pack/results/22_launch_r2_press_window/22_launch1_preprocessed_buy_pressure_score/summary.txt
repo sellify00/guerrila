@@ -1,0 +1,16 @@
+status=launch1_preprocessed_buy_pressure_score_complete
+rows_seen=10
+buy_prefix_ready_rows=1
+buy_pressure_ready_rows=1
+buy_count_1s_ge_1_rows=10
+buy_count_2s_ge_2_rows=1
+buy_count_5s_ge_3_rows=0
+unique_buyers_2s_ge_1_rows=10
+unique_buyers_5s_ge_2_rows=1
+positive_net_buy_pressure_rows=9
+first_sell_seen_before_entry_rows=1
+decision_counts={"BUY_PREFIX_READY": 1, "PARK_CREATOR_SELL": 1, "PARK_INSUFFICIENT_BUY_PRESSURE": 8}
+venue_counts={"meteora_damm_v2": 1, "pumpfun_amm": 8, "raydium_cpmm": 1}
+wire_send=0
+live_landed=0
+sendBundle_called=false

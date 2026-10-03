@@ -1,0 +1,11 @@
+status=run66ct1_continuation_owner_eligibility_complete
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_resume3_fresh_66ct0/continuation_candidate_manifest.jsonl
+rows_seen=88
+owner_mode_match_continuation_rows=88
+continuation_pressure_measured_rows=88
+pm_owner_lock_ready_rows=0
+decision_counts={"BLOCKED_PM_OWNER_LOCK": 88}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

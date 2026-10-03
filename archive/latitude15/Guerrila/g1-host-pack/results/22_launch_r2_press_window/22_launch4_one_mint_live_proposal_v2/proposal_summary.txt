@@ -1,0 +1,9 @@
+final_verdict=LAUNCH_PROPOSAL_READY_ONE_MINT_LIVE
+final_decision=READY
+proposal_ready_rows=5
+ata_precreate_only_rows=0
+one_mint_live_ready_rows=5
+verdict_counts={"LAUNCH_PROPOSAL_READY_ONE_MINT_LIVE": 5, "PARK_ENTRY_BUNDLE_NOT_READY": 2}
+wire_send=0
+live_landed=0
+sendBundle_called=false

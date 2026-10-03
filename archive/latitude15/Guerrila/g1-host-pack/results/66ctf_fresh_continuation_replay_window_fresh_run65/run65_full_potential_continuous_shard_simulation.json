@@ -1,0 +1,8 @@
+{
+  "status": "run65_reconstructed_from_run61_for_downstream_analysis",
+  "record_type": "run65_minimal_reconstructed",
+  "inputs": {
+    "run39_candidate_autopsy": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_run65_run55_run39/candidate_autopsy.jsonl"
+  },
+  "source_run61_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_fresh_run65/run61_continuous_shadow_live_simulation.json"
+}

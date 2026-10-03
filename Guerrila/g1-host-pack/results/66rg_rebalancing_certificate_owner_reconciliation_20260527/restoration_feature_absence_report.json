@@ -1,0 +1,11 @@
+{
+  "restoration_pressure_measured_rows": 0,
+  "required_schema_fields_present_rows": 0,
+  "reserve_displacement_available": false,
+  "restoration_probability_available": false,
+  "target_recovery_fraction_available": false,
+  "exit_recovery_threshold_available": false,
+  "inventory_band_available": false,
+  "route_rule_available": false,
+  "explanation": "Current 66re/66q2/66x artifacts expose entry/exit heuristic and min_out/EV, but not measured reserve displacement or full restoration pressure schema."
+}

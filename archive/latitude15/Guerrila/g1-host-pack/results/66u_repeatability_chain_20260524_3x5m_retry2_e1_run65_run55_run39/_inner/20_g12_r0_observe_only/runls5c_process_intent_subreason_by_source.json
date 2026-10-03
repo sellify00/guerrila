@@ -1,0 +1,75 @@
+{
+  "afxdp": {
+    "total": 182,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_min_out_missing": 39,
+      "reject_pi_quote_missing": 131,
+      "reject_rollout_gate_capacity_or_budget": 12
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 182,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 39,
+          "reject_pi_quote_missing": 131,
+          "reject_rollout_gate_capacity_or_budget": 12
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 2083,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_min_out_missing": 11,
+      "reject_pi_mint_meta_missing": 7,
+      "reject_pi_no_send_output_suppressed": 131,
+      "reject_pi_pool_state_stale": 90,
+      "reject_pi_quote_missing": 1844
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 1063,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 3,
+          "reject_pi_mint_meta_missing": 1,
+          "reject_pi_no_send_output_suppressed": 65,
+          "reject_pi_pool_state_stale": 38,
+          "reject_pi_quote_missing": 956
+        }
+      },
+      "directarb": {
+        "total": 1020,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 8,
+          "reject_pi_mint_meta_missing": 6,
+          "reject_pi_no_send_output_suppressed": 66,
+          "reject_pi_pool_state_stale": 52,
+          "reject_pi_quote_missing": 888
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

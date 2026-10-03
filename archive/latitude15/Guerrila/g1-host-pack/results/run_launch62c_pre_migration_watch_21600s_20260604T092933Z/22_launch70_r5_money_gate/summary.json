@@ -1,0 +1,25 @@
+{
+  "acceptance_pass": true,
+  "best_candidate_mint": "",
+  "best_candidate_route": "",
+  "blocker_counts": {
+    "completion_probability_not_ready": 22209
+  },
+  "decision_counts": {
+    "PARK_NO_R5_MONEY_ROWS": 22209
+  },
+  "entry_reason": "",
+  "exit_plan": "",
+  "exit_survivability_ready": false,
+  "expected_edge_bps": 0.0,
+  "live_landed": 0,
+  "live_runner_script": "g1-host-pack/scripts/22_launch71_r5_money_live_runner.sh",
+  "max_loss_lamports": 0,
+  "pm_ready": false,
+  "r5_candidate_ready_rows": 0,
+  "r5_rows_seen": 22209,
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch70_r5_money_gate/ready_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch70_r5_money_gate/rows.jsonl",
+  "status": "LAUNCH70_R5_MONEY_GATE_PASS",
+  "wire_send": 0
+}

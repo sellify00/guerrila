@@ -1,0 +1,10 @@
+rows_seen=8
+exit_liquidity_guard_ready_rows=4
+blocked_rows=4
+decision_counts={"EXIT_LIQUIDITY_GUARD_READY": 4, "PARK_EXIT_BASE_RESERVE_BELOW_FLOOR": 3, "PARK_EXIT_QUOTE_ZERO": 1}
+latest_decision=PARK_EXIT_QUOTE_ZERO
+latest_selected_mint=
+latest_base_reserve_raw=0
+latest_reserve_after_exit_raw=0
+latest_no_exit_loss_floor_lamports=10000
+latest_configured_max_loss_lamports=0

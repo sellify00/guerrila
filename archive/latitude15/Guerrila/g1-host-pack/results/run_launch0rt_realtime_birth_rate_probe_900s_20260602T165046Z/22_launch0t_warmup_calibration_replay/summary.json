@@ -1,0 +1,478 @@
+{
+  "acceptance_pass": false,
+  "best_entry_bucket": "1-5m",
+  "birth_warmup_rows": 0,
+  "bucket_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0t_warmup_calibration_replay/bucket_rows.jsonl",
+  "bucket_summaries": [
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "0-1s",
+      "buy_quote_ready_rows": 1,
+      "complete_or_migrated_rows": 0,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 1
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 1
+      },
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 1,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 1,
+      "markout_missing_rows": 1,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 0,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "QUOTE_STATE_READY": 1
+      },
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {
+        "PUMP_BONDING_CURVE": 1
+      },
+      "sell_quote_ready_rows": 1
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "1-2s",
+      "buy_quote_ready_rows": 1,
+      "complete_or_migrated_rows": 0,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_EXIT_LIQUIDITY": 1
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "ENTRY_QUALITY_READY": 1
+      },
+      "entry_quality_ready_rows": 1,
+      "exit_liquidity_guard_ready_rows": 0,
+      "exit_quote_zero_rows": 1,
+      "launch_states_seen": 1,
+      "markout_missing_rows": 1,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 0,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "EXIT_QUOTE_ZERO": 1
+      },
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 1
+      },
+      "sell_quote_ready_rows": 0
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "2-5s",
+      "buy_quote_ready_rows": 1,
+      "complete_or_migrated_rows": 2,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 3
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 1,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 2
+      },
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 1,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 3,
+      "markout_missing_rows": 3,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 2,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 2,
+        "QUOTE_STATE_READY": 1
+      },
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 1,
+        "PUMP_BONDING_CURVE": 2
+      },
+      "sell_quote_ready_rows": 1
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "5-10s",
+      "buy_quote_ready_rows": 3,
+      "complete_or_migrated_rows": 1,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 5
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 3,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 2
+      },
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 3,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 5,
+      "markout_missing_rows": 5,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 1,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 1,
+        "QUOTE_MINT_MISSING": 1,
+        "QUOTE_STATE_READY": 3
+      },
+      "quote_state_missing_rows": 1,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 4,
+        "PUMP_BONDING_CURVE": 1
+      },
+      "sell_quote_ready_rows": 3
+    },
+    {
+      "base_reserve_below_floor_rows": 3,
+      "birth_warmup_rows": 0,
+      "bucket": "10-30s",
+      "buy_quote_ready_rows": 9,
+      "complete_or_migrated_rows": 8,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 26
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 6,
+        "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 3,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 17
+      },
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 6,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 26,
+      "markout_missing_rows": 26,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 8,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 3,
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 8,
+        "BONDING_CURVE_STATE_MISSING": 8,
+        "ENTRY_QUOTE_MISSING": 1,
+        "QUOTE_STATE_READY": 6
+      },
+      "quote_state_missing_rows": 9,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 6,
+        "PUMP_BONDING_CURVE": 20
+      },
+      "sell_quote_ready_rows": 9
+    },
+    {
+      "base_reserve_below_floor_rows": 3,
+      "birth_warmup_rows": 0,
+      "bucket": "30-60s",
+      "buy_quote_ready_rows": 13,
+      "complete_or_migrated_rows": 7,
+      "entry_edge_decision_counts": {
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 30
+      },
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 12,
+        "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 1,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 17
+      },
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 9,
+      "exit_quote_zero_rows": 1,
+      "launch_states_seen": 30,
+      "markout_missing_rows": 30,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 7,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {
+        "BASE_RESERVE_BELOW_FLOOR": 1,
+        "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 2,
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 7,
+        "BONDING_CURVE_STATE_MISSING": 8,
+        "EXIT_QUOTE_ZERO": 1,
+        "QUOTE_MINT_MISSING": 2,
+        "QUOTE_STATE_READY": 9
+      },
+      "quote_state_missing_rows": 10,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 12,
+        "PUMP_BONDING_CURVE": 18
+      },
+      "sell_quote_ready_rows": 12
+    },
+    {
+      "base_reserve_below_floor_rows": 27,
+      "birth_warmup_rows": 0,
+      "bucket": "1-5m",
+      "buy_quote_ready_rows": 89,
+      "complete_or_migrated_rows": 78,
+      "entry_edge_decision_counts": {
+        "ENTRY_EDGE_READY": 2,
+        "HOT_BLOCK_ENTRY_EDGE_EXIT_LIQUIDITY": 4,
+        "HOT_BLOCK_ENTRY_EDGE_PRICE_OVERHEATED": 8,
+        "HOT_BLOCK_ENTRY_EDGE_PRICE_WEAK": 1,
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 327
+      },
+      "entry_edge_ready_rows": 2,
+      "entry_quality_decision_counts": {
+        "ENTRY_QUALITY_READY": 15,
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 55,
+        "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 19,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 253
+      },
+      "entry_quality_ready_rows": 15,
+      "exit_liquidity_guard_ready_rows": 58,
+      "exit_quote_zero_rows": 3,
+      "launch_states_seen": 342,
+      "markout_missing_rows": 342,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 78,
+      "price_impact_too_high_rows": 1,
+      "quote_blocker_counts": {
+        "BASE_RESERVE_BELOW_FLOOR": 3,
+        "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 24,
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 78,
+        "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 1,
+        "BONDING_CURVE_RESERVES_MISSING": 3,
+        "BONDING_CURVE_STATE_MISSING": 165,
+        "ENTRY_QUOTE_MISSING": 3,
+        "EXIT_QUOTE_ZERO": 3,
+        "QUOTE_MINT_MISSING": 4,
+        "QUOTE_STATE_READY": 58
+      },
+      "quote_state_missing_rows": 175,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 53,
+        "PUMP_BONDING_CURVE": 289
+      },
+      "sell_quote_ready_rows": 86
+    },
+    {
+      "base_reserve_below_floor_rows": 107,
+      "birth_warmup_rows": 0,
+      "bucket": "5-15m",
+      "buy_quote_ready_rows": 399,
+      "complete_or_migrated_rows": 177,
+      "entry_edge_decision_counts": {
+        "ENTRY_EDGE_READY": 10,
+        "HOT_BLOCK_ENTRY_EDGE_EXIT_LIQUIDITY": 5,
+        "HOT_BLOCK_ENTRY_EDGE_PRICE_OVERHEATED": 13,
+        "HOT_BLOCK_ENTRY_EDGE_PRICE_WEAK": 2,
+        "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 1608
+      },
+      "entry_edge_ready_rows": 10,
+      "entry_quality_decision_counts": {
+        "ENTRY_QUALITY_READY": 30,
+        "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE": 288,
+        "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 81,
+        "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 1239
+      },
+      "entry_quality_ready_rows": 30,
+      "exit_liquidity_guard_ready_rows": 268,
+      "exit_quote_zero_rows": 21,
+      "launch_states_seen": 1638,
+      "markout_missing_rows": 1638,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 177,
+      "price_impact_too_high_rows": 3,
+      "quote_blocker_counts": {
+        "BASE_RESERVE_BELOW_FLOOR": 11,
+        "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 96,
+        "BONDING_CURVE_COMPLETE_OR_MIGRATED": 177,
+        "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 3,
+        "BONDING_CURVE_RESERVES_MISSING": 8,
+        "BONDING_CURVE_STATE_MISSING": 1011,
+        "ENTRY_QUOTE_MISSING": 4,
+        "EXIT_QUOTE_ZERO": 21,
+        "QUOTE_MINT_MISSING": 39,
+        "QUOTE_STATE_READY": 268
+      },
+      "quote_state_missing_rows": 1062,
+      "route_family_counts": {
+        "PUMPSWAP_AMM": 282,
+        "PUMP_BONDING_CURVE": 1356
+      },
+      "sell_quote_ready_rows": 378
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "15-60m",
+      "buy_quote_ready_rows": 0,
+      "complete_or_migrated_rows": 0,
+      "entry_edge_decision_counts": {},
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {},
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 0,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 0,
+      "markout_missing_rows": 0,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 0,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {},
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {},
+      "sell_quote_ready_rows": 0
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "60m+",
+      "buy_quote_ready_rows": 0,
+      "complete_or_migrated_rows": 0,
+      "entry_edge_decision_counts": {},
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {},
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 0,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 0,
+      "markout_missing_rows": 0,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 0,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {},
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {},
+      "sell_quote_ready_rows": 0
+    },
+    {
+      "base_reserve_below_floor_rows": 0,
+      "birth_warmup_rows": 0,
+      "bucket": "unknown",
+      "buy_quote_ready_rows": 0,
+      "complete_or_migrated_rows": 0,
+      "entry_edge_decision_counts": {},
+      "entry_edge_ready_rows": 0,
+      "entry_quality_decision_counts": {},
+      "entry_quality_ready_rows": 0,
+      "exit_liquidity_guard_ready_rows": 0,
+      "exit_quote_zero_rows": 0,
+      "launch_states_seen": 0,
+      "markout_missing_rows": 0,
+      "markout_rows_with_peak": 0,
+      "max_peak_executable_exit_gain_bps": null,
+      "median_max_adverse_excursion_bps": null,
+      "median_peak_executable_exit_gain_bps": null,
+      "median_time_to_first_exit_deterioration_ms": null,
+      "median_time_to_liquidity_collapse_ms": null,
+      "median_time_to_peak_ms": null,
+      "migration_route_missing_rows": 0,
+      "price_impact_too_high_rows": 0,
+      "quote_blocker_counts": {},
+      "quote_state_missing_rows": 0,
+      "route_family_counts": {},
+      "sell_quote_ready_rows": 0
+    }
+  ],
+  "complete_or_migrated_rows": 273,
+  "entry_edge_ready_rows": 12,
+  "entry_quality_ready_rows": 46,
+  "exit_liquidity_guard_ready_rows": 346,
+  "live_landed": 0,
+  "next_gate": "R3_HOLD_NO_WIRE_OR_GUARDED_BATCH_REVIEW",
+  "quote_state_blocker_counts": {
+    "BASE_RESERVE_BELOW_FLOOR": 15,
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 125,
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 273,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 4,
+    "BONDING_CURVE_RESERVES_MISSING": 11,
+    "BONDING_CURVE_STATE_MISSING": 1192,
+    "ENTRY_QUOTE_MISSING": 8,
+    "EXIT_QUOTE_ZERO": 26,
+    "QUOTE_MINT_MISSING": 46,
+    "QUOTE_STATE_READY": 346
+  },
+  "quote_state_missing_dominant": true,
+  "quote_state_ready_rows": 346,
+  "recommended_warmup_rule": {
+    "best_entry_bucket": "1-5m",
+    "do_not_finalize_from_subsecond_scalp_pnl": true,
+    "early_override_allowed": true,
+    "early_override_requires": [
+      "quote_state_ready=true",
+      "exit_liquidity_guard_ready=true",
+      "entry_edge_ready=true",
+      "exit_quote_nonzero=true",
+      "price_impact_within_limit=true"
+    ],
+    "mode": "PARK_WARMUP_STATE_MISSING",
+    "normal_warmup_min_age_ms": 60000
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z",
+  "state_missing_rows": 1257,
+  "status": "PARK_WARMUP_STATE_MISSING",
+  "top_non_ready_quote_state_blocker": "BONDING_CURVE_STATE_MISSING",
+  "top_quote_state_blocker": "BONDING_CURVE_STATE_MISSING",
+  "unique_launch_states": 2046,
+  "wire_send": 0
+}

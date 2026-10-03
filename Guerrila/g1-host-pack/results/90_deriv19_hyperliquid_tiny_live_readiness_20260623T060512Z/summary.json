@@ -1,0 +1,29 @@
+{
+  "account_address_present": false,
+  "account_value_usd": 0.0,
+  "api_secret_present": false,
+  "asset_index": 182,
+  "blocker_counts": {
+    "account_address_missing": 1,
+    "account_value_below_floor": 1,
+    "api_secret_missing": 1,
+    "execute_confirm_missing": 1
+  },
+  "exchange_submit_attempted": false,
+  "first_blocker": "account_address_missing",
+  "hyperliquid_sdk_available": true,
+  "live_landed": 0,
+  "no_wire": true,
+  "official_docs_note": "Info endpoint is used for account/market state; exchange endpoint requires signed actions. Hyperliquid docs recommend Python SDK for signatures.",
+  "open_order_count": 0,
+  "open_orders_fetch_ok": false,
+  "open_position_count": 0,
+  "readiness_ready": false,
+  "selected_side": "long",
+  "selected_source_net_after_orderbook_bps": 209.8087,
+  "selected_symbol": "LAYER",
+  "status": "PARK_DERIV19_HYPERLIQUID_TINY_LIVE",
+  "tiny_notional_usd": 25.0,
+  "user_state_fetch_ok": false,
+  "wire_send": 0
+}

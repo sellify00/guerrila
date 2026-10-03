@@ -1,0 +1,12 @@
+status=LAUNCH0M_MIGRATION_PUMPSWAP_ROUTE_JOIN_INCOMPLETE
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z
+input_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0q_realtime_launch_quote_state_rows.jsonl
+completed_or_migrated_input_rows=159
+pumpswap_pool_found_count=0
+pumpswap_quote_state_ready_rows=0
+pumpswap_exit_liquidity_guard_ready_rows=0
+decision_counts={"PARK_MIGRATION_POOL_NOT_FOUND": 159}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false

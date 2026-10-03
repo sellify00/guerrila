@@ -1,0 +1,34 @@
+{
+  "derivative_market_ready_rows": 257,
+  "derivative_market_rows": 318,
+  "generated_at_ms": 1782118225933,
+  "live_landed": 0,
+  "no_wire": true,
+  "ready_rows": 257,
+  "rows": 318,
+  "status": "DERIV_MARKET_UNIVERSE_READY",
+  "venue_counts": {
+    "backpack": 84,
+    "hyperliquid": 230,
+    "jupiter_perps": 4
+  },
+  "venue_status": [
+    {
+      "rows": 230,
+      "status": "ok",
+      "venue": "hyperliquid"
+    },
+    {
+      "mark_price_status": "ok",
+      "rows": 84,
+      "status": "ok",
+      "venue": "backpack"
+    },
+    {
+      "rows": 4,
+      "status": "static",
+      "venue": "jupiter_perps"
+    }
+  ],
+  "wire_send": 0
+}

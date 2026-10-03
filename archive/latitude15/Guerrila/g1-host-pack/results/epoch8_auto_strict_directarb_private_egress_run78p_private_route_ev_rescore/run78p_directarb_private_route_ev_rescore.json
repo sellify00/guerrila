@@ -1,0 +1,11 @@
+{
+  "status": "run78p_complete",
+  "ev_not_positive_source_row_count": 20,
+  "private_route_ev_proven_count": 0,
+  "ev_positive_under_private_route_count": 0,
+  "decision_counts": {
+    "PROOF_UNAVAILABLE_OWNER_MODE_MISMATCH": 20
+  },
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78p_private_route_ev_rescore/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78p_private_route_ev_rescore/rows.csv"
+}

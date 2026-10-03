@@ -1,0 +1,36 @@
+{
+  "backrun_bundle_probe_emitted_rows": 2,
+  "backrun_hot_probe_emitted_rows": 2,
+  "bundle_probe_rows_total": 2,
+  "directarb_bundle_probe_eligible_rows": 0,
+  "directarb_bundle_probe_emitted_rows": 0,
+  "directarb_ev_positive_rows": 0,
+  "directarb_exit_route_rows": 0,
+  "directarb_flatten_watch_rows": 0,
+  "directarb_hot_probe_emitted_rows": 0,
+  "directarb_rows_seen": 0,
+  "first_blocker_counts_for_directarb_probe_emission": {
+    "bundle_probe_gate_not_reached": 1,
+    "not_owner_directarb": 4
+  },
+  "hot_probe_rows_total": 2,
+  "live_landed": 0,
+  "malformed_hot_probe_rows": 0,
+  "malformed_probe_rows": 0,
+  "malformed_shock_rows": 1,
+  "observe_candidates": 4669,
+  "owner_mode_counts": {
+    "backrun:1": 4
+  },
+  "pm_summary_ok": 0,
+  "probe_owner_directarb_rows_seen": 0,
+  "quote_numeric_present_count": 0,
+  "selector_rejection_count": 1224,
+  "sendBundle_called": false,
+  "shock_rows": 76568,
+  "status": "blocked_no_directarb_owned_bundle_probe_rows",
+  "template_ready_count": 0,
+  "wire_send": 0,
+  "worker_final_no_send_event_published": 732,
+  "worker_no_send_backend_ok": 775
+}

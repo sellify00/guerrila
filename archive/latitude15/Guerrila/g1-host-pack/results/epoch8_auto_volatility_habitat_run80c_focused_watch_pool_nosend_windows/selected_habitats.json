@@ -1,0 +1,233 @@
+[
+  {
+    "habitat_id": "raydium_clmm|2b319360bfa2cecb92c4b0a460409a0f0428033f601300b8b3fcf99cf3602e87|SOL|USDC",
+    "decision_id": "20260525_3ucNos...Uxv_watch",
+    "supersedes_decision_id": null,
+    "previous_status": "WATCH",
+    "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+    "pool_hex": "2b319360bfa2cecb92c4b0a460409a0f0428033f601300b8b3fcf99cf3602e87",
+    "venue": "raydium_clmm",
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "base_symbol": "SOL",
+    "quote_symbol": "USDC",
+    "pair": "SOL/USDC",
+    "label": "WATCH",
+    "strategy_habitat_label": "WATCH_BACKRUN_RESEARCH",
+    "strategy_fit": [
+      "backrun"
+    ],
+    "not_strategy_fit": [
+      "directarb_live_track"
+    ],
+    "source": {
+      "run80a_seen": true,
+      "run80b_seen": true,
+      "run80c_seen": false,
+      "afxdp_seen": true,
+      "laserstream_seen": true,
+      "matched_seen": false
+    },
+    "market_metrics": {
+      "liquidity_usd": 6181068.99,
+      "volume_5m": 29452.09,
+      "volume_1h": 183288.72,
+      "tx_count_5m": 50,
+      "volatility_score": 0.017,
+      "external_habitat_score": 0.000484,
+      "spread_estimate_bps": null,
+      "slippage_estimate_bps_1k_notional": 0.81
+    },
+    "shadow_metrics": {
+      "candidate_per_min": null,
+      "exact_positive_per_min": null,
+      "pm_ready_per_min": null,
+      "would_fire_per_min": null,
+      "artifact_row_count": 1175,
+      "exact_positive_count": 61,
+      "quote_min_out_count": 61,
+      "pm_ready_count": 8,
+      "account_ready_count": 61,
+      "inventory_ready_count": 8,
+      "would_fire_count": 61,
+      "main_blocker": "source_policy_live_disallowed",
+      "dominant_owner_mode": "backrun"
+    },
+    "readiness": {
+      "policy_clean": true,
+      "template_supported": true,
+      "account_ready": true,
+      "inventory_ready": true,
+      "pm_ready": true,
+      "private_egress_ready": null,
+      "live_allowed": false
+    },
+    "decision": {
+      "status": "WATCH",
+      "reason": "Backrun-heavy habitat; useful for no-send research but not live-promotable while source policy and freshness block live.",
+      "next_action": "Run80C focused no-send window.",
+      "kill_condition": "If focused candidate or exact-positive rate does not beat the broad baseline, demote to TRAINING or DENY.",
+      "promotion_condition": "Promote when focused windows produce AF_XDP-visible, PM-ready, min_out-positive rows with private-egress no-send proof."
+    },
+    "evidence": {
+      "run80a_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80a_external_universe_builder/rows.jsonl",
+      "run80b_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.jsonl",
+      "run80c_rows_path": null
+    },
+    "last_updated": "2026-05-25"
+  },
+  {
+    "habitat_id": "raydium_clmm|ab883df1573c6e4f5cd64312db1218b41e71ac3f542a76f06f86377be7e31afe|SOL|USDC",
+    "decision_id": "20260525_CYbD9R...uxq_watch",
+    "supersedes_decision_id": null,
+    "previous_status": "WATCH",
+    "pool": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+    "pool_hex": "ab883df1573c6e4f5cd64312db1218b41e71ac3f542a76f06f86377be7e31afe",
+    "venue": "raydium_clmm",
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "base_symbol": "SOL",
+    "quote_symbol": "USDC",
+    "pair": "SOL/USDC",
+    "label": "WATCH",
+    "strategy_habitat_label": "WATCH_BACKRUN_RESEARCH",
+    "strategy_fit": [
+      "backrun"
+    ],
+    "not_strategy_fit": [
+      "directarb_live_track"
+    ],
+    "source": {
+      "run80a_seen": true,
+      "run80b_seen": true,
+      "run80c_seen": false,
+      "afxdp_seen": true,
+      "laserstream_seen": true,
+      "matched_seen": false
+    },
+    "market_metrics": {
+      "liquidity_usd": 413798.67,
+      "volume_5m": 1027.67,
+      "volume_1h": 10574.89,
+      "tx_count_5m": 27,
+      "volatility_score": 0.017,
+      "external_habitat_score": 9.7e-05,
+      "spread_estimate_bps": null,
+      "slippage_estimate_bps_1k_notional": 12.08
+    },
+    "shadow_metrics": {
+      "candidate_per_min": null,
+      "exact_positive_per_min": null,
+      "pm_ready_per_min": null,
+      "would_fire_per_min": null,
+      "artifact_row_count": 23,
+      "exact_positive_count": 2,
+      "quote_min_out_count": 2,
+      "pm_ready_count": 0,
+      "account_ready_count": 2,
+      "inventory_ready_count": 0,
+      "would_fire_count": 2,
+      "main_blocker": "source_policy_live_disallowed",
+      "dominant_owner_mode": "backrun"
+    },
+    "readiness": {
+      "policy_clean": true,
+      "template_supported": true,
+      "account_ready": true,
+      "inventory_ready": false,
+      "pm_ready": false,
+      "private_egress_ready": null,
+      "live_allowed": false
+    },
+    "decision": {
+      "status": "WATCH",
+      "reason": "Backrun-heavy habitat; useful for no-send research but not live-promotable while source policy and freshness block live.",
+      "next_action": "Run80C focused no-send window.",
+      "kill_condition": "If focused candidate or exact-positive rate does not beat the broad baseline, demote to TRAINING or DENY.",
+      "promotion_condition": "Promote when focused windows produce AF_XDP-visible, PM-ready, min_out-positive rows with private-egress no-send proof."
+    },
+    "evidence": {
+      "run80a_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80a_external_universe_builder/rows.jsonl",
+      "run80b_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.jsonl",
+      "run80c_rows_path": null
+    },
+    "last_updated": "2026-05-25"
+  },
+  {
+    "habitat_id": "meteora_damm_v2|8e3a8cd5cae0389753938a630d02152dc54acdc5009445ded83ec6f1ec2bc77f|FOUR|USDC",
+    "decision_id": "20260525_AaCgA7...pkN_watch",
+    "supersedes_decision_id": null,
+    "previous_status": "WATCH",
+    "pool": "AaCgA74kYnZY8bGFqpHufpVSaPGDs3RnzSUpeZVMspkN",
+    "pool_hex": "8e3a8cd5cae0389753938a630d02152dc54acdc5009445ded83ec6f1ec2bc77f",
+    "venue": "meteora_damm_v2",
+    "base_mint": "AxhcwfutahyDCSDaY2TCSJsm7Fu9dnCsQwSN2N4nFouR",
+    "quote_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "base_symbol": "FOUR",
+    "quote_symbol": "USDC",
+    "pair": "FOUR/USDC",
+    "label": "WATCH",
+    "strategy_habitat_label": "WATCH_BACKRUN_RESEARCH",
+    "strategy_fit": [
+      "backrun"
+    ],
+    "not_strategy_fit": [
+      "directarb_live_track"
+    ],
+    "source": {
+      "run80a_seen": true,
+      "run80b_seen": true,
+      "run80c_seen": false,
+      "afxdp_seen": true,
+      "laserstream_seen": true,
+      "matched_seen": false
+    },
+    "market_metrics": {
+      "liquidity_usd": 140366.44,
+      "volume_5m": 146.22,
+      "volume_1h": 2105.81,
+      "tx_count_5m": 22,
+      "volatility_score": 0.2135,
+      "external_habitat_score": 8.3e-05,
+      "spread_estimate_bps": null,
+      "slippage_estimate_bps_1k_notional": 35.62
+    },
+    "shadow_metrics": {
+      "candidate_per_min": null,
+      "exact_positive_per_min": null,
+      "pm_ready_per_min": null,
+      "would_fire_per_min": null,
+      "artifact_row_count": 557,
+      "exact_positive_count": 125,
+      "quote_min_out_count": 125,
+      "pm_ready_count": 8,
+      "account_ready_count": 125,
+      "inventory_ready_count": 8,
+      "would_fire_count": 125,
+      "main_blocker": "source_policy_live_disallowed",
+      "dominant_owner_mode": "backrun"
+    },
+    "readiness": {
+      "policy_clean": true,
+      "template_supported": true,
+      "account_ready": true,
+      "inventory_ready": true,
+      "pm_ready": true,
+      "private_egress_ready": null,
+      "live_allowed": false
+    },
+    "decision": {
+      "status": "WATCH",
+      "reason": "Backrun-heavy habitat; useful for no-send research but not live-promotable while source policy and freshness block live.",
+      "next_action": "Run80C focused no-send window.",
+      "kill_condition": "If focused candidate or exact-positive rate does not beat the broad baseline, demote to TRAINING or DENY.",
+      "promotion_condition": "Promote when focused windows produce AF_XDP-visible, PM-ready, min_out-positive rows with private-egress no-send proof."
+    },
+    "evidence": {
+      "run80a_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80a_external_universe_builder/rows.jsonl",
+      "run80b_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.jsonl",
+      "run80c_rows_path": null
+    },
+    "last_updated": "2026-05-25"
+  }
+]

@@ -1,0 +1,14 @@
+status=runlsprebr0_preprocessed_projection_quote_complete
+target_entity_ready_count=87
+pre_target_pool_state_available_count=24
+projected_post_target_state_count=20
+projected_expected_out_positive_count=20
+projected_min_out_positive_count=20
+projected_ev_after_tip_positive_count=11
+projection_blocker_counts={"EV_NEGATIVE_AFTER_TIP": 9, "PRE_TARGET_POOL_STATE_MISSING": 57, "PROJECTION_READY": 11, "PUMPFUN_AMM_DECODER_MISSING": 6, "TARGET_DELTA_COMPUTE_FAILED": 4}
+top_venue=pumpfun_amm
+top_pool=GpGDNzaSJwy185zuQjxF4v9dedtWGGADcKDR1WZ9BXVC
+top_net_ev_after_tip_raw=1199264650
+wire_send=0
+live_landed=0
+sendBundle_called=false

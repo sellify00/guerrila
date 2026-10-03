@@ -1,0 +1,143 @@
+{
+  "best_net_after_orderbook_bps": -12.5329,
+  "exit_leakage_from_peak_median_bps": 23.588,
+  "exit_leakage_from_peak_p75_bps": 37.2142,
+  "filter_blocker_counts": {
+    "entry_spread": 12,
+    "exit_drag": 1,
+    "none": 11,
+    "trigger_strength": 120
+  },
+  "full_quality_filter_pass_rows": 11,
+  "ladder_attempt_rows": 144,
+  "live_landed": 0,
+  "median_net_after_orderbook_bps": -48.6604,
+  "near_miss_best_net_bps": -12.5329,
+  "near_miss_floor_bps": -20.0,
+  "near_miss_rows": 8,
+  "no_wire": true,
+  "original_blocker_counts": {
+    "entry_book_depth_below_floor": 3,
+    "entry_book_drag_too_high": 1,
+    "exit_book_depth_below_floor": 1,
+    "exit_spread_too_wide": 9,
+    "size_ladder_net_after_orderbook_below_floor": 130
+  },
+  "recommended_deriv17_env": {
+    "SHADOW_DERIV14_MAX_ENTRY_BOOK_DRAG_BPS": 8.0,
+    "SHADOW_DERIV14_MAX_ENTRY_SPREAD_BPS": 12.0,
+    "SHADOW_DERIV14_MAX_EXIT_BOOK_DRAG_BPS": 10.0,
+    "SHADOW_DERIV14_MAX_EXIT_SPREAD_BPS": 18.0,
+    "SHADOW_DERIV14_MIN_OPEN_NOTIONAL_USD": 100,
+    "SHADOW_DERIV14_NOTIONAL_USD": "100,250,500",
+    "SHADOW_DERIV_MIN_NET_EDGE_BPS": 30.0,
+    "SHADOW_DERIV_MIN_TRIGGER_BPS": 70.0
+  },
+  "source_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv15_forward_size_ladder_repeatability_watch_20260622T173302Z",
+  "status": "DERIV_SIZE_LADDER_FILTER_AUTOPSY_READY",
+  "top_symbols": [
+    {
+      "avg_entry_spread_bps": 12.1386,
+      "avg_exit_leakage_from_peak_bps": 33.9113,
+      "avg_exit_spread_bps": 17.0779,
+      "avg_net_after_orderbook_bps": -45.8045,
+      "best_gross_orderbook_return_bps": 21.5306,
+      "best_net_after_orderbook_bps": -12.5329,
+      "rows": 12,
+      "symbol": "RESOLV"
+    },
+    {
+      "avg_entry_spread_bps": 5.8994,
+      "avg_exit_leakage_from_peak_bps": 15.3944,
+      "avg_exit_spread_bps": 6.4719,
+      "avg_net_after_orderbook_bps": -32.4775,
+      "best_gross_orderbook_return_bps": 16.9448,
+      "best_net_after_orderbook_bps": -17.0961,
+      "rows": 8,
+      "symbol": "CHIP"
+    },
+    {
+      "avg_entry_spread_bps": 7.6428,
+      "avg_exit_leakage_from_peak_bps": 6.4689,
+      "avg_exit_spread_bps": 5.1845,
+      "avg_net_after_orderbook_bps": -32.7988,
+      "best_gross_orderbook_return_bps": 8.2743,
+      "best_net_after_orderbook_bps": -25.8507,
+      "rows": 12,
+      "symbol": "AERO"
+    },
+    {
+      "avg_entry_spread_bps": 9.6492,
+      "avg_exit_leakage_from_peak_bps": 19.835,
+      "avg_exit_spread_bps": 9.398,
+      "avg_net_after_orderbook_bps": -46.6359,
+      "best_gross_orderbook_return_bps": 7.2435,
+      "best_net_after_orderbook_bps": -26.8815,
+      "rows": 12,
+      "symbol": "MEGA"
+    },
+    {
+      "avg_entry_spread_bps": 12.3262,
+      "avg_exit_leakage_from_peak_bps": 38.9591,
+      "avg_exit_spread_bps": 32.6675,
+      "avg_net_after_orderbook_bps": -64.9341,
+      "best_gross_orderbook_return_bps": 0.0,
+      "best_net_after_orderbook_bps": -34.125,
+      "rows": 16,
+      "symbol": "W"
+    },
+    {
+      "avg_entry_spread_bps": 10.6622,
+      "avg_exit_leakage_from_peak_bps": 32.0003,
+      "avg_exit_spread_bps": 9.7589,
+      "avg_net_after_orderbook_bps": -47.5435,
+      "best_gross_orderbook_return_bps": -0.0,
+      "best_net_after_orderbook_bps": -34.125,
+      "rows": 8,
+      "symbol": "MET"
+    },
+    {
+      "avg_entry_spread_bps": 0.6196,
+      "avg_exit_leakage_from_peak_bps": 5.1421,
+      "avg_exit_spread_bps": 2.4782,
+      "avg_net_after_orderbook_bps": -34.9299,
+      "best_gross_orderbook_return_bps": 0.0,
+      "best_net_after_orderbook_bps": -34.125,
+      "rows": 4,
+      "symbol": "LIT"
+    },
+    {
+      "avg_entry_spread_bps": 0.1458,
+      "avg_exit_leakage_from_peak_bps": 4.3236,
+      "avg_exit_spread_bps": 0.1458,
+      "avg_net_after_orderbook_bps": -37.1364,
+      "best_gross_orderbook_return_bps": -2.9178,
+      "best_net_after_orderbook_bps": -37.0428,
+      "rows": 4,
+      "symbol": "HYPE"
+    },
+    {
+      "avg_entry_spread_bps": 0.7898,
+      "avg_exit_leakage_from_peak_bps": 9.8053,
+      "avg_exit_spread_bps": 1.7368,
+      "avg_net_after_orderbook_bps": -39.9813,
+      "best_gross_orderbook_return_bps": -5.5286,
+      "best_net_after_orderbook_bps": -39.6536,
+      "rows": 4,
+      "symbol": "WLD"
+    },
+    {
+      "avg_entry_spread_bps": 3.1099,
+      "avg_exit_leakage_from_peak_bps": 13.0483,
+      "avg_exit_spread_bps": 6.1184,
+      "avg_net_after_orderbook_bps": -44.328,
+      "best_gross_orderbook_return_bps": -5.767,
+      "best_net_after_orderbook_bps": -39.7961,
+      "rows": 8,
+      "symbol": "TIA"
+    }
+  ],
+  "trigger_filter_pass_rows": 12,
+  "trigger_rows": 67,
+  "wire_send": 0
+}

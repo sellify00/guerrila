@@ -1,0 +1,17 @@
+{
+  "acquisition_executed": false,
+  "ata_precreate_tx_finalized": true,
+  "entry_output_account_exists": true,
+  "first_blocker": "none",
+  "inventory_refresh_ok": true,
+  "live_landed": 0,
+  "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+  "pm_sees_output_account": true,
+  "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "setup_tx_landed": true,
+  "status": "R1_ATA_PRECREATE_COMPLETED",
+  "strategy_live_send": false,
+  "wire_send": 0
+}

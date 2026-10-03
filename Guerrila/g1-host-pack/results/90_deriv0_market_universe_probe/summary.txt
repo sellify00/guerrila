@@ -1,0 +1,11 @@
+status=DERIV_MARKET_UNIVERSE_READY
+derivative_market_rows=318
+derivative_market_ready_rows=257
+venue_counts={"backpack": 84, "hyperliquid": 230, "jupiter_perps": 4}
+venue_status=[{"rows": 230, "status": "ok", "venue": "hyperliquid"}, {"mark_price_status": "ok", "rows": 84, "status": "ok", "venue": "backpack"}, {"rows": 4, "status": "static", "venue": "jupiter_perps"}]
+no_wire=true
+generated_at_ms=1782118225933
+rows=318
+ready_rows=257
+wire_send=0
+live_landed=0

@@ -1,0 +1,8 @@
+status=run80reg_select_complete
+runtime_registry_path=/etc/shadow-engine/shadow_habitat_registry.json
+mode=research
+research_count=0
+live_track_count=0
+deny_review_count=5
+selected_count=0
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/80_habitat_registry_latest/select_next_rows.jsonl

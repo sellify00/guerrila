@@ -1,0 +1,12 @@
+status=blocked_preconditions
+step=78g3_run78_cap1_fresh_jito_bundle_nosend
+scout_route_family=jito_bundle
+private_replay_target_route_family=jito_bundle
+config_source=/etc/shadow-engine/config.guerrila.yaml
+approved_live_cap_sol=1
+projection_ratio_max=4
+eno1_lower_up=true
+eno1_xdp_lines_before=0
+xsk_map_before=absent
+oob_arm_file=/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_20260527_110806/82hab_focused_directarb_b_roundtrip_20260527_110806_w2_AXTyUbwt/run39_native_oob_ready.flag
+oob_arm_status=missing

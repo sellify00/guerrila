@@ -1,0 +1,46 @@
+{
+  "BLOCK_BASE_RESERVE_DECLINE": 0,
+  "BLOCK_EXECUTABLE_EXIT_VALUE_SLOPE": 0,
+  "BLOCK_EXIT_QUOTE_ZERO_RECENT": 0,
+  "BLOCK_FIELD_MISSING": 0,
+  "BLOCK_JOIN_MISSING": 0,
+  "BLOCK_NO_EXIT_TAIL_FILTER": 0,
+  "BLOCK_PRICE_CHANGE_SINCE_TRIGGER": 3,
+  "BLOCK_WARMUP_BUCKET": 77,
+  "acceptance_pass": true,
+  "active_curve_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0u8_active_curve_fresh_state_filter/rows.jsonl",
+  "active_curve_rows_seen": 453,
+  "all_gate_blocker_counts": {
+    "b002_plus_active_price_change_too_low": 3,
+    "b002_plus_active_quote_state_not_ready": 373,
+    "b002_plus_active_warmup_tier_c": 77
+  },
+  "b002_plus_active_curve_ready_rows": 0,
+  "b002_plus_ready_rows": 0,
+  "capture_profile_positive_rows": 453,
+  "exit_liquidity_guard_ready_rows": 80,
+  "focused_blocker_counts": {
+    "BLOCK_PRICE_CHANGE_SINCE_TRIGGER": 3,
+    "BLOCK_WARMUP_BUCKET": 77
+  },
+  "focused_raw_blocker_counts": {
+    "b002_plus_active_price_change_too_low": 3,
+    "b002_plus_active_warmup_tier_c": 77
+  },
+  "gate_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/22_launch57_b002_plus_active_curve_no_wire/rows.jsonl",
+  "join_method_counts": {
+    "launch_state_id": 453
+  },
+  "live_landed": 0,
+  "missing_gate_join_rows": 0,
+  "quote_and_liquidity_ready_rows": 80,
+  "quote_liquidity_capture_ready_rows": 80,
+  "quote_ready_debug_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch57a_b002_plus_active_curve_blocker_audit/quote_ready_top20_debug.jsonl",
+  "quote_state_ready_rows": 80,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch57a_b002_plus_active_curve_blocker_audit/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z",
+  "status": "LAUNCH57A_B002_PLUS_ACTIVE_CURVE_BLOCKER_AUDIT_PASS",
+  "top_all_gate_blocker": "b002_plus_active_quote_state_not_ready",
+  "top_focused_blocker": "BLOCK_WARMUP_BUCKET",
+  "wire_send": 0
+}

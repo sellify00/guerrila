@@ -1,0 +1,16 @@
+STATUS=LOCAL_B002_READY_PAUSED_EXTERNAL_SUBSCRIPTION
+LIVE_STARTED=false
+WIRE_SEND=0
+RUNTIME_ROOT=/home/verdana00/Guerrila_runtime
+SECRET_STAGING=/home/verdana00/.shadow-engine-latitude15/etc/shadow-engine
+SIGNER_PUBKEY=ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX
+B002_FROZEN_REPLAY=B002_FROZEN_REPLAY_PASS
+B002_REGRESSION_MATRIX=B002_REGRESSION_MATRIX_PASS
+RUNLS13_BINARY=target/release-guerrila/runls13-preprocessed-probe
+RUNLS13_STREAM_JSONL_READY=true
+PYTHON_DEPS=solders,base58,solana,websockets,aiohttp,requests
+EXTERNAL_BLOCKER=Helius RPC/LaserStream subscription paused or suspended
+SUBSCRIPTION_READY=false
+NO_WIRE_COMMAND=wsl.exe bash -lc 'cd $HOME/Guerrila_runtime && bash g1-host-pack/scripts/local_b002_no_wire.sh 300'
+LIVE_COMMAND_AFTER_SUBSCRIPTION_RESTORED=wsl.exe bash -lc 'cd $HOME/Guerrila_runtime && SHADOW_LAUNCH_EXECUTE_CONFIRM=EXECUTE_B002_LOCAL_FROZEN_001 bash g1-host-pack/scripts/local_b002_live.sh 3600'
+NOTES=Frozen B002 preserves cost-protector/trailing exit behavior and disables R4/BREATHE lab settings.

@@ -1,0 +1,14 @@
+{
+  "laserstream_normalized_tx": 0,
+  "laserstream_feed_to_worker": 0,
+  "laserstream_worker_read": 0,
+  "laserstream_process_intent_attempt": 0,
+  "laserstream_rollout_emitted": 0,
+  "afxdp_private_ingress": 349,
+  "afxdp_feed_to_worker": 349,
+  "afxdp_worker_read": 350,
+  "afxdp_process_intent_attempt": 1,
+  "afxdp_rollout_emitted": 4,
+  "top_reject_reason_laserstream": "none",
+  "top_reject_reason_afxdp": "reject_health_unhealthy"
+}

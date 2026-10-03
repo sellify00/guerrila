@@ -1,0 +1,12 @@
+status=blocked_preconditions
+step=78_fresh_strict_directarb_candidate_scout_nosend
+scout_route_family=tpu_quic_public
+private_replay_target_route_family=helius_sender_dual
+config_source=/etc/shadow-engine/config.guerrila.yaml
+approved_live_cap_sol=0.01
+projection_ratio_max=4
+eno1_lower_up=true
+eno1_xdp_lines_before=0
+xsk_map_before=absent
+oob_arm_file=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean2_20260526_173120/run39_native_oob_ready.flag
+oob_arm_status=missing

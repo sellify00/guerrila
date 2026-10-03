@@ -1,0 +1,16 @@
+{
+  "helius_api_key_present": false,
+  "helius_request_timeout_secs": 20.0,
+  "live_send": false,
+  "max_absorption_score": 0.5,
+  "max_latest_age_hours": 6.0,
+  "max_toxicity_score": 0.5,
+  "min_pressure_score": 0.5,
+  "min_shock_episodes": 4,
+  "result_dir": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/66ctv2_continuation_fresh_runtime_pressure_recompute",
+  "runtime_rows": "",
+  "sendBundle": false,
+  "shock_quantile": 0.8,
+  "source_rows": "",
+  "thesis_signal_source": "fresh_runtime_recomputed"
+}

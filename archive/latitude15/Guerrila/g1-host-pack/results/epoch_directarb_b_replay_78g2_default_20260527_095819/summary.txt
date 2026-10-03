@@ -1,0 +1,16 @@
+status=blocked_no_directarb_b_would_send_positive
+result_dir=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_b_replay_78g2_default_20260527_095819
+manifest_path=g1-host-pack/results/epoch_directarb_b_replay_manifest/replay_manifest.jsonl
+manifest_rows=7
+evaluated_rows=7
+decision_counts={"BUNDLE_FAIL_POLICY": 7}
+directarb_bundle_ready_no_submit_count=0
+would_send_positive_count=0
+positive_built_sim_pass_count=0
+default_policy_would_send_positive_count=0
+send_side_effect_rows=0
+wire_send=0
+live_landed=0
+sendBundle_called=false
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_b_replay_78g2_default_20260527_095819/rows.jsonl
+run_status=0

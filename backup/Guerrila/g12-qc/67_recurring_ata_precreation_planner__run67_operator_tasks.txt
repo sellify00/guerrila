@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Run67 operator tasks (generated, not auto-executed)
+set -euo pipefail
+
+# strict_current_rows=1
+# strict_current_ev_usd=0.183765
+# projected_strict_rows_if_selected_atas_precreated=1
+# projected_strict_ev_usd_if_selected_atas_precreated=0.183765
+
+# 1. Precreate only the selected recurring output ATAs below after reviewing token policy and the unit-sized exit probe.
+
+# 2. Refresh signer inventory immediately after ATA creation.
+#    /home/ubuntu/Guerrila/g1-host-pack/scripts/refresh_signer_token_inventory.sh
+
+# 3. Rerun a fresh canonical epoch only after the ATA surface is updated.
+#    sudo env SHADOW_EPOCH_NAME=epoch2 SHADOW_EPOCH_WINDOW_SECONDS=900 /home/ubuntu/Guerrila/g1-host-pack/scripts/epoch_canonical_monetization.sh
+
+# 4. Re-run the forensic split on the fresh epoch to compare strict vs fixup conversion.
+#    This reuses the Run66 forensic logic with a new results step name.
+#    sudo env SHADOW_RUN66_RUN61_STEP=epoch2_canonical_monetization SHADOW_RUN66_RUN62_STEP=epoch2_canonical_monetization_run62 SHADOW_RUN66_RUN39_STEP=epoch2_canonical_monetization_run55_run39 SHADOW_RUN66_STEP=67_epoch2_post_ata_forensic_audit SHADOW_RUN66_STATUS_PREFIX=67_epoch2_post_ata_forensic_audit SHADOW_RUN66_REPORT_BASENAME=67_epoch2_post_ata_forensic_audit /home/ubuntu/Guerrila/g1-host-pack/scripts/66_epoch1_monetization_forensic_audit.sh

@@ -1,0 +1,28 @@
+[package]
+name = "shadow-state"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+shadow-core = { path = "../shadow-core" }
+shadow-ingest = { path = "../shadow-ingest" }
+shadow-ipc = { path = "../shadow-ipc" }
+num-bigint = "0.4"
+num-traits = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "time", "sync"] }
+tracing = "0.1"
+yellowstone-grpc-client = "12.1"
+yellowstone-grpc-proto = "12.1"
+futures = "0.3"
+tonic = "0.12"
+reqwest = { version = "0.12", features = ["json"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "logging", "std", "tls12"] }
+base64 = "0.22"
+bs58 = "0.5"
+
+[dev-dependencies]
+tempfile = "3.26.0"

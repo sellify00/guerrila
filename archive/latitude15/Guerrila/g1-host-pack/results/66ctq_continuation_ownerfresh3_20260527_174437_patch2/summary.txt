@@ -1,0 +1,12 @@
+status=CONTINUATION_QUOTE_DRIFT_AUTOPSY_COMPLETE
+primary_drift_class=ENTRY_IDENTITY_CHANGED
+replay_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctp_continuation_ownerfresh3_20260527_174437_patch2/selected_replay_rows.jsonl
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66cth_continuation_ownerfresh3_20260527_174437_patch1/proposal_eligible_continuation_rows.jsonl
+rows_seen=2
+decision_counts={"ENTRY_IDENTITY_CHANGED": 1, "ROUNDTRIP_TURNED_NEGATIVE": 1}
+max_entry_drift_bps=2500.0
+max_replay_age_ms=1000
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

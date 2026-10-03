@@ -1,0 +1,36 @@
+{
+  "attempts_needed_for_60_usd_day": null,
+  "attempts_needed_for_60_usd_day_compat": null,
+  "attempts_needed_for_60_usd_day_oracle": 1747,
+  "avg_normal_loss": -1373287,
+  "avg_normal_win": 2203690,
+  "avg_tail_loss": -10210000,
+  "compat_kept_attempts": 3,
+  "compat_structural_decision_counts": {
+    "STRUCTURAL_NO_EXIT_FILTER_PASS": 3
+  },
+  "daily_target_usd": 60.0,
+  "historical_attempts": 3,
+  "landed_attempts": 3,
+  "net_pnl_after_no_exit_tail_removed_oracle": 830403,
+  "net_pnl_after_tail_filter": -9379597,
+  "net_pnl_after_tail_filter_compat": -9379597,
+  "net_pnl_old": -9379597,
+  "no_exit_tail_blocked_by_new_filter": 0,
+  "no_exit_tail_blocked_by_new_filter_compat": 0,
+  "no_exit_tail_count": 1,
+  "normal_negative_count": 1,
+  "normal_positive_count": 1,
+  "only_landed": true,
+  "oracle_tail_removed_kept_attempts": 2,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/22_launch41_tail_removed_expectancy_report/rows.jsonl",
+  "sol_usd": 82.72,
+  "status": "TAIL_REMOVED_EXPECTANCY_REPORT_READY",
+  "strict_kept_attempts": 3,
+  "strict_structural_decision_counts": {
+    "STRUCTURAL_NO_EXIT_FILTER_PASS": 3
+  },
+  "tail_adjusted_expectancy_per_attempt": -3126532.3333333335,
+  "tail_adjusted_expectancy_per_attempt_compat": -3126532.3333333335,
+  "tail_adjusted_expectancy_per_attempt_oracle": 415201.5
+}

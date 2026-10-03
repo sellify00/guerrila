@@ -1,0 +1,48 @@
+{
+  "batch_a": {
+    "attempt_rows": 3,
+    "avg_peak_executable_exit_gain_bps": 2879.6666666666665,
+    "avg_price_change_since_trigger_bps": 750.0,
+    "avg_signal_age_ms": 624.6666666666666,
+    "burn_closed": 0,
+    "cost_protector_armed_count": 3,
+    "exit_quote_zero_seen_count": 0,
+    "exit_reason_counts": {
+      "EXIT_COST_PROTECTOR_TRAILING": 3
+    },
+    "flattened": 3,
+    "landed": 3,
+    "net_after_rent_total": 4527956,
+    "outcome_counts": {
+      "positive_after_rent": 3
+    }
+  },
+  "batch_a_label": "batch002_positive_reference",
+  "batch_a_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z",
+  "batch_b": {
+    "attempt_rows": 3,
+    "avg_peak_executable_exit_gain_bps": 1536.0,
+    "avg_price_change_since_trigger_bps": 379.3333333333333,
+    "avg_signal_age_ms": 432.0,
+    "burn_closed": 1,
+    "cost_protector_armed_count": 1,
+    "exit_quote_zero_seen_count": 1,
+    "exit_reason_counts": {
+      "EXIT_EXIT_QUOTE_ZERO": 1,
+      "EXIT_PANIC_DROP_10S": 1,
+      "EXIT_REALISABLE_PROFIT_TRAILING": 1
+    },
+    "flattened": 2,
+    "landed": 3,
+    "net_after_rent_total": -9350005,
+    "outcome_counts": {
+      "negative_after_rent": 2,
+      "positive_after_rent": 1
+    }
+  },
+  "batch_b_label": "batch007_hold_v1_tail",
+  "batch_b_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T075036Z",
+  "delta_net_after_rent_total": -13877961,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T075036Z/22_launch36_batch002_vs_batch007_outcome_diff/rows.jsonl",
+  "status": "BATCH_OUTCOME_DIFF_READY"
+}

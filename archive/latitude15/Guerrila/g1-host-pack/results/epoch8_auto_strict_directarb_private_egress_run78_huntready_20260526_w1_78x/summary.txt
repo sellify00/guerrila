@@ -1,0 +1,17 @@
+status=run78x_complete
+architecture_tail_row_count=7
+classification_counts={"OUT_OF_SCOPE_UNSUPPORTED_INPUT":5,"PERMANENT_UNSUPPORTED_ROUTE_MATH":2}
+unknown_architecture_tail_count=0
+live_track_scope_architecture_blocker_count=0
+78h_architecture_blocker_count=0
+78h_summary_only_architecture_blocker_count=0
+78x_arch_fix_row_count=0
+78x_unmatched_78h_blocker_count=0
+unmatched_78h_blockers_by_batch={"epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w1":0}
+summary_only_78h_blockers_by_batch={"epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w1":0}
+malformed_rejection_rows=0
+malformed_autopsy_rows=0
+malformed_pm_rows=0
+malformed_inv_rows=0
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w1_78x/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w1_78x/rows.csv

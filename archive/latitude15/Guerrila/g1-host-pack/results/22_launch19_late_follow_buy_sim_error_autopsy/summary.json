@@ -1,0 +1,14 @@
+{
+  "decision_counts": {
+    "LATE_FOLLOW_MIN_OUT_TOO_STRICT": 3
+  },
+  "late_follow_buy_sim_error_rows": 3,
+  "latest_custom_error_code": 6004,
+  "latest_decision": "LATE_FOLLOW_MIN_OUT_TOO_STRICT",
+  "latest_decoded_error_name_if_known": "ExceededSlippage",
+  "latest_program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+  "latest_route_family": "PUMPSWAP_AMM",
+  "latest_selected_mint": "Bi4c29KD8Zos8M5jm2MhqVDKeHW2NDPwQM6WKPqfGcbS",
+  "latest_selected_pool": "8g6T54KXdHpiEdhz81faLyUsCkfqocPMvNxCbB9SeRHM",
+  "rows_seen": 3
+}

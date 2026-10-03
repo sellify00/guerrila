@@ -1,0 +1,16 @@
+{
+  "audit_registry_path": "/home/ubuntu/shadow-host-audit/dpdk-runs/habitat_registry/shadow_habitat_registry.jsonl",
+  "live_landed": 0,
+  "malformed_source_rows": 0,
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/80reg_policy_exception_token2022_watch/rows.csv",
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/80reg_policy_exception_token2022_watch/rows.jsonl",
+  "runtime_registry_path": "/etc/shadow-engine/shadow_habitat_registry.json",
+  "source_review_only_keep_watch_count": 2,
+  "source_rows_path": "/dev/results/epoch_directarb_cap1_runtime_requote_nosend_20260527_030601/78f4_metadata_only_token2022_exception_safety_review/rows.jsonl",
+  "status": "run80reg_policy_exception_token2022_watch_complete",
+  "strategy_label_counts": {
+    "WATCH_POLICY_EXCEPTION_TOKEN2022": 2
+  },
+  "upsert_count": 2,
+  "wire_send": 0
+}

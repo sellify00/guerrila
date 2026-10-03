@@ -1,0 +1,8 @@
+status=blocked_no_materialized_bundle_probe_rows
+probe_rows=4
+manifest_rows=0
+malformed_probe_rows=0
+rejection_rows=4
+rejection_counts={"NOT_DIRECTARB_OWNER_MODE": 4}
+output_path=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_directarb_jito_bundle_roundtrip_nosubmit/78g_bundle_candidate_manifest.jsonl
+rejection_path=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_directarb_jito_bundle_roundtrip_nosubmit_fresh_selector/78g_bundle_candidate_rejections.jsonl

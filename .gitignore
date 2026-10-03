@@ -1,0 +1,33 @@
+# Local credentials and generated files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*keypair.json
+ssh_file*
+oob_credentials
+env.hyperliquid.local.sh
+node_modules/
+target/
+__pycache__/
+*.pyc
+.venv*/
+venv/
+Lib/site-packages/
+.local-artifacts/
+*.swp
+*.swo
+tmpclaude-*
+# Excluded project names
+*[Aa][Rr][Bb][Oo][Tt]*
+*[Ff][Ii][Rr][Ee][Pp][Ii][Tt]*
+
+# Separate research branch; exclude the entire folder and historical copies
+/Guerrila/[Rr][Ee][Ss][Ee][Aa][Rr][Cc][Hh]/
+/backup/Guerrila/[Rr][Ee][Ss][Ee][Aa][Rr][Cc][Hh]/
+/archive/**/Guerrila/[Rr][Ee][Ss][Ee][Aa][Rr][Cc][Hh]/

@@ -1,0 +1,16 @@
+8:PASS  bootstrapped 4 Jito egress ring(s)
+9:PASS  bootstrapped 4 Harmonic egress ring(s)
+11:PASS  bootstrapped egress health segment
+13:PASS  bootstrapped egress result ring (Harmonic)
+15:PASS  bootstrapped 4 rollout shadow ring(s)
+21:INFO  observe_only+no_send: using pass-all allowlist for R0 evidence accumulation
+24:INFO  observe_only+no_send: lenient mint fallback enabled (zero mints on miss)
+31:PASS  swap template: 2 accounts, 18 bytes ix data (discriminator 0x09)
+35:money-worker-0: opened Jito egress ring
+37:money-worker-0: opened Harmonic egress ring
+38:money-worker-1: opened Jito egress ring
+43:money-worker-2: opened Jito egress ring
+44:money-worker-1: opened Harmonic egress ring
+45:money-worker-2: opened Harmonic egress ring
+47:money-worker-3: opened Jito egress ring
+48:money-worker-3: opened Harmonic egress ring

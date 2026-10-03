@@ -1,0 +1,7 @@
+status=B002_PLUS_ACTIVE_CURVE_OUTCOME_AUTOPSY_COMPLETE
+rows_seen=6
+strong_extension_rows=3
+weak_extension_rows=3
+strong_extension_profile={"count": 3, "exit_reason_counts": {"EXIT_COST_PROTECTOR_TRAILING": 3}, "median_exit_quote_stability_degrade_bps": 0, "median_peak_executable_exit_gain_bps": 3005, "median_pnl_after_rent_recovery": 1276919, "sell_quality_counts": {"NO_SELL": 3}, "warmup_tier_counts": {"": 3}}
+weak_extension_profile={"count": 3, "exit_reason_counts": {"EXIT_EXIT_VALUE_COLLAPSE": 1, "EXIT_PRE_ARM_WEAK_TIMEOUT": 1, "not_triggered": 1}, "median_exit_quote_stability_degrade_bps": 874, "median_peak_executable_exit_gain_bps": 78, "median_pnl_after_rent_recovery": -29368, "sell_quality_counts": {"NO_SELL": 3}, "warmup_tier_counts": {"B002_PLUS_TIER_B": 3}}
+recommended_gate={"do_not_require": ["last_trade_side=buy", "buy-led momentum"], "tier_a": "allow with structural/liquidity gates and non-negative real price-change if present", "tier_b": "require executable_exit_value_slope_2s_bps > 0 and base_reserve_decline_velocity_bps >= 0"}

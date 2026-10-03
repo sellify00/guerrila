@@ -1,0 +1,16 @@
+{
+  "live_landed": 0,
+  "rank_decision_counts": {},
+  "rows_seen": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "size_consistent_candidate_rows": 0,
+  "source_ata_precreate_only_ready_rows": 0,
+  "source_decision_counts": {},
+  "source_one_mint_live_ready_rows": 0,
+  "source_proposal_ready_rows": 0,
+  "status": "PARK_NO_PROPOSAL_ROWS",
+  "top_candidate": {},
+  "top_n": 5,
+  "wire_send": 0
+}

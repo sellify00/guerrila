@@ -1,0 +1,13 @@
+status=COST_AWARE_PROFIT_PROTECTOR_COMPLETE
+rows_seen=1
+decision_counts={'COST_PROTECTOR_ARMED_HOLD': 1}
+latest_decision=COST_PROTECTOR_ARMED_HOLD
+latest_selected_mint=8ZnTmeAjakPsN9bePpZqVZnugBVoSBcALNRtcmDuKt2J
+latest_break_even_bps=2193
+latest_arm_gain_bps=2693
+latest_peak_gain_bps=2822
+latest_drawdown_from_peak_bps=51
+latest_cost_profit_protector_armed=True
+floor_source=true_loss_floor
+profit_buffer_bps=500
+tight_trailing_stop_bps=500

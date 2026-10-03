@@ -1,0 +1,22 @@
+{
+  "provider": "jito_direct",
+  "auth_source": "jito_keypair",
+  "selected_route_family": "jito_bundle",
+  "provider_submit_endpoint": "https://tokyo.mainnet.block-engine.jito.wtf",
+  "provider_submit_endpoint_reachable": true,
+  "provider_submit_probe": "http_404",
+  "provider_status_url": "https://mainnet.block-engine.jito.wtf/api/v1/bundles",
+  "provider_status_api_reachable": true,
+  "provider_status_probe": "http_405",
+  "provider_auth_material_present": false,
+  "tip_accounts_available": true,
+  "tip_accounts_count": 1,
+  "jito_auth_path_present": false,
+  "harmonic_auth_path_present": false,
+  "helius_api_key_present": false,
+  "simulate_bundle_available": false,
+  "simulate_bundle_unavailable_but_payload_valid": true,
+  "send_bundle_disabled_in_test": true,
+  "wire_send": 0,
+  "live_landed": 0
+}

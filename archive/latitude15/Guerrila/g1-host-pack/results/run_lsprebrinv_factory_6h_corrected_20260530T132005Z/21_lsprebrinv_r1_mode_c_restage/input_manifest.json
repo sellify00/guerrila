@@ -1,0 +1,17 @@
+{
+  "live_autopsy_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_lsprebrinv_r1_live_pnl_autopsy/runlsprebrinv_r1_live_pnl_autopsy.json",
+  "mode_c_cost_constants": {
+    "cheap_buy_base_fee_lamports": 5000,
+    "cheap_buy_variable_cost_lamports": 3695,
+    "exit_variable_cost_lamports": 935,
+    "hot_sender_base_fee_lamports": 5000,
+    "hot_sender_tip_lamports": 200000,
+    "pump_account_setup_lamports": 1844400,
+    "pump_account_setup_recoverable": false
+  },
+  "ranker_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_corrected_20260530T132005Z/21_lsprebrinv_r1_portfolio_ranker/runlsprebrinv_r1_portfolio_ranker_rows.jsonl",
+  "restage_rows_path": ".",
+  "setup_repeat_threshold": 2,
+  "slippage_buffer_lamports": 10000,
+  "top_n": 10
+}

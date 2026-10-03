@@ -1,0 +1,11 @@
+{
+  "live_send": false,
+  "max_loss_sol": 0.002,
+  "max_spend_sol": 0.005,
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+  "stop_loss_bps": 300,
+  "ttl_seconds": 300
+}

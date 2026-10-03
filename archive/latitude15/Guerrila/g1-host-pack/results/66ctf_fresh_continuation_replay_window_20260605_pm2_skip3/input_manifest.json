@@ -1,0 +1,13 @@
+{
+  "ctq_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ctq/continuation_quote_drift_autopsy_rows.jsonl",
+  "ctv2_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ctv2/continuation_fresh_runtime_pressure_rows.jsonl",
+  "ctv_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ctv/continuation_fresh_thesis_revalidation_rows.jsonl",
+  "live_send": false,
+  "proposal_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66cth/proposal_eligible_continuation_rows.jsonl",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_20260605_pm2_skip3",
+  "run65_step": "66ctf_20260604_run65",
+  "sendBundle": false,
+  "strict_diagnostics_enabled": true,
+  "thesis_signal_source": "carried_proposal_fields",
+  "validation_mode": "fresh_thesis_revalidation"
+}

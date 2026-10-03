@@ -1,0 +1,12 @@
+status=blocked_no_replay_manifest_rows
+source_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_oobfixed2_20260527_111200/82hab_focused_directarb_b_roundtrip_oobfixed2_20260527_111200_w1_EyY7VZNV/78c3_directarb_cap1_nearmiss_autopsy/rows.jsonl
+source_rows=341
+manifest_rows=0
+malformed_source_rows=0
+rejection_rows=341
+rejection_counts={"MISSING_ENTRY_AMOUNT": 25, "NOT_REPLAY_READY_DECISION": 316}
+output_path=/home/ubuntu/Guerrila/g1-host-pack/results/82hab_focused_directarb_b_roundtrip_oobfixed2_20260527_111200/82hab_focused_directarb_b_roundtrip_oobfixed2_20260527_111200_w1_EyY7VZNV/78g3_directarb_b_manifest/manifest.jsonl
+replay_label=DEV_REPLAY_NOT_MARKET_CURRENT
+wire_send=0
+live_landed=0
+sendBundle_called=False

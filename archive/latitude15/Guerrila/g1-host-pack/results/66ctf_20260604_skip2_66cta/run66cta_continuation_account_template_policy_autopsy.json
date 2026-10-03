@@ -1,0 +1,29 @@
+{
+  "account_or_inline_ata_ready_rows": 0,
+  "continuation_execution_plumbing_ready_rows": 0,
+  "decision_counts": {
+    "PM_OWNER_MODE_MISSING": 114
+  },
+  "entry_rule_ready_rows": 0,
+  "exit_rule_ready_rows": 0,
+  "first_account_policy_template_blocker_counts": {
+    "PM_OWNER_MODE_MISSING": 114
+  },
+  "inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ri/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "jito_bundle_possible_rows": 0,
+  "live_landed": 0,
+  "non_toxic_rows": 114,
+  "pm_owner_lock_ready_rows": 0,
+  "policy_pass_rows": 114,
+  "policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rp/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "rows_seen": 114,
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_possible_rows": 0,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ctb/run66ctb_continuation_entry_exit_rule_carry_forward_repair_rows.jsonl",
+  "status": "PARK_CONTINUATION_ACCOUNT_OR_POLICY",
+  "template_ready_rows": 0,
+  "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rt/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "wire_send": 0
+}

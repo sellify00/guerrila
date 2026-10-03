@@ -1,0 +1,13 @@
+final_verdict=PARK_PM_OWNER_LOCK_SURFACE
+rows_seen=22
+owner_mode_rebalancing_rows=22
+pm_owner_lock_owner_mode_rebalancing_rows=0
+pm_owner_lock_conflict_domain_explicit_rows=0
+pm_release_on_no_send_ok_rows=22
+pm_pending_after_zero_rows=22
+pm_owner_lock_ready_rows=0
+first_pm_owner_lock_blocker_counts={"pm_owner_lock_owner_mode_missing": 22}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

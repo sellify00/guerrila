@@ -1,0 +1,9 @@
+status=CONTINUATION_TOKEN2022_POLICY_EXCEPTION_REVIEW_COMPLETE
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66cta_resume5_after_ctb_v3/run66cta_continuation_account_template_policy_autopsy_rows.jsonl
+rows_seen=41
+decision_counts={"REVIEW_ONLY_METADATA_TOKEN2022": 41}
+watch_only_metadata_rows=41
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

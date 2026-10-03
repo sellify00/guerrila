@@ -1,0 +1,24 @@
+{
+  "acceptance_pass": false,
+  "activity_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/launch0d_realtime_birth_decoder_activity_rows.jsonl"
+  ],
+  "activity_source_rows_seen": 662887,
+  "completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "decision_counts": {
+    "PARK_SELL_DERIVED_ONLY": 1
+  },
+  "eligible_completion_rows": 1,
+  "live_landed": 0,
+  "pre_migration_buy_resolved_rows": 0,
+  "resolved_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61c_pre_migration_buy_event_resolver/resolved_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61c_pre_migration_buy_event_resolver/rows.jsonl",
+  "status": "PARK_LAUNCH61C_BUY_EVENT_NOT_RESOLVED",
+  "stream_decode_failed_rows": 4,
+  "stream_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/laserstream_preprocessed_realtime/runls13_preprocessed_stream_rows.jsonl"
+  ],
+  "stream_source_rows_seen": 14,
+  "trade_events_seen": 63124,
+  "wire_send": 0
+}

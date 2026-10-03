@@ -1,0 +1,29 @@
+{
+  "coverage_ratio": 1.6,
+  "decoded_launches": 16,
+  "entry_quality_ready_rows": 2,
+  "global_launches_seen": 16,
+  "hot_executor_launches_seen": 57,
+  "hot_vs_decoded_coverage_ratio": 356.25,
+  "live_attempt_candidate_count": 2,
+  "live_landed": 0,
+  "miss_bucket_counts": {
+    "EVALUATED": 24,
+    "MISSED_ALT_UNRESOLVED": 0,
+    "MISSED_DECODE_FAILED": 0,
+    "MISSED_FILTER_TOO_NARROW": 16,
+    "MISSED_NOT_IN_SOURCE": 760,
+    "MISSED_NO_POOL_JOIN": 0,
+    "MISSED_NO_TRADE_HISTORY": 0,
+    "MISSED_UNSUPPORTED_PROGRAM": 188
+  },
+  "source_paths": {
+    "census_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0g_global_launch_birth_census_3600s_20260602T085354Z/launch0g_global_launch_birth_census_summary.json",
+    "gap_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0g_global_launch_birth_census_3600s_20260602T085354Z/launch0i_launch_decode_gap_report_summary.json",
+    "hot_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T084031Z/launch10_hot_stream_executor_summary.json"
+  },
+  "status": "COVERAGE_REPAIR_REQUIRED",
+  "top_miss_reason": "MISSED_NOT_IN_SOURCE",
+  "trigger_b_rows": 34,
+  "wire_send": 0
+}

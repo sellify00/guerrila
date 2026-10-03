@@ -1,0 +1,13 @@
+status=run66ct3_continuation_markout_risk_validation_complete
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ct2_resume5_after_cta_v2/run66ct2_continuation_execution_rule_rows.jsonl
+rows_seen=88
+markout_risk_ready_rows=0
+best_later_net_positive_rows=88
+max_adverse_excursion_bounded_rows=88
+same_direction_followthrough_positive_rows=88
+opposite_direction_absorption_not_toxic_rows=76
+decision_counts={"BLOCKED_ABSORPTION_TOXIC": 12, "none": 76}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

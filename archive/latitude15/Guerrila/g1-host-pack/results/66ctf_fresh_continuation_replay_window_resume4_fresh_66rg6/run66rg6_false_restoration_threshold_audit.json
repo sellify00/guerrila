@@ -1,0 +1,42 @@
+{
+  "counts": {
+    "actual_continuation_positive_rows": 95,
+    "actual_restoration_positive_rows": 75,
+    "actual_toxic_rows": 17,
+    "current_gate_pass_rows": 4,
+    "execution_ready_reopen_rebalancing_candidates": 0,
+    "execution_ready_rows": 0,
+    "looser_threshold_1_pass_rows": 11,
+    "looser_threshold_2_pass_rows": 11,
+    "rows_seen": 103,
+    "stricter_threshold_1_pass_rows": 1
+  },
+  "execution_ready_counts": {
+    "execution_ready_actual_continuation_positive_rows": 0,
+    "execution_ready_actual_restoration_positive_rows": 0,
+    "execution_ready_actual_toxic_rows": 0,
+    "execution_ready_current_gate_pass_rows": 0,
+    "execution_ready_looser_threshold_1_pass_rows": 0,
+    "execution_ready_looser_threshold_2_pass_rows": 0,
+    "execution_ready_rows": 0
+  },
+  "execution_ready_false_restoration_reason_counts": {},
+  "false_restoration_reason_counts": {
+    "none": 3,
+    "opposite_direction_absorption_toxic": 4,
+    "restoration_pressure_not_measured": 8,
+    "same_direction_continuation_pressure_too_high": 88
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "recommended_route_counts": {
+    "continuation_structural_certificate": 88,
+    "drop_flatten_saved_loss_analysis": 4,
+    "park_rebalancing": 11
+  },
+  "status": "PARK_FALSE_RESTORATION_CONFIRMED"
+}

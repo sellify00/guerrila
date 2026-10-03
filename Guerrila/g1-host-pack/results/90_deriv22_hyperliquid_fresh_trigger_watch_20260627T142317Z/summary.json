@@ -1,0 +1,30 @@
+{
+  "account_abstraction": "unifiedAccount",
+  "blocker_counts": {
+    "day_volume_below_floor": 455,
+    "entry_spread_too_wide": 1,
+    "fresh_trigger_below_floor": 219,
+    "none": 1
+  },
+  "decision_counts": {
+    "DERIV22_HYPERLIQUID_FRESH_TRIGGER_READY": 1,
+    "PARK_DERIV22_HYPERLIQUID_FRESH_TRIGGER": 675
+  },
+  "duration_seconds": 21600,
+  "exchange_submit_attempted": false,
+  "fresh_trigger_ready_rows": 1,
+  "fresh_trigger_rows": 676,
+  "live_landed": 0,
+  "no_wire": true,
+  "open_order_count": 0,
+  "open_position_count": 0,
+  "samples": 13,
+  "selected_side": "long",
+  "selected_source_net_after_orderbook_bps": 46.3956,
+  "selected_symbol": "PUMP",
+  "selected_trigger_change_bps": 82.5206,
+  "spot_usdc_available": 25.09419396,
+  "status": "DERIV22_HYPERLIQUID_FRESH_TRIGGER_READY",
+  "tiny_notional_usd": 25.0,
+  "wire_send": 0
+}

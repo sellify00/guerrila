@@ -1,0 +1,27 @@
+{
+  "core_funded_ev_positive_rows": 0,
+  "core_funded_exit_ready_rows": 0,
+  "core_funded_rows": 0,
+  "core_funded_usdc_input_rows": 0,
+  "core_funded_wsol_input_rows": 0,
+  "decision_counts": {
+    "BACKRUN_INVENTORY_UNWIND_INPUT_NOT_HELD": 6,
+    "BACKRUN_NO_FRESH_ROUTE": 8,
+    "BACKRUN_POLICY_BLOCKED": 1
+  },
+  "inventory_backrun_ev_positive_rows": 15,
+  "inventory_backrun_input_held_rows": 0,
+  "inventory_backrun_input_missing_rows": 6,
+  "inventory_backrun_rows": 15,
+  "live_landed": 0,
+  "projected_ev_positive_rows": 15,
+  "projected_rows_total": 15,
+  "pumpfun_amm_core_funded_rows": 0,
+  "pumpfun_amm_inventory_unwind_rows": 15,
+  "pumpfun_amm_rows": 15,
+  "rows_seen": 15,
+  "sendBundle_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebr2_preprocessed_backrun_executable_shape_filter/runlsprebr2_preprocessed_backrun_executable_shape_filter_rows.jsonl",
+  "status": "BACKRUN_NO_FRESH_ROUTE",
+  "wire_send": 0
+}

@@ -1,0 +1,19 @@
+{
+  "decision_counts": {},
+  "live_landed": 0,
+  "owner_pubkey": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "pumpfun_direct_current_account_ready_rows": 0,
+  "pumpfun_direct_hypothetical_only_rows": 0,
+  "pumpfun_direct_min_out_positive_rows": 0,
+  "pumpfun_direct_quote_available_rows": 0,
+  "pumpfun_direct_route_exists_rows": 0,
+  "pumpfun_direct_template_ready_rows": 0,
+  "pumpfun_direct_tx_buildable_rows": 0,
+  "rows_seen": 0,
+  "sendBundle_called": false,
+  "solders_error": "",
+  "solders_ready": true,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank04_rTZ2FZ4iQZJdyNDh1DBAeAgpU57Pww8AjDrCgxtGQ6E/inputs/prebr0_rows.jsonl",
+  "status": "PARK_PUMPFUN_DIRECT_ROUTE_NO_ROWS",
+  "wire_send": 0
+}

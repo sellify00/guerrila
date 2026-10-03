@@ -1,0 +1,48 @@
+{
+  "filters": [
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 790,
+      "positive_markout_after_reject_count": 426,
+      "positive_after_fee_after_reject_count": 771,
+      "false_negative_rate": 0.5392,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 1853229.0,
+      "p90_positive_markout_lamports": 2456681,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 101,
+      "positive_markout_after_reject_count": 47,
+      "positive_after_fee_after_reject_count": 47,
+      "false_negative_rate": 0.4653,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 2371356,
+      "p90_positive_markout_lamports": 2443153,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "output_account_not_ready",
+      "rejected_count": 180,
+      "positive_markout_after_reject_count": 102,
+      "positive_after_fee_after_reject_count": 168,
+      "false_negative_rate": 0.5667,
+      "best_owner_mode_after_reject": "housekeeping",
+      "median_positive_markout_lamports": 275676.0,
+      "p90_positive_markout_lamports": 443144,
+      "recommended_action": "Pre-create approved recurring output ATAs instead of treating missing ATA as no-opportunity."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 2386,
+      "positive_markout_after_reject_count": 1863,
+      "positive_after_fee_after_reject_count": 2334,
+      "false_negative_rate": 0.7808,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 330709,
+      "p90_positive_markout_lamports": 2404668,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

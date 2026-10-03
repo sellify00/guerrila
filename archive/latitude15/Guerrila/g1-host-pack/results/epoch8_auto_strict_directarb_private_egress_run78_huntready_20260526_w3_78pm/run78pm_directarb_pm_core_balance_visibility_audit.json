@@ -1,0 +1,23 @@
+{
+  "status": "blocked_no_autopsy_rows",
+  "source_steps": [
+    "epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w3"
+  ],
+  "inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "rpc_url": "https://rpc.example.invalid",
+  "signer_pubkey": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "inventory_slot": 422119700,
+  "chain_slot": 422120054,
+  "worker_signer_native_sol_balance_raw": 11643208899,
+  "pm_gate_layer": "pre_pm_snapshot_inventory_view",
+  "pm_blocker_classified_count": 0,
+  "unknown_pm_blocker_count": 0,
+  "pm_blocker_counts": {},
+  "autopsy_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w3_78a/rows.jsonl",
+  "size_ladder_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78s_pm_reserve_size_ladder/rows.jsonl",
+  "malformed_autopsy_rows": 0,
+  "malformed_size_ladder_rows": 0,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w3_78pm/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_huntready_20260526_w3_78pm/rows.csv"
+}

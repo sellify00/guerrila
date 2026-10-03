@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-05-21T19:47:55.225Z",
+  "targetUrl": "http://127.0.0.1:8789/?verify=reactive-delta-2",
+  "model": "gpt-5.2",
+  "rounds": [
+    {
+      "roundNumber": 1,
+      "roundDir": "C:\\Shadow Engine\\Guerrila\\frontend\\data\\ui-review\\round-01-2026-05-21T19-47-55-225Z",
+      "score": 72,
+      "majorIssues": 5,
+      "mediumIssues": 5,
+      "minorIssues": 4,
+      "changedFiles": 1,
+      "stopReason": ""
+    },
+    {
+      "roundNumber": 2,
+      "roundDir": "C:\\Shadow Engine\\Guerrila\\frontend\\data\\ui-review\\round-02-2026-05-21T19-48-27-311Z",
+      "score": 78,
+      "majorIssues": 3,
+      "mediumIssues": 5,
+      "minorIssues": 3,
+      "changedFiles": 1,
+      "stopReason": ""
+    },
+    {
+      "roundNumber": 3,
+      "roundDir": "C:\\Shadow Engine\\Guerrila\\frontend\\data\\ui-review\\round-03-2026-05-21T19-48-57-705Z",
+      "score": 7.8,
+      "majorIssues": 3,
+      "mediumIssues": 5,
+      "minorIssues": 3,
+      "changedFiles": 1,
+      "stopReason": ""
+    },
+    {
+      "roundNumber": 4,
+      "roundDir": "C:\\Shadow Engine\\Guerrila\\frontend\\data\\ui-review\\round-04-2026-05-21T19-49-28-525Z",
+      "score": 8.2,
+      "majorIssues": 3,
+      "mediumIssues": 4,
+      "minorIssues": 3,
+      "changedFiles": 1,
+      "stopReason": "max_rounds:4"
+    }
+  ],
+  "stopped": true,
+  "stopReason": "max_rounds:4",
+  "finishedAt": "2026-05-21T19:49:58.232Z"
+}

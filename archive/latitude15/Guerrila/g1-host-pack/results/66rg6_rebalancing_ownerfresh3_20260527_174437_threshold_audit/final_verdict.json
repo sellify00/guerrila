@@ -1,0 +1,40 @@
+{
+  "actual_continuation_positive_rows": 29,
+  "actual_restoration_positive_rows": 28,
+  "actual_toxic_rows": 18,
+  "current_gate_pass_rows": 0,
+  "execution_ready_actual_continuation_positive_rows": 6,
+  "execution_ready_actual_restoration_positive_rows": 6,
+  "execution_ready_actual_toxic_rows": 4,
+  "execution_ready_current_gate_pass_rows": 0,
+  "execution_ready_false_restoration_reason_counts": {
+    "same_direction_continuation_pressure_too_high": 6
+  },
+  "execution_ready_looser_threshold_1_pass_rows": 0,
+  "execution_ready_looser_threshold_2_pass_rows": 0,
+  "execution_ready_reopen_rebalancing_candidates": 0,
+  "execution_ready_rows": 6,
+  "false_restoration_reason_counts": {
+    "opposite_direction_absorption_toxic": 4,
+    "same_direction_continuation_pressure_too_high": 28
+  },
+  "final_verdict": "PARK_FALSE_RESTORATION_CONFIRMED",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "looser_threshold_1_pass_rows": 0,
+  "looser_threshold_2_pass_rows": 0,
+  "next_required_action": "route continuation-pressure rows to Continuation certificate and absorption-toxic rows to Drop/Flatten saved-loss audit",
+  "primary_blocker": "false_restoration_confirmed",
+  "proposal_path_open": false,
+  "recommended_route_counts": {
+    "continuation_structural_certificate": 28,
+    "drop_flatten_saved_loss_analysis": 4
+  },
+  "rows_seen": 32,
+  "stricter_threshold_1_pass_rows": 0
+}

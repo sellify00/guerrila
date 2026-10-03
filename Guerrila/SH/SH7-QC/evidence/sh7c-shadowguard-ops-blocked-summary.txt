@@ -1,0 +1,129 @@
+SH7-C ShadowGuard ops proof summary
+
+Status: blocked, fail-closed.
+
+Host checked:
+
+```text
+ubuntu@109.94.99.55
+```
+
+Initial blockers:
+
+```text
+/etc/shadow-engine/shadow-guard-deployer.json: missing
+solana CLI on PATH: missing
+shadow-guard-program source in repo: missing
+```
+
+Follow-up prep completed on `.55`:
+
+```text
+Solana CLI: installed and usable (solana-cli 3.1.14)
+Rust/cargo/cargo-build-sbf: installed and usable
+ShadowGuard deployer keypair: staged at /etc/shadow-engine/shadow-guard-deployer.json, owner=root:root mode=600
+ShadowGuard program keypair: staged at /etc/shadow-engine/shadow-guard-program-keypair.json, owner=root:root mode=600
+deployer_pubkey: CjwzLyZM3L5DmsieXsC3syYvA7RV9fsc3AeZgQBnyNas
+program_id: 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+```
+
+Original host config findings:
+
+```text
+/etc/shadow-engine/config.guerrila.yaml
+  execution.shadow_guard_program_id = 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
+  execution.guard_vault_in_pubkey = TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+  execution.guard_vault_out_pubkey = TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+  rollout.shadow_guard_program_id = null
+
+/etc/shadow-engine/config.g12-candidate.yaml
+  execution.shadow_guard_program_id = AddressLookupTab1e1111111111111111111111111
+  execution.guard_vault_in_pubkey = SysvarRent111111111111111111111111111111111
+  execution.guard_vault_out_pubkey = SysvarC1ock11111111111111111111111111111111
+  rollout.shadow_guard_program_id = null
+```
+
+Prepared host config now points both active configs at the generated ShadowGuard program ID
+and verified Raydium V4 token vault accounts:
+
+```text
+/etc/shadow-engine/config.guerrila.yaml
+  execution.shadow_guard_program_id = 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+  execution.guard_vault_in_pubkey = HAULecjkcF2GHGSQ566yRBuwRoHxH24YGZs1n6B3QpAG
+  execution.guard_vault_out_pubkey = 9mo6Dhx8RhrwNqxCBGcfqEZzmGPGr4hz1mfTdW8tpsq7
+  rollout.shadow_guard_program_id = 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+
+/etc/shadow-engine/config.g12-candidate.yaml
+  execution.shadow_guard_program_id = 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+  execution.guard_vault_in_pubkey = HAULecjkcF2GHGSQ566yRBuwRoHxH24YGZs1n6B3QpAG
+  execution.guard_vault_out_pubkey = 9mo6Dhx8RhrwNqxCBGcfqEZzmGPGr4hz1mfTdW8tpsq7
+  rollout.shadow_guard_program_id = 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+```
+
+Interpretation:
+
+```text
+shadow_guard_mainnet_deployed: false, program is not deployed
+shadow_guard_template_program_id_matches: true
+live_landed: remains 0 in latest SH7 artifacts
+promote_allowed: remains false
+```
+
+The current IDs are not acceptable ShadowGuard ops truth. The active config uses the Raydium swap
+program ID as `execution.shadow_guard_program_id`, while the candidate config uses the Address Lookup
+Table placeholder. The vault fields are also program/sysvar placeholders rather than proven guard
+vault accounts.
+
+Safety hardening added:
+
+```text
+g1-host-pack/scripts/21_shadowguard_preflight.sh now rejects:
+  - empty ShadowGuard program IDs
+  - GUard placeholder IDs
+  - Address Lookup Table placeholder IDs
+  - system/token/sysvar program IDs
+  - any ShadowGuard program ID equal to execution.swap_program_id
+  - known placeholder/program/sysvar guard vault accounts
+  - deployer keypairs with group/world-readable permissions
+```
+
+Latest hardened preflight host result:
+
+```text
+sudo env SHADOW_DEPLOYER_KEYPAIR_PATH=/etc/shadow-engine/shadow-guard-deployer.json \
+  SHADOW_GUARD_SMOKE_OK=0 \
+  SHADOW_RESULTS_DIR=/home/ubuntu/Guerrila/results \
+  bash g1-host-pack/scripts/21_shadowguard_preflight.sh
+
+[PASS] Deployer keypair is staged with restricted permissions: owner=root:root mode=600
+[FAIL] Deployer keypair does not show a positive SOL balance on mainnet
+[FAIL] ShadowGuard program is not discoverable on mainnet: 4TGmXBmHj7oB2tMBjnxCmQqorBLq8SGzrnLc7Gw6jV8Z
+[PASS] Jito and Harmonic templates reference the configured ShadowGuard program id
+[PASS] No AddressLookupTable placeholder appears in generated execution templates
+[PASS] Guard vault in account is discoverable
+[PASS] Guard vault out account is discoverable
+[FAIL] Set SHADOW_GUARD_SMOKE_OK=1 only after the guard abort/pass smoke succeeds on the configured vault layout
+preflight_exit=4
+```
+
+Prepared G12 gate export:
+
+```text
+shadow_guard_program_id_present=true
+shadow_guard_mainnet_deployed=false
+shadow_guard_template_program_id_matches=true
+live_landed=0
+promote_allowed=false
+all_gates_green=false
+```
+
+Required operator inputs before this can turn green:
+
+```text
+1. Fund deployer CjwzLyZM3L5DmsieXsC3syYvA7RV9fsc3AeZgQBnyNas on mainnet-beta; deploy attempt reported 0.16674072 SOL spend plus 0.00014 SOL fee, so use a safe margin such as 0.2 SOL.
+2. Deploy /home/ubuntu/Guerrila/programs/shadow-guard/target/deploy/shadow_guard.so with /etc/shadow-engine/shadow-guard-program-keypair.json, or provide verification evidence for an already deployed program ID.
+3. Run the guard abort/pass smoke on the configured vault layout, then set SHADOW_GUARD_SMOKE_OK=1 for the final preflight only.
+4. Export G12 gate input/report with shadow_guard_mainnet_deployed=true, shadow_guard_template_program_id_matches=true, live_landed=0, and promote_allowed=false.
+```
+
+Do not use this blocked status to start `r1_tiny`, SH6, or SH8.

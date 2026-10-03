@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-05-27T17:03:15.732Z",
+  "study_label": "hourly_persistence",
+  "iterations_captured": 5,
+  "interval_seconds": 15,
+  "candidate_pool_count": 5,
+  "same_rank_order_all_snapshots": true,
+  "fresh_data_observed": false,
+  "stable_pool_count": 5,
+  "unstable_pool_count": 0,
+  "stability_classification": "highly_consistent",
+  "snapshot_timeline": [
+    {
+      "snapshot_number": 1,
+      "captured_at": "2026-05-27T15:34:22.924Z",
+      "ranking_order": [
+        "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH"
+      ],
+      "top_pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD"
+    },
+    {
+      "snapshot_number": 2,
+      "captured_at": "2026-05-27T15:34:44.483Z",
+      "ranking_order": [
+        "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH"
+      ],
+      "top_pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD"
+    },
+    {
+      "snapshot_number": 3,
+      "captured_at": "2026-05-27T15:35:06.665Z",
+      "ranking_order": [
+        "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH"
+      ],
+      "top_pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD"
+    },
+    {
+      "snapshot_number": 4,
+      "captured_at": "2026-05-27T16:49:27.982Z",
+      "ranking_order": [
+        "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH"
+      ],
+      "top_pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD"
+    },
+    {
+      "snapshot_number": 5,
+      "captured_at": "2026-05-27T17:03:07.486Z",
+      "ranking_order": [
+        "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+        "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+        "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+        "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+        "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH"
+      ],
+      "top_pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD"
+    }
+  ],
+  "pools": [
+    {
+      "pool": "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+      "pair": "VpsXGqBL9MDKvbvM3EMKAeCmDJ8NZtm2yKP31FeCba5/WSOL",
+      "baseline_rank": 1,
+      "snapshot_count": 5,
+      "avg_rank": 2,
+      "rank_stddev": 0,
+      "rank_range": 0,
+      "top1_hits": 0,
+      "top3_hits": 5,
+      "best_side_mode": "buy",
+      "best_side_unique": [
+        "buy"
+      ],
+      "best_side_flips": 0,
+      "live_score_avg": 2.8748,
+      "live_score_range": 0,
+      "deployable_score_avg": 3.0488,
+      "deployable_score_range": 0,
+      "same_direction_rate_avg": 0.8182,
+      "same_direction_rate_range": 0,
+      "price_continuation_rate_avg": 0.4545,
+      "price_continuation_rate_range": 0,
+      "majority_rate_avg": 0.9091,
+      "majority_rate_range": 0,
+      "latest_timestamp_unique_count": 1,
+      "stability": "stable"
+    },
+    {
+      "pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+      "pair": "Ct27RqiKyV7EUPfeystWDMxHXqq8Qy1xRKXBgyUHXeJT/WSOL",
+      "baseline_rank": 2,
+      "snapshot_count": 5,
+      "avg_rank": 1,
+      "rank_stddev": 0,
+      "rank_range": 0,
+      "top1_hits": 5,
+      "top3_hits": 5,
+      "best_side_mode": "sell",
+      "best_side_unique": [
+        "sell"
+      ],
+      "best_side_flips": 0,
+      "live_score_avg": 2.766,
+      "live_score_range": 0,
+      "deployable_score_avg": 3.0585,
+      "deployable_score_range": 0,
+      "same_direction_rate_avg": 0.8889,
+      "same_direction_rate_range": 0,
+      "price_continuation_rate_avg": 0.5556,
+      "price_continuation_rate_range": 0,
+      "majority_rate_avg": 0.7778,
+      "majority_rate_range": 0,
+      "latest_timestamp_unique_count": 1,
+      "stability": "stable"
+    },
+    {
+      "pool": "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+      "pair": "A4Fmyh6x9Bo2GNcKSqEc8X72v4MtsUw2JwAqnt2ts1LY/WSOL",
+      "baseline_rank": 3,
+      "snapshot_count": 5,
+      "avg_rank": 3,
+      "rank_stddev": 0,
+      "rank_range": 0,
+      "top1_hits": 0,
+      "top3_hits": 5,
+      "best_side_mode": "buy",
+      "best_side_unique": [
+        "buy"
+      ],
+      "best_side_flips": 0,
+      "live_score_avg": 2.3501,
+      "live_score_range": 0,
+      "deployable_score_avg": 2.7117,
+      "deployable_score_range": 0,
+      "same_direction_rate_avg": 0.75,
+      "same_direction_rate_range": 0,
+      "price_continuation_rate_avg": 0.5833,
+      "price_continuation_rate_range": 0,
+      "majority_rate_avg": 0.5833,
+      "majority_rate_range": 0,
+      "latest_timestamp_unique_count": 1,
+      "stability": "stable"
+    },
+    {
+      "pool": "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+      "pair": "6A63uzxVoPkW8HCb6divQRtB5SdPvngAyuwPXuStW8cW/WSOL",
+      "baseline_rank": 4,
+      "snapshot_count": 5,
+      "avg_rank": 4,
+      "rank_stddev": 0,
+      "rank_range": 0,
+      "top1_hits": 0,
+      "top3_hits": 0,
+      "best_side_mode": "buy",
+      "best_side_unique": [
+        "buy"
+      ],
+      "best_side_flips": 0,
+      "live_score_avg": 2.4064,
+      "live_score_range": 0,
+      "deployable_score_avg": 2.6678,
+      "deployable_score_range": 0,
+      "same_direction_rate_avg": 0.3333,
+      "same_direction_rate_range": 0,
+      "price_continuation_rate_avg": 0.8333,
+      "price_continuation_rate_range": 0,
+      "majority_rate_avg": 0.6667,
+      "majority_rate_range": 0,
+      "latest_timestamp_unique_count": 1,
+      "stability": "stable"
+    },
+    {
+      "pool": "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+      "pair": "BD35dqMdcmy5cfU9iTXjFuc569dyTPiNHKqWDXZx98wn/WSOL",
+      "baseline_rank": 5,
+      "snapshot_count": 5,
+      "avg_rank": 5,
+      "rank_stddev": 0,
+      "rank_range": 0,
+      "top1_hits": 0,
+      "top3_hits": 0,
+      "best_side_mode": "buy",
+      "best_side_unique": [
+        "buy"
+      ],
+      "best_side_flips": 0,
+      "live_score_avg": 1.1595,
+      "live_score_range": 0,
+      "deployable_score_avg": 1.5867,
+      "deployable_score_range": 0,
+      "same_direction_rate_avg": 0.5,
+      "same_direction_rate_range": 0,
+      "price_continuation_rate_avg": 0.25,
+      "price_continuation_rate_range": 0,
+      "majority_rate_avg": 0,
+      "majority_rate_range": 0,
+      "latest_timestamp_unique_count": 1,
+      "stability": "stable"
+    }
+  ]
+}

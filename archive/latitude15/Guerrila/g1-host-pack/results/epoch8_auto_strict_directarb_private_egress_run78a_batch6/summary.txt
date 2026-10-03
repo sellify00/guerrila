@@ -1,0 +1,16 @@
+status=run78a_complete
+afxdp_directarb_row_count=17
+pm_failed_near_miss_count=10
+ev_not_positive_count=4
+ev_math_unavailable_count=2
+quote_numeric_missing_count=1
+first_failed_counts={"pm_reserve_can_lock_exact_input":10,"ev_math_unavailable":2,"ev_not_positive":4,"quote_numeric_missing":1}
+pm_reserve_blocker_counts={"wrong_token_account_or_zero_balance":17}
+input_account_resolution_blocker_counts={"none":17}
+ev_math_blocker_counts={"none":10,"unsupported_non_wsol_pair":3,"ev_not_positive":4}
+quote_blocker_counts={"none":16,"quote_numeric_missing":1}
+private_route_ev_proof_status_counts={"owner_mode_mismatch_shadow_only":17}
+malformed_rejection_rows=0
+malformed_shock_rows=1
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78a_batch6/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78a_batch6/rows.csv

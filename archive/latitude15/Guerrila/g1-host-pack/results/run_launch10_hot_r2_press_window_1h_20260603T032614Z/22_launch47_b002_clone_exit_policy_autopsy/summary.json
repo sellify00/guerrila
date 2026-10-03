@@ -1,0 +1,14 @@
+{
+  "attempt_rows": 20,
+  "exit_reason_counts": {
+    "EXIT_PRE_ARM_WEAK_TIMEOUT": 1,
+    "EXIT_QUOTE_WEAKENING": 7,
+    "not_triggered": 12
+  },
+  "quote_weakening_attempts": 7,
+  "quote_weakening_forward_markout_available_count": 0,
+  "quote_weakening_zero_quote_count": 0,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T032614Z",
+  "status": "LAUNCH47_B002_EXIT_POLICY_AUTOPSY_COMPLETE",
+  "total_pnl_after_rent_recovery": -4393419
+}

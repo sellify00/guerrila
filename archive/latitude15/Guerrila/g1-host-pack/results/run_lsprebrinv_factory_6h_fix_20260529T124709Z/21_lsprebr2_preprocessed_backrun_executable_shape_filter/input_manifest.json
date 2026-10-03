@@ -1,0 +1,10 @@
+{
+  "input_mode": "all",
+  "live_send": false,
+  "quote_api_url": "https://lite-api.jup.ag/swap/v1/quote",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebr2_preprocessed_backrun_executable_shape_filter",
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "signer_staged": true,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_candidate_factory/projection_merged/runlsprebr0_projection_quote_all_rows.jsonl"
+}

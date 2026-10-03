@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shadow Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=shutdown-ripple-1">
+  </head>
+  <body>
+    <main class="pipeline-only">
+      <header class="pipeline-topbar">
+        <div>
+          <span class="eyebrow">Shadow Console</span>
+          <h1>Shadow Runtime</h1>
+          <span id="topbar-runtime-summary" class="topbar-runtime-summary">Host .15 checking · No-Send</span>
+        </div>
+        <div class="operator-chips" aria-label="Runtime status">
+          <span id="runtime-live-dot" class="operator-chip ok">LIVE</span>
+          <span id="capital-topline" class="operator-chip money">Capital loading</span>
+          <span id="runtime-clock" class="operator-chip">--:--:--</span>
+          <span id="live-cadence" class="operator-chip">connecting</span>
+        </div>
+      </header>
+
+      <section id="pipeline" class="pipeline-panel pipeline-focus">
+        <div id="pipeline-graphs" class="graph-workspace">
+          <div class="graph-window">
+            <div class="graph-window-head">
+              <div class="graph-window-title">
+                <strong>Canonical Flow</strong>
+              </div>
+              <div class="graph-window-controls">
+                <div class="mode-tabs" aria-label="Graph overlay mode">
+                  <button class="mode-tab active" type="button" data-mode="runtime">Runtime</button>
+                  <button class="mode-tab" type="button" data-mode="latency">Latency</button>
+                  <button class="mode-tab" type="button" data-mode="economics">Economics</button>
+                  <button class="mode-tab" type="button" data-mode="health">Health</button>
+                  <button class="mode-tab" type="button" data-mode="proof">Proof</button>
+                  <button class="mode-tab" type="button" data-mode="topology">Topology</button>
+                </div>
+                <span id="graph-window-state" class="graph-mode-chip">Fit</span>
+                <button id="graph-zoom-out" class="graph-icon-button" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+                <span id="graph-zoom-readout" class="graph-zoom-readout">100%</span>
+                <button id="graph-zoom-in" class="graph-icon-button" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+                <button id="graph-reset-view" class="graph-icon-button" type="button" aria-label="Reset graph view" title="Reset view">↺</button>
+              </div>
+            </div>
+            <div id="pipeline-graph-viewport" class="graph-viewport" tabindex="0" aria-label="Zoomable live Shadow runtime graph window">
+              <div id="pipeline-graph" class="graph-board" role="img" aria-label="Live 2D Shadow runtime graph">
+                <div id="lane-layer" class="lane-layer" aria-hidden="true"></div>
+                <div id="ripple-layer" class="ripple-layer" aria-hidden="true"></div>
+                <svg id="edge-layer" class="edge-layer" viewBox="0 0 1420 680" aria-hidden="true"></svg>
+                <div id="node-layer" class="node-layer"></div>
+              </div>
+            </div>
+            <div class="timeline-strip" aria-label="Runtime event timeline">
+              <div class="timeline-head">
+                <small>Event strip</small>
+                <strong id="timeline-summary">Waiting for host samples</strong>
+              </div>
+              <div id="event-timeline" class="event-timeline">
+                <div class="timeline-item empty">Live graph events will appear here</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="graph-inspector" aria-label="Pipeline live inspector">
+            <div id="node-inspector" class="graph-stat node-inspector tone-off" aria-live="polite">
+              <div class="node-inspector-head">
+                <small id="node-inspector-phase">Pipeline stage</small>
+                <strong id="node-inspector-title">Wire</strong>
+                <span id="node-inspector-status">checking</span>
+              </div>
+              <p id="node-inspector-role">Network packet intake for the public Agave wire path.</p>
+              <div id="node-inspector-flow" class="node-flow"></div>
+              <div id="node-inspector-metrics" class="node-metrics"></div>
+            </div>
+            <div id="capital-hud" class="graph-stat capital-hud" aria-label="Wallet capital">
+              <button id="capital-toggle" class="capital-toggle" type="button" aria-expanded="false" aria-controls="capital-dropdown">
+                <span>
+                  <small>Capital</small>
+                  <strong id="capital-primary">Loading</strong>
+                </span>
+                <em id="capital-count">Reading</em>
+              </button>
+              <div id="capital-dropdown" class="capital-dropdown">
+                <div id="capital-list" class="capital-list">
+                  <div class="capital-item loading">
+                    <span>Wallet</span>
+                    <strong>Loading</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="graph-stat">
+              <small>Runtime</small>
+              <strong id="graph-summary">Initializing graph</strong>
+              <span id="graph-subsummary">Waiting for .15 stream</span>
+            </div>
+            <details id="host-pulse" class="graph-stat host-pulse inspector-host-pulse" aria-live="polite" aria-label="Host pulse telemetry">
+              <summary class="host-pulse-head">
+                <small>Host Pulse</small>
+                <strong id="host-pulse-summary">Waiting for .15</strong>
+              </summary>
+              <div id="host-pulse-rows" class="host-pulse-rows">
+                <div class="host-pulse-row tone-idle">
+                  <span>--:--:--</span>
+                  <strong>Connecting</strong>
+                  <em>reading host evidence</em>
+                </div>
+              </div>
+            </details>
+            <div class="graph-stat">
+              <small>Moving Handoffs</small>
+              <div id="handoff-list" class="graph-list">
+                <div class="graph-list-row empty">No live handoffs yet</div>
+              </div>
+            </div>
+            <div class="graph-stat">
+              <small>Idle / Stopped</small>
+              <div id="gate-list" class="graph-list">
+                <div class="graph-list-row empty">Reading gates</div>
+              </div>
+            </div>
+            <details class="graph-stat dev-tools">
+              <summary>Dev Tools</summary>
+              <div class="dev-tools-body">
+                <span id="ui-review-pill" class="status-token">UI review idle</span>
+                <button id="ui-review-run" type="button" class="ui-review-button">Run UI review loop</button>
+                <small>Frontend Review</small>
+                <strong id="ui-review-status-title">One-click loop ready</strong>
+                <span id="ui-review-status-detail">Captures beta, asks the reviewer, applies frontend-only edits, and stops on the configured threshold.</span>
+                <div class="ui-review-meta">
+                  <span id="ui-review-meta-model">Model unknown</span>
+                  <span id="ui-review-meta-last">No run yet</span>
+                </div>
+              </div>
+            </details>
+          </aside>
+        </div>
+
+        <div class="pipeline-details compact-details">
+          <div><small>Host</small><strong id="host-target">ubuntu@109.94.99.15</strong></div>
+          <div><small>eno1</small><strong id="eno1-owner">checking</strong></div>
+          <div><small>Blocker</small><strong id="latest-blocker">loading</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js?v=shutdown-ripple-1"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "avg_net_after_orderbook_bps": 43.0725,
+  "best_candidate_net_after_orderbook_bps": 56.4187,
+  "best_candidate_side": "short",
+  "best_candidate_symbol": "CRV",
+  "blocker_counts": {
+    "forward_net_after_orderbook_below_floor": 42,
+    "none": 2
+  },
+  "closed_attempt_rows": 44,
+  "decision_counts": {
+    "DERIV_FORWARD_ORDERBOOK_READY": 2,
+    "PARK_DERIV_FORWARD_ORDERBOOK": 42
+  },
+  "duration_seconds": 900,
+  "forward_orderbook_ready_rows": 2,
+  "live_landed": 0,
+  "min_net_after_orderbook_bps": 29.7264,
+  "no_wire": true,
+  "notional_usd": 25.0,
+  "samples": 164,
+  "status": "DERIV_FORWARD_ORDERBOOK_READY",
+  "trigger_attempt_accepted_rows": 44,
+  "trigger_attempt_rows": 56,
+  "trigger_blocker_counts": {
+    "entry_spread_too_wide": 12,
+    "none": 44
+  },
+  "wire_send": 0
+}

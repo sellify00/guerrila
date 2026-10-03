@@ -1,0 +1,439 @@
+{
+  "generatedAt": "2026-05-29T13:02:59.321Z",
+  "method": {
+    "venue": "PumpSwap / PUMP_AMM via Helius enhanced transactions",
+    "recentPages": 4,
+    "poolLimit": 30,
+    "historyPages": 12,
+    "maxAgeSeconds": 3600,
+    "earlyTrades": 20,
+    "windowSeconds": 60,
+    "epsilonReturn": 0.0025,
+    "priceDefinition": "SOL moved by pool divided by non-WSOL token moved by pool per swap"
+  },
+  "scannedProgramSwaps": 59,
+  "uniquePoolsSeen": 27,
+  "sampledLaunchPools": 7,
+  "skippedCount": 20,
+  "rates": {
+    "priceEverUpRate": 0.5714,
+    "nextUpRate": 0,
+    "endsUpRate": 0.4286
+  },
+  "returnsPct": {
+    "next": {
+      "n": 7,
+      "p25": -2.34,
+      "median": -0.47,
+      "p75": -0.04
+    },
+    "peak": {
+      "n": 7,
+      "p25": 0.01,
+      "median": 2.7,
+      "p75": 24.535
+    },
+    "last": {
+      "n": 7,
+      "p25": -0.01,
+      "median": 0.02,
+      "p75": 18.39
+    },
+    "trough": {
+      "n": 7,
+      "p25": -5.845,
+      "median": -0.5,
+      "p75": -0.435
+    }
+  },
+  "positiveStepShare": {
+    "n": 7,
+    "p25": 0.26315,
+    "median": 0.3684,
+    "p75": 0.42105
+  },
+  "buyShareWindow": {
+    "n": 7,
+    "p25": 0.63335,
+    "median": 0.85,
+    "p75": 0.8875
+  },
+  "examples": [
+    {
+      "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+      "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+      "ageSecondsAtScan": 146,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 99.361912387,
+      "nextReturnPct": -46.4,
+      "peakReturnPct": 44.09,
+      "lastReturnPct": 44.09,
+      "troughReturnPct": -78.73,
+      "secondsToPeak": 7
+    },
+    {
+      "pool": "F6Ew1GNuAL1iSiAaqC6ivjdsztmVpCHQiLpagccew7fM",
+      "mint": "FVqR4yAre1kpwcsUZ9RNzgkRw4EDVuo5pPH4vgX3Tv1",
+      "ageSecondsAtScan": 82,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.000064999,
+      "nextReturnPct": 0,
+      "peakReturnPct": 40.44,
+      "lastReturnPct": 35.57,
+      "troughReturnPct": -0.5,
+      "secondsToPeak": 33
+    },
+    {
+      "pool": "2pTr8mCzK1P7LLnHVeYRXJZXpaBH2Soo27FPXxntDSta",
+      "mint": "JCeibekvryvCzfN9eK7WKgRZ7dSg15UacL7fUspZpump",
+      "ageSecondsAtScan": 314,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.7927824,
+      "nextReturnPct": -1.46,
+      "peakReturnPct": 8.63,
+      "lastReturnPct": -4.68,
+      "troughReturnPct": -8.47,
+      "secondsToPeak": 8
+    },
+    {
+      "pool": "E8exfT5cLv3fhCoCgNNeUKX5mSn7EfyrpXQPSTbWyqng",
+      "mint": "7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7",
+      "ageSecondsAtScan": 20,
+      "tradeCountWindow": 20,
+      "firstSide": "sell",
+      "firstSolAmount": 0.701429235,
+      "nextReturnPct": -0.08,
+      "peakReturnPct": 2.7,
+      "lastReturnPct": 1.21,
+      "troughReturnPct": -0.09,
+      "secondsToPeak": 5
+    },
+    {
+      "pool": "3rxsHxg8TuM7751HB2qXJQLSn9mxzMWEPwBk3df7c3g3",
+      "mint": "7MzgA7iaJGoZj5oMmVtsghUGCnEpjmeLDnmWYbSnY3Wz",
+      "ageSecondsAtScan": 201,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.00002,
+      "nextReturnPct": -3.22,
+      "peakReturnPct": 0.02,
+      "lastReturnPct": 0.02,
+      "troughReturnPct": -3.22,
+      "secondsToPeak": 7
+    },
+    {
+      "pool": "UvN1ZVZJom7D4CPuhjJrbD6y82k5TSefRQMZHHXjjfM",
+      "mint": "3x6apzqJKgf33zet8CbkAx7LogqkRhNX6FiRzVA5pump",
+      "ageSecondsAtScan": -47,
+      "tradeCountWindow": 8,
+      "firstSide": "buy",
+      "firstSolAmount": 0.000126365,
+      "nextReturnPct": 0,
+      "peakReturnPct": 0,
+      "lastReturnPct": 0,
+      "troughReturnPct": -0.4,
+      "secondsToPeak": 29
+    },
+    {
+      "pool": "2EEwxk8fVBy3khquUYp886tHvSuSvFFq6Mhg9n5rSrm1",
+      "mint": "4TWm7LhQo9VLTHNrNFRBH8Wi7AhLiJudz1NxLP2EXaft",
+      "ageSecondsAtScan": 1,
+      "tradeCountWindow": 3,
+      "firstSide": "buy",
+      "firstSolAmount": 0.992079207,
+      "nextReturnPct": -0.47,
+      "peakReturnPct": 0,
+      "lastReturnPct": -0.02,
+      "troughReturnPct": -0.47,
+      "secondsToPeak": 0
+    }
+  ],
+  "analyses": [
+    {
+      "pool": "2EEwxk8fVBy3khquUYp886tHvSuSvFFq6Mhg9n5rSrm1",
+      "mint": "4TWm7LhQo9VLTHNrNFRBH8Wi7AhLiJudz1NxLP2EXaft",
+      "firstTimestamp": 1780059446,
+      "firstSlot": 422942746,
+      "tradeCountObserved": 3,
+      "tradeCountWindow": 3,
+      "firstSide": "buy",
+      "firstSolAmount": 0.992079207,
+      "buyShareWindow": 0.6667,
+      "p0Sol": 0.0000049800970360499925,
+      "nextReturn": -0.0047399252592127405,
+      "peakReturn": 0,
+      "lastReturn": -0.00019372746964640974,
+      "troughReturn": -0.0047399252592127405,
+      "priceEverUp": false,
+      "nextUp": false,
+      "endsUp": false,
+      "peakTradeIndex": 0,
+      "secondsToPeak": 0,
+      "positiveStepShare": 0.5,
+      "ageSecondsAtScan": 1
+    },
+    {
+      "pool": "2pTr8mCzK1P7LLnHVeYRXJZXpaBH2Soo27FPXxntDSta",
+      "mint": "JCeibekvryvCzfN9eK7WKgRZ7dSg15UacL7fUspZpump",
+      "firstTimestamp": 1780059133,
+      "firstSlot": 422941962,
+      "tradeCountObserved": 190,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.7927824,
+      "buyShareWindow": 0.6,
+      "p0Sol": 0.0000025419893894058596,
+      "nextReturn": -0.014571374279501947,
+      "peakReturn": 0.08629227972458553,
+      "lastReturn": -0.04680768152395953,
+      "troughReturn": -0.08467429474194421,
+      "priceEverUp": true,
+      "nextUp": false,
+      "endsUp": false,
+      "peakTradeIndex": 5,
+      "secondsToPeak": 8,
+      "positiveStepShare": 0.4737,
+      "ageSecondsAtScan": 314
+    },
+    {
+      "pool": "3rxsHxg8TuM7751HB2qXJQLSn9mxzMWEPwBk3df7c3g3",
+      "mint": "7MzgA7iaJGoZj5oMmVtsghUGCnEpjmeLDnmWYbSnY3Wz",
+      "firstTimestamp": 1780059246,
+      "firstSlot": 422942239,
+      "tradeCountObserved": 787,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.00002,
+      "buyShareWindow": 0.9,
+      "p0Sol": 6.422189125827351e-7,
+      "nextReturn": -0.03217754582997401,
+      "peakReturn": 0.00017764958887056537,
+      "lastReturn": 0.00017764958887056537,
+      "troughReturn": -0.03217754582997401,
+      "priceEverUp": false,
+      "nextUp": false,
+      "endsUp": false,
+      "peakTradeIndex": 19,
+      "secondsToPeak": 7,
+      "positiveStepShare": 0.1579,
+      "ageSecondsAtScan": 201
+    },
+    {
+      "pool": "F6Ew1GNuAL1iSiAaqC6ivjdsztmVpCHQiLpagccew7fM",
+      "mint": "FVqR4yAre1kpwcsUZ9RNzgkRw4EDVuo5pPH4vgX3Tv1",
+      "firstTimestamp": 1780059365,
+      "firstSlot": 422942544,
+      "tradeCountObserved": 75,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 0.000064999,
+      "buyShareWindow": 0.85,
+      "p0Sol": 3.0075194649538707e-7,
+      "nextReturn": 3.192564435039458e-7,
+      "peakReturn": 0.40444914424441647,
+      "lastReturn": 0.3556910272891711,
+      "troughReturn": -0.004955627593726364,
+      "priceEverUp": true,
+      "nextUp": false,
+      "endsUp": true,
+      "peakTradeIndex": 15,
+      "secondsToPeak": 33,
+      "positiveStepShare": 0.3684,
+      "ageSecondsAtScan": 82
+    },
+    {
+      "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+      "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+      "firstTimestamp": 1780059301,
+      "firstSlot": 422942380,
+      "tradeCountObserved": 1029,
+      "tradeCountWindow": 20,
+      "firstSide": "buy",
+      "firstSolAmount": 99.361912387,
+      "buyShareWindow": 1,
+      "p0Sol": 0.0000010786048156499878,
+      "nextReturn": -0.4640075928820815,
+      "peakReturn": 0.4409431426478918,
+      "lastReturn": 0.4409431426478918,
+      "troughReturn": -0.787255515168152,
+      "priceEverUp": true,
+      "nextUp": false,
+      "endsUp": true,
+      "peakTradeIndex": 19,
+      "secondsToPeak": 7,
+      "positiveStepShare": 0.3684,
+      "ageSecondsAtScan": 146
+    },
+    {
+      "pool": "UvN1ZVZJom7D4CPuhjJrbD6y82k5TSefRQMZHHXjjfM",
+      "mint": "3x6apzqJKgf33zet8CbkAx7LogqkRhNX6FiRzVA5pump",
+      "firstTimestamp": 1780059494,
+      "firstSlot": 422942871,
+      "tradeCountObserved": 29,
+      "tradeCountWindow": 8,
+      "firstSide": "buy",
+      "firstSolAmount": 0.000126365,
+      "buyShareWindow": 0.875,
+      "p0Sol": 0.0000024891997608366867,
+      "nextReturn": 9.652269694626625e-7,
+      "peakReturn": 0.0000028759878942796746,
+      "lastReturn": -0.0000012016064810937976,
+      "troughReturn": -0.004000101696444824,
+      "priceEverUp": false,
+      "nextUp": false,
+      "endsUp": false,
+      "peakTradeIndex": 3,
+      "secondsToPeak": 29,
+      "positiveStepShare": 0.1429,
+      "ageSecondsAtScan": -47
+    },
+    {
+      "pool": "E8exfT5cLv3fhCoCgNNeUKX5mSn7EfyrpXQPSTbWyqng",
+      "mint": "7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7",
+      "firstTimestamp": 1780059427,
+      "firstSlot": 422942701,
+      "tradeCountObserved": 99,
+      "tradeCountWindow": 20,
+      "firstSide": "sell",
+      "firstSolAmount": 0.701429235,
+      "buyShareWindow": 0.5,
+      "p0Sol": 3.434408589127938e-7,
+      "nextReturn": -0.0008291875969430595,
+      "peakReturn": 0.02698639350045262,
+      "lastReturn": 0.01208751993956203,
+      "troughReturn": -0.0009466003563031178,
+      "priceEverUp": true,
+      "nextUp": false,
+      "endsUp": true,
+      "peakTradeIndex": 8,
+      "secondsToPeak": 5,
+      "positiveStepShare": 0.3684,
+      "ageSecondsAtScan": 20
+    }
+  ],
+  "skipped": [
+    {
+      "pool": "EpGTN6zai72NUG4fA2JUFaGsfnoyoPK5rca6ouKp2i5N",
+      "mint": "3BmfmP7UY6LxoW7ibkDCXhzkzkARpCgr3Sk6KHc9pump",
+      "reason": "history_truncated",
+      "rows": 1174
+    },
+    {
+      "pool": "6TRxaToXc8iUfmWmCfyspky9eo8kbct2jRgr91kLC8iU",
+      "mint": "E5mKE9BNkvfQv2JV1n9oQqZi9KM1jqr7axHRnaPMAryc",
+      "reason": "history_truncated",
+      "rows": 1199
+    },
+    {
+      "pool": "5eyeqGGQ3DqCTkSDvNbVHonqdZ3sXFxfpS5x2niUpE6p",
+      "mint": "858f9gnEmT8obRrsG16PrGosCfGavXuLMHAszfKGqd5v",
+      "reason": "history_truncated",
+      "rows": 1198
+    },
+    {
+      "pool": "5uBdmxvEzFGBHHd2d6RMAWcpyrnZSbkDFhQmmjsW1Tha",
+      "mint": "25bAFAH1s7NtJxpNi154PDqVfaR6jGFkgonhtTfY9FCQ",
+      "reason": "history_truncated",
+      "rows": 1198
+    },
+    {
+      "pool": "HJdiQwzibJ6ru1gXeJ547gFgK92WKj79MUoEtB5QSsaU",
+      "mint": "Cnggiv4y9U8UzXWK1EJcPuS7ATbh6kmdbY5CZ2sxL2gd",
+      "reason": "history_truncated",
+      "rows": 1198
+    },
+    {
+      "pool": "FTb2THX36RrP1QCgBcBcCFh9ertZoHtH9Zg4KxQnUNnk",
+      "mint": "5oSMBJVjnhXL9eEvgtwxAMDPHVr9hboyhjCduQ4YrrUB",
+      "reason": "history_truncated",
+      "rows": 1198
+    },
+    {
+      "pool": "AWUwrtFm1WurKnJXKg4RmSdMUEFCEXYUes3XQvA5n4ZP",
+      "mint": "GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7",
+      "reason": "history_truncated",
+      "rows": 1198
+    },
+    {
+      "pool": "CAJ6m6ZtRCqEzJZA6SHTZ22BJeD65GafqMtDXkbdzq6h",
+      "mint": "8kZ1T1WjKXkVxTHRGdErCtYAYu7wBBYSPGkZf1MtXnKj",
+      "reason": "history_truncated",
+      "rows": 1200
+    },
+    {
+      "pool": "gJqZTfAdmQ5AKCGKHNCZ3T6mzh1RjE2Y3KKidRAcN6V",
+      "mint": "EbriKeDtgmVeKYYz9ZsHtLqZ6vGHJzKpBn5xbbiU4P6F",
+      "reason": "history_truncated",
+      "rows": 1199
+    },
+    {
+      "pool": "BhpV1imuXfB3tNAN4xgLd6vt3Pe5JcEFdQCYwxgW5xpi",
+      "mint": "FnvGrAKKGbtrn5bPsw7s6Po7wayvg3bbEC3BL4P9nTpX",
+      "reason": "history_truncated",
+      "rows": 1195
+    },
+    {
+      "pool": "3DM2vMEvoGiHecbHaFNpjPcTfeywji62go7zaNaYtaPj",
+      "mint": "AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7",
+      "reason": "history_truncated",
+      "rows": 1189
+    },
+    {
+      "pool": "8nzxAFETBtDWKBDyCw4C2aah5Lc72aSG9SmbGZyiAQzK",
+      "mint": "5kGz1qAV2C9f1zE5nBGZJJRDKNHm31QZGC7Ngm51YvZQ",
+      "reason": "history_truncated",
+      "rows": 1200
+    },
+    {
+      "pool": "ATbKxb3Qy3uCocrKDVkZu7sxSfdCnmVUJcigYSi3GMTn",
+      "mint": "GxeZxiEa57v4Yig3ui2a7SjT6oPyNKmcemWFJjKZFAbT",
+      "reason": "history_truncated",
+      "rows": 1192
+    },
+    {
+      "pool": "C9TrpFq7Hs16dE9G4dKpfYyJ6fuSBdDvm3Lsb8BeARNW",
+      "mint": "6NQCpPy7ajng7orRidH8vCUCM9ARxmFZxfAtBvnSyCdM",
+      "reason": "history_truncated",
+      "rows": 1193
+    },
+    {
+      "pool": "9rMP1QS15A9SphSGhJhMztVHnpb9pF9ReP9WCBGMGDUE",
+      "mint": "2TaMw56MVJWZ5WKGKBUQCWFVMsPWcsxu7DCQiMJPcDZB",
+      "reason": "history_truncated",
+      "rows": 1197
+    },
+    {
+      "pool": "42KJStp7uD97K16cE7JLznTRsBQnqhrYsGdfApJUmSGV",
+      "mint": "9Bc8jRytmJgGamzpLgvay2ZgSFRaaRXh1rGotokdN1cQ",
+      "reason": "history_truncated",
+      "rows": 1195
+    },
+    {
+      "pool": "AFgVEksRupVwGBMgQdpwJmFQT7urUu2GCiusLsq2mxTv",
+      "mint": "DuNcZXfWLnL54gxLUYbughME1nb5n3YZqrwFnAtegj41",
+      "reason": "history_truncated",
+      "rows": 1197
+    },
+    {
+      "pool": "8axFVmp1pmMTZ12pseKGBQUSVU2RZUNftSvkZjnc8tqc",
+      "mint": "6SUgqruzj8LcHa3JiHqB33YucUvFW9hqw7PREGPPH2jZ",
+      "reason": "history_truncated",
+      "rows": 1199
+    },
+    {
+      "pool": "Ay57rDtQCD2v9Cm6bZ4EuhiQmUt6R6c9Np1fXo4ghhXc",
+      "mint": "5itjmRta3yggctn6hyUebjY9CnvecUGsQzdJ6o2xwwAS",
+      "reason": "history_truncated",
+      "rows": 1193
+    },
+    {
+      "pool": "JDda28SjLoUVsvhgQkiN3QVfYXx8czE9nC8wNQQ4wgfJ",
+      "mint": "DAr9JJtNbv1bEGFTcjdkoeisc93Ud7QgAsEZLyFYcFkj",
+      "reason": "history_truncated",
+      "rows": 1194
+    }
+  ]
+}

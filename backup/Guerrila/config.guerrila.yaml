@@ -1,0 +1,285 @@
+# Shadow Engine V6.4-Guerrila reference config
+# Matches the authoritative override block in V6.4-Guerrila.md
+#
+# Validate with:
+#   shadow-tier0 --check-config config.guerrila.yaml
+
+deployment:
+  profile: v6_4_guerrila
+
+system:
+  mode: tier0_only
+  money_workers: 4              # Build → sign → enqueue threads (one egress ring per worker per lane)
+  proxies:
+    ingress:
+      primary: shred_capture
+      shred_capture_workers: 1
+      private_packet_backend: afxdp
+      afxdp_bind_mode: zero_copy
+      dpdk:
+        port_id: 0
+      grpc_fallback: yellowstone_grpc
+      grpc_workers: 1
+      grpc_source_grade: external_geyser
+    egress:
+      quic_workers: 0            # Amputated public blast
+      jito_workers: 1            # Mandatory for Jito shadow lane
+      harmonic_workers: 1        # Mandatory for Harmonic gRPC sessions
+    health:
+      publish_egress_health: true
+      degraded_hysteresis_batches: 2
+
+jito:
+  block_engine_url: "https://mainnet.block-engine.jito.wtf"
+  auth_mode: "/etc/shadow-engine/jito-auth-keypair.json"
+  connect_timeout_ms: 5000
+  send_timeout_ms: 3000
+  reconnect_initial_backoff_ms: 250
+  reconnect_max_backoff_ms: 10000
+  tls_enabled: true
+  json_rpc:
+    enabled: false
+    endpoint: "https://tokyo.mainnet.block-engine.jito.wtf"
+    mode: bundle_only
+    auth_uuid: ""
+
+public_rpc:
+  enabled: false
+  endpoint: "${HELIUS_GATEKEEPER}"
+  timeout_ms: 3000
+  max_pending_tx: 1
+
+harmonic:
+  region_endpoints:
+    - "https://fra.harmonic.xyz"
+    - "https://ams.harmonic.xyz"
+    - "https://nrt.harmonic.xyz"
+  auth_mode: "/etc/shadow-engine/harmonic-auth-keypair.json"
+  connect_timeout_ms: 5000
+  send_timeout_ms: 3000
+  reconnect_initial_backoff_ms: 250
+  reconnect_max_backoff_ms: 10000
+  tls_enabled: true
+  degrade_failure_threshold: 3
+  down_failure_threshold: 10
+  hysteresis_recover_batches: 2
+  degraded_hysteresis_batches: 2
+
+state:
+  geyser:
+    harmonic_max_state_slot_lag: 1
+    require_live_transfer_fee_updates: true
+  clmm:
+    publish_dist_to_tick_lamports: true
+  source:
+    mode: geyser_rpc
+    read_only: false
+    geyser_endpoint: "${TRITON_GRPC_URL}"
+    geyser_token: "${TRITON_GRPC_TOKEN}"
+    rpc_http_url: "${HELIUS_RPC_URL}"
+    bootstrap_rpc_http_url: "${HELIUS_RPC_URL}"
+    startup_commitment: finalized
+    live_commitment: processed
+    reconnect_initial_ms: 250
+    reconnect_max_ms: 10000
+    bootstrap_batch_size: 100
+    bootstrap_parallelism: 4
+    bootstrap_retry_backoff_ms: 250
+    bootstrap_max_retry_backoff_ms: 5000
+    bootstrap_continue_on_error: true
+    pool_programs:
+      - "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"   # Raydium V4
+      - "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"   # Raydium CPMM
+      - "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG"   # Meteora DAMM v2
+      - "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"   # Raydium CLMM
+      - "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"   # Pump.fun AMM / PumpSwap
+    token_programs:
+      - "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"     # SPL Token
+      - "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"     # Token-2022
+    alt_program: "AddressLookupTab1e1111111111111111111111111"
+    harmonic_max_state_slot_lag: 1
+    rpc_bootstrap_only: true
+    require_live_transfer_fee_updates: true
+    hot_pool_hydration_enabled: true
+  publish:
+    pool_arena_capacity: 4194304
+    mint_arena_capacity: 2097152
+    alt_arena_capacity: 8192
+    tag_map_capacity: 8388608
+    tag_map_max_probes: 8
+  sidecars:
+    clmm:
+      publish_dist_to_tick_lamports: true
+
+risk:
+  reserve_floor_sol: 10.0
+  max_position_sol_per_mint: 15.0
+  max_notional_sol_per_entity: 30.0
+
+execution:
+  signer_keypair_path: "/etc/shadow-engine/worker-signer.json"
+  jito_lut_path: "/etc/shadow-engine/jito_tip_lut.bin"
+  # harmonic_lut_path: "/etc/shadow-engine/harmonic_tip_lut.bin"  # deferred until Harmonic lane goes live
+  swap_program_id: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"   # Raydium V4
+  shadow_guard_program_id: "GUard1111111111111111111111111111111111111"
+  guard_vault_in_pubkey: "GVin11111111111111111111111111111111111111111"
+  guard_vault_out_pubkey: "GVout1111111111111111111111111111111111111111"
+  jito_tip_account: "96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5"
+  route_base_cu_limit: 300000
+  nonce_prefill: 128
+  # Raydium V4 swap template — 2 fixed accounts + 17-byte ix prefix
+  swap_template_accounts:
+    - { pubkey: "FeePayerSigner", writable: true }
+    - { pubkey: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", writable: false }
+  swap_ix_data_hex: "090000000000000000000000000000000000"  # 0x09 discriminator + 16 zero bytes (trade_size/min_out overwritten at build time)
+
+rollout:
+  mode: observe_only
+  no_send_backend: true
+  r0_allow_geyser_observe_shadow: true
+  cap_rung: r0_observe_only
+  max_live_trade_input_sol: 0.0
+  max_position_sol_per_mint: 0.0
+  max_notional_sol_per_entity: 0.0
+  require_shadow_guard_deployed: true
+  shadow_guard_program_id: null
+  require_all_gates_green: true
+  gate_report_path: "run/g12_gate_report.json"
+  live_bid_shading_allowed: false
+  dominance_live_allowed: false
+  competition_adjusted_primary_allowed: false
+  min_observe_candidates: 10000
+  min_live_landed: 0
+  min_sample_slots: 10000
+
+r1:
+  public_scout:
+    enabled: false
+    mode: disabled
+    max_live_trade_input_sol: 0.05
+    max_notional_sol_per_entity: 0.1
+    require_afxdp_source: true
+    require_shadow_guard: true
+    kill_on_health_drop: true
+    kill_on_fee_leak: true
+    kill_on_inventory_mismatch: true
+    max_scout_attempts_per_window: 1
+    window_seconds: 1800
+
+submit:
+  routing:
+    default_public_geyser: drop
+    default_jito_searcher: jito_bundle
+    private_mempool_strategy: jito_bundle_if_compatible
+    block_private_bundle_routes: true
+    enable_harmonic_lane: true
+    harmonic_quarantine_enabled: true   # 1-Strike Lethal Catch breaker
+    stale_harmonic_state_action: reroute_to_jito
+    atba_route_mode: jito_only
+    apex_partial_route_mode: jito_only
+    pre_sign_egress_admission_gate: true
+  quic:
+    kamikaze_enabled: false
+  harmonic:
+    cu_pad_units: 150
+    quarantine_mode: specific_error_only
+    quarantine_scope: class_scoped_with_global_failsafe
+    tactic_class_count: 8
+
+oracle:
+  guerrila:
+    max_required_backrun_capital_sol: 15.0
+    retail_only_mode: true
+    micro_market_enabled: true
+    leader_class_count: 8
+    publish_mode: banked_by_leader_class
+    max_live_trade_input_sol: 15.0
+    allow_clamped_apex_partials: true
+    allow_atba_jito_only: true
+    obscurity_discount_enabled: true
+    obscurity_mode: header_only_bitpacked
+    obscurity_initial_floor_bps: 4500
+    primary_strategy_mode: baseline                   # G9: live publisher — start conservative
+    shadow_strategy_mode: competition_adjusted        # G9: score adjusted in shadow telemetry
+    sparse_class_action: fallback_to_baseline         # G9: sparse/stale classes fall back, not drop
+    competition_selector_enabled: true                # G9: enable off-path crowd heat estimation
+    competition_selector_mode: fixed_bank_penalty_only
+    competition_selector_max_penalty_bps: 3000        # G9: max bid reduction from competition
+    competition_selector_min_live_bid_floor_bps: 2500 # G9: floor below which bids are dropped
+    competition_selector_class_min_samples: 200       # G9: min observations before class is non-sparse
+    competition_selector_half_life_slots: 2048        # G9: exponential decay for crowd heat
+    lut_source: shm_published                         # G9: oracle publishes to shm, not file
+  opso:
+    enabled: true
+    mode: observe_only                               # G9B-A: config / truth-layer only
+    sidecar_enabled: true
+    sidecar_stale_action: fallback_to_baseline
+    max_sidecar_staleness_ns: 400000000
+    high_alpha_override_enabled: true
+    max_shade_bps: 3000
+    require_shadow_pnl: true
+    require_pm_episode_ledger: true
+    sparse_class_action: fallback_to_baseline
+    live_bid_shading_enabled: false                  # G9B-F stays deferred until later evidence gates
+  tip_lut:
+    jito_tax_multiplier_bps: 10638       # Offsets Jito ~6% protocol fee
+    harmonic_tax_multiplier_bps: 10000   # 1.0x scale (0% protocol tax)
+
+quant_tactics:
+  taylor_compression:
+    enabled: true
+    mode: pre_filter_gate_only
+  ghost_snipe:
+    enabled: true
+    mode: cache_prefetch_only
+  write_lock_saturation_discount:
+    enabled: false
+  splinter_cell_arb:
+    enabled: false
+  cu_density_optimization:
+    enabled: true
+    mode: minimum_empirical_safe_padding
+    jito_baseline_variance_pad_cus: 150
+  post_trade_exhaust_scavenging:
+    enabled: true
+    route_mode: deterministic_jito_backrun_only
+    max_capital_deployment_sol: 15.0
+    min_competitor_size_sol: 50.0
+    min_convexity_distortion_bps: 600
+  tick_boundary_sabotage:
+    enabled: true
+    mode: shadow_observe_only
+    # 100_000 lamports (0.0001 SOL) — intentionally wider than the live-mode minimum
+    # of 10 lamports specified in the checklist. In shadow_observe_only mode a wider
+    # threshold captures more near-boundary events for telemetry coverage without
+    # affecting live execution. Tighten to ~10 when promoting to live mode.
+    proximity_threshold_lamports: 100000
+
+telemetry:
+  observe_only:
+    log_drop_reasons: true
+    shadow_pnl_enabled: true
+
+shadow_control:
+  rosetta:
+    enabled: true
+    manifest_path: "/dev/shm/shadow_parsing_manifest"
+    control_flags_path: "/dev/shm/shadow_control_flags"
+    raw_archive_path: "/dev/shm/shadow_raw_archive"
+    golden_records_path: "crates/shadow-control/testdata/golden"
+    manifest_read_interval_shreds: 64
+    tripwire_window_slots: 2
+    grpc_only_cooldown_slots: 8
+    blindness_miss_threshold: 1
+    predictive_shift_enabled: true
+    predictive_shift_max_abs_delta: 16
+    deep_scan_enabled: true
+    executable_hash_monitor_enabled: true
+    venue_quarantine_enabled: true
+
+entry:
+  pool_slot_dominance_gate:
+    enabled: true
+    mode: observe_only
+    require_same_base_state_ts: true
+    min_incremental_retained_lcb_lamports: 1000

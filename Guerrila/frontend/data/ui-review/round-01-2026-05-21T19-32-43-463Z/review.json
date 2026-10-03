@@ -1,0 +1,70 @@
+{
+  "score": 72,
+  "done": false,
+  "major_issues": [
+    "Mobile: the flow canvas is effectively unusable (content tiny and partially off-screen), with no obvious pan/zoom affordance beyond small +/- buttons; the main content becomes a dead area with low information density.",
+    "Mobile: header/status row wraps awkwardly (time drops to next line) and competes with primary title; hierarchy is unclear and wastes vertical space.",
+    "Right-side panel cards contain long strings (URLs, identifiers) that risk overflow/poor wrapping; readability suffers and lines look cramped.",
+    "Global contrast/readability: many secondary texts are too low-contrast on dark backgrounds (small gray labels, thin dividers), especially on mobile."
+  ],
+  "medium_issues": [
+    "Inconsistent spacing/padding between card sections; some cards feel tight (metrics rows) while others have large internal gutters, reducing polish.",
+    "Discoverability: key controls (tabs, Fit, zoom +/- and refresh) are small and visually similar; active state is subtle and hard to scan quickly.",
+    "Composition: on desktop, the right rail is very dense while the left canvas has large unused dark space; balance feels off (either canvas should be larger or right rail should be collapsible).",
+    "Event strip at bottom of canvas is visually present but reads like a footer; its purpose/actions aren’t clear and it competes with other status surfaces."
+  ],
+  "minor_issues": [
+    "Some labels use all-caps and small sizes which reduces legibility (e.g., section headers, pill labels).",
+    "Pill/chip components vary in padding/height; alignment within card content looks slightly uneven.",
+    "Shadow/glow effects are heavy; they reduce edge definition of cards and make the UI look a bit hazy rather than crisp.",
+    "The chevron on the Capital card suggests collapsible behavior but doesn’t clearly indicate expanded/collapsed state."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Implement responsive layout rules: below ~900px switch to a single-column layout with the flow card becoming full-width and a fixed/min height (e.g., 60vh), and make the right-rail cards stack after it. Ensure the flow container uses overflow:hidden with clear internal scrolling/panning rather than shrinking content."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Add robust text overflow handling for long technical strings: apply `overflow-wrap:anywhere; word-break:break-word;` to card bodies, and for single-line chips/rows use `white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%;` with optional title tooltip."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Increase baseline type sizes and contrast for secondary text on dark backgrounds (e.g., raise small labels to 12–13px on mobile, bump color from ~#7a7a7a to ~#a0a0a0, and strengthen dividers). Ensure WCAG-ish contrast for key labels/values."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Tighten and standardize spacing: set consistent card padding (e.g., 16px desktop / 14px mobile), consistent vertical gaps between sections (8–12px), and align chip heights/padding across the UI."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/index.html",
+      "change": "Rework header structure for mobile: keep 'Shadow Runtime' as primary, move host/status/time into a collapsible/secondary line with smaller type and controlled wrapping (e.g., a single-line marquee/ellipsis or two-line grid). Reduce vertical footprint above the fold."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Make controls more discoverable: increase hit targets for tabs/zoom buttons (min 40px), add clearer active tab styling (higher contrast underline/pill), and visually group zoom controls with a labeled 'Zoom' control cluster."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/app.js",
+      "change": "Improve mobile canvas interaction: add touch pan + pinch-zoom (or at least drag-to-pan) on the flow canvas; show a brief hint overlay ('Drag to pan, pinch to zoom') that dismisses after first interaction."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Reduce heavy glow/box-shadow and increase card border clarity (slightly brighter border + subtler shadow) to improve crispness and separation, especially on mobile."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Clarify accordion affordances (e.g., rotate chevron on expanded state) and ensure clickable rows have hover/focus states (keyboard-visible outlines) for polish/accessibility."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile unusability of the primary flow visualization, weak header hierarchy/wrapping on small screens, and insufficient handling of long technical strings leading to readability/overflow risks."
+}

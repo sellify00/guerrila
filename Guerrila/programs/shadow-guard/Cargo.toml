@@ -1,0 +1,23 @@
+[package]
+name = "shadow-guard"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "2.2"
+
+[dev-dependencies]
+solana-program-test = "2.2"
+solana-sdk = "2.2"
+solana-program = "2.2"
+tokio = { version = "1", features = ["rt", "macros"] }
+shadow-core = { path = "../../crates/shadow-core" }
+bincode = "1"
+
+[workspace]
+
+[features]
+no-entrypoint = []

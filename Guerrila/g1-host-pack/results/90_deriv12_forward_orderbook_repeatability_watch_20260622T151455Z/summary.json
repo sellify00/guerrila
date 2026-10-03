@@ -1,0 +1,32 @@
+{
+  "acceptance_pass": false,
+  "avg_net_after_orderbook_bps": 0.0,
+  "best_candidate_net_after_orderbook_bps": 0,
+  "best_candidate_side": "",
+  "best_candidate_symbol": "",
+  "blocker_counts": {
+    "UNKNOWN": 1,
+    "forward_net_after_orderbook_below_floor": 1
+  },
+  "closed_attempt_rows": 1,
+  "completed_windows": 2,
+  "decision_counts": {
+    "PARK_DERIV_FORWARD_ORDERBOOK": 1,
+    "UNKNOWN": 1
+  },
+  "forward_orderbook_ready_rows": 0,
+  "live_landed": 0,
+  "max_net_after_orderbook_bps": 0.0,
+  "median_net_after_orderbook_bps": 0.0,
+  "min_net_after_orderbook_bps": 0.0,
+  "no_wire": true,
+  "positive_ready_rows": 0,
+  "ready_symbol_counts": {},
+  "ready_windows": 0,
+  "status": "PARK_DERIV_FORWARD_ORDERBOOK_REPEATABILITY",
+  "trigger_attempt_accepted_rows": 1,
+  "trigger_attempt_rows": 1,
+  "unique_ready_symbols": 0,
+  "windows_seen": 2,
+  "wire_send": 0
+}

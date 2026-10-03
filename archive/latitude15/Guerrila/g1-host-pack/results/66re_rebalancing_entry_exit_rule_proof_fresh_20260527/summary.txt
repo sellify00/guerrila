@@ -1,0 +1,12 @@
+status=run66re_rebalancing_entry_exit_rule_proof_complete
+source_rows=g1-host-pack/results/66_rebalancing_rule_proof_fresh_20260527/run66_rebalancing_rule_rows.jsonl
+rebalancing_rows_seen=3997
+entry_exit_rule_ready_count=214
+entry_rule_ready_rows=3451
+exit_rule_ready_rows=2916
+quote_min_out_ready_rows=324
+decision_counts={"BLOCKED_ENTRY_RULE_MISSING": 546, "BLOCKED_EXIT_RULE_MISSING": 874, "BLOCKED_QUOTE_MISSING": 2363, "ENTRY_EXIT_RULE_READY": 214}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

@@ -1,0 +1,10 @@
+{
+  "direct_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+  "exec_shape_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebr2_preprocessed_backrun_executable_shape_filter/runlsprebr2_preprocessed_backrun_executable_shape_filter_rows.jsonl",
+  "factory_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_candidate_factory/runlsprebrinv_r1_candidate_factory_rows.jsonl",
+  "live_autopsy_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_lsprebrinv_r1_live_pnl_autopsy/runlsprebrinv_r1_live_pnl_autopsy.json",
+  "rpc_url": "https://rpc.example.invalid",
+  "sim_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_tiny_inventory_band_sim/runlsprebrinv_tiny_inventory_band_sim_rows.jsonl",
+  "taxonomy_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebr3_preprocessed_backrun_direction_inventory_taxonomy/runlsprebr3_preprocessed_backrun_direction_inventory_taxonomy_rows.jsonl",
+  "top_n": 5
+}

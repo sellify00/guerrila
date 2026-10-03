@@ -1,0 +1,455 @@
+{
+  "join_basis": "rollout_shadow_candidate_stream_signature_slot",
+  "raw_ingress_match": true,
+  "total_signatures": 3451,
+  "matched_signatures": 48,
+  "matched_raw_ingress_signatures": 48,
+  "afxdp_first_raw_count": 8,
+  "laserstream_first_raw_count": 40,
+  "afxdp_first_candidate_count": 10,
+  "laserstream_first_candidate_count": 38,
+  "only_afxdp_signatures": 9,
+  "only_laserstream_signatures": 3394,
+  "median_delta_us": -21669,
+  "p90_delta_us": 5559,
+  "p99_delta_us": 142744,
+  "median_decode_delta_us": -21671,
+  "p90_decode_delta_us": 5550,
+  "p99_decode_delta_us": 142743,
+  "median_normalized_record_delta_us": -21671,
+  "p90_normalized_record_delta_us": 5550,
+  "p99_normalized_record_delta_us": 142743,
+  "median_worker_seen_delta_us": -26812,
+  "p90_worker_seen_delta_us": 17923,
+  "p99_worker_seen_delta_us": 142740,
+  "median_route_ready_delta_us": null,
+  "p90_route_ready_delta_us": null,
+  "p99_route_ready_delta_us": null,
+  "median_quote_ready_delta_us": null,
+  "p90_quote_ready_delta_us": null,
+  "p99_quote_ready_delta_us": null,
+  "median_pm_ready_delta_us": null,
+  "p90_pm_ready_delta_us": null,
+  "p99_pm_ready_delta_us": null,
+  "median_candidate_emit_delta_us": -26811,
+  "p90_candidate_emit_delta_us": 17922,
+  "p99_candidate_emit_delta_us": 142740,
+  "median_trade_ready_delta_us": null,
+  "p90_trade_ready_delta_us": null,
+  "p99_trade_ready_delta_us": null,
+  "median_afxdp_pipeline_delay_us": 75,
+  "p90_afxdp_pipeline_delay_us": 667,
+  "p99_afxdp_pipeline_delay_us": 48226,
+  "by_owner_mode": {
+    "ambiguous": {
+      "total_signatures": 24,
+      "matched_signatures": 24,
+      "matched_raw_ingress_signatures": 24,
+      "afxdp_first_raw_count": 3,
+      "laserstream_first_raw_count": 21,
+      "afxdp_first_candidate_count": 5,
+      "laserstream_first_candidate_count": 19,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 0,
+      "median_delta_us": -19671,
+      "p90_delta_us": -1084,
+      "p99_delta_us": 6511,
+      "decode_delta_us": {
+        "median_delta_us": -19672,
+        "p90_delta_us": -1085,
+        "p99_delta_us": 6511
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": -19672,
+        "p90_delta_us": -1085,
+        "p99_delta_us": 6511
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": -19680,
+        "p90_delta_us": 6495,
+        "p99_delta_us": 82371
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": -19680,
+        "p90_delta_us": 6496,
+        "p99_delta_us": 82372
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": 76,
+        "p90_delta_us": 210,
+        "p99_delta_us": 37956
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    },
+    "backrun": {
+      "total_signatures": 1744,
+      "matched_signatures": 24,
+      "matched_raw_ingress_signatures": 24,
+      "afxdp_first_raw_count": 5,
+      "laserstream_first_raw_count": 19,
+      "afxdp_first_candidate_count": 5,
+      "laserstream_first_candidate_count": 19,
+      "only_afxdp_signatures": 9,
+      "only_laserstream_signatures": 1711,
+      "median_delta_us": -30166,
+      "p90_delta_us": 4502,
+      "p99_delta_us": 142744,
+      "decode_delta_us": {
+        "median_delta_us": -30166,
+        "p90_delta_us": 4502,
+        "p99_delta_us": 142743
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": -30166,
+        "p90_delta_us": 4502,
+        "p99_delta_us": 142743
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": -32509,
+        "p90_delta_us": 8341,
+        "p99_delta_us": 142740
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": -32509,
+        "p90_delta_us": 8341,
+        "p99_delta_us": 142740
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": 75,
+        "p90_delta_us": 93,
+        "p99_delta_us": 14307
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    },
+    "none": {
+      "total_signatures": 1683,
+      "matched_signatures": 0,
+      "matched_raw_ingress_signatures": 0,
+      "afxdp_first_raw_count": 0,
+      "laserstream_first_raw_count": 0,
+      "afxdp_first_candidate_count": 0,
+      "laserstream_first_candidate_count": 0,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 1683,
+      "median_delta_us": null,
+      "p90_delta_us": null,
+      "p99_delta_us": null,
+      "decode_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    }
+  },
+  "by_strategy": {
+    "ambiguous": {
+      "total_signatures": 24,
+      "matched_signatures": 24,
+      "matched_raw_ingress_signatures": 24,
+      "afxdp_first_raw_count": 3,
+      "laserstream_first_raw_count": 21,
+      "afxdp_first_candidate_count": 5,
+      "laserstream_first_candidate_count": 19,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 0,
+      "median_delta_us": -19671,
+      "p90_delta_us": -1084,
+      "p99_delta_us": 6511,
+      "decode_delta_us": {
+        "median_delta_us": -19672,
+        "p90_delta_us": -1085,
+        "p99_delta_us": 6511
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": -19672,
+        "p90_delta_us": -1085,
+        "p99_delta_us": 6511
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": -19680,
+        "p90_delta_us": 6495,
+        "p99_delta_us": 82371
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": -19680,
+        "p90_delta_us": 6496,
+        "p99_delta_us": 82372
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": 76,
+        "p90_delta_us": 210,
+        "p99_delta_us": 37956
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    },
+    "backrun": {
+      "total_signatures": 1744,
+      "matched_signatures": 24,
+      "matched_raw_ingress_signatures": 24,
+      "afxdp_first_raw_count": 5,
+      "laserstream_first_raw_count": 19,
+      "afxdp_first_candidate_count": 5,
+      "laserstream_first_candidate_count": 19,
+      "only_afxdp_signatures": 9,
+      "only_laserstream_signatures": 1711,
+      "median_delta_us": -30166,
+      "p90_delta_us": 4502,
+      "p99_delta_us": 142744,
+      "decode_delta_us": {
+        "median_delta_us": -30166,
+        "p90_delta_us": 4502,
+        "p99_delta_us": 142743
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": -30166,
+        "p90_delta_us": 4502,
+        "p99_delta_us": 142743
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": -32509,
+        "p90_delta_us": 8341,
+        "p99_delta_us": 142740
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": -32509,
+        "p90_delta_us": 8341,
+        "p99_delta_us": 142740
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": 75,
+        "p90_delta_us": 93,
+        "p99_delta_us": 14307
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    },
+    "directarb": {
+      "total_signatures": 1683,
+      "matched_signatures": 0,
+      "matched_raw_ingress_signatures": 0,
+      "afxdp_first_raw_count": 0,
+      "laserstream_first_raw_count": 0,
+      "afxdp_first_candidate_count": 0,
+      "laserstream_first_candidate_count": 0,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 1683,
+      "median_delta_us": null,
+      "p90_delta_us": null,
+      "p99_delta_us": null,
+      "decode_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "normalized_record_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "worker_seen_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "route_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "quote_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "pm_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "candidate_emit_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_pipeline_delay_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      },
+      "afxdp_route_ready_count": 0,
+      "laserstream_route_ready_count": 0,
+      "afxdp_quote_ready_count": 0,
+      "laserstream_quote_ready_count": 0,
+      "afxdp_pm_ready_count": 0,
+      "laserstream_pm_ready_count": 0,
+      "afxdp_trade_ready_count": 0,
+      "laserstream_trade_ready_count": 0,
+      "ev_weighted_trade_ready_delta_us": null
+    }
+  }
+}

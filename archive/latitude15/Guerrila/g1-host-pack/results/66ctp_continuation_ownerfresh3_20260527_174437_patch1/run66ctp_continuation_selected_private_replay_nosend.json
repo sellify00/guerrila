@@ -1,0 +1,20 @@
+{
+  "decision_counts": {
+    "fresh_quote_drifted": 2
+  },
+  "enrich_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_ownerfresh3_20260527_174437_fields/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66q_rebalancing_ownerfresh3_20260527_174437_fields/run66q_rebalancing_quote_minout_rows.jsonl"
+  ],
+  "live_landed": 0,
+  "preferred_candidate_id": "1779903948001213476:422550198:2kcwV7YRCpobxczfKAQwJuxEnMsNn2JypPp9kfy8nn7jnZLF4hyukWgpYQLMFVS8Mj88dtUcf6F3CMkvgHC3zDNm:8Pm2kZpnxD3hoMmt4bjStX2Pw2Z9abpbHzZxMPqxPmie:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v:So11111111111111111111111111111111111111112",
+  "preferred_first_replay_blocker": "fresh_quote_drifted",
+  "rows_seen": 2,
+  "selected_candidate_id": "",
+  "selected_private_replay_ready_rows": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66cth_continuation_ownerfresh3_20260527_174437_patch1/proposal_eligible_continuation_rows.jsonl",
+  "status": "PARK_SELECTED_REPLAY_FRESH_QUOTE_DRIFTED",
+  "wire_send": 0
+}

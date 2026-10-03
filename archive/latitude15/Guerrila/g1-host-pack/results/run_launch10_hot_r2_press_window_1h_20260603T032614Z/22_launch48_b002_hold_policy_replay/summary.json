@@ -1,0 +1,24 @@
+{
+  "acceptance_pass": true,
+  "attempt_rows": 20,
+  "cost_protector_armed_count": 0,
+  "manual_intervention_required_count": 0,
+  "no_exit_tail_count": 0,
+  "old_exit_reason_counts": {
+    "EXIT_PRE_ARM_WEAK_TIMEOUT": 1,
+    "EXIT_QUOTE_WEAKENING": 7,
+    "not_triggered": 12
+  },
+  "quote_weakening_demoted_count": 7,
+  "quote_weakening_hard_exit_count": 0,
+  "quote_zero_tail_count": 0,
+  "replay_decision_counts": {
+    "EXIT_PRE_ARM_WEAK_TIMEOUT": 1,
+    "QUOTE_WEAKENING_WARNING": 7,
+    "not_triggered": 12
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T032614Z",
+  "status": "LAUNCH48_B002_HOLD_POLICY_REPLAY_PASS",
+  "would_hold_peak_gain_bps_available": false,
+  "would_hold_peak_gain_note": "historical monitors stopped at old exit; forward markout requires continued stream capture"
+}

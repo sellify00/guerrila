@@ -1,0 +1,25 @@
+{
+  "absorbed_sell_ready_rows": 0,
+  "acceptance_pass": false,
+  "decision_counts": {
+    "PARK_MIGRATED_PUMPSWAP_MOMENTUM_STATE_MISSING": 5,
+    "PARK_MIGRATED_PUMPSWAP_NOT_QUOTE_READY": 398
+  },
+  "first_blocker_counts": {
+    "CURVE_COMPLETE_NOT_MIGRATED": 394,
+    "PARK_MIGRATION_POOL_NOT_FOUND": 1,
+    "PARK_PUMPSWAP_BASE_RESERVE_BELOW_FLOOR": 3,
+    "momentum_state_missing": 5
+  },
+  "last_trade_not_buy_rows": 0,
+  "live_landed": 0,
+  "momentum_ready_rows": 0,
+  "momentum_state_missing_rows": 5,
+  "route_ready_rows": 5,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0v2_migrated_pumpswap_momentum_recheck/rows.jsonl",
+  "rows_path_input": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0v_migrated_pumpswap_r3_candidate_gate/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "PARK_MIGRATED_PUMPSWAP_MOMENTUM_STATE_MISSING",
+  "toxic_sell_rows": 0,
+  "wire_send": 0
+}

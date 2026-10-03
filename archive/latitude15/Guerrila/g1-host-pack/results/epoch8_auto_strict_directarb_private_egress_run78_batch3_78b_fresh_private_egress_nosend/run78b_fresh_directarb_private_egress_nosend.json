@@ -1,0 +1,20 @@
+{
+  "status": "blocked_no_fresh_candidate",
+  "run78_summary_path": "/dev/results/epoch8_auto_strict_directarb_private_egress_run78_batch3/summary.txt",
+  "fresh_candidate_loaded": false,
+  "blockhash_valid": false,
+  "quote_current": false,
+  "min_out_positive": false,
+  "route_specific_ev_after_fee_tip_positive": false,
+  "pm_reserve_ok": false,
+  "pm_release_ok": false,
+  "helius_sender_dual_no_send_accept": 0,
+  "send_transaction_called": false,
+  "sendBundle_called": false,
+  "wire_send": 0,
+  "live_landed": 0,
+  "selected_signature": "",
+  "selected_pool": "",
+  "selected_mint_in": "",
+  "selected_mint_out": ""
+}

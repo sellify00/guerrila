@@ -1,0 +1,12 @@
+status=runls13b_preprocessed_backrun_selector_complete
+rows_seen=240
+alt_hydrated_rows=132
+alt_resolution_blocked_rows=0
+target_entity_ready_count=12
+target_already_landed_at_first_check_count=8
+target_not_landed_at_first_check_count=232
+selector_decision_counts={"BLOCKHASH_INVALID": 1, "TARGET_ENTITY_READY": 12, "TX_DECODE_FAILED": 110, "UNSUPPORTED_PROGRAM": 117}
+ready_venue_counts={"meteora_damm_v2": 2, "pumpfun_amm": 9, "raydium_cpmm": 1}
+wire_send=0
+live_landed=0
+sendBundle_called=false

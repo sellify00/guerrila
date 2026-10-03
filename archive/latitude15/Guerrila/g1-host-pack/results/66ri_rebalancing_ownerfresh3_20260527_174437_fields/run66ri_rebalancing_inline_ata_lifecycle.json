@@ -1,0 +1,21 @@
+{
+  "account_ready_count": 4,
+  "decision_counts": {
+    "ACCOUNT_READY": 4,
+    "INLINE_ATA_CREATABLE": 3,
+    "INLINE_ATA_EXIT_DUST": 9,
+    "INLINE_ATA_POLICY_BLOCKED": 16
+  },
+  "inline_ata_creatable_count": 3,
+  "inline_ata_ev_positive_count": 14,
+  "live_landed": 0,
+  "pm_reserve_rent_ok_count": 25,
+  "row_count": 32,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66v_rebalancing_ownerfresh3_20260527_174437_fields/run66v_inline_ata_lifecycle_rows.jsonl",
+  "source_overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66r_overlay_rebalancing_ownerfresh3_20260527_174437_fields/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "status": "run66ri_rebalancing_inline_ata_lifecycle_complete",
+  "step": "66ri_rebalancing_ownerfresh3_20260527_174437_fields",
+  "wire_send": 0
+}

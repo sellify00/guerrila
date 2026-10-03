@@ -1,0 +1,16 @@
+{
+  "blocked_rows": 6,
+  "decision_counts": {
+    "EXIT_LIQUIDITY_GUARD_READY": 1,
+    "PARK_EXIT_BASE_RESERVE_BELOW_FLOOR": 1,
+    "PARK_EXIT_QUOTE_ZERO": 5
+  },
+  "exit_liquidity_guard_ready_rows": 1,
+  "latest_base_reserve_raw": 0,
+  "latest_configured_max_loss_lamports": 0,
+  "latest_decision": "PARK_EXIT_QUOTE_ZERO",
+  "latest_no_exit_loss_floor_lamports": 10000,
+  "latest_reserve_after_exit_raw": 0,
+  "latest_selected_mint": "",
+  "rows_seen": 7
+}

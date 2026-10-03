@@ -1,0 +1,37 @@
+{
+  "acceptance_pass": false,
+  "active_curve_r3_ready_rows": 0,
+  "bonding_curve_real_sol_zero_birth_warmup_rows": 0,
+  "bonding_curve_state_missing_rows": 39,
+  "canonical_active_curve_mints": 78,
+  "complete_false_rows": 78,
+  "complete_or_migrated_rows": 0,
+  "curve_account_exists_rows": 39,
+  "entry_edge_ready_rows": 0,
+  "entry_quality_ready_rows": 0,
+  "entry_quote_ok_rows": 39,
+  "exit_liquidity_guard_ready_rows": 30,
+  "exit_quote_ok_rows": 39,
+  "input_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_60s_20260603T162824Z/launch0d_realtime_birth_decoder_rows.jsonl",
+  "live_landed": 0,
+  "owner_ok_rows": 39,
+  "pump_account_layout_counts": {
+    "legacy_buy": 35,
+    "legacy_sell": 43
+  },
+  "quote_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 7,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 2,
+    "BONDING_CURVE_STATE_MISSING": 39,
+    "QUOTE_STATE_READY": 30
+  },
+  "quote_state_ready_rows": 30,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_60s_20260603T162824Z/22_launch0u8_active_curve_fresh_state_filter/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_60s_20260603T162824Z",
+  "source_provenance_counts": {
+    "TRADE_DERIVED": 78
+  },
+  "source_rows_seen": 220,
+  "status": "PARK_LAUNCH0U8_ENTRY_EDGE_NOT_READY",
+  "wire_send": 0
+}

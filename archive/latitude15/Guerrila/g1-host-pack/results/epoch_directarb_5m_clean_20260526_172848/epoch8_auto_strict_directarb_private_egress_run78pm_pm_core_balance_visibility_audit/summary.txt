@@ -1,0 +1,11 @@
+status=run78pm_complete
+pm_gate_layer=pre_pm_snapshot_inventory_view
+pm_blocker_classified_count=30
+unknown_pm_blocker_count=0
+pm_blocker_counts={"pm_not_blocking_visible_balance_ok":23,"unsupported_non_wsol_input":5,"stale_inventory_snapshot":2}
+inventory_path=/etc/shadow-engine/signer-token-inventory.json
+inventory_slot=422329561
+chain_slot=422329567
+worker_signer_native_sol_balance_raw=11643208899
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean_20260526_172848/epoch8_auto_strict_directarb_private_egress_run78pm_pm_core_balance_visibility_audit/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_5m_clean_20260526_172848/epoch8_auto_strict_directarb_private_egress_run78pm_pm_core_balance_visibility_audit/rows.csv

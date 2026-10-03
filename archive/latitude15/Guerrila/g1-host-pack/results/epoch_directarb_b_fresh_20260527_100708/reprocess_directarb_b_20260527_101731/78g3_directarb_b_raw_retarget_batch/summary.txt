@@ -1,0 +1,16 @@
+status=blocked_no_directarb_b_would_send_positive
+result_dir=g1-host-pack/results/epoch_directarb_b_fresh_20260527_100708/reprocess_directarb_b_20260527_101731/78g3_directarb_b_raw_retarget_batch
+manifest_path=g1-host-pack/results/epoch_directarb_b_fresh_20260527_100708/reprocess_directarb_b_20260527_101731/78g3_directarb_b_manifest_raw_retarget/manifest.jsonl
+manifest_rows=1
+evaluated_rows=1
+decision_counts={"BUNDLE_FAIL_ACCOUNT_LIFECYCLE": 1}
+directarb_bundle_ready_no_submit_count=0
+would_send_positive_count=0
+positive_built_sim_pass_count=0
+default_policy_would_send_positive_count=0
+send_side_effect_rows=0
+wire_send=0
+live_landed=0
+sendBundle_called=false
+rows_jsonl=g1-host-pack/results/epoch_directarb_b_fresh_20260527_100708/reprocess_directarb_b_20260527_101731/78g3_directarb_b_raw_retarget_batch/rows.jsonl
+run_status=0

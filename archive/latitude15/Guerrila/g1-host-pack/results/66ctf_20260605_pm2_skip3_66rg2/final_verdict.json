@@ -1,0 +1,33 @@
+{
+  "all_rows_first_owner_eligibility_blocker_counts": {},
+  "displacement_threshold_pass_rows": 0,
+  "entry_rule_rebalancing_specific_rows": 0,
+  "execution_plumbing_ready_rows": 0,
+  "execution_ready_first_owner_eligibility_blocker_counts": {},
+  "exit_rule_rebalancing_specific_rows": 0,
+  "false_restoration_gate_input_ready_rows": 0,
+  "false_restoration_gate_pass_rows": 0,
+  "final_verdict": "PARK_SELECTOR_INPUTS_INCOMPLETE",
+  "hard_stops_preserved": {
+    "acquisition": false,
+    "ata_creation": false,
+    "live_landed": 0,
+    "live_send": false,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "token2022_explicit_allow": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "next_required_action": "repair selector input artifact paths",
+  "owner_mode_match_rebalancing_rows": 0,
+  "owner_mode_score_rebalancing_fresh_runtime_rows": 0,
+  "owner_mode_score_rebalancing_rows": 0,
+  "pm_owner_lock_ready_rows": 0,
+  "primary_blocker": "inputs_missing",
+  "proposal_eligible_rebalancing_rows": 0,
+  "proposal_path_open": false,
+  "recovery_fraction_target_rows": 0,
+  "restoration_pressure_measured_rows": 0,
+  "rows_seen": 0
+}

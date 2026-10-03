@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "max_adverse_excursion_bounded_rows": 96,
+    "owner_mode_rebalancing_rows": 103,
+    "recovery_fraction_target_rows": 102,
+    "reserve_displacement_input_rows": 103,
+    "restoration_pressure_measured_rows": 95,
+    "restoration_pressure_score_rows": 103,
+    "rows_seen": 103
+  },
+  "first_restoration_blocker_counts": {
+    "max_adverse_excursion_unbounded": 7,
+    "none": 95,
+    "recovery_fraction_target_missing": 1
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "status": "RESTORATION_PRESSURE_MEASURED"
+}

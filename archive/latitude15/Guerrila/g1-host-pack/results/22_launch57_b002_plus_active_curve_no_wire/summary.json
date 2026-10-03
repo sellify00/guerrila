@@ -1,0 +1,37 @@
+{
+  "acceptance_pass": true,
+  "active_curve_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0u8_active_curve_fresh_state_filter/rows.jsonl",
+  "active_curve_rows_seen": 453,
+  "b002_frozen_replay_returncode": 0,
+  "b002_frozen_replay_status": "B002_FROZEN_REPLAY_PASS",
+  "b002_plus_active_curve_ready_rows": 3,
+  "b002_proofs_ready": true,
+  "b002_regression_matrix_returncode": 0,
+  "b002_regression_matrix_status": "B002_REGRESSION_MATRIX_PASS",
+  "blocker_counts": {
+    "b002_plus_active_quote_state_not_ready": 373,
+    "b002_plus_active_warmup_tier_c": 77
+  },
+  "capture_profile_positive_rows": 453,
+  "capture_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/22_launch54_birth_ramp_capture_sim/summary.json",
+  "decision_counts": {
+    "B002_PLUS_ACTIVE_CURVE_READY_PRICE_CHANGE_UNKNOWN": 3,
+    "PARK_B002_PLUS_ACTIVE_CURVE": 450
+  },
+  "exit_liquidity_guard_ready_rows": 80,
+  "live_landed": 0,
+  "quote_liquidity_capture_ready_rows": 80,
+  "quote_state_ready_rows": 80,
+  "ready_warmup_tier_counts": {
+    "B002_PLUS_TIER_A": 2,
+    "B002_PLUS_TIER_B": 1
+  },
+  "status": "B002_PLUS_ACTIVE_CURVE_NO_WIRE_PASS",
+  "top_blocker": "b002_plus_active_quote_state_not_ready",
+  "warmup_tier_counts": {
+    "B002_PLUS_TIER_A": 11,
+    "B002_PLUS_TIER_B": 10,
+    "B002_PLUS_TIER_C": 432
+  },
+  "wire_send": 0
+}

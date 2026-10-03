@@ -1,0 +1,41 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 90 Deriv18 - Filtered Size Ladder Repeatability Watch
+  2026-06-23 04:04:22 UTC
+════════════════════════════════════════════════════════════
+
+starting_window=1/4 window_dir=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv18_filtered_size_ladder_repeatability_watch_20260623T040422Z/window_001
+starting_window=2/4 window_dir=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv18_filtered_size_ladder_repeatability_watch_20260623T040422Z/window_002
+starting_window=3/4 window_dir=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv18_filtered_size_ladder_repeatability_watch_20260623T040422Z/window_003
+starting_window=4/4 window_dir=/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv18_filtered_size_ladder_repeatability_watch_20260623T040422Z/window_004
+status=DERIV_FILTERED_SIZE_LADDER_REPEATABILITY_READY
+acceptance_pass=True
+windows_seen=4
+completed_windows=4
+ready_windows=3
+acceptance_ready_windows=3
+trigger_attempt_rows=52
+trigger_attempt_accepted_rows=18
+closed_ladder_rows=54
+size_ladder_ready_rows=8
+acceptance_ready_rows=8
+accept_notional_usd=100.0
+unique_ready_symbols=2
+avg_net_after_orderbook_bps=157.706
+median_net_after_orderbook_bps=207.1912
+min_net_after_orderbook_bps=5.2234
+avg_acceptance_net_after_orderbook_bps=157.706
+min_acceptance_net_after_orderbook_bps=5.2234
+best_candidate_symbol=LAYER
+best_candidate_side=long
+best_candidate_notional_usd=100.0
+best_candidate_net_after_orderbook_bps=209.8087
+decision_counts={'PARK_DERIV_FORWARD_SIZE_LADDER': 46, 'DERIV_FORWARD_SIZE_LADDER_READY': 8}
+blocker_counts={'size_ladder_net_after_orderbook_below_floor': 35, 'none': 8, 'exit_spread_too_wide': 6, 'entry_book_drag_too_high': 4, 'exit_book_drag_too_high': 1}
+trigger_blocker_counts={'entry_spread_too_wide': 32, 'none': 18, 'entry_book_drag_too_high': 1, 'entry_book_depth_below_floor': 1}
+ready_symbol_counts={'LAYER': 6, 'MEGA': 2}
+ready_notional_counts={'100.0': 3, '250.0': 3, '500.0': 2}
+exit_depth_measured=True
+no_wire=True
+wire_send=0
+live_landed=0

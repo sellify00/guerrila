@@ -1,0 +1,12 @@
+[Unit]
+Description=Run the G1 local Agave watchdog periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=3min
+AccuracySec=30s
+Persistent=true
+Unit=g1-local-agave-watchdog.service
+
+[Install]
+WantedBy=timers.target

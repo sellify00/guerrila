@@ -1,0 +1,24 @@
+{
+  "acceptance_pass": true,
+  "activity_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/launch0d_realtime_birth_decoder_activity_rows.jsonl"
+  ],
+  "activity_source_rows_seen": 314054,
+  "completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "decision_counts": {
+    "PRE_MIGRATION_BUY_RESOLVED": 1
+  },
+  "eligible_completion_rows": 1,
+  "live_landed": 0,
+  "pre_migration_buy_resolved_rows": 1,
+  "resolved_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch61c_pre_migration_buy_event_resolver/resolved_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch61c_pre_migration_buy_event_resolver/rows.jsonl",
+  "status": "LAUNCH61C_PRE_MIGRATION_BUY_EVENT_RESOLVER_PASS",
+  "stream_decode_failed_rows": 3,
+  "stream_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/launch0rt_compact/pump_activity_rows.jsonl"
+  ],
+  "stream_source_rows_seen": 51,
+  "trade_events_seen": 101297,
+  "wire_send": 0
+}

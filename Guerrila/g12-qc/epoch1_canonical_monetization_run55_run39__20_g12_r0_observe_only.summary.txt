@@ -1,0 +1,17 @@
+xdp_attach_mode=native
+afxdp_bind_mode=zero_copy
+afxdp_safe_mode=false
+afxdp_queue_count=1
+window_seconds=900
+sample_slots=2550
+observe_candidates=27498
+live_landed=0
+all_gates_green=false
+promote_allowed=false
+inventory_truth_ok=true
+fee_leak_ok=true
+shadow_pnl_ok=true
+micro_market_uplift_ok=true
+private_grade_ingress=14055
+shadow_guard_mainnet_deployed=true
+shadow_guard_template_program_id_matches=true

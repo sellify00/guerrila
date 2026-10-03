@@ -1,0 +1,52 @@
+{
+  "activity_rows_seen": 47959,
+  "chain_estimate_basis": "env_or_operator_default_not_chain_truth",
+  "chain_estimate_per_hour": 1000.0,
+  "chain_estimated_launch_count": 17,
+  "coverage_ratio": 682.3529,
+  "decode_class_counts": {
+    "PUMPSWAP_BUY": 641,
+    "PUMPSWAP_SELL": 1596,
+    "PUMP_BONDING_CURVE_BUY": 37,
+    "PUMP_BONDING_CURVE_SELL": 57,
+    "PUMP_MIGRATION": 1092,
+    "UNKNOWN_PUMP_ACTIVITY": 21594
+  },
+  "decode_confidence_counts": {
+    "high": 53,
+    "low": 13,
+    "medium": 50
+  },
+  "decoded_activity_rows": 25017,
+  "decoded_launch_count": 116,
+  "entry_quality_ready_rows": 0,
+  "first_blocker_counts": {
+    "DECODE_FAILED": 17632,
+    "NO_MINT_RESOLVED": 1873,
+    "NO_POOL_RESOLVED": 3600,
+    "UNSUPPORTED_PROGRAM": 24500
+  },
+  "global_launches_seen": 116,
+  "live_landed": 0,
+  "migration_activity_rows": 1092,
+  "migration_births": 0,
+  "pump_curve_births": 50,
+  "pumpswap_births": 66,
+  "requested_duration_seconds": 60,
+  "route_family_counts": {
+    "PUMPSWAP_AMM": 66,
+    "PUMP_BONDING_CURVE": 50
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z",
+  "source_paths": {
+    "activity_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z/launch0d_realtime_birth_decoder_activity_rows.jsonl",
+    "birth_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z/launch0d_realtime_birth_decoder_rows.jsonl",
+    "stream_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_60s_20260602T103701Z/laserstream_preprocessed_realtime/runls13_preprocessed_stream_rows.jsonl"
+  },
+  "status": "launch0d_realtime_birth_decoder_complete",
+  "top_decode_blocker": "UNSUPPORTED_PROGRAM",
+  "trigger_b_rows": 53,
+  "unique_births_decoded": 116,
+  "unique_mints_seen": 94,
+  "wire_send": 0
+}

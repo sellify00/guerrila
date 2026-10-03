@@ -1,0 +1,9 @@
+{
+  "live_report_json_path": "/tmp/launch_combined_live_report_for_autopsy.json",
+  "mint": "CLcqcknXPdYyFFA3w8JHvNkywZouKQrhv4B48avg5kdr",
+  "pool": "5wQ7HRXBkh12Nx3x72qWooKU4Y91exJFwctxdfD5H1KH",
+  "rpc_url": "https://rpc.example.invalid",
+  "sender_min_tip_lamports": 200000,
+  "sender_tip_account": "5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn",
+  "signer_keypair_path": "/etc/shadow-engine/worker-signer.json"
+}

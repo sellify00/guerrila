@@ -1,0 +1,26 @@
+{
+  "bad_rows": 7,
+  "live_thresholds": {
+    "allowed_sell_quality": [
+      "ABSORBED_SELL",
+      "BENIGN_SELL",
+      "NO_SELL",
+      "ROUTINE_PROFIT_TAKE"
+    ],
+    "max_base_reserve_decline_velocity_bps": 0,
+    "max_exit_price_impact_bps": 1000,
+    "max_exit_quote_zero_recent_count": 0,
+    "max_price_change_since_trigger_bps": 1369,
+    "max_sell_count_2s": 0,
+    "max_sell_count_5s": 1,
+    "max_signal_age_ms": 913,
+    "min_base_reserve_to_position_ratio": 50.0,
+    "min_net_buy_pressure_2s": 1,
+    "min_net_buy_pressure_5s": 1,
+    "min_price_change_since_trigger_bps": 184,
+    "min_reserve_after_exit_to_position_ratio": 10.0
+  },
+  "positive_median_pnl_after_rent_recovery": 1276919,
+  "positive_rows": 3,
+  "status": "BATCH002_FINGERPRINT_EXTRACTED"
+}

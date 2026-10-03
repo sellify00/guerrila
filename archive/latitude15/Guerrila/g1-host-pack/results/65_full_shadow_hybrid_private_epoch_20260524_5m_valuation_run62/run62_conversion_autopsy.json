@@ -1,0 +1,859 @@
+{
+  "status": "run62_conversion_autopsy_complete",
+  "step": "65_full_shadow_hybrid_private_epoch_20260524_5m_valuation_run62",
+  "inputs": {
+    "run61_report_json": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m/run61_continuous_shadow_live_simulation.json",
+    "run61_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m/summary.txt",
+    "run39_candidate_autopsy": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m_run55_run39/candidate_autopsy.jsonl",
+    "run39_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m_run55_run39/summary.txt",
+    "sol_usd_equivalent": 1000.0,
+    "run61_status": "run61_continuous_shadow_live_simulation_partial_missing_shock_research",
+    "run39_status": "scorecard_generated"
+  },
+  "inventory_context": {
+    "approved_held_input_mints": [
+      "So11111111111111111111111111111111111111112",
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+    ],
+    "held_input_mints": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "So11111111111111111111111111111111111111112"
+    ],
+    "approved_but_not_held_input_mints": [
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+    ]
+  },
+  "directarb_autopsy": {
+    "total_rows": 17,
+    "unique_opportunity_count": 15,
+    "quote_valid_count": 17,
+    "route_usable_count": 17,
+    "inventory_ready_count": 0,
+    "ata_ready_count": 17,
+    "template_ready_count": 17,
+    "unit_normalized_positive_ev_count": 0,
+    "positive_ev_count": 17,
+    "would_fire_count": 0,
+    "blocker_counts": {
+      "not_held_input": 17
+    },
+    "route_counts": {
+      "tpu_quic_public": 17
+    },
+    "route_reason_counts": {
+      "jito_direct": 17
+    },
+    "size_bucket_counts": {
+      "unbucketed_other_input_units": 17
+    },
+    "optimal_size_bucket_by_count": "unbucketed_other_input_units",
+    "top_route_only_candidates": []
+  },
+  "directarb_inventory_conversion": {
+    "inventory_insufficient_count": 0,
+    "inventory_insufficient_top_input_mints": [],
+    "inventory_insufficient_top_pairs": [],
+    "inventory_insufficient_top_pools": [],
+    "not_held_input_count": 17,
+    "not_held_input_top_input_mints": [
+      {
+        "mint_in": "AuRoVyXAcMueM1FP9owQYdWeQ8YCMXK8xjXoY9it7PdZ",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 6,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "HKJHsYJHMVK5VRyHHk5GhvzY9tBAAtPvDkZfDH6RLDTd",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 3,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_cpmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "9SYE6zG9bVXx5iSHfNpf4jC72UnsBo5BcE9PSUk48oK8",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "8djqn9QpLX9vkvgQSd5vNQSUu973gLD5tNAL1mEqGV9z",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "26s9dxjq8xBqdAZF1ze5rgAsMxdkGKjH9bsSo4tU1zpF",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "DEDBQ2pDZAmkCQQkQyj4fpHa6jzXayJkv5Bm8dGBPSt2",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "AeVzGq6z1RndB9Tk9dGT6RPADjZJpQwX6tudqSRkmAgp",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "9igBsK9fqT1pgmNjRrdjdQMVLCeWj4dmmyyFhpuS4Vih",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "22pmrxegFG2a72xFNvAarChe279pnNBCHqdrBEXNyALL",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      }
+    ],
+    "not_held_input_top_pairs": [
+      {
+        "mint_in": "AuRoVyXAcMueM1FP9owQYdWeQ8YCMXK8xjXoY9it7PdZ",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 6,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "HKJHsYJHMVK5VRyHHk5GhvzY9tBAAtPvDkZfDH6RLDTd",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 3,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_cpmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "9SYE6zG9bVXx5iSHfNpf4jC72UnsBo5BcE9PSUk48oK8",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "8djqn9QpLX9vkvgQSd5vNQSUu973gLD5tNAL1mEqGV9z",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "26s9dxjq8xBqdAZF1ze5rgAsMxdkGKjH9bsSo4tU1zpF",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "DEDBQ2pDZAmkCQQkQyj4fpHa6jzXayJkv5Bm8dGBPSt2",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "AeVzGq6z1RndB9Tk9dGT6RPADjZJpQwX6tudqSRkmAgp",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "9igBsK9fqT1pgmNjRrdjdQMVLCeWj4dmmyyFhpuS4Vih",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "mint_in": "22pmrxegFG2a72xFNvAarChe279pnNBCHqdrBEXNyALL",
+        "mint_out": "So11111111111111111111111111111111111111112",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      }
+    ],
+    "not_held_input_top_pools": [
+      {
+        "pool": "8xsDEHStzHF4DEVfRSpacuiUbTJRNTaibwmUhWj8T7pw",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 6,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "AiP94aqcnsxPfHTQLerdwNACedhmEUxMaaSxevS2Drxm",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 3,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_cpmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "81zXXe7AW5x7qaa1f2BvSSKcB3fnvV527eSayK8hdPbG",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "CaHST7wfdg1yTrfhSYACSGsk7dHSV6NUgEPEKGKwt62n",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "7nh2paBhv75b9ktrQ1TgEwFqTVZ8RNxDoHHWbc5oGWrF",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "3H6MiFoX5s6S6VpmJMZqSVzjtBe6TVrQKeQJfumAb7vT",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "DP9Q72RFXVmX9UtGim71tckoGXN1dCb6QWoKFDfS8fMd",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "37FkaGfHNwbhY32vXAFVNF8EKBr7fMAm6LTBLyKSVbFN",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "pool": "74Kf24SDYbyDVaD9i4LZuVSFdxqhy1jSbiynAGpzZQ8M",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "unbucketed_other_input_units",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      }
+    ]
+  },
+  "route_unavailable_autopsy": {
+    "total_rows": 3829,
+    "private_route_only_count": 3829,
+    "route_only_blocked_count": 0,
+    "route_only_blocked_active_fire_count": 0,
+    "owner_mode_counts": {
+      "rebalancing": 1622,
+      "continuation": 158,
+      "flatten": 244,
+      "housekeeping": 612,
+      "drop": 1193
+    },
+    "venue_counts": {
+      "raydium_clmm": 2558,
+      "meteora_damm_v2": 1207,
+      "raydium_v4": 25,
+      "raydium_cpmm": 39
+    },
+    "route_label_counts": {
+      "jito_bundle": 3829
+    },
+    "route_reason_counts": {
+      "jito_direct": 3829
+    },
+    "main_owner_mode": "rebalancing",
+    "main_venue": "raydium_clmm",
+    "main_route_label": "jito_bundle",
+    "main_route_reason": "jito_direct",
+    "top_route_only_candidates": []
+  },
+  "continuation_monetization": {
+    "total_rows": 175,
+    "best_horizon_positive_count": 175,
+    "best_horizon_beats_immediate_count": 175,
+    "route_usable_count": 17,
+    "deployable_count": 0,
+    "actionable_entry_rule_candidates": 0,
+    "actionable_route_usable_count": 0,
+    "actionable_route_only_blocked_count": 0,
+    "best_horizon_counts": {
+      "next_same_pool_event_3": 41,
+      "next_same_pool_event_1": 59,
+      "next_same_pool_event_2": 25,
+      "500ms": 9,
+      "1_slot": 2,
+      "250ms": 5,
+      "50ms": 12,
+      "2_slots": 18,
+      "100ms": 4
+    },
+    "route_reason_counts": {},
+    "top_actionable_candidates": []
+  },
+  "route_conversion": {
+    "tpu_quic_public_rewritable_count": 0,
+    "tpu_quic_public_rewritable_active_fire_count": 0,
+    "public_rpc_rewritable_count": 0,
+    "tpu_rewritable_by_owner_mode": {},
+    "tpu_rewritable_by_venue": {},
+    "public_rpc_rewritable_by_venue": {},
+    "top_tpu_rewritable_candidates": []
+  },
+  "rebalancing_ata_conversion": {
+    "account_ata_missing_count": 38,
+    "top_output_mints": [
+      {
+        "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+        "count": 8,
+        "route_usable_count": 8,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 8,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.7515e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.01900951
+      },
+      {
+        "mint_out": "Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+        "count": 7,
+        "route_usable_count": 7,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 7,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.017008242
+      },
+      {
+        "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.014329618
+      },
+      {
+        "mint_out": "BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.99e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007312476
+      },
+      {
+        "mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.8272e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007175851
+      },
+      {
+        "mint_out": "AuRoVyXAcMueM1FP9owQYdWeQ8YCMXK8xjXoY9it7PdZ",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_1000_usdc_or_1.0_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.000909401,
+        "total_best_horizon_ev_sol_equivalent": 6.344456199
+      },
+      {
+        "mint_out": "AxhcwfutahyDCSDaY2TCSJsm7Fu9dnCsQwSN2N4nFouR",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.000385084
+      },
+      {
+        "mint_out": "4D8qUHm334fxqeTauPvF8gQ7fYgrD4Mpmb1Wy6ftUSWR",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_25_usdc_or_0.025_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.589e-06,
+        "total_best_horizon_ev_sol_equivalent": 0.004270643
+      },
+      {
+        "mint_out": "BHZjrQYKxx3sBtEjEVTVstjbUFYwpt1ycU5irhhKBRds",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_250_usdc_or_0.25_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 6.9655e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.002505083
+      },
+      {
+        "mint_out": "9G2QxPjuSBkYFtdZXp8eSaNPivcrnz12FsoXUXoLqqaz",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_500_usdc_or_0.5_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0.000100336,
+        "total_best_horizon_ev_sol_equivalent": 0.002423791
+      }
+    ],
+    "top_pairs": [
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+        "count": 8,
+        "route_usable_count": 8,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 8,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.7515e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.01900951
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+        "count": 7,
+        "route_usable_count": 7,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 7,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.017008242
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.014329618
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.99e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007312476
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.8272e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007175851
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "AuRoVyXAcMueM1FP9owQYdWeQ8YCMXK8xjXoY9it7PdZ",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_1000_usdc_or_1.0_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.000909401,
+        "total_best_horizon_ev_sol_equivalent": 6.344456199
+      },
+      {
+        "mint_in": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "mint_out": "AxhcwfutahyDCSDaY2TCSJsm7Fu9dnCsQwSN2N4nFouR",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.000385084
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "4D8qUHm334fxqeTauPvF8gQ7fYgrD4Mpmb1Wy6ftUSWR",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_25_usdc_or_0.025_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.589e-06,
+        "total_best_horizon_ev_sol_equivalent": 0.004270643
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "BHZjrQYKxx3sBtEjEVTVstjbUFYwpt1ycU5irhhKBRds",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_250_usdc_or_0.25_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 6.9655e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.002505083
+      },
+      {
+        "mint_in": "So11111111111111111111111111111111111111112",
+        "mint_out": "9G2QxPjuSBkYFtdZXp8eSaNPivcrnz12FsoXUXoLqqaz",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_500_usdc_or_0.5_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0.000100336,
+        "total_best_horizon_ev_sol_equivalent": 0.002423791
+      }
+    ],
+    "top_pools": [
+      {
+        "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+        "count": 8,
+        "route_usable_count": 8,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 8,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.7515e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.01900951
+      },
+      {
+        "pool": "2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex",
+        "count": 7,
+        "route_usable_count": 7,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 7,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.017008242
+      },
+      {
+        "pool": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2",
+        "count": 6,
+        "route_usable_count": 6,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 6,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.014329618
+      },
+      {
+        "pool": "tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.99e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007312476
+      },
+      {
+        "pool": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz",
+        "count": 3,
+        "route_usable_count": 3,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 3,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.8272e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.007175851
+      },
+      {
+        "pool": "8xsDEHStzHF4DEVfRSpacuiUbTJRNTaibwmUhWj8T7pw",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 2,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_1000_usdc_or_1.0_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.000909401,
+        "total_best_horizon_ev_sol_equivalent": 6.344456199
+      },
+      {
+        "pool": "AaCgA74kYnZY8bGFqpHufpVSaPGDs3RnzSUpeZVMspkN",
+        "count": 2,
+        "route_usable_count": 2,
+        "positive_ev_count": 0,
+        "best_horizon_positive_count": 2,
+        "top_size_bucket": "<=_5_usdc_or_0.005_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 0.0,
+        "total_best_horizon_ev_sol_equivalent": 0.000385084
+      },
+      {
+        "pool": "qf3ExNV3MwMREG7C8FVvrn1edY6c39sbSEsSLUof7iv",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_25_usdc_or_0.025_sol_equiv",
+        "main_venue": "meteora_damm_v2",
+        "total_immediate_ev_sol_equivalent": 3.589e-06,
+        "total_best_horizon_ev_sol_equivalent": 0.004270643
+      },
+      {
+        "pool": "7fXu4zf6h9ALzyi7rk8vh1esoGLe5gxheY75CmAtesAy",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_250_usdc_or_0.25_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 6.9655e-05,
+        "total_best_horizon_ev_sol_equivalent": 0.002505083
+      },
+      {
+        "pool": "7PtEnbGB5fb8YH7ABkMyr6C9H4CbVdytnXJinw4rDV2f",
+        "count": 1,
+        "route_usable_count": 1,
+        "positive_ev_count": 1,
+        "best_horizon_positive_count": 1,
+        "top_size_bucket": "<=_500_usdc_or_0.5_sol_equiv",
+        "main_venue": "raydium_clmm",
+        "total_immediate_ev_sol_equivalent": 0.000100336,
+        "total_best_horizon_ev_sol_equivalent": 0.002423791
+      }
+    ]
+  },
+  "blocker_triage": {
+    "focus_owner_modes": [
+      "directarb",
+      "continuation",
+      "rebalancing",
+      "housekeeping",
+      "backrun"
+    ],
+    "top_items": [
+      {
+        "owner_mode": "rebalancing",
+        "blocker": "route_private_only",
+        "count": 1622,
+        "best_horizon_positive_count": 1622,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 0,
+        "total_best_horizon_ev_sol_equivalent": 435.848100491
+      },
+      {
+        "owner_mode": "housekeeping",
+        "blocker": "route_private_only",
+        "count": 612,
+        "best_horizon_positive_count": 604,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 0,
+        "total_best_horizon_ev_sol_equivalent": 1.102298828
+      },
+      {
+        "owner_mode": "continuation",
+        "blocker": "route_private_only",
+        "count": 158,
+        "best_horizon_positive_count": 158,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 0,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "owner_mode": "rebalancing",
+        "blocker": "account_ata_missing",
+        "count": 38,
+        "best_horizon_positive_count": 38,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 38,
+        "total_best_horizon_ev_sol_equivalent": 6.422440938
+      },
+      {
+        "owner_mode": "housekeeping",
+        "blocker": "account_ata_missing",
+        "count": 34,
+        "best_horizon_positive_count": 27,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 34,
+        "total_best_horizon_ev_sol_equivalent": 0.040141099
+      },
+      {
+        "owner_mode": "directarb",
+        "blocker": "not_held_input",
+        "count": 17,
+        "best_horizon_positive_count": 17,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 17,
+        "total_best_horizon_ev_sol_equivalent": 0
+      },
+      {
+        "owner_mode": "continuation",
+        "blocker": "not_held_input",
+        "count": 17,
+        "best_horizon_positive_count": 17,
+        "route_only_blocked_count": 0,
+        "route_usable_count": 17,
+        "total_best_horizon_ev_sol_equivalent": 0
+      }
+    ]
+  }
+}

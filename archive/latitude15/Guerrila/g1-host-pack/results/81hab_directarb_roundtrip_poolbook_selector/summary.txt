@@ -1,0 +1,12 @@
+status=roundtrip_poolbook_selected
+source_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/78hab_directarb_roundtrip_habitat_leaderboard_latest/habitat_rows.jsonl
+source_habitat_count=503
+candidate_habitat_count=186
+selected_count=3
+malformed_source_rows=0
+selected_habitats_json=/home/ubuntu/Guerrila/g1-host-pack/results/81hab_directarb_roundtrip_poolbook_selector/selected_habitats.json
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/81hab_directarb_roundtrip_poolbook_selector/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/81hab_directarb_roundtrip_poolbook_selector/rows.csv
+wire_send=0
+live_landed=0
+sendBundle_called=false

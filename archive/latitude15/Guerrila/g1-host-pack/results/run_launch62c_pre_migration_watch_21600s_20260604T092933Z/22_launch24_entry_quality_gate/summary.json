@@ -1,0 +1,56 @@
+{
+  "entry_edge_blocker_counts": {
+    "entry_edge_quality_not_ready": 12238
+  },
+  "entry_edge_decision_counts": {
+    "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY": 12238
+  },
+  "entry_edge_enabled": true,
+  "entry_edge_max_price_change_bps": 1500,
+  "entry_edge_max_signal_age_ms": 1000,
+  "entry_edge_min_net_buy_pressure_5s": 1,
+  "entry_edge_min_price_change_bps": 300,
+  "entry_edge_ready_rows": 0,
+  "entry_quality_blocker_counts": {
+    "entry_quality_warmup": 12238
+  },
+  "entry_quality_decision_counts": {
+    "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 12238
+  },
+  "entry_quality_evaluated_rows": 12238,
+  "entry_quality_ready_rows": 0,
+  "exit_liquidity_guard_ready_rows": 623,
+  "hot_decision_rows_seen": 0,
+  "latest_attempt_peak_gain_bps": 0,
+  "latest_attempt_thesis_positive": false,
+  "latest_decision": "CURVE_COMPLETE_NOT_MIGRATED",
+  "latest_entry_edge_decision": "HOT_BLOCK_ENTRY_EDGE_QUALITY_NOT_READY",
+  "latest_entry_edge_first_blocker": "entry_edge_quality_not_ready",
+  "latest_first_blocker": "",
+  "latest_last_trade_side": "buy",
+  "latest_net_buy_pressure_2s": 1,
+  "latest_panic_drop_2s_bps": 0,
+  "latest_price_change_since_trigger_bps": -1,
+  "latest_sell_count_2s": 0,
+  "max_sell_count_2s": 0,
+  "min_price_change_bps": 100,
+  "panic_drop_2s_bps": 700,
+  "quote_state_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 2076,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 62,
+    "BONDING_CURVE_REAL_SOL_ZERO_BIRTH_WARMUP": 2,
+    "BONDING_CURVE_RESERVES_MISSING": 4566,
+    "BONDING_CURVE_STATE_MISSING": 11068,
+    "CURVE_COMPLETE_NOT_MIGRATED": 3806,
+    "PARK_MIGRATION_POOL_NOT_FOUND": 4,
+    "QUOTE_STATE_READY": 623
+  },
+  "quote_state_ready_rows": 623,
+  "quote_state_rows_seen": 22207,
+  "rows_seen": 22207,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z",
+  "status": "LAUNCH_ENTRY_QUALITY_GATE_COMPLETE",
+  "top_entry_quality_blocker": "entry_quality_warmup",
+  "top_quote_state_blocker": "BONDING_CURVE_STATE_MISSING",
+  "unique_launch_states": 22207
+}

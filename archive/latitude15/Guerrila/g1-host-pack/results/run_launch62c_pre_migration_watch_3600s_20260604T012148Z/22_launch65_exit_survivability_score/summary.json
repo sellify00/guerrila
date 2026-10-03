@@ -1,0 +1,22 @@
+{
+  "acceptance_pass": true,
+  "decision_counts": {
+    "PARK_EXIT_UNSURVIVABLE": 512,
+    "PARK_QUOTE_ZERO_RISK": 2216,
+    "PARK_ROUTE_SWITCH_RISK": 827,
+    "R5F_EXIT_SURVIVABLE": 802
+  },
+  "exit_survivable_rows": 802,
+  "input_paths": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch60_curve_completion_watch/rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/launch0q_realtime_launch_quote_state_rows.jsonl"
+  ],
+  "live_landed": 0,
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch65_exit_survivability_score/ready_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch65_exit_survivability_score/rows.jsonl",
+  "rows_seen": 4357,
+  "status": "LAUNCH65_EXIT_SURVIVABILITY_SCORE_PASS",
+  "stress_reserve_fraction": 0.5,
+  "wire_send": 0
+}

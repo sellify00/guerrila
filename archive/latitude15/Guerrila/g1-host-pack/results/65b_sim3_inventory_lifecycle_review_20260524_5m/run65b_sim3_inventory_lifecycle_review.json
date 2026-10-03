@@ -1,0 +1,163 @@
+{
+  "PM_reserve_sim_ok_count": 0,
+  "acquisition_allowed": false,
+  "auto_flatten_available_count": 3,
+  "decision_counts": {
+    "INVENTORY_LIFECYCLE_REVIEW": 3
+  },
+  "lifecycle_review_count": 3,
+  "live_landed": 0,
+  "live_send_allowed": false,
+  "row_count": 3,
+  "signed_swap_simulation_passed_count": 3,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/65b_sim2_signed_swap_simulation_20260524_5m/run65b_sim2_signed_swap_simulation_rows.jsonl",
+  "status": "run65b_sim3_inventory_lifecycle_review_complete",
+  "step": "65b_sim3_inventory_lifecycle_review_20260524_5m",
+  "top_items": [
+    {
+      "PM_reserve_sim_ok": false,
+      "PM_reserve_sim_status": "not_run_no_acquisition",
+      "acquisition_allowed": false,
+      "auto_flatten_available": true,
+      "auto_flatten_route": [
+        "Raydium CLMM",
+        "GoonFi V2"
+      ],
+      "decision": "INVENTORY_LIFECYCLE_REVIEW",
+      "entry_quote": {
+        "amount_raw": 7554756,
+        "expected_out_raw": 289368819,
+        "min_out_raw": 286475131,
+        "ok": true,
+        "route_plan_labels": [
+          "HumidiFi",
+          "Raydium CLMM"
+        ]
+      },
+      "exit_quote": {
+        "exit_out_raw": 7528627,
+        "exit_value_ratio": 0.996541445,
+        "exit_value_usdc": 7.528627,
+        "ok": true,
+        "route_plan_labels": [
+          "Raydium CLMM",
+          "GoonFi V2"
+        ]
+      },
+      "expected_unlocked_ev_usdc": 0.14691,
+      "expected_unlocked_would_fire_delta": 61,
+      "exposure_efficiency_delta_per_usdc": 8.074384363,
+      "flatten_simulation_passed": false,
+      "flatten_simulation_status": "not_run_no_inventory_acquired",
+      "inventory_ttl_seconds": 300,
+      "live_landed": 0,
+      "live_send_allowed": false,
+      "max_inventory_at_risk_usdc": 7.55475554,
+      "mint": "vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump",
+      "net_after_inventory_carry_cost_usdc": 0.12078146,
+      "rank": 3,
+      "roundtrip_loss_pct": 0.345855532,
+      "roundtrip_loss_usdc": 0.02612854,
+      "route_stability_status": "signed_entry_swap_simulation_passed",
+      "signed_swap_simulation_passed": true,
+      "wire_send": 0
+    },
+    {
+      "PM_reserve_sim_ok": false,
+      "PM_reserve_sim_status": "not_run_no_acquisition",
+      "acquisition_allowed": false,
+      "auto_flatten_available": true,
+      "auto_flatten_route": [
+        "Raydium CLMM",
+        "GoonFi V2"
+      ],
+      "decision": "INVENTORY_LIFECYCLE_REVIEW",
+      "entry_quote": {
+        "amount_raw": 56716678,
+        "expected_out_raw": 917745055,
+        "min_out_raw": 908567605,
+        "ok": true,
+        "route_plan_labels": [
+          "HumidiFi",
+          "Raydium CLMM"
+        ]
+      },
+      "exit_quote": {
+        "exit_out_raw": 56623628,
+        "exit_value_ratio": 0.998359384,
+        "exit_value_usdc": 56.623628,
+        "ok": true,
+        "route_plan_labels": [
+          "Raydium CLMM",
+          "GoonFi V2"
+        ]
+      },
+      "expected_unlocked_ev_usdc": 0.819754,
+      "expected_unlocked_would_fire_delta": 13,
+      "exposure_efficiency_delta_per_usdc": 0.229209474,
+      "flatten_simulation_passed": false,
+      "flatten_simulation_status": "not_run_no_inventory_acquired",
+      "inventory_ttl_seconds": 300,
+      "live_landed": 0,
+      "live_send_allowed": false,
+      "max_inventory_at_risk_usdc": 56.716678299,
+      "mint": "AeVzGq6z1RndB9Tk9dGT6RPADjZJpQwX6tudqSRkmAgp",
+      "net_after_inventory_carry_cost_usdc": 0.726703701,
+      "rank": 1,
+      "roundtrip_loss_pct": 0.164061616,
+      "roundtrip_loss_usdc": 0.093050299,
+      "route_stability_status": "signed_entry_swap_simulation_passed",
+      "signed_swap_simulation_passed": true,
+      "wire_send": 0
+    },
+    {
+      "PM_reserve_sim_ok": false,
+      "PM_reserve_sim_status": "not_run_no_acquisition",
+      "acquisition_allowed": false,
+      "auto_flatten_available": true,
+      "auto_flatten_route": [
+        "Raydium CLMM",
+        "WhaleStreet"
+      ],
+      "decision": "INVENTORY_LIFECYCLE_REVIEW",
+      "entry_quote": {
+        "amount_raw": 86590680,
+        "expected_out_raw": 1037126802,
+        "min_out_raw": 1026755534,
+        "ok": true,
+        "route_plan_labels": [
+          "BisonFi",
+          "Raydium CLMM"
+        ]
+      },
+      "exit_quote": {
+        "exit_out_raw": 86395227,
+        "exit_value_ratio": 0.997742795,
+        "exit_value_usdc": 86.395227,
+        "ok": true,
+        "route_plan_labels": [
+          "Raydium CLMM",
+          "WhaleStreet"
+        ]
+      },
+      "expected_unlocked_ev_usdc": 0.739514,
+      "expected_unlocked_would_fire_delta": 8,
+      "exposure_efficiency_delta_per_usdc": 0.092388696,
+      "flatten_simulation_passed": false,
+      "flatten_simulation_status": "not_run_no_inventory_acquired",
+      "inventory_ttl_seconds": 300,
+      "live_landed": 0,
+      "live_send_allowed": false,
+      "max_inventory_at_risk_usdc": 86.590679881,
+      "mint": "2ACEWAyABfBB66w24XvbU3t9HNoRbMdszHQmEG8zEjfi",
+      "net_after_inventory_carry_cost_usdc": 0.544061119,
+      "rank": 2,
+      "roundtrip_loss_pct": 0.22572046,
+      "roundtrip_loss_usdc": 0.195452881,
+      "route_stability_status": "signed_entry_swap_simulation_passed",
+      "signed_swap_simulation_passed": true,
+      "wire_send": 0
+    }
+  ],
+  "wire_send": 0
+}

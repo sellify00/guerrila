@@ -1,0 +1,16 @@
+status=SOURCE_LATE
+target_seen_preprocessed_ns=0
+target_first_status_check_ns=0
+selector_ready_ns=0
+bundle_ready_ns=0
+execute_start_ns=0
+presend_status_check_ns=0
+target_landed_before_selector=false
+target_landed_before_bundle=false
+target_landed_before_execute=true
+target_seen_to_bundle_ready_us=0
+target_seen_to_execute_start_us=0
+target_seen_to_our_buy_built_ms=0
+bundle_submit_to_result_ms=0
+entry_mode_selected=None
+first_failure=presend_timeout:target_already_landed

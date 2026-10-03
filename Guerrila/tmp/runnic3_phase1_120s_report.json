@@ -1,0 +1,18 @@
+{
+  "step": "epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge",
+  "requested_duration": 120,
+  "remote_sample_count": 25,
+  "reference_sample_count": 48,
+  "merged_sample_count": 25,
+  "processed_lag_start": 2,
+  "processed_lag_max": 258,
+  "processed_lag_end": 258,
+  "finalized_lag_start": 5,
+  "finalized_lag_max": 260,
+  "finalized_lag_end": 260,
+  "lag_slope_p95": 3.199005,
+  "lag_slope_max": 3.398887,
+  "max_match_delta_seconds": 3.287,
+  "remote_summary": "status=starting\nrequested_duration=120\nlocal_rpc_url=http://127.0.0.1:8899\nreference_rpc_url=http://127.0.0.1:8899\nprocessed_lag_start=0\nfinalized_lag_start=0\nbaseline_health=ok\neno1_combined_before=16\nxdp_attached_before=none\nrx_missed_errors_before=9557382\nrx_no_dma_resources_before=388238\nsoftnet_drop_before=0\nrx_dropped_before=16\nrx_errors_before=0\ncontinue_slope_threshold=0.25\nwarning_slope_threshold=0.5\nhard_stop_slope_threshold=1.0\nhard_stop_lag_threshold=100\nrun40_pid=136981\neno1_combined_during=1\nxdp_attached_during=native\nlag_samples_path=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge/lag_samples.jsonl\nmonitor_summary_path=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge/monitor_summary.json\nrun40_launcher_log=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge/run40_launcher.log\ncleanup_verified=true\ncleanup_service=sh1-agave-no-geyser-2.service\ncleanup_restart_performed=false\ncleanup_restart_rc=0\neno1_xdp_lines=0\neno1_combined_after=16\nxsk_map_after_cleanup=absent\nshadow_runtime_process_count_after_cleanup=0\nudp_8000_8025_count=30\nagave_health_after_cleanup=ok\nprocessed_lag_end=0\nfinalized_lag_end=0\npost_cleanup_flat_green_streak=3\nstatus=completed_requested_duration\nrequested_duration=120\nactual_duration=120.308\nstop_reason=requested_duration_elapsed\nlag_slope_continue_threshold=0.25\nlag_slope_warning_threshold=0.5\nlag_slope_hard_stop_threshold=1.0\nlag_hard_stop_limit=100\nprocessed_lag_start=0\nprocessed_lag_max=0\nprocessed_lag_end_during_lease=0\nfinalized_lag_start=0\nfinalized_lag_max=0\nfinalized_lag_end_during_lease=0\nlag_slope_p95=0.0\nlag_slope_max=0.0\nlag_sample_count=25\nwarning_sustained_sample_count=0\neno1_combined_before=16\neno1_combined_during=1\neno1_combined_after_snapshot=16\nxdp_attached_before=none\nxdp_attached_during=native\nxdp_attached_after_snapshot=none\nxsk_map_after_snapshot=absent\nrx_missed_errors_delta=0\nrx_no_dma_resources_delta=426\nsoftnet_drop_delta=0\nrx_dropped_delta=0\nrx_errors_delta=0\nrun40_step=epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge_run40\nrun40_rc=143\nrun40_status=\nrun40_probe_status=\nrun40_summary_path=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge_run40/summary.txt\nrun40_tpu_summary_path=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge_run40/tpu_summary.txt\nrun40_tier0_log=/home/ubuntu/shadow-host-audit/dpdk-runs/epoch8_auto_strict_directarb_quote_identity_runnic3_phase1_120s_refmerge_run40/shadow-tier0.log\nshadow_runtime_process_count_after_cleanup_snapshot=0\nagave_health_after_cleanup_snapshot=ok",
+  "reference_sample_file": "C:\\Shadow Engine\\Guerrila\\tmp\\runnic3_phase1_120s_ref_samples.jsonl"
+}

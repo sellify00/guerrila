@@ -1,0 +1,23 @@
+{
+  "decision_counts": {
+    "CONTINUATION_RULE_CARRY_FORWARD_READY": 87,
+    "PM_OWNER_MODE_MISSING": 1
+  },
+  "entry_rule_present_after_merge_rows": 0,
+  "entry_rule_present_before_merge_rows": 62,
+  "entry_rule_recovered_rows": 88,
+  "exit_rule_present_after_merge_rows": 0,
+  "exit_rule_present_before_merge_rows": 62,
+  "exit_rule_recovered_rows": 88,
+  "first_carry_forward_blocker_counts": {
+    "PM_OWNER_MODE_MISSING": 1
+  },
+  "live_landed": 0,
+  "rows_seen": 88,
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_resume5_fresh_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctpm_resume5_after_cta/run66ctpm_continuation_pm_owner_lock_repair_rows.jsonl",
+  "status": "CONTINUATION_RULE_CARRY_FORWARD_READY",
+  "wire_send": 0
+}

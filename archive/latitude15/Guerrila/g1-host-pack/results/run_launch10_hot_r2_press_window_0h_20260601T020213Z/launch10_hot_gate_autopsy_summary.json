@@ -1,0 +1,24 @@
+{
+  "attempt_count": 0,
+  "decision_counts": {
+    "HOT_BLOCK_EXIT_ZERO": 245,
+    "HOT_BLOCK_PM_INPUT": 1310,
+    "HOT_BLOCK_POLICY": 119,
+    "HOT_BLOCK_TARGET_TOO_OLD_OR_MISSING_BYTES": 364
+  },
+  "eligible_pump_rows": 3357,
+  "first_hot_gate_blocker_counts": {
+    "exit_quote_expected_out_zero": 245,
+    "pm_reserve_input_failed": 1310,
+    "policy:token2022_requires_explicit_allow": 119,
+    "target_too_old_or_missing_bytes": 364
+  },
+  "hot_gate_rows_seen": 2038,
+  "hot_ready_late_follow_rows": 0,
+  "hot_ready_ordered_bundle_rows": 0,
+  "live_landed": 0,
+  "status": "PARK_NO_HOT_READY_ROWS",
+  "stream_rows_seen": 15832,
+  "trigger_b_pass_rows": 2038,
+  "wire_send": 0
+}

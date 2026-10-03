@@ -1,0 +1,110 @@
+{
+  "actual_bundle_tx_count": 1,
+  "ata_create_leg_built": false,
+  "ata_create_leg_required": true,
+  "ata_create_leg_subsumed_by_entry_swap": false,
+  "ata_rent_at_risk_lamports": 0,
+  "bundle_envelope_built": false,
+  "bundle_tip_lamports": 200000,
+  "bundle_tip_present": true,
+  "candidate_mint_in": "So11111111111111111111111111111111111111112",
+  "candidate_mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+  "candidate_pool": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz",
+  "candidate_signature": "4AoVhJ15TiirvNiQf7yK2FzJ6EG9YK6Q9PrSHnubszMsnJvtDzZb8xg4qsTtxgk437qisLg2Q6bRSXNQsWpZAj5r",
+  "close_account_leg_built": false,
+  "close_account_leg_required": false,
+  "close_account_recovery_lamports": 0,
+  "entry_bundle_leg_built": false,
+  "entry_platform_fee_raw": 0,
+  "entry_priority_fee_lamports": 0,
+  "entry_tx_built": false,
+  "entry_tx_fee_lamports": 0,
+  "entry_tx_parse": {
+    "account_keys": [],
+    "address_table_lookup_count": 0,
+    "decode_error": "entry_not_built",
+    "decode_ok": false,
+    "instructions": [],
+    "program_ids": [],
+    "signature_count": 0
+  },
+  "entry_tx_signed": false,
+  "flatten_bundle_leg_built": false,
+  "flatten_bundle_leg_required": true,
+  "flatten_input_lte_entry_min_out": true,
+  "flatten_input_raw": 10171423634,
+  "flatten_platform_fee_raw": 0,
+  "flatten_priority_fee_lamports": 0,
+  "flatten_tx_built": false,
+  "flatten_tx_fee_lamports": 0,
+  "flatten_tx_parse": {
+    "account_keys": [],
+    "address_table_lookup_count": 0,
+    "decode_error": "flatten_not_built",
+    "decode_ok": false,
+    "instructions": [],
+    "program_ids": [],
+    "signature_count": 0
+  },
+  "flatten_tx_signed": false,
+  "flatten_uses_same_output_account": false,
+  "live_landed": 0,
+  "output_account_created_by_entry": false,
+  "output_account_preexisting": false,
+  "output_token_account": "4AzUVUsoeMogAtmAFBYmSmJ2cFbQgY7vzCpN8JZj3mi4",
+  "output_token_account_error": {},
+  "planned_bundle_tx_count": 4,
+  "planned_legs": [
+    "entry_swap",
+    "flatten_exit",
+    "output_account_setup_in_entry_swap",
+    "bundle_tip"
+  ],
+  "provider_endpoint": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "provider_route_name": "jito_via_helius_bundle",
+  "rent_recovered": false,
+  "selected_tip_account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+  "sendBundle_called": false,
+  "simulate_bundle_available": true,
+  "simulate_bundle_called": true,
+  "simulate_bundle_failure_reason": "",
+  "simulate_bundle_pass": true,
+  "tip_build_error": null,
+  "tip_tx_built": true,
+  "tip_tx_fee_lamports": 5000,
+  "tip_tx_parse": {
+    "account_keys": [
+      "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+      "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "111111111111111111111111111111111"
+    ],
+    "address_table_lookup_count": 0,
+    "decode_error": "",
+    "decode_ok": true,
+    "instructions": [
+      {
+        "account_indices": [
+          0,
+          1
+        ],
+        "account_keys": [
+          "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+          "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL"
+        ],
+        "data_len": 12,
+        "program_id": "111111111111111111111111111111111"
+      }
+    ],
+    "program_ids": [
+      "111111111111111111111111111111111"
+    ],
+    "recent_blockhash": "7avL8ukZ6oNnsGPB98X8MigQu9DWktsJAzJmVNLCm8xb",
+    "signature_count": 1
+  },
+  "tip_tx_signed": true,
+  "total_fee_and_tip_lamports": 205000,
+  "txs_base64": [
+    "AZMe39aokHUQlSct2URrASJ6dcD2JXZgjeFD2tsb+dOLo16S5zR1N7aH8PnY7f40lTZ16s6D/yxP54wFablkfAEBAAEDi1YvZFQ9OvnC96/TSfhg2nJMx/mCyw8FV9pHdEz4WfS/lxtZEItbhaBPsJPx4htOP9TEyPSH3Qm5V1J2nw3YwwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYdaWryZrSn6wHwv73AWnlpq7jyUjj5EBqkHEvO733UQBAgIAAQwCAAAAQA0DAAAAAAA="
+  ],
+  "wire_send": 0
+}

@@ -1,0 +1,162 @@
+{
+  "blocked_reason": "public_supported_candidate_exists_but_not_live_ready",
+  "public_blockers": [
+    [
+      "unsupported_public_venue",
+      83
+    ],
+    [
+      "inventory_create_input_ata",
+      2
+    ],
+    [
+      "output_ata_needed",
+      1
+    ],
+    [
+      "inventory_deny_bad_mint",
+      1
+    ]
+  ],
+  "public_live_candidate": null,
+  "public_live_ready_count": 0,
+  "public_probe_candidate": {
+    "best_horizon": "next_same_pool_event_1",
+    "best_horizon_markout_lamports": 41985,
+    "best_horizon_net_after_fee": 44543,
+    "candidate_id": "1779048881797202488:420406649:3ongYKU6TwMjPb4dAN4xrofjTAJTrkcp9jjRR7stWsJpCZy5pKaBWi4LSsgUszx8AEQTfGyFoZe8ewZxAWNGhEKB:HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+    "conversion_speed_score": 71.2709,
+    "current_execution_path": "jito_nosend_first",
+    "execution_blocker": "r1_not_admitted",
+    "first_rejection_stage": "source_not_afxdp",
+    "jito_ready": true,
+    "mint_in": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "mint_out": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+    "next_action": "block_on_output_mint_proof_before_preflight",
+    "output_ata_needed": true,
+    "owner_mode": "rebalancing",
+    "pool": "HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+    "public_ready": false,
+    "rank": 68,
+    "repeat_count": 1,
+    "required_inventory": "ready",
+    "route": "jito_bundle",
+    "route_ready": true,
+    "safe_size_lamports": null,
+    "source": "external_geyser",
+    "source_softening_needed": true,
+    "target_route_family": "jito_bundle",
+    "template_ready": true,
+    "tiny_cap_safe": false,
+    "tpu_ready": false,
+    "trade_size_lamports": 19962373,
+    "venue": "raydium_clmm",
+    "why_selected": "inventory_ready"
+  },
+  "public_probe_count": 4,
+  "public_supported_venues": [
+    "raydium_clmm"
+  ],
+  "run49_plan_path": "/home/ubuntu/shadow-host-audit/dpdk-runs/47_broad_surface_discovery_grpc_10m_001/run49_hunt_conversion_plan.json",
+  "status": "blocked_no_live_candidate",
+  "top_overall_candidate": {
+    "best_horizon": "next_same_pool_event_3",
+    "best_horizon_markout_lamports": 25666,
+    "best_horizon_net_after_fee": 27471,
+    "candidate_id": "274333285387520:420406470:2KRWZeU5etrttExrN1kRwycXj9qNVDGtKvfdNMN78YdeMW5KxqPvgDupMc1KZtNxoJPXCWghozMr1Nd4hFpw8Mg8:9i1GxRjhZRyjPK5M4JTxAKB3HPNmiAQKVQLaBbGKCtRs:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v:MomhYZFWByMgz5vnLLLHZTr4a5dNUWXAcR7bfFPXHbF",
+    "conversion_speed_score": 135.5307,
+    "current_execution_path": "jito_nosend_first",
+    "execution_blocker": "none",
+    "first_rejection_stage": "route_not_tpu_ready",
+    "jito_ready": true,
+    "mint_in": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "mint_out": "MomhYZFWByMgz5vnLLLHZTr4a5dNUWXAcR7bfFPXHbF",
+    "next_action": "promote_to_jito_nosend_candidate",
+    "output_ata_needed": false,
+    "owner_mode": "rebalancing",
+    "pool": "9i1GxRjhZRyjPK5M4JTxAKB3HPNmiAQKVQLaBbGKCtRs",
+    "public_ready": false,
+    "rank": 1,
+    "repeat_count": 208,
+    "required_inventory": "ready",
+    "route": "jito_bundle",
+    "route_ready": true,
+    "safe_size_lamports": 17971735,
+    "source": "afxdp",
+    "source_softening_needed": false,
+    "target_route_family": "jito_bundle",
+    "template_ready": true,
+    "tiny_cap_safe": true,
+    "tpu_ready": false,
+    "trade_size_lamports": 17971735,
+    "venue": "meteora_damm_v2",
+    "why_selected": "inventory_ready"
+  },
+  "total_hunt_candidates": 87,
+  "tpu_blockers": [
+    [
+      "route_not_tpu_ready",
+      45
+    ],
+    [
+      "source_not_afxdp",
+      16
+    ],
+    [
+      "inventory_new_inventory_band_required",
+      16
+    ],
+    [
+      "not_tiny_cap_safe",
+      5
+    ],
+    [
+      "output_ata_needed",
+      2
+    ],
+    [
+      "inventory_create_input_ata",
+      2
+    ],
+    [
+      "inventory_deny_bad_mint",
+      1
+    ]
+  ],
+  "tpu_live_candidate": null,
+  "tpu_live_ready_count": 0,
+  "tpu_probe_candidate": {
+    "best_horizon": "next_same_pool_event_3",
+    "best_horizon_markout_lamports": 25666,
+    "best_horizon_net_after_fee": 27471,
+    "candidate_id": "274333285387520:420406470:2KRWZeU5etrttExrN1kRwycXj9qNVDGtKvfdNMN78YdeMW5KxqPvgDupMc1KZtNxoJPXCWghozMr1Nd4hFpw8Mg8:9i1GxRjhZRyjPK5M4JTxAKB3HPNmiAQKVQLaBbGKCtRs:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v:MomhYZFWByMgz5vnLLLHZTr4a5dNUWXAcR7bfFPXHbF",
+    "conversion_speed_score": 135.5307,
+    "current_execution_path": "jito_nosend_first",
+    "execution_blocker": "none",
+    "first_rejection_stage": "route_not_tpu_ready",
+    "jito_ready": true,
+    "mint_in": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "mint_out": "MomhYZFWByMgz5vnLLLHZTr4a5dNUWXAcR7bfFPXHbF",
+    "next_action": "promote_to_jito_nosend_candidate",
+    "output_ata_needed": false,
+    "owner_mode": "rebalancing",
+    "pool": "9i1GxRjhZRyjPK5M4JTxAKB3HPNmiAQKVQLaBbGKCtRs",
+    "public_ready": false,
+    "rank": 1,
+    "repeat_count": 208,
+    "required_inventory": "ready",
+    "route": "jito_bundle",
+    "route_ready": true,
+    "safe_size_lamports": 17971735,
+    "source": "afxdp",
+    "source_softening_needed": false,
+    "target_route_family": "jito_bundle",
+    "template_ready": true,
+    "tiny_cap_safe": true,
+    "tpu_ready": false,
+    "trade_size_lamports": 17971735,
+    "venue": "meteora_damm_v2",
+    "why_selected": "inventory_ready"
+  },
+  "tpu_probe_count": 66
+}

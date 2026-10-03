@@ -1,0 +1,28 @@
+{
+  "best_candidate_expected_edge_bps": 36.3388,
+  "best_candidate_lane": "DERIV_ROLLING_IMPULSE_TRIGGER",
+  "best_candidate_symbol": "EIGEN",
+  "best_candidate_venue": "hyperliquid",
+  "blocker_counts": {
+    "basis_and_funding_below_cost_floor": 72,
+    "day_volume_below_floor": 118,
+    "none": 2,
+    "post_entry_net_below_cost_floor": 12,
+    "rolling_change_below_trigger": 45,
+    "rolling_trigger_below_cost_floor": 1,
+    "signal_symbol_missing": 1977,
+    "window_impulse_requires_rolling_replay": 178
+  },
+  "decision_counts": {
+    "DERIV_MONEY_READY": 2,
+    "PARK_DERIV_NO_MONEY_ROWS": 2403
+  },
+  "deriv_money_ready_rows": 2,
+  "deriv_rows_seen": 2405,
+  "live_landed": 0,
+  "no_wire": true,
+  "ready_rows": 2,
+  "rows": 2405,
+  "status": "DERIV_MONEY_READY",
+  "wire_send": 0
+}

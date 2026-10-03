@@ -1,0 +1,14 @@
+{
+  "recommended_next_lane": "owner_selector_instrumentation_repair",
+  "reason": "Owner labels are not reliable enough for Rebalancing proposal selection: selected owner is rebalancing but owner_mode_match=false for all structural-ready rows.",
+  "do_not_run": [
+    "DirectArb-B broad retries",
+    "AFBR2",
+    "LS12",
+    "live send",
+    "sendBundle",
+    "acquisition",
+    "ATA creation",
+    "Token-2022 explicit allow"
+  ]
+}

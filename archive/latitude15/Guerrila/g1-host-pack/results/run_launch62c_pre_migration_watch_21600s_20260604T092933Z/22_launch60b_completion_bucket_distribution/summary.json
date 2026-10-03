@@ -1,0 +1,99 @@
+{
+  "acceptance_pass": true,
+  "bucket_summary": {
+    "50-70%": {
+      "curve_state_ready_rows": 22,
+      "estimated_sol_to_completion_median": 49.030634756,
+      "estimated_sol_to_completion_min": 34.581529167,
+      "exit_liquidity_ready_rows": 22,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 18,
+      "rows": 22
+    },
+    "70-80%": {
+      "curve_state_ready_rows": 4,
+      "estimated_sol_to_completion_median": 27.525012306,
+      "estimated_sol_to_completion_min": 23.967912489,
+      "exit_liquidity_ready_rows": 4,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 4,
+      "rows": 4
+    },
+    "80-90%": {
+      "curve_state_ready_rows": 2,
+      "estimated_sol_to_completion_median": 21.052524875,
+      "estimated_sol_to_completion_min": 19.734718876,
+      "exit_liquidity_ready_rows": 2,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 2,
+      "rows": 2
+    },
+    "90-95%": {
+      "curve_state_ready_rows": 1,
+      "estimated_sol_to_completion_median": 9.752984783,
+      "estimated_sol_to_completion_min": 9.752984783,
+      "exit_liquidity_ready_rows": 1,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 1,
+      "rows": 1
+    },
+    "95-98%": {
+      "curve_state_ready_rows": 0,
+      "estimated_sol_to_completion_median": 0,
+      "estimated_sol_to_completion_min": 0,
+      "exit_liquidity_ready_rows": 0,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 0,
+      "rows": 0
+    },
+    "98-99%": {
+      "curve_state_ready_rows": 0,
+      "estimated_sol_to_completion_median": 0,
+      "estimated_sol_to_completion_min": 0,
+      "exit_liquidity_ready_rows": 0,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 0,
+      "rows": 0
+    },
+    "99%+": {
+      "curve_state_ready_rows": 0,
+      "estimated_sol_to_completion_median": 0,
+      "estimated_sol_to_completion_min": 0,
+      "exit_liquidity_ready_rows": 0,
+      "migration_seen_later_rows": 0,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 0,
+      "rows": 0
+    },
+    "<50%": {
+      "curve_state_ready_rows": 2644,
+      "estimated_sol_to_completion_median": 85.005359062,
+      "estimated_sol_to_completion_min": 6.340330701,
+      "exit_liquidity_ready_rows": 509,
+      "migration_seen_later_rows": 3,
+      "recent_buy_rows": 0,
+      "recent_sell_rows": 3923,
+      "rows": 5954
+    }
+  },
+  "buy_resolver_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch61c_pre_migration_buy_event_resolver/rows.jsonl",
+  "completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "decision_counts": {
+    "PARK_COMPLETION_CURVE_STATE_MISSING": 3310,
+    "PARK_COMPLETION_EXIT_LIQUIDITY": 2135,
+    "PARK_COMPLETION_PROGRESS_BELOW_THRESHOLD": 537,
+    "PRE_MIGRATION_COMPLETION_WATCH_READY": 1
+  },
+  "live_landed": 0,
+  "migration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60b_completion_bucket_distribution/rows.jsonl",
+  "rows_seen": 5983,
+  "status": "LAUNCH60B_COMPLETION_BUCKET_DISTRIBUTION_PASS",
+  "wire_send": 0
+}

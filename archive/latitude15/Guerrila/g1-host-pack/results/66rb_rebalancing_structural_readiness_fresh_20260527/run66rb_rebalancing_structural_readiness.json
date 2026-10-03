@@ -1,0 +1,66 @@
+{
+  "account_ready_rows": 47,
+  "architecture_blocker_counts": {
+    "BLOCKED_ENTRY_RULE_MISSING": 546,
+    "BLOCKED_EXIT_RULE_MISSING": 874,
+    "BLOCKED_PM": 1,
+    "BLOCKED_POLICY": 30,
+    "BLOCKED_QUOTE_MISSING": 2363,
+    "BLOCKED_TEMPLATE": 39,
+    "DENY_AUTHORITY_RISK": 3,
+    "DENY_EXIT_DUST": 4,
+    "DENY_FREEZE_AUTHORITY": 11,
+    "INLINE_ATA_EXIT_DUST": 4,
+    "INLINE_ATA_POLICY_BLOCKED": 31
+  },
+  "bundle_no_submit_ready_rows": 9,
+  "entry_rule_ready_rows": 3451,
+  "exact_positive_rows": 91,
+  "exit_rule_ready_rows": 2916,
+  "inline_ata_possible_rows": 9,
+  "inline_decision_counts": {
+    "ACCOUNT_READY": 47,
+    "INLINE_ATA_CREATABLE": 9,
+    "INLINE_ATA_EXIT_DUST": 4,
+    "INLINE_ATA_POLICY_BLOCKED": 31
+  },
+  "live_landed": 0,
+  "market_blocker_counts": {},
+  "pm_ready_rows": 72,
+  "policy_decision_counts": {
+    "DENY_AUTHORITY_RISK": 3,
+    "DENY_EXIT_DUST": 4,
+    "DENY_FREEZE_AUTHORITY": 11,
+    "POLICY_CLEAN_READY": 61,
+    "REVIEW_METADATA_ONLY_TOKEN2022": 12
+  },
+  "quote_min_out_ready_rows": 324,
+  "rebalancing_rows_seen": 3997,
+  "roundtrip_positive_rows": 91,
+  "rule_decision_counts": {
+    "BLOCKED_ENTRY_RULE_MISSING": 546,
+    "BLOCKED_EXIT_RULE_MISSING": 874,
+    "BLOCKED_QUOTE_MISSING": 2363,
+    "ENTRY_EXIT_RULE_READY": 214
+  },
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_no_send_ready_rows": 12,
+  "source_inline_rows": "g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "source_overlay_rows": "g1-host-pack/results/66r_rebalancing_exact_positive_readiness_overlay_fresh_20260527/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "source_policy_rows": "g1-host-pack/results/66rp_rebalancing_policy_liquidity_gate_fresh_20260527/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "source_rule_rows": "g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "source_template_rows": "g1-host-pack/results/66rt_rebalancing_template_nosend_fresh_20260527/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "status": "REBALANCING_STRUCTURAL_PARTIAL_WITH_BLOCKERS",
+  "step": "66rb_rebalancing_structural_readiness_fresh_20260527",
+  "structural_ready_rows": 21,
+  "template_decision_counts": {
+    "BLOCKED_PM": 1,
+    "BLOCKED_POLICY": 30,
+    "BLOCKED_TEMPLATE": 39,
+    "REBALANCING_BUNDLE_READY_NO_SUBMIT": 9,
+    "REBALANCING_SENDER_READY_NO_SEND": 12
+  },
+  "template_ready_rows": 69,
+  "wire_send": 0
+}

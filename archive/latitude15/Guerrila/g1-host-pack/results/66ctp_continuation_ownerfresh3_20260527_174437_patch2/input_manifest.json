@@ -1,0 +1,15 @@
+{
+  "enrich_rows": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_ownerfresh3_20260527_174437_fields/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/66q_rebalancing_ownerfresh3_20260527_174437_fields/run66q_rebalancing_quote_minout_rows.jsonl"
+  ],
+  "entry_slippage_bps": 50,
+  "exit_slippage_bps": 50,
+  "live_send": false,
+  "max_entry_drift_bps": 2500.0,
+  "max_rows": 2,
+  "quote_api_url": "https://lite-api.jup.ag/swap/v1/quote",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctp_continuation_ownerfresh3_20260527_174437_patch2",
+  "sendBundle": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66cth_continuation_ownerfresh3_20260527_174437_patch1/proposal_eligible_continuation_rows.jsonl"
+}

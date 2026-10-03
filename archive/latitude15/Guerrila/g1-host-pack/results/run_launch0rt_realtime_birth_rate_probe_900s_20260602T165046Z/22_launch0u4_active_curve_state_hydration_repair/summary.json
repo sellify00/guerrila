@@ -1,0 +1,35 @@
+{
+  "acceptance_pass": false,
+  "active_bonding_curve_rows": 1414,
+  "after_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 125,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 4,
+    "BONDING_CURVE_RESERVES_MISSING": 11,
+    "BONDING_CURVE_STATE_MISSING": 1192,
+    "QUOTE_STATE_READY": 82
+  },
+  "before_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 125,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 4,
+    "BONDING_CURVE_RESERVES_MISSING": 11,
+    "BONDING_CURVE_STATE_MISSING": 1192,
+    "QUOTE_STATE_READY": 82
+  },
+  "bonding_curve_account_fetch_ok_rows": 82,
+  "bonding_curve_owner_ok_rows": 211,
+  "bonding_curve_pda_derived_rows": 0,
+  "bonding_curve_real_sol_zero_birth_warmup_rows": 0,
+  "bonding_curve_state_missing_after": 1192,
+  "bonding_curve_state_missing_before": 1192,
+  "entry_edge_ready_rows_after_hydration": 3,
+  "entry_quality_ready_rows_after_hydration": 7,
+  "launch0u_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0t_warmup_calibration_replay/bucket_rows.jsonl",
+  "live_landed": 0,
+  "quote_ready_rows_after_hydration": 82,
+  "quote_ready_rows_before": 82,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0u4_active_curve_state_hydration_repair/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z",
+  "state_hydrated_but_quote_blocked_rows": 0,
+  "status": "PARK_ACTIVE_CURVE_STATE_HYDRATION_NOT_IMPROVED",
+  "wire_send": 0
+}

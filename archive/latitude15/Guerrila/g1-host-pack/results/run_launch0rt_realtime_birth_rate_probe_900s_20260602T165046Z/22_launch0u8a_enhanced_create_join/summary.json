@@ -1,0 +1,20 @@
+{
+  "acceptance_pass": true,
+  "active_bonding_curve_rows": 1687,
+  "create_proven_active_curve_rows": 0,
+  "decision_counts": {
+    "PARK_ENHANCED_CREATE_NOT_JOINED": 1687,
+    "PARK_NOT_ACTIVE_BONDING_CURVE": 359
+  },
+  "enhanced_joined_active_curve_rows": 0,
+  "enhanced_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0p_helius_processed_enhanced_birth_source_20260602T111756Z/launch0p_helius_processed_enhanced_birth_source_rows.jsonl",
+  "enhanced_rows_seen": 300,
+  "launch_rows_seen": 2046,
+  "launch_state_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/launch0d_realtime_birth_decoder_rows.jsonl",
+  "live_landed": 0,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0u8a_enhanced_create_join/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z",
+  "status": "LAUNCH0U8A_ENHANCED_CREATE_JOIN_COMPLETE",
+  "unjoined_active_curve_rows": 1687,
+  "wire_send": 0
+}

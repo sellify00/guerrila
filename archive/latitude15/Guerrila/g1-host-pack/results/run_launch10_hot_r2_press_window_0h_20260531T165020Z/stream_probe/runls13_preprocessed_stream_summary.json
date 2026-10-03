@@ -1,0 +1,15 @@
+{
+  "account_include": [
+    "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+  ],
+  "direct_subscribe_probe": null,
+  "emitted_rows": 15365,
+  "record_type": "runls13_preprocessed_stream_summary",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_0h_20260531T165020Z/stream_probe/runls13_preprocessed_stream_rows.jsonl",
+  "skipped_updates": 6,
+  "source": "laserstream_preprocessed_live",
+  "status": "runls13_preprocessed_stream_complete",
+  "stream_error": null,
+  "unique_target_signatures": 15365,
+  "window_seconds": 900
+}

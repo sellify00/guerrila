@@ -1,0 +1,13 @@
+status=COST_AWARE_PROFIT_PROTECTOR_COMPLETE
+rows_seen=1
+decision_counts={'COST_PROTECTOR_NOT_ARMED': 1}
+latest_decision=COST_PROTECTOR_NOT_ARMED
+latest_selected_mint=3N2SPq8waha1ro5r3MvWn6oYwW9soTTkN67DUAFXiv9U
+latest_break_even_bps=2289
+latest_arm_gain_bps=2789
+latest_peak_gain_bps=1101
+latest_drawdown_from_peak_bps=988
+latest_cost_profit_protector_armed=False
+floor_source=true_loss_floor
+profit_buffer_bps=500
+tight_trailing_stop_bps=500

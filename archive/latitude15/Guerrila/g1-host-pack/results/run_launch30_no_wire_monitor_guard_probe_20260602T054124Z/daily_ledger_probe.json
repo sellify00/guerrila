@@ -1,0 +1,20 @@
+{
+  "daily_max_loss_usd": 25.0,
+  "daily_max_trades": 3,
+  "daily_profit_target_usd": 60.0,
+  "date_utc": "2026-06-02",
+  "executed_trade_count": 0,
+  "flat_trade_count": 0,
+  "landed_trade_count": 0,
+  "last_failure": "execute_confirm_mismatch",
+  "last_status": "ABORT_EXECUTE_CONFIRM_MISMATCH",
+  "last_trade_pnl_lamports": 0,
+  "last_updated_utc": "2026-06-02T05:41:24Z",
+  "max_loss_breach_count": 0,
+  "open_exposure_count": 0,
+  "realized_pnl_lamports": 0,
+  "realized_pnl_sol": 0.0,
+  "realized_pnl_usd_estimate": 0.0,
+  "risk_tier": "R3_COLD_CAPITAL_PRESS",
+  "sol_usd_hint": 82.72
+}

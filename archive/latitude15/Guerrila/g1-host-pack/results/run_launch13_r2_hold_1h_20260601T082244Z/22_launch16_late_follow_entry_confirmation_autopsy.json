@@ -1,0 +1,39 @@
+{
+  "blockhash": "",
+  "blockhash_expired": false,
+  "blockhash_valid": null,
+  "checked_at_unix": 1780304073,
+  "confirmation_status": "finalized",
+  "current_block_height": 401644024,
+  "entry_landed_by_inventory_delta": false,
+  "entry_landed_by_signature_status": false,
+  "entry_send_attempted": true,
+  "err": {
+    "InstructionError": [
+      1,
+      {
+        "Custom": 6040
+      }
+    ]
+  },
+  "final_entry_state": "ENTRY_FAILED_ONCHAIN",
+  "inventory_after_raw": 0,
+  "inventory_before_raw": 0,
+  "inventory_refresh_ok": false,
+  "last_valid_block_height": 0,
+  "pm_pending_after": 0,
+  "pm_release_ok": true,
+  "pm_reserve_created": true,
+  "previous_entry_final_state": "LAUNCH_ONE_MINT_ENTRY_FAILED",
+  "previous_entry_state": "",
+  "report_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch13_r2_hold_1h_20260601T082244Z/run_launch10_hot_r2_press_window_1h_20260601T082244Z/attempts/attempt_0001_01585b05c54b/launch5_one_mint_live_execute.json",
+  "rpc_block_height_error": "",
+  "rpc_blockhash_valid_error": "",
+  "rpc_status_error": "",
+  "sender_error_code": "",
+  "sender_error_message": "",
+  "sender_response_ok": false,
+  "sender_signature": "3owAFjr84ESmGrBi82CYQUtcRMN2sK2WSXn6NWc3qYdSASa1V6Nkq6Jg26x6uFLo6XQhbnfLCpNUMcHxBYpiTy7C",
+  "signature_status_seen": true,
+  "slot": 423554933
+}

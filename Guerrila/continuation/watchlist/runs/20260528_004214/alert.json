@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-27T17:42:14.795Z",
+  "should_alert": false,
+  "reasons": [
+    "Watchlist composition and top ranks are unchanged.",
+    "4 active continuation-positive pool(s) were found in the current discovery universe."
+  ],
+  "previous_watchlist_count": 4,
+  "current_watchlist_count": 4,
+  "current_top": {
+    "rank": 1,
+    "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+    "venue": "orca_whirlpool",
+    "pair": "SOL/USDC",
+    "base_symbol": "SOL",
+    "quote_symbol": "USDC",
+    "best_side": "buy",
+    "latest_age_hours": 0,
+    "latest_timestamp": 1779903671,
+    "tx_count_5m": 99,
+    "liquidity_usd": 29244275.62,
+    "volume_5m": 319197.47,
+    "current_activity_score": 0.001857,
+    "continuation_live_score": 7.7487,
+    "shock_count": 10,
+    "same_direction_next1_rate": 1,
+    "price_continuation_next1_rate": 0.7,
+    "majority_same_direction_next3_rate": 0.9
+  },
+  "diff": {
+    "previous_count": 4,
+    "next_count": 4,
+    "new_pools": [],
+    "dropped_pools": [],
+    "rank_changes": [],
+    "best_side_flips": [],
+    "score_jumps": [],
+    "top_pool_changed": false,
+    "previous_top_pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+    "next_top_pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+    "should_alert": false
+  }
+}

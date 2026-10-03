@@ -1,0 +1,13 @@
+{
+  "active_discovery_json": "/tmp/shadow-continuation-inputs/active_discovery/latest_active_continuation_discovery.json",
+  "broad_hunt": false,
+  "live_send": false,
+  "persistence_json": "/tmp/shadow-continuation-inputs/studies/hourly_persistence/study_summary.json",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct0_continuation_ownerfresh3_20260527_174437_patch1",
+  "route_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rg6_rebalancing_ownerfresh3_20260527_174437_threshold_audit/route_to_continuation_rows.jsonl",
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66_rule_rebalancing_ownerfresh3_20260527_174437_fields/run66_rebalancing_rule_rows.jsonl",
+  "run80d_rows": "/tmp/shadow-continuation-inputs/run80d/rows.jsonl",
+  "sendBundle": false,
+  "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh3_20260527_174437_fields/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "watchlist_json": "/tmp/shadow-continuation-inputs/watchlist/latest_watchlist.json"
+}

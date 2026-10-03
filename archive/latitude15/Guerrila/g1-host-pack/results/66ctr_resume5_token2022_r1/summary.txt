@@ -1,0 +1,9 @@
+status=PARK_CONTINUATION_R1_TOKEN2022_REVIEW
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctt_resume5_after_ctb_v3/run66ctt_continuation_token2022_policy_exception_review_rows.jsonl
+rows_seen=41
+review_ready_no_send_rows=0
+decision_counts={"DENY_EXTENSION_RISK": 41}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

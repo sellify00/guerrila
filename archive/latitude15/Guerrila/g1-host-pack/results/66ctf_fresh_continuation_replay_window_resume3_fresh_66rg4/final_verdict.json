@@ -1,0 +1,19 @@
+{
+  "final_verdict": "RESTORATION_PRESSURE_MEASURED",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "max_adverse_excursion_bounded_rows": 96,
+  "owner_mode_rebalancing_rows": 103,
+  "primary_blocker": "none",
+  "proposal_path_open": false,
+  "recovery_fraction_target_rows": 102,
+  "reserve_displacement_input_rows": 103,
+  "restoration_pressure_measured_rows": 95,
+  "restoration_pressure_score_rows": 103,
+  "rows_seen": 103
+}

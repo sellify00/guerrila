@@ -1,0 +1,13 @@
+status=run66rs_rebalancing_shadowlite_source_overlay_complete
+source_rule_rows=g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl
+source_template_rows=g1-host-pack/results/66rt_rebalancing_template_nosend_fresh_20260527/run66rt_rebalancing_template_nosend_rows.jsonl
+AF_XDP rows=0
+LaserStream processed rows=0
+matched rows=0
+LaserStream-only rows=0
+AF_XDP-only rows=0
+unknown_source_rows=3997
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

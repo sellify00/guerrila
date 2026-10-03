@@ -1,0 +1,14 @@
+status=PARK_DERIV_NO_MONEY_ROWS
+deriv_rows_seen=2405
+deriv_money_ready_rows=0
+best_candidate_symbol=
+best_candidate_lane=
+best_candidate_venue=
+best_candidate_expected_edge_bps=0
+decision_counts={"PARK_DERIV_NO_MONEY_ROWS": 2405}
+blocker_counts={"basis_and_funding_below_cost_floor": 72, "day_volume_below_floor": 119, "post_entry_net_below_cost_floor": 17, "rolling_change_below_trigger": 42, "signal_symbol_missing": 1977, "window_impulse_requires_rolling_replay": 178}
+no_wire=true
+rows=2405
+ready_rows=0
+wire_send=0
+live_landed=0

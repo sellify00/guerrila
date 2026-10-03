@@ -1,0 +1,118 @@
+{
+  "attempt_rows": 6,
+  "by_outcome": {
+    "flat_or_unknown": {
+      "averages": {
+        "arm_gain_bps": 0,
+        "break_even_bps": 0,
+        "buy_count_5s": 1,
+        "net_buy_pressure_2s": 1,
+        "net_buy_pressure_5s": 1,
+        "peak_executable_exit_gain_bps": 0,
+        "pnl_after_rent_recovery": 0,
+        "price_change_since_trigger_bps": 222,
+        "sell_count_5s": 0,
+        "signal_age_ms": 1255
+      },
+      "cost_protector_zone_count": 1,
+      "count": 1,
+      "proposed_entry_edge_ready_count": 0
+    },
+    "negative_after_rent": {
+      "averages": {
+        "arm_gain_bps": 0,
+        "break_even_bps": 0,
+        "buy_count_5s": 1,
+        "net_buy_pressure_2s": 1,
+        "net_buy_pressure_5s": 1,
+        "peak_executable_exit_gain_bps": 475.5,
+        "pnl_after_rent_recovery": -1130771.5,
+        "price_change_since_trigger_bps": 1219.5,
+        "sell_count_5s": 0,
+        "signal_age_ms": 1675
+      },
+      "cost_protector_zone_count": 2,
+      "count": 2,
+      "proposed_entry_edge_ready_count": 0
+    },
+    "positive_after_rent": {
+      "averages": {
+        "arm_gain_bps": 0,
+        "break_even_bps": 0,
+        "buy_count_5s": 1,
+        "net_buy_pressure_2s": 1,
+        "net_buy_pressure_5s": 1,
+        "peak_executable_exit_gain_bps": 2879.6666666666665,
+        "pnl_after_rent_recovery": 1509318.6666666667,
+        "price_change_since_trigger_bps": 750,
+        "sell_count_5s": 0,
+        "signal_age_ms": 624.6666666666666
+      },
+      "cost_protector_zone_count": 3,
+      "count": 3,
+      "proposed_entry_edge_ready_count": 2
+    }
+  },
+  "by_run": {
+    "negative_reference": {
+      "averages": {
+        "arm_gain_bps": 0,
+        "break_even_bps": 0,
+        "buy_count_5s": 1,
+        "net_buy_pressure_2s": 1,
+        "net_buy_pressure_5s": 1,
+        "peak_executable_exit_gain_bps": 317,
+        "pnl_after_rent_recovery": -753847.6666666666,
+        "price_change_since_trigger_bps": 887,
+        "sell_count_5s": 0,
+        "signal_age_ms": 1535
+      },
+      "count": 3,
+      "negative_after_rent_count": 2,
+      "positive_after_rent_count": 0,
+      "proposed_entry_edge_ready_count": 0,
+      "total_pnl_after_rent_recovery": -2261543
+    },
+    "positive_reference": {
+      "averages": {
+        "arm_gain_bps": 0,
+        "break_even_bps": 0,
+        "buy_count_5s": 1,
+        "net_buy_pressure_2s": 1,
+        "net_buy_pressure_5s": 1,
+        "peak_executable_exit_gain_bps": 2879.6666666666665,
+        "pnl_after_rent_recovery": 1509318.6666666667,
+        "price_change_since_trigger_bps": 750,
+        "sell_count_5s": 0,
+        "signal_age_ms": 624.6666666666666
+      },
+      "count": 3,
+      "negative_after_rent_count": 0,
+      "positive_after_rent_count": 3,
+      "proposed_entry_edge_ready_count": 2,
+      "total_pnl_after_rent_recovery": 4527956
+    }
+  },
+  "edge_max_price_change_bps": 1500,
+  "edge_max_signal_age_ms": 1000,
+  "edge_min_net_buy_pressure_5s": 1,
+  "edge_min_price_change_bps": 300,
+  "out_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T072722Z/22_launch33_entry_quality_outcome_autopsy",
+  "outcome_counts": {
+    "flat_or_unknown": 1,
+    "negative_after_rent": 2,
+    "positive_after_rent": 3
+  },
+  "proposed_entry_edge_blocker_counts": {
+    "none": 2,
+    "price_change_below_edge_floor": 2,
+    "price_change_overheated": 1,
+    "signal_age_above_edge_limit": 1
+  },
+  "proposed_entry_edge_ready_count": 2,
+  "run_roots": {
+    "negative_reference": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T072722Z",
+    "positive_reference": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z"
+  },
+  "status": "LAUNCH33_ENTRY_QUALITY_OUTCOME_AUTOPSY_COMPLETE"
+}

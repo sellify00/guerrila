@@ -1,0 +1,17 @@
+{
+  "status": "runafbr1t_target_entity_linker_complete",
+  "shock_afxdp_backrun_bundle_rows": 8,
+  "shock_afxdp_backrun_bundle_target_entity_rows": 0,
+  "target_bytes_visible_at_projection_count": 8,
+  "target_bytes_missing_count": 0,
+  "target_tx_decode_failed_count": 0,
+  "pre_target_pool_state_rows": 0,
+  "pre_target_pool_state_missing_count": 8,
+  "blocked_target_entity_missing_count": 8,
+  "first_target_entity_blocker_counts": {
+    "pool_state_missing": 8
+  },
+  "target_relationship_source_counts": {
+    "missing": 8
+  }
+}

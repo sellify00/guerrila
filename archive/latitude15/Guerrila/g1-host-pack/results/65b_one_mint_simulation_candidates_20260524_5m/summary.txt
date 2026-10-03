@@ -1,0 +1,13 @@
+status=run65b_one_mint_simulation_candidates_complete
+source_run65c_rows=/home/ubuntu/Guerrila/g1-host-pack/results/65c_policy_liquidity_unlock_audit_20260524_5m/run65b_strict_overlay_audit_rows.jsonl
+simulate_only_source_count=21
+simulate_one_mint_count=21
+simulate_one_mint_expected_would_fire_delta=212
+decision_counts={"SIMULATE_ONE_MINT": 21}
+execute_mode_allowed=false
+live_send_allowed=false
+top_mint=AeVzGq6z1RndB9Tk9dGT6RPADjZJpQwX6tudqSRkmAgp
+top_decision=SIMULATE_ONE_MINT
+top_required_acquisition_usdc=56.716678299
+top_exit_value_usdc=56.664323
+top_expected_would_fire_delta=13

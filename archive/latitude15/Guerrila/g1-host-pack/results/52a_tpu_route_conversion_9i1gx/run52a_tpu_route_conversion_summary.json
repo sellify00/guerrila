@@ -1,0 +1,62 @@
+{
+  "status": "blocked_missing_run40_summary",
+  "inner_rc": 0,
+  "target": {
+    "target_mode": "any_hunt_tpu_convertible",
+    "venue": "meteora_damm_v2",
+    "pool": "9i1GxRjhZRyjPK5M4JTxAKB3HPNmiAQKVQLaBbGKCtRs",
+    "mint_in": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "mint_out": "MomhYZFWByMgz5vnLLLHZTr4a5dNUWXAcR7bfFPXHbF",
+    "desired_route": "tpu_quic_public",
+    "mode": "no_send"
+  },
+  "selection": {
+    "selection_status": "",
+    "current_scorecard_loaded": false,
+    "stale_scorecard_used": false,
+    "selection_attempted": false,
+    "gate_autopsy": {
+      "scope": "",
+      "observed": 0,
+      "held_input": 0,
+      "positive_ev": 0,
+      "input_balance_ok": 0,
+      "output_account_ok": 0,
+      "template_ready": 0,
+      "tiny_cap_safe": 0,
+      "tpu_convertible": 0,
+      "eligible": 0
+    },
+    "selected_venue": "",
+    "selected_pool": "",
+    "selected_mint_in": "",
+    "selected_mint_out": "",
+    "selected_source": "",
+    "selected_target_route_family": ""
+  },
+  "acceptance": {
+    "route_resolved_tpu_quic_public": false,
+    "tpu_quic_candidate_seen": false,
+    "tpu_quic_would_enqueue": false,
+    "tpu_quic_ring_enqueue_ok": false,
+    "tpu_quic_sender_dequeue_count": false,
+    "tpu_quic_no_send_accept_count": false,
+    "tpu_wire_send_count_zero": true,
+    "live_landed_zero": true
+  },
+  "acceptance_pass": false,
+  "counters": {
+    "route_resolved_tpu_quic_public": 0,
+    "tpu_quic_candidate_seen": 0,
+    "tpu_quic_would_enqueue": 0,
+    "tpu_quic_ring_enqueue_ok": 0,
+    "tpu_quic_sender_dequeue_count": 0,
+    "tpu_quic_no_send_accept_count": 0,
+    "tpu_wire_send_count": 0,
+    "live_landed": 0
+  },
+  "inner_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/52a_tpu_route_conversion_9i1gx_run40/summary.txt",
+  "inner_status": null,
+  "inner_probe_status": null,
+  "last_route_family": ""
+}

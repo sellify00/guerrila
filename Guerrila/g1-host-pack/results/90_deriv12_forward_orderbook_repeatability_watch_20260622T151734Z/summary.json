@@ -1,0 +1,38 @@
+{
+  "acceptance_pass": true,
+  "avg_net_after_orderbook_bps": 67.6025,
+  "best_candidate_net_after_orderbook_bps": 126.8281,
+  "best_candidate_side": "short",
+  "best_candidate_symbol": "XPL",
+  "blocker_counts": {
+    "forward_net_after_orderbook_below_floor": 83,
+    "none": 5
+  },
+  "closed_attempt_rows": 88,
+  "completed_windows": 4,
+  "decision_counts": {
+    "DERIV_FORWARD_ORDERBOOK_READY": 5,
+    "PARK_DERIV_FORWARD_ORDERBOOK": 83
+  },
+  "forward_orderbook_ready_rows": 5,
+  "live_landed": 0,
+  "max_net_after_orderbook_bps": 126.8281,
+  "median_net_after_orderbook_bps": 56.4187,
+  "min_net_after_orderbook_bps": 17.5646,
+  "no_wire": true,
+  "positive_ready_rows": 5,
+  "ready_symbol_counts": {
+    "AERO": 1,
+    "CRV": 1,
+    "MET": 1,
+    "VVV": 1,
+    "XPL": 1
+  },
+  "ready_windows": 3,
+  "status": "DERIV_FORWARD_ORDERBOOK_REPEATABILITY_READY",
+  "trigger_attempt_accepted_rows": 88,
+  "trigger_attempt_rows": 121,
+  "unique_ready_symbols": 5,
+  "windows_seen": 4,
+  "wire_send": 0
+}

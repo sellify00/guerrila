@@ -1,0 +1,1334 @@
+diff --git a/crates/shadow-control/src/rollout_gate.rs b/crates/shadow-control/src/rollout_gate.rs
+index 8711a5a..e31a89e 100644
+--- a/crates/shadow-control/src/rollout_gate.rs
++++ b/crates/shadow-control/src/rollout_gate.rs
+@@ -118,6 +118,52 @@ pub struct G12GateEvaluatorInput {
+     #[serde(default)]
+     pub worker_rollout_live_send_suppressed_events_published: u64,
+     #[serde(default)]
++    pub worker_candidates_entered_process_intent: u64,
++    #[serde(default)]
++    pub worker_candidates_dropped_before_process_intent: u64,
++    #[serde(default)]
++    pub worker_process_intent_ok: u64,
++    #[serde(default)]
++    pub worker_process_intent_err: u64,
++    #[serde(default)]
++    pub worker_quote_ok: u64,
++    #[serde(default)]
++    pub worker_quote_err: u64,
++    #[serde(default)]
++    pub worker_route_resolved_jito: u64,
++    #[serde(default)]
++    pub worker_route_resolved_harmonic: u64,
++    #[serde(default)]
++    pub worker_route_resolved_drop: u64,
++    #[serde(default)]
++    pub worker_presign_gate_reject: u64,
++    #[serde(default)]
++    pub worker_template_build_ok: u64,
++    #[serde(default)]
++    pub worker_template_build_err: u64,
++    #[serde(default)]
++    pub worker_no_send_backend_called: u64,
++    #[serde(default)]
++    pub worker_no_send_backend_ok: u64,
++    #[serde(default)]
++    pub worker_no_send_backend_err: u64,
++    #[serde(default)]
++    pub worker_final_no_send_event_constructed: u64,
++    #[serde(default)]
++    pub worker_final_no_send_event_published: u64,
++    #[serde(default)]
++    pub worker_final_no_send_event_publish_err: u64,
++    #[serde(default)]
++    pub worker_final_no_send_drop_reason_last: u64,
++    #[serde(default)]
++    pub worker_geyser_shadow_no_send_admitted: u64,
++    #[serde(default)]
++    pub worker_geyser_shadow_no_send_rejected: u64,
++    #[serde(default)]
++    pub worker_geyser_shadow_no_send_source_external: u64,
++    #[serde(default)]
++    pub worker_geyser_shadow_no_send_source_local_validator: u64,
++    #[serde(default)]
+     pub worker_signal_public_geyser: u64,
+     #[serde(default)]
+     pub worker_signal_external_geyser: u64,
+@@ -397,6 +443,29 @@ impl Default for G12GateEvaluatorInput {
+             worker_shadow_events_published: 0,
+             worker_rollout_would_send_events_published: 0,
+             worker_rollout_live_send_suppressed_events_published: 0,
++            worker_candidates_entered_process_intent: 0,
++            worker_candidates_dropped_before_process_intent: 0,
++            worker_process_intent_ok: 0,
++            worker_process_intent_err: 0,
++            worker_quote_ok: 0,
++            worker_quote_err: 0,
++            worker_route_resolved_jito: 0,
++            worker_route_resolved_harmonic: 0,
++            worker_route_resolved_drop: 0,
++            worker_presign_gate_reject: 0,
++            worker_template_build_ok: 0,
++            worker_template_build_err: 0,
++            worker_no_send_backend_called: 0,
++            worker_no_send_backend_ok: 0,
++            worker_no_send_backend_err: 0,
++            worker_final_no_send_event_constructed: 0,
++            worker_final_no_send_event_published: 0,
++            worker_final_no_send_event_publish_err: 0,
++            worker_final_no_send_drop_reason_last: 0,
++            worker_geyser_shadow_no_send_admitted: 0,
++            worker_geyser_shadow_no_send_rejected: 0,
++            worker_geyser_shadow_no_send_source_external: 0,
++            worker_geyser_shadow_no_send_source_local_validator: 0,
+             worker_signal_public_geyser: 0,
+             worker_signal_external_geyser: 0,
+             worker_signal_local_validator_geyser: 0,
+@@ -611,6 +680,32 @@ impl G12GateEvaluatorInput {
+                 .worker_rollout_would_send_events_published,
+             worker_rollout_live_send_suppressed_events_published: self
+                 .worker_rollout_live_send_suppressed_events_published,
++            worker_candidates_entered_process_intent: self.worker_candidates_entered_process_intent,
++            worker_candidates_dropped_before_process_intent: self
++                .worker_candidates_dropped_before_process_intent,
++            worker_process_intent_ok: self.worker_process_intent_ok,
++            worker_process_intent_err: self.worker_process_intent_err,
++            worker_quote_ok: self.worker_quote_ok,
++            worker_quote_err: self.worker_quote_err,
++            worker_route_resolved_jito: self.worker_route_resolved_jito,
++            worker_route_resolved_harmonic: self.worker_route_resolved_harmonic,
++            worker_route_resolved_drop: self.worker_route_resolved_drop,
++            worker_presign_gate_reject: self.worker_presign_gate_reject,
++            worker_template_build_ok: self.worker_template_build_ok,
++            worker_template_build_err: self.worker_template_build_err,
++            worker_no_send_backend_called: self.worker_no_send_backend_called,
++            worker_no_send_backend_ok: self.worker_no_send_backend_ok,
++            worker_no_send_backend_err: self.worker_no_send_backend_err,
++            worker_final_no_send_event_constructed: self.worker_final_no_send_event_constructed,
++            worker_final_no_send_event_published: self.worker_final_no_send_event_published,
++            worker_final_no_send_event_publish_err: self.worker_final_no_send_event_publish_err,
++            worker_final_no_send_drop_reason_last: self.worker_final_no_send_drop_reason_last,
++            worker_geyser_shadow_no_send_admitted: self.worker_geyser_shadow_no_send_admitted,
++            worker_geyser_shadow_no_send_rejected: self.worker_geyser_shadow_no_send_rejected,
++            worker_geyser_shadow_no_send_source_external: self
++                .worker_geyser_shadow_no_send_source_external,
++            worker_geyser_shadow_no_send_source_local_validator: self
++                .worker_geyser_shadow_no_send_source_local_validator,
+             worker_signal_external_geyser: self.worker_signal_external_geyser,
+             worker_signal_local_validator_geyser: self.worker_signal_local_validator_geyser,
+             worker_signal_afxdp: self.worker_signal_afxdp,
+@@ -704,6 +799,29 @@ pub struct G12GateReport {
+     pub live_landed: u64,
+     pub worker_rollout_would_send_events_published: u64,
+     pub worker_rollout_live_send_suppressed_events_published: u64,
++    pub worker_candidates_entered_process_intent: u64,
++    pub worker_candidates_dropped_before_process_intent: u64,
++    pub worker_process_intent_ok: u64,
++    pub worker_process_intent_err: u64,
++    pub worker_quote_ok: u64,
++    pub worker_quote_err: u64,
++    pub worker_route_resolved_jito: u64,
++    pub worker_route_resolved_harmonic: u64,
++    pub worker_route_resolved_drop: u64,
++    pub worker_presign_gate_reject: u64,
++    pub worker_template_build_ok: u64,
++    pub worker_template_build_err: u64,
++    pub worker_no_send_backend_called: u64,
++    pub worker_no_send_backend_ok: u64,
++    pub worker_no_send_backend_err: u64,
++    pub worker_final_no_send_event_constructed: u64,
++    pub worker_final_no_send_event_published: u64,
++    pub worker_final_no_send_event_publish_err: u64,
++    pub worker_final_no_send_drop_reason_last: u64,
++    pub worker_geyser_shadow_no_send_admitted: u64,
++    pub worker_geyser_shadow_no_send_rejected: u64,
++    pub worker_geyser_shadow_no_send_source_external: u64,
++    pub worker_geyser_shadow_no_send_source_local_validator: u64,
+     pub worker_signal_external_geyser: u64,
+     pub worker_signal_local_validator_geyser: u64,
+     pub worker_signal_afxdp: u64,
+@@ -856,6 +974,29 @@ mod tests {
+             worker_shadow_events_published: 10_000,
+             worker_rollout_would_send_events_published: 128,
+             worker_rollout_live_send_suppressed_events_published: 128,
++            worker_candidates_entered_process_intent: 128,
++            worker_candidates_dropped_before_process_intent: 0,
++            worker_process_intent_ok: 128,
++            worker_process_intent_err: 0,
++            worker_quote_ok: 128,
++            worker_quote_err: 0,
++            worker_route_resolved_jito: 10_000,
++            worker_route_resolved_harmonic: 0,
++            worker_route_resolved_drop: 0,
++            worker_presign_gate_reject: 0,
++            worker_template_build_ok: 128,
++            worker_template_build_err: 0,
++            worker_no_send_backend_called: 128,
++            worker_no_send_backend_ok: 128,
++            worker_no_send_backend_err: 0,
++            worker_final_no_send_event_constructed: 128,
++            worker_final_no_send_event_published: 128,
++            worker_final_no_send_event_publish_err: 0,
++            worker_final_no_send_drop_reason_last: 12,
++            worker_geyser_shadow_no_send_admitted: 0,
++            worker_geyser_shadow_no_send_rejected: 0,
++            worker_geyser_shadow_no_send_source_external: 0,
++            worker_geyser_shadow_no_send_source_local_validator: 0,
+             worker_signal_public_geyser: 0,
+             worker_signal_external_geyser: 0,
+             worker_signal_local_validator_geyser: 0,
+diff --git a/crates/shadow-core/src/config.rs b/crates/shadow-core/src/config.rs
+index 98de101..c81cbf1 100644
+--- a/crates/shadow-core/src/config.rs
++++ b/crates/shadow-core/src/config.rs
+@@ -821,6 +821,8 @@ fn default_nonce_prefill() -> usize {
+ pub struct RolloutConfig {
+     pub mode: RolloutMode,
+     pub no_send_backend: bool,
++    #[serde(default)]
++    pub r0_allow_geyser_observe_shadow: bool,
+     pub cap_rung: RolloutCapRung,
+     pub max_live_trade_input_sol: f64,
+     pub max_position_sol_per_mint: f64,
+diff --git a/crates/shadow-tier0/src/money_worker.rs b/crates/shadow-tier0/src/money_worker.rs
+index ea54aa8..a05146a 100644
+--- a/crates/shadow-tier0/src/money_worker.rs
++++ b/crates/shadow-tier0/src/money_worker.rs
+@@ -60,7 +60,7 @@ use shadow_core::quant_tactics::{
+     ExhaustScavengingDecision, TacticAttributionCounters, TacticReasonCode,
+     TickBoundaryCorrelation, TickBoundaryShadowEvent, EXHAUST_SCAVENGING_DEPLOY_CAP_LAMPORTS,
+ };
+-use shadow_core::routing::{IntentKind, RouteDecision, RouteReason, SignalSource};
++use shadow_core::routing::{IntentKind, RouteDecision, RouteOutcome, RouteReason, SignalSource};
+ use shadow_core::routing_runtime::{
+     derive_route_inputs_guerrila, GuerrilaRoutingConfig, HydratedRoute,
+ };
+@@ -165,8 +165,32 @@ static WORKER_PIPELINE_ERR_POLICY_OTHER: AtomicU64 = AtomicU64::new(0);
+ static WORKER_PIPELINE_ERR_EMIT_INVALID_GUARD_PUBKEY: AtomicU64 = AtomicU64::new(0);
+ static WORKER_PIPELINE_ERR_EMIT_BUILD_OTHER: AtomicU64 = AtomicU64::new(0);
+ static WORKER_PIPELINE_ERR_EMIT_OTHER: AtomicU64 = AtomicU64::new(0);
++static WORKER_CANDIDATES_ENTERED_PROCESS_INTENT: AtomicU64 = AtomicU64::new(0);
++static WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT: AtomicU64 = AtomicU64::new(0);
++static WORKER_PROCESS_INTENT_OK: AtomicU64 = AtomicU64::new(0);
++static WORKER_PROCESS_INTENT_ERR: AtomicU64 = AtomicU64::new(0);
++static WORKER_QUOTE_OK: AtomicU64 = AtomicU64::new(0);
++static WORKER_QUOTE_ERR: AtomicU64 = AtomicU64::new(0);
++static WORKER_ROUTE_RESOLVED_JITO: AtomicU64 = AtomicU64::new(0);
++static WORKER_ROUTE_RESOLVED_HARMONIC: AtomicU64 = AtomicU64::new(0);
++static WORKER_ROUTE_RESOLVED_DROP: AtomicU64 = AtomicU64::new(0);
++static WORKER_PRESIGN_GATE_REJECT: AtomicU64 = AtomicU64::new(0);
++static WORKER_TEMPLATE_BUILD_OK: AtomicU64 = AtomicU64::new(0);
++static WORKER_TEMPLATE_BUILD_ERR: AtomicU64 = AtomicU64::new(0);
++static WORKER_NO_SEND_BACKEND_CALLED: AtomicU64 = AtomicU64::new(0);
++static WORKER_NO_SEND_BACKEND_OK: AtomicU64 = AtomicU64::new(0);
++static WORKER_NO_SEND_BACKEND_ERR: AtomicU64 = AtomicU64::new(0);
++static WORKER_FINAL_NO_SEND_EVENT_CONSTRUCTED: AtomicU64 = AtomicU64::new(0);
++static WORKER_FINAL_NO_SEND_EVENT_PUBLISHED: AtomicU64 = AtomicU64::new(0);
++static WORKER_FINAL_NO_SEND_EVENT_PUBLISH_ERR: AtomicU64 = AtomicU64::new(0);
++static WORKER_FINAL_NO_SEND_DROP_REASON_LAST: AtomicU64 = AtomicU64::new(0);
++static WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED: AtomicU64 = AtomicU64::new(0);
++static WORKER_GEYSER_SHADOW_NO_SEND_REJECTED: AtomicU64 = AtomicU64::new(0);
++static WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_EXTERNAL: AtomicU64 = AtomicU64::new(0);
++static WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_LOCAL_VALIDATOR: AtomicU64 = AtomicU64::new(0);
+
+ const OBSERVE_ONLY_ZERO_MINT_INDEX: u32 = u32::MAX;
++const GEYSER_SHADOW_NO_SEND_MAX_STALENESS_NS: u64 = 600_000_000_000;
+
+ #[derive(Debug, Clone, Copy, Default)]
+ pub struct WorkerDiagnosticsSnapshot {
+@@ -226,6 +250,29 @@ pub struct WorkerDiagnosticsSnapshot {
+     pub pipeline_err_emit_invalid_guard_pubkey: u64,
+     pub pipeline_err_emit_build_other: u64,
+     pub pipeline_err_emit_other: u64,
++    pub candidates_entered_process_intent: u64,
++    pub candidates_dropped_before_process_intent: u64,
++    pub process_intent_ok: u64,
++    pub process_intent_err: u64,
++    pub quote_ok: u64,
++    pub quote_err: u64,
++    pub route_resolved_jito: u64,
++    pub route_resolved_harmonic: u64,
++    pub route_resolved_drop: u64,
++    pub presign_gate_reject: u64,
++    pub template_build_ok: u64,
++    pub template_build_err: u64,
++    pub no_send_backend_called: u64,
++    pub no_send_backend_ok: u64,
++    pub no_send_backend_err: u64,
++    pub final_no_send_event_constructed: u64,
++    pub final_no_send_event_published: u64,
++    pub final_no_send_event_publish_err: u64,
++    pub final_no_send_drop_reason_last: u64,
++    pub geyser_shadow_no_send_admitted: u64,
++    pub geyser_shadow_no_send_rejected: u64,
++    pub geyser_shadow_no_send_source_external: u64,
++    pub geyser_shadow_no_send_source_local_validator: u64,
+ }
+
+ pub fn snapshot_worker_diagnostics() -> WorkerDiagnosticsSnapshot {
+@@ -310,6 +357,38 @@ pub fn snapshot_worker_diagnostics() -> WorkerDiagnosticsSnapshot {
+             .load(Ordering::Relaxed),
+         pipeline_err_emit_build_other: WORKER_PIPELINE_ERR_EMIT_BUILD_OTHER.load(Ordering::Relaxed),
+         pipeline_err_emit_other: WORKER_PIPELINE_ERR_EMIT_OTHER.load(Ordering::Relaxed),
++        candidates_entered_process_intent: WORKER_CANDIDATES_ENTERED_PROCESS_INTENT
++            .load(Ordering::Relaxed),
++        candidates_dropped_before_process_intent: WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT
++            .load(Ordering::Relaxed),
++        process_intent_ok: WORKER_PROCESS_INTENT_OK.load(Ordering::Relaxed),
++        process_intent_err: WORKER_PROCESS_INTENT_ERR.load(Ordering::Relaxed),
++        quote_ok: WORKER_QUOTE_OK.load(Ordering::Relaxed),
++        quote_err: WORKER_QUOTE_ERR.load(Ordering::Relaxed),
++        route_resolved_jito: WORKER_ROUTE_RESOLVED_JITO.load(Ordering::Relaxed),
++        route_resolved_harmonic: WORKER_ROUTE_RESOLVED_HARMONIC.load(Ordering::Relaxed),
++        route_resolved_drop: WORKER_ROUTE_RESOLVED_DROP.load(Ordering::Relaxed),
++        presign_gate_reject: WORKER_PRESIGN_GATE_REJECT.load(Ordering::Relaxed),
++        template_build_ok: WORKER_TEMPLATE_BUILD_OK.load(Ordering::Relaxed),
++        template_build_err: WORKER_TEMPLATE_BUILD_ERR.load(Ordering::Relaxed),
++        no_send_backend_called: WORKER_NO_SEND_BACKEND_CALLED.load(Ordering::Relaxed),
++        no_send_backend_ok: WORKER_NO_SEND_BACKEND_OK.load(Ordering::Relaxed),
++        no_send_backend_err: WORKER_NO_SEND_BACKEND_ERR.load(Ordering::Relaxed),
++        final_no_send_event_constructed: WORKER_FINAL_NO_SEND_EVENT_CONSTRUCTED
++            .load(Ordering::Relaxed),
++        final_no_send_event_published: WORKER_FINAL_NO_SEND_EVENT_PUBLISHED.load(Ordering::Relaxed),
++        final_no_send_event_publish_err: WORKER_FINAL_NO_SEND_EVENT_PUBLISH_ERR
++            .load(Ordering::Relaxed),
++        final_no_send_drop_reason_last: WORKER_FINAL_NO_SEND_DROP_REASON_LAST
++            .load(Ordering::Relaxed),
++        geyser_shadow_no_send_admitted: WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED
++            .load(Ordering::Relaxed),
++        geyser_shadow_no_send_rejected: WORKER_GEYSER_SHADOW_NO_SEND_REJECTED
++            .load(Ordering::Relaxed),
++        geyser_shadow_no_send_source_external: WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_EXTERNAL
++            .load(Ordering::Relaxed),
++        geyser_shadow_no_send_source_local_validator:
++            WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_LOCAL_VALIDATOR.load(Ordering::Relaxed),
+     }
+ }
+
+@@ -409,6 +488,21 @@ fn record_route_reason_diag(reason: RouteReason) {
+     }
+ }
+
++#[inline(always)]
++fn record_route_decision_diag(decision: RouteDecision) {
++    match decision {
++        RouteDecision::JitoBundle => {
++            WORKER_ROUTE_RESOLVED_JITO.fetch_add(1, Ordering::Relaxed);
++        }
++        RouteDecision::HarmonicBundle => {
++            WORKER_ROUTE_RESOLVED_HARMONIC.fetch_add(1, Ordering::Relaxed);
++        }
++        RouteDecision::Drop => {
++            WORKER_ROUTE_RESOLVED_DROP.fetch_add(1, Ordering::Relaxed);
++        }
++    }
++}
++
+ #[inline(always)]
+ fn record_pipeline_error_diag(error: &PipelineError) {
+     match error {
+@@ -459,6 +553,70 @@ fn record_pipeline_error_diag(error: &PipelineError) {
+     }
+ }
+
++#[inline(always)]
++fn pipeline_error_after_quote(error: &PipelineError) -> bool {
++    match error {
++        PipelineError::InvalidDirection | PipelineError::OverlayOverflow => true,
++        PipelineError::PolicyRejected(reason) => !matches!(
++            reason,
++            PolicyDropReason::ApexPartialNotPositive
++                | PolicyDropReason::AtbaMissingOrStaleDistToTick
++                | PolicyDropReason::Over15SolLiveInput
++        ),
++        PipelineError::EmitFailed(_) => true,
++        _ => false,
++    }
++}
++
++#[inline(always)]
++fn record_terminal_pipeline_diag(error: Option<&PipelineError>, attempted_no_send_backend: bool) {
++    match error {
++        None => {
++            WORKER_PROCESS_INTENT_OK.fetch_add(1, Ordering::Relaxed);
++            WORKER_QUOTE_OK.fetch_add(1, Ordering::Relaxed);
++            WORKER_TEMPLATE_BUILD_OK.fetch_add(1, Ordering::Relaxed);
++            if attempted_no_send_backend {
++                WORKER_NO_SEND_BACKEND_CALLED.fetch_add(1, Ordering::Relaxed);
++                WORKER_NO_SEND_BACKEND_OK.fetch_add(1, Ordering::Relaxed);
++            }
++        }
++        Some(error) => {
++            WORKER_PROCESS_INTENT_ERR.fetch_add(1, Ordering::Relaxed);
++            match error {
++                PipelineError::QuoteFailed => {
++                    WORKER_QUOTE_ERR.fetch_add(1, Ordering::Relaxed);
++                }
++                PipelineError::RoutingDropped(reason) => {
++                    WORKER_ROUTE_RESOLVED_DROP.fetch_add(1, Ordering::Relaxed);
++                    if *reason == RouteReason::HarmonicEgressGateNoJito {
++                        WORKER_PRESIGN_GATE_REJECT.fetch_add(1, Ordering::Relaxed);
++                    }
++                }
++                PipelineError::EmitFailed(EmitError::BuildFailed(_)) => {
++                    WORKER_QUOTE_OK.fetch_add(1, Ordering::Relaxed);
++                    WORKER_TEMPLATE_BUILD_ERR.fetch_add(1, Ordering::Relaxed);
++                    if attempted_no_send_backend {
++                        WORKER_NO_SEND_BACKEND_CALLED.fetch_add(1, Ordering::Relaxed);
++                        WORKER_NO_SEND_BACKEND_ERR.fetch_add(1, Ordering::Relaxed);
++                    }
++                }
++                PipelineError::EmitFailed(_) => {
++                    WORKER_QUOTE_OK.fetch_add(1, Ordering::Relaxed);
++                    WORKER_TEMPLATE_BUILD_OK.fetch_add(1, Ordering::Relaxed);
++                    if attempted_no_send_backend {
++                        WORKER_NO_SEND_BACKEND_CALLED.fetch_add(1, Ordering::Relaxed);
++                        WORKER_NO_SEND_BACKEND_ERR.fetch_add(1, Ordering::Relaxed);
++                    }
++                }
++                _ if pipeline_error_after_quote(error) => {
++                    WORKER_QUOTE_OK.fetch_add(1, Ordering::Relaxed);
++                }
++                _ => {}
++            }
++        }
++    }
++}
++
+ fn process_intent_with_diagnostics(
+     shared: &SharedRefs<'_>,
+     record: &IngressRecord,
+@@ -468,14 +626,19 @@ fn process_intent_with_diagnostics(
+     inputs: &mut PipelineInputs<'_>,
+ ) -> Result<shadow_core::assembly::EmitReceipt, PipelineError> {
+     WORKER_PIPELINE_ATTEMPTS.fetch_add(1, Ordering::Relaxed);
++    WORKER_CANDIDATES_ENTERED_PROCESS_INTENT.fetch_add(1, Ordering::Relaxed);
++    let attempted_no_send_backend = inputs.rollout_no_send_backend
++        || (inputs.intent.observe_only && inputs.rollout_shadow_sink.is_some());
+
+     let result = shadow_core::pipeline::process_intent(inputs);
+     match &result {
+         Ok(_) => {
+             WORKER_PIPELINE_SUCCESS.fetch_add(1, Ordering::Relaxed);
++            record_terminal_pipeline_diag(None, attempted_no_send_backend);
+         }
+         Err(error) => {
+             record_pipeline_error_diag(error);
++            record_terminal_pipeline_diag(Some(error), attempted_no_send_backend);
+             emit_pipeline_drop_event(shared, record, resolved, route, intent, error);
+         }
+     }
+@@ -540,6 +703,29 @@ pub(crate) fn reset_worker_diagnostics_for_test() {
+     WORKER_PIPELINE_ERR_EMIT_INVALID_GUARD_PUBKEY.store(0, Ordering::Relaxed);
+     WORKER_PIPELINE_ERR_EMIT_BUILD_OTHER.store(0, Ordering::Relaxed);
+     WORKER_PIPELINE_ERR_EMIT_OTHER.store(0, Ordering::Relaxed);
++    WORKER_CANDIDATES_ENTERED_PROCESS_INTENT.store(0, Ordering::Relaxed);
++    WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT.store(0, Ordering::Relaxed);
++    WORKER_PROCESS_INTENT_OK.store(0, Ordering::Relaxed);
++    WORKER_PROCESS_INTENT_ERR.store(0, Ordering::Relaxed);
++    WORKER_QUOTE_OK.store(0, Ordering::Relaxed);
++    WORKER_QUOTE_ERR.store(0, Ordering::Relaxed);
++    WORKER_ROUTE_RESOLVED_JITO.store(0, Ordering::Relaxed);
++    WORKER_ROUTE_RESOLVED_HARMONIC.store(0, Ordering::Relaxed);
++    WORKER_ROUTE_RESOLVED_DROP.store(0, Ordering::Relaxed);
++    WORKER_PRESIGN_GATE_REJECT.store(0, Ordering::Relaxed);
++    WORKER_TEMPLATE_BUILD_OK.store(0, Ordering::Relaxed);
++    WORKER_TEMPLATE_BUILD_ERR.store(0, Ordering::Relaxed);
++    WORKER_NO_SEND_BACKEND_CALLED.store(0, Ordering::Relaxed);
++    WORKER_NO_SEND_BACKEND_OK.store(0, Ordering::Relaxed);
++    WORKER_NO_SEND_BACKEND_ERR.store(0, Ordering::Relaxed);
++    WORKER_FINAL_NO_SEND_EVENT_CONSTRUCTED.store(0, Ordering::Relaxed);
++    WORKER_FINAL_NO_SEND_EVENT_PUBLISHED.store(0, Ordering::Relaxed);
++    WORKER_FINAL_NO_SEND_EVENT_PUBLISH_ERR.store(0, Ordering::Relaxed);
++    WORKER_FINAL_NO_SEND_DROP_REASON_LAST.store(0, Ordering::Relaxed);
++    WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED.store(0, Ordering::Relaxed);
++    WORKER_GEYSER_SHADOW_NO_SEND_REJECTED.store(0, Ordering::Relaxed);
++    WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_EXTERNAL.store(0, Ordering::Relaxed);
++    WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_LOCAL_VALIDATOR.store(0, Ordering::Relaxed);
+ }
+
+ #[cfg(test)]
+@@ -560,6 +746,7 @@ pub(crate) fn record_route_reason_diag_for_test(reason: RouteReason) {
+     WORKER_ROUTE_ATTEMPTS.fetch_add(1, Ordering::Relaxed);
+     WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
+     record_route_reason_diag(reason);
++    record_route_decision_diag(RouteDecision::JitoBundle);
+ }
+
+ #[cfg(test)]
+@@ -576,13 +763,17 @@ pub(crate) fn record_route_unavailable_diag_for_test(hydration_none: bool) {
+ #[cfg(test)]
+ pub(crate) fn record_pipeline_error_diag_for_test(error: &PipelineError) {
+     WORKER_PIPELINE_ATTEMPTS.fetch_add(1, Ordering::Relaxed);
++    WORKER_CANDIDATES_ENTERED_PROCESS_INTENT.fetch_add(1, Ordering::Relaxed);
+     record_pipeline_error_diag(error);
++    record_terminal_pipeline_diag(Some(error), true);
+ }
+
+ #[cfg(test)]
+ pub(crate) fn record_pipeline_success_for_test() {
+     WORKER_PIPELINE_ATTEMPTS.fetch_add(1, Ordering::Relaxed);
++    WORKER_CANDIDATES_ENTERED_PROCESS_INTENT.fetch_add(1, Ordering::Relaxed);
+     WORKER_PIPELINE_SUCCESS.fetch_add(1, Ordering::Relaxed);
++    record_terminal_pipeline_diag(None, true);
+ }
+
+ #[cfg(test)]
+@@ -666,6 +857,8 @@ pub struct MoneyWorkerSharedDeps {
+     pub quant_tactics: Option<shadow_core::config::QuantTacticsConfig>,
+     /// G12 observe-only rollout backend: build/sign privately, publish shadow event only.
+     pub rollout_no_send_backend: bool,
++    /// SH7-A: admit external/local Geyser only into the observe-only no-send shadow path.
++    pub r0_allow_geyser_observe_shadow: bool,
+ }
+
+ /// Oracle-derived thresholds for intent classification.
+@@ -790,6 +983,10 @@ pub fn open_worker_shared_deps(
+         .as_ref()
+         .map(|cfg| cfg.mode == shadow_core::config::RolloutMode::ObserveOnly && cfg.no_send_backend)
+         .unwrap_or(false);
++    let r0_allow_geyser_observe_shadow = rollout_config
++        .as_ref()
++        .map(|cfg| cfg.r0_allow_geyser_observe_shadow)
++        .unwrap_or(false);
+
+     MoneyWorkerSharedDeps {
+         health: Arc::new(health),
+@@ -821,6 +1018,7 @@ pub fn open_worker_shared_deps(
+         intent_shape,
+         quant_tactics: None,
+         rollout_no_send_backend,
++        r0_allow_geyser_observe_shadow,
+     }
+ }
+
+@@ -919,6 +1117,7 @@ pub fn spawn_money_workers(
+         let intent_shape = shared.intent_shape;
+         let quant_tactics = shared.quant_tactics.clone();
+         let rollout_no_send_backend = shared.rollout_no_send_backend;
++        let r0_allow_geyser_observe_shadow = shared.r0_allow_geyser_observe_shadow;
+
+         // Create shared nonce ring and spawn background producer thread.
+         // Index base: worker_id * 2^32 so each worker's nonce domain never overlaps.
+@@ -1010,6 +1209,7 @@ pub fn spawn_money_workers(
+                         .as_ref()
+                         .map(|sink| sink as &dyn RolloutShadowPush),
+                     rollout_no_send_backend,
++                    r0_allow_geyser_observe_shadow,
+                 };
+                 money_worker_loop(
+                     worker_id,
+@@ -1068,6 +1268,7 @@ struct SharedRefs<'a> {
+     quant_tactics: Option<shadow_core::config::QuantTacticsConfig>,
+     rollout_shadow_sink: Option<&'a dyn RolloutShadowPush>,
+     rollout_no_send_backend: bool,
++    r0_allow_geyser_observe_shadow: bool,
+ }
+
+ /// Result of the early-drop shell.  Carries the resolved arena indices and
+@@ -1112,6 +1313,73 @@ pub fn signal_source_from_u8(src: u8) -> Option<SignalSource> {
+     }
+ }
+
++#[inline(always)]
++fn is_observe_shadow_geyser_signal(signal_source: u8) -> bool {
++    matches!(
++        signal_source,
++        SIGNAL_SOURCE_EXTERNAL_GEYSER | SIGNAL_SOURCE_LOCAL_VALIDATOR_GEYSER
++    )
++}
++
++#[inline(always)]
++fn record_geyser_shadow_no_send_source_diag(signal_source: u8) {
++    match signal_source {
++        SIGNAL_SOURCE_EXTERNAL_GEYSER => {
++            WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_EXTERNAL.fetch_add(1, Ordering::Relaxed);
++        }
++        SIGNAL_SOURCE_LOCAL_VALIDATOR_GEYSER => {
++            WORKER_GEYSER_SHADOW_NO_SEND_SOURCE_LOCAL_VALIDATOR.fetch_add(1, Ordering::Relaxed);
++        }
++        _ => {}
++    }
++}
++
++#[inline(always)]
++fn geyser_shadow_no_send_allowed(
++    shared: &SharedRefs<'_>,
++    record: &IngressRecord,
++    route: &HydratedRoute,
++) -> bool {
++    route.outcome.decision == RouteDecision::Drop
++        && route.outcome.reason == RouteReason::PublicTarget
++        && is_observe_shadow_geyser_signal(record.signal_source)
++        && shared.r0_allow_geyser_observe_shadow
++        && shared.rollout_no_send_backend
++        && shared.rollout_shadow_sink.is_some()
++        && !shadow_core::routing::public_execution_reachable()
++}
++
++#[inline(always)]
++fn shadow_no_send_route_from_public_drop(route: &HydratedRoute) -> HydratedRoute {
++    let mut shadow_route = route.clone();
++    shadow_route.ctx.signal_source = SignalSource::PrivateMempool;
++    shadow_route.ctx.jito_compatible_now = true;
++    shadow_route.ctx.timing_margin_ok = true;
++    shadow_route.outcome = RouteOutcome {
++        decision: RouteDecision::JitoBundle,
++        reason: RouteReason::JitoDirect,
++    };
++    shadow_route
++}
++
++#[inline(always)]
++fn apply_geyser_shadow_no_send_intent_overrides(
++    intent: &mut WorkerIntent,
++    record: &IngressRecord,
++    route: &HydratedRoute,
++    rollout_no_send_backend: bool,
++) {
++    if is_observe_shadow_geyser_signal(record.signal_source)
++        && route.ctx.signal_source == SignalSource::PrivateMempool
++        && rollout_no_send_backend
++    {
++        intent.source = SignalSource::PrivateMempool;
++        intent.max_pool_staleness_ns = GEYSER_SHADOW_NO_SEND_MAX_STALENESS_NS;
++        intent.max_mint_staleness_ns = GEYSER_SHADOW_NO_SEND_MAX_STALENESS_NS;
++        intent.max_alt_staleness_ns = GEYSER_SHADOW_NO_SEND_MAX_STALENESS_NS;
++    }
++}
++
+ enum HydratedRouteOutcome {
+     Actionable(HydratedRoute),
+     Dropped(HydratedRoute),
+@@ -1449,6 +1717,26 @@ pub(crate) fn record_rollout_shadow_publish_diag(event: &RolloutShadowEvent) {
+     }
+ }
+
++#[inline(always)]
++pub(crate) fn record_final_no_send_event_constructed_diag(event: &RolloutShadowEvent) {
++    WORKER_FINAL_NO_SEND_EVENT_CONSTRUCTED.fetch_add(1, Ordering::Relaxed);
++    WORKER_FINAL_NO_SEND_DROP_REASON_LAST.store(event.drop_reason as u64, Ordering::Relaxed);
++}
++
++#[inline(always)]
++pub(crate) fn record_final_no_send_event_publish_result_diag(
++    event: &RolloutShadowEvent,
++    published: bool,
++) {
++    if published {
++        WORKER_FINAL_NO_SEND_EVENT_PUBLISHED.fetch_add(1, Ordering::Relaxed);
++        record_rollout_shadow_publish_diag(event);
++    } else {
++        WORKER_FINAL_NO_SEND_EVENT_PUBLISH_ERR.fetch_add(1, Ordering::Relaxed);
++        WORKER_FINAL_NO_SEND_DROP_REASON_LAST.store(event.drop_reason as u64, Ordering::Relaxed);
++    }
++}
++
+ #[inline(always)]
+ fn g12_drop_reason_from_route_reason(reason: RouteReason) -> G12DropReason {
+     match reason {
+@@ -1502,7 +1790,8 @@ fn emit_route_opportunity_event(
+     let mut event = rollout_base_event(record, resolved);
+     event.route_family = route_family_code(route.outcome.decision);
+     event.tactic_family = tactic_family_code(intent.kind);
+-    event.private_lane_admissible = 1;
++    event.private_lane_admissible =
++        u8::from(!is_observe_shadow_geyser_signal(record.signal_source));
+     event.stale_state_reroute =
+         u8::from(route.outcome.reason == RouteReason::JitoStaleHarmonicReroute);
+     event.egress_gate_reroute =
+@@ -1659,14 +1948,37 @@ fn money_worker_loop(
+                     HydratedRouteOutcome::Actionable(route) => {
+                         WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
+                         record_route_reason_diag(route.outcome.reason);
++                        record_route_decision_diag(route.outcome.decision);
+                         route
+                     }
+                     HydratedRouteOutcome::Dropped(route) => {
+-                        WORKER_ROUTE_DROPPED.fetch_add(1, Ordering::Relaxed);
+-                        record_route_reason_diag(route.outcome.reason);
+-                        emit_route_drop_event(shared, &record, &resolved, &route);
+-                        cursor = (cursor + 1) % n;
+-                        continue;
++                        if geyser_shadow_no_send_allowed(shared, &record, &route) {
++                            WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED.fetch_add(1, Ordering::Relaxed);
++                            record_geyser_shadow_no_send_source_diag(record.signal_source);
++                            WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
++                            let shadow_route = shadow_no_send_route_from_public_drop(&route);
++                            record_route_reason_diag(shadow_route.outcome.reason);
++                            record_route_decision_diag(shadow_route.outcome.decision);
++                            shadow_route
++                        } else {
++                            if is_observe_shadow_geyser_signal(record.signal_source)
++                                && route.outcome.reason == RouteReason::PublicTarget
++                            {
++                                WORKER_GEYSER_SHADOW_NO_SEND_REJECTED
++                                    .fetch_add(1, Ordering::Relaxed);
++                            }
++                            WORKER_ROUTE_DROPPED.fetch_add(1, Ordering::Relaxed);
++                            WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT
++                                .fetch_add(1, Ordering::Relaxed);
++                            record_route_reason_diag(route.outcome.reason);
++                            record_route_decision_diag(route.outcome.decision);
++                            if route.outcome.reason == RouteReason::HarmonicEgressGateNoJito {
++                                WORKER_PRESIGN_GATE_REJECT.fetch_add(1, Ordering::Relaxed);
++                            }
++                            emit_route_drop_event(shared, &record, &resolved, &route);
++                            cursor = (cursor + 1) % n;
++                            continue;
++                        }
+                     }
+                     HydratedRouteOutcome::UnavailableUnknownSignal => {
+                         WORKER_ROUTE_UNAVAILABLE.fetch_add(1, Ordering::Relaxed);
+@@ -1692,7 +2004,7 @@ fn money_worker_loop(
+                     opso_stale_action,
+                     opso_max_staleness_ns,
+                 );
+-                let intent = build_worker_intent(
++                let mut intent = build_worker_intent(
+                     &record,
+                     &resolved,
+                     &route,
+@@ -1700,6 +2012,12 @@ fn money_worker_loop(
+                     &shared.intent_shape,
+                     opso_metadata,
+                 );
++                apply_geyser_shadow_no_send_intent_overrides(
++                    &mut intent,
++                    &record,
++                    &route,
++                    shared.rollout_no_send_backend,
++                );
+                 emit_route_opportunity_event(shared, &record, &resolved, &route, &intent);
+                 let fencer = InventoryFencer {
+                     current_allocation: shared.inventory_alloc,
+@@ -2234,6 +2552,40 @@ mod tests {
+         assert!(attempt.shadow_events[0].live_send_suppressed);
+         assert_eq!(attempt.worker_diag.pipeline_attempts, 1);
+         assert_eq!(attempt.worker_diag.pipeline_success, 1);
++        assert_eq!(attempt.worker_diag.candidates_entered_process_intent, 1);
++        assert_eq!(attempt.worker_diag.process_intent_ok, 1);
++        assert_eq!(attempt.worker_diag.quote_ok, 1);
++        assert_eq!(attempt.worker_diag.template_build_ok, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_ok, 1);
++        assert_eq!(attempt.worker_diag.final_no_send_event_constructed, 1);
++        assert_eq!(attempt.worker_diag.final_no_send_event_published, 1);
++        assert_eq!(attempt.worker_diag.rollout_would_send_events_published, 1);
++        assert_eq!(
++            attempt
++                .worker_diag
++                .rollout_live_send_suppressed_events_published,
++            1
++        );
++    }
++
++    fn assert_geyser_shadow_no_send_success(attempt: &NoSendAttempt, external: bool) {
++        attempt
++            .result
++            .as_ref()
++            .expect("Geyser observe-only shadow route must reach no-send backend");
++        assert_eq!(attempt.jito_len, 0);
++        assert_eq!(attempt.harmonic_len, 0);
++        assert_eq!(attempt.shadow_events.len(), 1);
++        let ledger = rollout_ledger_from_events(&attempt.shadow_events);
++        assert_eq!(ledger.would_send, 1);
++        assert_eq!(ledger.live_send_suppressed, 1);
++        assert_eq!(ledger.private_grade_admissible_opportunities, 0);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 1);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_rejected, 0);
++        assert_eq!(attempt.worker_diag.candidates_entered_process_intent, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 1);
++        assert_eq!(attempt.worker_diag.final_no_send_event_published, 1);
+         assert_eq!(attempt.worker_diag.rollout_would_send_events_published, 1);
+         assert_eq!(
+             attempt
+@@ -2241,6 +2593,153 @@ mod tests {
+                 .rollout_live_send_suppressed_events_published,
+             1
+         );
++        assert_eq!(
++            attempt.worker_diag.geyser_shadow_no_send_source_external,
++            u64::from(external)
++        );
++        assert_eq!(
++            attempt
++                .worker_diag
++                .geyser_shadow_no_send_source_local_validator,
++            u64::from(!external)
++        );
++    }
++
++    #[test]
++    fn sh7_a_external_geyser_observe_only_no_send_enters_shadow_path() {
++        let attempt = run_g12_no_send_attempt_with_signal(
++            false,
++            true,
++            true,
++            None,
++            SIGNAL_SOURCE_EXTERNAL_GEYSER,
++            true,
++        );
++
++        assert_geyser_shadow_no_send_success(&attempt, true);
++    }
++
++    #[test]
++    fn sh7_a_external_geyser_shadow_no_send_tolerates_stale_bootstrap_snapshot() {
++        let attempt = run_g12_no_send_attempt_with_signal_and_unix_ns(
++            false,
++            true,
++            true,
++            None,
++            SIGNAL_SOURCE_EXTERNAL_GEYSER,
++            true,
++            20_000_000_000,
++        );
++
++        assert_geyser_shadow_no_send_success(&attempt, true);
++        assert_eq!(attempt.worker_diag.pipeline_err_lookup, 0);
++    }
++
++    #[test]
++    fn sh7_a_private_no_send_keeps_live_staleness_lookup_policy() {
++        let attempt = run_g12_no_send_attempt_with_signal_and_unix_ns(
++            false,
++            true,
++            true,
++            None,
++            SIGNAL_SOURCE_AFXDP,
++            true,
++            20_000_000_000,
++        );
++
++        assert!(matches!(attempt.result, Err(PipelineError::LookupFailed)));
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 0);
++        assert_eq!(attempt.worker_diag.pipeline_err_lookup, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 0);
++    }
++
++    #[test]
++    fn sh7_a_local_validator_geyser_observe_only_no_send_enters_shadow_path() {
++        let attempt = run_g12_no_send_attempt_with_signal(
++            false,
++            true,
++            true,
++            None,
++            SIGNAL_SOURCE_LOCAL_VALIDATOR_GEYSER,
++            true,
++        );
++
++        assert_geyser_shadow_no_send_success(&attempt, false);
++    }
++
++    #[test]
++    fn sh7_a_external_geyser_live_mode_still_drops_public_target() {
++        let attempt = run_g12_no_send_attempt_with_signal(
++            false,
++            false,
++            true,
++            None,
++            SIGNAL_SOURCE_EXTERNAL_GEYSER,
++            true,
++        );
++
++        assert!(matches!(
++            attempt.result,
++            Err(PipelineError::RoutingDropped(RouteReason::PublicTarget))
++        ));
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 0);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_rejected, 1);
++        assert_eq!(attempt.worker_diag.candidates_entered_process_intent, 0);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 0);
++        assert!(attempt.shadow_events.is_empty());
++    }
++
++    #[test]
++    fn sh7_a_external_geyser_no_send_without_sink_still_drops_public_target() {
++        let attempt = run_g12_no_send_attempt_with_signal(
++            false,
++            true,
++            false,
++            None,
++            SIGNAL_SOURCE_EXTERNAL_GEYSER,
++            true,
++        );
++
++        assert!(matches!(
++            attempt.result,
++            Err(PipelineError::RoutingDropped(RouteReason::PublicTarget))
++        ));
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 0);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_rejected, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 0);
++    }
++
++    #[test]
++    fn sh7_a_external_geyser_shadow_flag_false_still_drops_public_target() {
++        let attempt = run_g12_no_send_attempt_with_signal(
++            false,
++            true,
++            true,
++            None,
++            SIGNAL_SOURCE_EXTERNAL_GEYSER,
++            false,
++        );
++
++        assert!(matches!(
++            attempt.result,
++            Err(PipelineError::RoutingDropped(RouteReason::PublicTarget))
++        ));
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 0);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_rejected, 1);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 0);
++    }
++
++    #[test]
++    fn sh7_a_afxdp_unaffected_by_geyser_shadow_gate() {
++        let attempt =
++            run_g12_no_send_attempt_with_signal(false, true, true, None, SIGNAL_SOURCE_AFXDP, true);
++
++        attempt
++            .result
++            .expect("private AFXDP route should still reach no-send backend");
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_admitted, 0);
++        assert_eq!(attempt.worker_diag.geyser_shadow_no_send_rejected, 0);
++        assert_eq!(attempt.worker_diag.no_send_backend_called, 1);
+     }
+
+     #[test]
+@@ -2289,6 +2788,20 @@ mod tests {
+                 .rollout_live_send_suppressed_events_published,
+             1
+         );
++        assert_eq!(
++            no_send_attempt
++                .worker_diag
++                .candidates_entered_process_intent,
++            1
++        );
++        assert_eq!(no_send_attempt.worker_diag.process_intent_ok, 1);
++        assert_eq!(no_send_attempt.worker_diag.no_send_backend_called, 1);
++        assert_eq!(no_send_attempt.worker_diag.no_send_backend_ok, 1);
++        assert_eq!(
++            no_send_attempt.worker_diag.final_no_send_event_constructed,
++            1
++        );
++        assert_eq!(no_send_attempt.worker_diag.final_no_send_event_published, 1);
+
+         let final_ledger = rollout_ledger_from_events(&no_send_attempt.shadow_events);
+         assert_eq!(final_ledger.observed, 1);
+@@ -2939,6 +3452,7 @@ mod tests {
+                 quant_tactics: None,
+                 rollout_shadow_sink: None,
+                 rollout_no_send_backend: false,
++                r0_allow_geyser_observe_shadow: false,
+             }
+         }
+
+@@ -3063,6 +3577,7 @@ mod tests {
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let record = G1cFixture::passing_record();
+@@ -3319,6 +3834,12 @@ mod tests {
+         assert_eq!(attempt.worker_diag.route_attempts, 1);
+         assert_eq!(attempt.worker_diag.route_dropped, 1);
+         assert_eq!(attempt.worker_diag.route_reason_public_target, 1);
++        assert_eq!(attempt.worker_diag.route_resolved_drop, 1);
++        assert_eq!(
++            attempt.worker_diag.candidates_dropped_before_process_intent,
++            1
++        );
++        assert_eq!(attempt.worker_diag.candidates_entered_process_intent, 0);
+         assert_eq!(attempt.rollout_ledger.public_drops, 1);
+         assert_eq!(
+             attempt.rollout_ledger.drop_reason_counts[G12DropReason::DroppedPublicTarget as usize],
+@@ -4715,7 +5236,8 @@ execution:
+     impl RolloutShadowPush for CapturingRolloutShadowSink {
+         fn try_push_shadow(&self, item: &RolloutShadowEvent) -> bool {
+             if item.would_send || item.live_send_suppressed {
+-                record_rollout_shadow_publish_diag(item);
++                record_final_no_send_event_constructed_diag(item);
++                record_final_no_send_event_publish_result_diag(item, true);
+             }
+             self.items.borrow_mut().push(*item);
+             true
+@@ -4798,10 +5320,54 @@ execution:
+                 RouteDiagOutcome::Actionable(route.outcome.reason)
+             }
+             HydratedRouteOutcome::Dropped(route) => {
+-                WORKER_ROUTE_DROPPED.fetch_add(1, Ordering::Relaxed);
+-                record_route_reason_diag(route.outcome.reason);
+-                emit_route_drop_event(&shared, &record, &resolved, &route);
+-                RouteDiagOutcome::Dropped(route.outcome.reason)
++                if geyser_shadow_no_send_allowed(&shared, &record, &route) {
++                    WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED.fetch_add(1, Ordering::Relaxed);
++                    record_geyser_shadow_no_send_source_diag(record.signal_source);
++                    WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
++                    let shadow_route = shadow_no_send_route_from_public_drop(&route);
++                    record_route_reason_diag(shadow_route.outcome.reason);
++                    record_route_decision_diag(shadow_route.outcome.decision);
++                    let mut intent = build_worker_intent(
++                        &record,
++                        &resolved,
++                        &shadow_route,
++                        shared.route_base_cu_limit,
++                        &shared.intent_shape,
++                        read_opso_metadata(
++                            record.unix_ns,
++                            resolved.pool_index,
++                            None,
++                            shadow_core::config::OpsoStaleAction::FallbackToBaseline,
++                            400_000_000,
++                        ),
++                    );
++                    apply_geyser_shadow_no_send_intent_overrides(
++                        &mut intent,
++                        &record,
++                        &shadow_route,
++                        true,
++                    );
++                    emit_route_opportunity_event(
++                        &shared,
++                        &record,
++                        &resolved,
++                        &shadow_route,
++                        &intent,
++                    );
++                    RouteDiagOutcome::Actionable(shadow_route.outcome.reason)
++                } else {
++                    if is_observe_shadow_geyser_signal(record.signal_source)
++                        && route.outcome.reason == RouteReason::PublicTarget
++                    {
++                        WORKER_GEYSER_SHADOW_NO_SEND_REJECTED.fetch_add(1, Ordering::Relaxed);
++                    }
++                    WORKER_ROUTE_DROPPED.fetch_add(1, Ordering::Relaxed);
++                    WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT.fetch_add(1, Ordering::Relaxed);
++                    record_route_reason_diag(route.outcome.reason);
++                    record_route_decision_diag(route.outcome.decision);
++                    emit_route_drop_event(&shared, &record, &resolved, &route);
++                    RouteDiagOutcome::Dropped(route.outcome.reason)
++                }
+             }
+             HydratedRouteOutcome::UnavailableUnknownSignal => {
+                 WORKER_ROUTE_UNAVAILABLE.fetch_add(1, Ordering::Relaxed);
+@@ -4828,6 +5394,44 @@ execution:
+         rollout_no_send_backend: bool,
+         with_sink: bool,
+         tactic_class: Option<u8>,
++    ) -> NoSendAttempt {
++        run_g12_no_send_attempt_with_signal(
++            intent_observe_only,
++            rollout_no_send_backend,
++            with_sink,
++            tactic_class,
++            SIGNAL_SOURCE_PRIVATE_MEMPOOL,
++            false,
++        )
++    }
++
++    fn run_g12_no_send_attempt_with_signal(
++        intent_observe_only: bool,
++        rollout_no_send_backend: bool,
++        with_sink: bool,
++        tactic_class: Option<u8>,
++        signal_source: u8,
++        r0_allow_geyser_observe_shadow: bool,
++    ) -> NoSendAttempt {
++        run_g12_no_send_attempt_with_signal_and_unix_ns(
++            intent_observe_only,
++            rollout_no_send_backend,
++            with_sink,
++            tactic_class,
++            signal_source,
++            r0_allow_geyser_observe_shadow,
++            2_000_000,
++        )
++    }
++
++    fn run_g12_no_send_attempt_with_signal_and_unix_ns(
++        intent_observe_only: bool,
++        rollout_no_send_backend: bool,
++        with_sink: bool,
++        tactic_class: Option<u8>,
++        signal_source: u8,
++        r0_allow_geyser_observe_shadow: bool,
++        record_unix_ns: u64,
+     ) -> NoSendAttempt {
+         let _lock = lock_worker_diagnostics_for_test();
+         reset_worker_diagnostics_for_test();
+@@ -5019,12 +5623,12 @@ execution:
+
+         let mut record = IngressRecord::zeroed();
+         record.slot = 98;
+-        record.signal_source = SIGNAL_SOURCE_PRIVATE_MEMPOOL;
++        record.signal_source = signal_source;
+         record.pool_pubkey = TEST_POOL_PUBKEY;
+         record.mint_in = TEST_MINT_IN_PUBKEY;
+         record.mint_out = TEST_MINT_OUT_PUBKEY;
+         record.amount_in = 100_000;
+-        record.unix_ns = 2_000_000;
++        record.unix_ns = record_unix_ns;
+         record.obscurity_score = 3;
+
+         let inventory_alloc = AtomicU64::new(0);
+@@ -5058,18 +5662,81 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow,
+         };
+
+         let resolved = run_early_drop_gates(&record, &shared_refs).expect("early-drop must pass");
+-        let route = hydrate_route(
++        WORKER_RECORDS_SEEN.fetch_add(1, Ordering::Relaxed);
++        record_signal_source_diag(record.signal_source);
++        WORKER_ROUTE_ATTEMPTS.fetch_add(1, Ordering::Relaxed);
++        let mut route = match hydrate_route_observed(
+             &record,
+             IntentKind::PlainWithinCap,
+             tactic_class.map(|v| v as u16),
+             true,
+             true,
+             &shared_refs,
+-        )
+-        .expect("routing must hydrate to JitoBundle");
++        ) {
++            HydratedRouteOutcome::Actionable(route) => {
++                WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
++                record_route_reason_diag(route.outcome.reason);
++                record_route_decision_diag(route.outcome.decision);
++                route
++            }
++            HydratedRouteOutcome::Dropped(route) => {
++                let shadow_allowed = route.outcome.decision == RouteDecision::Drop
++                    && route.outcome.reason == RouteReason::PublicTarget
++                    && is_observe_shadow_geyser_signal(record.signal_source)
++                    && r0_allow_geyser_observe_shadow
++                    && rollout_no_send_backend
++                    && with_sink
++                    && !shadow_core::routing::public_execution_reachable();
++                if shadow_allowed {
++                    WORKER_GEYSER_SHADOW_NO_SEND_ADMITTED.fetch_add(1, Ordering::Relaxed);
++                    record_geyser_shadow_no_send_source_diag(record.signal_source);
++                    WORKER_ROUTE_ACTIONABLE.fetch_add(1, Ordering::Relaxed);
++                    let shadow_route = shadow_no_send_route_from_public_drop(&route);
++                    record_route_reason_diag(shadow_route.outcome.reason);
++                    record_route_decision_diag(shadow_route.outcome.decision);
++                    shadow_route
++                } else {
++                    if is_observe_shadow_geyser_signal(record.signal_source)
++                        && route.outcome.reason == RouteReason::PublicTarget
++                    {
++                        WORKER_GEYSER_SHADOW_NO_SEND_REJECTED.fetch_add(1, Ordering::Relaxed);
++                    }
++                    WORKER_ROUTE_DROPPED.fetch_add(1, Ordering::Relaxed);
++                    WORKER_CANDIDATES_DROPPED_BEFORE_PROCESS_INTENT.fetch_add(1, Ordering::Relaxed);
++                    record_route_reason_diag(route.outcome.reason);
++                    record_route_decision_diag(route.outcome.decision);
++                    return NoSendAttempt {
++                        result: Err(PipelineError::RoutingDropped(route.outcome.reason)),
++                        jito_len: 0,
++                        harmonic_len: 0,
++                        shadow_events: Vec::new(),
++                        worker_diag: snapshot_worker_diagnostics(),
++                    };
++                }
++            }
++            HydratedRouteOutcome::UnavailableUnknownSignal => {
++                return NoSendAttempt {
++                    result: Err(PipelineError::RoutingHydrationFailed),
++                    jito_len: 0,
++                    harmonic_len: 0,
++                    shadow_events: Vec::new(),
++                    worker_diag: snapshot_worker_diagnostics(),
++                };
++            }
++            HydratedRouteOutcome::UnavailableHydrationNone => {
++                return NoSendAttempt {
++                    result: Err(PipelineError::RoutingHydrationFailed),
++                    jito_len: 0,
++                    harmonic_len: 0,
++                    shadow_events: Vec::new(),
++                    worker_diag: snapshot_worker_diagnostics(),
++                };
++            }
++        };
+         assert_eq!(route.outcome.decision, RouteDecision::JitoBundle);
+
+         let mut intent = build_worker_intent(
+@@ -5086,6 +5753,12 @@ execution:
+         intent.cu_price_reciprocal_q32 = 1 << 20;
+         intent.observe_only = intent_observe_only;
+         intent.tactic_class = tactic_class;
++        apply_geyser_shadow_no_send_intent_overrides(
++            &mut intent,
++            &record,
++            &route,
++            rollout_no_send_backend,
++        );
+
+         let fencer = InventoryFencer {
+             current_allocation: &inventory_alloc,
+@@ -5422,6 +6095,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let resolved =
+@@ -5790,6 +6464,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let resolved =
+@@ -6188,6 +6863,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+         let mut run_iteration = |i: usize, timed: bool| -> u64 {
+             inventory_alloc.store(0, Ordering::Relaxed);
+@@ -6761,6 +7437,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         // --- Phase A: Jito Up → hydrate_route succeeds (control) ---
+@@ -7155,6 +7832,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let resolved =
+@@ -7596,6 +8274,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let resolved = run_early_drop_gates(&record, &shared_refs)
+@@ -8119,6 +8798,7 @@ execution:
+                 quant_tactics: None,
+                 rollout_shadow_sink: None,
+                 rollout_no_send_backend: false,
++                r0_allow_geyser_observe_shadow: false,
+             }
+         }
+
+@@ -8956,6 +9636,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         let resolved =
+@@ -9332,6 +10013,7 @@ execution:
+             quant_tactics: None,
+             rollout_shadow_sink: None,
+             rollout_no_send_backend: false,
++            r0_allow_geyser_observe_shadow: false,
+         };
+
+         // Early-drop gates use snapshot_slot for staleness check.
+diff --git a/crates/shadow-tier0/src/no_send_sink.rs b/crates/shadow-tier0/src/no_send_sink.rs
+index 9cd84a8..d1341e2 100644
+--- a/crates/shadow-tier0/src/no_send_sink.rs
++++ b/crates/shadow-tier0/src/no_send_sink.rs
+@@ -14,7 +14,16 @@ impl NoSendSink {
+
+ impl RolloutShadowPush for NoSendSink {
+     fn try_push_shadow(&self, item: &RolloutShadowEvent) -> bool {
+-        crate::money_worker::record_rollout_shadow_publish_diag(item);
+-        self.ring.push(item)
++        let final_no_send = item.would_send || item.live_send_suppressed;
++        if final_no_send {
++            crate::money_worker::record_final_no_send_event_constructed_diag(item);
++        }
++        let published = self.ring.push(item);
++        if final_no_send {
++            crate::money_worker::record_final_no_send_event_publish_result_diag(item, published);
++        } else if published {
++            crate::money_worker::record_rollout_shadow_publish_diag(item);
++        }
++        published
+     }
+ }
+diff --git a/crates/shadow-tier0/src/rollout_gate_export.rs b/crates/shadow-tier0/src/rollout_gate_export.rs
+index 6289dd9..763af3d 100644
+--- a/crates/shadow-tier0/src/rollout_gate_export.rs
++++ b/crates/shadow-tier0/src/rollout_gate_export.rs
+@@ -184,6 +184,32 @@ pub fn build_gate_evaluator_input(
+         worker_rollout_would_send_events_published: worker_diag.rollout_would_send_events_published,
+         worker_rollout_live_send_suppressed_events_published: worker_diag
+             .rollout_live_send_suppressed_events_published,
++        worker_candidates_entered_process_intent: worker_diag.candidates_entered_process_intent,
++        worker_candidates_dropped_before_process_intent: worker_diag
++            .candidates_dropped_before_process_intent,
++        worker_process_intent_ok: worker_diag.process_intent_ok,
++        worker_process_intent_err: worker_diag.process_intent_err,
++        worker_quote_ok: worker_diag.quote_ok,
++        worker_quote_err: worker_diag.quote_err,
++        worker_route_resolved_jito: worker_diag.route_resolved_jito,
++        worker_route_resolved_harmonic: worker_diag.route_resolved_harmonic,
++        worker_route_resolved_drop: worker_diag.route_resolved_drop,
++        worker_presign_gate_reject: worker_diag.presign_gate_reject,
++        worker_template_build_ok: worker_diag.template_build_ok,
++        worker_template_build_err: worker_diag.template_build_err,
++        worker_no_send_backend_called: worker_diag.no_send_backend_called,
++        worker_no_send_backend_ok: worker_diag.no_send_backend_ok,
++        worker_no_send_backend_err: worker_diag.no_send_backend_err,
++        worker_final_no_send_event_constructed: worker_diag.final_no_send_event_constructed,
++        worker_final_no_send_event_published: worker_diag.final_no_send_event_published,
++        worker_final_no_send_event_publish_err: worker_diag.final_no_send_event_publish_err,
++        worker_final_no_send_drop_reason_last: worker_diag.final_no_send_drop_reason_last,
++        worker_geyser_shadow_no_send_admitted: worker_diag.geyser_shadow_no_send_admitted,
++        worker_geyser_shadow_no_send_rejected: worker_diag.geyser_shadow_no_send_rejected,
++        worker_geyser_shadow_no_send_source_external: worker_diag
++            .geyser_shadow_no_send_source_external,
++        worker_geyser_shadow_no_send_source_local_validator: worker_diag
++            .geyser_shadow_no_send_source_local_validator,
+         worker_signal_public_geyser: worker_diag.signal_public_geyser,
+         worker_signal_external_geyser: worker_diag.signal_external_geyser,
+         worker_signal_local_validator_geyser: worker_diag.signal_local_validator_geyser,
+@@ -910,10 +936,24 @@ entry:
+         assert_eq!(input.worker_route_unavailable_unknown_signal, 1);
+         assert_eq!(input.worker_route_unavailable_hydration_none, 1);
+         assert_eq!(input.worker_route_reason_jito_direct, 1);
++        assert_eq!(input.worker_route_resolved_jito, 1);
+         assert_eq!(input.worker_pipeline_attempts, 3);
+         assert_eq!(input.worker_pipeline_success, 1);
+         assert_eq!(input.worker_pipeline_err_lookup, 1);
+         assert_eq!(input.worker_pipeline_err_emit_other, 1);
++        assert_eq!(input.worker_candidates_entered_process_intent, 3);
++        assert_eq!(input.worker_candidates_dropped_before_process_intent, 0);
++        assert_eq!(input.worker_process_intent_ok, 1);
++        assert_eq!(input.worker_process_intent_err, 2);
++        assert_eq!(input.worker_quote_ok, 2);
++        assert_eq!(input.worker_quote_err, 0);
++        assert_eq!(input.worker_template_build_ok, 2);
++        assert_eq!(input.worker_template_build_err, 0);
++        assert_eq!(input.worker_no_send_backend_called, 2);
++        assert_eq!(input.worker_no_send_backend_ok, 1);
++        assert_eq!(input.worker_no_send_backend_err, 1);
++        assert_eq!(input.worker_geyser_shadow_no_send_admitted, 0);
++        assert_eq!(input.worker_geyser_shadow_no_send_rejected, 0);
+         assert_eq!(input.rollout_public_drops, 3);
+         assert_eq!(input.rollout_private_grade_admissible_opportunities, 4);
+         assert_eq!(input.rollout_geyser_shadow_opportunities, 5);

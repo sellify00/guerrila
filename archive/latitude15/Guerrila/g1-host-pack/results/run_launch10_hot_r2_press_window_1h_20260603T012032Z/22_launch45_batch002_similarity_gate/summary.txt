@@ -1,0 +1,13 @@
+status=PARK_BATCH002_SIMILARITY_NO_READY_ROWS
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T012032Z
+fingerprint_path=/home/ubuntu/Guerrila/g1-host-pack/results/22_launch44_batch002_fingerprint/fingerprint.json
+rows_seen=174
+rows_evaluated=174
+batch002_similar_ready_rows=0
+decision_counts={"PARK_EXIT_LIQUIDITY_FRAGILE": 159, "PARK_NOT_BATCH002_PROFILE": 5, "PARK_WEAK_ENTRY_PROFILE": 10}
+first_blocker_counts={"batch002_entry_quote_missing": 143, "batch002_exit_quote_missing": 16, "batch002_pm": 5, "batch002_price_change_too_low": 9, "batch002_toxic_or_unabsorbed_sell": 1}
+wire_send=2
+live_landed=2
+require_no_wire=false
+acceptance_pass=false
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T012032Z/22_launch45_batch002_similarity_gate/batch002_similarity_rows.jsonl

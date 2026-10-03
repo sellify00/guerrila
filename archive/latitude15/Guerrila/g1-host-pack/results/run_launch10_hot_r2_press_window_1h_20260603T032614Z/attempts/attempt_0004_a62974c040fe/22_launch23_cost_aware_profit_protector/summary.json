@@ -1,0 +1,17 @@
+{
+  "decision_counts": {
+    "COST_PROTECTOR_NOT_ARMED": 1
+  },
+  "floor_source": "true_loss_floor",
+  "latest_arm_gain_bps": 2714,
+  "latest_break_even_bps": 2214,
+  "latest_cost_profit_protector_armed": false,
+  "latest_decision": "COST_PROTECTOR_NOT_ARMED",
+  "latest_drawdown_from_peak_bps": 0,
+  "latest_peak_gain_bps": 190,
+  "latest_selected_mint": "FPKWGa2BQZisMr7zNJsrLP1xhgUue1K8XWGFBHoL5SKk",
+  "profit_buffer_bps": 500,
+  "rows_seen": 1,
+  "status": "COST_AWARE_PROFIT_PROTECTOR_COMPLETE",
+  "tight_trailing_stop_bps": 500
+}

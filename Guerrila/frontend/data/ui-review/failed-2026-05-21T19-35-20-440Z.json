@@ -1,0 +1,5 @@
+{
+  "failedAt": "2026-05-21T19:35:20.440Z",
+  "message": "fetch failed",
+  "stack": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:16416:13\n    at async callResponsesApi (C:\\Shadow Engine\\Guerrila\\frontend\\ui-review-loop.js:229:24)\n    at async requestEditPlan (C:\\Shadow Engine\\Guerrila\\frontend\\ui-review-loop.js:390:19)\n    at async runRound (C:\\Shadow Engine\\Guerrila\\frontend\\ui-review-loop.js:483:20)\n    at async main (C:\\Shadow Engine\\Guerrila\\frontend\\ui-review-loop.js:523:20)"
+}

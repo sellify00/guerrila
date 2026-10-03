@@ -1,0 +1,15 @@
+[workspace]
+members = ["crates/shadow-control", "crates/shadow-core", "crates/shadow-ipc", "crates/shadow-state", "crates/shadow-tier0", "crates/shadow-egress-jito", "crates/shadow-egress-tpu", "crates/shadow-harmonic", "crates/shadow-ingest", "crates/shadow-ingest-replay", "crates/shadow-oracle"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.75"
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1
+
+[profile.release-guerrila]
+inherits = "release"

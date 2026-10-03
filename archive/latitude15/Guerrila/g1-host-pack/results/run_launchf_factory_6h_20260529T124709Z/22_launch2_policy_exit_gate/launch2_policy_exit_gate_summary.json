@@ -1,0 +1,14 @@
+{
+  "decision_counts": {
+    "BLOCKED_BUY_PRESSURE": 27,
+    "BLOCKED_EXIT_QUOTE_ZERO": 3,
+    "BLOCKED_ROUTE_FAMILY_UNSUPPORTED": 1,
+    "LAUNCH_POLICY_EXIT_READY": 5
+  },
+  "launch_policy_exit_ready_rows": 5,
+  "live_landed": 0,
+  "rows_seen": 36,
+  "sendBundle_called": false,
+  "status": "launch2_policy_exit_gate_complete",
+  "wire_send": 0
+}

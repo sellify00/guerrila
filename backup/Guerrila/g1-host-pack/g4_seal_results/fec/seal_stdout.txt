@@ -1,0 +1,42 @@
+═══════════════════════════════════════════════════════
+  G4 Ingress Seal Runner
+═══════════════════════════════════════════════════════
+  iface:         seal_rx
+  queue:         0
+  pin_core:      2
+  scenario:      fec_missing_1_of_n (124 effective packets)
+  expected:      FEC degraded: 1 data shred(s) dropped per set, 4 sets recoverable
+  stop_mode:     packet-count
+  duration:      30s
+  pps_target:    1000
+  archive_cap:   65536 (standard)
+  out_dir:       /tmp/g4_results/fec
+═══════════════════════════════════════════════════════
+PASS  pinned to core 2
+PASS  interface 'seal_rx' → ifindex 5
+PASS  UMEM bootstrapped (2097152 frames × 2048 bytes)
+PASS  raw archive bootstrapped (1 lane, cap=65536)
+NOTE  using copy mode (--copy-mode)
+PASS  XSK bound (queue 0), fill ring primed with 4096 frames
+PASS  XSK fd registered in XSKMAP at /sys/fs/bpf/shadow_xsks_map
+
+── Capturing (124 packets (30s ceiling)) ──
+
+
+── Capture complete (3954ms actual) ──
+
+Writing results to /tmp/g4_results/fec:
+  summary.json → /tmp/g4_results/fec/summary.json
+  raw_counters.txt → /tmp/g4_results/fec/raw_counters.txt
+  seal_verdict.txt → /tmp/g4_results/fec/seal_verdict.txt
+
+  [PASS] packets_ingested — 124 frames seen
+  [PASS] parse_rate — 100% (124/124 frames parsed, 95% threshold)
+  [PASS] rx_timestamps_valid — min=2393642357437990 max=2393642590560961 span=233122971ns
+  [PASS] expected_packet_count — 124 received (expected 124, 95% threshold = 117)
+  [PASS] data_shred_count — 60 data shreds (expected 60, 95% threshold = 57)
+  [PASS] coding_shred_count — 64 coding shreds (expected 64, 95% threshold = 60)
+  [PASS] fec_recovery — 48 shreds recovered via FEC (expected 4 across 4 sets)
+  [PASS] archive_health — 124 published, 0 dropped (0%), 124 survival flushes
+
+G4 INGRESS SEAL: ALL PASS

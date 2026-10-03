@@ -1,0 +1,22 @@
+{
+  "decision_counts": {
+    "PARK_FRESH_RUNTIME_API_KEY_MISSING": 1
+  },
+  "fresh_runtime_ready_rows": 0,
+  "helius_api_key_present": false,
+  "helius_runtime_rows": 1,
+  "live_landed": 0,
+  "pool_fetch_error_count": 0,
+  "pressure_still_valid_rows": 0,
+  "provided_runtime_override_rows": 0,
+  "required_fields_present_rows": 0,
+  "rows_seen": 1,
+  "runtime_rows": "",
+  "same_direction_valid_rows": 1,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/mnt/c/Shadow Engine/Guerrila/tmp/66ct_fixture_source.jsonl",
+  "status": "PARK_FRESH_RUNTIME_API_KEY_MISSING",
+  "thesis_signal_source": "fresh_runtime_recomputed",
+  "wire_send": 0
+}

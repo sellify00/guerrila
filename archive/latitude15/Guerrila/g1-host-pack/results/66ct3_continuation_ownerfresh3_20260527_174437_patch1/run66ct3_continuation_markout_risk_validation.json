@@ -1,0 +1,20 @@
+{
+  "best_later_net_positive_rows": 28,
+  "decision_counts": {
+    "BLOCKED_ABSORPTION_TOXIC": 14,
+    "BLOCKED_NEGATIVE_AFTER_COST": 12,
+    "CONTINUATION_MARKOUT_RISK_READY": 2,
+    "none": 12
+  },
+  "live_landed": 0,
+  "markout_risk_ready_rows": 2,
+  "max_adverse_excursion_bounded_rows": 28,
+  "opposite_direction_absorption_not_toxic_rows": 14,
+  "rows_seen": 40,
+  "same_direction_followthrough_positive_rows": 28,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct2_continuation_ownerfresh3_20260527_174437_patch1/run66ct2_continuation_execution_rule_rows.jsonl",
+  "status": "run66ct3_continuation_markout_risk_validation_complete",
+  "wire_send": 0
+}

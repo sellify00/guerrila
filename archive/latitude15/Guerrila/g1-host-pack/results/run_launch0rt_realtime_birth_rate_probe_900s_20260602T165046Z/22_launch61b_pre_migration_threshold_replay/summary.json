@@ -1,0 +1,16 @@
+{
+  "acceptance_pass": false,
+  "decision_counts": {
+    "PARK_THRESHOLD_NO_CANDIDATES": 7,
+    "PARK_THRESHOLD_NO_MIGRATION_COMPLETION": 1
+  },
+  "entry_rules_tested": 8,
+  "live_landed": 0,
+  "markout_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61a_pre_migration_markout_input_builder/rows.jsonl",
+  "markout_rows_seen": 453,
+  "profitable_entry_rules": 0,
+  "ready_entry_rules": 0,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61b_pre_migration_threshold_replay/rows.jsonl",
+  "status": "PARK_LAUNCH61B_NO_PROFITABLE_THRESHOLD_RULE",
+  "wire_send": 0
+}

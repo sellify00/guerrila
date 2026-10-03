@@ -1,0 +1,13 @@
+{
+  "account_include": [],
+  "direct_subscribe_probe": null,
+  "emitted_rows": 35064567,
+  "record_type": "runls13_preprocessed_stream_summary",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/laserstream_preprocessed_realtime/runls13_preprocessed_stream_rows.jsonl",
+  "skipped_updates": 1439,
+  "source": "laserstream_preprocessed_live",
+  "status": "runls13_preprocessed_stream_complete",
+  "stream_error": null,
+  "unique_target_signatures": 35064567,
+  "window_seconds": 21600
+}

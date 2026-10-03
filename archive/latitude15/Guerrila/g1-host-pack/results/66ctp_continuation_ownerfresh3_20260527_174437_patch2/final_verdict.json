@@ -1,0 +1,13 @@
+{
+  "final_verdict": "PARK_SELECTED_REPLAY_FRESH_QUOTE_DRIFTED",
+  "first_replay_blocker": "fresh_quote_drifted",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "selected_candidate_id": "",
+  "selected_private_replay_ready_rows": 0
+}

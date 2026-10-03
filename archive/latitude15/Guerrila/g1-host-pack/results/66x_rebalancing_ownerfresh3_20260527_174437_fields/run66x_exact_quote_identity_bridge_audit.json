@@ -1,0 +1,100 @@
+{
+  "status": "run66x_exact_quote_identity_bridge_audit_complete",
+  "step": "66x_rebalancing_ownerfresh3_20260527_174437_fields",
+  "summary": {
+    "by_owner": {
+      "continuation": {
+        "candidate_id_exact_match_count": 0,
+        "candidate_ingress_unix_ns_present_count": 51,
+        "candidate_quote_request_id_present_count": 0,
+        "candidate_rows_seen": 51,
+        "exact_quote_match_count": 18,
+        "first_exact_identity_blocker_counts": {
+          "candidate_missing_quote_request_id": 31,
+          "none": 18,
+          "owner_mode_layer_mismatch_unique_safe_only": 2
+        },
+        "ingress_identity_match_count": 18,
+        "matched_rollout_net_ev_after_fee_tip_positive_count": 15,
+        "owner_mode_match_on_numeric_count": 0,
+        "quote_identity_class_counts": {
+          "ambiguous": 1,
+          "exact": 18,
+          "none": 30,
+          "unique_safe": 2
+        },
+        "quote_request_id_match_count": 0,
+        "unique_safe_fallback_match_count": 2
+      },
+      "rebalancing": {
+        "candidate_id_exact_match_count": 0,
+        "candidate_ingress_unix_ns_present_count": 803,
+        "candidate_quote_request_id_present_count": 0,
+        "candidate_rows_seen": 803,
+        "exact_quote_match_count": 136,
+        "first_exact_identity_blocker_counts": {
+          "candidate_missing_quote_request_id": 662,
+          "none": 136,
+          "owner_mode_layer_mismatch_unique_safe_only": 5
+        },
+        "ingress_identity_match_count": 136,
+        "matched_rollout_net_ev_after_fee_tip_positive_count": 35,
+        "owner_mode_match_on_numeric_count": 0,
+        "quote_identity_class_counts": {
+          "ambiguous": 1,
+          "exact": 136,
+          "none": 661,
+          "unique_safe": 5
+        },
+        "quote_request_id_match_count": 0,
+        "unique_safe_fallback_match_count": 5
+      }
+    },
+    "candidate_autopsy_bad_lines": 0,
+    "candidate_autopsy_path": "/home/ubuntu/Guerrila/g1-host-pack/results/65_rebalancing_ownerfresh3_20260527_174437_run55_run39/candidate_autopsy.jsonl",
+    "candidate_id_exact_match_count": 0,
+    "candidate_ingress_unix_ns_present_count": 854,
+    "candidate_quote_request_id_present_count": 0,
+    "candidate_rows_seen": 854,
+    "exact_quote_match_count": 154,
+    "first_exact_identity_blocker_counts": {
+      "candidate_missing_quote_request_id": 693,
+      "none": 154,
+      "owner_mode_layer_mismatch_unique_safe_only": 7
+    },
+    "ingress_identity_match_count": 154,
+    "live_landed": 0,
+    "matched_rollout_net_ev_after_fee_tip_positive_count": 50,
+    "numeric_rollout_owner_counts": {
+      "backrun": 212,
+      "none": 243
+    },
+    "owner_mode_match_on_numeric_count": 0,
+    "owner_modes": [
+      "continuation",
+      "rebalancing"
+    ],
+    "quote_identity_class_counts": {
+      "ambiguous": 2,
+      "exact": 154,
+      "none": 691,
+      "unique_safe": 7
+    },
+    "quote_request_id_match_count": 0,
+    "rollout_ingress_unix_ns_present_count": 3144,
+    "rollout_owner_counts": {
+      "backrun": 1484,
+      "none": 1660
+    },
+    "rollout_quote_request_id_present_count": 65,
+    "rollout_template_id_present_count": 455,
+    "shock_research_bad_lines": 1,
+    "shock_research_path": "/home/ubuntu/Guerrila/g1-host-pack/results/65_rebalancing_ownerfresh3_20260527_174437_run55_run39/_inner/20_g12_r0_observe_only/shock_research.jsonl",
+    "shock_research_total_lines": 52062,
+    "source_run65_json": "/home/ubuntu/Guerrila/g1-host-pack/results/65_rebalancing_ownerfresh3_20260527_174437/run65_full_potential_continuous_shard_simulation.json",
+    "status": "run66x_exact_quote_identity_bridge_audit_complete",
+    "step": "66x_rebalancing_ownerfresh3_20260527_174437_fields",
+    "unique_safe_fallback_match_count": 7,
+    "wire_send": 0
+  }
+}

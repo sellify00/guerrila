@@ -1,0 +1,38 @@
+{
+  "accounts_after": [],
+  "accounts_before": [
+    {
+      "amount": 13693058707381,
+      "program_id": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM"
+    }
+  ],
+  "burn_close_landed": true,
+  "burn_close_native_delta_lamports": 2034280,
+  "burn_close_signature": "y8s1mrkyuWSkgQU3H8N2eC2zj15eq1stao3nBEChCsZFXgubfXGvkf5F5R5YD7vsVQmuDLd1QrF711BTc3H3Cvr",
+  "daily_ledger_repaired": true,
+  "final_inventory_raw": 0,
+  "final_trade_pnl_lamports": -3210000,
+  "mint": "BqbZadDBqRVQJSc6V6h9sm7ZN8wPXKZViibypNmyWu5m",
+  "owner": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "rpc_url": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "signature_status": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 1,
+    "err": null,
+    "slot": 423570628,
+    "status": {
+      "Ok": null
+    }
+  },
+  "simulate_err": null,
+  "simulate_logs": [
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 400000 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 399869 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+  ],
+  "status": "UNWINDLESS_BURN_RECONCILED"
+}

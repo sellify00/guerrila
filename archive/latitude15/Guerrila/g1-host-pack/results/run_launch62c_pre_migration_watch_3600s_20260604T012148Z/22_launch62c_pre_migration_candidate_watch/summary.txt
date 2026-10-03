@@ -1,0 +1,10 @@
+status=PARK_LAUNCH62C_NO_BRIDGE_READY_CANDIDATES
+initial_rows_seen=0
+candidate_watch_rows=0
+bridge_ready_rows=0
+decision_counts={}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62c_pre_migration_candidate_watch/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62c_pre_migration_candidate_watch/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false

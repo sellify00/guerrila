@@ -1,0 +1,32 @@
+{
+  "run40_candidate_selection": {
+    "status": "numeric_safe_selected_from_run75",
+    "selected_candidate": {
+      "venue": "meteora_damm_v2",
+      "pool": "GqyUGfUXjQWtks8C4xf9yBgbwT3WvdPat5iisFVc23NZ",
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "BkK43JimdWEHnkBB7miFTUXre4h23n3qseQaqBp3AZAF",
+      "signature": "4mwxGETtpSLEmFi52gcYZv9NEQbunMeDAY4udhVSAp9NPaz4qM8cPE4JoXvLWbAcFd9w3jDM4vf8usDw7CV2zkyL",
+      "source": "afxdp",
+      "slot": 421227723,
+      "unix_ns": 602244350578873,
+      "route": "tpu_quic_public",
+      "selected_target_route_family": "tpu_quic_public",
+      "target_route_family": "tpu_quic_public",
+      "held_input": true,
+      "input_balance_ok": true,
+      "output_account_ready": true,
+      "template_ready": true,
+      "quote_ready_or_classified": true,
+      "tiny_cap_safe": true,
+      "tpu_convertible_route": true,
+      "source_relaxed_dev_proof": true,
+      "scorecard_replay_dev_proof": true,
+      "live_market_recurrence_required": false,
+      "canonical_private_grade": false,
+      "net_after_fee_lamports": 28361445,
+      "retained_ev_lamports": 2527484
+    }
+  },
+  "r1_surface_observations": []
+}

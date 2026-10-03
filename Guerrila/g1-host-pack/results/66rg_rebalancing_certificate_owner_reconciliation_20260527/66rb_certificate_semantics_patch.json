@@ -1,0 +1,19 @@
+{
+  "old_status": "REBALANCING_STRUCTURAL_HUNT_READY",
+  "old_ambiguous_read": "21 rows structurally ready",
+  "amended_status": "REBALANCING_STRUCTURAL_HUNT_READY",
+  "amended_meaning": "execution_plumbing_structural_ready",
+  "owner_aligned_rebalancing_rows": 0,
+  "proposal_ready_rebalancing_rows": 0,
+  "live_approval": false,
+  "corrected_wording": "21 rows passed structural execution plumbing, but 0 rows passed Rebalancing owner-mode eligibility.",
+  "prohibited_future_wording": "21 Rebalancing rows are proposal-ready",
+  "primary_bucket": "CERTIFICATE_GATE_TOO_WEAK",
+  "supporting_blockers": {
+    "owner_mode_match_rebalancing": 0,
+    "pm_owner_lock_ready_rows": 0,
+    "restoration_pressure_measured_rows": 0,
+    "required_rebalancing_rule_schema_complete_rows": 0,
+    "false_restoration_gate_input_ready_rows": 0
+  }
+}

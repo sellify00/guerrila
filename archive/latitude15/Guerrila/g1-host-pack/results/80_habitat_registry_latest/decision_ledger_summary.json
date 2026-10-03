@@ -1,0 +1,7 @@
+{
+  "status": "run80reg_ledger_complete",
+  "runtime_registry_path": "/etc/shadow-engine/shadow_habitat_registry.json",
+  "decision_ledger_path": "/home/ubuntu/shadow-host-audit/dpdk-runs/habitat_registry/shadow_habitat_decision_ledger.jsonl",
+  "new_decision_count": 3,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/80_habitat_registry_latest/decision_ledger_rows.jsonl"
+}

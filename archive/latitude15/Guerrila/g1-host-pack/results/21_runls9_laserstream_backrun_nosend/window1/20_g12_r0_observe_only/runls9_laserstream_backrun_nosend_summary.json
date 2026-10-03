@@ -1,0 +1,25 @@
+{
+  "laserstream_backrun_seen": 701,
+  "laserstream_backrun_no_send_eligible": 174,
+  "laserstream_backrun_bundle_ready": 153,
+  "laserstream_backrun_sender_ready": 21,
+  "laserstream_backrun_pm_reserve_ok": 153,
+  "laserstream_backrun_no_send_accept": 153,
+  "laserstream_backrun_sender_execution_no_send_accept": 0,
+  "laserstream_backrun_sender_research_accept_only": 21,
+  "laserstream_backrun_sender_blocked_pm_reserve_missing": 21,
+  "laserstream_backrun_blocked_by_source_policy_before": 174,
+  "laserstream_backrun_blocked_by_source_policy_after": 0,
+  "wire_send": 0,
+  "live_landed": 0,
+  "invalid_shock_research_lines_skipped": 1,
+  "by_route": {
+    "helius_sender_dual": 21,
+    "jito_bundle": 153
+  },
+  "by_venue": {
+    "meteora_damm_v2": 169,
+    "raydium_clmm": 3,
+    "raydium_cpmm": 2
+  }
+}

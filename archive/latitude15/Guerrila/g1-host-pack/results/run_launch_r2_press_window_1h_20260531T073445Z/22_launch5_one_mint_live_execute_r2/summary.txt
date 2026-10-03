@@ -1,0 +1,17 @@
+status=ABORT_PRE_SEND_TIMEOUT
+acquisition_tx_signature=
+acquisition_landed=false
+acquired_amount_raw=0
+inventory_refresh_ok=false
+flatten_tx_signature=
+flatten_landed=false
+final_inventory_raw=0
+pnl_lamports=0
+max_loss_breached=false
+pm_pending_after=0
+wire_send=0
+live_landed=0
+sendBundle_called=false
+send_transaction_called=false
+bundle_id=
+first_failure=presend_timeout:target_already_landed

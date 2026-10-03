@@ -1,0 +1,14 @@
+{
+  "laserstream_normalized_tx": 54319,
+  "laserstream_feed_to_worker": 7136,
+  "laserstream_worker_read": 7132,
+  "laserstream_process_intent_attempt": 317,
+  "laserstream_rollout_emitted": 2128,
+  "afxdp_private_ingress": 85,
+  "afxdp_feed_to_worker": 85,
+  "afxdp_worker_read": 85,
+  "afxdp_process_intent_attempt": 8,
+  "afxdp_rollout_emitted": 34,
+  "top_reject_reason_laserstream": "reject_pool_tag_miss",
+  "top_reject_reason_afxdp": "reject_no_mint_meta"
+}

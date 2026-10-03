@@ -1,0 +1,21 @@
+{
+  "targetUrl": "http://127.0.0.1:8789/?verify=reactive-delta-2",
+  "model": "gpt-5.2",
+  "maxRounds": 4,
+  "targetScore": 8.5,
+  "minorOnlyRoundsToStop": 2,
+  "screenshotDelayMs": 2500,
+  "desktop": {
+    "width": 1440,
+    "height": 1024
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "deviceScaleFactor": 3,
+    "isMobile": true
+  },
+  "openAiBaseUrl": "https://api.openai.com/v1/responses",
+  "reviewOnly": false,
+  "captureOnly": false
+}

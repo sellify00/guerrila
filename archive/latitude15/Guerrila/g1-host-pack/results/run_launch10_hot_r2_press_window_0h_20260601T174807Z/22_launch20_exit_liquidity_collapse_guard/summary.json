@@ -1,0 +1,15 @@
+{
+  "blocked_rows": 7,
+  "decision_counts": {
+    "PARK_EXIT_BASE_RESERVE_BELOW_FLOOR": 4,
+    "PARK_EXIT_QUOTE_ZERO": 3
+  },
+  "exit_liquidity_guard_ready_rows": 0,
+  "latest_base_reserve_raw": 0,
+  "latest_configured_max_loss_lamports": 15000000,
+  "latest_decision": "PARK_EXIT_BASE_RESERVE_BELOW_FLOOR",
+  "latest_no_exit_loss_floor_lamports": 10410000,
+  "latest_reserve_after_exit_raw": 0,
+  "latest_selected_mint": "9WJVBfS72fs7oCb7KnLBuTvAnYyFQip2MgFioyJ4jqxL",
+  "rows_seen": 7
+}

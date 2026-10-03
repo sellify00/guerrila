@@ -1,0 +1,67 @@
+G12-R0 long observe-only accumulation summary
+
+Status: long safety soak green; full G12 promotion still red.
+
+Host:
+
+```text
+ubuntu@109.94.99.57
+```
+
+Artifact source:
+
+```text
+/home/ubuntu/shadow-host-audit/g12-r0-observe/20260429_084358-long-accumulation
+```
+
+Run posture:
+
+```text
+mode=observe_only
+no_send_backend=true
+AF_XDP=disabled for this Geyser-only accumulation run
+Rosetta=disabled for this no-AF_XDP run
+ShadowGuard=green
+```
+
+Final result:
+
+```text
+status=threshold_reached
+elapsed=7446
+sample_slots=18401
+observe_candidates=10335
+rollout_would_send=3743
+rollout_live_send_suppressed=3743
+micro_market_observations=3743
+micro_market_uplift_ok=true
+shadow_guard_mainnet_deployed=true
+shadow_guard_template_program_id_matches=true
+worker_health_drops=0
+live_landed=0
+promote_allowed=false
+all_gates_green=false
+```
+
+Full promotion stayed red because the run was intentionally Geyser-only and did not provide private
+grade ingress or worker latency proof:
+
+```text
+private_lane_admissibility_ok=false
+observe_candidates_private_grade=0
+rollout_private_grade_admissible_opportunities=0
+latency_ok=false
+worker_latency_proof_present=false
+worker_signal_external_geyser=8371
+worker_signal_afxdp=0
+```
+
+Interpretation:
+
+```text
+G12-R0 long safety soak: green
+G12 full promotion threshold: not green
+Reason: no private-grade ingress / latency proof in this Geyser-only accumulation run
+```
+
+Do not start `r1_tiny`, SH6, SH8, or live promotion from this result.

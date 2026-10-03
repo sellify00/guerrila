@@ -1,0 +1,11 @@
+G4 Shred Replay — Send Summary
+================================
+target:          10.99.2.1:9000
+scenario:        fec_missing_1_of_n (124 effective packets)
+pps_target:      500
+actual_pps:      532
+duration:        233ms
+packets_sent:    124
+bytes_sent:      137952
+send_errors:     0
+corpus_loops:    1

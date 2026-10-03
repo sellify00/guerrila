@@ -1,0 +1,13 @@
+status=run66rt_rebalancing_template_nosend_complete
+source_inline_rows=g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl
+source_policy_rows=g1-host-pack/results/66rp_rebalancing_policy_liquidity_gate_fresh_20260527/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl
+source_rule_rows=g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl
+row_count=91
+sender_no_send_ready_rows=12
+bundle_no_submit_ready_rows=9
+decision_counts={"BLOCKED_PM": 1, "BLOCKED_POLICY": 30, "BLOCKED_TEMPLATE": 39, "REBALANCING_BUNDLE_READY_NO_SUBMIT": 9, "REBALANCING_SENDER_READY_NO_SEND": 12}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false
+ata_created=false

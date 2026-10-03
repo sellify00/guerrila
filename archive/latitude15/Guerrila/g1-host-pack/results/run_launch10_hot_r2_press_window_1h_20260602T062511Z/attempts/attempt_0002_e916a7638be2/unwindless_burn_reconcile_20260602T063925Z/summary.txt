@@ -1,0 +1,16 @@
+status=UNWINDLESS_BURN_CLOSE_SEND_FAILED
+mint=98y7yFnhHRwGmWTs4KPzVcZFPGt9SJAuqkPTLrzeqfsd
+owner=ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX
+attempt_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T062511Z/attempts/attempt_0002_e916a7638be2
+pre_native_balance_lamports=11624928107
+token_account=3akJhJYtvaxUSuwHA4JmCk2pULLWUmVfhZukgSgeg97T
+token_program=TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+burn_amount_raw=55283005068896
+blockhash=BT3UEboEKPVRC6uzHzfsJxP26hRV21biftp3o5CRK41N
+last_valid_block_height=401840777
+simulate_error=None
+simulate_value_err=None
+sender_error={'code': -32002, 'message': 'Transaction simulation failed: Blockhash not found', 'data': {'accounts': None, 'err': 'BlockhashNotFound', 'fee': None, 'innerInstructions': None, 'loadedAccountsDataSize': 0, 'loadedAddresses': None, 'logs': [], 'postBalances': None, 'postTokenBalances': None, 'preBalances': None, 'preTokenBalances': None, 'replacementBlockhash': None, 'returnData': None, 'unitsConsumed': 0}}
+burn_close_signature=
+burn_close_landed=False
+final_inventory_raw=55283005068896

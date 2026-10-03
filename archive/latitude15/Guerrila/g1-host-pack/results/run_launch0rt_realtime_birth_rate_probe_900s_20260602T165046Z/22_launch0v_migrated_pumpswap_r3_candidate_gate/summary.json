@@ -1,0 +1,31 @@
+{
+  "acceptance_pass": true,
+  "account_rent_cash_at_risk_ready_rows": 5,
+  "decision_counts": {
+    "LAUNCH0V_MIGRATED_PUMPSWAP_HUNTER_READY": 5,
+    "PARK_MIGRATED_PUMPSWAP_LIQUIDITY": 405
+  },
+  "entry_edge_ready_rows": 0,
+  "entry_quality_ready_rows": 0,
+  "exit_liquidity_guard_ready_rows": 5,
+  "first_blocker_counts": {
+    "CURVE_COMPLETE_NOT_MIGRATED": 405,
+    "none": 5
+  },
+  "hold_v2_allowed_rows": 5,
+  "launch0m_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0v4_migrated_pumpswap_flow_join_repair/rows.jsonl",
+  "launch0m_rows_seen": 410,
+  "launch_hunter_mode": true,
+  "live_landed": 0,
+  "migrated_pumpswap_rows_seen": 5,
+  "pm_ready_rows": 5,
+  "quote_state_ready_rows": 5,
+  "r3_ready_rows": 5,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0v_migrated_pumpswap_r3_candidate_gate/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z",
+  "sell_quality_ok_rows": 5,
+  "status": "LAUNCH0V_MIGRATED_PUMPSWAP_HUNTER_READY",
+  "true_loss_floor_lamports": 12410000,
+  "true_loss_floor_ready_rows": 5,
+  "wire_send": 0
+}

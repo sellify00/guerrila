@@ -1,0 +1,21 @@
+{
+  "bundle_no_submit_ready_rows": 9,
+  "decision_counts": {
+    "BLOCKED_PM": 1,
+    "BLOCKED_POLICY": 30,
+    "BLOCKED_TEMPLATE": 39,
+    "REBALANCING_BUNDLE_READY_NO_SUBMIT": 9,
+    "REBALANCING_SENDER_READY_NO_SEND": 12
+  },
+  "live_landed": 0,
+  "row_count": 91,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_no_send_ready_rows": 12,
+  "source_inline_rows": "g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "source_policy_rows": "g1-host-pack/results/66rp_rebalancing_policy_liquidity_gate_fresh_20260527/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "source_rule_rows": "g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "status": "run66rt_rebalancing_template_nosend_complete",
+  "step": "66rt_rebalancing_template_nosend_fresh_20260527",
+  "wire_send": 0
+}

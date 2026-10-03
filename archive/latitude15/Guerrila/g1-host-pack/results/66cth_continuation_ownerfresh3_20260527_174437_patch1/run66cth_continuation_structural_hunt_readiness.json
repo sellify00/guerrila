@@ -1,0 +1,18 @@
+{
+  "architecture_blocker_counts": {
+    "PARK_CONTINUATION_ADVERSE_EXCURSION": 4,
+    "PARK_CONTINUATION_OWNER_MISMATCH": 12,
+    "PARK_CONTINUATION_PM": 22
+  },
+  "execution_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct2_continuation_ownerfresh3_20260527_174437_patch1/run66ct2_continuation_execution_rule_rows.jsonl",
+  "live_landed": 0,
+  "merger_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct0_continuation_ownerfresh3_20260527_174437_patch1/continuation_candidate_manifest.jsonl",
+  "owner_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct1_continuation_ownerfresh3_20260527_174437_patch1/run66ct1_continuation_owner_eligibility_rows.jsonl",
+  "proposal_eligible_continuation_rows": 2,
+  "risk_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct3_continuation_ownerfresh3_20260527_174437_patch1/run66ct3_continuation_markout_risk_rows.jsonl",
+  "rows_seen": 40,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "status": "CONTINUATION_STRUCTURAL_HUNT_READY",
+  "wire_send": 0
+}

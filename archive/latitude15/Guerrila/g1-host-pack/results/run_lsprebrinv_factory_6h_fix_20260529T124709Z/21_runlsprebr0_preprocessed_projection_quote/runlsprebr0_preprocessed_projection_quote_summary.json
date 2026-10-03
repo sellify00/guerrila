@@ -1,0 +1,22 @@
+{
+  "live_landed": 0,
+  "pre_target_pool_state_available_count": 33,
+  "projected_ev_after_tip_positive_count": 15,
+  "projected_expected_out_positive_count": 24,
+  "projected_min_out_positive_count": 24,
+  "projected_post_target_state_count": 24,
+  "projection_blocker_counts": {
+    "EV_NEGATIVE_AFTER_TIP": 9,
+    "PRE_TARGET_POOL_STATE_MISSING": 54,
+    "PROJECTION_READY": 15,
+    "PUMPFUN_AMM_DECODER_MISSING": 6,
+    "TARGET_DELTA_COMPUTE_FAILED": 9
+  },
+  "sendBundle_called": false,
+  "status": "runlsprebr0_preprocessed_projection_quote_complete",
+  "target_entity_ready_count": 93,
+  "top_net_ev_after_tip_raw": 5774795000,
+  "top_pool": "3DM2vMEvoGiHecbHaFNpjPcTfeywji62go7zaNaYtaPj",
+  "top_venue": "pumpfun_amm",
+  "wire_send": 0
+}

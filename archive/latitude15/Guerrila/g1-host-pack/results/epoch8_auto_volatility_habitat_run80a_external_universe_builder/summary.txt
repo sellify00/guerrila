@@ -1,0 +1,13 @@
+status=run80a_complete
+seed_token_count=6
+candidate_row_count=15
+top_n=180
+dexscreener_raw_pair_count=90
+birdeye_optional_pair_count=0
+bitquery_optional_pair_count=0
+policy_status_counts={"pass":9,"freeze_authority_present":3,"token2022_explicit_allow_required":3}
+venue_counts={"raydium_amm_v4":1,"orca_whirlpool":4,"raydium_clmm":5,"meteora_damm_v2":2,"unknown":3}
+account_readiness_counts={"core_pair_ready":7,"no_inventory_match":8}
+external_source_notes=["dexscreener_seed_ok:So11111111111111111111111111111111111111112:30","dexscreener_seed_ok:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v:30","dexscreener_seed_ok:Es9vMFrzaCERmJfrF4H2FYD6oGnq3xD3xZg8tT9NtW2:0","dexscreener_seed_ok:7xKXtg2CW1dsoGqYJcW5K63Vf6kRrK4r5xL2U5Fj4Y9X:0","dexscreener_seed_ok:DezXAZ8z7PnrnRJjz3wXBoRgixCa6YaB1pPB263Kpump:0","dexscreener_seed_ok:4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R:30"]
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80a_external_universe_builder/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80a_external_universe_builder/rows.csv

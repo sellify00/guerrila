@@ -1,0 +1,16 @@
+status=PARK_EXIT_SIZE_BAND_NOT_READY
+risk_tier=R1_BACKRUN_TINY_INVENTORY_BAND
+mint=AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7
+pool=3DM2vMEvoGiHecbHaFNpjPcTfeywji62go7zaNaYtaPj
+ata_precreate_required=true
+r1_exit_nonzero_size_band_ready=false
+size_ladder_exact_decision=SIZE_EXIT_ZERO
+ata_rent_lamports=2039280
+ata_creation_fee_lamports=5000
+close_account_possible=true
+rent_recovered_in_model=false
+max_loss_budget_includes_unrecovered_ata_rent=true
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

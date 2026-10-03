@@ -1,0 +1,17 @@
+status=run66v_inline_ata_lifecycle_model_complete
+source_exact_positive_synthetic_ata_rows=0
+row_count=0
+decision_counts={}
+inline_ata_creatable_count=0
+inline_ata_template_ready_count=0
+pm_reserve_input_ok_count=0
+pm_reserve_rent_ok_count=0
+net_ev_with_ata_burned_positive_count=0
+net_ev_with_ata_recovered_positive_count=0
+inline_ata_ev_positive_count=0
+policy_actionable_now_count=0
+explicit_allow_required_count=0
+hard_policy_risk_count=0
+wire_send=0
+live_landed=0
+ata_created=false

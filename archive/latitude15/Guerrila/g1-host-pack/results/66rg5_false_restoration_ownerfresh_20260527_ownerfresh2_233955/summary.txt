@@ -1,0 +1,13 @@
+final_verdict=PARK_FALSE_RESTORATION_DATA_ABSENT
+rows_seen=22
+owner_mode_rebalancing_rows=22
+restoration_pressure_measured_rows=0
+continuation_pressure_score_rows=0
+absorption_score_rows=0
+same_direction_followthrough_score_rows=0
+false_restoration_gate_input_ready_rows=0
+false_restoration_reason_counts={"restoration_pressure_not_measured": 22}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

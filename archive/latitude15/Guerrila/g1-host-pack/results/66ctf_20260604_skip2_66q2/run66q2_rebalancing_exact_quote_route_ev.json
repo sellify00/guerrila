@@ -1,0 +1,33 @@
+{
+  "bridge_audit_applied_count": 0,
+  "bridge_audit_rows_loaded": 0,
+  "candidate_id_exact_match_count": 0,
+  "exact_quote_match_count": 0,
+  "first_exact_identity_blocker_counts": {
+    "expected_out_missing": 377
+  },
+  "ingress_identity_match_count": 0,
+  "live_landed": 0,
+  "matched_rollout_net_ev_after_fee_tip_positive_count": 0,
+  "net_ev_after_fee_tip_positive_count": 0,
+  "owner_mode_match_on_numeric_count": 0,
+  "private_route_cost_lamports": 200000,
+  "quote_identity_source_counts": {
+    "exact_candidate_id": 377
+  },
+  "quote_request_id_match_count": 0,
+  "quote_request_id_preserved_count": 0,
+  "rebalancing_numeric_quote_min_out": 0,
+  "rebalancing_rows_seen": 377,
+  "route_specific_fee_tip_model": "configured_private_or_tpu_cost",
+  "slot_pool_mints_amount_unique_match_count": 0,
+  "source_run66q_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66q/run66q_rebalancing_quote_minout_rows.jsonl",
+  "source_run66x_bridge_rows": "",
+  "status": "run66q2_rebalancing_exact_quote_route_ev_complete",
+  "step": "66ctf_20260604_skip2_66q2",
+  "top_positive_rows": [],
+  "tpu_cost_lamports": 5000,
+  "unique_safe_owner_mismatch_count": 0,
+  "unique_safe_quote_match_count": 0,
+  "wire_send": 0
+}

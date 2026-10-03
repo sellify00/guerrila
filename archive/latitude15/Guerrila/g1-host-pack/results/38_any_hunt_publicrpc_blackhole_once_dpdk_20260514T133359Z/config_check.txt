@@ -1,0 +1,9 @@
+Config loaded: /home/ubuntu/Guerrila/g1-host-pack/results/38_any_hunt_publicrpc_blackhole_once_dpdk_20260514T133359Z/config.guerrila.yaml
+Profile:       V6_4Guerrila
+
+FAIL  2
+
+  VIOLATION  [DPDK_OBSERVE_ONLY_ONLY] system.proxies.ingress.private_packet_backend='dpdk' currently requires rollout.mode='observe_only' and rollout.no_send_backend=true
+  VIOLATION  [ROSETTA_REQUIRES_GRPC_FALLBACK] shadow_control.rosetta.enabled is true but system.proxies.ingress.grpc_fallback is not configured
+
+Deployment cannot start: 2 rule(s) violated.

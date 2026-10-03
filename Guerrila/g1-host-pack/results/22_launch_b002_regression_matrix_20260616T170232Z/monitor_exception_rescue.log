@@ -1,0 +1,20 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 22 Launch30 — Monitor Exception Replay
+  2026-06-16 17:02:33 UTC
+════════════════════════════════════════════════════════════
+
+Traceback (most recent call last):
+  File "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/scripts/launch_monitor_exception_replay.py", line 153, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/scripts/launch_monitor_exception_replay.py", line 63, in main
+    LaunchExecutor = load_launch_executor(script_dir)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/scripts/launch_monitor_exception_replay.py", line 26, in load_launch_executor
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/scripts/launch_follow_live_execute.py", line 20, in <module>
+    from solders.hash import Hash
+ModuleNotFoundError: No module named 'solders'

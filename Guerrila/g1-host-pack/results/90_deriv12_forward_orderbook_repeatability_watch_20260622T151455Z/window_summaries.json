@@ -1,0 +1,56 @@
+{
+  "windows": [
+    {
+      "avg_net_after_orderbook_bps": 0.0,
+      "best_candidate_net_after_orderbook_bps": 0,
+      "best_candidate_side": "",
+      "best_candidate_symbol": "",
+      "blocker_counts": {},
+      "closed_attempt_rows": 0,
+      "decision_counts": {},
+      "duration_seconds": 60,
+      "forward_orderbook_ready_rows": 0,
+      "live_landed": 0,
+      "min_net_after_orderbook_bps": 0.0,
+      "no_wire": true,
+      "notional_usd": 25.0,
+      "samples": 13,
+      "status": "PARK_DERIV_FORWARD_ORDERBOOK_NO_READY_ROWS",
+      "trigger_attempt_accepted_rows": 0,
+      "trigger_attempt_rows": 0,
+      "trigger_blocker_counts": {},
+      "window_dir": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv12_forward_orderbook_repeatability_watch_20260622T151455Z/window_001",
+      "window_index": 1,
+      "wire_send": 0
+    },
+    {
+      "avg_net_after_orderbook_bps": 0.0,
+      "best_candidate_net_after_orderbook_bps": 0,
+      "best_candidate_side": "",
+      "best_candidate_symbol": "",
+      "blocker_counts": {
+        "forward_net_after_orderbook_below_floor": 1
+      },
+      "closed_attempt_rows": 1,
+      "decision_counts": {
+        "PARK_DERIV_FORWARD_ORDERBOOK": 1
+      },
+      "duration_seconds": 60,
+      "forward_orderbook_ready_rows": 0,
+      "live_landed": 0,
+      "min_net_after_orderbook_bps": 0.0,
+      "no_wire": true,
+      "notional_usd": 25.0,
+      "samples": 12,
+      "status": "PARK_DERIV_FORWARD_ORDERBOOK_NO_READY_ROWS",
+      "trigger_attempt_accepted_rows": 1,
+      "trigger_attempt_rows": 1,
+      "trigger_blocker_counts": {
+        "none": 1
+      },
+      "window_dir": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv12_forward_orderbook_repeatability_watch_20260622T151455Z/window_002",
+      "window_index": 2,
+      "wire_send": 0
+    }
+  ]
+}

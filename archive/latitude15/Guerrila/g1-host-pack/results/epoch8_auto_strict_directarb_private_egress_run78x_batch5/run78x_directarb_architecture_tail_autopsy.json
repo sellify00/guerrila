@@ -1,0 +1,16 @@
+{
+  "status": "blocked_no_architecture_tail_rows",
+  "batch_steps": [
+    "epoch8_auto_strict_directarb_private_egress_run78_batch5"
+  ],
+  "architecture_tail_row_count": 0,
+  "classification_counts": {},
+  "unknown_architecture_tail_count": 0,
+  "live_track_scope_architecture_blocker_count": 0,
+  "malformed_rejection_rows": 0,
+  "malformed_autopsy_rows": 0,
+  "malformed_pm_rows": 0,
+  "malformed_inv_rows": 0,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78x_batch5/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78x_batch5/rows.csv"
+}

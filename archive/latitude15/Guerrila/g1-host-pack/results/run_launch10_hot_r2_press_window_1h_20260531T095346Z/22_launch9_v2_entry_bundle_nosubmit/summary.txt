@@ -1,0 +1,15 @@
+status=PARK_LAUNCH_ENTRY_BUNDLE_NOSUBMIT
+rows_seen=1
+entry_bundle_ready_no_submit_rows=0
+ata_required_rows=0
+target_tx_bytes_available_count=1
+target_not_landed_count=1
+bundle_built_count=1
+simulate_bundle_called_count=1
+simulate_bundle_pass_count=0
+rows_with_target_seen_preprocessed_ns=1
+decision_counts={"SIM_FAIL_PROVIDER": 1}
+provider_endpoint=https://CHANGE_ME.rpc
+wire_send=0
+live_landed=0
+sendBundle_called=False

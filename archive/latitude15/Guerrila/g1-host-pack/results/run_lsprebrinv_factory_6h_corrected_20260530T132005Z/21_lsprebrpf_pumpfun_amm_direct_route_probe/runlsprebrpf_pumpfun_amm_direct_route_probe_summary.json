@@ -1,0 +1,21 @@
+{
+  "decision_counts": {
+    "PARK_PUMPFUN_DIRECT_ROUTE_SIGNER_UNAVAILABLE": 4
+  },
+  "live_landed": 0,
+  "owner_pubkey": "",
+  "pumpfun_direct_current_account_ready_rows": 0,
+  "pumpfun_direct_hypothetical_only_rows": 0,
+  "pumpfun_direct_min_out_positive_rows": 4,
+  "pumpfun_direct_quote_available_rows": 4,
+  "pumpfun_direct_route_exists_rows": 4,
+  "pumpfun_direct_template_ready_rows": 0,
+  "pumpfun_direct_tx_buildable_rows": 0,
+  "rows_seen": 4,
+  "sendBundle_called": false,
+  "solders_error": "[Errno 13] Permission denied: '/etc/shadow-engine/worker-signer.json'",
+  "solders_ready": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_corrected_20260530T132005Z/21_lsprebrinv_r1_candidate_factory/projection_merged/runlsprebr0_projection_quote_all_rows.jsonl",
+  "status": "PARK_PUMPFUN_DIRECT_ROUTE_SIGNER_UNAVAILABLE",
+  "wire_send": 0
+}

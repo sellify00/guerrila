@@ -1,0 +1,40 @@
+{
+  "ata_precreate_only_rows": 0,
+  "bundle_decision_counts": {
+    "PARK_ENTRY_NOT_READY": 1
+  },
+  "bundle_rows": 1,
+  "buy_prefix_ready_rows": 0,
+  "buy_pressure_ready_rows": 0,
+  "census_rows": 1,
+  "entry_bundle_ready_no_submit_rows": 0,
+  "exit_nonzero_count": 1,
+  "filter_mode": "nofilter",
+  "first_blocker": "buy_count_2s_below_threshold",
+  "gate_decision_counts": {
+    "BLOCKED_BUY_PRESSURE": 1
+  },
+  "gate_rows": 1,
+  "launches_seen": 1,
+  "live_landed": 0,
+  "markout_histories_available": false,
+  "one_mint_live_ready_rows": 0,
+  "policy_pass_count": 0,
+  "pressure_decision_counts": {
+    "PARK_INSUFFICIENT_BUY_PRESSURE": 1
+  },
+  "pressure_rows": 1,
+  "proposal_ready_rows": 0,
+  "proposal_rows": 1,
+  "sendBundle_called": false,
+  "sim_decision_counts": {
+    "PARK_POLICY_EXIT": 1
+  },
+  "sim_rows": 1,
+  "status": "PARK_NO_ROWS",
+  "verdict_counts": {
+    "PARK_POLICY_EXIT": 1
+  },
+  "window_seconds": 120,
+  "wire_send": 0
+}

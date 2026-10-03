@@ -1,0 +1,53 @@
+{
+  "status": "run64e_exit_qualified_held_input_analysis_complete",
+  "step": "66ctf_20260604_run65_run64e",
+  "inputs": {
+    "run61_report_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65/run61_continuous_shadow_live_simulation.json",
+    "run61_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65/summary.txt",
+    "run62_report_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65_run62/run62_conversion_autopsy.json",
+    "run39_candidate_autopsy": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65_run55_run39/candidate_autopsy.jsonl",
+    "run39_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65_run55_run39/summary.txt",
+    "signer_token_inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+    "results_root": "/home/ubuntu/Guerrila/g1-host-pack/results",
+    "rpc_url": "https://rpc.example.invalid",
+    "quote_api_url": "https://lite-api.jup.ag/swap/v1/quote"
+  },
+  "filters": {
+    "target_count": 10,
+    "max_per_mint_usdc": 5.0,
+    "min_meaningful_acquisition_usdc": 0.1,
+    "min_exit_value_usdc": 0.1,
+    "min_exit_value_ratio": 0.5,
+    "entry_slippage_bps": 100,
+    "exit_slippage_bps": 0,
+    "min_recurrence_count": 2,
+    "no_scale_mints": [
+      "8Nh2DSKq2JgK2AWg6tqi6NBUbbFsG47GVjhhri53WScx"
+    ]
+  },
+  "baseline": {
+    "directarb_inventory_ready_count": 0,
+    "directarb_would_fire_count": 0,
+    "directarb_main_blocker": null,
+    "approved_held_input_mints": [
+      "So11111111111111111111111111111111111111112",
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+    ],
+    "held_input_mints": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "So11111111111111111111111111111111111111112"
+    ],
+    "source_balances_raw": {
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 230088908,
+      "So11111111111111111111111111111111111111112": 898240041
+    }
+  },
+  "history": {
+    "historical_candidate_autopsy_file_count": 13
+  },
+  "recommended_candidates": [],
+  "ranked_not_held_input_mints": [],
+  "coinini_override": null
+}

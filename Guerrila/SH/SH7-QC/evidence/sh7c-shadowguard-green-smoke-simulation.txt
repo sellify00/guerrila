@@ -1,0 +1,14 @@
+vault_in_amount=302979705387629436
+vault_out_amount=2397833335
+pass_err=null
+pass_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW invoke [1]
+pass_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW consumed 594 of 200000 compute units
+pass_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW success
+abort_err={"InstructionError":[0,{"Custom":1397161985}]}
+abort_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW invoke [1]
+abort_log=Program log: ShadowGuard: vault_in 302979705387629436 not in [302979705387629437, 302979705387629437]
+abort_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW consumed 1938 of 200000 compute units
+abort_log=Program NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW failed: custom program error: 0x53470001
+shadow_guard_smoke_pass_ok=true
+shadow_guard_smoke_abort_ok=true
+shadow_guard_smoke_ok=true

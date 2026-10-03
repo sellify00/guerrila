@@ -1,0 +1,31 @@
+{
+  "blocker_counts": {
+    "live_followthrough_reversed": 1,
+    "live_trigger_not_revalidated": 1,
+    "source_signal_entry_stale": 1,
+    "source_signal_last_seen_stale": 1
+  },
+  "entry_filled": false,
+  "estimated_pnl_usd_before_fees": 0.0,
+  "exchange_submit_attempted": false,
+  "exit_reason": "",
+  "final_open_order_count": 0,
+  "final_open_position_count": 0,
+  "first_failure": "source_signal_entry_stale",
+  "flatten_landed": false,
+  "gross_return_bps": 0.0,
+  "live_followthrough_from_source_entry_bps": -21.7391,
+  "live_landed": 0,
+  "live_trigger_change_bps": 58.4368,
+  "max_adverse_bps": 0.0,
+  "peak_return_bps": 0.0,
+  "readiness_age_seconds": 36.263,
+  "readiness_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv22_hyperliquid_fresh_trigger_watch_20260627T145848Z",
+  "selected_side": "long",
+  "selected_symbol": "PUMP",
+  "source_entry_age_seconds": 104.054,
+  "source_last_seen_age_seconds": 104.054,
+  "status": "PARK_DERIV20_HYPERLIQUID_TINY_LIVE",
+  "tiny_notional_usd": 25.0,
+  "wire_send": 0
+}

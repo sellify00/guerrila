@@ -1,0 +1,12 @@
+[package]
+name = "shadow-ipc"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+memmap2 = "0.9"
+static_assertions = "1"
+
+[dev-dependencies]
+loom = "0.7"
+tempfile = "3"

@@ -1,0 +1,49 @@
+{
+  "acceptance_pass": false,
+  "active_bonding_curve_rows": 1137,
+  "activity_rows_paths": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/launch0d_realtime_birth_decoder_activity_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/launch0d_realtime_birth_decoder_rows.jsonl"
+  ],
+  "activity_rows_seen": 424081,
+  "after_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 141,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 6,
+    "BONDING_CURVE_RESERVES_MISSING": 2,
+    "BONDING_CURVE_STATE_MISSING": 881,
+    "QUOTE_STATE_READY": 107
+  },
+  "before_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 141,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 6,
+    "BONDING_CURVE_RESERVES_MISSING": 2,
+    "BONDING_CURVE_STATE_MISSING": 881,
+    "QUOTE_STATE_READY": 107
+  },
+  "bonding_curve_state_missing_after": 881,
+  "bonding_curve_state_missing_before": 881,
+  "first_identity_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 141,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 6,
+    "BONDING_CURVE_RESERVES_MISSING": 2,
+    "account_not_found": 785,
+    "ix_curve_differs_from_derived_pda": 96,
+    "none": 107
+  },
+  "identity_decision_counts": {
+    "IDENTITY_READY_FROM_IX": 107,
+    "PARK_ACCOUNT_NOT_FOUND": 785,
+    "PARK_PDA_DERIVE_MISMATCH": 96,
+    "PARK_STATE_DECODE_FAILED": 149
+  },
+  "identity_ready_rows": 107,
+  "launch0u_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0u4_active_curve_state_hydration_repair/rows.jsonl",
+  "live_landed": 0,
+  "quote_ready_rows_after_identity": 107,
+  "quote_ready_rows_before": 107,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0u5_active_curve_account_identity_autopsy/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "PARK_ACTIVE_CURVE_IDENTITY_NO_QUOTE_IMPROVEMENT",
+  "tx_fetches_used": 300,
+  "wire_send": 0
+}

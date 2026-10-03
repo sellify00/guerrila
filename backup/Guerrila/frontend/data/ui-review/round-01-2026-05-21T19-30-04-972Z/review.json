@@ -1,0 +1,63 @@
+{
+  "score": 7.1,
+  "done": false,
+  "major_issues": [
+    "Mobile: the Canonical Flow toolbar is cramped; tab labels truncate (e.g., “Economi…”) and controls (+/−/%) feel squeezed, reducing usability and discoverability.",
+    "Mobile: the main graph area is effectively not actionable at default zoom; the flow nodes render very small with large empty grid space above, making the primary content hard to read.",
+    "Several panels contain long unbroken strings/URLs (e.g., 127.0.0.1:8789…); risk of overflow/clipping or forcing horizontal scrolling on narrower devices; readability suffers."
+  ],
+  "medium_issues": [
+    "Overall contrast/readability: small meta text (timestamps/status lines) is low-contrast on dark background; at mobile sizes it becomes hard to scan.",
+    "Density/spacing: desktop has a lot of unused vertical space around the main canvas; mobile stacks many cards with similar visual weight, making hierarchy weaker (what to look at first isn’t obvious).",
+    "Right sidebar cards: repeated heavy shadows and borders create visual noise; cards blend together and feel “muddy” rather than crisp.",
+    "Event strip at bottom of the canvas looks like a footer but competes with canvas; its typography is small and cramped, and the relationship to selected nodes isn’t clear."
+  ],
+  "minor_issues": [
+    "Inconsistent alignment/padding between card headers and body content across panels (some headers feel tighter than others).",
+    "Icon buttons (refresh, chevron) look slightly mis-sized vs. text and can appear off-center in their containers.",
+    "Some labels use all-caps/small-caps with tight letter spacing; on mobile it reduces legibility."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Make the Canonical Flow toolbar responsive: allow wrapping into 2 rows on small widths, or convert tabs into a horizontally scrollable tablist with visible overflow gradient. Ensure tab labels don’t truncate by using shorter labels on mobile via CSS (e.g., data-short attr) or reduce font-size/padding at <420px."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve long-string handling in cards: apply `overflow-wrap:anywhere; word-break:break-word;` to log/URL/code-like blocks and secondary text lines; prevent horizontal scroll. For pill rows, allow wrapping with `flex-wrap:wrap` and consistent gap."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Mobile canvas default: reduce top empty space and increase initial node scale/zoom. If zoom is CSS-driven, set a higher default scale at small breakpoints and/or auto-center the active portion. If not possible, at least reduce the canvas container height on mobile so users reach readable cards sooner."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Increase legibility for small meta text: bump font-size (e.g., 12->13/14px) and raise contrast (lighter neutral) for timestamps/status lines; ensure AA contrast against the dark background."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Reduce heavy shadows/borders on stacked cards: use subtler shadow and a clearer 1px border with slightly higher contrast; add more consistent inter-card spacing so sections are visually separated without relying on shadow."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Tighten hierarchy in the right column: standardize card header spacing, make key metrics (e.g., “2 / 10 active”, capital) slightly more prominent, and demote supporting text with clearer spacing and line-height."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Normalize icon button sizing/alignment: set consistent square hit area (e.g., 32–36px), center icons with flex, and ensure visible hover/focus states (especially for keyboard users)."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/index.html",
+      "change": "Add a proper viewport meta tag (if missing): `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />` to ensure mobile scaling behaves predictably."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile responsiveness issues (toolbar truncation, primary canvas content too small by default) and inadequate handling of long unbroken strings leading to readability/overflow risks. Needs at least one iteration focused on mobile layout and text wrapping."
+}

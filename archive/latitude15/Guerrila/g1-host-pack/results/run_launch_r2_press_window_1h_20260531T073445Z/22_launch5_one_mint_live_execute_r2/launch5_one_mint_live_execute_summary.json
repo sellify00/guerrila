@@ -1,0 +1,19 @@
+{
+  "acquired_amount_raw": 0,
+  "acquisition_landed": false,
+  "acquisition_tx_signature": "",
+  "bundle_id": "",
+  "final_inventory_raw": 0,
+  "first_failure": "presend_timeout:target_already_landed",
+  "flatten_landed": false,
+  "flatten_tx_signature": "",
+  "inventory_refresh_ok": false,
+  "live_landed": 0,
+  "max_loss_breached": false,
+  "pm_pending_after": 0,
+  "pnl_lamports": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "status": "ABORT_PRE_SEND_TIMEOUT",
+  "wire_send": 0
+}

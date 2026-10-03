@@ -1,0 +1,66 @@
+SH7-C ShadowGuard ops proof summary
+
+Status: green for ShadowGuard ops truth; full G12 promotion remains false.
+
+Host:
+
+```text
+ubuntu@109.94.99.57
+```
+
+Deployer and program:
+
+```text
+deployer_pubkey=4iYqgdyuU8YE6FkZRq3195SZU7m5E5MkaNeaHayfoiZJ
+program_id=NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW
+deploy_signature=39ZxpfbxLk4eyrWT6DaSSBwWiVx3HCg9dCkyJLTf5bsn74haZ6vs6KbWTWMM4zHAERLa7J57YcckoZDgtFrnFFiX
+balance_before=0.4823 SOL
+balance_after=0.31427784 SOL
+```
+
+Configured guard vaults:
+
+```text
+guard_vault_in=HAULecjkcF2GHGSQ566yRBuwRoHxH24YGZs1n6B3QpAG
+guard_vault_out=9mo6Dhx8RhrwNqxCBGcfqEZzmGPGr4hz1mfTdW8tpsq7
+```
+
+Final preflight:
+
+```text
+shadow_guard_program_id_present=true
+shadow_guard_mainnet_deployed=true
+shadow_guard_template_program_id_matches=true
+shadow_guard_jito_template_program_id_matches=true
+shadow_guard_harmonic_template_program_id_matches=true
+guard_vault_layout_smoke=true
+lookup_table_placeholder_present=false
+```
+
+No-send simulation smoke:
+
+```text
+shadow_guard_smoke_pass_ok=true
+shadow_guard_smoke_abort_ok=true
+shadow_guard_smoke_ok=true
+```
+
+G12 report:
+
+```text
+shadow_guard_mainnet_deployed=true
+shadow_guard_template_program_id_matches=true
+live_landed=0
+promote_allowed=false
+all_gates_green=false
+sample_slots=285
+observe_candidates=12
+```
+
+Interpretation:
+
+```text
+SH7-C ShadowGuard ops proof is green.
+Do not start r1_tiny or live promotion from this alone.
+Full G12 acceptance still requires the larger sample gates and remaining board gates.
+```

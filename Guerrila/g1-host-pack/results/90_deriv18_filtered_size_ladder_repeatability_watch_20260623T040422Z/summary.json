@@ -1,0 +1,54 @@
+{
+  "accept_notional_usd": 100.0,
+  "acceptance_pass": true,
+  "acceptance_ready_rows": 8,
+  "acceptance_ready_windows": 3,
+  "avg_acceptance_net_after_orderbook_bps": 157.706,
+  "avg_net_after_orderbook_bps": 157.706,
+  "best_candidate_net_after_orderbook_bps": 209.8087,
+  "best_candidate_notional_usd": 100.0,
+  "best_candidate_side": "long",
+  "best_candidate_symbol": "LAYER",
+  "blocker_counts": {
+    "entry_book_drag_too_high": 4,
+    "exit_book_drag_too_high": 1,
+    "exit_spread_too_wide": 6,
+    "none": 8,
+    "size_ladder_net_after_orderbook_below_floor": 35
+  },
+  "closed_ladder_rows": 54,
+  "completed_windows": 4,
+  "decision_counts": {
+    "DERIV_FORWARD_SIZE_LADDER_READY": 8,
+    "PARK_DERIV_FORWARD_SIZE_LADDER": 46
+  },
+  "exit_depth_measured": true,
+  "live_landed": 0,
+  "median_net_after_orderbook_bps": 207.1912,
+  "min_acceptance_net_after_orderbook_bps": 5.2234,
+  "min_net_after_orderbook_bps": 5.2234,
+  "no_wire": true,
+  "ready_notional_counts": {
+    "100.0": 3,
+    "250.0": 3,
+    "500.0": 2
+  },
+  "ready_symbol_counts": {
+    "LAYER": 6,
+    "MEGA": 2
+  },
+  "ready_windows": 3,
+  "size_ladder_ready_rows": 8,
+  "status": "DERIV_FILTERED_SIZE_LADDER_REPEATABILITY_READY",
+  "trigger_attempt_accepted_rows": 18,
+  "trigger_attempt_rows": 52,
+  "trigger_blocker_counts": {
+    "entry_book_depth_below_floor": 1,
+    "entry_book_drag_too_high": 1,
+    "entry_spread_too_wide": 32,
+    "none": 18
+  },
+  "unique_ready_symbols": 2,
+  "windows_seen": 4,
+  "wire_send": 0
+}

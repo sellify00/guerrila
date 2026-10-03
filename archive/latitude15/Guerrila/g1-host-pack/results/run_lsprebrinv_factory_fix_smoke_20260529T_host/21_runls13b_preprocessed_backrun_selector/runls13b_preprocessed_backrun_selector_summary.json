@@ -1,0 +1,20 @@
+{
+  "alt_hydrated_rows": 6,
+  "alt_resolution_blocked_rows": 0,
+  "live_landed": 0,
+  "ready_venue_counts": {
+    "pumpfun_amm": 2
+  },
+  "rows_seen": 8,
+  "selector_decision_counts": {
+    "TARGET_ENTITY_READY": 2,
+    "TX_DECODE_FAILED": 2,
+    "UNSUPPORTED_PROGRAM": 4
+  },
+  "sendBundle_called": false,
+  "status": "runls13b_preprocessed_backrun_selector_complete",
+  "target_already_landed_at_first_check_count": 0,
+  "target_entity_ready_count": 2,
+  "target_not_landed_at_first_check_count": 8,
+  "wire_send": 0
+}

@@ -1,0 +1,33 @@
+{
+  "status": "run80c_complete",
+  "selected_habitat_count": 3,
+  "focused_row_count": 3,
+  "broad_candidate_per_min": 550.0,
+  "broad_exact_positive_per_min": 112.0,
+  "broad_pm_ready_per_min": 47.0,
+  "broad_would_fire_per_min": 112.0,
+  "decision_label_counts": {
+    "TRAINING": 2,
+    "DENY": 1
+  },
+  "strategy_habitat_label_counts": {
+    "TRAINING": 1,
+    "DENY_NO_VISIBILITY": 1,
+    "TRAINING_BACKRUN_RESEARCH": 1
+  },
+  "main_blocker_counts": {
+    "source_policy_live_disallowed": 2,
+    "pm_not_ready": 1
+  },
+  "malformed_counts": {
+    "broad_rollout_malformed": 1,
+    "raydium_clmm_3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv_WATCH_BACKRUN_RESEARCH_rollout_malformed": 1,
+    "raydium_clmm_3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv_WATCH_BACKRUN_RESEARCH_probe_malformed": 0,
+    "raydium_clmm_CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq_WATCH_BACKRUN_RESEARCH_rollout_malformed": 1,
+    "raydium_clmm_CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq_WATCH_BACKRUN_RESEARCH_probe_malformed": 0,
+    "meteora_damm_v2_AaCgA74kYnZY8bGFqpHufpVSaPGDs3RnzSUpeZVMspkN_WATCH_BACKRUN_RESEARCH_rollout_malformed": 1,
+    "meteora_damm_v2_AaCgA74kYnZY8bGFqpHufpVSaPGDs3RnzSUpeZVMspkN_WATCH_BACKRUN_RESEARCH_probe_malformed": 0
+  },
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80c_focused_watch_pool_nosend_windows/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80c_focused_watch_pool_nosend_windows/rows.csv"
+}

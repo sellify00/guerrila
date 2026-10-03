@@ -1,0 +1,11 @@
+shadow_guard_program_id_present=true
+shadow_guard_mainnet_deployed=true
+shadow_guard_template_program_id_matches=true
+shadow_guard_jito_template_program_id_matches=true
+shadow_guard_harmonic_template_program_id_matches=true
+guard_vault_layout_smoke=true
+lookup_table_placeholder_present=false
+program_id=NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW
+deployer_keypair=/etc/shadow-engine/shadow-guard-deployer.json
+deployer_keypair_owner=root:root
+deployer_keypair_mode=600

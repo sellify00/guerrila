@@ -1,0 +1,45 @@
+{
+  "accept_notional_usd": 100.0,
+  "acceptance_pass": false,
+  "acceptance_ready_rows": 0,
+  "acceptance_ready_windows": 0,
+  "avg_acceptance_net_after_orderbook_bps": 0.0,
+  "avg_net_after_orderbook_bps": 0.0,
+  "best_candidate_net_after_orderbook_bps": 0,
+  "best_candidate_notional_usd": 0,
+  "best_candidate_side": "",
+  "best_candidate_symbol": "",
+  "blocker_counts": {
+    "entry_book_depth_below_floor": 3,
+    "entry_book_drag_too_high": 1,
+    "exit_book_depth_below_floor": 1,
+    "exit_spread_too_wide": 9,
+    "size_ladder_net_after_orderbook_below_floor": 130
+  },
+  "closed_ladder_rows": 144,
+  "completed_windows": 4,
+  "decision_counts": {
+    "PARK_DERIV_FORWARD_SIZE_LADDER": 144
+  },
+  "exit_depth_measured": true,
+  "live_landed": 0,
+  "median_net_after_orderbook_bps": 0.0,
+  "min_acceptance_net_after_orderbook_bps": 0.0,
+  "min_net_after_orderbook_bps": 0.0,
+  "no_wire": true,
+  "ready_notional_counts": {},
+  "ready_symbol_counts": {},
+  "ready_windows": 0,
+  "size_ladder_ready_rows": 0,
+  "status": "PARK_DERIV_FORWARD_SIZE_LADDER_REPEATABILITY",
+  "trigger_attempt_accepted_rows": 36,
+  "trigger_attempt_rows": 67,
+  "trigger_blocker_counts": {
+    "entry_book_depth_below_floor": 1,
+    "entry_spread_too_wide": 30,
+    "none": 36
+  },
+  "unique_ready_symbols": 0,
+  "windows_seen": 4,
+  "wire_send": 0
+}

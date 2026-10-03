@@ -1,0 +1,14 @@
+{
+  "attempt_filter": "attempt_0002",
+  "filter_bypassed_count": 0,
+  "filter_inputs_missing_count": 0,
+  "filter_passed_but_not_predictive_count": 1,
+  "filter_path_decision_counts": {
+    "FILTER_PASSED_BUT_NOT_PREDICTIVE": 1
+  },
+  "filter_result_stale_count": 0,
+  "no_exit_tail_rows": 1,
+  "rows_seen": 1,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T035344Z",
+  "status": "LAUNCH49_NO_EXIT_TAIL_FILTER_PATH_AUTOPSY_COMPLETE"
+}

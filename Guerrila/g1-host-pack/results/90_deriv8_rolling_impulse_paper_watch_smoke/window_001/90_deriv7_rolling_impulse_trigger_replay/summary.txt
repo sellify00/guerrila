@@ -1,0 +1,14 @@
+status=PARK_DERIV_ROLLING_TRIGGER_NO_READY_ROWS
+sample_rows_seen=1246
+symbols_seen=178
+rolling_trigger_rows=178
+rolling_trigger_ready_rows=0
+decision_counts={"PARK_DERIV_ROLLING_TRIGGER": 178}
+blocker_counts={"no_rolling_trigger": 178}
+trigger_window_seconds=60
+min_trigger_bps=35.0
+no_wire=true
+rows=178
+ready_rows=0
+wire_send=0
+live_landed=0

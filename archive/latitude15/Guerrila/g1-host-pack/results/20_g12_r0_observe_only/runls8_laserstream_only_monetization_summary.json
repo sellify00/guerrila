@@ -1,0 +1,37 @@
+{
+  "laserstream_only_near_trade_ready_count": 413,
+  "laserstream_only_ev_positive_count": 413,
+  "laserstream_only_sender_ready_count": 71,
+  "laserstream_only_bundle_ready_count": 342,
+  "laserstream_only_public_ready_count": 0,
+  "laserstream_only_directarb_count": 0,
+  "laserstream_only_backrun_count": 187,
+  "laserstream_only_postshock_count": 226,
+  "laserstream_only_blocked_only_by_source_policy": 413,
+  "laserstream_only_blocked_by_inventory": 0,
+  "laserstream_only_blocked_by_quote": 0,
+  "laserstream_only_blocked_by_template": 0,
+  "laserstream_only_blocked_by_account": 0,
+  "laserstream_only_pm_reserve_possible_count": 413,
+  "laserstream_only_observe_allowed_count": 226,
+  "laserstream_only_observe_blocked_count": 187,
+  "by_owner_mode": {
+    "backrun": 187,
+    "drop": 226
+  },
+  "by_venue": {
+    "meteora_damm_v2": 392,
+    "raydium_clmm": 19,
+    "raydium_cpmm": 2
+  },
+  "by_route": {
+    "jito_bundle": 342,
+    "helius_sender_dual": 71
+  },
+  "by_source_policy_blocker": {
+    "laserstream_source_policy_blocked": 187,
+    "laserstream_live_not_allowed_research_only": 226
+  },
+  "invalid_shock_research_lines_skipped": 1,
+  "input_artifact": "/home/ubuntu/Guerrila/g1-host-pack/results/20_g12_r0_observe_only/shock_research.jsonl"
+}

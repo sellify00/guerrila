@@ -1,0 +1,37 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "continuation_overlap_count": 0,
+  "backrun_overlap_count": 2,
+  "continuation_overlap_killed": true,
+  "backrun_overlap_killed": false,
+  "owner_mode_match_false_count": 3,
+  "rows": [
+    {
+      "candidate_id": "1779884775541075267:422501882:cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "conflict_domain_key": "422501882|8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj|raydium_clmm|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD",
+      "selected_owner": "rebalancing",
+      "runner_up_owner": "backrun",
+      "fallback_owner": "backrun",
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    },
+    {
+      "candidate_id": "1779884623393764239:422501501:5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "conflict_domain_key": "422501501|8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj|raydium_clmm|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n",
+      "selected_owner": "rebalancing",
+      "runner_up_owner": "none",
+      "fallback_owner": "none",
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    },
+    {
+      "candidate_id": "1779884649157538629:422501567:22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "conflict_domain_key": "422501567|8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj|raydium_clmm|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL",
+      "selected_owner": "rebalancing",
+      "runner_up_owner": "backrun",
+      "fallback_owner": "backrun",
+      "double_reserve_possible": true,
+      "double_reserve_prevented": false
+    }
+  ]
+}

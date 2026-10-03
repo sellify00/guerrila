@@ -1,0 +1,86 @@
+{
+  "acceptance_pass": true,
+  "entry_edge_ready_over_trigger_b_pct": 2.4922,
+  "entry_edge_ready_rows": 16,
+  "entry_quality_evaluated_rows": 642,
+  "entry_quality_ready_over_trigger_b_pct": 4.9844,
+  "entry_quality_ready_rows": 32,
+  "exit_liquidity_guard_ready_rows": 333,
+  "fragility_absorption_ready_rows": 322,
+  "live_landed": 0,
+  "milestone_dependency": "LAUNCH0Q_QUOTE_STATE_HYDRATION_NO_WIRE_PASS",
+  "next_required_work": [
+    "route-specific quote support for dominant unsupported route families",
+    "warmup calibration over fresh realtime windows",
+    "primary flatten no-wire/sim validation after PumpSwap route-shape patch"
+  ],
+  "quote_mint_missing_trace_rows": 49,
+  "quote_state_blocker_count_sum": 1834,
+  "quote_state_blocker_counts": {
+    "BASE_RESERVE_BELOW_FLOOR": 8,
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 141,
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 399,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 5,
+    "BONDING_CURVE_RESERVES_MISSING": 1,
+    "BONDING_CURVE_STATE_MISSING": 878,
+    "ENTRY_QUOTE_MISSING": 11,
+    "EXIT_QUOTE_ZERO": 9,
+    "QUOTE_MINT_MISSING": 49,
+    "QUOTE_STATE_READY": 333
+  },
+  "quote_state_ready_over_all_pct": 18.157,
+  "quote_state_ready_over_trigger_b_pct": 51.8692,
+  "quote_state_ready_rows": 333,
+  "regression_guards": {
+    "base_reserve_below_floor_blocks_entry": true,
+    "entry_quality_has_hydrated_quote_state": true,
+    "entry_quality_missing_quote_state_not_dominant": true,
+    "entry_quality_warmup_breakdown_present": true,
+    "exit_liquidity_requires_nonzero_exit_quote": true,
+    "exit_quote_zero_blocks_entry": true,
+    "fragility_consumes_quote_identity": true,
+    "live_landed_zero": true,
+    "quote_state_buckets_sum_to_unique_launch_states": true,
+    "unsupported_route_breakdown_present": true,
+    "unsupported_route_breakdown_present_or_cleared": true,
+    "wire_send_zero": true
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "LAUNCH0R_ROUTE_SUPPORT_AND_WARMUP_RECONCILE_PASS",
+  "top_entry_quality_blocker": "entry_quality_warmup",
+  "top_quote_state_blocker": "BONDING_CURVE_STATE_MISSING",
+  "trigger_b_coverage_pct": 35.0055,
+  "trigger_b_rows": 642,
+  "unique_launch_states": 1834,
+  "unsupported_route_breakdown": {
+    "by_pool_shape": {},
+    "by_program_id": {},
+    "by_route_family": {},
+    "by_source_kind": {},
+    "by_source_provenance": {}
+  },
+  "warmup_age_bucket_counts": {
+    "0-1s": 2,
+    "10-30s": 3,
+    "30s+": 356
+  },
+  "warmup_blocked_rows": 361,
+  "warmup_liquidity_bucket_counts": {
+    "unknown_or_zero": 361
+  },
+  "warmup_price_movement_bucket_counts": {
+    "unknown_or_baseline_missing": 361
+  },
+  "warmup_quote_blocker_counts": {
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 263,
+    "BONDING_CURVE_RESERVES_MISSING": 1,
+    "BONDING_CURVE_STATE_MISSING": 76,
+    "ENTRY_QUOTE_MISSING": 5,
+    "QUOTE_MINT_MISSING": 16
+  },
+  "warmup_route_family_counts": {
+    "PUMPSWAP_AMM": 21,
+    "PUMP_BONDING_CURVE": 340
+  },
+  "wire_send": 0
+}

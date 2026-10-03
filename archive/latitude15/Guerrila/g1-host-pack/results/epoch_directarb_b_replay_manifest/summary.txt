@@ -1,0 +1,12 @@
+status=manifest_ready
+source_rows_path=g1-host-pack/results/epoch_directarb_5m_armed_20260526_180503/epoch8_auto_strict_directarb_ev_positive_input_readiness_split/78c_directarb_required_cap_requote/rows.jsonl
+source_rows=7
+manifest_rows=7
+malformed_source_rows=0
+rejection_rows=0
+rejection_counts={}
+output_path=g1-host-pack/results/epoch_directarb_b_replay_manifest/replay_manifest.jsonl
+replay_label=DEV_REPLAY_NOT_MARKET_CURRENT
+wire_send=0
+live_landed=0
+sendBundle_called=False

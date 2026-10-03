@@ -1,0 +1,65 @@
+{
+  "afxdp": {
+    "total": 2,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_quote_missing": 2
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 2,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_quote_missing": 2
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 108,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_mint_meta_missing": 17,
+      "reject_pi_pool_state_stale": 6,
+      "reject_pi_quote_missing": 85
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 64,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_mint_meta_missing": 8,
+          "reject_pi_pool_state_stale": 1,
+          "reject_pi_quote_missing": 55
+        }
+      },
+      "directarb": {
+        "total": 44,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_mint_meta_missing": 9,
+          "reject_pi_pool_state_stale": 5,
+          "reject_pi_quote_missing": 30
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

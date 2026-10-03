@@ -1,0 +1,40 @@
+{
+  "package_name": "66rd_rebalancing_owner_mode_isolation_restoration_proof_20260527",
+  "instruction_scope": "owner-mode isolation plus restoration-pressure supplement only",
+  "input_package_path": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rc_rebalancing_one_class_proposal_package_20260527",
+  "output_package_path": "C:\\Shadow Engine\\Guerrila\\g1-host-pack\\results\\66rd_rebalancing_owner_mode_isolation_restoration_proof_20260527",
+  "selected_row_class": {
+    "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+    "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+    "venue": "raydium_clmm",
+    "mint_in": "So11111111111111111111111111111111111111112",
+    "mint_out": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "classification": "sender_no_send",
+    "row_count": 3
+  },
+  "hard_stops": {
+    "live_send": false,
+    "sendBundle": false,
+    "bundle_row_switch": false,
+    "broad_rebalancing_hunt": false,
+    "directarb_b_retries": false,
+    "afbr2": false,
+    "ls12": false,
+    "acquisition": false,
+    "ata_creation": false,
+    "token2022_explicit_allow": false,
+    "cap_increase": false
+  },
+  "required_output_files": [
+    "input_package_manifest.json",
+    "selected_row_class_frozen.json",
+    "owner_mode_competition_ledger.jsonl",
+    "conflict_domain_dedup_audit.json",
+    "continuation_overlap_kill_report.json",
+    "pm_owner_reservation_audit.json",
+    "restoration_pressure_measurement.json",
+    "false_restoration_gate_report.json",
+    "rebalancing_rule_schema_completed.json",
+    "final_verdict.json"
+  ]
+}

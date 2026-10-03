@@ -1,0 +1,48 @@
+{
+  "acceptance_pass": true,
+  "launch0r_acceptance_pass": true,
+  "launch0r_status": "LAUNCH0R_ROUTE_SUPPORT_AND_WARMUP_RECONCILE_PASS",
+  "live_landed": 0,
+  "milestone_dependency": "LAUNCH0R_ROUTE_SUPPORT_AND_WARMUP_RECONCILE_PASS",
+  "next_gate": "LAUNCH0T_WARMUP_CALIBRATION_REPLAY",
+  "pump_bonding_curve_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 46,
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 171,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 1,
+    "BONDING_CURVE_RESERVES_MISSING": 6,
+    "BONDING_CURVE_STATE_MISSING": 65,
+    "QUOTE_STATE_READY": 44
+  },
+  "pump_bonding_curve_buy_quote_rows": 53,
+  "pump_bonding_curve_ready_rows": 44,
+  "pump_bonding_curve_route_quote_decision_counts": {
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 171,
+    "BONDING_CURVE_QUOTE_STATE_READY": 91,
+    "BONDING_CURVE_RESERVES_MISSING": 6,
+    "BONDING_CURVE_STATE_MISSING": 65
+  },
+  "pump_bonding_curve_rows": 333,
+  "pump_bonding_curve_sell_quote_rows": 38,
+  "pump_bonding_curve_source_kind_counts": {
+    "PUMP_BONDING_CURVE_BUY": 212,
+    "PUMP_BONDING_CURVE_SELL": 121
+  },
+  "quote_route_unsupported_pump_bonding_curve_after": 0,
+  "quote_route_unsupported_pump_bonding_curve_before": 333,
+  "regression_guards": {
+    "entry_quality_requires_exit_quote_support": true,
+    "exit_liquidity_blocks_zero_exit_quote": true,
+    "generic_pump_bonding_curve_unsupported_reduced_or_replaced": true,
+    "launch0r_acceptance_passed": true,
+    "live_landed_zero": true,
+    "pump_bonding_curve_buy_quote_rows_positive": true,
+    "pump_bonding_curve_sell_quote_rows_positive": true,
+    "warmup_calibration_deferred_until_launch0s": true,
+    "wire_send_zero": true
+  },
+  "route_support_improved": true,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z",
+  "specific_pump_bonding_curve_blocker_rows": 289,
+  "status": "LAUNCH0S_PUMP_BONDING_CURVE_QUOTE_SUPPORT_NO_WIRE_PASS",
+  "wire_send": 0
+}

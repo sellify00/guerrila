@@ -1,0 +1,15 @@
+status=PARK_MIGRATED_PUMPSWAP_MOMENTUM_NOT_BUY_LED
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z
+requested_duration_seconds=900
+actual_elapsed_seconds=900
+migration_route_ready_rows=5
+route_ready_rows=5
+flow_join_ready_rows=0
+momentum_ready_rows=0
+migrated_pumpswap_r3_ready_rows=0
+decision_counts={"PARK_MIGRATED_PUMPSWAP_ENTRY_QUALITY": 5, "PARK_MIGRATED_PUMPSWAP_LIQUIDITY": 405}
+flow_join_decision_counts={"PARK_MOMENTUM_STATE_MISSING": 5}
+first_flow_join_blocker_counts={"momentum_not_buy_led": 5}
+wire_send=0
+live_landed=0
+acceptance_pass=false

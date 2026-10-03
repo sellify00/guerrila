@@ -1,0 +1,65 @@
+{
+  "baseline_cache_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0q_quote_baseline_cache.json",
+  "entry_quality_evaluated_rows": 343,
+  "entry_quality_ready_rows": 0,
+  "entry_quote_ok_rows": 277,
+  "exit_liquidity_guard_ready_rows": 205,
+  "exit_quote_ok_rows": 264,
+  "input_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0d_realtime_birth_decoder_rows.jsonl",
+  "live_landed": 0,
+  "max_exit_price_impact_bps": 1500,
+  "max_spend_sol": "0.01",
+  "min_base_reserve_lamports": 25000000,
+  "pump_bonding_curve_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 46,
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 159,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 1,
+    "BONDING_CURVE_RESERVES_MISSING": 6,
+    "BONDING_CURVE_STATE_MISSING": 77,
+    "QUOTE_STATE_READY": 44
+  },
+  "pump_bonding_curve_buy_quote_rows": 53,
+  "pump_bonding_curve_ready_rows": 44,
+  "pump_bonding_curve_rows": 333,
+  "pump_bonding_curve_sell_quote_rows": 38,
+  "quote_state_blocker_counts": {
+    "BASE_RESERVE_BELOW_FLOOR": 12,
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 46,
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 159,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 1,
+    "BONDING_CURVE_RESERVES_MISSING": 6,
+    "BONDING_CURVE_STATE_MISSING": 77,
+    "ENTRY_QUOTE_MISSING": 2,
+    "EXIT_QUOTE_ZERO": 13,
+    "QUOTE_MINT_MISSING": 45,
+    "QUOTE_STATE_READY": 205
+  },
+  "quote_state_evaluated_rows": 566,
+  "quote_state_ready_rows": 205,
+  "reserve_after_exit_floor_lamports": 10000000,
+  "route_family_counts": {
+    "PUMPSWAP_AMM": 233,
+    "PUMP_BONDING_CURVE": 333
+  },
+  "route_quote_decision_counts": {
+    "BONDING_CURVE_COMPLETE_OR_MIGRATED": 159,
+    "BONDING_CURVE_QUOTE_STATE_READY": 91,
+    "BONDING_CURVE_RESERVES_MISSING": 6,
+    "BONDING_CURVE_STATE_MISSING": 77,
+    "PUMPSWAP_AMM_QUOTE_STATE_READY": 173,
+    "SIZE_EXIT_ZERO": 13,
+    "unknown": 47
+  },
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0q_realtime_launch_quote_state_rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z",
+  "slippage_bps": 100,
+  "source_provenance_counts": {
+    "CREATE_PROVEN": 5,
+    "TRADE_DERIVED": 561
+  },
+  "status": "launch0q_realtime_launch_quote_state_hydrator_complete",
+  "top_quote_state_blocker": "QUOTE_STATE_READY",
+  "trigger_b_rows": 343,
+  "unique_launch_states": 566,
+  "wire_send": 0
+}

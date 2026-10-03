@@ -1,0 +1,19 @@
+{
+  "acceptance_pass": true,
+  "completed_or_migrated_input_rows": 323,
+  "decision_counts": {
+    "CURVE_COMPLETE_NOT_MIGRATED": 314,
+    "MIGRATION_PUMPSWAP_ROUTE_READY": 5,
+    "PARK_MIGRATION_POOL_NOT_FOUND": 1,
+    "PARK_PUMPSWAP_EXIT_QUOTE_ZERO": 3
+  },
+  "input_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/launch0q_realtime_launch_quote_state_rows.jsonl",
+  "live_landed": 0,
+  "pumpswap_exit_liquidity_guard_ready_rows": 5,
+  "pumpswap_pool_found_count": 8,
+  "pumpswap_quote_state_ready_rows": 5,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "LAUNCH0M_MIGRATION_PUMPSWAP_ROUTE_JOIN_PASS",
+  "wire_send": 0
+}

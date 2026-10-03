@@ -1,0 +1,15 @@
+status=LAUNCH30_MONITOR_EXCEPTION_REPLAY
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch30_monitor_exception_replay_20260603T140440Z
+exception_captured=True
+exception_type=TypeError
+exception_message='int' object is not callable
+traceback_present=True
+rescue_path_invoked=True
+rescue_action_taken=EMERGENCY_RESCUE_FLATTENED
+flatten_landed=True
+rescue_flatten_used=True
+final_inventory_raw=0
+pm_pending_after=0
+artifact_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch30_monitor_exception_replay_20260603T140440Z/attempts/attempt_001/monitor_exception_artifact.json
+artifact_written=True
+acceptance_pass=True

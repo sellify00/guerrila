@@ -1,0 +1,26 @@
+{
+  "acceptance_pass": false,
+  "status": "B002_REGRESSION_MATRIX_FAIL",
+  "steps": [
+    {
+      "name": "b002_replay",
+      "pass": true,
+      "returncode": 0
+    },
+    {
+      "name": "monitor_exception_rescue",
+      "pass": false,
+      "returncode": 1
+    },
+    {
+      "name": "no_exit_quarantine",
+      "pass": false,
+      "returncode": 1
+    },
+    {
+      "name": "quote_weakening_order",
+      "pass": true,
+      "returncode": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "run80d_complete",
+  "runtime_registry_path": "/mnt/c/Shadow Engine/Guerrila/tmp/mock_habitat_registry.json",
+  "registry_rows_path": "/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/80_habitat_registry_latest/habitat_rows.jsonl",
+  "habitats_source": "runtime_registry",
+  "registry_rows_malformed": 0,
+  "eligible_habitat_count": 5,
+  "ranked_habitat_count": 5,
+  "selected_habitat_count": 5,
+  "fetch_error_count": 0,
+  "rows_jsonl": "/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/rows.jsonl",
+  "rows_csv": "/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/rows.csv",
+  "selected_json": "/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/selected_habitats.json"
+}

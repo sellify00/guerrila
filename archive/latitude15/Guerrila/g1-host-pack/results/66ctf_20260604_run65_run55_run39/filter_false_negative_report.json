@@ -1,0 +1,48 @@
+{
+  "filters": [
+    {
+      "filter_name": "input_balance_not_ready",
+      "rejected_count": 7,
+      "positive_markout_after_reject_count": 4,
+      "positive_after_fee_after_reject_count": 7,
+      "false_negative_rate": 0.5714,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 486963.0,
+      "p90_positive_markout_lamports": 326786664332,
+      "recommended_action": "Treat as inventory policy target: fund or pre-wrap only after recurrence is proven."
+    },
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 557,
+      "positive_markout_after_reject_count": 295,
+      "positive_after_fee_after_reject_count": 458,
+      "false_negative_rate": 0.5296,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 220093,
+      "p90_positive_markout_lamports": 2100408,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 5,
+      "positive_markout_after_reject_count": 4,
+      "positive_after_fee_after_reject_count": 4,
+      "false_negative_rate": 0.8,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 438177.0,
+      "p90_positive_markout_lamports": 438177,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 935,
+      "positive_markout_after_reject_count": 605,
+      "positive_after_fee_after_reject_count": 769,
+      "false_negative_rate": 0.6471,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 238102,
+      "p90_positive_markout_lamports": 2137735,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

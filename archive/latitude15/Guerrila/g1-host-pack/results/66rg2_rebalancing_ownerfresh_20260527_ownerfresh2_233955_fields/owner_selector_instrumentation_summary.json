@@ -1,0 +1,62 @@
+{
+  "acceptance": {
+    "false_restoration_gate_input_ready_rows_gt_0": false,
+    "owner_mode_match_rebalancing_rows_gt_0": true,
+    "owner_mode_score_rebalancing_fresh_runtime_rows_gt_0": true,
+    "pm_owner_lock_ready_rows_gt_0": true,
+    "proposal_eligible_rebalancing_rows_gt_0": false,
+    "restoration_pressure_measured_rows_gt_0": true
+  },
+  "certificate_scope": "owner_selector_instrumentation_only",
+  "counts": {
+    "displacement_threshold_pass_rows": 22,
+    "entry_rule_rebalancing_specific_rows": 15,
+    "execution_plumbing_ready_rows": 2,
+    "exit_rule_rebalancing_specific_rows": 18,
+    "false_restoration_gate_input_ready_rows": 0,
+    "owner_mode_match_rebalancing_rows": 22,
+    "owner_mode_score_rebalancing_fresh_runtime_rows": 22,
+    "owner_mode_score_rebalancing_rows": 22,
+    "pm_owner_lock_ready_rows": 22,
+    "proposal_eligible_rebalancing_rows": 0,
+    "recovery_fraction_target_rows": 22,
+    "restoration_pressure_measured_rows": 19,
+    "rows_seen": 22
+  },
+  "execution_ready_first_owner_eligibility_blocker_counts": {
+    "false_restoration_gate_inputs_missing": 1,
+    "restoration_pressure_missing": 1
+  },
+  "fallback_owner_counts": {
+    "missing": 22
+  },
+  "first_owner_eligibility_blocker_counts": {
+    "execution_plumbing_regressed": 20,
+    "false_restoration_gate_inputs_missing": 1,
+    "restoration_pressure_missing": 1
+  },
+  "hard_stops_preserved": {
+    "acquisition": false,
+    "ata_creation": false,
+    "live_landed": 0,
+    "live_send": false,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "token2022_explicit_allow": false,
+    "wire_send": 0
+  },
+  "owner_match_failure_reason_counts": {
+    "none": 22
+  },
+  "owner_mode_score_rebalancing_source_counts": {
+    "fresh_runtime_owner_scores": 22
+  },
+  "owner_mode_selected_counts": {
+    "rebalancing": 22
+  },
+  "runner_up_owner_counts": {
+    "missing": 22
+  },
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_ownerfresh_20260527_ownerfresh2_233955_fields/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "status": "PARK_FALSE_RESTORATION_DATA_ABSENT"
+}

@@ -1,0 +1,123 @@
+{
+  "amount_raw": 13693058707381,
+  "attempt_report_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch17_r2_hold_entry_probe_20260601T094553Z/run_launch10_hot_r2_press_window_0h_20260601T094553Z/attempts/attempt_0001_d9915284e225/launch5_one_mint_live_execute.json",
+  "first_failure": "{\"InstructionError\": [0, {\"Custom\": 6040}]}",
+  "mint": "BqbZadDBqRVQJSc6V6h9sm7ZN8wPXKZViibypNmyWu5m",
+  "pool": "GaeSr9nvNvPzrE4F42YvuriMVzn8N4n4KA39YpMfa7NA",
+  "quote": {
+    "current_base_reserve_raw": 1,
+    "current_quote_reserve_raw": 196612,
+    "direct_pool_math_quote_available": false,
+    "error": "exit_quote_expected_out_zero",
+    "expected_out_raw": 0,
+    "min_out_raw": 0,
+    "ok": false,
+    "pool_doc": {
+      "base_mint": "So11111111111111111111111111111111111111112",
+      "base_vault": "B5vyh7uToxNJbR3Wz95c6xGRqkkdV7NZS2CohQKnNZcm",
+      "quote_mint": "BqbZadDBqRVQJSc6V6h9sm7ZN8wPXKZViibypNmyWu5m",
+      "quote_vault": "Bp2Z2c5eecfBf5qdq6o6Fk44Ycmp6rZ7RNy7LVN5F56E"
+    },
+    "pool_reserves_available": true,
+    "quote_source_used": "pumpfun_direct_pool_math",
+    "route_source_mismatch": false,
+    "slot": 423570259
+  },
+  "rescue_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch17_r2_hold_entry_probe_20260601T094553Z/rescue_flatten_20260601T100414Z",
+  "sender_tip_account": "5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn",
+  "sender_tip_lamports": 200000,
+  "sim_attempts": [
+    {
+      "blocker": "{\"InstructionError\": [0, {\"Custom\": 6001}]}",
+      "meta": {
+        "blockhash": "9hPyBG1m9u4uEVztvLRMX6GXta63mUktx1GAcZmrCodV",
+        "blockhash_context_slot": 423570228,
+        "buyer_token_account_exists": true,
+        "inline_account_created": false,
+        "input_account_doc": {
+          "actual_balance_raw": 13693058707381,
+          "actual_count": 1,
+          "actual_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM",
+          "derived_error": "",
+          "derived_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM",
+          "selected_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM"
+        },
+        "instruction_count": 2,
+        "instruction_len": 25,
+        "last_valid_block_height": 401654615,
+        "output_account_doc": {
+          "actual_balance_raw": 994446671,
+          "actual_count": 1,
+          "actual_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR",
+          "derived_error": "",
+          "derived_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR",
+          "selected_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR"
+        },
+        "output_account_ready": true,
+        "program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "remaining_accounts_count": 2,
+        "route_family": "PUMPSWAP_AMM",
+        "route_mode": "buy_exact_quote_in",
+        "sender_tip_account": "5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn",
+        "sender_tip_account_allowed": true,
+        "sender_tip_instruction_present": true,
+        "sender_tip_lamports": 200000,
+        "signature": "4npQWF9fgT89UkiAdqwiaqT5Hnps6aXQq2iLbMjmgKLMhf1iEALep53inyVUCKVMjm6VczUZYnd2AcAKHJq92rhm",
+        "target_accounts_count": 23,
+        "target_core_accounts_count": 23,
+        "target_kind": "",
+        "target_program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "target_route_mode": "sell"
+      },
+      "min_out_raw": 0,
+      "ok": false
+    },
+    {
+      "blocker": "{\"InstructionError\": [0, {\"Custom\": 6040}]}",
+      "meta": {
+        "blockhash": "9hPyBG1m9u4uEVztvLRMX6GXta63mUktx1GAcZmrCodV",
+        "blockhash_context_slot": 423570228,
+        "buyer_token_account_exists": true,
+        "inline_account_created": false,
+        "input_account_doc": {
+          "actual_balance_raw": 13693058707381,
+          "actual_count": 1,
+          "actual_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM",
+          "derived_error": "",
+          "derived_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM",
+          "selected_pubkey": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM"
+        },
+        "instruction_count": 2,
+        "instruction_len": 25,
+        "last_valid_block_height": 401654615,
+        "output_account_doc": {
+          "actual_balance_raw": 994446671,
+          "actual_count": 1,
+          "actual_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR",
+          "derived_error": "",
+          "derived_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR",
+          "selected_pubkey": "2mbhm1JXARh5f2SzVuvwnNmfz1n2K1kPjfF8R6ujKGHR"
+        },
+        "output_account_ready": true,
+        "program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "remaining_accounts_count": 2,
+        "route_family": "PUMPSWAP_AMM",
+        "route_mode": "buy_exact_quote_in",
+        "sender_tip_account": "5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn",
+        "sender_tip_account_allowed": true,
+        "sender_tip_instruction_present": true,
+        "sender_tip_lamports": 200000,
+        "signature": "ohaHvQYMAJ8bRdDpbW561dMvKiSgGePufXkiXJJbCA74t6pSsEH4ETeGBAJcEN27FuNdohwLJM8fPMjH5bj2pFq",
+        "target_accounts_count": 23,
+        "target_core_accounts_count": 23,
+        "target_kind": "",
+        "target_program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "target_route_mode": "sell"
+      },
+      "min_out_raw": 1,
+      "ok": false
+    }
+  ],
+  "status": "RESCUE_FLATTEN_SIM_FAILED",
+  "token_account": "DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM"
+}

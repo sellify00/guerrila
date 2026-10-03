@@ -1,0 +1,13 @@
+{
+  "owner_mode": "backrun_inventory_band",
+  "risk_tier": "R1_BACKRUN_TINY_INVENTORY_BAND",
+  "rpc_url": "https://rpc.example.invalid",
+  "signer_keypair_path": "/etc/shadow-engine/worker-signer.json",
+  "source_paths": {
+    "direct_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+    "proposal_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL/21_lsprebrinv_r1_one_mint_proposal/r1_one_mint_proposal.json",
+    "sim_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL/21_lsprebrinv_tiny_inventory_band_sim/runlsprebrinv_tiny_inventory_band_sim_rows.jsonl"
+  },
+  "target_mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+  "target_pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8"
+}

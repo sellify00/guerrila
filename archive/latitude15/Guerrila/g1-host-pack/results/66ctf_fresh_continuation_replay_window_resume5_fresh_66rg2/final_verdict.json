@@ -1,0 +1,35 @@
+{
+  "all_rows_first_owner_eligibility_blocker_counts": {
+    "execution_plumbing_regressed": 103
+  },
+  "displacement_threshold_pass_rows": 102,
+  "entry_rule_rebalancing_specific_rows": 60,
+  "execution_plumbing_ready_rows": 0,
+  "execution_ready_first_owner_eligibility_blocker_counts": {},
+  "exit_rule_rebalancing_specific_rows": 69,
+  "false_restoration_gate_input_ready_rows": 95,
+  "false_restoration_gate_pass_rows": 3,
+  "final_verdict": "PARK_OWNER_SELECTOR_INSTRUMENTATION",
+  "hard_stops_preserved": {
+    "acquisition": false,
+    "ata_creation": false,
+    "live_landed": 0,
+    "live_send": false,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "token2022_explicit_allow": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "next_required_action": "repair owner-selector score/match instrumentation",
+  "owner_mode_match_rebalancing_rows": 103,
+  "owner_mode_score_rebalancing_fresh_runtime_rows": 103,
+  "owner_mode_score_rebalancing_rows": 103,
+  "pm_owner_lock_ready_rows": 102,
+  "primary_blocker": "execution_plumbing_regressed",
+  "proposal_eligible_rebalancing_rows": 0,
+  "proposal_path_open": false,
+  "recovery_fraction_target_rows": 102,
+  "restoration_pressure_measured_rows": 95,
+  "rows_seen": 103
+}

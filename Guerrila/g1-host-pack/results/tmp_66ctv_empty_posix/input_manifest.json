@@ -1,0 +1,14 @@
+{
+  "enrich_rows": [],
+  "entry_slippage_bps": 50,
+  "evaluation_mode": "fresh_thesis_revalidation",
+  "exit_slippage_bps": 50,
+  "live_send": false,
+  "max_entry_drift_bps": 2500.0,
+  "max_rows": 2,
+  "quote_api_url": "https://lite-api.jup.ag/swap/v1/quote",
+  "result_dir": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/tmp_66ctv_empty_posix",
+  "sendBundle": false,
+  "source_rows": "",
+  "thesis_signal_source": "carried_proposal_fields"
+}

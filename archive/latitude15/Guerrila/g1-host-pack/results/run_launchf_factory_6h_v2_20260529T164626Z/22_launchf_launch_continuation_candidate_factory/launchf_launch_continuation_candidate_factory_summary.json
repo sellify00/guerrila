@@ -1,0 +1,49 @@
+{
+  "ata_precreate_only_rows": 0,
+  "bundle_decision_counts": {
+    "PARK_ENTRY_NOT_READY": 5
+  },
+  "bundle_rows": 5,
+  "buy_prefix_ready_rows": 5,
+  "buy_pressure_ready_rows": 5,
+  "census_rows": 112,
+  "entry_bundle_ready_no_submit_rows": 0,
+  "exit_nonzero_count": 44,
+  "filter_mode": "nofilter",
+  "first_blocker": "buy_count_2s_below_threshold",
+  "gate_decision_counts": {
+    "BLOCKED_BUY_PRESSURE": 57,
+    "BLOCKED_EXIT_QUOTE_ZERO": 2,
+    "BLOCKED_ROUTE_FAMILY_UNSUPPORTED": 1,
+    "LAUNCH_POLICY_EXIT_READY": 2
+  },
+  "gate_rows": 62,
+  "launches_seen": 62,
+  "live_landed": 0,
+  "markout_histories_available": false,
+  "one_mint_live_ready_rows": 0,
+  "policy_pass_count": 48,
+  "pressure_decision_counts": {
+    "BUY_PREFIX_READY": 5,
+    "PARK_CREATOR_SELL": 12,
+    "PARK_INSUFFICIENT_BUY_PRESSURE": 38,
+    "PARK_SELL_PRESSURE_DOMINANT": 6,
+    "PARK_UNSUPPORTED_PAIR_CLASS": 1
+  },
+  "pressure_rows": 62,
+  "proposal_ready_rows": 0,
+  "proposal_rows": 62,
+  "sendBundle_called": false,
+  "sim_decision_counts": {
+    "PARK_PM": 2,
+    "PARK_POLICY_EXIT": 60
+  },
+  "sim_rows": 62,
+  "status": "PARK_NO_ROWS",
+  "verdict_counts": {
+    "PARK_PM": 2,
+    "PARK_POLICY_EXIT": 60
+  },
+  "window_seconds": 21600,
+  "wire_send": 0
+}

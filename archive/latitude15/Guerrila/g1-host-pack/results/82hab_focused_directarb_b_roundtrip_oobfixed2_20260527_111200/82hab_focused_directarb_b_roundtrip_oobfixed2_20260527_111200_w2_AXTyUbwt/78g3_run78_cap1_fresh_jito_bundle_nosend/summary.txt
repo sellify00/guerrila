@@ -1,0 +1,8 @@
+status=blocked_preconditions
+step=78g3_run78_cap1_fresh_jito_bundle_nosend
+scout_route_family=jito_bundle
+private_replay_target_route_family=jito_bundle
+config_source=/etc/shadow-engine/config.guerrila.yaml
+approved_live_cap_sol=1
+projection_ratio_max=4
+preflight_local_agave=fail

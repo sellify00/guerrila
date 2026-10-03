@@ -1,0 +1,17 @@
+{
+  "alt_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260531T073445Z/21_runls13alt_preprocessed_alt_resolution_audit/runls13alt_preprocessed_alt_resolution_audit_rows.jsonl",
+  "bundle_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260531T073445Z/22_launch9_v2_entry_bundle_nosubmit/launch4_entry_bundle_nosubmit_rows.jsonl",
+  "bundle_rpc_url": "https://mainnet.helius-rpc.com/?api-key=REDACTED",
+  "ls13a_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260531T073445Z/21_runls13a_preprocessed_backrun_target_census/runls13a_preprocessed_backrun_target_census_rows.jsonl",
+  "max_loss_sol": 0.0015,
+  "max_spend_sol": 0.003,
+  "proposal_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260531T073445Z/22_launch4_one_mint_live_proposal_v2/launch4_one_mint_live_proposal.json",
+  "proposal_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch_r2_press_window_1h_20260531T073445Z/22_launch4_one_mint_live_proposal_v2/launch4_one_mint_live_proposal_rows.jsonl",
+  "risk_tier": "R2_PRESS_RISK",
+  "rpc_url": "https://rpc.example.invalid",
+  "sender_url": "http://tyo-sender.helius-rpc.com/fast",
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "target_mint": "HR1a73vvqpB97cgAkjA1deYwRU51G3HCaADAZFuRCuV7",
+  "target_pool": "CpAJxdHLPDQL2YjDLbQALXsFT2umAz8HdMmA2Sbz1qet",
+  "ttl_seconds": 30
+}

@@ -1,0 +1,25 @@
+{
+  "address_count": 3,
+  "address_transaction_counts": {
+    "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P": 100,
+    "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": 100,
+    "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 100
+  },
+  "create_count": 300,
+  "decoded_count": 88,
+  "decoded_launches": 88,
+  "elapsed_seconds": 3,
+  "errors": {},
+  "first_error": "",
+  "limit_per_address": 100,
+  "live_landed": 0,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0p_helius_processed_enhanced_birth_source_20260602T111756Z",
+  "source_name": "Helius raw/enhanced create history",
+  "source_paths": {
+    "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0p_helius_processed_enhanced_birth_source_20260602T111756Z/launch0p_helius_processed_enhanced_birth_source_rows.jsonl"
+  },
+  "status": "launch0p_helius_processed_enhanced_birth_source_complete",
+  "unique_mints": 88,
+  "unique_mints_seen": 88,
+  "wire_send": 0
+}

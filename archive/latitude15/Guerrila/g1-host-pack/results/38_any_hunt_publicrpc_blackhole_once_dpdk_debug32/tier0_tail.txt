@@ -1,0 +1,17 @@
+Config loaded: /home/ubuntu/Guerrila/g1-host-pack/results/38_any_hunt_publicrpc_blackhole_once_dpdk_debug32/config.guerrila.yaml
+Profile:       V6_4Guerrila
+
+PASS  static validation
+PASS  ingress topology: money=4 shred_capture=1 grpc=0
+PASS  bootstrapped 0 gRPC fallback producer(s) (4 feed ring(s) each)
+PASS  bootstrapped 4 Jito egress ring(s)
+PASS  bootstrapped 4 Harmonic egress ring(s)
+PASS  bootstrapped NACK ring
+PASS  bootstrapped egress health segment
+PASS  bootstrapped risk flags segment
+PASS  bootstrapped egress result ring (Harmonic)
+PASS  bootstrapped Jito result ring
+PASS  bootstrapped 4 rollout shadow ring(s)
+PASS  Jito egress config resolved (workers=4)
+SKIP  Harmonic live proxy config/auth
+FATAL  blockhash publisher boot failed: pm.solana_rpc_url is empty

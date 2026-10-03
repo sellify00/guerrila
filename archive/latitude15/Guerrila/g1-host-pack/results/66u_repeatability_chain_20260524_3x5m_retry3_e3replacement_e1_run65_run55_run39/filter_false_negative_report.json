@@ -1,0 +1,48 @@
+{
+  "filters": [
+    {
+      "filter_name": "not_held_input",
+      "rejected_count": 593,
+      "positive_markout_after_reject_count": 334,
+      "positive_after_fee_after_reject_count": 578,
+      "false_negative_rate": 0.5632,
+      "best_owner_mode_after_reject": "drop",
+      "median_positive_markout_lamports": 1472166.5,
+      "p90_positive_markout_lamports": 8846460,
+      "recommended_action": "Track in research until inventory policy expands or recurring surfaces justify new mints."
+    },
+    {
+      "filter_name": "not_positive_ev",
+      "rejected_count": 20,
+      "positive_markout_after_reject_count": 18,
+      "positive_after_fee_after_reject_count": 18,
+      "false_negative_rate": 0.9,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 2352601.0,
+      "p90_positive_markout_lamports": 2414760,
+      "recommended_action": "Evaluate continuation and housekeeping markouts before dropping deterministic non-positive rows."
+    },
+    {
+      "filter_name": "output_account_not_ready",
+      "rejected_count": 24,
+      "positive_markout_after_reject_count": 15,
+      "positive_after_fee_after_reject_count": 22,
+      "false_negative_rate": 0.625,
+      "best_owner_mode_after_reject": "housekeeping",
+      "median_positive_markout_lamports": 232831,
+      "p90_positive_markout_lamports": 2290421,
+      "recommended_action": "Pre-create approved recurring output ATAs instead of treating missing ATA as no-opportunity."
+    },
+    {
+      "filter_name": "source_not_afxdp",
+      "rejected_count": 1864,
+      "positive_markout_after_reject_count": 1464,
+      "positive_after_fee_after_reject_count": 1822,
+      "false_negative_rate": 0.7854,
+      "best_owner_mode_after_reject": "rebalancing",
+      "median_positive_markout_lamports": 564624.5,
+      "p90_positive_markout_lamports": 2663075,
+      "recommended_action": "Preserve rows in research scoring and compare external_geyser against canonical AF_XDP proof windows."
+    }
+  ]
+}

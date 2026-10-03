@@ -1,0 +1,35 @@
+{
+  "ata_only_convertible_exact_positive_rows": 0,
+  "baseline_blocker_counts": {
+    "inventory_not_ready": 23
+  },
+  "baseline_would_fire": 0,
+  "combined_readiness_convertible_exact_positive_rows": 22,
+  "combined_synthetic_blocker_counts": {
+    "adverse_excursion_exceeded": 1,
+    "none": 22
+  },
+  "combined_synthetic_readiness_would_fire": 22,
+  "exact_positive_continuation_rows": 23,
+  "exact_positive_rows_joined_to_run66c": 23,
+  "inventory_only_convertible_exact_positive_rows": 22,
+  "live_landed": 0,
+  "quote_overlay_blocker_counts": {
+    "inventory_not_ready": 23
+  },
+  "quote_overlay_would_fire": 0,
+  "source_run66c_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e1_66c/run66c_continuation_rule_rows.jsonl",
+  "source_run66cq_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e1_66cq/run66cq_continuation_quote_minout_rows.jsonl",
+  "status": "run66c_continuation_readiness_planner_complete",
+  "step": "66u_repeatability_chain_20260524_3x5m_retry3_e1_66c_readiness",
+  "synthetic_ata_blocker_counts": {
+    "inventory_not_ready": 23
+  },
+  "synthetic_ata_overlay_would_fire": 0,
+  "synthetic_inventory_blocker_counts": {
+    "adverse_excursion_exceeded": 1,
+    "none": 22
+  },
+  "synthetic_inventory_overlay_would_fire": 22,
+  "wire_send": 0
+}

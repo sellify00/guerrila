@@ -1,0 +1,28 @@
+{
+  "laserstream_feed_to_worker": 28868,
+  "laserstream_process_intent_attempt": 669,
+  "laserstream_process_intent_ok": 382,
+  "laserstream_rollout_emitted": 5325,
+  "laserstream_top_no_send_subreason": "none",
+  "laserstream_top_rollout_subreason": "none",
+  "afxdp_feed_to_worker": 2221,
+  "afxdp_process_intent_attempt": 36,
+  "afxdp_process_intent_ok": 35,
+  "afxdp_rollout_emitted": 150,
+  "afxdp_top_no_send_subreason": "none",
+  "afxdp_top_rollout_subreason": "none",
+  "by_owner_mode": {
+    "backrun": {
+      "reject_pi_min_out_missing": 10,
+      "reject_pi_mint_meta_missing": 4,
+      "reject_pi_pool_state_stale": 13,
+      "reject_pi_quote_missing": 625
+    },
+    "directarb": {
+      "reject_pi_min_out_missing": 7,
+      "reject_pi_mint_meta_missing": 4,
+      "reject_pi_pool_state_stale": 33,
+      "reject_pi_quote_missing": 765
+    }
+  }
+}

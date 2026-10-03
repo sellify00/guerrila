@@ -1,0 +1,14 @@
+status=DERIV_ROLLING_TRIGGER_READY
+sample_rows_seen=28658
+symbols_seen=178
+rolling_trigger_rows=178
+rolling_trigger_ready_rows=1
+decision_counts={"DERIV_ROLLING_TRIGGER_READY": 1, "PARK_DERIV_ROLLING_TRIGGER": 177}
+blocker_counts={"day_volume_below_floor": 117, "none": 1, "post_entry_net_below_cost_floor": 17, "rolling_change_below_trigger": 43}
+trigger_window_seconds=60
+min_trigger_bps=35.0
+no_wire=true
+rows=178
+ready_rows=1
+wire_send=0
+live_landed=0

@@ -1,0 +1,17 @@
+{
+  "acceptance_pass": true,
+  "artifact_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch30_monitor_exception_replay_20260603T133924Z/attempts/attempt_001/monitor_exception_artifact.json",
+  "artifact_written": true,
+  "exception_captured": true,
+  "exception_message": "'int' object is not callable",
+  "exception_type": "TypeError",
+  "final_inventory_raw": 0,
+  "flatten_landed": true,
+  "pm_pending_after": 0,
+  "rescue_action_taken": "EMERGENCY_RESCUE_FLATTENED",
+  "rescue_flatten_used": true,
+  "rescue_path_invoked": true,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch30_monitor_exception_replay_20260603T133924Z",
+  "status": "LAUNCH30_MONITOR_EXCEPTION_REPLAY",
+  "traceback_present": true
+}

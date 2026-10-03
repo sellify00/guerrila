@@ -1,0 +1,49 @@
+{
+  "afxdp": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "laserstream": {
+    "total": 14,
+    "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+    "counts": {
+      "reject_pi_no_send_output_suppressed": 14
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 5,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_no_send_output_suppressed": 5
+        }
+      },
+      "directarb": {
+        "total": 9,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_no_send_output_suppressed": 9
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

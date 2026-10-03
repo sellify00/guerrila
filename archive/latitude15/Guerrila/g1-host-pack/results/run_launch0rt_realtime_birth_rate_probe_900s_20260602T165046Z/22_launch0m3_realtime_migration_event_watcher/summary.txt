@@ -1,0 +1,13 @@
+status=LAUNCH0M3_REALTIME_MIGRATION_EVENT_WATCHER_PASS
+run_root=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z
+migration_activity_rows=500
+candidate_signatures=500
+migrate_instruction_seen_count=394
+migration_event_seen_count=0
+pumpswap_pool_joined_count=5
+pumpswap_quote_state_ready_rows=5
+decision_counts={"MIGRATE_INSTRUCTION_POOL_JOINED": 5, "PARK_MIGRATION_EVENT_MISSING": 106, "PARK_PUMPSWAP_POOL_NOT_FOUND": 389}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=true

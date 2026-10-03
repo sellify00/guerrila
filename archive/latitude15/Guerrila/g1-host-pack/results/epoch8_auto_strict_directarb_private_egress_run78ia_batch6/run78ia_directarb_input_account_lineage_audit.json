@@ -1,0 +1,12 @@
+{
+  "status": "run78ia_complete",
+  "live_track_scope_row_count": 12,
+  "classification_counts": {
+    "MISSING_ACCOUNT": 12
+  },
+  "live_track_scope_architecture_blocker_count": 12,
+  "malformed_autopsy_rows": 0,
+  "malformed_pm_rows": 0,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78ia_batch6/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78ia_batch6/rows.csv"
+}

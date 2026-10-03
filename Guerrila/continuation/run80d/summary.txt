@@ -1,0 +1,9 @@
+status=run80d_complete
+habitats_source=runtime_registry
+eligible_habitat_count=5
+ranked_habitat_count=5
+selected_habitat_count=5
+fetch_error_count=0
+rows_jsonl=/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/rows.jsonl
+rows_csv=/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/rows.csv
+selected_json=/mnt/c/Shadow Engine/Guerrila/tmp/run80d_results/epoch8_auto_volatility_habitat_run80d_continuation_habitat_scorer/selected_habitats.json

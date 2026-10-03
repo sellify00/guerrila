@@ -1,0 +1,107 @@
+{
+  "merged_prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_candidate_factory/projection_merged/runlsprebr0_projection_quote_all_rows.jsonl",
+  "ranker_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_ranker/runlsprebrinv_r1_portfolio_ranker_rows.jsonl",
+  "selected_rows": [
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank01_8kZ1T1WjKXkVxTHRGdErCtYAYu7wBBYSPGkZf1MtXnKj",
+      "candidate_id": "695c8391cdc59a532e419f33bc60c41d",
+      "mint": "8kZ1T1WjKXkVxTHRGdErCtYAYu7wBBYSPGkZf1MtXnKj",
+      "pool": "CAJ6m6ZtRCqEzJZA6SHTZ22BJeD65GafqMtDXkbdzq6h",
+      "portfolio_rank": 1,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank01_8kZ1T1WjKXkVxTHRGdErCtYAYu7wBBYSPGkZf1MtXnKj/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+      "candidate_id": "f4c5d0cfee8043117e26ef00998c8228",
+      "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+      "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+      "portfolio_rank": 2,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank02_EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7",
+      "candidate_id": "776636bc669634c8f43ae2beb72a697d",
+      "mint": "GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7",
+      "pool": "AWUwrtFm1WurKnJXKg4RmSdMUEFCEXYUes3XQvA5n4ZP",
+      "portfolio_rank": 3,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank04_rTZ2FZ4iQZJdyNDh1DBAeAgpU57Pww8AjDrCgxtGQ6E",
+      "candidate_id": "d7cca068e086416ef3166f5341f397c4",
+      "mint": "rTZ2FZ4iQZJdyNDh1DBAeAgpU57Pww8AjDrCgxtGQ6E",
+      "pool": "7tsYYCP1nchPwSvvkvvZYd4BmD8zm3BEQX3uTyaYWoDd",
+      "portfolio_rank": 4,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank04_rTZ2FZ4iQZJdyNDh1DBAeAgpU57Pww8AjDrCgxtGQ6E/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank05_CejLGKYsgu3wpirPFMN1cpAmVVfLxL1gCCTPcHuHGMAz",
+      "candidate_id": "2fe38edbd4768a963ddc9cd4a67409e9",
+      "mint": "CejLGKYsgu3wpirPFMN1cpAmVVfLxL1gCCTPcHuHGMAz",
+      "pool": "5RazSD1w3R8RJhBcHnG8XGeoD3AdkWd9ERcCvAKYutx7",
+      "portfolio_rank": 5,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank05_CejLGKYsgu3wpirPFMN1cpAmVVfLxL1gCCTPcHuHGMAz/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank06_4pNH46QmPCt6QNjqE2dt6vVRpN25A8ggyXvbUyXW8ekC",
+      "candidate_id": "e9e136edaa5a2725b5756e81dcb69b1d",
+      "mint": "4pNH46QmPCt6QNjqE2dt6vVRpN25A8ggyXvbUyXW8ekC",
+      "pool": "GmC44AE7zMAxqB6iBcxFV85pwRWgv9bUgKqafcKCr4qz",
+      "portfolio_rank": 6,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank06_4pNH46QmPCt6QNjqE2dt6vVRpN25A8ggyXvbUyXW8ekC/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank07_7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7",
+      "candidate_id": "d0510b17873508c8158f140774019737",
+      "mint": "7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7",
+      "pool": "E8exfT5cLv3fhCoCgNNeUKX5mSn7EfyrpXQPSTbWyqng",
+      "portfolio_rank": 7,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank07_7B5oXBRFaYWxCe9D13qHAVCTTCYZVRcwNMUXn9kHf8D7/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank08_Cnggiv4y9U8UzXWK1EJcPuS7ATbh6kmdbY5CZ2sxL2gd",
+      "candidate_id": "da8ac1b410c5e9c1e789ceea3950c1dd",
+      "mint": "Cnggiv4y9U8UzXWK1EJcPuS7ATbh6kmdbY5CZ2sxL2gd",
+      "pool": "HJdiQwzibJ6ru1gXeJ547gFgK92WKj79MUoEtB5QSsaU",
+      "portfolio_rank": 8,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank08_Cnggiv4y9U8UzXWK1EJcPuS7ATbh6kmdbY5CZ2sxL2gd/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank09_DqoEgYRvwnvKys461t128ChEejCFfZae6u29Mt3GaBUA",
+      "candidate_id": "edcf47391a5ab8cae54a77b529da6bd7",
+      "mint": "DqoEgYRvwnvKys461t128ChEejCFfZae6u29Mt3GaBUA",
+      "pool": "KZGeZqKz5fD8Stm9RKNPWpD3TixGBHdWSe8PfMoQXAV",
+      "portfolio_rank": 9,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank09_DqoEgYRvwnvKys461t128ChEejCFfZae6u29Mt3GaBUA/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    },
+    {
+      "candidate_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank10_AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7",
+      "candidate_id": "2f943f2d35f20c1f3079dea5f6b2c66e",
+      "mint": "AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7",
+      "pool": "3DM2vMEvoGiHecbHaFNpjPcTfeywji62go7zaNaYtaPj",
+      "portfolio_rank": 10,
+      "prebr0_rows_count": 1,
+      "prebr0_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank10_AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7/inputs/prebr0_rows.jsonl",
+      "venue": "pumpfun_amm"
+    }
+  ],
+  "top_n": 10
+}

@@ -1,0 +1,42 @@
+{
+  "afxdp": {
+    "total": 1,
+    "top_pi_disabled_subreason": "reject_rollout_gate_fee_clamp_invalid",
+    "counts": {
+      "reject_rollout_gate_fee_clamp_invalid": 1
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 1,
+        "top_pi_disabled_subreason": "reject_rollout_gate_fee_clamp_invalid",
+        "counts": {
+          "reject_rollout_gate_fee_clamp_invalid": 1
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

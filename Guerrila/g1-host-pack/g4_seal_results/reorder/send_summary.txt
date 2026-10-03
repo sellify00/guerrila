@@ -1,0 +1,11 @@
+G4 Shred Replay — Send Summary
+================================
+target:          10.99.2.1:9000
+scenario:        reorder_reverse (128 effective packets)
+pps_target:      500
+actual_pps:      531
+duration:        241ms
+packets_sent:    128
+bytes_sent:      142400
+send_errors:     0
+corpus_loops:    1

@@ -1,0 +1,22 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 22 Launch23 — Cost-Aware Profit Protector
+  2026-06-03 05:21:47 UTC
+════════════════════════════════════════════════════════════
+
+status=COST_AWARE_PROFIT_PROTECTOR_COMPLETE
+rows_seen=1
+decision_counts={'COST_PROTECTOR_NOT_ARMED': 1}
+latest_decision=COST_PROTECTOR_NOT_ARMED
+latest_selected_mint=2g65uLBnArPCsmUmXWVNETC8StwatcPEKYoPUrLVNiKm
+latest_break_even_bps=2151
+latest_arm_gain_bps=2651
+latest_peak_gain_bps=0
+latest_drawdown_from_peak_bps=2368
+latest_cost_profit_protector_armed=False
+floor_source=true_loss_floor
+profit_buffer_bps=500
+tight_trailing_stop_bps=500
+[0;32m[PASS][0m Launch23 cost-aware profit protector written to /home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T051614Z/attempts/attempt_0003_9b6fc4ecbc82/22_launch23_cost_aware_profit_protector/summary.txt
+
+[0;32m[PASS][0m All checks passed.

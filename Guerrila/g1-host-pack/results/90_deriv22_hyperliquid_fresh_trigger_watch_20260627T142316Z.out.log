@@ -1,0 +1,26 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 90 Deriv22 - Hyperliquid Fresh Trigger Watch
+  2026-06-27 14:23:17 UTC
+════════════════════════════════════════════════════════════
+
+status=DERIV22_HYPERLIQUID_FRESH_TRIGGER_READY
+duration_seconds=21600
+samples=13
+fresh_trigger_rows=676
+fresh_trigger_ready_rows=1
+selected_symbol=PUMP
+selected_side=long
+selected_source_net_after_orderbook_bps=46.3956
+selected_trigger_change_bps=82.5206
+tiny_notional_usd=25.0
+account_abstraction=unifiedAccount
+spot_usdc_available=25.09419396
+open_position_count=0
+open_order_count=0
+exchange_submit_attempted=false
+decision_counts={"DERIV22_HYPERLIQUID_FRESH_TRIGGER_READY": 1, "PARK_DERIV22_HYPERLIQUID_FRESH_TRIGGER": 675}
+blocker_counts={"day_volume_below_floor": 455, "entry_spread_too_wide": 1, "fresh_trigger_below_floor": 219, "none": 1}
+no_wire=true
+wire_send=0
+live_landed=0

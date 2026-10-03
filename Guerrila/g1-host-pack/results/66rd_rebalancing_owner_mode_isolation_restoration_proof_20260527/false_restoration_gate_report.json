@@ -1,0 +1,14 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "same_direction_followthrough_not_dominant": false,
+  "opposite_direction_absorption_not_toxic": false,
+  "route_gap_decay_not_stale": false,
+  "crowding_or_copy_wave_not_dominant": false,
+  "drop_saved_loss_not_better_than_entry": false,
+  "flatten_saved_loss_not_better_than_entry": false,
+  "rebalancing_beats_continuation_after_route_cost": false,
+  "rebalancing_beats_drop_saved_loss": false,
+  "rebalancing_beats_housekeeping": false,
+  "false_restoration_gate_pass": false,
+  "reason": "Required false-restoration comparison artifacts are absent from frozen 66rc input package."
+}

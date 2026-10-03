@@ -1,0 +1,14 @@
+status=PARK_LAUNCH60_NO_PRE_MIGRATION_READY_ROWS
+input_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch0u8_active_curve_fresh_state_filter/rows.jsonl
+rows_seen=964
+pre_migration_ready_rows=0
+min_progress_pct=90.0
+bucket_counts={"<90%": 964}
+ready_bucket_counts={}
+decision_counts={"PARK_COMPLETION_CURVE_STATE_MISSING": 594, "PARK_COMPLETION_EXIT_LIQUIDITY": 247, "PARK_COMPLETION_PROGRESS_BELOW_THRESHOLD": 123}
+median_estimated_sol_to_completion_lamports=0
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch60_curve_completion_watch/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch60_curve_completion_watch/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false

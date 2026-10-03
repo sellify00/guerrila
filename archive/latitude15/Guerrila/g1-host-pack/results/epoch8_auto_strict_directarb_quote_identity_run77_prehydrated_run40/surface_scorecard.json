@@ -1,0 +1,41 @@
+{
+  "run40_candidate_selection": {
+    "status": "numeric_safe_selected_from_run75",
+    "selected_candidate": {
+      "venue": "meteora_damm_v2",
+      "pool": "E9dpbYUGp1gywFcAxsKJuNHZAQQjZLWusLXt19kCVcN4",
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "456pnYfppwJozLJ4nr156HwvJQmqnvN8Uxs3RKurbE8o",
+      "signature": "2rhCyCFgu9eJrBJfvuCYZM53coE1cuYJEnt7NxaUnCzhxsUhBKby1L7cRZiT7P9pGmLSPmr9kkd7Kh2EHdQojyL4",
+      "source": "afxdp",
+      "slot": 421267673,
+      "unix_ns": 618207174650670,
+      "route": "tpu_quic_public",
+      "selected_target_route_family": "tpu_quic_public",
+      "target_route_family": "tpu_quic_public",
+      "held_input": true,
+      "input_balance_ok": true,
+      "output_account_ready": true,
+      "template_ready": true,
+      "quote_ready_or_classified": true,
+      "tiny_cap_safe": true,
+      "tpu_convertible_route": true,
+      "source_relaxed_dev_proof": true,
+      "scorecard_replay_dev_proof": true,
+      "live_market_recurrence_required": false,
+      "canonical_private_grade": false,
+      "net_after_fee_lamports": 37885964,
+      "retained_ev_lamports": 40223266,
+      "run76_row_count": 8,
+      "run76_deduped_ev_usd": 14.481405,
+      "run76_expected_out_raw": 438884922,
+      "run76_target_out_raw": 7297936851,
+      "run76_min_out_raw": 434496072,
+      "run76_quote_request_id": 0,
+      "run76_template_id": 1,
+      "run76_quote_match_mode": "unique_slot_pool_mint_amount_template"
+    },
+    "selector_step": "epoch8_auto_strict_directarb_quote_identity_run76_selector"
+  },
+  "r1_surface_observations": []
+}

@@ -1,0 +1,85 @@
+{
+  "afxdp_backrun_seen": 20,
+  "architecture": "hybrid",
+  "bundle_tx_count": 2,
+  "by_route": {
+    "ambiguous": 4,
+    "jito_bundle": 2,
+    "tpu_quic_public": 1
+  },
+  "by_venue": {
+    "meteora_damm_v2": 4,
+    "raydium_clmm": 3
+  },
+  "enrichment_source": "laserstream_processed",
+  "hybrid_backrun_join_ready_for_ls11e": true,
+  "hybrid_bundle_ready_join_count": 0,
+  "hybrid_probe_row_count": 136,
+  "hybrid_strict_blockers": {
+    "blocked_no_afxdp_target_bytes": 135
+  },
+  "hybrid_strict_probe_row_count": 1,
+  "join_blockers": {
+    "missing_laserstream_backrun_enrichment": 4,
+    "missing_laserstream_near_trade_ready_enrichment": 7,
+    "route_not_bundle_ready": 5
+  },
+  "laserstream_after_afxdp_target_us": {
+    "median": -16110,
+    "p90": 43451,
+    "p99": 140710
+  },
+  "laserstream_backrun_seen": 674,
+  "laserstream_candidate_after_afxdp_target_us": {
+    "median": -16059,
+    "p90": 89088,
+    "p99": 140762
+  },
+  "laserstream_enrichment_available": true,
+  "laserstream_quote_after_afxdp_target_us": {
+    "median": null,
+    "p90": null,
+    "p99": null
+  },
+  "live_landed": 0,
+  "matched_hybrid_backrun_join_count": 7,
+  "our_backrun_tx_second": true,
+  "payload_artifact_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls14_hybrid_backrun_join_proof/window1/20_g12_r0_observe_only/runls11_bundle_payload_base64.json",
+  "pm_report_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls14_hybrid_backrun_join_proof/window1/20_g12_r0_observe_only/runls11_pm_reserve_report.json",
+  "processed_laserstream_live_source_promoted": false,
+  "provider": "jito_via_helius",
+  "record_type": "runls14_hybrid_backrun_join_summary",
+  "requires_next_gate": "RunLS11E on AF_XDP-captured target bundle artifact",
+  "run_name": "RunLS14",
+  "selected_artifact_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_runls14_hybrid_backrun_join_proof/window1/20_g12_r0_observe_only/runls11_selected_backrun_bundle.json",
+  "selected_expected_out_raw": 2274204946,
+  "selected_min_out_raw": 2251462896,
+  "selected_net_ev_after_tip": 5136976432,
+  "selected_pm_reserve_ok": true,
+  "selected_target_mint_in_matches": true,
+  "selected_target_mint_out_matches": true,
+  "selected_target_pool_matches": true,
+  "selected_target_tx_bytes_available": true,
+  "selected_target_tx_decodes_locally": true,
+  "selection_result": "hybrid_backrun_join_ready_for_ls11e",
+  "sendBundle_called": false,
+  "source_enrichment": "laserstream_processed",
+  "source_target": "afxdp",
+  "strategy": "backrun",
+  "strict_selection_result": "hybrid_join_artifact_ready",
+  "target_trigger_source": "afxdp",
+  "target_tx_bytes_available": true,
+  "target_tx_bytes_source": "afxdp_target_tx_cache",
+  "target_tx_first": true,
+  "tip_present": true,
+  "top_pools": {
+    "37FkaGfHNwbhY32vXAFVNF8EKBr7fMAm6LTBLyKSVbFN": 1,
+    "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv": 1,
+    "7PtEnbGB5fb8YH7ABkMyr6C9H4CbVdytnXJinw4rDV2f": 1,
+    "8xsDEHStzHF4DEVfRSpacuiUbTJRNTaibwmUhWj8T7pw": 1,
+    "93bWq4x5M3QctvnAGn5fpe1i86RSmMnXhVyb2XDg4LiX": 1,
+    "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2": 1,
+    "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz": 1
+  },
+  "wire_send": 0
+}

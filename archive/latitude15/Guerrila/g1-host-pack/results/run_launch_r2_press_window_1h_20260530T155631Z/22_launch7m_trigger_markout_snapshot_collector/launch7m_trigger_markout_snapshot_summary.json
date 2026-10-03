@@ -1,0 +1,25 @@
+{
+  "blocker_counts": {
+    "buy_count_2s_below_threshold": 1,
+    "none": 7,
+    "route_family_unsupported": 3,
+    "token2022_requires_explicit_allow": 2
+  },
+  "exit_available_15s_count": 7,
+  "exit_available_5s_count": 7,
+  "first_sell_before_entry_count": 0,
+  "live_landed": 0,
+  "max_adverse_excursion_median": -1585.563333,
+  "median_return_15s": -179.99,
+  "median_return_30s": -154.47,
+  "median_return_5s": -115.45,
+  "p75_return_15s": -105.736667,
+  "p75_return_5s": -94.083333,
+  "sendBundle_called": false,
+  "status": "launch7m_trigger_markout_snapshot_complete",
+  "trigger_B_markout_available_rows": 7,
+  "trigger_B_positive_after_cost_candidate_count": 0,
+  "trigger_B_rows": 13,
+  "trigger_mode": "B",
+  "wire_send": 0
+}

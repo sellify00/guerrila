@@ -1,0 +1,46 @@
+═══════════════════════════════════════════════════════
+  G4 Ingress Seal Runner
+═══════════════════════════════════════════════════════
+  iface:         seal_rx
+  queue:         0
+  pin_core:      2
+  scenario:      archive_pressure_long_run (2560 effective packets)
+  expected:      Baseline: all shreds present, no recovery needed
+  stop_mode:     duration
+  duration:      15s
+  pps_target:    250
+  archive_cap:   32 (pressure mode)
+  out_dir:       /tmp/g4_results/archive_pressure
+═══════════════════════════════════════════════════════
+PASS  pinned to core 2
+PASS  interface 'seal_rx' → ifindex 5
+PASS  UMEM bootstrapped (2097152 frames × 2048 bytes)
+PASS  raw archive bootstrapped (1 lane, cap=32)
+NOTE  using copy mode (--copy-mode)
+PASS  XSK bound (queue 0), fill ring primed with 4096 frames
+PASS  XSK fd registered in XSKMAP at /sys/fs/bpf/shadow_xsks_map
+
+── Capturing (15s) ──
+
+
+── Capture complete (15017ms actual) ──
+
+Writing results to /tmp/g4_results/archive_pressure:
+  summary.json → /tmp/g4_results/archive_pressure/summary.json
+  raw_counters.txt → /tmp/g4_results/archive_pressure/raw_counters.txt
+  seal_verdict.txt → /tmp/g4_results/archive_pressure/seal_verdict.txt
+  archive_pressure_proof.txt → /tmp/g4_results/archive_pressure/archive_pressure_proof.txt
+  archive_pressure_proof.json → /tmp/g4_results/archive_pressure/archive_pressure_proof.json
+
+  [PASS] packets_ingested — 6022 frames seen
+  [PASS] parse_rate — 100% (6022/6022 frames parsed, 95% threshold)
+  [PASS] pps_sustained — 401 pps over 15.02s actual (target 250, 80% threshold = 200)
+  [PASS] rx_timestamps_valid — min=2393814156673122 max=2393825488462777 span=11331789655ns
+  [PASS] expected_packet_count — 6022 received (expected 2560, 95% threshold = 2432)
+  [PASS] data_shred_count — 3014 data shreds (expected 1280, 95% threshold = 1216)
+  [PASS] coding_shred_count — 3008 coding shreds (expected 1280, 95% threshold = 1216)
+  [PASS] archive_health — 32 published, 5990 dropped (99%), 6022 survival flushes
+  [PASS] ingress_drains_under_pressure — 6022 frames seen, 6022 recycled (0 fifo + 6022 survival) — ingress not stalled
+  [PASS] archive_pressure_nonblocking — pressure window: +4788 frames, +4788 drops, +4788 recycles — ingress continued under pressure
+
+G4 INGRESS SEAL: ALL PASS

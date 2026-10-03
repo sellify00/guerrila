@@ -1,0 +1,22 @@
+{
+  "fee_budget_ready_count": 19,
+  "first_blocker_counts": {
+    "none": 19
+  },
+  "inline_account_creation_allowed": true,
+  "inline_account_required_count": 19,
+  "input_budget_ready_count": 19,
+  "live_landed": 0,
+  "output_account_ready_count": 0,
+  "owner_mode": "launch_continuation",
+  "pm_account_surface_ready_count": 19,
+  "pm_ready_count": 19,
+  "rent_budget_ready_count": 19,
+  "risk_tier": "LAUNCH_R1",
+  "rows_seen": 19,
+  "sendBundle_called": false,
+  "status": "launchpm_v2_pm_readiness_autopsy_complete",
+  "tip_budget_ready_count": 19,
+  "trigger_mode": "B",
+  "wire_send": 0
+}

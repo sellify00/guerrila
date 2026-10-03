@@ -1,0 +1,62 @@
+{
+  "afxdp": {
+    "worker_ring_read_ok": 179,
+    "worker_record_seen": 69,
+    "worker_decode_ok": 69,
+    "worker_pool_extract_ok": 11,
+    "worker_pool_tag_hit": 57,
+    "worker_owner_mode_scored": 11,
+    "worker_process_intent_attempt": 11,
+    "worker_process_intent_ok": 11,
+    "worker_rollout_event_emitted": 45,
+    "worker_nosend_candidate_emitted": 1
+  },
+  "laserstream": {
+    "worker_ring_read_ok": 5907,
+    "worker_record_seen": 5907,
+    "worker_decode_ok": 5907,
+    "worker_pool_extract_ok": 605,
+    "worker_pool_tag_hit": 2719,
+    "worker_owner_mode_scored": 617,
+    "worker_process_intent_attempt": 429,
+    "worker_process_intent_ok": 317,
+    "worker_rollout_event_emitted": 2433,
+    "worker_nosend_candidate_emitted": 341
+  },
+  "external_geyser": {
+    "worker_ring_read_ok": 0,
+    "worker_record_seen": 0,
+    "worker_decode_ok": 0,
+    "worker_pool_extract_ok": 0,
+    "worker_pool_tag_hit": 0,
+    "worker_owner_mode_scored": 0,
+    "worker_process_intent_attempt": 0,
+    "worker_process_intent_ok": 0,
+    "worker_rollout_event_emitted": 0,
+    "worker_nosend_candidate_emitted": 0
+  },
+  "local_agave": {
+    "worker_ring_read_ok": 0,
+    "worker_record_seen": 0,
+    "worker_decode_ok": 0,
+    "worker_pool_extract_ok": 0,
+    "worker_pool_tag_hit": 0,
+    "worker_owner_mode_scored": 0,
+    "worker_process_intent_attempt": 0,
+    "worker_process_intent_ok": 0,
+    "worker_rollout_event_emitted": 0,
+    "worker_nosend_candidate_emitted": 0
+  },
+  "other": {
+    "worker_ring_read_ok": 0,
+    "worker_record_seen": 0,
+    "worker_decode_ok": 0,
+    "worker_pool_extract_ok": 0,
+    "worker_pool_tag_hit": 0,
+    "worker_owner_mode_scored": 0,
+    "worker_process_intent_attempt": 0,
+    "worker_process_intent_ok": 0,
+    "worker_rollout_event_emitted": 0,
+    "worker_nosend_candidate_emitted": 0
+  }
+}

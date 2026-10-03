@@ -1,0 +1,24 @@
+{
+  "acceptance_pass": true,
+  "batch002_similar_ready_rows": 6,
+  "decision_counts": {
+    "BATCH002_SIMILAR_READY": 6,
+    "PARK_EXIT_LIQUIDITY_FRAGILE": 503,
+    "PARK_NOT_BATCH002_PROFILE": 3
+  },
+  "fingerprint_path": "/home/ubuntu/Guerrila/g1-host-pack/results/22_launch44_batch002_fingerprint/fingerprint.json",
+  "first_blocker_counts": {
+    "batch002_entry_quote_missing": 469,
+    "batch002_exit_quote_missing": 34,
+    "batch002_pm": 3,
+    "none": 6
+  },
+  "live_landed": 2,
+  "require_no_wire": false,
+  "rows_evaluated": 512,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z/22_launch45_batch002_similarity_gate/batch002_similarity_rows.jsonl",
+  "rows_seen": 512,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T150013Z",
+  "status": "LAUNCH45_BATCH002_SIMILARITY_GATE_PASS",
+  "wire_send": 2
+}

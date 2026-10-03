@@ -1,0 +1,26 @@
+{
+  "acceptance_pass": true,
+  "active_bonding_curve_rows": 1137,
+  "bonding_curve_base_reserve_below_floor_rows": 141,
+  "bonding_curve_complete_rows": 0,
+  "bonding_curve_price_impact_too_high_rows": 6,
+  "bonding_curve_reserves_missing_rows": 1,
+  "bonding_curve_state_missing_rows": 882,
+  "launch0u_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0u_active_bonding_curve_r3_candidate_gate/rows.jsonl",
+  "live_landed": 0,
+  "mint_or_curve_missing_rows": 0,
+  "quote_blocker_counts": {
+    "BONDING_CURVE_BASE_RESERVE_BELOW_FLOOR": 141,
+    "BONDING_CURVE_PRICE_IMPACT_TOO_HIGH": 6,
+    "BONDING_CURVE_RESERVES_MISSING": 1,
+    "BONDING_CURVE_STATE_MISSING": 882
+  },
+  "quote_not_ready_rows": 1030,
+  "quote_ready_rows": 107,
+  "quote_route_unsupported_rows": 0,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0u3_active_curve_quote_blocker_audit/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "LAUNCH0U3_ACTIVE_CURVE_QUOTE_BLOCKER_AUDIT_COMPLETE",
+  "top_quote_blocker": "BONDING_CURVE_STATE_MISSING",
+  "wire_send": 0
+}

@@ -1,0 +1,39 @@
+[package]
+name = "shadow-egress-jito"
+version = "0.1.0"
+edition.workspace = true
+
+# G6 - Jito egress proxy
+# Persistent Searcher API client, per-worker egress rings, coarse lane-health publication.
+# No BundleState telemetry parsing in this crate (PM owns that).
+# No public TPU/QUIC logic (Guerrila G6 only).
+
+[[bin]]
+name = "shadow-egress-jito"
+path = "src/main.rs"
+
+[lib]
+name = "shadow_egress_jito"
+path = "src/lib.rs"
+
+[features]
+default = []
+guerrila_profile = []
+
+[dependencies]
+shadow-ipc = { path = "../shadow-ipc" }
+shadow-core = { path = "../shadow-core" }
+clap = { version = "4", features = ["derive"] }
+thiserror = "2"
+tonic = { version = "0.12", features = ["tls", "tls-webpki-roots"] }
+prost = "0.13"
+prost-types = "0.13"
+tokio = { version = "1", features = ["rt-multi-thread", "time", "sync", "macros"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+bs58 = "0.5"
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+base64 = "0.22"
+
+[dev-dependencies]
+tempfile = "3"

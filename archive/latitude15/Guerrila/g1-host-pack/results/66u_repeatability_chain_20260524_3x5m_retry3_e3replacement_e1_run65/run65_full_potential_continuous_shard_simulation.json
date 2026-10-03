@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "active_config_path": "/etc/shadow-engine/config.guerrila.yaml",
+    "allow_laserstream_private_simulation": true,
+    "allow_private_route_simulation": true,
+    "run39_candidate_autopsy": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run55_run39/candidate_autopsy.jsonl",
+    "run39_owner_mode_scorecard": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run55_run39/owner_mode_scorecard.json",
+    "run39_scorecard": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run55_run39/surface_scorecard.json",
+    "run54_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run54/summary.txt",
+    "run61_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65/run61_continuous_shadow_live_simulation.json",
+    "run61_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65/summary.txt",
+    "run62_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run62/run62_conversion_autopsy.json",
+    "run62_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run62/summary.txt",
+    "run64e_json": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65_run64e/run64e_exit_qualified_held_input_analysis.json",
+    "shard_counts": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "signer_token_inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+    "window_seconds": 300
+  },
+  "run_status": {
+    "live_landed": 0,
+    "materialized_after_wrapper_restore_hang": true,
+    "wire_send": 0
+  },
+  "status": "run65_materialized_from_completed_replacement_window",
+  "step": "66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_run65"
+}

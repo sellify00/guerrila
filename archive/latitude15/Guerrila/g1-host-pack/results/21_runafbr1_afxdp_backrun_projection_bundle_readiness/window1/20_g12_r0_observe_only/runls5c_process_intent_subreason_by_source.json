@@ -1,0 +1,79 @@
+{
+  "afxdp": {
+    "total": 54,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_min_out_missing": 8,
+      "reject_pi_no_send_output_suppressed": 2,
+      "reject_pi_quote_missing": 37,
+      "reject_rollout_gate_inventory_not_ready": 7
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 54,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 8,
+          "reject_pi_no_send_output_suppressed": 2,
+          "reject_pi_quote_missing": 37,
+          "reject_rollout_gate_inventory_not_ready": 7
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 3701,
+    "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+    "counts": {
+      "reject_pi_health_unhealthy": 3,
+      "reject_pi_min_out_missing": 5,
+      "reject_pi_mint_meta_missing": 30,
+      "reject_pi_no_send_output_suppressed": 2963,
+      "reject_pi_pool_state_stale": 22,
+      "reject_pi_quote_missing": 678
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 2010,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_health_unhealthy": 3,
+          "reject_pi_min_out_missing": 4,
+          "reject_pi_mint_meta_missing": 25,
+          "reject_pi_no_send_output_suppressed": 1623,
+          "reject_pi_pool_state_stale": 13,
+          "reject_pi_quote_missing": 342
+        }
+      },
+      "directarb": {
+        "total": 1691,
+        "top_pi_disabled_subreason": "reject_pi_no_send_output_suppressed",
+        "counts": {
+          "reject_pi_min_out_missing": 1,
+          "reject_pi_mint_meta_missing": 5,
+          "reject_pi_no_send_output_suppressed": 1340,
+          "reject_pi_pool_state_stale": 9,
+          "reject_pi_quote_missing": 336
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

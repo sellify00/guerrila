@@ -1,0 +1,53 @@
+{
+  "final_verdict": "PARK_OWNER_CONFLICT",
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "selected_row_count": 3,
+  "previous_green_execution_gates_preserved": true,
+  "execution_gate": {
+    "exact_quote_or_ingress_identity_match": true,
+    "min_out_raw_positive": true,
+    "entry_rule_ready": true,
+    "exit_rule_ready": true,
+    "route_specific_net_ev_positive": true,
+    "pm_exact_reserve_ok": true,
+    "pm_release_ok": true,
+    "pm_pending_after_zero": true,
+    "account_ready": true,
+    "inventory_ready": true,
+    "template_ready": true,
+    "egress_no_send_accept": true,
+    "reconcile_path_ready": true,
+    "wire_send_zero": true,
+    "live_landed_zero": true,
+    "send_transaction_called_false": true,
+    "sendBundle_called_false": true
+  },
+  "required_rebalancing_rule_schema_complete": false,
+  "owner_mode_isolation_ready": false,
+  "restoration_pressure_measured": false,
+  "false_restoration_gate_pass": false,
+  "pm_owner_lock_or_split_rule_ready": false,
+  "wire_send": 0,
+  "live_landed": 0,
+  "send_transaction_called": false,
+  "sendBundle_called": false,
+  "primary_blocker": "owner_mode_match_false_and_pm_owner_lock_absent",
+  "secondary_blockers": [
+    "restoration_pressure_not_measured",
+    "required_rebalancing_rule_schema_incomplete",
+    "false_restoration_gate_not_proven"
+  ],
+  "hard_stops_preserved": {
+    "live_send": false,
+    "sendBundle": false,
+    "bundle_row_switch": false,
+    "broad_rebalancing_hunt": false,
+    "directarb_b_retries": false,
+    "afbr2": false,
+    "ls12": false,
+    "acquisition": false,
+    "ata_creation": false,
+    "token2022_explicit_allow": false,
+    "cap_increase": false
+  }
+}

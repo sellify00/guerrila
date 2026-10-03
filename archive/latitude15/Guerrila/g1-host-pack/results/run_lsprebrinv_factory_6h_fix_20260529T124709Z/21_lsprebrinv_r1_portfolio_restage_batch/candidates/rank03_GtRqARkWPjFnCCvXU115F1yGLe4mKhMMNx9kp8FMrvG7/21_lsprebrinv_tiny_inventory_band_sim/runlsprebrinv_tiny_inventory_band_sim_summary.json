@@ -1,0 +1,23 @@
+{
+  "auto_flatten_available_rows": 0,
+  "decision_counts": {},
+  "direct_entry_quote_ok_rows": 0,
+  "direct_exit_quote_ok_rows": 0,
+  "exit_non_dust_rows": 0,
+  "live_landed": 0,
+  "max_loss_defined_rows": 0,
+  "max_loss_sol": 0.0025,
+  "max_spend_sol": 0.005,
+  "pm_release_ok_rows": 0,
+  "pm_reserve_inventory_ok_rows": 0,
+  "policy_pass_rows": 0,
+  "rows_seen": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sim_ready_rows": 0,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+  "status": "PARK_NO_ROWS",
+  "stop_loss_bps": 300,
+  "ttl_seconds": 600,
+  "wire_send": 0
+}

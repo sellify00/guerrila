@@ -1,0 +1,14 @@
+{
+  "adverse_excursion_confirmed_rows": 3,
+  "decision_counts": {
+    "ADVERSE_EXCURSION_CONFIRMED": 3
+  },
+  "live_landed": 0,
+  "rows_seen": 3,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66cte_resume5_after_ctb_v3/run66cte_continuation_negative_after_cost_autopsy_rows.jsonl",
+  "status": "CONTINUATION_ADVERSE_EXCURSION_REVIEW_COMPLETE",
+  "stop_too_conservative_rows": 0,
+  "wire_send": 0
+}

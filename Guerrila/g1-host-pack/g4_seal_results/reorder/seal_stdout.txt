@@ -1,0 +1,41 @@
+═══════════════════════════════════════════════════════
+  G4 Ingress Seal Runner
+═══════════════════════════════════════════════════════
+  iface:         seal_rx
+  queue:         0
+  pin_core:      2
+  scenario:      reorder_reverse (128 effective packets)
+  expected:      Reorder: reverse within each slot
+  stop_mode:     packet-count
+  duration:      30s
+  pps_target:    1000
+  archive_cap:   65536 (standard)
+  out_dir:       /tmp/g4_results/reorder
+═══════════════════════════════════════════════════════
+PASS  pinned to core 2
+PASS  interface 'seal_rx' → ifindex 5
+PASS  UMEM bootstrapped (2097152 frames × 2048 bytes)
+PASS  raw archive bootstrapped (1 lane, cap=65536)
+NOTE  using copy mode (--copy-mode)
+PASS  XSK bound (queue 0), fill ring primed with 4096 frames
+PASS  XSK fd registered in XSKMAP at /sys/fs/bpf/shadow_xsks_map
+
+── Capturing (128 packets (30s ceiling)) ──
+
+
+── Capture complete (3955ms actual) ──
+
+Writing results to /tmp/g4_results/reorder:
+  summary.json → /tmp/g4_results/reorder/summary.json
+  raw_counters.txt → /tmp/g4_results/reorder/raw_counters.txt
+  seal_verdict.txt → /tmp/g4_results/reorder/seal_verdict.txt
+
+  [PASS] packets_ingested — 128 frames seen
+  [PASS] parse_rate — 100% (128/128 frames parsed, 95% threshold)
+  [PASS] rx_timestamps_valid — min=2393627712924539 max=2393627954013364 span=241088825ns
+  [PASS] expected_packet_count — 128 received (expected 128, 95% threshold = 121)
+  [PASS] data_shred_count — 64 data shreds (expected 64, 95% threshold = 60)
+  [PASS] coding_shred_count — 64 coding shreds (expected 64, 95% threshold = 60)
+  [PASS] archive_health — 128 published, 0 dropped (0%), 128 survival flushes
+
+G4 INGRESS SEAL: ALL PASS

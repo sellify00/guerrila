@@ -1,0 +1,13 @@
+status=run66rp_rebalancing_policy_liquidity_gate_complete
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl
+source_ata_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66a_rebalancing_account_ata_unlock_planner_20260524_5m_bridge2/run66a_rebalancing_account_ata_unlock_rows.jsonl
+row_count=69
+policy_clean_ready_count=6
+review_metadata_only_token2022_count=62
+deny_freeze_authority_count=1
+deny_roundtrip_negative_count=0
+decision_counts={"DENY_FREEZE_AUTHORITY": 1, "POLICY_CLEAN_READY": 6, "REVIEW_METADATA_ONLY_TOKEN2022": 62}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

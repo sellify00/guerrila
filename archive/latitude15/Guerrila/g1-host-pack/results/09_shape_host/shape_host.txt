@@ -1,0 +1,34 @@
+timestamp: 2026-05-22T17:51:55Z
+governor: performance
+hugepages: 4096
+nic_iface: eno1
+bootparam_isolcpus=missing
+bootparam_nohz_full=missing
+bootparam_rcu_nocbs=missing
+baseline_combined_queues_target=16
+baseline_combined_queues_actual=16
+nic_irqs_found=17
+nic_irqs_pinned=17
+network_irq_cores=8-9,32-33
+money_cores=10-11,34-35
+ingress_cores=8-9,32-33
+egress_cores=12,36
+utility_cores=13,37
+agave_cpu_affinity_target=0-7,14-31,38-47
+irq_319=8
+irq_320=9
+irq_321=32
+irq_322=33
+irq_323=8
+irq_324=9
+irq_325=32
+irq_326=33
+irq_327=8
+irq_328=9
+irq_329=32
+irq_330=33
+irq_331=8
+irq_332=9
+irq_333=32
+irq_334=33
+irq_335=8

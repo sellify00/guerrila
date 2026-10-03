@@ -1,0 +1,18 @@
+{
+  "acquisition_executed": false,
+  "close_account_possible": true,
+  "close_tx_finalized": true,
+  "first_blocker": "none",
+  "inventory_refresh_ok": true,
+  "live_landed": 0,
+  "pm_pending_after": 0,
+  "pool": "HvMUfyV1oPAFq5WAkKu297f9NCyAzsP8VA6QhA3yqAzp",
+  "rent_recovered_lamports": 2039280,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "status": "R1_EMPTY_ATA_CLOSE_COMPLETED",
+  "strategy_live_send": false,
+  "target_mint": "HXnPCo2RAQ4FZYwKw1hhUvUPkGzxKKQp3a6Zw5SkYE5w",
+  "token_balance_raw": 0,
+  "wire_send": 0
+}

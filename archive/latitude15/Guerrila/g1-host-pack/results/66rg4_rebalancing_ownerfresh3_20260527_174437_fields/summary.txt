@@ -1,0 +1,13 @@
+final_verdict=RESTORATION_PRESSURE_MEASURED
+rows_seen=32
+owner_mode_rebalancing_rows=32
+reserve_displacement_input_rows=32
+restoration_pressure_score_rows=32
+recovery_fraction_target_rows=32
+max_adverse_excursion_bounded_rows=32
+restoration_pressure_measured_rows=32
+first_restoration_blocker_counts={"none": 32}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

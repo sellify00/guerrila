@@ -1,0 +1,11 @@
+harness_rc=0
+dpdk_rx_packets_total=1678
+dpdk_rx_bytes_total=919015
+dpdk_udp_8000_8025_seen=1622
+dpdk_large_udp_8000_8025_seen=524
+dpdk_packets_seen=1678
+dpdk_rx_to_classify_p99_ns=920
+dpdk_rx_to_classify_p999_ns=1190
+dpdk_hw_rx_to_classify_p99_ns=0
+dpdk_hw_rx_to_classify_p999_ns=0
+dpdk_kernel_faults=0

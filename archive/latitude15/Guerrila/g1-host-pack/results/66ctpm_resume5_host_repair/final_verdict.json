@@ -1,0 +1,13 @@
+{
+  "final_verdict": "PARK_CONTINUATION_PM_OWNER_LOCK",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "pm_owner_lock_ready_rows": 0,
+  "primary_blocker": "PM_ACCOUNT_MISMATCH",
+  "rows_seen": 88
+}

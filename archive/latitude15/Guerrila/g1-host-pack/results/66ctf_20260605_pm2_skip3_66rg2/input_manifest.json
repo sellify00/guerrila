@@ -1,0 +1,20 @@
+{
+  "acquisition": false,
+  "ata_creation": false,
+  "broad_hunt": false,
+  "enrichment_mode": "optional_66re_66q2_66r_66rt_66rg3_66rg4_66rg5_rows_fail_closed",
+  "false_restoration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rg5/run66rg5_false_restoration_gate_rows.jsonl",
+  "live_send": false,
+  "mode": "frozen_66rg_rows_only",
+  "overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66r_overlay/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "pm_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rg3/run66rg3_rebalancing_pm_owner_lock_surface_rows.jsonl",
+  "q2_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66q2/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+  "restoration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rg4/run66rg4_rebalancing_restoration_pressure_measurement_rows.jsonl",
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66rg2",
+  "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "sendBundle": false,
+  "source_dir": "",
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66rt/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66rt/run66rt_rebalancing_template_nosend_rows.jsonl",
+  "token2022_explicit_allow": false
+}

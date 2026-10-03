@@ -1,0 +1,8 @@
+rows_seen=5
+reference_price_fake_gain_rows=2
+exit_quote_zero_rows=0
+decision_counts={"EXIT_REFERENCE_PRICE_FAKE_GAIN": 2, "HOLD_OR_UNKNOWN": 1, "not_triggered": 2}
+latest_decision=EXIT_REFERENCE_PRICE_FAKE_GAIN
+latest_reference_price_gain_bps=2567
+latest_executable_exit_gain_bps=0
+latest_executable_exit_value_lamports=0

@@ -1,0 +1,33 @@
+{
+  "account_abstraction": "unifiedAccount",
+  "account_address_present": true,
+  "account_value_source": "spotClearinghouseState.usdc_available",
+  "account_value_usd": 25.11412696,
+  "api_secret_present": true,
+  "api_wallet_address_present": true,
+  "asset_index": 165,
+  "blocker_counts": {
+    "execute_confirm_missing": 1
+  },
+  "exchange_submit_attempted": false,
+  "first_blocker": "execute_confirm_missing",
+  "hyperliquid_sdk_available": true,
+  "live_landed": 0,
+  "no_wire": true,
+  "official_docs_note": "Info endpoint is used for account/market state; exchange endpoint requires signed actions. Hyperliquid docs recommend Python SDK for signatures.",
+  "open_order_count": 0,
+  "open_orders_fetch_ok": true,
+  "open_position_count": 0,
+  "readiness_ready": false,
+  "selected_side": "short",
+  "selected_source_net_after_orderbook_bps": 8.7298,
+  "selected_symbol": "FARTCOIN",
+  "spot_entry_ntl_total": 42.32726653,
+  "spot_state_fetch_ok": true,
+  "spot_usdc_available": 25.11412696,
+  "status": "PARK_DERIV19_HYPERLIQUID_TINY_LIVE",
+  "tiny_notional_usd": 25.0,
+  "unified_account": true,
+  "user_state_fetch_ok": true,
+  "wire_send": 0
+}

@@ -1,0 +1,21 @@
+{
+  "evaluation_mode": "fresh_thesis_revalidation",
+  "final_verdict": "PARK_FRESH_NET_NEGATIVE_AFTER_COST",
+  "first_fresh_thesis_blocker": "fresh_net_negative_after_cost",
+  "first_replay_blocker": "fresh_net_negative_after_cost",
+  "fresh_thesis_ready_rows": 0,
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "proposal_grade_blocker": "fresh_net_negative_after_cost",
+  "proposal_grade_fresh_thesis_ready_rows": 0,
+  "selected_candidate_id": "cand1",
+  "selected_private_replay_ready_rows": 0,
+  "strict_identity_replay_ready_rows": 0,
+  "thesis_signal_live_grade": true,
+  "thesis_signal_source": "fresh_runtime_recomputed"
+}

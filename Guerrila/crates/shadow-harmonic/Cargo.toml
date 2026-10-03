@@ -1,0 +1,36 @@
+[package]
+name = "shadow-harmonic"
+version = "0.1.0"
+edition.workspace = true
+
+# G7 - Harmonic gRPC egress proxy
+# Regional sessions, envelope framing, Death Clamp enforcement, coarse lane-health publication.
+# No public-lane fallback, no BundleState processing.
+
+[[bin]]
+name = "shadow-egress-harmonic"
+path = "src/main.rs"
+
+[lib]
+name = "shadow_harmonic"
+path = "src/lib.rs"
+
+[features]
+default = []
+guerrila_profile = []
+harmonic_lane = []
+
+[dependencies]
+shadow-ipc = { path = "../shadow-ipc" }
+shadow-core = { path = "../shadow-core" }
+thiserror = "2"
+tonic = { version = "0.12", features = ["tls", "tls-webpki-roots"] }
+prost = "0.13"
+prost-types = "0.13"
+tokio = { version = "1", features = ["rt-multi-thread", "time", "sync", "macros"] }
+clap = { version = "4", features = ["derive"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+serde_json = "1"
+
+[dev-dependencies]
+tempfile = "3"

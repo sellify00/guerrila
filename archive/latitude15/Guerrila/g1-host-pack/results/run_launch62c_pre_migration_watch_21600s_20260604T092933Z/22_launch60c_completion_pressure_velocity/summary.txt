@@ -1,0 +1,11 @@
+status=LAUNCH60C_COMPLETION_PRESSURE_VELOCITY_PASS
+state_json=/home/ubuntu/Guerrila/g1-host-pack/results/r5_pre_migration_persistent_watchlist.json
+watchlist_rows=5
+pressure_ready_rows=0
+decision_counts={"PARK_PRESSURE_NOT_READY": 5}
+bucket_counts={"70-80%": 4, "80-90%": 1}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60c_completion_pressure_velocity/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60c_completion_pressure_velocity/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=true

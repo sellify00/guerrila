@@ -1,0 +1,136 @@
+{
+  "record_type": "shadow_habitat_registry",
+  "generated_at": "2026-05-27T22:04:15.0953043+07:00",
+  "habitats": [
+    {
+      "habitat_id": "seed-postshock|2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+      "pool": "2Uxevuvapkt7VuTcut1iuW6qfdK2Rg5PTzXiZe9HLWBj",
+      "pool_hex": "",
+      "venue": "meteora_damm_v2",
+      "pair": "6A63uzxVoPkW8HCb6divQRtB5SdPvngAyuwPXuStW8cW/WSOL",
+      "label": "HUNT_RESEARCH",
+      "strategy_habitat_label": "HUNT_POSTSHOCK_RESEARCH",
+      "strategy_fit": [
+        "postshock"
+      ],
+      "scores": {
+        "habitat_score": 0.5833,
+        "readiness_score": 0.2
+      },
+      "market_metrics": {
+        "external_habitat_score": 0.5833
+      },
+      "shadow_metrics": {
+        "continuation_count": 6,
+        "main_blocker": "route_unavailable"
+      },
+      "readiness": {
+        "policy_clean": true
+      }
+    },
+    {
+      "habitat_id": "seed-postshock|BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+      "pool": "BdiLmeLxaiBbigj3Xsu7tJ7QpSCHtggeRK2huBiwiSqD",
+      "pool_hex": "",
+      "venue": "meteora_damm_v2",
+      "pair": "Ct27RqiKyV7EUPfeystWDMxHXqq8Qy1xRKXBgyUHXeJT/WSOL",
+      "label": "HUNT_RESEARCH",
+      "strategy_habitat_label": "HUNT_POSTSHOCK_RESEARCH",
+      "strategy_fit": [
+        "postshock"
+      ],
+      "scores": {
+        "habitat_score": 0.7223,
+        "readiness_score": 0.2
+      },
+      "market_metrics": {
+        "external_habitat_score": 0.7223
+      },
+      "shadow_metrics": {
+        "continuation_count": 9,
+        "main_blocker": "route_unavailable"
+      },
+      "readiness": {
+        "policy_clean": true
+      }
+    },
+    {
+      "habitat_id": "seed-postshock|Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+      "pool": "Bg9CaaSJBPcn3HSHUUqqvCncZkkgRaz4SzdtwsVQF1YH",
+      "pool_hex": "",
+      "venue": "meteora_damm_v2",
+      "pair": "BD35dqMdcmy5cfU9iTXjFuc569dyTPiNHKqWDXZx98wn/WSOL",
+      "label": "HUNT_RESEARCH",
+      "strategy_habitat_label": "HUNT_POSTSHOCK_RESEARCH",
+      "strategy_fit": [
+        "postshock"
+      ],
+      "scores": {
+        "habitat_score": 0.375,
+        "readiness_score": 0.2
+      },
+      "market_metrics": {
+        "external_habitat_score": 0.375
+      },
+      "shadow_metrics": {
+        "continuation_count": 4,
+        "main_blocker": "route_unavailable"
+      },
+      "readiness": {
+        "policy_clean": true
+      }
+    },
+    {
+      "habitat_id": "seed-postshock|7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+      "pool": "7FjNHJxdJE7bTkyH7Nub4ZLygnUujCtZXGRxNnYGcyYS",
+      "pool_hex": "",
+      "venue": "meteora_damm_v2",
+      "pair": "VpsXGqBL9MDKvbvM3EMKAeCmDJ8NZtm2yKP31FeCba5/WSOL",
+      "label": "HUNT_RESEARCH",
+      "strategy_habitat_label": "HUNT_POSTSHOCK_RESEARCH",
+      "strategy_fit": [
+        "postshock"
+      ],
+      "scores": {
+        "habitat_score": 0.6364,
+        "readiness_score": 0.2
+      },
+      "market_metrics": {
+        "external_habitat_score": 0.6364
+      },
+      "shadow_metrics": {
+        "continuation_count": 11,
+        "main_blocker": "route_unavailable"
+      },
+      "readiness": {
+        "policy_clean": true
+      }
+    },
+    {
+      "habitat_id": "seed-postshock|9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+      "pool": "9fEF5PTvrfnHQkZFp4U8rSWmJGaYL8EMzatc5koKYoxg",
+      "pool_hex": "",
+      "venue": "meteora_damm_v2",
+      "pair": "A4Fmyh6x9Bo2GNcKSqEc8X72v4MtsUw2JwAqnt2ts1LY/WSOL",
+      "label": "HUNT_RESEARCH",
+      "strategy_habitat_label": "HUNT_POSTSHOCK_RESEARCH",
+      "strategy_fit": [
+        "postshock"
+      ],
+      "scores": {
+        "habitat_score": 0.6666,
+        "readiness_score": 0.2
+      },
+      "market_metrics": {
+        "external_habitat_score": 0.6666
+      },
+      "shadow_metrics": {
+        "continuation_count": 12,
+        "main_blocker": "route_unavailable"
+      },
+      "readiness": {
+        "policy_clean": true
+      }
+    }
+  ]
+}

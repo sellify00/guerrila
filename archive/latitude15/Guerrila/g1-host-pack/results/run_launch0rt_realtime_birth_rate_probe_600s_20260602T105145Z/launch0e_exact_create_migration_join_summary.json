@@ -1,0 +1,34 @@
+{
+  "create_proven_count": 5,
+  "existing_pool_activity_count": 521,
+  "join_decision_counts": {
+    "EXISTING_POOL_ACTIVITY": 521,
+    "PUMPSWAP_POOL_CREATE_PROVEN": 5,
+    "TRADE_DERIVED_STATE_MISSING_MINT_OR_POOL": 40
+  },
+  "live_landed": 0,
+  "migration_proven_count": 0,
+  "pool_derived_count": 0,
+  "pump_bonding_curve_create_proven_count": 0,
+  "pumpswap_pool_proven_count": 5,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z",
+  "source_paths": {
+    "activity_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0d_realtime_birth_decoder_activity_rows.jsonl",
+    "joined_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0e_exact_create_migration_join_rows.jsonl",
+    "state_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T105145Z/launch0d_realtime_birth_decoder_rows.jsonl"
+  },
+  "source_provenance_after_join_counts": {
+    "CREATE_PROVEN": 5,
+    "TRADE_DERIVED": 521,
+    "UNRESOLVED": 40
+  },
+  "states_seen": 566,
+  "status": "launch0e_exact_create_migration_join_complete",
+  "top_unresolved_reason": "TRADE_DERIVED_STATE_MISSING_MINT_OR_POOL",
+  "trade_derived_count": 521,
+  "unresolved_count": 40,
+  "unresolved_reason_counts": {
+    "TRADE_DERIVED_STATE_MISSING_MINT_OR_POOL": 40
+  },
+  "wire_send": 0
+}

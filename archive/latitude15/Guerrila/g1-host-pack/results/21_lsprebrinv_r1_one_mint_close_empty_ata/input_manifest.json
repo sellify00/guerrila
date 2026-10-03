@@ -1,0 +1,11 @@
+{
+  "acquisition": false,
+  "inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+  "live_send": false,
+  "proposal_json_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_lsprebrinv_r1_one_mint_proposal/r1_one_mint_proposal.json",
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "target_mint": "HXnPCo2RAQ4FZYwKw1hhUvUPkGzxKKQp3a6Zw5SkYE5w",
+  "target_pool": "HvMUfyV1oPAFq5WAkKu297f9NCyAzsP8VA6QhA3yqAzp"
+}

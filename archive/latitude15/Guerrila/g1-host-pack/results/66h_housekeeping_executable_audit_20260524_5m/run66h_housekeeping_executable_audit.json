@@ -1,0 +1,425 @@
+{
+  "account_ready": 0,
+  "blocker_counts": {
+    "account_ata_missing": 645,
+    "inventory_not_ready": 1
+  },
+  "candidate_autopsy_path": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m_run55_run39/candidate_autopsy.jsonl",
+  "housekeeping_rows_seen": 646,
+  "housekeeping_would_fire": 0,
+  "inventory_ready": 645,
+  "live_landed": 0,
+  "main_blocker": "account_ata_missing",
+  "median_ev": 0.002308203,
+  "numeric_min_out": 0,
+  "p90_ev": 0.002437504,
+  "pm_reserve_sim_ok": 645,
+  "quote_ready": 34,
+  "repeat_pool_mint_pairs": [
+    {
+      "count": 90,
+      "key": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2|So11111111111111111111111111111111111111112|8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT"
+    },
+    {
+      "count": 90,
+      "key": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz|So11111111111111111111111111111111111111112|AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP"
+    },
+    {
+      "count": 90,
+      "key": "tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8|So11111111111111111111111111111111111111112|BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK"
+    },
+    {
+      "count": 87,
+      "key": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz|So11111111111111111111111111111111111111112|Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD"
+    },
+    {
+      "count": 83,
+      "key": "2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex|So11111111111111111111111111111111111111112|Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY"
+    },
+    {
+      "count": 61,
+      "key": "AmG2fAB18dDQZE7DraHCrz2tYgM9jmtd7THqHRpm8CM4|So11111111111111111111111111111111111111112|vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump"
+    },
+    {
+      "count": 31,
+      "key": "6uWSggKyhZpQCA2C16jjoR83kG1wqYqAW7YkNT3Hd5Eg|So11111111111111111111111111111111111111112|FJnRdvWEdbitERChUnpEBSu1byvK7oVpi2bWGLQ7pump"
+    },
+    {
+      "count": 28,
+      "key": "8pqP3zeATVnHKY2sFzeTYzGTMK6Ywt8YvsjmEm7bnDSi|So11111111111111111111111111111111111111112|AsgHeaJjTZ2bsHK9eGeaLFzdoz5GfaGCdpBy5pAWV7H5"
+    },
+    {
+      "count": 22,
+      "key": "5pxVcojxdz3DTPG4XgpiZAh6y1Z3LMhjnxp36oK5JXJL|So11111111111111111111111111111111111111112|JBE78qMFEvLvixiBYrAWfbqJZWnL4fLVdNHXxEF8DsjD"
+    },
+    {
+      "count": 8,
+      "key": "CaHST7wfdg1yTrfhSYACSGsk7dHSV6NUgEPEKGKwt62n|So11111111111111111111111111111111111111112|8djqn9QpLX9vkvgQSd5vNQSUu973gLD5tNAL1mEqGV9z"
+    },
+    {
+      "count": 8,
+      "key": "DP9Q72RFXVmX9UtGim71tckoGXN1dCb6QWoKFDfS8fMd|So11111111111111111111111111111111111111112|AeVzGq6z1RndB9Tk9dGT6RPADjZJpQwX6tudqSRkmAgp"
+    },
+    {
+      "count": 7,
+      "key": "3H6MiFoX5s6S6VpmJMZqSVzjtBe6TVrQKeQJfumAb7vT|So11111111111111111111111111111111111111112|DEDBQ2pDZAmkCQQkQyj4fpHa6jzXayJkv5Bm8dGBPSt2"
+    },
+    {
+      "count": 6,
+      "key": "ESpdynyS6yvPKTYXHdoRTk9DbWCPkpQ9B8xTk6CLDWhq|So11111111111111111111111111111111111111112|2ACEWAyABfBB66w24XvbU3t9HNoRbMdszHQmEG8zEjfi"
+    },
+    {
+      "count": 4,
+      "key": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF|So11111111111111111111111111111111111111112|Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+    },
+    {
+      "count": 4,
+      "key": "81zXXe7AW5x7qaa1f2BvSSKcB3fnvV527eSayK8hdPbG|So11111111111111111111111111111111111111112|9SYE6zG9bVXx5iSHfNpf4jC72UnsBo5BcE9PSUk48oK8"
+    },
+    {
+      "count": 4,
+      "key": "74Kf24SDYbyDVaD9i4LZuVSFdxqhy1jSbiynAGpzZQ8M|So11111111111111111111111111111111111111112|22pmrxegFG2a72xFNvAarChe279pnNBCHqdrBEXNyALL"
+    },
+    {
+      "count": 4,
+      "key": "CQJFuhZ5PEGg2FbPFnnY55gNjGZnUKb8vEi6gnHxwRpz|So11111111111111111111111111111111111111112|6CkBQ2964PTc33Dv5eLQgV2XrMDpmCQ4WJXv7HHUkP5b"
+    },
+    {
+      "count": 3,
+      "key": "7xuFuqQTLE5VXEfqASAsCRK2NpJH9ifXo8b737ppCYpT|So11111111111111111111111111111111111111112|FJxUvG5KrKWZMm9XooX9H7xHbG2MFaNzQmgedeYWCD3u"
+    },
+    {
+      "count": 3,
+      "key": "37FkaGfHNwbhY32vXAFVNF8EKBr7fMAm6LTBLyKSVbFN|So11111111111111111111111111111111111111112|9igBsK9fqT1pgmNjRrdjdQMVLCeWj4dmmyyFhpuS4Vih"
+    },
+    {
+      "count": 2,
+      "key": "7fXu4zf6h9ALzyi7rk8vh1esoGLe5gxheY75CmAtesAy|So11111111111111111111111111111111111111112|BHZjrQYKxx3sBtEjEVTVstjbUFYwpt1ycU5irhhKBRds"
+    }
+  ],
+  "source_run65_json": "/home/ubuntu/Guerrila/g1-host-pack/results/65_full_shadow_hybrid_private_epoch_20260524_5m_valuation/run65_full_potential_continuous_shard_simulation.json",
+  "status": "run66h_housekeeping_executable_audit_complete",
+  "top_rows": [
+    {
+      "account_ready": false,
+      "candidate_id": "1779626254472514232:421852913:4PNY8o9M1e1nA2aJfFmEGmWDNnj7oXFQKMVtCBDDmeXi13uusYPKjH3FmkkWbjRY962HykndbWJFh8WyQLQumXTs:3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF:So11111111111111111111111111111111111111112:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "ev_sol_equivalent": 0.002546097,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "quote_ready": false,
+      "venue": "raydium_clmm"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626256763956901:421852919:5oawTWznEUW96fCoqadYRZnJzCTegizw8KtZ4rLy64SzBFEB545koedahHUmbZAEu1CqsFsbabvwmJTECSNMWddb:3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF:So11111111111111111111111111111111111111112:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "ev_sol_equivalent": 0.002509743,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "quote_ready": false,
+      "venue": "raydium_clmm"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626445169906723:421853395:e7XwY1geHqxhCuVwxGmBzfEnmU9FjsAyFCRfXCTN2XGJoM8m7GnRxBHnfpC6ubuWABH9L3TPRGdKnVKFCrtNezR:2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex:So11111111111111111111111111111111111111112:Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "ev_sol_equivalent": 0.002507559,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626462373518189:421853438:qWCVZ9aRXjr6WEcKuUHV5zoUt3ewxEJuV7sPVCxVPBxZJvJv7y2THt8Ycm7oX5xV8dzHusr34kfM8V3xoVkhEWz:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002506448,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626296653057426:421853021:29umTnH8dvtAGztrrUzDtefF3MVD9MqYXpJc5cEeyG5KJP7XcgsuNhJrHxsi3hT6A3maNve3Y9PJipsBAYqJZKAZ:9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2:So11111111111111111111111111111111111111112:8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "ev_sol_equivalent": 0.002498956,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626397216861657:421853276:246eZWZXt5RR5A5Koxz38eLU8Byva454BPwMvfAFwuNnHUGmCjHM9MHfaPqAi35wdznweWGNQdhWZ9qz7G3FdXwH:2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex:So11111111111111111111111111111111111111112:Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "ev_sol_equivalent": 0.002498119,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626236970338290:421852870:2hmHmkVSGWxksva5KibFVJ2p6p1eBeHtsbeBNdTNM67LFyPK7idWLFmhjX64PTyVm5w1ZMnGmZDTYJoPuo8Xpo7N:EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz:So11111111111111111111111111111111111111112:AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "ev_sol_equivalent": 0.002497195,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626418762353920:421853328:2qNqWjP6LWMMTe1fo28Ka59MeJ9k1bHtDYazdu5hyKq2n8cPUXVkFJSqNavmARSu9cbZWmNgJAzWHZ1N911Hk2U7:9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2:So11111111111111111111111111111111111111112:8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "ev_sol_equivalent": 0.002496501,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626470882279903:421853459:27AwbrQ4EqNLRh4xSZ2VhPTgtA8FVEg5MCgUNf6gBm21y2VN6uaG5DeQ7J5dXWiFtM3SFitGjVpaACFfCoYuRikX:2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex:So11111111111111111111111111111111111111112:Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "ev_sol_equivalent": 0.002495673,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Fs5rgb46q6XsxZ4ETXRbXTih2T29RMGUr15aqAYtw5xY",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "2Fq2gT99E3gs9PHL3yrpmQNxcJN1fwkq88TZaBxQzcex",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626447554949076:421853401:1RJxN9qetJSK5JRehz2JiPsiBv12MzWDQf75DLLr8CEakMe8Y55SGGNsgWU54FNwJWmnykLWzBuaSw8XKzRFs6K:tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8:So11111111111111111111111111111111111111112:BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+      "ev_sol_equivalent": 0.002481854,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626327182322209:421853099:4CG7ZWpZ7DG3jme4pMNJJXdzj6CmvtxMbiV6N2zhEa92Kpbwxzq4Ge77meTnqVoFtUBQvruUckqEdLDo95sraa4y:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002479669,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626230532393338:421852853:NvPSPmxDUKiTm8EUUnBHQ9gVbaRSLWZyzCeyTC9xq3LakQPQEse78iqyNEifEoGb5hqZxSVRBuWZhYPg56wgu3p:EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz:So11111111111111111111111111111111111111112:AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "ev_sol_equivalent": 0.002476417,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626346667414158:421853146:6tzve4EEmn96Wram14Dw8vhVpEDkCfsmMGPxUY3HucdXfDBYwmiECyPc1zC45ErixorcufrMPkFi1r4XhdGQRRo:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002472769,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626406032057654:421853298:3asmkiiCFAYvQb5XPvv2sxpioaq36qWq7YvMVJczP956ggZrmJiQ8VW3iqS5PAXG1wBVAC3H4NNuQaQ1v4ZDZGE1:9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2:So11111111111111111111111111111111111111112:8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "ev_sol_equivalent": 0.002471757,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626449100017467:421853405:EKKpjvQHcSxuuUZ9cFM3UASbQo3HfwjnoLo4eVBkSWCfFKLAvBRVoBkterZCHHoNBxjyqbKKxEwnMw1vJFnVeAY:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002470308,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626419481264176:421853330:5QbFhWuFuJczF6zXxLqdxanGiivuDTZYhaTjwbCEXmhXbGDnyD8CiYffYs3BU1Efw9EXoGe3N7k2iQw3Zt8L7PRy:EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz:So11111111111111111111111111111111111111112:AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "ev_sol_equivalent": 0.00246946,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "AcW6tfh4GvUjKbdVg5jBmeAzTZ6EKsoy6o92szsZJuvP",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "EyY7VZNVKrbvZ42fxgp4oFVmm4YxwWKHCS3b2u2cRvRz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626334335184009:421853117:633sGxWsx5y81ukAiqSnnziJ19s1E7VSmNczRr9gBgbsXSeaq1jHs9UtXRxoEkEtZBB7iSw7E4QcNLjrK4GBwYBu:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002468004,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626359160690751:421853179:3FFRj5Cr9CWQwD2AggiyWU1t6wUqt5rp6ckuTwWQ2M47LrYuzxboTc3yBom49gLgn7mzA3moPu3ybSJHBUWMWrsd:AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz:So11111111111111111111111111111111111111112:Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "ev_sol_equivalent": 0.002466189,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "Dr3b1sR2L5tVowew9G2RomFunu514czR2JWYxXpkFTRD",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "AXTyUbwtesT1gxQfHGFcTtxfEJx6ZK3ad4eZpmKjSYhz",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626373654031376:421853216:32w9eXS4eLp6JaSA4Qj3YqqsF7HnRnEnhUWYJbqbd8BtPEdTywekoM7BJn6kScThvyiaPnsG7o6drQdZrM6o9cdv:9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2:So11111111111111111111111111111111111111112:8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "ev_sol_equivalent": 0.002464706,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "8FSVipViijpT4aE86e58PYRd73bQdZtyzng4FT2THSTT",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "9y9Y1RjRzaiE8tpUqyeHXfs9UuxrYXrXe8MY7cFxNKz2",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    },
+    {
+      "account_ready": false,
+      "candidate_id": "1779626335793605475:421853120:JTEh7xhYz9ADnMvrrcHYHjSUo4PU7gJKic8ixbawUgCLYMvaUQWNkDTCG7tJqtzdouoRiG7Vn7avbiBxk9ztiC2:tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8:So11111111111111111111111111111111111111112:BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+      "ev_sol_equivalent": 0.00245982,
+      "first_blocker": "account_ata_missing",
+      "housekeeping_would_fire": false,
+      "inventory_ready": true,
+      "mint_in": "So11111111111111111111111111111111111111112",
+      "mint_out": "BHdNHCEJ9rt78ZaUSB9kfxK4cSKnWUscaZ1ZwPVbAcCK",
+      "numeric_min_out": false,
+      "owner_mode": "housekeeping",
+      "pm_reserve_sim_ok": true,
+      "pool": "tiRMsjvC2iETFusah9bF4reC9GxprEqmrMaCgZyPip8",
+      "quote_ready": false,
+      "venue": "meteora_damm_v2"
+    }
+  ],
+  "wire_send": 0
+}

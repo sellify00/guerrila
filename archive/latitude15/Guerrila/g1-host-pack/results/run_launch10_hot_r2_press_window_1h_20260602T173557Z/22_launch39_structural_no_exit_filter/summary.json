@@ -1,0 +1,20 @@
+{
+  "blocked_rows": 5,
+  "decision_counts": {
+    "PARK_STRUCTURAL_BASE_RESERVE_RATIO": 1,
+    "PARK_STRUCTURAL_QUOTE_STABILITY_NOT_PROVEN": 4
+  },
+  "exit_quote_stability_checks": 5,
+  "max_base_reserve_decline_bps": 0,
+  "max_exit_price_impact_bps": 1000,
+  "max_quote_zero_recent_count": 0,
+  "min_base_reserve_position_ratio": 50.0,
+  "no_exit_tail_count": 2,
+  "require_stability_checks": true,
+  "reserve_after_exit_floor_lamports": 25000000,
+  "rows_seen": 5,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T173557Z",
+  "status": "STRUCTURAL_NO_EXIT_FILTER_AUDITED",
+  "structural_no_exit_filter_pass_rows": 0,
+  "would_block_no_exit_tail_count": 2
+}

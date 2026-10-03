@@ -1,0 +1,20 @@
+{
+  "decision_counts": {
+    "DENY_FREEZE_AUTHORITY": 27,
+    "DENY_ROUNDTRIP_NEGATIVE": 27,
+    "REVIEW_METADATA_ONLY_TOKEN2022": 49
+  },
+  "deny_freeze_authority_count": 27,
+  "deny_roundtrip_negative_count": 27,
+  "live_landed": 0,
+  "policy_clean_ready_count": 0,
+  "review_metadata_only_token2022_count": 49,
+  "row_count": 103,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_ata_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_resume3_fresh_66a/run66a_rebalancing_account_ata_unlock_rows.jsonl",
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_fresh_continuation_replay_window_resume3_fresh_66ri/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "status": "run66rp_rebalancing_policy_liquidity_gate_complete",
+  "step": "66ctf_fresh_continuation_replay_window_resume3_fresh_66rp",
+  "wire_send": 0
+}

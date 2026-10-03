@@ -1,0 +1,38 @@
+{
+  "drop_total": 226,
+  "drop_executable_count": 0,
+  "drop_no_trade_count": 226,
+  "drop_saved_loss_count": 226,
+  "drop_requires_egress_count": 0,
+  "drop_sender_ready": 37,
+  "drop_bundle_ready": 189,
+  "drop_pm_reserve_ok": 226,
+  "drop_realized_pnl_possible": 0,
+  "drop_saved_loss_ev": {
+    "retained_ev_lcb_raw_sum": 717030853,
+    "not_normalized_across_mints": true,
+    "by_route_raw_lcb": {
+      "jito_bundle": 429454017,
+      "helius_sender_dual": 287576836
+    }
+  },
+  "by_route": {
+    "jito_bundle": 189,
+    "helius_sender_dual": 37
+  },
+  "by_venue": {
+    "meteora_damm_v2": 214,
+    "raydium_clmm": 10,
+    "raydium_cpmm": 2
+  },
+  "by_source_policy_blocker": {
+    "laserstream_live_not_allowed_research_only": 226
+  },
+  "invalid_input_lines_skipped": 0,
+  "classification_basis": {
+    "no_trade_suppression": "strategy=drop with owner_mode=none; route-ready row is treated as suppression rather than executable exit",
+    "saved_loss_estimate": "positive retained_ev_lamports_lcb on flatten/drop-style research rows",
+    "executable_exit": "reserved for explicit exit/flatten owner selection; not present in current LS8 drop tape"
+  },
+  "input_artifact": "/home/ubuntu/Guerrila/g1-host-pack/results/20_g12_r0_observe_only/runls8_laserstream_only_near_trade_ready_rows.jsonl"
+}

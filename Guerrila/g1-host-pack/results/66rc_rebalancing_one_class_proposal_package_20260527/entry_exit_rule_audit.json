@@ -1,0 +1,88 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "entry_rule_ready": true,
+  "exit_rule_ready": true,
+  "required_rebalancing_rule_schema_complete": false,
+  "restoration_pressure_measured": false,
+  "continuation_double_reserve_killed": false,
+  "saved_loss_vs_trade_entry_ev_separated": false,
+  "owner_mode_isolation_ready": false,
+  "missing_required_rule_fields": [
+    "displacement_threshold",
+    "restoration_probability",
+    "target_recovery_fraction",
+    "exit_recovery_threshold",
+    "inventory_band",
+    "route_rule"
+  ],
+  "matched_rollout_owner_mode_counts": {
+    "backrun": 2,
+    "none": 1
+  },
+  "owner_mode_match_counts": {
+    "false": 3
+  },
+  "restoration_thesis": "PARK: current rule is next-same-pool-event restoration heuristic; reserve displacement / restoration pressure / false-restoration kill proof is not present.",
+  "rows": [
+    {
+      "candidate_id": "1779884775541075267:422501882:cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "displacement_threshold": null,
+      "restoration_probability": null,
+      "entry_side": "So11111111111111111111111111111111111111112->EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "target_recovery_fraction": null,
+      "exit_recovery_threshold": null,
+      "max_hold_horizon": "next_same_pool_event_2",
+      "inventory_band": null,
+      "route_rule": null,
+      "stop_loss": -237891,
+      "max_adverse_excursion": -3.4568,
+      "entry_rule": "next_same_pool_event_2",
+      "exit_rule": "next_same_pool_event_2",
+      "entry_rule_ready": true,
+      "exit_rule_ready": true,
+      "owner_mode": "rebalancing",
+      "owner_mode_match": false,
+      "matched_rollout_owner_mode": "backrun"
+    },
+    {
+      "candidate_id": "1779884623393764239:422501501:5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "displacement_threshold": null,
+      "restoration_probability": null,
+      "entry_side": "So11111111111111111111111111111111111111112->EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "target_recovery_fraction": null,
+      "exit_recovery_threshold": null,
+      "max_hold_horizon": "next_same_pool_event_2",
+      "inventory_band": null,
+      "route_rule": null,
+      "stop_loss": 14191,
+      "max_adverse_excursion": 0.2086,
+      "entry_rule": "next_same_pool_event_2",
+      "exit_rule": "next_same_pool_event_2",
+      "entry_rule_ready": true,
+      "exit_rule_ready": true,
+      "owner_mode": "rebalancing",
+      "owner_mode_match": false,
+      "matched_rollout_owner_mode": "none"
+    },
+    {
+      "candidate_id": "1779884649157538629:422501567:22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "displacement_threshold": null,
+      "restoration_probability": null,
+      "entry_side": "So11111111111111111111111111111111111111112->EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "target_recovery_fraction": null,
+      "exit_recovery_threshold": null,
+      "max_hold_horizon": "next_same_pool_event_1",
+      "inventory_band": null,
+      "route_rule": null,
+      "stop_loss": -110203,
+      "max_adverse_excursion": -3.0187,
+      "entry_rule": "next_same_pool_event_1",
+      "exit_rule": "next_same_pool_event_1",
+      "entry_rule_ready": true,
+      "exit_rule_ready": true,
+      "owner_mode": "rebalancing",
+      "owner_mode_match": false,
+      "matched_rollout_owner_mode": "backrun"
+    }
+  ]
+}

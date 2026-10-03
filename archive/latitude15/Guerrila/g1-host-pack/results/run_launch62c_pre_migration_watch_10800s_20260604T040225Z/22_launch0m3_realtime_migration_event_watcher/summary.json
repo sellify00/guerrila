@@ -1,0 +1,23 @@
+{
+  "acceptance_pass": true,
+  "candidate_signatures": 500,
+  "decision_counts": {
+    "MIGRATE_INSTRUCTION_POOL_JOINED": 25,
+    "PARK_PUMPSWAP_POOL_NOT_FOUND": 475
+  },
+  "legacy_stream_path_exists": false,
+  "live_landed": 0,
+  "migrate_instruction_seen_count": 500,
+  "migration_activity_rows": 500,
+  "migration_event_seen_count": 0,
+  "migration_stream_path_exists": true,
+  "migration_stream_path_used": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/laserstream_preprocessed_realtime/runls13_preprocessed_stream_rows.jsonl",
+  "migration_stream_rows_read": 13273202,
+  "new_stream_path_exists": true,
+  "pumpswap_pool_joined_count": 25,
+  "pumpswap_quote_state_ready_rows": 25,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_10800s_20260604T040225Z",
+  "status": "LAUNCH0M3_REALTIME_MIGRATION_EVENT_WATCHER_PASS",
+  "wire_send": 0
+}

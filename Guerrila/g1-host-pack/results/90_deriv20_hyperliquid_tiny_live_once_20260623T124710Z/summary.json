@@ -1,0 +1,21 @@
+{
+  "blocker_counts": {},
+  "entry_filled": true,
+  "estimated_pnl_usd_before_fees": 0.001198,
+  "exchange_submit_attempted": true,
+  "exit_reason": "EXIT_HL_IMPULSE_DECAY",
+  "final_open_order_count": 0,
+  "final_open_position_count": 0,
+  "first_failure": "none",
+  "flatten_landed": true,
+  "gross_return_bps": 0.479,
+  "live_landed": 1,
+  "max_adverse_bps": -4.311,
+  "peak_return_bps": 5.0295,
+  "readiness_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv19_hyperliquid_tiny_live_readiness_20260623T095524Z",
+  "selected_side": "long",
+  "selected_symbol": "JTO",
+  "status": "DERIV20_HYPERLIQUID_TINY_LIVE_FLAT",
+  "tiny_notional_usd": 25.0,
+  "wire_send": 1
+}

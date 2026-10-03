@@ -1,0 +1,25 @@
+{
+  "best_ready_size_sol": "none",
+  "decision_counts": {
+    "SIZE_EXIT_ZERO": 6
+  },
+  "mint": "rTZ2FZ4iQZJdyNDh1DBAeAgpU57Pww8AjDrCgxtGQ6E",
+  "planned_fee_budget_lamports": 10000,
+  "pool": "7tsYYCP1nchPwSvvkvvZYd4BmD8zm3BEQX3uTyaYWoDd",
+  "pool_reserve_token_raw": 176868,
+  "pool_reserve_wsol_raw": 1,
+  "size_exit_dust_rows": 0,
+  "size_exit_ready_rows": 0,
+  "size_exit_zero_rows": 6,
+  "size_negative_too_large_rows": 0,
+  "size_policy_fail_rows": 0,
+  "sizes_tested": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01,
+    0.025
+  ],
+  "status": "PARK_HXN_NO_EXIT_AT_R1_SIZE_BAND"
+}

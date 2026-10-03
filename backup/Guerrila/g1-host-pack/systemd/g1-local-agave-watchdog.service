@@ -1,0 +1,8 @@
+[Unit]
+Description=G1 local Agave watchdog
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -lc 'cd /home/ubuntu/Guerrila && /home/ubuntu/Guerrila/g1-host-pack/scripts/24_local_agave_watchdog.sh'

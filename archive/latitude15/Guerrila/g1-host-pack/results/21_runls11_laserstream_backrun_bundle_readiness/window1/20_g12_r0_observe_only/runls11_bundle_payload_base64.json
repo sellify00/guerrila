@@ -1,0 +1,23 @@
+{
+  "bundle_payload_valid": true,
+  "selected_route_family": "jito_bundle",
+  "bundle_tx_count": 2,
+  "bundle_tx_count_max_allowed": 5,
+  "target_tx_required": true,
+  "target_tx_bytes_available": true,
+  "our_backrun_tx_present": true,
+  "tip_present": true,
+  "min_out_positive": true,
+  "expected_out_positive": true,
+  "net_ev_positive_after_tip": true,
+  "estimated_tip_lamports": 27012004,
+  "estimated_priority_fee_lamports": 0,
+  "bundle_expiry_policy": "no_submit_readiness_only",
+  "send_bundle_disabled_in_mode": true,
+  "txs_base64": [
+    "AVr1XcaaQdMvQssLA4X5HYIXOs2lM97PKet13YRZuNp+9nTcnenV+pBzsF7nt6/TZinDCOXk84qVzAFxIXoregiAAQAJDxhqO56+mUYf3erx9whXTOXxh7tGbnRTHhWlTDGpWNcIDxbGuzhVfcCz3gYQun7VqqJvSuEij8MibKzXvSg7iPKVT4yo1a3Cr+DSrSmGXZ56KGbytgs4ToVfbGSEJEDfbY2HGxvqORmy/FwdD8/cr8046YYQYMd/i5dQllKt8jbtnHpfsSxwpy8RyxTlneL4QDsrYsh+t9XQHNKIkWD/74B7fgVT7yXszibqxOWpxg3wsFEYXyf+RXlCQH+Vc7CazIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpvtygldmBcwPF/R+EsIBJsI0e5+8MNnGb+eqAdYXczWQG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/AktITVlehWcK4fUtmpw246XUjif92qvIGztBjo4+Vrt8szVNayl8XNqyCLdB3Pk2S+9ilmylANQApWpARxzqeUqduezRGQKHPxZTIvK0KCRARysfdFWv4OoM/siCOt3rfMTQ/MgcLW62MY8ds0eTlo4hU2DqKGXn82LqYXBuMHlCgYGAAEABwgJAQEGBgACAAoICwEBCAIAAQwCAAAAm6k9vwIAAAAJAQEBEQwODQMBAgQFBwoACQsMDgwZQUs/TOtbW4ibqT2/AgAAAAvLN6kTAAAAAAkDAQAAAQkGBgACAAoICwEBBgYAAQAHCAkBAQwODQMCAQQFBwoACQsMDgwZQUs/TOtbW4h7D/zEAgAAAMIX4HIZAAAAAgkDAQAAAQk=",
+    "AcPB+SlFZBW3SRpM5oDf3nmdxeSPmyyoH4rPUZ/YFGMu5peIizjbjqirPp6kU9WOVygBxo9sPgJjKrS0XAQx0QwBAAcJi1YvZFQ9OvnC96/TSfhg2nJMx/mCyw8FV9pHdEz4WfQu7nuJKk74pEqr+XDMDjfq9yZ2dRcMHWmc0xJ0SWxUPwbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAGp9UXGMd0yShWY5hpHV62i164o5tLbVxzVVshAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAAnemr5czm3rIjRiSyQRG9QACMJJm9i5TwRgkSYIAAABL2UnENgLDPyB3kO0Wo1JMobmXXPEhoqkM/+x9+LaKzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0iLIenIKMcn22k1Dd9YgWrqahVFdaInlcG6QVT4eLd0EBQAFAnaUBAAGAgMEIAQ2fvoeAAAA6kXMSR8AAAAuan33PwEAALfx4DJDAQAABwIAAhIJAMqaOwAAAAANPIdhAgAAAAAIAgABDAIAAACkK5wBAAAAAA=="
+  ],
+  "wire_send": 0,
+  "live_landed": 0
+}

@@ -1,0 +1,10 @@
+status=HXN_EXIT_READY_AT_SIZE
+mint=EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL
+pool=fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8
+sizes_tested=0.001,0.002,0.003,0.005,0.01,0.025
+size_exit_ready_rows=2
+size_exit_zero_rows=0
+size_exit_dust_rows=0
+size_negative_too_large_rows=4
+decision_counts={"SIZE_EXIT_READY": 2, "SIZE_NEGATIVE_TOO_LARGE": 4}
+best_ready_size_sol=0.001

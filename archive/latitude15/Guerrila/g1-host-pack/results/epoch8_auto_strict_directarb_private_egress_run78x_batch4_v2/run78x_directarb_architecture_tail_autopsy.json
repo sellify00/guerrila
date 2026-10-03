@@ -1,0 +1,30 @@
+{
+  "status": "run78x_complete",
+  "batch_steps": [
+    "epoch8_auto_strict_directarb_private_egress_run78_batch4"
+  ],
+  "architecture_tail_row_count": 6,
+  "classification_counts": {
+    "OUT_OF_SCOPE_UNSUPPORTED_INPUT": 3,
+    "PERMANENT_NON_NUMERIC_ARTIFACT": 1,
+    "ARCH_FIX_REQUIRED_STALE_INVENTORY": 2
+  },
+  "unknown_architecture_tail_count": 0,
+  "live_track_scope_architecture_blocker_count": 2,
+  "78h_architecture_blocker_count": 3,
+  "78h_summary_only_architecture_blocker_count": 0,
+  "78x_arch_fix_row_count": 2,
+  "78x_unmatched_78h_blocker_count": 1,
+  "unmatched_78h_blockers_by_batch": {
+    "epoch8_auto_strict_directarb_private_egress_run78_batch4": 1
+  },
+  "summary_only_78h_blockers_by_batch": {
+    "epoch8_auto_strict_directarb_private_egress_run78_batch4": 0
+  },
+  "malformed_rejection_rows": 0,
+  "malformed_autopsy_rows": 0,
+  "malformed_pm_rows": 0,
+  "malformed_inv_rows": 0,
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78x_batch4_v2/rows.jsonl",
+  "rows_csv": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78x_batch4_v2/rows.csv"
+}

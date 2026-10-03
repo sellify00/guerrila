@@ -1,0 +1,13 @@
+{
+  "direct_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+  "live_send": false,
+  "risk_tier": "R1_BACKRUN_TINY_INVENTORY_BAND",
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "signer_path": "/etc/shadow-engine/worker-signer.json",
+  "sim_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/21_lsprebrinv_tiny_inventory_band_sim/runlsprebrinv_tiny_inventory_band_sim_rows.jsonl",
+  "size_ladder_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/21_lsprebrinv_r1_exit_quote_size_ladder/runlsprebrinv_r1_exit_quote_size_ladder_rows.jsonl",
+  "size_ladder_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_portfolio_restage_batch/candidates/rank03_GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7/21_lsprebrinv_r1_exit_quote_size_ladder/runlsprebrinv_r1_exit_quote_size_ladder_summary.json",
+  "target_mint": "GtRqARkWPjFnCCvXU115F1yGLe4mKhMMNx9kp8FMrvG7",
+  "target_pool": "AWUwrtFm1WurKnJXKg4RmSdMUEFCEXYUes3XQvA5n4ZP"
+}

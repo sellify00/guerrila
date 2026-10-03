@@ -1,0 +1,12 @@
+artifact_dir=/home/ubuntu/shadow-host-audit/g12-r0-observe/20260429_084358-long-accumulation
+sample_slots=18401
+observe_candidates=10335
+rollout_would_send=3743
+rollout_live_send_suppressed=3743
+micro_market_observations=3743
+micro_market_uplift_ok=True
+shadow_guard_mainnet_deployed=True
+shadow_guard_template_program_id_matches=True
+live_landed=0
+promote_allowed=False
+all_gates_green=False

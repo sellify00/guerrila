@@ -1,0 +1,74 @@
+{
+  "matched_near_trade_ready_count": 0,
+  "laserstream_first_near_trade_ready_count": 0,
+  "afxdp_first_near_trade_ready_count": 0,
+  "only_afxdp_near_trade_ready_count": 0,
+  "only_laserstream_near_trade_ready_count": 354,
+  "median_near_trade_ready_delta_us": null,
+  "p90_near_trade_ready_delta_us": null,
+  "p99_near_trade_ready_delta_us": null,
+  "by_owner_mode": {
+    "ambiguous": {
+      "matched_near_trade_ready_count": 0,
+      "laserstream_first_near_trade_ready_count": 0,
+      "afxdp_first_near_trade_ready_count": 0,
+      "only_afxdp_near_trade_ready_count": 0,
+      "only_laserstream_near_trade_ready_count": 0,
+      "near_trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      }
+    },
+    "backrun": {
+      "matched_near_trade_ready_count": 0,
+      "laserstream_first_near_trade_ready_count": 0,
+      "afxdp_first_near_trade_ready_count": 0,
+      "only_afxdp_near_trade_ready_count": 0,
+      "only_laserstream_near_trade_ready_count": 202,
+      "near_trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      }
+    },
+    "directarb": {
+      "matched_near_trade_ready_count": 0,
+      "laserstream_first_near_trade_ready_count": 0,
+      "afxdp_first_near_trade_ready_count": 0,
+      "only_afxdp_near_trade_ready_count": 0,
+      "only_laserstream_near_trade_ready_count": 152,
+      "near_trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      }
+    }
+  },
+  "by_egress_route": {
+    "none": {
+      "matched_near_trade_ready_count": 0,
+      "laserstream_first_near_trade_ready_count": 0,
+      "afxdp_first_near_trade_ready_count": 0,
+      "only_afxdp_near_trade_ready_count": 0,
+      "only_laserstream_near_trade_ready_count": 0,
+      "near_trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      }
+    },
+    "research_only": {
+      "matched_near_trade_ready_count": 0,
+      "laserstream_first_near_trade_ready_count": 0,
+      "afxdp_first_near_trade_ready_count": 0,
+      "only_afxdp_near_trade_ready_count": 0,
+      "only_laserstream_near_trade_ready_count": 354,
+      "near_trade_ready_delta_us": {
+        "median_delta_us": null,
+        "p90_delta_us": null,
+        "p99_delta_us": null
+      }
+    }
+  }
+}

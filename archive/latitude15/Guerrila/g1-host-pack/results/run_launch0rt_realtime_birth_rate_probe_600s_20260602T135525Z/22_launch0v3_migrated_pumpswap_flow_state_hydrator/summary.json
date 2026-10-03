@@ -1,0 +1,25 @@
+{
+  "acceptance_pass": false,
+  "first_momentum_blocker_counts": {
+    "CURVE_COMPLETE_NOT_MIGRATED": 394,
+    "MOMENTUM_FLOW_SOURCE_MISSING": 5,
+    "PARK_MIGRATION_POOL_NOT_FOUND": 1,
+    "PARK_PUMPSWAP_BASE_RESERVE_BELOW_FLOOR": 3
+  },
+  "flow_index_keys": 2449,
+  "flow_matched_route_ready_rows": 0,
+  "flow_rows_paths": [
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/launch0d_realtime_birth_decoder_activity_rows.jsonl",
+    "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/launch0d_realtime_birth_decoder_rows.jsonl"
+  ],
+  "flow_rows_seen": 424081,
+  "launch0m_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+  "live_landed": 0,
+  "momentum_state_missing_rows": 5,
+  "momentum_state_ready_rows": 0,
+  "route_ready_rows": 5,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z/22_launch0v3_migrated_pumpswap_flow_state_hydrator/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_600s_20260602T135525Z",
+  "status": "PARK_MIGRATED_PUMPSWAP_MOMENTUM_FLOW_SOURCE_MISSING",
+  "wire_send": 0
+}

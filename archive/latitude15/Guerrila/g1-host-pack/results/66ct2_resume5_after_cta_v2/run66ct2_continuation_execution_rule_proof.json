@@ -1,0 +1,17 @@
+{
+  "continuation_execution_plumbing_ready_rows": 0,
+  "decision_counts": {
+    "BLOCKED_ACCOUNT_OR_ATA": 3,
+    "BLOCKED_ENTRY_RULE": 26,
+    "BLOCKED_EXIT_RULE": 10,
+    "BLOCKED_NEGATIVE_AFTER_COST": 11,
+    "BLOCKED_TEMPLATE": 38
+  },
+  "live_landed": 0,
+  "rows_seen": 88,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66cta_resume5_after_ctpm_v2/run66cta_continuation_account_template_policy_autopsy_rows.jsonl",
+  "status": "run66ct2_continuation_execution_rule_proof_complete",
+  "wire_send": 0
+}

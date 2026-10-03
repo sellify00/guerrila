@@ -1,0 +1,10 @@
+status=PARK_LAUNCH62C_NO_BRIDGE_READY_CANDIDATES
+initial_rows_seen=1
+candidate_watch_rows=1
+bridge_ready_rows=0
+decision_counts={"PARK_PRE_MIGRATION_SELL_DERIVED_OR_STALLED": 1}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch62c_pre_migration_candidate_watch/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch62c_pre_migration_candidate_watch/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false

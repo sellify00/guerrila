@@ -1,0 +1,44 @@
+{
+  "chain_estimated_launch_count": 1000,
+  "coverage_ratio": 1.6,
+  "decision_counts": {
+    "HOT_BLOCK_ENTRY_EDGE_SIGNAL_STALE": 6,
+    "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP": 32,
+    "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 26,
+    "HOT_BLOCK_POLICY": 2,
+    "HOT_READY_ORDERED_BUNDLE": 2,
+    "LAUNCH_ONE_MINT_ACQUIRED_FLATTEN_FAILED": 2,
+    "PARK_ALT_UNSUPPORTED_HOT": 126,
+    "PARK_NO_CORE_LAUNCH_EVENT": 50,
+    "PARK_TX_DECODE_FAILED": 194
+  },
+  "decoded_launch_count": 16,
+  "helius_raw_create_count": 240,
+  "hot_executor_launches_seen": 0,
+  "launch0_direction_counts": {
+    "buy_launch_with_core": 24
+  },
+  "live_landed": 0,
+  "ls13a_blocker_counts": {
+    "blocked_backrun_builder_not_integrated": 240,
+    "blocked_our_backrun_tx_second_false": 240,
+    "blocked_pm_reserve_not_created": 240,
+    "blocked_preprocessed_target_already_landed": 7,
+    "blocked_preprocessed_target_blockhash_invalid": 26,
+    "blocked_tip_missing": 240
+  },
+  "miss_bucket_counts": {
+    "EVALUATED": 34,
+    "MISSED_ALT_UNRESOLVED": 126,
+    "MISSED_DECODE_FAILED": 194,
+    "MISSED_FILTER_TOO_NARROW": 16,
+    "MISSED_NOT_IN_SOURCE": 760,
+    "MISSED_NO_POOL_JOIN": 50,
+    "MISSED_NO_TRADE_HISTORY": 0,
+    "MISSED_UNSUPPORTED_PROGRAM": 188
+  },
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0g_global_launch_birth_census_3600s_20260602T085354Z",
+  "status": "launch0i_launch_decode_gap_report_complete",
+  "top_miss_reason": "MISSED_NOT_IN_SOURCE",
+  "wire_send": 0
+}

@@ -1,0 +1,18 @@
+{
+  "architecture_blocker_counts": {
+    "PARK_CONTINUATION_ACCOUNT_OR_POLICY": 70,
+    "PARK_CONTINUATION_NEGATIVE_AFTER_COST": 17,
+    "PARK_CONTINUATION_PM": 1
+  },
+  "final_verdict": "PARK_CONTINUATION_ACCOUNT_OR_POLICY",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "proposal_eligible_continuation_rows": 0,
+  "proposal_path_open": false,
+  "rows_seen": 88
+}

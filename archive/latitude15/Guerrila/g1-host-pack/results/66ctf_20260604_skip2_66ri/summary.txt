@@ -1,0 +1,13 @@
+status=run66ri_rebalancing_inline_ata_lifecycle_complete
+source_overlay_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66r_overlay/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl
+source_inline_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66v/run66v_inline_ata_lifecycle_rows.jsonl
+row_count=0
+account_ready_count=0
+inline_ata_creatable_count=0
+inline_ata_ev_positive_count=0
+pm_reserve_rent_ok_count=0
+decision_counts={}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

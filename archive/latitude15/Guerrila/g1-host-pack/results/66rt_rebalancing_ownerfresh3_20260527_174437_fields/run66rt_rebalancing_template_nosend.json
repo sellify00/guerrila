@@ -1,0 +1,20 @@
+{
+  "bundle_no_submit_ready_rows": 3,
+  "decision_counts": {
+    "BLOCKED_POLICY": 25,
+    "BLOCKED_TEMPLATE": 1,
+    "REBALANCING_BUNDLE_READY_NO_SUBMIT": 3,
+    "REBALANCING_SENDER_READY_NO_SEND": 3
+  },
+  "live_landed": 0,
+  "row_count": 32,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_no_send_ready_rows": 3,
+  "source_inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ri_rebalancing_ownerfresh3_20260527_174437_fields/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "source_policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rp_rebalancing_ownerfresh3_20260527_174437_fields/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "source_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_ownerfresh3_20260527_174437_fields/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "status": "run66rt_rebalancing_template_nosend_complete",
+  "step": "66rt_rebalancing_ownerfresh3_20260527_174437_fields",
+  "wire_send": 0
+}

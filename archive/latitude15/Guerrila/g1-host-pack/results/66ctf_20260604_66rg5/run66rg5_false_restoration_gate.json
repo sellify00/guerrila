@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "absorption_score_rows": 0,
+    "continuation_pressure_score_rows": 0,
+    "false_restoration_gate_input_ready_rows": 0,
+    "false_restoration_gate_pass_rows": 0,
+    "owner_mode_rebalancing_rows": 0,
+    "restoration_pressure_measured_rows": 0,
+    "rows_seen": 0,
+    "same_direction_followthrough_score_rows": 0
+  },
+  "false_restoration_reason_counts": {},
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "status": "PARK_FALSE_RESTORATION_DATA_ABSENT"
+}

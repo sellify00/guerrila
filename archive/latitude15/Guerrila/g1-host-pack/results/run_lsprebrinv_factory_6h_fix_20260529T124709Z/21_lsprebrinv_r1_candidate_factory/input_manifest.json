@@ -1,0 +1,26 @@
+{
+  "base_tx_fee_lamports": 5000,
+  "direct_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_rows.jsonl",
+  "direct_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrpf_pumpfun_amm_direct_route_probe/runlsprebrpf_pumpfun_amm_direct_route_probe_summary.json",
+  "live_send": false,
+  "ls13a_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_runls13a_preprocessed_backrun_target_census/runls13a_preprocessed_backrun_target_census_summary.json",
+  "ls13b_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_runls13b_preprocessed_backrun_selector/runls13b_preprocessed_backrun_selector_summary.json",
+  "merged_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_r1_candidate_factory/projection_merged/runlsprebr0_projection_quote_all_summary.json",
+  "prebr0_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_runlsprebr0_preprocessed_projection_quote/runlsprebr0_preprocessed_projection_quote_summary.json",
+  "prebr0m_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_runlsprebr0m_preprocessed_meteora_damm_v2_projection_quote/runlsprebr0m_preprocessed_meteora_damm_v2_projection_quote_summary.json",
+  "prebr2_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebr2_preprocessed_backrun_executable_shape_filter/runlsprebr2_preprocessed_backrun_executable_shape_filter_summary.json",
+  "priority_fee_lamports": 0,
+  "rpc_url": "https://rpc.example.invalid",
+  "sendBundle": false,
+  "sim_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_tiny_inventory_band_sim/runlsprebrinv_tiny_inventory_band_sim_rows.jsonl",
+  "sim_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_lsprebrinv_factory_6h_fix_20260529T124709Z/21_lsprebrinv_tiny_inventory_band_sim/runlsprebrinv_tiny_inventory_band_sim_summary.json",
+  "size_list": [
+    "0.005",
+    "0.01",
+    "0.025",
+    "0.05",
+    "0.1"
+  ],
+  "slippage_bps": 100,
+  "tip_lamports": 0
+}

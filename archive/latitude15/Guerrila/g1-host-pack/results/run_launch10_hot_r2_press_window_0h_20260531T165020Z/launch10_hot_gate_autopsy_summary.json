@@ -1,0 +1,24 @@
+{
+  "attempt_count": 0,
+  "decision_counts": {
+    "HOT_BLOCK_BLOCKHASH": 1865,
+    "HOT_BLOCK_EXIT_ZERO": 7,
+    "HOT_BLOCK_PM": 270,
+    "HOT_BLOCK_POLICY": 6
+  },
+  "eligible_pump_rows": 3143,
+  "first_hot_gate_blocker_counts": {
+    "exit_quote_expected_out_zero": 7,
+    "pm_reserve_input_failed": 270,
+    "policy:token2022_requires_explicit_allow": 6,
+    "target_blockhash_invalid": 1865
+  },
+  "hot_gate_rows_seen": 2148,
+  "hot_ready_late_follow_rows": 0,
+  "hot_ready_ordered_bundle_rows": 0,
+  "live_landed": 0,
+  "status": "PARK_NO_HOT_READY_ROWS",
+  "stream_rows_seen": 15365,
+  "trigger_b_pass_rows": 2148,
+  "wire_send": 0
+}

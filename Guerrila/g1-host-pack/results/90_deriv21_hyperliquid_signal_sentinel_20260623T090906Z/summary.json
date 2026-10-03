@@ -1,0 +1,14 @@
+{
+  "configured_cycles": 24,
+  "exchange_submit_attempted": false,
+  "latest_deriv17_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv17_filtered_forward_size_ladder_watch_20260623T094022Z",
+  "latest_deriv19_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv19_hyperliquid_tiny_live_readiness_20260623T095524Z",
+  "live_landed": 0,
+  "no_wire": true,
+  "ready_cycle": 3,
+  "ready_net_after_orderbook_bps": 92.7807,
+  "ready_side": "long",
+  "ready_symbol": "JTO",
+  "status": "DERIV21_HYPERLIQUID_SIGNAL_READY",
+  "wire_send": 0
+}

@@ -1,0 +1,8 @@
+status=run80b_complete
+candidate_row_count=15
+artifact_file_count=40
+malformed_shock_rows=42
+classification_counts={"WATCH":3,"TRAINING":1,"DENY":11}
+main_blocker_counts={"source_policy_live_disallowed":6,"no_shadow_visibility":9}
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_volatility_habitat_run80b_shadow_habitat_overlay/rows.csv

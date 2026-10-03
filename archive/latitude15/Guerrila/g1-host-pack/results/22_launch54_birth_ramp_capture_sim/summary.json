@@ -1,0 +1,108 @@
+{
+  "acceptance_pass": true,
+  "best_capture_delay": "warmup_10_30s",
+  "best_capture_rate": 0.6923,
+  "capture_count": 159,
+  "delay_summaries": {
+    "create_plus_0ms": {
+      "capture_count": 25,
+      "capture_rate": 0.641,
+      "median_net_pnl_after_fees_tips_rent": 3923000,
+      "median_peak_executable_exit_gain_bps": 5563,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 11894,
+      "positive_net_count": 25,
+      "rows": 39
+    },
+    "first_buy_plus_1s": {
+      "capture_count": 23,
+      "capture_rate": 0.5897,
+      "median_net_pnl_after_fees_tips_rent": 1978000,
+      "median_peak_executable_exit_gain_bps": 3618,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 8378,
+      "positive_net_count": 23,
+      "rows": 39
+    },
+    "first_buy_plus_250ms": {
+      "capture_count": 23,
+      "capture_rate": 0.5897,
+      "median_net_pnl_after_fees_tips_rent": 1978000,
+      "median_peak_executable_exit_gain_bps": 3618,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 8378,
+      "positive_net_count": 23,
+      "rows": 39
+    },
+    "first_buy_plus_2s": {
+      "capture_count": 23,
+      "capture_rate": 0.5897,
+      "median_net_pnl_after_fees_tips_rent": 1978000,
+      "median_peak_executable_exit_gain_bps": 3618,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 8378,
+      "positive_net_count": 23,
+      "rows": 39
+    },
+    "first_buy_plus_500ms": {
+      "capture_count": 23,
+      "capture_rate": 0.5897,
+      "median_net_pnl_after_fees_tips_rent": 1978000,
+      "median_peak_executable_exit_gain_bps": 3618,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 8378,
+      "positive_net_count": 23,
+      "rows": 39
+    },
+    "first_buy_plus_5s": {
+      "capture_count": 15,
+      "capture_rate": 0.3846,
+      "median_net_pnl_after_fees_tips_rent": -498000,
+      "median_peak_executable_exit_gain_bps": 1142,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 4872,
+      "positive_net_count": 16,
+      "rows": 39
+    },
+    "warmup_10_30s": {
+      "capture_count": 27,
+      "capture_rate": 0.6923,
+      "median_net_pnl_after_fees_tips_rent": 3006000,
+      "median_peak_executable_exit_gain_bps": 4646,
+      "no_exit_tail_count": 0,
+      "p75_peak_executable_exit_gain_bps": 27609,
+      "positive_net_count": 28,
+      "rows": 39
+    }
+  },
+  "exit_reason_counts": {
+    "SIM_COST_PROTECTOR_TRAILING": 159,
+    "SIM_NO_USABLE_EXTENSION": 6,
+    "SIM_WEAK_EXTENSION": 108
+  },
+  "input_path": "/home/ubuntu/Guerrila/tmp/bonding_curve_3h_probe_result.json",
+  "input_rows_seen": 39,
+  "live_landed": 0,
+  "max_spend_lamports": 10000000,
+  "no_exit_tail_count": 0,
+  "profit_buffer_bps": 500,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/22_launch54_birth_ramp_capture_sim/rows.jsonl",
+  "sim_rows": 273,
+  "source_method": {
+    "createPages": 80,
+    "epsilonReturn": 0.001,
+    "horizonSeconds": 10800,
+    "maxCreateAgeSeconds": 21600,
+    "minCreateAgeSeconds": 10800,
+    "mintPages": 30,
+    "priceDefinition": "Post-trade curve state price = virtual quote reserves / virtual token reserves from Pump TradeEvent. Create baseline uses Pump CreateEvent virtual reserves.",
+    "program": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+    "sampleSizeRequested": 40,
+    "scopeLimit": "This follows Pump bonding-curve events in the first 3h. Tokens that migrate to AMM inside the window are flagged; post-migration AMM price is not stitched into the curve series.",
+    "venue": "Pump.fun bonding curve / Pump Program"
+  },
+  "status": "LAUNCH54_BIRTH_RAMP_CAPTURE_SIM_PASS",
+  "true_cost_floor_lamports": 1640000,
+  "unique_mints": 39,
+  "wire_send": 0
+}

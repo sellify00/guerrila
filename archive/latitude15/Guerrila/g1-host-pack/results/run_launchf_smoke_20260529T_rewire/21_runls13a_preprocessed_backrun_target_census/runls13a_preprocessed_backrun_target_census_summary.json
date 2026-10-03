@@ -1,0 +1,56 @@
+{
+  "account_include_count": 0,
+  "account_include_values": [],
+  "blocker_counts": {
+    "blocked_backrun_builder_not_integrated": 8,
+    "blocked_our_backrun_tx_second_false": 8,
+    "blocked_pm_reserve_not_created": 8,
+    "blocked_preprocessed_target_already_landed": 1,
+    "blocked_preprocessed_target_blockhash_invalid": 1,
+    "blocked_tip_missing": 8
+  },
+  "filter_mode": "nofilter",
+  "first_message_ok": true,
+  "first_message_timeout_count": 0,
+  "initial_request_ok": true,
+  "live_landed": 0,
+  "preprocessed_backrun_shape_count": 3,
+  "preprocessed_connect_ok": true,
+  "preprocessed_decodable_tx_count": 8,
+  "preprocessed_raw_tx_seen_count": 8,
+  "preprocessed_supported_venue_count": 3,
+  "preprocessed_swap_like_tx_count": 3,
+  "preprocessed_tx_bytes_available_count": 8,
+  "program_id_counts": {
+    "11111111111111111111111111111111": 4,
+    "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 3,
+    "AuMitehsK7nP5tNkECcBoXwJdujnJ1ttyonDGD8sZoj5": 1,
+    "ComputeBudget111111111111111111111111111111": 7,
+    "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9": 1,
+    "FsU1rcaEC361jBr9JE5wm7bpWRSTYeAMN4R2MCs11rNF": 1,
+    "Hb1HrvCEGmnpNdRwetz2h7yQaqrqn5jdW9HpB4UBxSzv": 1,
+    "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH": 1,
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 1,
+    "ZEPHYRbbb4H6wymVkYKQNZVCPw5LcQGaNcwxCePxiR7": 1,
+    "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA": 3
+  },
+  "recognized_venue_counts": {
+    "pumpfun_amm": 3
+  },
+  "selection_result_counts": {
+    "blocked_backrun_builder_not_integrated": 6,
+    "blocked_preprocessed_target_already_landed": 1,
+    "blocked_preprocessed_target_blockhash_invalid": 1
+  },
+  "sendBundle_called": false,
+  "slice_count": 8,
+  "slice_seconds": 15,
+  "source": "laserstream_preprocessed",
+  "status": "runls13a_preprocessed_backrun_target_census_complete",
+  "supported_program_candidate_count": 3,
+  "target_already_landed_at_first_check_count": 1,
+  "target_blockhash_valid_count": 7,
+  "target_not_landed_at_first_check_count": 7,
+  "total_window_seconds": 120,
+  "wire_send": 0
+}

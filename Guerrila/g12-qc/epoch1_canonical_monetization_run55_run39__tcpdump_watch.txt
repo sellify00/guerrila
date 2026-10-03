@@ -1,0 +1,10 @@
+=== 2026-05-20 11:50:58 UTC phase=prelaunch probe_index=prelaunch ===
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eno1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+11:50:58.510313 IP 84.32.103.81.8012 > 109.94.99.15.8007: UDP, length 1207
+11:50:58.510352 IP 70.40.187.21.8012 > 109.94.99.15.8007: UDP, length 1207
+11:50:58.510352 IP 70.40.187.21.8012 > 109.94.99.15.8007: UDP, length 1207
+3 packets captured
+200 packets received by filter
+0 packets dropped by kernel
+

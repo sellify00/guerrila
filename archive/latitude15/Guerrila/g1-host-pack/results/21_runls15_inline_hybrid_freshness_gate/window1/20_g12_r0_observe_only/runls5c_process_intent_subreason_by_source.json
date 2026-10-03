@@ -1,0 +1,67 @@
+{
+  "afxdp": {
+    "total": 1,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_quote_missing": 1
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 1,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_quote_missing": 1
+        }
+      }
+    }
+  },
+  "laserstream": {
+    "total": 387,
+    "top_pi_disabled_subreason": "reject_pi_quote_missing",
+    "counts": {
+      "reject_pi_min_out_missing": 5,
+      "reject_pi_mint_meta_missing": 5,
+      "reject_pi_pool_state_stale": 10,
+      "reject_pi_quote_missing": 367
+    },
+    "by_owner_mode": {
+      "backrun": {
+        "total": 223,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_mint_meta_missing": 1,
+          "reject_pi_pool_state_stale": 7,
+          "reject_pi_quote_missing": 215
+        }
+      },
+      "directarb": {
+        "total": 164,
+        "top_pi_disabled_subreason": "reject_pi_quote_missing",
+        "counts": {
+          "reject_pi_min_out_missing": 5,
+          "reject_pi_mint_meta_missing": 4,
+          "reject_pi_pool_state_stale": 3,
+          "reject_pi_quote_missing": 152
+        }
+      }
+    }
+  },
+  "external_geyser": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "local_agave": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  },
+  "other": {
+    "total": 0,
+    "top_pi_disabled_subreason": "none",
+    "counts": {},
+    "by_owner_mode": {}
+  }
+}

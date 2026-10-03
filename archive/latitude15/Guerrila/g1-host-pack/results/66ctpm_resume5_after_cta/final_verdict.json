@@ -1,0 +1,13 @@
+{
+  "final_verdict": "CONTINUATION_PM_OWNER_LOCK_REPAIR_READY",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "pm_owner_lock_ready_rows": 87,
+  "primary_blocker": "PM_OWNER_MODE_MISSING",
+  "rows_seen": 88
+}

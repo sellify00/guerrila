@@ -1,0 +1,29 @@
+{
+  "final_verdict": "REBALANCING_PARKED_CERTIFICATE_AMENDED",
+  "primary_bucket": "CERTIFICATE_GATE_TOO_WEAK",
+  "structural_ready_rows_total": 21,
+  "execution_plumbing_ready_rows": 21,
+  "owner_mode_match_rebalancing_rows": 0,
+  "pm_owner_lock_ready_rows": 0,
+  "restoration_pressure_measured_rows": 0,
+  "false_restoration_gate_input_ready_rows": 0,
+  "proposal_eligible_rebalancing_rows": 0,
+  "amended_certificate_meaning": "execution_plumbing_structural_ready",
+  "corrected_wording": "21 rows passed structural execution plumbing, but 0 rows passed Rebalancing owner-mode eligibility.",
+  "next_lane_recommendation": "owner_selector_instrumentation_repair",
+  "live_approval": false,
+  "hard_stops_preserved": {
+    "live_send": false,
+    "sendBundle": false,
+    "cap_increase": false,
+    "acquisition": false,
+    "ata_creation": false,
+    "token2022_explicit_allow": false,
+    "synthetic_pm_owner_lock": false,
+    "owner_mode_override": false,
+    "broad_rebalancing_hunt": false,
+    "directarb_b_broad_retries": false,
+    "afbr2": false,
+    "ls12": false
+  }
+}

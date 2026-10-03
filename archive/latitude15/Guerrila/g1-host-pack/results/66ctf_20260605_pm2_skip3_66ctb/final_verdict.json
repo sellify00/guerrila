@@ -1,0 +1,18 @@
+{
+  "entry_rule_recovered_rows": 0,
+  "exit_rule_recovered_rows": 0,
+  "final_verdict": "PARK_CONTINUATION_RULE_CARRY_FORWARD",
+  "first_carry_forward_blocker_counts": {
+    "BLOCKED_ENTRY_RULE_CARRY_FORWARD": 22,
+    "PARK_PM_INPUT_ACCOUNT_MISSING": 91,
+    "PARK_PM_INVENTORY_BALANCE_MISSING": 1
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "rows_seen": 114
+}

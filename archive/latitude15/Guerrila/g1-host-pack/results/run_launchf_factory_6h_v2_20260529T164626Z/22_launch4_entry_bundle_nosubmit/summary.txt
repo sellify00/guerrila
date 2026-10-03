@@ -1,0 +1,14 @@
+status=PARK_LAUNCH_ENTRY_BUNDLE_NOSUBMIT
+rows_seen=5
+entry_bundle_ready_no_submit_rows=0
+ata_required_rows=0
+target_tx_bytes_available_count=5
+target_not_landed_count=5
+bundle_built_count=0
+simulate_bundle_called_count=0
+simulate_bundle_pass_count=0
+decision_counts={"PARK_ENTRY_NOT_READY": 5}
+provider_endpoint=https://mainnet.helius-rpc.com/?api-key=REDACTED
+wire_send=0
+live_landed=0
+sendBundle_called=False

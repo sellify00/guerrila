@@ -1,0 +1,17 @@
+{
+  "acceptance_pass": true,
+  "completion_probability_ready_rows": 0,
+  "decision_counts": {
+    "PARK_COMPLETION_LOW_PROBABILITY": 4,
+    "PARK_COMPLETION_STALLED": 1
+  },
+  "live_landed": 0,
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch64_completion_probability_model/ready_rows.jsonl",
+  "ready_score": 70.0,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch64_completion_probability_model/rows.jsonl",
+  "rows_seen": 5,
+  "state_json": "/home/ubuntu/Guerrila/g1-host-pack/results/r5_pre_migration_persistent_watchlist.json",
+  "status": "LAUNCH64_COMPLETION_PROBABILITY_MODEL_PASS",
+  "velocity_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_21600s_20260604T092933Z/22_launch60c_completion_pressure_velocity/rows.jsonl",
+  "wire_send": 0
+}

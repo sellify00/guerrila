@@ -1,0 +1,18 @@
+{
+  "live_landed": 0,
+  "pre_target_pool_state_available_count": 1,
+  "projected_ev_after_tip_positive_count": 0,
+  "projected_expected_out_positive_count": 1,
+  "projected_min_out_positive_count": 1,
+  "projected_post_target_state_count": 1,
+  "projection_blocker_counts": {
+    "EV_NEGATIVE_AFTER_TIP": 1
+  },
+  "rows_seen": 1,
+  "sendBundle_called": false,
+  "status": "runlsprebr0m_preprocessed_meteora_damm_v2_projection_quote_complete",
+  "top_net_ev_after_tip_raw": -204569,
+  "top_pool": "4TE1JTve6JMyhwecxvQ8BQwFLzPHnDqgm4XWTeFPHH8E",
+  "top_venue": "meteora_damm_v2",
+  "wire_send": 0
+}

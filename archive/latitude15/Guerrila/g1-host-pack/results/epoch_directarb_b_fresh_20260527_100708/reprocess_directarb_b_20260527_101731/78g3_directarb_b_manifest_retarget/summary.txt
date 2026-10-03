@@ -1,0 +1,12 @@
+status=blocked_no_replay_manifest_rows
+source_rows_path=g1-host-pack/results/epoch_directarb_b_fresh_20260527_100708/reprocess_directarb_b_20260527_101731/78c3_directarb_cap1_nearmiss_autopsy/rows.jsonl
+source_rows=533
+manifest_rows=0
+malformed_source_rows=0
+rejection_rows=533
+rejection_counts={"MISSING_ENTRY_AMOUNT": 1, "NOT_REPLAY_READY_DECISION": 532}
+output_path=g1-host-pack/results/epoch_directarb_b_fresh_20260527_100708/reprocess_directarb_b_20260527_101731/78g3_directarb_b_manifest_retarget/manifest.jsonl
+replay_label=DEV_REPLAY_NOT_MARKET_CURRENT
+wire_send=0
+live_landed=0
+sendBundle_called=False

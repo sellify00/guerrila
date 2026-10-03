@@ -1,0 +1,15 @@
+{
+  "decision_counts": {
+    "REVIEW_ONLY_METADATA_TOKEN2022": 41
+  },
+  "final_verdict": "CONTINUATION_TOKEN2022_POLICY_EXCEPTION_REVIEW_COMPLETE",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "rows_seen": 41,
+  "watch_only_metadata_rows": 41
+}

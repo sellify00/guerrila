@@ -1,0 +1,28 @@
+{
+  "bundle_expiry_policy": "runafbr1_no_submit_readiness_only",
+  "bundle_payload_valid": true,
+  "bundle_tx_count": 2,
+  "bundle_tx_count_max_allowed": 5,
+  "estimated_priority_fee_lamports": 0,
+  "estimated_tip_lamports": 1213422178,
+  "expected_out_positive": true,
+  "live_landed": 0,
+  "min_out_positive": true,
+  "net_ev_positive_after_tip": true,
+  "our_backrun_tx_present": true,
+  "our_backrun_tx_second": true,
+  "provider": "jito_via_helius",
+  "record_type": "runafbr1_bundle_payload",
+  "selected_route_family": "jito_bundle",
+  "sendBundle_called": false,
+  "send_bundle_disabled_in_mode": true,
+  "target_tx_bytes_available": true,
+  "target_tx_first": true,
+  "target_tx_required": true,
+  "tip_present": true,
+  "txs_base64": [
+    "AQxYlYrcUBpA+ZIVuRW4Qf4Tiw2u2J/xlwJqdHx1QMPQeRsejM4SFNCB7MGgIKpWxhLzxORU21n32ikL2v5pww6AAQAJD+JPZIRkFHLPlaBSA2KTL4XWxX6uitgPO9aO3MhcVC9KPeg+f7odxwhWPty9AoTMqrdWz7l2KxCc+ifgCOY8sfNBxxOTQzLZoZIwdzNUE66WKKtzQoCy9mJrsrZWHTQWSy7L9r5+j8Nsoa+mF5sj2fauHjxlWbHlp2NZEU36IUhOqG3iC80e0d3f9b2zy1RLQtSwDEafKjpRJdDMgJYjGOZnIrEh8ezBqHNY0A+pIKCfuhegISP4MtSCyn3188V8xoyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZAn+9dt0EnENYceQnFgxkgTpysZJsJQt9JAQXdWdFMwkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQktITVlehWcK4fUtmpw246XUjif92qvIGztBjo4+Vrt8szVNayl8XNqyCLdB3Pk2S+9ilmylANQApWpARxzqeUqduezRGQKHPxZTIvK0KCRARysfdFWv4OoM/siCOt3rdqu/5yu7+qkAiY/5nAaJc2OetRPTCcNroJTUxRPCVCqBAYGAAEABwgJAQEGBgACAAoICwEBDA4NAwECBAUKBwALCQwODBlBSz9M61tbiItFPAYAAAAAZsXZZ3EAAAACCwMCAAABCQA=",
+    "Ack5zuvuw6l+3sCiwjCmWvR/chIpjpqf7t3OhI7lmkjjMHYd9+6/LHmttDz5WuopuCM6zOwZohrecI8VHkji8QEBAAcJi1YvZFQ9OvnC96/TSfhg2nJMx/mCyw8FV9pHdEz4WfQu7nuJKk74pEqr+XDMDjfq9yZ2dRcMHWmc0xJ0SWxUPwbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAGp9UXGMd0yShWY5hpHV62i164o5tLbVxzVVshAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAAnemr5czm3rIjRiSyQRG9QACMJJm9i5TwRgkSYIAAABL2UnENgLDPyB3kO0Wo1JMobmXXPEhoqkM/+x9+LaKzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy7LshKD0K5s2Xtb4nofk45ncPcVAPNq8OfaaP+0YmaYEBQAFAnaUBAAGAgMEICtUUhX7AAAApkUYmP0AAAAkkWQZ6yUAANQglCZNJgAABwIAAhIJANYRfgMAAACryEHXhAAAAAAIAgABDAIAAABiWlNIAAAAAA=="
+  ],
+  "wire_send": 0
+}

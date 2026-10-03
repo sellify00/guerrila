@@ -1,0 +1,9 @@
+status=run78e_complete
+source_row_count=3
+size_row_count=24
+row_decision_counts={"NEGATIVE_ALL_SIZES":3}
+malformed_autopsy_rows=0
+malformed_pm_rows=0
+malformed_arch_tail_rows=0
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_batch3_78e_size_aware_ev_ladder/rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/epoch8_auto_strict_directarb_private_egress_run78_batch3_78e_size_aware_ev_ladder/rows.csv

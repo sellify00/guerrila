@@ -1,0 +1,16 @@
+status=fail
+failure_reasons=local_rpc_unhealthy,reference_rpc_unreachable
+active_systemd_unit=sh1-agave-no-geyser-2.service
+dynamic_port_range=8000-8025
+local_finalized_slot=421911607
+local_health=error
+local_health_error={'code': -32005, 'message': 'Node is behind by 718 slots', 'data': {'numSlotsBehind': 718}}
+local_processed_slot=421911639
+local_rpc_url=http://127.0.0.1:8899
+max_finalized_slot_lag=4096
+max_processed_slot_lag=2048
+reference_rpc_error=<urlopen error [Errno -3] Temporary failure in name resolution>
+reference_rpc_url=https://rpc.example.invalid
+require_dynamic_ports=True
+udp_listener_count=30
+validator_process_count=1

@@ -1,0 +1,52 @@
+{
+  "account_include_count": 0,
+  "account_include_values": [],
+  "blocker_counts": {
+    "blocked_backrun_builder_not_integrated": 8,
+    "blocked_our_backrun_tx_second_false": 8,
+    "blocked_pm_reserve_not_created": 8,
+    "blocked_preprocessed_target_blockhash_invalid": 2,
+    "blocked_tip_missing": 8
+  },
+  "filter_mode": "nofilter",
+  "first_message_ok": true,
+  "first_message_timeout_count": 0,
+  "initial_request_ok": true,
+  "live_landed": 0,
+  "preprocessed_backrun_shape_count": 0,
+  "preprocessed_connect_ok": true,
+  "preprocessed_decodable_tx_count": 8,
+  "preprocessed_raw_tx_seen_count": 8,
+  "preprocessed_supported_venue_count": 0,
+  "preprocessed_swap_like_tx_count": 0,
+  "preprocessed_tx_bytes_available_count": 8,
+  "program_id_counts": {
+    "11111111111111111111111111111111": 3,
+    "99vQwtBwYtrqqD9YSXbdum3KBdxPAVxYTaQ3cfnJSrN2": 1,
+    "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 1,
+    "BPP531ELta5NTmMnBfi5RkTvN6GoyZUNmyLBEkGDQQwf": 1,
+    "ComputeBudget111111111111111111111111111111": 6,
+    "Fibo6vWHQLVqh6ci5BbdPrNR29q2qesJqiSEbR99y8L9": 1,
+    "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": 1,
+    "NA247a7YE9S3p9CdKmMyETx8TTwbSdVbVYHHxpnHTUV": 1,
+    "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt": 2,
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 1,
+    "dijkbkCAKfFTCxQg3u1pg82gVU1jJGHBBRcteD11mBu": 1
+  },
+  "recognized_venue_counts": {},
+  "selection_result_counts": {
+    "blocked_backrun_builder_not_integrated": 6,
+    "blocked_preprocessed_target_blockhash_invalid": 2
+  },
+  "sendBundle_called": false,
+  "slice_count": 8,
+  "slice_seconds": 15,
+  "source": "laserstream_preprocessed",
+  "status": "runls13a_preprocessed_backrun_target_census_complete",
+  "supported_program_candidate_count": 0,
+  "target_already_landed_at_first_check_count": 0,
+  "target_blockhash_valid_count": 6,
+  "target_not_landed_at_first_check_count": 8,
+  "total_window_seconds": 120,
+  "wire_send": 0
+}

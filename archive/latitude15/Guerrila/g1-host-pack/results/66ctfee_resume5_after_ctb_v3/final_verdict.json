@@ -1,0 +1,18 @@
+{
+  "counterfactual_bundle_positive_rows": 3,
+  "fee_model_error_rows": 0,
+  "final_verdict": "CONTINUATION_FEE_TIP_BASIS_REVIEW_COMPLETE",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "net_positive_after_corrected_cost_rows": 0,
+  "review_outcome_counts": {
+    "BUNDLE_COUNTERFACTUAL_POSITIVE_ONLY": 3,
+    "SENDER_PRIORITY_PLUS_TIP_STILL_NEGATIVE": 5
+  },
+  "rows_seen": 8
+}

@@ -1,0 +1,64 @@
+{
+  "score": 78,
+  "done": false,
+  "major_issues": [
+    "Mobile: the flow canvas is effectively unusable—content is dimmed/low-contrast, nodes are partially off-screen, and there’s no obvious pan/zoom affordance beyond tiny controls. This reads like a static image rather than an interactive primary surface.",
+    "Mobile: right-side information panels stack into a very long scroll with no quick navigation/section anchors; key status (RPC truth / unit / listeners) gets buried, hurting discoverability.",
+    "Both: some text blocks risk overflow/poor wrapping (long URL + long inline code blocks). On mobile, these are likely to cause horizontal scrolling or clipped text in narrow cards."
+  ],
+  "medium_issues": [
+    "Hierarchy: page header area is busy (host/status string + pills + action button). The primary action 'Run UI review loop' competes with status chip; spacing and grouping feel cramped.",
+    "Density/spacing: cards have inconsistent internal padding and vertical rhythm; some sections feel tight (chips/tags) while others have large empty areas (canvas region).",
+    "Contrast/readability: muted gray text on dark backgrounds is borderline in several places (descriptions, small labels like 'CAPITAL', 'RUNTIME', 'MOVING HANDOFFS').",
+    "Canvas composition: large dark vignette/gradient over the flow reduces clarity; grid and nodes blend into background.",
+    "Controls: zoom controls are small and not thumb-friendly on mobile; no clear 'Reset view' label (icon-only)."
+  ],
+  "minor_issues": [
+    "Formatting polish: numbers show excessive precision (e.g., capital has many decimals) which reads noisy.",
+    "Icon alignment: chevron/dropdown icon in the Capital card feels slightly detached from the rest of the row and lacks a clear hit area.",
+    "Bottom 'Host/eno1/Blocker' cards feel like a separate dashboard row; on mobile they add more scroll without clear priority."
+  ],
+  "recommended_changes": [
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Fix long-string wrapping to prevent horizontal overflow: apply `overflow-wrap:anywhere; word-break:break-word;` on card bodies and especially code/URL elements; for inline code blocks add `white-space:pre-wrap;` and `max-width:100%`."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Improve mobile canvas usability: increase canvas container height (e.g., `min-height: 52vh` on small screens), reduce heavy vignette/overlay opacity, and increase node/background contrast. Ensure the canvas area has clear boundaries and does not appear disabled/dim."
+    },
+    {
+      "priority": "high",
+      "path_hint": "public/styles.css",
+      "change": "Make zoom/pan controls mobile-friendly: bump button size to at least 40x40px, add spacing, and give icon-only buttons visible labels via `aria-label` + tooltip style (or small text)."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Tighten and normalize card spacing: set consistent `padding` (e.g., 16px), consistent section gaps (e.g., 12–16px), and consistent label typography so the vertical rhythm feels uniform across stacked panels."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/index.html",
+      "change": "Add lightweight in-page section anchors (e.g., sticky mini-nav or 'Jump to' links) on mobile for: Canonical Flow, Capital, Runtime, Ledger/RPC Truth, Idle/Stopped. This reduces scroll hunting."
+    },
+    {
+      "priority": "medium",
+      "path_hint": "public/styles.css",
+      "change": "Improve text contrast for secondary labels/descriptions: slightly brighten muted text (e.g., from ~#8a8f98 to ~#a7adb7) and ensure minimum 4.5:1 for small text."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/app.js",
+      "change": "Format large numeric values for readability: clamp to 2–4 decimals (or show full value on hover/expand). Example: display `12.5000 SOL` with an info tooltip for exact precision."
+    },
+    {
+      "priority": "low",
+      "path_hint": "public/styles.css",
+      "change": "Clarify click targets on card headers (e.g., Capital chevron): enlarge hit area and align vertically with header baseline; add `cursor:pointer` and hover state."
+    }
+  ],
+  "stop_reason": "Not production-worthy yet due to mobile primary-surface (flow canvas) usability/clarity issues and long-text overflow risk; needs improved responsiveness, wrapping, and control ergonomics before stopping."
+}

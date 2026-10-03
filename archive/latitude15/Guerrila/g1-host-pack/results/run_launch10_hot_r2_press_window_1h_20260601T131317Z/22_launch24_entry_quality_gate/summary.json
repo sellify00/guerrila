@@ -1,0 +1,53 @@
+{
+  "entry_quality_blocker_counts": {
+    "entry_quality_warmup": 1
+  },
+  "entry_quality_decision_counts": {
+    "HOT_BLOCK_ENTRY_QUALITY_WARMUP": 1
+  },
+  "entry_quality_evaluated_rows": 1,
+  "entry_quality_ready_rows": 0,
+  "latest_attempt_peak_gain_bps": 0,
+  "latest_attempt_thesis_positive": false,
+  "latest_decision": "HOT_READY_ORDERED_BUNDLE",
+  "latest_first_blocker": "none",
+  "latest_last_trade_side": "",
+  "latest_net_buy_pressure_2s": 0,
+  "latest_panic_drop_2s_bps": 0,
+  "latest_price_change_since_trigger_bps": null,
+  "latest_sell_count_2s": 0,
+  "max_sell_count_2s": 0,
+  "min_price_change_bps": 100,
+  "panic_drop_2s_bps": 700,
+  "rows_seen": 10,
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260601T131317Z",
+  "self_test_cases": {
+    "last_trade_sell": {
+      "blocker": "entry_quality_last_trade_not_buy",
+      "decision": "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE",
+      "expected": "HOT_BLOCK_ENTRY_QUALITY_LAST_TRADE"
+    },
+    "positive": {
+      "blocker": "none",
+      "decision": "ENTRY_QUALITY_READY",
+      "expected": "ENTRY_QUALITY_READY"
+    },
+    "price_not_up": {
+      "blocker": "entry_quality_price_not_up",
+      "decision": "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP",
+      "expected": "HOT_BLOCK_ENTRY_QUALITY_PRICE_NOT_UP"
+    },
+    "sell_count": {
+      "blocker": "entry_quality_sell_pressure",
+      "decision": "HOT_BLOCK_ENTRY_QUALITY_SELL_PRESSURE",
+      "expected": "HOT_BLOCK_ENTRY_QUALITY_SELL_PRESSURE"
+    },
+    "warmup": {
+      "blocker": "entry_quality_warmup",
+      "decision": "HOT_BLOCK_ENTRY_QUALITY_WARMUP",
+      "expected": "HOT_BLOCK_ENTRY_QUALITY_WARMUP"
+    }
+  },
+  "self_test_ok": true,
+  "status": "LAUNCH_ENTRY_QUALITY_GATE_COMPLETE"
+}

@@ -1,0 +1,11 @@
+status=run80reg_complete
+runtime_registry_path=/etc/shadow-engine/shadow_habitat_registry.json
+audit_registry_path=/home/ubuntu/shadow-host-audit/dpdk-runs/habitat_registry/shadow_habitat_registry.jsonl
+habitat_count=15
+run80a_row_count=15
+run80b_row_count=15
+run80c_row_count=3
+status_counts={"TRAINING":3,"DENY":12}
+strategy_label_counts={"TRAINING":1,"TRAINING_BACKRUN_RESEARCH":2,"DENY_NO_VISIBILITY":6,"DENY_POLICY":6}
+rows_jsonl=/home/ubuntu/Guerrila/g1-host-pack/results/80_habitat_registry_latest/habitat_rows.jsonl
+rows_csv=/home/ubuntu/Guerrila/g1-host-pack/results/80_habitat_registry_latest/habitat_rows.csv

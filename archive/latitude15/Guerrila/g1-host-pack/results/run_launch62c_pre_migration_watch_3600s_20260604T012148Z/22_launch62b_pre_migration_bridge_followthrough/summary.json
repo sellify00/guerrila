@@ -1,0 +1,21 @@
+{
+  "acceptance_pass": false,
+  "bridge_followthrough_ready_rows": 0,
+  "current_completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "current_rows_seen": 964,
+  "decision_counts": {
+    "PARK_FOLLOWTHROUGH_PROGRESS_BELOW_THRESHOLD": 964
+  },
+  "initial_completion_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch60_curve_completion_watch/rows.jsonl",
+  "initial_rows_seen": 964,
+  "live_landed": 0,
+  "migration_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl",
+  "migration_rows_seen": 500,
+  "pumpswap_route_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl",
+  "pumpswap_route_rows_seen": 827,
+  "ready_rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62b_pre_migration_bridge_followthrough/ready_rows.jsonl",
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch62c_pre_migration_watch_3600s_20260604T012148Z/22_launch62b_pre_migration_bridge_followthrough/rows.jsonl",
+  "status": "PARK_LAUNCH62B_STALLED_OR_NOT_READY",
+  "waiting_for_migration_rows": 0,
+  "wire_send": 0
+}

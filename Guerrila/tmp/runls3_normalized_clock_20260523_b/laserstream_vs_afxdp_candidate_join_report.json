@@ -1,0 +1,51 @@
+{
+  "join_basis": "rollout_shadow_candidate_stream_signature_slot",
+  "raw_ingress_match": false,
+  "total_signatures": 340,
+  "matched_signatures": 2,
+  "only_afxdp_signatures": 0,
+  "only_laserstream_signatures": 338,
+  "median_delta_us": -46830,
+  "p90_delta_us": -46830,
+  "p99_delta_us": -46830,
+  "by_owner_mode": {
+    "backrun": {
+      "total_signatures": 213,
+      "matched_signatures": 2,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 211,
+      "median_delta_us": -46830,
+      "p90_delta_us": -46830,
+      "p99_delta_us": -46830
+    },
+    "none": {
+      "total_signatures": 127,
+      "matched_signatures": 0,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 127,
+      "median_delta_us": null,
+      "p90_delta_us": null,
+      "p99_delta_us": null
+    }
+  },
+  "by_strategy": {
+    "backrun": {
+      "total_signatures": 213,
+      "matched_signatures": 2,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 211,
+      "median_delta_us": -46830,
+      "p90_delta_us": -46830,
+      "p99_delta_us": -46830
+    },
+    "directarb": {
+      "total_signatures": 127,
+      "matched_signatures": 0,
+      "only_afxdp_signatures": 0,
+      "only_laserstream_signatures": 127,
+      "median_delta_us": null,
+      "p90_delta_us": null,
+      "p99_delta_us": null
+    }
+  }
+}

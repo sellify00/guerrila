@@ -1,0 +1,14 @@
+{
+  "live_autopsy_summary_path": "/home/ubuntu/Guerrila/g1-host-pack/results/21_lsprebrinv_r1_live_pnl_autopsy/runlsprebrinv_r1_live_pnl_autopsy_summary.json",
+  "mint": "EvVzsBQrtJ6opxRVykySDJjy4bUbXg78rxbEGShfv2AL",
+  "pool": "fDqVbiEDfAWq7no37CPdZwtttPK9WhAAmGh2vQ1u1o8",
+  "rpc_url": "https://rpc.example.invalid",
+  "size_list": [
+    "0.005",
+    "0.01",
+    "0.025",
+    "0.05",
+    "0.1"
+  ],
+  "slippage_bps": 100
+}

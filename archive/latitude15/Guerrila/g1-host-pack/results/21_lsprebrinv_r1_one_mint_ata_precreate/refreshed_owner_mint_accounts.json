@@ -1,0 +1,17 @@
+{
+  "accounts": [
+    {
+      "amount_raw": 0,
+      "decimals": 9,
+      "pubkey": "DK4ckHopgQZYUqZYjWASxE8To5qCvKmriKfRTLFa9Krd",
+      "state": "initialized"
+    }
+  ],
+  "derived_ata": "DK4ckHopgQZYUqZYjWASxE8To5qCvKmriKfRTLFa9Krd",
+  "entry_output_account_exists": true,
+  "inventory_refresh_ok": true,
+  "mint": "HXnPCo2RAQ4FZYwKw1hhUvUPkGzxKKQp3a6Zw5SkYE5w",
+  "owner_pubkey": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "pm_sees_output_account": true,
+  "refresh_error": null
+}

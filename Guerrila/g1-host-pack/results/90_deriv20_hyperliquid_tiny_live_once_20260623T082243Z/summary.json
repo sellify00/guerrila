@@ -1,0 +1,23 @@
+{
+  "blocker_counts": {
+    "execute_confirm_missing": 1
+  },
+  "entry_filled": false,
+  "estimated_pnl_usd_before_fees": 0.0,
+  "exchange_submit_attempted": false,
+  "exit_reason": "",
+  "final_open_order_count": 0,
+  "final_open_position_count": 0,
+  "first_failure": "execute_confirm_missing",
+  "flatten_landed": false,
+  "gross_return_bps": 0.0,
+  "live_landed": 0,
+  "max_adverse_bps": 0.0,
+  "peak_return_bps": 0.0,
+  "readiness_root": "/mnt/c/Shadow Engine/Guerrila/g1-host-pack/results/90_deriv19_hyperliquid_tiny_live_readiness_20260623T081935Z",
+  "selected_side": "short",
+  "selected_symbol": "FARTCOIN",
+  "status": "PARK_DERIV20_HYPERLIQUID_TINY_LIVE",
+  "tiny_notional_usd": 25.0,
+  "wire_send": 0
+}

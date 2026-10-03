@@ -1,0 +1,19 @@
+{
+  "final_verdict": "PM_OWNER_LOCK_SURFACE_READY",
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "owner_mode_rebalancing_rows": 32,
+  "pm_owner_lock_conflict_domain_explicit_rows": 32,
+  "pm_owner_lock_owner_mode_rebalancing_rows": 32,
+  "pm_owner_lock_ready_rows": 32,
+  "pm_pending_after_zero_rows": 32,
+  "pm_release_on_no_send_ok_rows": 32,
+  "primary_blocker": "none",
+  "proposal_path_open": false,
+  "rows_seen": 32
+}

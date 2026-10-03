@@ -1,0 +1,17 @@
+{
+  "acceptance_pass": false,
+  "decision_counts": {
+    "PARK_LIVE_RULE_NO_CANDIDATES": 22,
+    "PARK_LIVE_RULE_NO_MIGRATION_WITHIN_TTL": 1
+  },
+  "entry_rules_tested": 23,
+  "live_landed": 0,
+  "markout_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61a_pre_migration_markout_input_builder/rows.jsonl",
+  "profitable_entry_rules": 0,
+  "ready_entry_rules": 0,
+  "resolved_buy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61c_pre_migration_buy_event_resolver/rows.jsonl",
+  "resolved_rows_seen": 1,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch61d_live_detectable_entry_rule_replay/rows.jsonl",
+  "status": "PARK_LAUNCH61D_NO_PROFITABLE_LIVE_RULE",
+  "wire_send": 0
+}

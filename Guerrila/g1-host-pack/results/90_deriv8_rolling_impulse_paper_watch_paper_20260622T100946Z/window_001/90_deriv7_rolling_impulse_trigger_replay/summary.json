@@ -1,0 +1,24 @@
+{
+  "blocker_counts": {
+    "day_volume_below_floor": 121,
+    "none": 1,
+    "post_entry_net_below_cost_floor": 6,
+    "rolling_change_below_trigger": 50
+  },
+  "decision_counts": {
+    "DERIV_ROLLING_TRIGGER_READY": 1,
+    "PARK_DERIV_ROLLING_TRIGGER": 177
+  },
+  "live_landed": 0,
+  "min_trigger_bps": 35.0,
+  "no_wire": true,
+  "ready_rows": 1,
+  "rolling_trigger_ready_rows": 1,
+  "rolling_trigger_rows": 178,
+  "rows": 178,
+  "sample_rows_seen": 28480,
+  "status": "DERIV_ROLLING_TRIGGER_READY",
+  "symbols_seen": 178,
+  "trigger_window_seconds": 60,
+  "wire_send": 0
+}

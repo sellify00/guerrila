@@ -1,0 +1,21 @@
+{
+  "decision_counts": {
+    "BUNDLE_FAIL_ACCOUNT_LIFECYCLE": 1,
+    "BUNDLE_FAIL_SIMULATION": 6
+  },
+  "default_policy_would_send_positive_count": 0,
+  "directarb_bundle_ready_no_submit_count": 0,
+  "evaluated_rows": 7,
+  "live_landed": 0,
+  "manifest_path": "g1-host-pack/results/epoch_directarb_b_replay_manifest/replay_manifest.jsonl",
+  "manifest_rows": 7,
+  "positive_built_sim_pass_count": 0,
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_b_replay_78g2_token2022_research_20260527_095855",
+  "rows_jsonl": "/home/ubuntu/Guerrila/g1-host-pack/results/epoch_directarb_b_replay_78g2_token2022_research_20260527_095855/rows.jsonl",
+  "run_status": 0,
+  "sendBundle_called": false,
+  "send_side_effect_rows": 0,
+  "status": "blocked_no_directarb_b_would_send_positive",
+  "wire_send": 0,
+  "would_send_positive_count": 0
+}

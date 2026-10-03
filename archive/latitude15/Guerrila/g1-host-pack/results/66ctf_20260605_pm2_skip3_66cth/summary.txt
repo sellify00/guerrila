@@ -1,0 +1,12 @@
+status=PARK_CONTINUATION_PM
+merger_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ct0/continuation_candidate_manifest.jsonl
+owner_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ctpm2/run66ctpm2_direct_continuation_pm_owner_lock_repair_rows.jsonl
+execution_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ct2/run66ct2_continuation_execution_rule_rows.jsonl
+risk_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260605_pm2_skip3_66ct3/run66ct3_continuation_markout_risk_rows.jsonl
+rows_seen=114
+proposal_eligible_continuation_rows=0
+architecture_blocker_counts={"PARK_CONTINUATION_ACCOUNT_OR_POLICY": 22, "PARK_CONTINUATION_PM": 92}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

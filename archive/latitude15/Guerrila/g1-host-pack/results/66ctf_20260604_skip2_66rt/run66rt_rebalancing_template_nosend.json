@@ -1,0 +1,15 @@
+{
+  "bundle_no_submit_ready_rows": 0,
+  "decision_counts": {},
+  "live_landed": 0,
+  "row_count": 0,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "sender_no_send_ready_rows": 0,
+  "source_inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ri/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+  "source_policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rp/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+  "source_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+  "status": "run66rt_rebalancing_template_nosend_complete",
+  "step": "66ctf_20260604_skip2_66rt",
+  "wire_send": 0
+}

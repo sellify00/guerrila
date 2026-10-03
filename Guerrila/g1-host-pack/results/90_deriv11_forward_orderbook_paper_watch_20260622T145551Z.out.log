@@ -1,0 +1,25 @@
+
+════════════════════════════════════════════════════════════
+  G1 Validation: 90 Deriv11 - Forward Orderbook Paper Watch
+  2026-06-22 14:55:52 UTC
+════════════════════════════════════════════════════════════
+
+status=DERIV_FORWARD_ORDERBOOK_READY
+duration_seconds=900
+samples=165
+trigger_attempt_rows=24
+trigger_attempt_accepted_rows=24
+closed_attempt_rows=24
+forward_orderbook_ready_rows=1
+notional_usd=25.0
+avg_net_after_orderbook_bps=6.6875
+min_net_after_orderbook_bps=6.6875
+best_candidate_symbol=WLD
+best_candidate_side=short
+best_candidate_net_after_orderbook_bps=6.6875
+decision_counts={"DERIV_FORWARD_ORDERBOOK_READY": 1, "PARK_DERIV_FORWARD_ORDERBOOK": 23}
+blocker_counts={"forward_net_after_orderbook_below_floor": 23, "none": 1}
+trigger_blocker_counts={"none": 24}
+no_wire=true
+wire_send=0
+live_landed=0

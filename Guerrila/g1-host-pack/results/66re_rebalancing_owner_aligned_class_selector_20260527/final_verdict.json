@@ -1,0 +1,22 @@
+{
+  "final_verdict": "PARK_NO_OWNER_ALIGNED_CLASS",
+  "selected_next_package": null,
+  "rejected_class_count": 1,
+  "structural_ready_rows_total": 21,
+  "structural_ready_rows_remaining": 18,
+  "candidate_class_count": 6,
+  "passing_class_count": 0,
+  "selected_next_row_class": null,
+  "primary_missing_surface": "owner_mode_match_rebalancing",
+  "hard_stops_preserved": {
+    "live_send": false,
+    "sendBundle": false,
+    "cap_increase": false,
+    "acquisition": false,
+    "ata_creation": false,
+    "token2022_explicit_allow": false,
+    "broad_hunt": false,
+    "synthetic_pm_owner_lock": false,
+    "owner_mode_override": false
+  }
+}

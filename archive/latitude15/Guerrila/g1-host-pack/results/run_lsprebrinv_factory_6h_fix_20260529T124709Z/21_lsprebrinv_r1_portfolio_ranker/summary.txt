@@ -1,0 +1,14 @@
+status=PARK_SIZE_CONSISTENT_FILTER_ZERO
+rows_seen=15
+source_proposal_ready_rows=10
+source_ata_precreate_only_ready_rows=14
+source_one_mint_live_ready_rows=0
+size_consistent_candidate_rows=0
+top_n=5
+source_decision_counts={"R1_PROPOSAL_READY_ATA_PRECREATE_ONLY": 14}
+rank_decision_counts={"PARK_PROJECTED_EV_SIZE_INCONSISTENT": 10}
+top_candidate={"best_ready_size_sol": "0.005", "candidate_id": "2f943f2d35f20c1f3079dea5f6b2c66e", "decision": "PARK_PROJECTED_EV_SIZE_INCONSISTENT", "direct_exit_nonzero": true, "entry_output_account_exists": false, "exit_size_ladder_pass": true, "expected_projected_ev_after_tip_raw": 0, "first_candidate_blocker": "entry_output_account_missing_requires_precreate", "fresh_route_stability_score": 6, "fresh_route_taxonomy_blocker": "", "hot_sender_exit_expected_wsol_raw": 5774334679, "hot_sender_exit_min_wsol_raw": 5716591332, "immediate_roundtrip_loss_lamports": 10569, "immediate_roundtrip_loss_sol": 1.0569e-05, "inventory_sized_unwind_ev_lamports": 5774129679, "live_landed": 0, "mint": "AmKSbbf6Liyd4TmN3hqeqbg6y9ziWGzgzHdrAoa2U2M7", "planned_inventory_token_out_raw": 8679, "pm_release_ok": true, "pm_reserve_ok": true, "policy_pass": true, "pool": "3DM2vMEvoGiHecbHaFNpjPcTfeywji62go7zaNaYtaPj", "pool_core_reserve_raw": 2, "pool_launch_reserve_raw": 8768, "pool_state_available": true, "pool_state_blocker": "none", "portfolio_rank": 1, "portfolio_score": 0, "projected_ev_positive_unheld_token": false, "projected_unwind_input_lte_held_inventory": false, "projected_unwind_input_lte_planned_inventory": false, "projected_unwind_input_raw": 1146808865319, "record_type": "runlsprebrinv_r1_portfolio_ranker_row", "repeat_count_6h": 1, "row_variant_count": 1, "selected_for_first_live": true, "selected_for_portfolio": true, "sendBundle_called": false, "send_transaction_called": false, "size_consistent_candidate": false, "size_consistent_net_after_mode_c_costs": 5772060649, "source_factory_decision": "R1_PROPOSAL_READY_ATA_PRECREATE_ONLY", "target_sized_unwind_ev_lamports": 5775000000, "taxonomy_decision": "", "venue": "pumpfun_amm", "wire_send": 0}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false

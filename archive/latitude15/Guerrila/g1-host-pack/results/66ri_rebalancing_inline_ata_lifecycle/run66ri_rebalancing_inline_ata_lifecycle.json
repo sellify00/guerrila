@@ -1,0 +1,18 @@
+{
+  "account_ready_count": 0,
+  "decision_counts": {
+    "INLINE_ATA_POLICY_BLOCKED": 69
+  },
+  "inline_ata_creatable_count": 0,
+  "inline_ata_ev_positive_count": 27,
+  "live_landed": 0,
+  "pm_reserve_rent_ok_count": 39,
+  "row_count": 69,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66v_inline_ata_lifecycle_model_20260524_5m_bridge2/run66v_inline_ata_lifecycle_rows.jsonl",
+  "source_overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66u_repeatability_chain_20260524_3x5m_retry3_e3replacement_e1_66r_overlay/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+  "status": "run66ri_rebalancing_inline_ata_lifecycle_complete",
+  "step": "66ri_rebalancing_inline_ata_lifecycle",
+  "wire_send": 0
+}

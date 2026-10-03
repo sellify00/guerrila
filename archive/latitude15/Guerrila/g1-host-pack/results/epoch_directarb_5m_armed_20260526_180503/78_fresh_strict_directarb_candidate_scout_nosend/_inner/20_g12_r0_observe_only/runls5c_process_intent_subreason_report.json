@@ -1,0 +1,34 @@
+{
+  "laserstream_normalized_tx": 292707,
+  "laserstream_feed_to_worker": 43003,
+  "laserstream_worker_read": 43003,
+  "laserstream_process_intent_attempt": 2192,
+  "laserstream_process_intent_ok": 1279,
+  "laserstream_rollout_emitted": 11065,
+  "laserstream_top_pi_disabled_subreason": "reject_pi_quote_missing",
+  "afxdp_private_ingress": 848,
+  "afxdp_feed_to_worker": 848,
+  "afxdp_worker_read": 848,
+  "afxdp_process_intent_attempt": 77,
+  "afxdp_process_intent_ok": 71,
+  "afxdp_rollout_emitted": 246,
+  "afxdp_top_pi_disabled_subreason": "reject_pi_quote_missing",
+  "by_owner_mode": {
+    "backrun": {
+      "reject_pi_min_out_missing": 13,
+      "reject_pi_mint_meta_missing": 16,
+      "reject_pi_no_send_output_suppressed": 169,
+      "reject_pi_pool_state_stale": 69,
+      "reject_pi_quote_missing": 1106,
+      "reject_rollout_gate_inventory_not_ready": 2
+    },
+    "directarb": {
+      "reject_pi_health_unhealthy": 4,
+      "reject_pi_min_out_missing": 8,
+      "reject_pi_mint_meta_missing": 20,
+      "reject_pi_no_send_output_suppressed": 243,
+      "reject_pi_pool_state_stale": 69,
+      "reject_pi_quote_missing": 1136
+    }
+  }
+}

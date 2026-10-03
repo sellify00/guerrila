@@ -1,0 +1,13 @@
+status=run66rt_rebalancing_template_nosend_complete
+source_inline_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ri/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl
+source_policy_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rp/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl
+source_rule_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66re/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl
+row_count=0
+sender_no_send_ready_rows=0
+bundle_no_submit_ready_rows=0
+decision_counts={}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false
+ata_created=false

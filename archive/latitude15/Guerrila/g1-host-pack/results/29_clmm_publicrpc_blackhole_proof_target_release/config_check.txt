@@ -1,0 +1,60 @@
+Config loaded: /home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof_target_release/config.guerrila.yaml
+Profile:       V6_4Guerrila
+
+PASS  all Guerrila static validation rules satisfied
+
+--- Guerrila guard summary ---
+PUBLIC_EXECUTION_DISABLED=false
+PUBLIC_RPC_SCOUT_EXPLICIT=true
+PUBLIC_RPC_SCOUT_ROUTE_ENABLED=true
+PRE_SIGN_EGRESS_GATE=true
+EGRESS_HEALTH_REQUIRED=true
+HARMONIC_TACTIC_MASK_REQUIRED=false
+DOMINANCE_GATE_MODE=observe_only
+TAYLOR_MODE=pre_filter_gate_only
+GHOST_SNIPE_MODE=cache_prefetch_only
+
+--- Resolved routing profile ---
+  PUBLIC_GEYSER_DISABLED    = true  (default_public_geyser=Drop)
+  public_rpc_scout          = explicit_enabled
+  money_workers            = 4
+  quic_workers             = 0
+  kamikaze_enabled         = false
+  private_mempool_strategy = JitoBundleIfCompatible
+  enable_harmonic_lane     = false
+  harmonic_quarantine      = true
+  stale_harmonic_action    = Some(RerouteToJito)
+  atba_route_mode          = Some(JitoOnly)
+  apex_partial_route_mode  = Some(JitoOnly)
+  harmonic_cu_pad_units    = Some(150)
+  quarantine_mode          = Some(SpecificErrorOnly)
+--- Risk corset ---
+  reserve_floor_sol        = 10
+  max_position_sol/mint    = 15
+  max_notional_sol/entity  = 30
+--- Route policy ---
+  runtime route set:       {drop, jito_bundle, harmonic_bundle, public_rpc_scout}
+  public execution route:  explicit public_rpc_scout (RPC only)
+--- Quant tactics ---
+  taylor_compression       = enabled=true, mode=PreFilterGateOnly
+  ghost_snipe              = enabled=true, mode=CachePrefetchOnly
+  write_lock_sat_discount  = enabled=false
+  splinter_cell_arb        = enabled=false
+  cu_density_optimization  = enabled=true, mode=MinimumEmpiricalSafePadding, pad=150
+  exhaust_scavenging       = enabled=true, route=DeterministicJitoBackrunOnly, max_sol=15, min_competitor=50, min_convexity=600bps
+  tick_boundary_sabotage   = enabled=true, mode=ShadowObserveOnly, threshold=100000
+--- G9B-A OPSO ---
+  enabled                  = true
+  mode                     = ObserveOnly
+  sidecar_enabled          = true
+  sidecar_stale_action     = FallbackToBaseline
+  max_sidecar_staleness_ns = 400000000
+  high_alpha_override      = true
+  max_shade_bps            = 3000
+  require_shadow_pnl       = true
+  require_pm_episode_ledger= true
+  sparse_class_action      = FallbackToBaseline
+  live_bid_shading_enabled = false
+
+NOTE  startup readiness checks (leader-class, banked LUTs) are not run in --check-config mode.
+      Real startup will call validate_guerrila_startup() after shared-memory segments are opened.

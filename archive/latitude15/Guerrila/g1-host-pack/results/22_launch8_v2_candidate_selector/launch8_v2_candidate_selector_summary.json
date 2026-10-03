@@ -1,0 +1,27 @@
+{
+  "auto_flatten_ready_count": 1,
+  "best_candidate": {},
+  "buy_prefix_pass_count": 1,
+  "decision_counts": {
+    "PARK_V2_EXIT_ZERO": 1
+  },
+  "exit_ladder_pass_count": 0,
+  "first_blocker_counts": {
+    "buy_count_2s_below_threshold": 1
+  },
+  "live_current_window_rows": 1,
+  "live_landed": 0,
+  "max_cash_at_risk_valid_count": 1,
+  "max_loss_budget_valid_v2_count": 0,
+  "missing_lineage_rows": 0,
+  "pm_ready_count": 1,
+  "policy_pass_count": 1,
+  "rows_seen": 1,
+  "rows_with_target_seen_preprocessed_ns": 1,
+  "sendBundle_called": false,
+  "status": "PARK_NO_LAUNCH_V2_READY_ROWS",
+  "trigger_mode": "B",
+  "v2_ata_required_rows": 0,
+  "v2_ready_rows": 0,
+  "wire_send": 0
+}

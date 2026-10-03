@@ -1,0 +1,17 @@
+status=run66ea_existing_account_postshock_scan_complete
+source_row_count=107
+exact_positive_postshock_rows=107
+existing_account_would_fire=0
+existing_account_exact_quote_match_count=107
+existing_account_min_out_positive_count=107
+existing_account_pm_reserve_ok_count=44
+existing_account_account_ready_count=63
+existing_account_inventory_ready_count=44
+owner_counts={"continuation": 63, "rebalancing": 44}
+first_existing_account_blocker_counts={"account_ata_missing": 39, "entry_rule_missing": 1, "exit_rule_missing": 4, "inventory_not_ready": 63}
+wire_send=0
+live_landed=0
+send_transaction_called=false
+sendBundle_called=false
+acquisition_allowed=false
+ata_created=false

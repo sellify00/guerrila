@@ -1,0 +1,17 @@
+status=PARK_CONTINUATION_PM_OWNER_LOCK
+source_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ct1/run66ct1_continuation_owner_eligibility_rows.jsonl
+pm_rows=/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66rg3/run66rg3_rebalancing_pm_owner_lock_surface_rows.jsonl
+rows_seen=114
+owner_mode_match_continuation_rows=114
+non_toxic_rows=114
+pm_owner_lock_ready_rows=0
+pm_owner_lock_owner_mode_continuation_rows=0
+pm_release_on_no_send_ok_rows=0
+pm_pending_after_zero_rows=0
+pm_reserve_ok_rows=0
+decision_counts={"PM_OWNER_MODE_MISSING": 114}
+first_pm_owner_lock_blocker_counts={"PM_OWNER_MODE_MISSING": 114}
+wire_send=0
+live_landed=0
+send_transaction_called=False
+sendBundle_called=False

@@ -1,0 +1,52 @@
+{
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "route_specific_net_ev_positive": true,
+  "all_in_costs_included": [
+    "base_fee_raw",
+    "policy_tip_raw",
+    "estimated_priority_fee_raw",
+    "route_specific_fee_tip_applied",
+    "slippage_via_min_out",
+    "rent_or_ata_effects_zero_for_existing_accounts"
+  ],
+  "aggregate_route_specific_net_ev_raw": 6990285,
+  "aggregate_matched_rollout_net_ev_after_fee_tip_raw": 638751,
+  "rows": [
+    {
+      "candidate_id": "1779884775541075267:422501882:cbfRsbUghyoUj78oY3Njb987SBoQXYDf7BADzmLwqtLFqL6kaAJgsqCnjNzSRLyRHrwFUmJbKgXQCSFeFQHmcXD:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "expected_out_raw": 57897533,
+      "min_out_raw": 57318557,
+      "base_fee_raw": 5000,
+      "policy_tip_raw": 1461195,
+      "estimated_priority_fee_raw": 1461195,
+      "route_specific_fee_tip_applied": 200000,
+      "route_specific_net_ev_raw": 2330095,
+      "route_specific_net_ev_positive": true,
+      "matched_rollout_net_ev_after_fee_tip_raw": 254241
+    },
+    {
+      "candidate_id": "1779884623393764239:422501501:5K4fjZ4GNEVwUAxCh9HMafokRFmFzdCaap3NrXwrUQdok4PwuRsHU9eC4aDghMdr7USn4rvNRzrajfQPBvsXqC3n:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "expected_out_raw": 56877365,
+      "min_out_raw": 56308591,
+      "base_fee_raw": 5000,
+      "policy_tip_raw": 1444559,
+      "estimated_priority_fee_raw": 1444559,
+      "route_specific_fee_tip_applied": 200000,
+      "route_specific_net_ev_raw": 2330095,
+      "route_specific_net_ev_positive": true,
+      "matched_rollout_net_ev_after_fee_tip_raw": 251290
+    },
+    {
+      "candidate_id": "1779884649157538629:422501567:22A9tnBmK43StiRCJJeR5iTNRJi2VwbneqwPzqAc8U5KKKErVEnUyBqiqNijS5jfWHX2f8VbLo7tqJJ7HkdnF3oL:8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj:So11111111111111111111111111111111111111112:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "expected_out_raw": 30771151,
+      "min_out_raw": 30463439,
+      "base_fee_raw": 5000,
+      "policy_tip_raw": 774450,
+      "estimated_priority_fee_raw": 774450,
+      "route_specific_fee_tip_applied": 200000,
+      "route_specific_net_ev_raw": 2330095,
+      "route_specific_net_ev_positive": true,
+      "matched_rollout_net_ev_after_fee_tip_raw": 133220
+    }
+  ]
+}

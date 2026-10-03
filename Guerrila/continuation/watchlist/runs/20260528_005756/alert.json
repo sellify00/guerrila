@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-05-27T17:57:56.285Z",
+  "should_alert": true,
+  "reasons": [
+    "4 new pool(s) entered the watchlist.",
+    "Top pool changed from Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE to 3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv.",
+    "3 watchlist pool(s) flipped best-side bias.",
+    "1 pool(s) moved materially in continuation score.",
+    "8 active continuation-positive pool(s) were found in the current discovery universe."
+  ],
+  "previous_watchlist_count": 4,
+  "current_watchlist_count": 8,
+  "current_top": {
+    "rank": 1,
+    "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+    "venue": "raydium_clmm",
+    "pair": "SOL/USDC",
+    "base_symbol": "SOL",
+    "quote_symbol": "USDC",
+    "best_side": "buy",
+    "latest_age_hours": 0,
+    "latest_timestamp": 1779904650,
+    "tx_count_5m": 92,
+    "liquidity_usd": 6008509.9,
+    "volume_5m": 96864.14,
+    "current_activity_score": 0.003929,
+    "continuation_live_score": 7.9935,
+    "shock_count": 13,
+    "same_direction_next1_rate": 0.9231,
+    "price_continuation_next1_rate": 0.6923,
+    "majority_same_direction_next3_rate": 0.8462
+  },
+  "diff": {
+    "previous_count": 4,
+    "next_count": 8,
+    "new_pools": [
+      {
+        "rank": 2,
+        "pool": "FwewVm8u6tFPGewAyHmWAqad9hmF7mvqxK4mJ7iNqqGC",
+        "venue": "orca_whirlpool",
+        "pair": "SOL/USDT",
+        "base_symbol": "SOL",
+        "quote_symbol": "USDT",
+        "best_side": "buy",
+        "latest_age_hours": 0,
+        "latest_timestamp": 1779904650,
+        "tx_count_5m": 80,
+        "liquidity_usd": 537007.95,
+        "volume_5m": 3138.61,
+        "current_activity_score": 0.002494,
+        "continuation_live_score": 7.9293,
+        "shock_count": 5,
+        "same_direction_next1_rate": 0.8,
+        "price_continuation_next1_rate": 1,
+        "majority_same_direction_next3_rate": 0.4
+      },
+      {
+        "rank": 3,
+        "pool": "HRYEjwdo3bZ1TpXKWKcezqiwSV2Ywuh4LxMa2PzoCnG6",
+        "venue": "meteora_damm_v2",
+        "pair": "SOL/USDC",
+        "base_symbol": "SOL",
+        "quote_symbol": "USDC",
+        "best_side": "sell",
+        "latest_age_hours": 0,
+        "latest_timestamp": 1779904650,
+        "tx_count_5m": 55,
+        "liquidity_usd": 1023107.22,
+        "volume_5m": 93530.83,
+        "current_activity_score": 0.005859,
+        "continuation_live_score": 7.5208,
+        "shock_count": 8,
+        "same_direction_next1_rate": 1,
+        "price_continuation_next1_rate": 0.5,
+        "majority_same_direction_next3_rate": 0.875
+      },
+      {
+        "rank": 6,
+        "pool": "5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6",
+        "venue": "meteora_damm_v2",
+        "pair": "SOL/USDC",
+        "base_symbol": "SOL",
+        "quote_symbol": "USDC",
+        "best_side": "buy",
+        "latest_age_hours": 0.01,
+        "latest_timestamp": 1779904639,
+        "tx_count_5m": 56,
+        "liquidity_usd": 4115515.49,
+        "volume_5m": 130042.82,
+        "current_activity_score": 0.002807,
+        "continuation_live_score": 5.7195,
+        "shock_count": 6,
+        "same_direction_next1_rate": 0.6667,
+        "price_continuation_next1_rate": 0.6667,
+        "majority_same_direction_next3_rate": 0.5
+      },
+      {
+        "rank": 7,
+        "pool": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+        "venue": "raydium_clmm",
+        "pair": "SOL/USDC",
+        "base_symbol": "SOL",
+        "quote_symbol": "USDC",
+        "best_side": "sell",
+        "latest_age_hours": 0,
+        "latest_timestamp": 1779904651,
+        "tx_count_5m": 97,
+        "liquidity_usd": 376773.26,
+        "volume_5m": 6084.85,
+        "current_activity_score": 0.002512,
+        "continuation_live_score": 5.4206,
+        "shock_count": 6,
+        "same_direction_next1_rate": 0.8333,
+        "price_continuation_next1_rate": 0.3333,
+        "majority_same_direction_next3_rate": 0.6667
+      }
+    ],
+    "dropped_pools": [],
+    "rank_changes": [
+      {
+        "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+        "from_rank": 2,
+        "to_rank": 1
+      },
+      {
+        "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+        "from_rank": 1,
+        "to_rank": 5
+      },
+      {
+        "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+        "from_rank": 3,
+        "to_rank": 8
+      }
+    ],
+    "best_side_flips": [
+      {
+        "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+        "from_side": "sell",
+        "to_side": "buy"
+      },
+      {
+        "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+        "from_side": "buy",
+        "to_side": "sell"
+      },
+      {
+        "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+        "from_side": "buy",
+        "to_side": "sell"
+      }
+    ],
+    "score_jumps": [
+      {
+        "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+        "delta_score": -2.121,
+        "from_score": 6.6587,
+        "to_score": 4.5377
+      }
+    ],
+    "top_pool_changed": true,
+    "previous_top_pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+    "next_top_pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+    "should_alert": true
+  }
+}

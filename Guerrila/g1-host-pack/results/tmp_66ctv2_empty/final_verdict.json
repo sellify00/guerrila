@@ -1,0 +1,13 @@
+{
+  "decision_counts": {},
+  "final_verdict": "PARK_FRESH_RUNTIME_SIGNAL_MISSING",
+  "fresh_runtime_ready_rows": 0,
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "thesis_signal_source": "fresh_runtime_recomputed"
+}

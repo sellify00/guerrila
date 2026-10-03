@@ -1,0 +1,10 @@
+status=RESCUE_FLATTEN_SIM_FAILED
+attempt_report_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch17_r2_hold_entry_probe_20260601T094553Z/run_launch10_hot_r2_press_window_0h_20260601T094553Z/attempts/attempt_0001_d9915284e225/launch5_one_mint_live_execute.json
+rescue_dir=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch17_r2_hold_entry_probe_20260601T094553Z/rescue_flatten_20260601T100414Z
+mint=BqbZadDBqRVQJSc6V6h9sm7ZN8wPXKZViibypNmyWu5m
+pool=GaeSr9nvNvPzrE4F42YvuriMVzn8N4n4KA39YpMfa7NA
+token_account=DJYCab75Y2z2m9rEbZroT3hdmim4CPSGuc3Lu38gpqRM
+amount_raw=13693058707381
+sender_tip_lamports=200000
+sender_tip_account=5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn
+first_failure={"InstructionError": [0, {"Custom": 6040}]}

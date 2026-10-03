@@ -1,0 +1,33 @@
+{
+  "attempt_report_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260603T082112Z/attempts/attempt_0003_36c429321cf0/launch5_one_mint_live_execute.json",
+  "close_account_possible": true,
+  "close_meta": {
+    "last_valid_block_height": 402073377
+  },
+  "close_tx_landed": true,
+  "close_tx_signature": "3epLwRXU4Egw7BFv7XCx3ajHPDr6aBU2iVYqXjhynrgPsUJp8tGm1rMSWvTfTL7BjrGgrVfyh27uUq1uFKEdKw4G",
+  "confirm_status": {
+    "confirmationStatus": "confirmed",
+    "confirmations": 1,
+    "err": null,
+    "slot": 423989843,
+    "status": {
+      "Ok": null
+    }
+  },
+  "daily_ledger_update_detail": "/home/ubuntu/Guerrila/g1-host-pack/results/runtime_daily_risk/22_launch10_hot_r2_press_window_2026-06-03.json",
+  "daily_ledger_updated": true,
+  "native_delta_lamports": 2034280,
+  "output_account": "6HTEVKXeKzM3cXfZLqepMekkZMcAkYyodujgiBrDEYQs",
+  "output_account_balance_raw": 0,
+  "output_account_exists": true,
+  "output_account_exists_after": false,
+  "output_account_lamports": 2039280,
+  "output_account_owner_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner_pubkey": "ANutmYD3QaoTP3YQgTACJUTX17WaB8kviJBS3FSe9ieX",
+  "pnl_after_rent_recovery": -525238,
+  "pnl_before_rent_recovery": -2559518,
+  "rent_recovered_lamports": 2039280,
+  "selected_mint": "DQiw9Q8bNVJR457baNN8CKof1C6MZH1LYHLepqsRmTvJ",
+  "status": "POST_FLATTEN_ACCOUNT_CLOSED_RENT_RECOVERED"
+}

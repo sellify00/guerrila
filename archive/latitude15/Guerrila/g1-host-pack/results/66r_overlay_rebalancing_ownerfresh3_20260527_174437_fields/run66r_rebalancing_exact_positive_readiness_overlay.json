@@ -1,0 +1,66 @@
+{
+  "ata_only_convertible_exact_positive_rows": 21,
+  "baseline_blocker_counts": {
+    "account_ata_missing": 21,
+    "entry_rule_missing": 7,
+    "exit_rule_missing": 1,
+    "none": 3
+  },
+  "baseline_would_fire": 3,
+  "combined_readiness_convertible_exact_positive_rows": 21,
+  "combined_synthetic_blocker_counts": {
+    "entry_rule_missing": 7,
+    "exit_rule_missing": 1,
+    "none": 24
+  },
+  "combined_synthetic_readiness_would_fire": 24,
+  "exact_positive_q2_rows": 32,
+  "exact_positive_rows_joined_to_run66": 32,
+  "hydk": {
+    "baseline_blocker_counts": {},
+    "combined_synthetic_blocker_counts": {},
+    "combined_synthetic_readiness_would_fire_delta": 0,
+    "exact_quote_positive_rows": 0,
+    "full_band_exit_probe_value_usdc": null,
+    "matched_rollout_positive_rows": 0,
+    "mint": "HyDKNdnhZNVYQMruBevbNsUWruA9STmAQrS4srXApump",
+    "planner_ata_review_decision": null,
+    "planner_decision": null,
+    "planner_precreate_candidate_expected_would_fire_delta_after_quote_overlay": 0,
+    "planner_precreate_candidate_net_ev_after_fee_tip_positive_rows": 0,
+    "planner_precreate_candidate_quote_positive_rows": 0,
+    "review_result": "SYNTHETIC_ATA_OVERLAY_REVIEW",
+    "synthetic_ata_blocker_counts": {},
+    "synthetic_ata_would_fire_delta": 0,
+    "synthetic_rows_seen": 0,
+    "unit_exit_probe_value_usdc": null
+  },
+  "inventory_only_convertible_exact_positive_rows": 0,
+  "live_landed": 0,
+  "quote_overlay_blocker_counts": {
+    "account_ata_missing": 21,
+    "entry_rule_missing": 7,
+    "exit_rule_missing": 1,
+    "none": 3
+  },
+  "quote_overlay_would_fire": 3,
+  "source_run66_rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66_rule_rebalancing_ownerfresh3_20260527_174437_fields/run66_rebalancing_rule_rows.jsonl",
+  "source_run66a_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66a_rebalancing_ownerfresh3_20260527_174437_fields/run66a_rebalancing_account_ata_unlock_rows.jsonl",
+  "source_run66q2_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_ownerfresh3_20260527_174437_fields/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+  "status": "run66r_rebalancing_exact_positive_readiness_overlay_complete",
+  "step": "66r_overlay_rebalancing_ownerfresh3_20260527_174437_fields",
+  "synthetic_ata_blocker_counts": {
+    "entry_rule_missing": 7,
+    "exit_rule_missing": 1,
+    "none": 24
+  },
+  "synthetic_ata_overlay_would_fire": 24,
+  "synthetic_inventory_blocker_counts": {
+    "account_ata_missing": 21,
+    "entry_rule_missing": 7,
+    "exit_rule_missing": 1,
+    "none": 3
+  },
+  "synthetic_inventory_overlay_would_fire": 3,
+  "wire_send": 0
+}

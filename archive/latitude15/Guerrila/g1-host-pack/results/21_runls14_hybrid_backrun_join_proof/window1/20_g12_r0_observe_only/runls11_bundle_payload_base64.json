@@ -1,0 +1,28 @@
+{
+  "bundle_expiry_policy": "no_submit_hybrid_readiness_only",
+  "bundle_payload_valid": true,
+  "bundle_tx_count": 2,
+  "bundle_tx_count_max_allowed": 5,
+  "estimated_priority_fee_lamports": 0,
+  "estimated_tip_lamports": 10000000000,
+  "expected_out_positive": true,
+  "live_landed": 0,
+  "min_out_positive": true,
+  "net_ev_positive_after_tip": true,
+  "our_backrun_tx_present": true,
+  "our_backrun_tx_second": true,
+  "provider": "jito_via_helius",
+  "record_type": "runls14_hybrid_bundle_payload",
+  "selected_route_family": "jito_bundle",
+  "sendBundle_called": false,
+  "send_bundle_disabled_in_mode": true,
+  "target_tx_bytes_available": true,
+  "target_tx_first": true,
+  "target_tx_required": true,
+  "tip_present": true,
+  "txs_base64": [
+    "ASGyLw5JSZVD95aQI76cSoSpOJ/JILlYrrfs/bI9ewvrUeioa2BK41d1EF8RWes2dM1C71wVwabg84lwUPxt0gmAAQAJDxtbLQtuCwUoOb+7LfIfE9yuBvCv/18zQS0fln9EoSAtfJaGe6DFwRmjiU4yNJELMvdB3l7YkWvJrOItOoeZxMd2UYbNHl7U5USVkC8Hu0of3nM04Bwh+/WP0G2gOFZNtEZUNs23RJPpIW55VixytlNKavJzilzJxmIFfZW/JOKKwithtGRCqd1rNy7O9mZhSBl2e/UfrAhPKjMMkhS5DM0gtopEgUsguq7qsXDMsPSDjTtsgpl4lBgIPY/xIdJ6q4yXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCS0hNWV6FZwrh9S2anDbjpdSOJ/3aq8gbO0GOjj5Wu3yzNU1rKXxc2rIIt0Hc+TZL72KWbKUA1AClakBHHOp5ZMnbYRCqtGZAz0UNQU6c0J08xGwcgMQkA7umdCgidigBt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/wqduezRGQKHPxZTIvK0KCRARysfdFWv4OoM/siCOt3rfPw225rNy1YfOdLI3rj/Ca4h4MaB0iezLfSSmglNGJTAwYGAAEABwgJAAoOCwIDAQQFBwwACQ0KDgoY+MaekeF1h8jxK6S9gQUAAN5dsiYAAAAACQMBAAABCQA=",
+    "AW39TzCqdEY4jELQPfQUNTliOQKT9hQ3QM9EoTtKPLg3jmfdinW31kUoWI7+SkbZtH2RFdWm7tJBJwpo7Gmmpg8BAAcJi1YvZFQ9OvnC96/TSfhg2nJMx/mCyw8FV9pHdEz4WfQu7nuJKk74pEqr+XDMDjfq9yZ2dRcMHWmc0xJ0SWxUPwbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAGp9UXGMd0yShWY5hpHV62i164o5tLbVxzVVshAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAAnemr5czm3rIjRiSyQRG9QACMJJm9i5TwRgkSYIAAABL2UnENgLDPyB3kO0Wo1JMobmXXPEhoqkM/+x9+LaKzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVpomTifURb3LtsCiINvc7Fa48fM1aaIymfXnc3XidgEBQAFAnaUBAAGAgMEIK6h1UKhBQAA5Xx2rK8FAABF3UyatQwAAFIlqHfWDAAABwIAAhIJAMqaOwAAAADwmDKGAAAAAAAIAgABDAIAAAAA5AtUAgAAAA=="
+  ],
+  "wire_send": 0
+}

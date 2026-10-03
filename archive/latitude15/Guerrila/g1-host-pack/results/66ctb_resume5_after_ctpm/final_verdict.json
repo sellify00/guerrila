@@ -1,0 +1,16 @@
+{
+  "entry_rule_recovered_rows": 88,
+  "exit_rule_recovered_rows": 88,
+  "final_verdict": "CONTINUATION_RULE_CARRY_FORWARD_READY",
+  "first_carry_forward_blocker_counts": {
+    "PM_OWNER_MODE_MISSING": 1
+  },
+  "hard_stops_preserved": {
+    "live_landed": 0,
+    "sendBundle_called": false,
+    "send_transaction_called": false,
+    "wire_send": 0
+  },
+  "live_approval": false,
+  "rows_seen": 88
+}

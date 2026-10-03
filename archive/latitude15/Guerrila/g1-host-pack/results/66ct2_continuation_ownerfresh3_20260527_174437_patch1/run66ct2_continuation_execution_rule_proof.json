@@ -1,0 +1,14 @@
+{
+  "continuation_execution_plumbing_ready_rows": 6,
+  "decision_counts": {
+    "BLOCKED_ENTRY_RULE": 34,
+    "CONTINUATION_EXECUTION_PLUMBING_READY": 6
+  },
+  "live_landed": 0,
+  "rows_seen": 40,
+  "sendBundle_called": false,
+  "send_transaction_called": false,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ct1_continuation_ownerfresh3_20260527_174437_patch1/run66ct1_continuation_owner_eligibility_rows.jsonl",
+  "status": "run66ct2_continuation_execution_rule_proof_complete",
+  "wire_send": 0
+}

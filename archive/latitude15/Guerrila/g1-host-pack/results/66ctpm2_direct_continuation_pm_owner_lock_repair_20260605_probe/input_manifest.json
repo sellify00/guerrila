@@ -1,0 +1,17 @@
+{
+  "acquisition": false,
+  "ata_creation": false,
+  "base_tx_fee_lamports": 5000,
+  "bundle_tip_lamports": 200000,
+  "candidate_autopsy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_run65_run55_run39/candidate_autopsy.jsonl",
+  "default_ata_rent_lamports": 2039280,
+  "dry_run_only": true,
+  "inventory_path": "/etc/shadow-engine/signer-token-inventory.json",
+  "live_send": false,
+  "priority_fee_lamports": 0,
+  "result_dir": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctpm2_direct_continuation_pm_owner_lock_repair_20260605_probe",
+  "rpc_url_configured": true,
+  "sendBundle": false,
+  "sender_tip_lamports": 0,
+  "source_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ctf_20260604_skip2_66ct1/run66ct1_continuation_owner_eligibility_rows.jsonl"
+}

@@ -1,0 +1,63 @@
+{
+  "package_name": "66rc_rebalancing_one_class_proposal_package_20260527",
+  "row_class_id": "rebalancing_sender_raydium_clmm_8sLbNZoA_So11_EPjF_20260527",
+  "source_artifact_path": "/home/ubuntu/Guerrila/g1-host-pack/results/66rb_rebalancing_structural_readiness_fresh_20260527_final/summary.txt",
+  "source_artifacts": {
+    "structural_summary": "/home/ubuntu/Guerrila/g1-host-pack/results/66rb_rebalancing_structural_readiness_fresh_20260527_final/summary.txt",
+    "rule_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66re_rebalancing_entry_exit_rule_proof_fresh_20260527/run66re_rebalancing_entry_exit_rule_proof_rows.jsonl",
+    "inline_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66ri_rebalancing_inline_ata_lifecycle_fresh_20260527/run66ri_rebalancing_inline_ata_lifecycle_rows.jsonl",
+    "policy_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rp_rebalancing_policy_liquidity_gate_fresh_20260527/run66rp_rebalancing_policy_liquidity_gate_rows.jsonl",
+    "template_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66rt_rebalancing_template_nosend_fresh_20260527/run66rt_rebalancing_template_nosend_rows.jsonl",
+    "exact_positive_overlay_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66r_rebalancing_exact_positive_readiness_overlay_fresh_20260527/run66r_rebalancing_exact_positive_readiness_overlay_rows.jsonl",
+    "quote_route_ev_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66q2_rebalancing_exact_quote_route_ev_fresh_20260527/run66q2_rebalancing_exact_quote_route_ev_rows.jsonl",
+    "exact_quote_identity_bridge_rows": "/home/ubuntu/Guerrila/g1-host-pack/results/66x_exact_quote_identity_bridge_fresh_20260527/run66x_exact_quote_identity_bridge_rows.jsonl"
+  },
+  "exact_row_count_in_class": 3,
+  "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+  "venue": "raydium_clmm",
+  "mint_in": "So11111111111111111111111111111111111111112",
+  "mint_out": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "sender_no_send_vs_bundle_no_submit": "sender_no_send",
+  "selection_rationale": "Selected highest aggregate route-specific EV among sender_no_send_ready rows; bundle_no_submit rows deferred by P0 instruction unless clearly superior.",
+  "competing_sender_classes": [
+    {
+      "class_key": "raydium_clmm|8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "row_count": 3,
+      "route_specific_net_ev_raw_sum": 6990285,
+      "matched_rollout_net_ev_raw_sum": 638751
+    },
+    {
+      "class_key": "meteora_damm_v2|8Pm2kZpnxD3hoMmt4bjStX2Pw2Z9abpbHzZxMPqxPmie|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|So11111111111111111111111111111111111111112",
+      "row_count": 6,
+      "route_specific_net_ev_raw_sum": 3272499,
+      "matched_rollout_net_ev_raw_sum": 364999
+    },
+    {
+      "class_key": "raydium_clmm|3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv|So11111111111111111111111111111111111111112|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "row_count": 1,
+      "route_specific_net_ev_raw_sum": 2300441,
+      "matched_rollout_net_ev_raw_sum": 141925
+    },
+    {
+      "class_key": "raydium_clmm|G4LTmHVnARsAmjDYAVukjPoMwae5AVhwWdWpHCjhJcqc|EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v|J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd",
+      "row_count": 2,
+      "route_specific_net_ev_raw_sum": 863902,
+      "matched_rollout_net_ev_raw_sum": 70205
+    }
+  ],
+  "expected_out_raw_values": [
+    57897533,
+    56877365,
+    30771151
+  ],
+  "min_out_raw_values": [
+    57318557,
+    56308591,
+    30463439
+  ],
+  "route_specific_net_ev_raw_sum": 6990285,
+  "matched_rollout_net_ev_after_fee_tip_raw_sum": 638751,
+  "final_decision": "PARK",
+  "final_supervisor_verdict": "PARK_OWNER_CONFLICT",
+  "first_blocker_if_rejected": "required_rebalancing_rule_schema_complete"
+}

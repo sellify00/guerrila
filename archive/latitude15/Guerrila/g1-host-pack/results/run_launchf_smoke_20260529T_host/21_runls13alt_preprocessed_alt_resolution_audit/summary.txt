@@ -1,0 +1,13 @@
+status=runls13alt_preprocessed_alt_resolution_audit_complete
+rows_seen=8
+rows_with_alt_lookups=3
+lookup_table_fetch_ok_rows=3
+alt_resolution_ready_rows=3
+alt_resolution_blocked_count=0
+supported_program_after_alt_count=0
+first_alt_blocker_counts={"TX_DECODE_FAILED": 3, "none": 5}
+program_ids_before_alt_counts={"11111111111111111111111111111111": 2, "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 1, "ComputeBudget111111111111111111111111111111": 3, "Fibo6vWHQLVqh6ci5BbdPrNR29q2qesJqiSEbR99y8L9": 1, "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": 1, "NA247a7YE9S3p9CdKmMyETx8TTwbSdVbVYHHxpnHTUV": 1, "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt": 2, "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 1}
+program_ids_after_alt_counts={"11111111111111111111111111111111": 2, "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL": 1, "ComputeBudget111111111111111111111111111111": 3, "Fibo6vWHQLVqh6ci5BbdPrNR29q2qesJqiSEbR99y8L9": 1, "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": 1, "NA247a7YE9S3p9CdKmMyETx8TTwbSdVbVYHHxpnHTUV": 1, "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt": 2, "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 1}
+wire_send=0
+live_landed=0
+sendBundle_called=false

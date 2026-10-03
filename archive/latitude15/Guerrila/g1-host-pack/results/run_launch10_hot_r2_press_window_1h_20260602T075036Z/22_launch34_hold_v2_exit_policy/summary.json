@@ -1,0 +1,23 @@
+{
+  "attempt_rows": 3,
+  "catastrophe_exit_count": 1,
+  "cost_protector_armed_count": 1,
+  "exit_class_counts": {
+    "catastrophe": 1,
+    "normal_volatility": 1,
+    "profit_protector": 1
+  },
+  "exit_reason_counts": {
+    "EXIT_EXIT_QUOTE_ZERO": 1,
+    "EXIT_PANIC_DROP_10S": 1,
+    "EXIT_REALISABLE_PROFIT_TRAILING": 1
+  },
+  "hold_v2_policy_observed_rows": 0,
+  "normal_volatility_exit_count": 1,
+  "panic_suppressed_attempt_rows": 0,
+  "panic_suppressed_total": 0,
+  "profit_trailing_exit_count": 1,
+  "rows_path": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T075036Z/22_launch34_hold_v2_exit_policy/rows.jsonl",
+  "run_root": "/home/ubuntu/Guerrila/g1-host-pack/results/run_launch10_hot_r2_press_window_1h_20260602T075036Z",
+  "status": "HOLD_V2_EXIT_POLICY_AUDITED"
+}

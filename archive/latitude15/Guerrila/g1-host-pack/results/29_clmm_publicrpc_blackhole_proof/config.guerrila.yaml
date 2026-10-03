@@ -1,0 +1,311 @@
+# Shadow Engine V6.4-Guerrila — G1 Host Config
+#
+# This file uses  placeholders for host-specific values.
+# Expand before deploying:
+#   source env.g1.sh
+#   envsubst < config.guerrila.yaml > /etc/shadow-engine/config.guerrila.yaml
+#
+# ShadowConfig::from_file does NOT expand env vars — you must use envsubst.
+
+deployment:
+  profile: v6_4_guerrila
+
+system:
+  mode: tier0_only
+  money_workers: 4
+  proxies:
+    ingress:
+      primary: shred_capture
+      shred_capture_workers: 1
+      afxdp_bind_mode: copy
+      sh8_afxdp_source_probe_mode: disabled
+      grpc_fallback: "https://CHANGE_ME.triton.one"
+      grpc_fallback_token: "CHANGE_ME"
+      grpc_workers: 1
+      grpc_source_grade: external_geyser
+      allowlist_path: "/etc/shadow-engine/allowlist.bin"
+    egress:
+      quic_workers: 0
+      jito_workers: 1
+      harmonic_workers: 1
+    health:
+      publish_egress_health: true
+      degraded_hysteresis_batches: 2
+
+jito:
+  block_engine_url: "https://mainnet.block-engine.jito.wtf"
+  auth_mode: "/etc/shadow-engine/jito-auth-keypair.json"
+  connect_timeout_ms: 5000
+  send_timeout_ms: 3000
+  reconnect_initial_backoff_ms: 250
+  reconnect_max_backoff_ms: 10000
+  tls_enabled: true
+  json_rpc:
+    enabled: false
+    endpoint: "https://tokyo.mainnet.block-engine.jito.wtf"
+    mode: bundle_only
+    auth_uuid: ""
+
+public_rpc:
+  enabled: true
+  endpoint: "https://127.0.0.1:1"
+  timeout_ms: 3000
+  max_pending_tx: 1
+
+harmonic:
+  region_endpoints:
+    - "https://fra.harmonic.xyz"
+    - "https://ams.harmonic.xyz"
+    - "https://nrt.harmonic.xyz"
+  auth_mode: "/etc/shadow-engine/harmonic-auth-keypair.json"
+  connect_timeout_ms: 5000
+  send_timeout_ms: 3000
+  reconnect_initial_backoff_ms: 250
+  reconnect_max_backoff_ms: 10000
+  tls_enabled: true
+  degrade_failure_threshold: 3
+  down_failure_threshold: 10
+  hysteresis_recover_batches: 2
+  degraded_hysteresis_batches: 2
+
+state:
+  geyser:
+    harmonic_max_state_slot_lag: 1
+    require_live_transfer_fee_updates: true
+  clmm:
+    publish_dist_to_tick_lamports: true
+  source:
+    mode: geyser_rpc
+    read_only: false
+    geyser_endpoint: "https://CHANGE_ME.triton.one"
+    geyser_token: "CHANGE_ME"
+    rpc_http_url: "https://CHANGE_ME.rpc"
+    bootstrap_rpc_http_url: "https://CHANGE_ME.rpc"
+    startup_commitment: finalized
+    live_commitment: processed
+    reconnect_initial_ms: 250
+    reconnect_max_ms: 10000
+    bootstrap_batch_size: 100
+    bootstrap_parallelism: 4
+    bootstrap_retry_backoff_ms: 250
+    bootstrap_max_retry_backoff_ms: 5000
+    bootstrap_continue_on_error: true
+    pool_programs:
+      - "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
+      - "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
+      - "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG"
+      - "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"
+      - "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+    token_programs:
+      - "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+      - "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    alt_program: "AddressLookupTab1e1111111111111111111111111"
+    harmonic_max_state_slot_lag: 1
+    rpc_bootstrap_only: true
+    require_live_transfer_fee_updates: true
+    hot_pool_hydration_enabled: true
+  publish:
+    pool_arena_capacity: 1048576
+    mint_arena_capacity: 2097152
+    alt_arena_capacity: 8192
+    tag_map_capacity: 2097152
+    tag_map_max_probes: 8
+  sidecars:
+    clmm:
+      publish_dist_to_tick_lamports: true
+
+risk:
+  reserve_floor_sol: 10.0
+  max_position_sol_per_mint: 15.0
+  max_notional_sol_per_entity: 30.0
+
+rollout:
+  mode: tiny_live
+  no_send_backend: false
+  r0_allow_geyser_observe_shadow: true
+  cap_rung: r1_tiny
+  max_live_trade_input_sol: 0.01
+  max_position_sol_per_mint: 0.05
+  max_notional_sol_per_entity: 0.05
+  require_shadow_guard_deployed: true
+  shadow_guard_program_id: "NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW"
+  require_all_gates_green: false
+  require_public_scout_gates_green: true
+  gate_report_path: "/home/ubuntu/Guerrila/g1-host-pack/run/g12_gate_report.json"
+  live_bid_shading_allowed: false
+  dominance_live_allowed: false
+  competition_adjusted_primary_allowed: false
+  min_observe_candidates: 10000
+  min_live_landed: 1
+  min_sample_slots: 10000
+
+r1:
+  live_admission:
+    mode: auto_private_grade
+    source_required: afxdp
+    require_private_grade: true
+    require_shadow_guard: true
+    require_micro_market_uplift: true
+    require_pre_sign_egress_admission: true
+    max_live_trade_input_sol: 0.01
+    max_position_sol_per_mint: 0.05
+    max_notional_sol_per_entity: 0.05
+    max_new_positions_per_window: 1
+    window_seconds: 1800
+    kill_on_health_drop: true
+    kill_on_fee_leak: true
+    kill_on_inventory_mismatch: true
+    min_retained_ev_lamports: 1
+    min_net_after_fee_lamports: 1
+  public_scout:
+    enabled: true
+    mode: auto_admission
+    max_live_trade_input_sol: 0.01
+    max_notional_sol_per_entity: 0.05
+    require_afxdp_source: true
+    require_shadow_guard: true
+    kill_on_health_drop: true
+    kill_on_fee_leak: true
+    kill_on_inventory_mismatch: true
+    max_scout_attempts_per_window: 1
+    window_seconds: 1800
+  denylist:
+    wallets: []
+    mints: []
+    pools: []
+
+execution:
+  signer_keypair_path: "/etc/shadow-engine/worker-signer.json"
+  jito_lut_path: "/etc/shadow-engine/jito_tip_lut.bin"
+  swap_program_id: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
+  shadow_guard_program_id: "NDQKwYGZ7LiUaqK8FxVrxa9uCcEL4b4jHcp8mY4baLW"
+  guard_vault_in_pubkey: "HAULecjkcF2GHGSQ566yRBuwRoHxH24YGZs1n6B3QpAG"
+  guard_vault_out_pubkey: "9mo6Dhx8RhrwNqxCBGcfqEZzmGPGr4hz1mfTdW8tpsq7"
+  jito_tip_account: "96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5"
+  route_base_cu_limit: 300000
+  nonce_prefill: 128
+  swap_template_accounts:
+    - { pubkey: "FeePayerSigner", writable: true }
+    - { pubkey: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", writable: false }
+  swap_ix_data_hex: "090000000000000000000000000000000000"
+
+submit:
+  routing:
+    default_public_geyser: drop
+    default_jito_searcher: public_rpc_scout
+    private_mempool_strategy: jito_bundle_if_compatible
+    enable_harmonic_lane: false
+    harmonic_quarantine_enabled: true
+    stale_harmonic_state_action: reroute_to_jito
+    atba_route_mode: jito_only
+    apex_partial_route_mode: jito_only
+    pre_sign_egress_admission_gate: true
+  quic:
+    kamikaze_enabled: false
+  harmonic:
+    cu_pad_units: 150
+    quarantine_mode: specific_error_only
+    quarantine_scope: class_scoped_with_global_failsafe
+    tactic_class_count: 8
+
+oracle:
+  guerrila:
+    max_required_backrun_capital_sol: 15.0
+    retail_only_mode: true
+    micro_market_enabled: true
+    leader_class_count: 8
+    publish_mode: banked_by_leader_class
+    max_live_trade_input_sol: 15.0
+    allow_clamped_apex_partials: true
+    allow_atba_jito_only: true
+    obscurity_discount_enabled: true
+    obscurity_mode: header_only_bitpacked
+    obscurity_initial_floor_bps: 4500
+    primary_strategy_mode: baseline
+    shadow_strategy_mode: competition_adjusted
+    sparse_class_action: fallback_to_baseline
+    competition_selector_enabled: true
+    competition_selector_mode: fixed_bank_penalty_only
+    competition_selector_max_penalty_bps: 3000
+    competition_selector_min_live_bid_floor_bps: 2500
+    competition_selector_class_min_samples: 200
+    competition_selector_half_life_slots: 2048
+    lut_source: shm_published
+  opso:
+    enabled: true
+    mode: observe_only
+    sidecar_enabled: true
+    sidecar_stale_action: fallback_to_baseline
+    max_sidecar_staleness_ns: 400000000
+    high_alpha_override_enabled: true
+    max_shade_bps: 3000
+    require_shadow_pnl: true
+    require_pm_episode_ledger: true
+    sparse_class_action: fallback_to_baseline
+    live_bid_shading_enabled: false
+  tip_lut:
+    jito_tax_multiplier_bps: 10638
+    harmonic_tax_multiplier_bps: 10000
+
+quant_tactics:
+  taylor_compression:
+    enabled: true
+    mode: pre_filter_gate_only
+  ghost_snipe:
+    enabled: true
+    mode: cache_prefetch_only
+  write_lock_saturation_discount:
+    enabled: false
+  splinter_cell_arb:
+    enabled: false
+  cu_density_optimization:
+    enabled: true
+    mode: minimum_empirical_safe_padding
+    jito_baseline_variance_pad_cus: 150
+  post_trade_exhaust_scavenging:
+    enabled: true
+    route_mode: deterministic_jito_backrun_only
+    max_capital_deployment_sol: 15.0
+    min_competitor_size_sol: 50.0
+    min_convexity_distortion_bps: 600
+  tick_boundary_sabotage:
+    enabled: true
+    mode: shadow_observe_only
+    proximity_threshold_lamports: 100000
+
+telemetry:
+  observe_only:
+    log_drop_reasons: true
+    shadow_pnl_enabled: true
+
+shadow_control:
+  rosetta:
+    enabled: true
+    manifest_path: "/dev/shm/shadow_parsing_manifest"
+    control_flags_path: "/dev/shm/shadow_control_flags"
+    raw_archive_path: "/dev/shm/shadow_raw_archive"
+    golden_records_path: "crates/shadow-control/testdata/golden"
+    manifest_read_interval_shreds: 64
+    tripwire_window_slots: 2
+    grpc_only_cooldown_slots: 8
+    blindness_miss_threshold: 1
+    predictive_shift_enabled: true
+    predictive_shift_max_abs_delta: 16
+    deep_scan_enabled: true
+    executable_hash_monitor_enabled: true
+    venue_quarantine_enabled: true
+
+entry:
+  pool_slot_dominance_gate:
+    enabled: true
+    mode: observe_only
+    require_same_base_state_ts: true
+    min_incremental_retained_lcb_lamports: 1000
+
+# PM evidence plane
+pm:
+  solana_rpc_url: "https://CHANGE_ME.rpc"
+  jito_bundle_status_url: "https://mainnet.block-engine.jito.wtf/api/v1/bundles"
+  harmonic_bundle_status_url: "https://CHANGE_ME"
+  rpc_timeout_ms: 5000
+  shock_research_export_path: "/home/ubuntu/Guerrila/g1-host-pack/results/29_clmm_publicrpc_blackhole_proof/shock_research.jsonl"

@@ -1,0 +1,15 @@
+status=PARK_LAUNCH62_WAITING_FOR_MIGRATION_OR_ROUTE
+completion_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch60_curve_completion_watch/rows.jsonl
+migration_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0m3_realtime_migration_event_watcher/rows.jsonl
+pumpswap_route_rows=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch0m_migration_pumpswap_route_join/rows.jsonl
+completion_rows_seen=453
+migration_rows_seen=500
+pumpswap_route_rows_seen=410
+bridge_ready_rows=0
+waiting_for_migration_rows=1
+decision_counts={"PARK_BRIDGE_PROGRESS_BELOW_THRESHOLD": 452, "WAITING_FOR_MIGRATION": 1}
+rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch62_migration_bridge_monitor/rows.jsonl
+ready_rows_path=/home/ubuntu/Guerrila/g1-host-pack/results/run_launch0rt_realtime_birth_rate_probe_900s_20260602T165046Z/22_launch62_migration_bridge_monitor/ready_rows.jsonl
+wire_send=0
+live_landed=0
+acceptance_pass=false
